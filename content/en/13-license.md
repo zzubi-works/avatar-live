@@ -25,6 +25,12 @@ Avatar Live is **paid software** sold on [BOOTH](https://curiousbobby.booth.pm/)
 
 The full terms are set out in the [Terms of Use](legal-terms.md).
 
+## Upgrades and trials
+
+- **Basic → Pro upgrade**: buy Basic once more and enter it in **Settings › License › Upgrade to Pro** to make this PC's license Pro (two Basic = Pro). The added purchase belongs to this license and cannot be used separately on another PC. A PC that already has Pro cannot take more Basic.
+- **Buying during a trial**: enter your purchase in **Settings › License › Enter your purchase**. It replaces the trial.
+- **When a trial ends**, the input screen opens with "Your trial has ended". Enter your purchased license to keep using Avatar Live.
+
 ## Experimental features
 
 Features marked "experimental" (Ultraleap, iFacialMocap, OSC / VMC, camera detection of tongue and cheeks) are expected to work, but the devices and apps involved have not yet been tested in the developer's environment.

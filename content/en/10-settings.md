@@ -82,6 +82,8 @@ Shows the current edition and license ID.
 | Button | What it does |
 |---|---|
 | **Enter another code** | Switch to another license |
+| **Upgrade to Pro** (on Basic) | Enter a second Basic purchase to become Pro (two Basic = Pro) |
+| **Enter your purchase** (during a trial) | Replace the trial with your purchased license |
 | **Check now** | Check the license again |
 | **Buy on BOOTH** | Buy Pro |
 
