@@ -76,6 +76,17 @@
 | 🧪 Experimental features | Ultraleap, OSC / VMC, camera detection of tongue and cheeks — expected to work, but the devices and apps involved have not yet been tested in the developer's environment |
 | ❌ Not supported | VRM files, Live2D, macOS, Linux |
 
+## Planned support
+
+- Loading VRM models (.vrm, VRM 0.x / 1.0) and playing .vrma animations
+- Stronger Perfect Sync: mapping shape keys directly, face tuning per webcam and iPhone
+- More phone face apps: VTube Studio (iPhone), MeowFace (Android)
+- Better full-body tracking app support (VMC): face and body apps at the same time, sitting and leaning — TDPT, XR Animator and more
+- Desktop mascot mode (transparent window), eyes following the mouse cursor
+- Conveniences: automatic refresh when you export the avatar again, lower FPS when idle
+
+※ Planned features and schedules may change.
+
 ## Frequently asked questions
 
 **Q. Do I need a VRChat account?**

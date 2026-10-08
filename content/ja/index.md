@@ -60,6 +60,8 @@ layout: home
 
 購入前に、[必要環境](01-getting-started.md)と[返金ポリシー](legal-refund.md)を必ずご確認ください。デジタル商品のため、購入後の返金はできません。
 
+> 🗺️ VRM 対応、スマホの顔アプリ、デスクトップマスコットモードなどを[今後の対応予定](12-troubleshooting.md#今後の対応予定)として準備中です。
+
 ## ガイド
 
 <div class="toc-grid">

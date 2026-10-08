@@ -60,6 +60,8 @@ layout: home
 
 구매 전에 [요구 사항](01-getting-started.md)과 [환불 정책](legal-refund.md)을 꼭 확인해 주세요. 디지털 상품이므로 구매 후 환불되지 않습니다.
 
+> 🗺️ VRM 지원, 휴대폰 얼굴 앱, 데스크톱 마스코트 모드 등 [추가 지원 예정](12-troubleshooting.md#추가-지원-예정) 기능도 준비 중입니다.
+
 ## 가이드
 
 <div class="toc-grid">

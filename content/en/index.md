@@ -60,6 +60,8 @@ Most free VTuber programs are built around the **VRM format**. To use a VRChat a
 
 Before buying, please check the [requirements](01-getting-started.md) and the [refund policy](legal-refund.md). As this is a digital product, it cannot be refunded after purchase.
 
+> 🗺️ VRM support, phone face apps, a desktop mascot mode and more are [planned](12-troubleshooting.md#planned-support).
+
 ## Guide
 
 <div class="toc-grid">

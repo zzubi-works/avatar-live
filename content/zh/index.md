@@ -60,6 +60,8 @@ layout: home
 
 购买前请务必确认 [系统要求](01-getting-started.md) 和 [退款政策](legal-refund.md)。本产品为数字商品，购买后不予退款。
 
+> 🗺️ VRM 支持、手机面部应用、桌面吉祥物模式等功能也在[计划支持](12-troubleshooting.md#计划支持)中。
+
 ## 指南
 
 <div class="toc-grid">

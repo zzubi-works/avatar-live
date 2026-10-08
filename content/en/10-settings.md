@@ -24,7 +24,8 @@
 | Item | What it does |
 |---|---|
 | **VSync / Frame limit** | Frame rate |
-| **Anti-aliasing / Shadows** | Image quality |
+| **Anti-aliasing** | Smooth jagged edges |
+| **Shadows** | Shadows the lights cast on the avatar itself (hair and chin on the neck and chest). Off saves GPU |
 | **Now** | Show current performance |
 | **Show in the top bar** | Show performance at the top |
 | **Priority, processors and GPU (advanced)** | CPU and GPU sharing when used alongside games or OBS |

@@ -16,6 +16,8 @@
 
 When an update is available, a green dot appears on **Settings**.
 
+The **pin** at the top right of the panel keeps the panel open while you click or drag in the scene. Close it with its menu button on the left or **F1**.
+
 ## Top
 
 | Item | What it does |
@@ -96,6 +98,8 @@ You can grab swinging parts such as hair, ears and tails in the view with the mo
 | Wheel while holding | Nearer / farther |
 | Right-click while holding | **Pose** the bone in place |
 | **Release posed bones** | Free the bones you posed |
+
+A posed part stays posed until you grab that same part again.
 
 Only parts whose PhysBone settings on the avatar allow grabbing can be grabbed.
 
