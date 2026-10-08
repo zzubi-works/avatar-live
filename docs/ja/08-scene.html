@@ -3,61 +3,70 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>シーン — Avatar Live</title>
-<meta name="description" content="VRChat アバターを VRM 変換なしでそのまま使える Windows 用 VTuber ソフト Avatar Live の公式ガイド">
-<meta property="og:title" content="シーン — Avatar Live">
-<meta property="og:description" content="VRChat アバターを VRM 変換なしでそのまま使える Windows 用 VTuber ソフト Avatar Live の公式ガイド">
-<meta property="og:image" content="../assets/brand/og.jpg">
+<title>シーン — AVATAR LIVE</title>
+<meta name="description" content="背景、ライティング、エフェクトを選びます。">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ja/08-scene.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/08-scene.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/08-scene.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/08-scene.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/08-scene.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="シーン — AVATAR LIVE">
+<meta property="og:description" content="背景、ライティング、エフェクトを選びます。">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ja/08-scene.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ja.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="../assets/brand/favicon.png">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard-jp/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/site.css">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
-<header class="top">
-  <button class="burger" aria-label="メニュー" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
-  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
-  <div class="top-right">
-    <details class="lang"><summary>🌐 <span>日本語</span></summary><div class="lang-menu"><a href="../ko/08-scene.html">한국어</a><a href="../en/08-scene.html">English</a><a href="../ja/08-scene.html" class="on">日本語</a><a href="../zh/08-scene.html">简体中文</a></div></details>
-    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
-    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTHで購入</a>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">概要</a><a href="index.html#features">機能</a><a href="index.html#how">使い方</a><a href="index.html#editions">エディション</a><a href="01-getting-started.html" aria-current="page">ガイド</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="言語"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>日本語</span></summary><div class="lang-menu" role="menu"><a href="../ko/08-scene.html" lang="ko">한국어</a><a href="../en/08-scene.html" lang="en">English</a><a href="../ja/08-scene.html" lang="ja" aria-current="true">日本語</a><a href="../zh/08-scene.html" lang="zh-Hans">简体中文</a></div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="テーマ切り替え" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">購入する</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="メニュー" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
   </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">概要</a><a href="index.html#features">機能</a><a href="index.html#how">使い方</a><a href="index.html#editions">エディション</a><a href="01-getting-started.html" aria-current="page">ガイド</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">購入する</a></div>
 </header>
-<div class="wrap">
-  <aside class="side"><a class="side-home" href="index.html">ホーム</a><div class="side-h">ガイド</div><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html" class="on">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング · オブジェクト · 表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション · ライセンス · 告知</a></li></ul><div class="side-h">規約・ポリシー</div><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></aside>
-  <main class="content">
-    <article><h1 id="8-シーン">8. シーン<a class="anchor" href="#8-シーン">#</a></h1>
-<p><strong>シーン</strong> ページでは、背景・ライティング・エフェクトを設定します。ポージング・オブジェクト・マイ表情は <a href="11-pro-features.html">11 章</a>をご覧ください。</p>
-<figure><a href="../assets/shots/ja/scene.webp" target="_blank" rel="noopener"><img alt="シーンページ" src="../assets/shots/ja/scene.webp" loading="lazy"></a><figcaption>シーンページ</figcaption></figure>
-<h2 id="アバター">アバター<a class="anchor" href="#アバター">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>項目</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>明るさ</strong></td>
-<td>アバター全体の明るさ</td>
-</tr>
-<tr>
-<td><strong>サイズ</strong></td>
-<td>アバターのサイズ</td>
-</tr>
-<tr>
-<td><strong>中央に戻す</strong></td>
-<td>アバターを中央に</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="背景">背景<a class="anchor" href="#背景">#</a></h2>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html" aria-current="page">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="8-シーン">8. シーン<a class="anchor" href="#8-シーン" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>背景、ライティング、エフェクトを選びます。</p>
+<h2 id="ライティング">ライティング<a class="anchor" href="#ライティング" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="shot">
+<figure><img src="../assets/shots/ja/scene-light.webp" srcset="../assets/shots/ja/scene-light-960.webp 960w, ../assets/shots/ja/scene-light.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="シーンページ" loading="lazy" decoding="async"><figcaption>シーンページ</figcaption></figure>
+<ul>
+<li><strong>プリセット</strong> で雰囲気を選ぶと、ライティングが一度に切り替わります。</li>
+<li>ライトごとにスイッチでオン / オフでき、明るさや色も変えられます。</li>
+<li><strong>+ ライトを追加</strong> で、フェイスライトやリムライトを加えます。</li>
+<li>気に入ったライティングは、<strong>⋯ › 新しいプリセットとして保存</strong> で保存しておけます。</li>
+</ul>
+</div>
+<div class="gallery">
+<figure><img src="../assets/shots/common/light-spot-light.webp" width="1000" height="900" alt="スポットライト" loading="lazy" decoding="async"><figcaption>スポットライト</figcaption></figure>
+<figure><img src="../assets/shots/common/light-studio-soft.webp" width="1000" height="900" alt="スタジオ ソフト" loading="lazy" decoding="async"><figcaption>スタジオ ソフト</figcaption></figure>
+<figure><img src="../assets/shots/common/light-warm.webp" width="1000" height="900" alt="ウォームトーン" loading="lazy" decoding="async"><figcaption>ウォームトーン</figcaption></figure>
+<figure><img src="../assets/shots/common/light-cool.webp" width="1000" height="900" alt="クールトーン" loading="lazy" decoding="async"><figcaption>クールトーン</figcaption></figure>
+</div>
+<h2 id="背景">背景<a class="anchor" href="#背景" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th>選択肢</th>
-<th>用途</th>
+<th>こんなときに</th>
 </tr>
 </thead>
 <tbody>
@@ -66,169 +75,45 @@
 <td>好きな色の背景</td>
 </tr>
 <tr>
-<td><strong>グリーン / ブルー</strong></td>
-<td>クロマキー（OBS のクロマキーフィルター）</td>
+<td><strong>グリーン・ブルー</strong></td>
+<td>配信ソフトのクロマキーで消すとき</td>
 </tr>
 <tr>
 <td><strong>透明</strong></td>
-<td>Spout2 で透明背景を送る（ウィンドウでは黒く表示）</td>
+<td>Spout2 で背景なしで送るとき</td>
 </tr>
 <tr>
 <td><strong>画像</strong></td>
-<td>PNG / JPG の画像背景</td>
+<td>画像を背景にするとき</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="ライティング">ライティング<a class="anchor" href="#ライティング">#</a></h2>
-<h3 id="プリセット">プリセット<a class="anchor" href="#プリセット">#</a></h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>プリセット</th>
-<th>雰囲気</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>スポットライト</strong></td>
-<td>顔を照らすステージ照明（標準）</td>
-</tr>
-<tr>
-<td><strong>カメラライト</strong></td>
-<td>カメラ側から照らすシンプルな照明</td>
-</tr>
-<tr>
-<td><strong>スタジオ ソフト / スタジオ ブライト</strong></td>
-<td>やわらかい / 明るいスタジオ照明</td>
-</tr>
-<tr>
-<td><strong>フェイス フォーカス</strong></td>
-<td>顔に集中</td>
-</tr>
-<tr>
-<td><strong>フラット VTuber</strong></td>
-<td>影のないフラットな照明</td>
-</tr>
-<tr>
-<td><strong>ウォームトーン / クールトーン</strong></td>
-<td>暖かい / 冷たい色味</td>
-</tr>
-<tr>
-<td><strong>ドラマチック</strong></td>
-<td>強いサイドライト</td>
-</tr>
-<tr>
-<td><strong>シーン照明</strong></td>
-<td>アバターを書き出した Unity シーンの照明</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>⋯</strong> メニュー：新しいプリセットとして保存 · 名前を変更 · 今のライティングで更新 · 複製 · 削除 · ライティングをリセット</p>
-<h3 id="ライト">ライト<a class="anchor" href="#ライト">#</a></h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>項目</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ライトのスイッチ</td>
-<td>オン / オフ</td>
-</tr>
-<tr>
-<td><strong>強さ · 色 · 色温度</strong></td>
-<td>明るさと色</td>
-</tr>
-<tr>
-<td><strong>位置 · 向き · ターゲット</strong></td>
-<td>どこからどこを照らすか</td>
-</tr>
-<tr>
-<td><strong>影 · 範囲</strong></td>
-<td>影、光が届く範囲</td>
-</tr>
-<tr>
-<td><strong>+ ライトを追加</strong></td>
-<td>フェイスライト · フィルライト · リムライト · 平行光源 · ポイント · スポット</td>
-</tr>
-<tr>
-<td><strong>ビューで編集</strong></td>
-<td>ビュー上でライトを直接動かす</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="環境--アンビエント">環境 / アンビエント<a class="anchor" href="#環境--アンビエント">#</a></h3>
-<p>全方向から届く光の明るさと色を設定します：<strong>シーンの空 / グラデーション / 単色</strong></p>
-<h2 id="エフェクト">エフェクト<a class="anchor" href="#エフェクト">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>エフェクト</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>ポストプロセス</strong></td>
-<td>エフェクト全体をオン / オフ</td>
-</tr>
-<tr>
-<td><strong>アンチエイリアス</strong></td>
-<td>輪郭のギザギザを減らす</td>
-</tr>
-<tr>
-<td><strong>ブルーム</strong></td>
-<td>光のにじみ</td>
-</tr>
-<tr>
-<td><strong>カラーグレーディング</strong></td>
-<td>露出・コントラスト・彩度・色温度</td>
-</tr>
-<tr>
-<td><strong>ビネット</strong></td>
-<td>周辺を暗くする</td>
-</tr>
-<tr>
-<td><strong>フィルムグレイン</strong></td>
-<td>フィルムの質感</td>
-</tr>
-<tr>
-<td><strong>色収差</strong></td>
-<td>周辺の色のにじみ</td>
-</tr>
-<tr>
-<td><strong>被写界深度</strong></td>
-<td>背景ぼかし（<strong>顔に自動でピント</strong>）</td>
-</tr>
-<tr>
-<td><strong>モーションブラー</strong></td>
-<td>動きの残像</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="シェーダー">シェーダー<a class="anchor" href="#シェーダー">#</a></h2>
-<p>アバターに使ったシェーダーをそのまま使います。Poiyomi、lilToon などの主要なシェーダーで確認済みです。
-AudioLink、ミラー・カメラの検出、Light Volumes は動作しません。</p></article>
-    <div class="pager"><a class="prev" href="07-motion.html"><span>前へ</span>動き</a><a class="next" href="09-output.html"><span>次へ</span>出力</a></div>
-    <p class="updated">最終更新: 2026-10-09</p>
-  </main>
-  <nav class="toc"><div class="toc-h">このページ</div><ul><li class="l2"><a href="#アバター">アバター</a></li><li class="l2"><a href="#背景">背景</a></li><li class="l2"><a href="#ライティング">ライティング</a></li><li class="l3"><a href="#プリセット">プリセット</a></li><li class="l3"><a href="#ライト">ライト</a></li><li class="l3"><a href="#環境--アンビエント">環境 / アンビエント</a></li><li class="l2"><a href="#エフェクト">エフェクト</a></li><li class="l2"><a href="#シェーダー">シェーダー</a></li></ul></nav>
+<div class="gallery">
+<figure><img src="../assets/shots/common/bg-lilac.webp" width="1000" height="900" alt="画像背景" loading="lazy" decoding="async"><figcaption>画像背景</figcaption></figure>
+<figure><img src="../assets/shots/common/bg-green.webp" width="1000" height="900" alt="グリーン背景" loading="lazy" decoding="async"><figcaption>グリーン背景</figcaption></figure>
+<figure><img src="../assets/shots/common/bg-dark.webp" width="1000" height="900" alt="単色背景" loading="lazy" decoding="async"><figcaption>単色背景</figcaption></figure>
+<figure><img src="../assets/shots/common/bg-peach.webp" width="1000" height="900" alt="画像背景 2" loading="lazy" decoding="async"><figcaption>画像背景 2</figcaption></figure>
 </div>
-<footer class="foot">
-  <div class="foot-in">
-    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
-    <div class="foot-links"><a href="legal-terms.html">Avatar Live 利用規約</a> · <a href="legal-privacy.html">プライバシーポリシー</a> · <a href="legal-refund.html">返金ポリシー</a> · <a href="legal-seller.html">販売者情報</a></div>
-    <p>Avatar Live は VRChat Inc. と提携・承認関係にある製品ではありません。VRChat は VRChat Inc. の商標です。</p>
-    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+<h2 id="エフェクト">エフェクト<a class="anchor" href="#エフェクト" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="shot">
+<figure><img src="../assets/shots/ja/scene-fx.webp" srcset="../assets/shots/ja/scene-fx-960.webp 960w, ../assets/shots/ja/scene-fx.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="エフェクト" loading="lazy" decoding="async"><figcaption>エフェクト</figcaption></figure>
+<ul>
+<li><strong>ブルーム</strong> — 明るい部分が、ほんのりとにじみます。</li>
+<li><strong>カラーグレーディング</strong> — 明るさ、コントラスト、彩度、色温度を調整します。</li>
+<li><strong>被写界深度</strong> — 背景をぼかして、アバターを引き立てます。</li>
+<li><strong>ビネット・フィルムグレイン</strong> — 画面の周辺や質感に、雰囲気を加えます。</li>
+</ul>
+</div>
+<h2 id="シェーダー">シェーダー<a class="anchor" href="#シェーダー" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>アバターに使っているシェーダーを、そのまま表示します。Poiyomi、lilToon などの主要なシェーダーで確認済みです。AudioLink とミラー検出には対応していません。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="07-motion.html"><span>前へ</span>動き</a><a class="next" href="09-output.html"><span>次へ</span>出力</a></nav><p class="updated">最終更新: 2026-10-09</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#ライティング">ライティング</a></li><li><a href="#背景">背景</a></li><li><a href="#エフェクト">エフェクト</a></li><li><a href="#シェーダー">シェーダー</a></li></ul></nav>
+</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>製品</h2><ul><li><a href="index.html#features">機能</a></li><li><a href="index.html#how">使い方</a></li><li><a href="index.html#editions">エディション</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li></ul></div><div class="fcol"><h2>ガイド</h2><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul></div><div class="fcol"><h2>規約・ポリシー</h2><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></div><div class="fcol"><h2>リンク</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
+  <div class="wrap fine"><p>AVATAR LIVE は VRChat Inc. の公式製品ではなく、VRChat Inc. とは提携していません。VRChat は VRChat Inc. の商標です。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>
-<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
-<script>
-function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
-(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
-function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
-</script>
 </body>
 </html>

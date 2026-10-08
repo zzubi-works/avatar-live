@@ -11,7 +11,7 @@
 | 卖家标示 | 有关卖家的标示事项以 BOOTH 店铺页面上的标示为准 |
 | 价格 | BOOTH 商品页面上标示的价格 |
 | 产品咨询 | BOOTH 店铺页面的咨询 · X（Twitter）[@User_Not_Online](https://x.com/User_Not_Online) |
-| 支付与退款咨询 | **直接联系 BOOTH**（[退款政策](legal-refund.md)） |
+| 支付与退款咨询 | **直接向 BOOTH** 咨询（[退款政策](legal-refund.md)） |
 
 ## 相关文档
 

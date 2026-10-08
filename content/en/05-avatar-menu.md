@@ -1,62 +1,54 @@
 # 5. Avatar menu
 
-On the **Menu** page you use **the avatar's own Expressions menu**, just as in VRChat. Outfit and hair toggles, expression buttons, Radials and Puppets work the same way as in VRChat.
+You use your avatar's **Expressions menu** from VRChat just as it is. Outfit and hair toggles, expression buttons, Radials and Puppets all work exactly as they do in VRChat.
 
 ## Expressions menu
 
+<div class="shot" markdown="1">
+
 ![Avatar menu](img/menu.png)
 
-| Type | What it does |
-|---|---|
-| **Toggle** | On / off |
-| **Button** | On while held |
-| **Sub Menu** | Open a submenu (**Back** to return) |
-| **Radial Puppet** | Set a value with a slider |
-| **Two Axis / Four Axis Puppet** | Set a direction with a pad |
+- **Toggle** — Switches on and off each time you press it.
+- **Button** — Stays on while you hold it.
+- **Sub Menu** — Opens a submenu. Use **Back** to return.
+- **Radial · Puppet** — Set a value with a slider or a pad.
 
-### Right-clicking an item
+</div>
 
-| Item | What it does |
-|---|---|
-| **Add to Quick Actions** | Turn this item into a toolbar button |
-| **Set hotkey…** | Assign a hotkey to this item |
-| **Favorite** | Add it to the favorites above the menu |
-| **Parameter info** | Show this item's parameter |
+## Right-clicking an item
 
-## Favorites
+<div class="shot" markdown="1">
 
-Use favorited items directly at the top of the menu. Items inside submenus can also be used right there.
+![Item right-click menu](img/menu-ctx.png)
+
+- **Add to Quick Actions** — Places it as a button on the bottom toolbar.
+- **Set hotkey…** — Lets you turn it on with a single key, even while you're in a game.
+- **Favorite** — Use it right away from the top of the menu.
+
+</div>
 
 ## Hand gestures
 
-Pick a left / right hand gesture (**Neutral · Fist · Open · Point · Victory · Rock · Gun · Thumbs**) to show the avatar's gesture expressions.
+<div class="shot" markdown="1">
 
-- **Gestures from the webcam's hands** — when on, the hand shapes tracked by the webcam become gestures.
+![Hand gestures](img/gestures.png)
 
-## Avatar parameters
+- Choose left-hand and right-hand gestures to show the avatar's gesture expressions.
+- Turn on **Gestures from the webcam's hands**, and your own hand shapes become the gestures.
 
-- **Reset to defaults** — returns every menu value to the avatar's default (the same as Reset Avatar in VRChat).
+</div>
 
-Values that VRChat saves, such as outfit state, are kept the next time you run Avatar Live.
+## Reset to defaults
+
+Click **Avatar parameters › Reset to defaults** to return the menu values to the avatar's defaults. Values that are saved, such as outfit state, carry over to the next launch.
 
 ## Quick Actions
 
-Turn actions you use often into **buttons** or **keys**.
+Turn actions you use often into buttons or keys. You can add menu items, gestures, camera views, lighting presets and more, and right-click a button to change its name and position.
 
-**Where to add them**
-- Right-click a menu item → **Add to Quick Actions**
-- Settings › **Hotkeys · Quick Actions** › **Add Quick Action**
+## Reset
 
-**Actions you can use**: avatar menu item · gesture · camera view · saved view · tracking reset · lighting preset · PhysBone reset · reset all
-
-**Right-click a button**: **Rename** · **Show in** (Top HUD / Bottom toolbar / Hotkey only) · **Set hotkey…** · **Remove**
-
-## Reset and Reset everything
-
-| | **Reset** | **Reset everything** |
+| | Reset | Reset everything |
 |---|---|---|
-| How | Click **⟲** at the top, Settings › General | Right-click ⟲, Settings › General |
-| What it resets | Tracking, hand pose, held buttons, PhysBones, Contacts | The above + all parameters (including outfits), avatar position and size, pose, camera |
-| What it keeps | Outfits and toggles, lighting, camera | Objects, saved poses and expressions, settings |
-
-If the avatar freezes or its hair gets tangled during a stream, click **⟲ Reset**.
+| What it does | Returns tracking, hand poses and PhysBones to their initial state | All of that, plus outfits · position · camera, back to their initial state |
+| How | **⟲** at the top | Right-click **⟲**, or **Settings › General** |

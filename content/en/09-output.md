@@ -1,129 +1,49 @@
 # 9. Output
 
-On the **Output** page you send the avatar image to other programs. There are two tabs: **Stream** and **Screen share**.
+Send the avatar image to your streaming software or call apps.
 
 | Destination | Method |
 |---|---|
-| OBS (transparent background) | **Spout2** |
-| Camera in Discord, Zoom or Teams | **Virtual Camera** |
-| Streaming a game on Discord | **Screen share** |
-| Other motion apps | **VMC out** |
-| Photos | **Save PNG** |
-
-Only the avatar and background are sent; Avatar Live's menus are not. Output continues even when the window is minimized or hidden to the tray.
+| OBS (transparent background) | Spout2 |
+| Camera in Discord · Zoom · Teams | Virtual camera |
+| Streaming a game on Discord | Screen share |
+| Photos | Save PNG |
 
 ## Stream
 
-![Output › Stream](img/output.png)
+<div class="shot" markdown="1">
 
-### Output image
+![Output › Stream](img/stream.png)
 
-| Item | What it does |
-|---|---|
-| **Resolution** | 720p · 1080p · 1440p · 4K · portrait |
-| **Custom size** | Any size you like |
-| **Output frame rate** | The output frame rate |
+- **Output image** — Choose the size of the image you send.
+- **Spout2** — Turn it on and add a **Spout2 Capture** source in OBS, and the avatar appears. Set the background to **Transparent** to send it without a background.
+- **Virtual camera** — The first time only, click **Install the virtual camera…**, then choose **Avatar Live Camera** as the camera in the other app.
+- **Photo** — **Save PNG** saves the view without the menus.
 
-Basic goes up to 1080p and shows a watermark. Pro goes up to 4K with no watermark.
+</div>
 
-### Spout2 → OBS
+> 💡 Discord looks for cameras only when it starts. If the camera isn't in the list, please quit Discord completely and open it again.
 
-1. Turn on **Spout2**.
-2. In OBS, install the **Spout2 plugin**, add a **Spout2 Capture** source and choose **Avatar Live**.
-3. Transparent background: set the Avatar Live background to **Transparent**, and choose **Composite with alpha** in OBS.
+## Discord screen share
 
-| Item | What it does |
-|---|---|
-| **Sender name** | The name shown in OBS |
-| **Send transparency (alpha)** | Send a transparent background |
-
-### Virtual camera
-
-1. The first time only, click **Install the virtual camera…** (you are asked for administrator permission).
-2. Turn on **Virtual Camera**.
-3. In Discord, Zoom or similar apps, choose **Avatar Live Camera** as the camera.
-
-| Item | What it does |
-|---|---|
-| **Mirror the image** | Flip left and right |
-| **Register again as 'Avatar Live Camera'…** | When the camera shows under a different name |
-
-- Discord looks for cameras only when it starts. If the camera is not in the list, quit Discord completely and open it again.
-- Transparent backgrounds are not supported (use a chroma key background).
-- Before moving or deleting the installation folder, run `VirtualCamera\Uninstall.bat`.
-
-### Photo
-
-**Save PNG** saves the view without the UI, and **Open folder** opens the folder it is saved in. A transparent background is saved as transparent.
-
-### External output (VMC)
-
-| Item | What it does |
-|---|---|
-| **VMC output (to another app)** | Send the avatar's pose and expressions to another app |
-| **Address / Port** | The address of the receiving app |
-| **Blend shapes** | Send expressions too |
-
-> VMC output is expected to work, but it is an **experimental feature**: the receiving apps have not yet been tested in the developer's environment.
-
-## Screen share
+<div class="shot" markdown="1">
 
 ![Output › Screen share](img/share.png)
 
-Shows your Discord friends **the game + avatar + sound**, while you see only the game. No OBS needed.
-
-### How to use
-
-1. Under **Share target**, choose **Game** or **Display**.
+1. Under **Share target**, choose a game or a display.
 2. Turn on **Screen share**.
 3. In Discord, choose **Screen Share → Applications → Avatar Live Share Output** and turn on sound.
-4. Adjust the avatar's position and size in the preview.
 
-> ⚠️ **Do not run Avatar Live as administrator.** Discord will show a black screen.
+</div>
 
-### Share status
+- Your friends see the game and the avatar together, while you see only the game.
+- Drag the avatar in the preview to set its position and size.
+- Turn on **Game audio** to send only the game's sound to your friends.
 
-| Item | What it does |
-|---|---|
-| **Screen share** | On / off |
-| **Resolution / Frame rate** | The quality sent to Discord |
+> 💡 If the game shows up black, try switching the game to **borderless window** or **windowed mode**. We recommend running Avatar Live without administrator rights.
 
-### Share target
+> 💡 Sharing sound needs a virtual playback device such as Steam Streaming Speakers or VB-Audio CABLE.
 
-| Item | What it does |
-|---|---|
-| **Game** | Choose the game window to share (found again even after the game restarts) |
-| **Display** | Share a whole monitor |
-| **More sources** (Pro) | Layer more windows or monitors on top ([Chapter 11](11-pro-features.md#screen-share-extra-sources)) |
+## External output (VMC)
 
-> 💡 If the game shows up black, try switching the game to **borderless window** or **windowed mode**.
-
-### Audio
-
-| Item | What it does |
-|---|---|
-| **Game audio** | Send only the game's sound (Discord calls and notification sounds are excluded) |
-| **Desktop audio / Added apps only / No audio** | The sound to send when sharing a display |
-| **+ Add an app** | Add sound from other apps such as music, with per-app volume |
-
-For share audio to go out, you need a virtual playback device that you do not listen to, such as **Steam Streaming Speakers** or **VB-Audio CABLE**.
-
-### Avatar overlay
-
-| Item | What it does |
-|---|---|
-| **Avatar overlay** | Show the avatar on the shared screen |
-| Preview | Drag to move, corners to resize, handle to rotate, Alt + edge to crop |
-| **↙ ↓ ↘ ↖ ↗ ◎** | Quick positions |
-| **Size / Opacity / Rotation** | Adjust with numbers |
-| **Flip and snapping** | Flip horizontally and vertically, lock aspect ratio, snap |
-| ⛶ | Edit on a larger screen |
-
-### Advanced
-
-| Item | What it does |
-|---|---|
-| **Force capture method** | Auto / Window / Display |
-| **Source trim** | Crop the shared screen |
-| **Discord audio device** | The device that plays the share audio (do not choose headphones or speakers) |
-| **Audio delay** | Sync sound with video |
+Turn on **VMC output** to send the avatar's movement to another app. This is an experimental feature.

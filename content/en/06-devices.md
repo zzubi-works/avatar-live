@@ -1,79 +1,46 @@
 # 6. Devices
 
-On the **Devices** page you choose what moves your avatar. The devices you set here are shared by all avatars.
+## Webcam and microphone
+
+<div class="shot" markdown="1">
 
 ![Devices page](img/devices.png)
 
-## Webcam
+- Turn on the **Webcam** switch to start face and hand tracking.
+- Choose the webcam to use from the camera list.
+- **Recenter** — Takes the direction your face is pointing now as straight ahead.
+- **Tracking quality** — When you use it alongside a game, we recommend **Balanced** or **Eco**.
+- Turn on the **Microphone** switch, and the mouth moves when you speak.
+- **Noise gate** — Keeps the mouth still for noise such as keyboard sounds.
+- **Detect background noise** — Click the button while you stay quiet, and the noise level is set automatically.
 
-| Item | What it does |
-|---|---|
-| **Webcam** switch | Turn webcam tracking on / off |
-| Camera list | Choose the camera to use |
-| **Recenter** | Make your current face direction the front |
-| **Tracking quality** | **Smooth** / **Balanced** / **Eco** — use Balanced or Eco alongside a game |
-
-If there is a problem with the camera, the reason is shown on this card (not connected, image too dark, in use by another app, and so on).
-
-## Microphone
-
-| Item | What it does |
-|---|---|
-| **Microphone** switch | Turn the microphone (lip sync) on / off |
-| Microphone list | Choose the microphone to use |
-| **Input** meter | The sound level coming in now |
-| **Noise gate** | Keep background noise from moving the mouth |
-| **Detect background noise** | Measures the noise while you stay quiet and sets the gate automatically |
-| **Noise gate details** | **Auto / Manual**, open and close levels, response time |
+</div>
 
 ## Tracking sources
 
-Choose what moves each body part.
+<div class="shot" markdown="1">
 
-| Item | Options |
-|---|---|
-| **Face engine** | Auto / MediaPipe / OpenSeeFace |
-| **Arms · Hands · Fingers** | MediaPipe / Ultraleap / Off |
-| **Mouth** | Face + mic / Face / Mic / Off |
-| **Advanced** › Face · Head · Eyes | Face / Off |
+![Tracking sources](img/sources.png)
 
-### OpenSeeFace
+- For each part (face, arms, hands, fingers, mouth), choose what moves it.
+- With **Mouth** set to **Face + mic**, the mouth follows your voice while you speak and your mouth shape the rest of the time.
+- **Face app** — Receives your face from an app such as iFacialMocap on iPhone instead of the webcam.
+- **Ultraleap Hand Tracking** — Tracks your hands with a Leap Motion device.
+- **External tracking** — Connects with other apps over OSC · VMC.
 
-Another engine that tracks the face only. It is not included with Avatar Live, so download it yourself, place it **outside the installation folder**, and choose it under **OpenSeeFace folder**.
+</div>
 
-### Face app (VMC · iFacialMocap)
+> 💡 Ultraleap and OSC · VMC are experimental features. We expect them to work properly, but we haven't yet been able to test them with every device and app in the developer's environment.
 
-Receives the face from another app or an iPhone instead of the webcam.
+## Face tracking with an iPhone (iFacialMocap)
 
-| Item | What it does |
-|---|---|
-| **Source** | None / VMC / iFacialMocap |
-| Switch | Start receiving |
-| **Port** / **iPhone address** | Connection details |
-| **Allow devices on my network** | Receive from phones and PCs on the same network |
-| **This PC's addresses** · **Copy** | The address to enter in the iFacialMocap app |
-| **Recenter** | Make your current head direction the front |
+<div class="steps" markdown="1">
 
-## Ultraleap hand tracking
+1. Connect your iPhone and PC to the same Wi-Fi.
+2. In **Face app**, set the source to **iFacialMocap**, then **Copy** the address under **This PC's addresses**.
+3. In the iFacialMocap app on your iPhone, go to the gear › **Destination IP address** and enter that address.
+4. Turn on the switch, and the expressions from your iPhone appear on the avatar.
 
-Tracks arms, hands and fingers with a Leap Motion / Ultraleap device. Install the Ultraleap software, connect the device, then choose **Ultraleap** in the tracking sources.
+</div>
 
-| Item | What it does |
-|---|---|
-| Switch · status | Turn it on; whether the device and hands are visible |
-| **Calibration (where the device is)** | Device position and direction, hand size, smoothing |
-| **Calibrate** | Put your hands on the keyboard and click it to set that spot as the keyboard position |
-
-## External tracking (OSC · VMC)
-
-Connects with other apps on this PC. Off by default.
-
-| Item | What it does |
-|---|---|
-| **OSC input (avatar parameters)** | Change avatar parameters with OSC tools made for VRChat |
-| **VMC input (body and bones from another app)** | Receive the body from another motion app, and choose which **Parts** to receive |
-| **Write the sender's shapes onto the avatar** | Apply the received expressions as they are |
-
-> **Ultraleap and OSC / VMC** are expected to work, but they are **experimental features**: the devices and apps involved have not yet been tested in the developer's environment.
-
-VMC **output** is in [Chapter 9](09-output.md#external-output-vmc).
+> 💡 You can leave the **iPhone address (optional)** field empty. Fill it in only if you don't use Destination IP address in the iFacialMocap app.

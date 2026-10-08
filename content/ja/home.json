@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "title": "AVATAR LIVE — いつものVRChatアバターで、そのまま配信へ",
+    "description": "VRM変換なしで、VRChatアバターをそのまま配信・画面共有・動画制作に使えるWindowsアプリ。元のシェーダー、PhysBone、Expressionメニュー、フェイストラッキングもそのまま。"
+  },
+  "nav": {
+    "overview": "概要",
+    "features": "機能",
+    "how": "使い方",
+    "editions": "エディション",
+    "docs": "ガイド",
+    "get": "購入する",
+    "menu": "メニュー",
+    "theme": "テーマ切り替え",
+    "language": "言語"
+  },
+  "hero": {
+    "eyebrow": "VRChatアバターのための、Windows用VTuberアプリ",
+    "title": ["いつものVRChatアバターで、", "そのまま配信へ。"],
+    "sub": "VRM変換も、複雑な再設定もなしで。\n使い慣れたアバターを、配信や画面共有に活用しましょう。",
+    "primary": "AVATAR LIVEをはじめる",
+    "secondary": "機能を見てみる",
+    "meta": "Windows 10 / 11 · Basic 1,990円から",
+    "caption": "AVATAR LIVEの実際の録画画面"
+  },
+  "works": {
+    "label": "こんなアプリで、すぐに使えます",
+    "items": ["OBS Studio", "Discord", "Zoom", "Microsoft Teams"]
+  },
+  "features": {
+    "kicker": "機能",
+    "title": "VRChatで見ていた、あのアバターのまま。",
+    "sub": "作り直す必要はありません。アバターに込められたものが、そのまま動きます。",
+    "items": [
+      {"title": "VRM変換なしで", "body": "アバタープロジェクトから一度書き出せば完了。アバターを改変しても、書き出し直すだけです。", "media": "img:launcher", "size": "wide"},
+      {"title": "元のシェーダーのまま", "body": "Poiyomi、lilToonなど、アバターに使っているシェーダーをそのまま表示します。", "media": "common:light-spot-light", "size": "tall"},
+      {"title": "PhysBoneもメニューもそのまま", "body": "髪の揺れ、衣装のトグル、表情ボタンまで、VRChatと同じ設定で動きます。", "media": "video:physbone"},
+      {"title": "フェイストラッキング", "body": "Webカメラひとつで、表情や視線、指の動きまで。アバターのVRCFaceTracking設定をそのまま使います。", "media": "video:face"},
+      {"title": "キーボード・マウスに合わせた手の動き", "body": "手が画面に映っていないときも、タイピングやマウスに合わせて手が動きます。入力した文字は記録しません。", "media": "img:motion-desk"},
+      {"title": "配信と画面共有", "body": "OBSには透明背景で、Discordにはゲームとアバターをひとつの画面にして送ります。", "media": "video:share", "size": "wide"}
+    ]
+  },
+  "how": {
+    "kicker": "使い方",
+    "title": "3ステップで十分です。",
+    "steps": [
+      {"title": "Unityプロジェクトを開く", "body": "VRChatにアップロードしていたアバターのUnityプロジェクト（2022.3.22f1）を開きます。"},
+      {"title": "Exporterで書き出す", "body": "Curious Bobby - Avatar Exporterのボタンひとつで、.vavatarファイルを作ります。"},
+      {"title": "AVATAR LIVEで開始", "body": "ファイルを開いてWebカメラをオンにすれば、すぐに動きます。その後は、Unityは必要ありません。"}
+    ],
+    "note": "VRM・.vrcaファイルだけではご利用いただけません。アバターのUnityプロジェクトが必要です。",
+    "link": "書き出しガイドを見る"
+  },
+  "showcase": {
+    "kicker": "見どころ",
+    "title": "配信に必要なものを、ひとまとめに。",
+    "more": "詳しく見る",
+    "rows": [
+      {"title": "アバターを選んで、すぐに開始", "body": "最近使ったアバターを選ぶか、ファイルをドラッグ＆ドロップするだけ。ライティングとカメラは、アバターごとに記憶します。", "points": ["最近のアバター", "ドラッグ＆ドロップで開く", "アバターごとの設定を保存"], "media": "img:avatar-pop", "page": "03-launcher-and-library"},
+      {"title": "Expressionメニューもそのまま", "body": "VRChatで使っていたメニューを、そのまま押せます。よく使う項目は、ボタンやショートカットにしておけます。", "points": ["トグル・ボタン・Radial・Puppet", "ショートカットとクイックアクション", "お気に入り"], "media": "video:menu", "page": "05-avatar-menu"},
+      {"title": "自分の顔に合わせるトラッキング", "body": "案内に従って表情を作ると、自分の顔に合わせて自動で調整されます。", "points": ["自動フェイスセットアップ", "まばたき・視線", "マイクでリップシンク"], "media": "img:facecal", "page": "07-motion"},
+      {"title": "引っ張って、固定して", "body": "髪やしっぽをマウスで引っ張って、好きな形のまま固定できます。", "points": ["マウスでつかむ", "その場でポーズを固定", "マシュマロPB対応"], "media": "common:grab", "page": "04-main-window"},
+      {"title": "OBSや通話アプリへ", "body": "Spout2で透明背景を送り、仮想カメラでDiscord・Zoomに映ります。", "points": ["Spout2で透明背景", "仮想カメラ", "PNGで写真を保存"], "media": "video:background", "page": "09-output"},
+      {"title": "ゲーム＋アバターをDiscordへ", "body": "OBSなしで、ゲーム画面の上にアバターを重ねて共有します。フレンドにはゲームとアバターが、自分にはゲームだけが見えます。", "points": ["OBSなしで", "ゲーム音だけを送る", "位置・サイズは自由に"], "media": "img:share", "page": "09-output"},
+      {"title": "ライティングとカメラ", "body": "プリセットひとつで雰囲気を変えて、背景やエフェクトを加えます。", "points": ["ライティングプリセット10種類", "背景・クロマキー", "ブルーム・被写界深度"], "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool", "page": "08-scene"}
+    ]
+  },
+  "compare": {
+    "kicker": "比較",
+    "title": "変換しないから、そのまま。",
+    "left": "VRM変換方式",
+    "leftNote": "一般的な場合",
+    "right": "AVATAR LIVE",
+    "rows": [
+      {"label": "VRM変換", "left": "必要", "right": "不要"},
+      {"label": "シェーダー", "left": "VRM用に組み直すことが多い", "right": "元のシェーダーのまま"},
+      {"label": "PhysBone", "left": "SpringBoneで設定し直す", "right": "そのまま動作"},
+      {"label": "Expressionメニュー", "left": "作り直しが必要", "right": "そのまま使える"},
+      {"label": "アバターを改変したあと", "left": "変換からやり直し", "right": "書き出し直すだけ"}
+    ],
+    "foot": "対応範囲は、ソフトによって異なる場合があります。"
+  },
+  "editions": {
+    "kicker": "エディション",
+    "title": "必要に合わせて、お選びください。",
+    "sub": "BasicとProは同じプログラムです。入力したライセンスで、エディションが決まります。",
+    "plans": [
+      {"name": "Basic", "price": "1,990円", "for": "個人での利用", "features": ["アバター・トラッキング・メニュー・ライティング・エフェクト", "Spout2・仮想カメラ・画面共有", "マイ表情・自動表情", "フレンドとの非公開のDiscord共有", "最大1080p・ウォーターマーク表示"], "cta": "Basicを購入"},
+      {"name": "Pro", "price": "3,980円", "for": "配信・動画の公開・商用利用", "badge": "おすすめ", "features": ["Basicのすべての機能", "最大4K・ウォーターマークなし", "ポージング", "オブジェクト（テキスト・画像・3Dモデル）", "画面共有のほかのソース"], "cta": "Proを購入"}
+    ],
+    "upgrade": "すでにBasicをお使いなら、BOOTHのアップグレード（1,990円）でProになります。",
+    "note": "価格はBOOTHの表示に準じます。デジタル商品の性質上、購入後の返金は原則として難しいため、ご購入前に必要なものをご確認ください。",
+    "noteLink": "返金ポリシー"
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "よくある質問",
+    "items": [
+      {"q": "VRChatアバターをそのまま使えますか？", "a": "はい。VRChatにアップロードしていたアバターのUnityプロジェクトからExporterで書き出せば、シェーダー・PhysBone・Expressionメニューをそのまま使えます。"},
+      {"q": "Unityプロジェクトは必要ですか？", "a": "アバターファイルを作るときに、一度必要になります（Unity 2022.3.22f1）。作ったあとは、Unityなしで使えます。"},
+      {"q": "VRMファイルだけで使えますか？", "a": "現在は対応していません。VRMの読み込みは、今後対応予定です。"},
+      {"q": "どのシェーダーに対応していますか？", "a": "アバターに使っているシェーダーをそのまま表示し、Poiyomi、lilToonなどの主要なシェーダーで確認済みです。AudioLinkとミラー検出には対応していません。"},
+      {"q": "OBSなしでDiscordの画面共有はできますか？", "a": "はい。画面共有をオンにして、Discordで「Avatar Live Share Output」を選ぶと、ゲームとアバターが一緒に共有されます。"},
+      {"q": "BasicとProの違いは何ですか？", "a": "Basicは個人での利用（フレンドとの非公開のDiscord共有を含む）、Proは配信・動画の公開・商用利用のためのエディションです。Proは4K出力、ウォーターマークなし、ポージング、オブジェクトに対応しています。"},
+      {"q": "Windows以外のOSに対応していますか？", "a": "Windows 10 / 11（64ビット）のみ対応しています。"}
+    ]
+  },
+  "cta": {
+    "title": "わたしのアバター、わたしの世界、わたしの配信。",
+    "sub": "使い慣れたVRChatアバターで、今すぐ始めましょう。",
+    "primary": "AVATAR LIVEを購入する",
+    "secondary": "ガイドを読む"
+  },
+  "footer": {
+    "product": "製品",
+    "docs": "ガイド",
+    "legal": "規約・ポリシー",
+    "links": "リンク"
+  }
+}

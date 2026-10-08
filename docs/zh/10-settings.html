@@ -3,207 +3,71 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>设置 — Avatar Live</title>
-<meta name="description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
-<meta property="og:title" content="设置 — Avatar Live">
-<meta property="og:description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
-<meta property="og:image" content="../assets/brand/og.jpg">
+<title>设置 — AVATAR LIVE</title>
+<meta name="description" content="查看当前版本。">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/10-settings.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/10-settings.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/10-settings.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/10-settings.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/10-settings.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="设置 — AVATAR LIVE">
+<meta property="og:description" content="查看当前版本。">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/10-settings.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="../assets/brand/favicon.png">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
-<header class="top">
-  <button class="burger" aria-label="菜单" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
-  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
-  <div class="top-right">
-    <details class="lang"><summary>🌐 <span>简体中文</span></summary><div class="lang-menu"><a href="../ko/10-settings.html">한국어</a><a href="../en/10-settings.html">English</a><a href="../ja/10-settings.html">日本語</a><a href="../zh/10-settings.html" class="on">简体中文</a></div></details>
-    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
-    <a class="btn primary small" href="https://curiousbobby.booth.pm/">在 BOOTH 购买</a>
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">概览</a><a href="index.html#features">功能</a><a href="index.html#how">使用方法</a><a href="index.html#editions">版本</a><a href="01-getting-started.html" aria-current="page">指南</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="语言"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>简体中文</span></summary><div class="lang-menu" role="menu"><a href="../ko/10-settings.html" lang="ko">한국어</a><a href="../en/10-settings.html" lang="en">English</a><a href="../ja/10-settings.html" lang="ja">日本語</a><a href="../zh/10-settings.html" lang="zh-Hans" aria-current="true">简体中文</a></div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="切换主题" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">购买</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="菜单" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
   </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">概览</a><a href="index.html#features">功能</a><a href="index.html#how">使用方法</a><a href="index.html#editions">版本</a><a href="01-getting-started.html" aria-current="page">指南</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">购买</a></div>
 </header>
-<div class="wrap">
-  <aside class="side"><a class="side-home" href="index.html">首页</a><div class="side-h">指南</div><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html" class="on">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><div class="side-h">条款与政策</div><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></aside>
-  <main class="content">
-    <article><h1 id="10-设置">10. 设置<a class="anchor" href="#10-设置">#</a></h1>
-<figure><a href="../assets/shots/zh/settings.webp" target="_blank" rel="noopener"><img alt="设置页面" src="../assets/shots/zh/settings.webp" loading="lazy"></a><figcaption>设置页面</figcaption></figure>
-<h2 id="常规">常规<a class="anchor" href="#常规">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>启动时打开菜单</strong></td>
-<td>关闭后将不显示 UI 启动</td>
-</tr>
-<tr>
-<td><strong>重置</strong></td>
-<td>将追踪、手、PhysBone 等恢复到初始状态</td>
-</tr>
-<tr>
-<td><strong>全部重置</strong></td>
-<td>连同参数、角色位置、姿势、相机一起恢复到初始状态</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="窗口">窗口<a class="anchor" href="#窗口">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>分辨率</strong></td>
-<td>窗口大小</td>
-</tr>
-<tr>
-<td><strong>全屏（无边框）</strong></td>
-<td>全屏</td>
-</tr>
-<tr>
-<td><strong>窗口置顶</strong></td>
-<td>置于其他窗口之上</td>
-</tr>
-<tr>
-<td><strong>关闭按钮（×）</strong></td>
-<td><strong>最小化到托盘</strong> / <strong>退出</strong></td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="性能">性能<a class="anchor" href="#性能">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>VSync / 帧率上限</strong></td>
-<td>帧率</td>
-</tr>
-<tr>
-<td><strong>抗锯齿</strong></td>
-<td>减少边缘锯齿</td>
-</tr>
-<tr>
-<td><strong>阴影</strong></td>
-<td>灯光投射在角色自身上的阴影（头发、下巴在颈部和胸部的阴影）。关闭可节省 GPU</td>
-</tr>
-<tr>
-<td><strong>当前</strong></td>
-<td>查看当前性能</td>
-</tr>
-<tr>
-<td><strong>在顶部常显</strong></td>
-<td>在顶部显示性能</td>
-</tr>
-<tr>
-<td><strong>优先级、处理器与GPU（高级）</strong></td>
-<td>与游戏、OBS 同时使用时的 CPU 和 GPU 分配</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="启动">启动<a class="anchor" href="#启动">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>启动摄像头追踪 / 启动麦克风</strong></td>
-<td>启动时自动开启</td>
-</tr>
-<tr>
-<td><strong>启动角色</strong></td>
-<td>每次询问 / 上次使用 / 默认角色</td>
-</tr>
-<tr>
-<td><strong>角色文件夹</strong></td>
-<td>在开始界面显示的角色文件夹</td>
-</tr>
-<tr>
-<td><strong>重新启动</strong></td>
-<td>返回开始界面重新启动</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="语言">语言<a class="anchor" href="#语言">#</a></h2>
-<p>English · 한국어 · 日本語 · 简体中文</p>
-<h2 id="界面">界面<a class="anchor" href="#界面">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>主题</strong></td>
-<td>浅色 / 深色</td>
-</tr>
-<tr>
-<td><strong>面板位置</strong></td>
-<td>左侧 / 右侧</td>
-</tr>
-<tr>
-<td><strong>大小</strong></td>
-<td>UI 大小</td>
-</tr>
-<tr>
-<td><strong>快捷工具栏</strong></td>
-<td>工具栏不透明度，重置位置</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="快捷键--快捷操作">快捷键 · 快捷操作<a class="anchor" href="#快捷键--快捷操作">#</a></h2>
-<h3 id="全局全局快捷键">全局（全局快捷键）<a class="anchor" href="#全局全局快捷键">#</a></h3>
-<p>在游戏中或 Avatar Live 位于后台时也能使用的按键。不会阻止其他程序的按键输入。</p>
-<ol>
-<li><strong>+ 添加快捷键</strong></li>
-<li>选择动作：角色菜单 · 手势 · 相机视图 · 已保存的视图 · 追踪重置 · 灯光预设 · PhysBone 重置 · 全部重置</li>
-<li>点击 <strong>设置按键…</strong>，然后按下想要的组合键</li>
-</ol>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html" aria-current="page">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="10-设置">10. 设置<a class="anchor" href="#10-设置" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="常规--窗口--性能">常规 · 窗口 · 性能<a class="anchor" href="#常规--窗口--性能" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="shot">
+<figure><img src="../assets/shots/zh/settings.webp" srcset="../assets/shots/zh/settings-960.webp 960w, ../assets/shots/zh/settings.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="设置页面" loading="lazy" decoding="async"><figcaption>设置页面</figcaption></figure>
 <ul>
-<li>菜单按钮和手势可以选择 <strong>按住时</strong> / <strong>按下切换</strong>。</li>
-<li><strong>F1</strong> 不能单独使用（专用于纯净视图）。</li>
+<li><strong>启动时打开菜单</strong> — 关闭后，将不显示菜单直接启动。</li>
+<li><strong>窗口</strong> — 设定窗口大小、全屏、窗口置顶以及 X 按钮的行为。</li>
+<li><strong>性能</strong> — 设定帧率和画质。调低可减轻电脑负担。</li>
+<li><strong>阴影</strong> — 头发和下巴投在颈部和胸部的阴影。关闭可减轻 GPU 负担。</li>
+<li><strong>语言</strong> — 한국어 · English · 日本語 · 简体中文</li>
+<li><strong>界面</strong> — 更改主题、面板位置和文字大小。</li>
 </ul>
-<h3 id="快捷操作">快捷操作<a class="anchor" href="#快捷操作">#</a></h3>
-<p>以按钮形式放置与全局快捷键相同的动作。请参阅 <a href="05-avatar-menu.html#快捷操作">第 5 章</a>。</p>
-<h2 id="设置文件">设置文件<a class="anchor" href="#设置文件">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>打开文件夹</strong></td>
-<td>打开设置文件夹</td>
-</tr>
-<tr>
-<td><strong>重置应用设置</strong></td>
-<td>将应用设置恢复为初始状态（每个角色的设置和设备设置保留，快捷键和快捷操作会被清除）</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="许可证">许可证<a class="anchor" href="#许可证">#</a></h2>
-<p>显示当前版本和许可证 ID。</p>
+</div>
+<h2 id="快捷键">快捷键<a class="anchor" href="#快捷键" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="shot">
+<figure><img src="../assets/shots/zh/hotkeys.webp" srcset="../assets/shots/zh/hotkeys-960.webp 960w, ../assets/shots/zh/hotkeys.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="快捷键" loading="lazy" decoding="async"><figcaption>快捷键</figcaption></figure>
+<ul>
+<li>点击 <strong>+ 添加快捷键</strong>，然后选择动作和按键。</li>
+<li>在游戏中或 Avatar Live 位于后台时也能使用。</li>
+<li>其他程序的按键输入会照常传递。</li>
+<li>菜单按钮和手势可以选择 <strong>按住时</strong> 或 <strong>按下切换</strong>。</li>
+</ul>
+</div>
+<h2 id="许可证">许可证<a class="anchor" href="#许可证" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>查看当前版本。</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -214,27 +78,19 @@
 <tbody>
 <tr>
 <td><strong>输入其他代码</strong></td>
-<td>切换到其他许可证</td>
+<td>切换到其他许可证。</td>
 </tr>
 <tr>
-<td><strong>升级到 Pro</strong>（Basic 时）</td>
-<td>输入在 BOOTH 购买的升级（Upgrade）即可升级为 Pro</td>
-</tr>
-<tr>
-<td><strong>输入购买的代码</strong>（试用期间）</td>
-<td>用购买的许可证取代试用版</td>
+<td><strong>升级到 Pro</strong></td>
+<td>输入在 BOOTH 购买的升级，切换为 Pro。</td>
 </tr>
 <tr>
 <td><strong>立即确认</strong></td>
-<td>重新确认许可证</td>
-</tr>
-<tr>
-<td><strong>在 BOOTH 购买</strong></td>
-<td>购买 Pro</td>
+<td>重新确认许可证。</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="诊断">诊断<a class="anchor" href="#诊断">#</a></h2>
+<h2 id="诊断--更新">诊断 · 更新<a class="anchor" href="#诊断--更新" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -245,70 +101,30 @@
 <tbody>
 <tr>
 <td><strong>发送错误报告</strong></td>
-<td>发送问题描述和日志（仅在点击时发送）</td>
+<td>出现问题时发送说明和日志。仅在点击时发送。</td>
 </tr>
 <tr>
 <td><strong>打开日志文件夹</strong></td>
-<td>打开日志文件夹</td>
+<td>查看日志文件。</td>
 </tr>
 <tr>
-<td>查看日志</td>
-<td>确认错误和警告</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="关于">关于<a class="anchor" href="#关于">#</a></h2>
-<p>版本和开发者链接。</p>
-<h2 id="更新">更新<a class="anchor" href="#更新">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>立即检查</strong></td>
-<td>检查新版本</td>
-</tr>
-<tr>
-<td><strong>下载</strong></td>
-<td>下载新版本</td>
+<td><strong>立即检查 · 下载</strong></td>
+<td>检查并下载新版本。</td>
 </tr>
 <tr>
 <td><strong>重新启动并安装</strong></td>
-<td>立即安装</td>
-</tr>
-<tr>
-<td><strong>自动检查并下载</strong></td>
-<td>自动下载新版本</td>
-</tr>
-<tr>
-<td><strong>退出时安装</strong></td>
-<td>退出时安装</td>
+<td>立即更新。角色和设置保持不变。</td>
 </tr>
 </tbody>
-</table></div>
-<p>安装失败时会自动恢复到之前的版本。角色和设置保持不变。</p></article>
-    <div class="pager"><a class="prev" href="09-output.html"><span>上一页</span>输出</a><a class="next" href="11-pro-features.html"><span>下一页</span>摆姿势 · 物体 · 表情</a></div>
-    <p class="updated">最后更新: 2026-10-09</p>
-  </main>
-  <nav class="toc"><div class="toc-h">本页内容</div><ul><li class="l2"><a href="#常规">常规</a></li><li class="l2"><a href="#窗口">窗口</a></li><li class="l2"><a href="#性能">性能</a></li><li class="l2"><a href="#启动">启动</a></li><li class="l2"><a href="#语言">语言</a></li><li class="l2"><a href="#界面">界面</a></li><li class="l2"><a href="#快捷键--快捷操作">快捷键 · 快捷操作</a></li><li class="l3"><a href="#全局全局快捷键">全局（全局快捷键）</a></li><li class="l3"><a href="#快捷操作">快捷操作</a></li><li class="l2"><a href="#设置文件">设置文件</a></li><li class="l2"><a href="#许可证">许可证</a></li><li class="l2"><a href="#诊断">诊断</a></li><li class="l2"><a href="#关于">关于</a></li><li class="l2"><a href="#更新">更新</a></li></ul></nav>
+</table></div></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-output.html"><span>上一页</span>输出</a><a class="next" href="11-pro-features.html"><span>下一页</span>摆姿势 · 物体 · 表情</a></nav><p class="updated">最后更新: 2026-10-09</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#常规--窗口--性能">常规 · 窗口 · 性能</a></li><li><a href="#快捷键">快捷键</a></li><li><a href="#许可证">许可证</a></li><li><a href="#诊断--更新">诊断 · 更新</a></li></ul></nav>
 </div>
-<footer class="foot">
-  <div class="foot-in">
-    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
-    <div class="foot-links"><a href="legal-terms.html">Avatar Live 使用条款</a> · <a href="legal-privacy.html">隐私政策</a> · <a href="legal-refund.html">退款政策</a> · <a href="legal-seller.html">卖家信息</a></div>
-    <p>Avatar Live 与 VRChat Inc. 无关联，也未获其认可。VRChat 是 VRChat Inc. 的商标。</p>
-    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>产品</h2><ul><li><a href="index.html#features">功能</a></li><li><a href="index.html#how">使用方法</a></li><li><a href="index.html#editions">版本</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li></ul></div><div class="fcol"><h2>指南</h2><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul></div><div class="fcol"><h2>条款与政策</h2><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></div><div class="fcol"><h2>链接</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
+  <div class="wrap fine"><p>AVATAR LIVE 不是 VRChat Inc. 的官方产品，与 VRChat Inc. 无关联。VRChat 是 VRChat Inc. 的商标。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>
-<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
-<script>
-function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
-(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
-function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
-</script>
 </body>
 </html>

@@ -3,81 +3,85 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Main window — Avatar Live</title>
-<meta name="description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
-<meta property="og:title" content="Main window — Avatar Live">
-<meta property="og:description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
-<meta property="og:image" content="../assets/brand/og.jpg">
+<title>Main window — AVATAR LIVE</title>
+<meta name="description" content="Click the pin at the top right of a panel to pin the panel in place.">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/04-main-window.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/04-main-window.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/04-main-window.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/04-main-window.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/04-main-window.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="Main window — AVATAR LIVE">
+<meta property="og:description" content="Click the pin at the top right of a panel to pin the panel in place.">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/04-main-window.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/site.css">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
-<header class="top">
-  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
-  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
-  <div class="top-right">
-    <details class="lang"><summary>🌐 <span>English</span></summary><div class="lang-menu"><a href="../ko/04-main-window.html">한국어</a><a href="../en/04-main-window.html" class="on">English</a><a href="../ja/04-main-window.html">日本語</a><a href="../zh/04-main-window.html">简体中文</a></div></details>
-    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
-    <a class="btn primary small" href="https://curiousbobby.booth.pm/">Buy on BOOTH</a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">Overview</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#editions">Editions</a><a href="01-getting-started.html" aria-current="page">Guide</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="Language"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>English</span></summary><div class="lang-menu" role="menu"><a href="../ko/04-main-window.html" lang="ko">한국어</a><a href="../en/04-main-window.html" lang="en" aria-current="true">English</a><a href="../ja/04-main-window.html" lang="ja">日本語</a><a href="../zh/04-main-window.html" lang="zh-Hans">简体中文</a></div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle theme" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">Buy</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
   </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">Overview</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#editions">Editions</a><a href="01-getting-started.html" aria-current="page">Guide</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">Buy</a></div>
 </header>
-<div class="wrap">
-  <aside class="side"><a class="side-home" href="index.html">Home</a><div class="side-h">Guide</div><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting an avatar (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html" class="on">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><div class="side-h">Legal</div><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></aside>
-  <main class="content">
-    <article><h1 id="4-main-window">4. Main window<a class="anchor" href="#4-main-window">#</a></h1>
-<figure><a href="../assets/shots/en/main.webp" target="_blank" rel="noopener"><img alt="Main window" src="../assets/shots/en/main.webp" loading="lazy"></a><figcaption>Main window</figcaption></figure>
-<h2 id="left-menu">Left menu<a class="anchor" href="#left-menu">#</a></h2>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html" aria-current="page">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="4-main-window">4. Main window<a class="anchor" href="#4-main-window" aria-hidden="true" tabindex="-1">#</a></h1>
+<figure><img src="../assets/shots/en/main.webp" srcset="../assets/shots/en/main-960.webp 960w, ../assets/shots/en/main.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="Main window" loading="lazy" decoding="async"><figcaption>Main window</figcaption></figure>
+<h2 id="left-menu">Left menu<a class="anchor" href="#left-menu" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th>Menu</th>
 <th>What it does</th>
-<th>Guide</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Logo</td>
-<td><strong>Restart</strong> (to the start screen)</td>
-<td><a href="03-launcher-and-library.html#returning-to-the-start-screen">Chapter 3</a></td>
-</tr>
-<tr>
 <td><strong>Menu</strong></td>
-<td>The avatar's Expressions menu, gestures, Quick Actions</td>
-<td><a href="05-avatar-menu.html">Chapter 5</a></td>
+<td>The avatar's Expressions menu and gestures → <a href="05-avatar-menu.html">Chapter 5</a></td>
 </tr>
 <tr>
 <td><strong>Devices</strong></td>
-<td>Webcam, microphone, tracking sources, external trackers</td>
-<td><a href="06-devices.html">Chapter 6</a></td>
+<td>Webcam, microphone, tracking → <a href="06-devices.html">Chapter 6</a></td>
 </tr>
 <tr>
 <td><strong>Motion</strong></td>
-<td>Face, body, hands and desk</td>
-<td><a href="07-motion.html">Chapter 7</a></td>
+<td>Face, body, hands → <a href="07-motion.html">Chapter 7</a></td>
 </tr>
 <tr>
 <td><strong>Scene</strong></td>
-<td>Background, lighting, effects, posing, objects</td>
-<td><a href="08-scene.html">Chapter 8</a></td>
+<td>Background, lighting, effects → <a href="08-scene.html">Chapter 8</a></td>
 </tr>
 <tr>
 <td><strong>Output</strong></td>
-<td>Spout2, virtual camera, screen share</td>
-<td><a href="09-output.html">Chapter 9</a></td>
+<td>Sending to streaming software, screen share → <a href="09-output.html">Chapter 9</a></td>
 </tr>
 <tr>
 <td><strong>Settings</strong></td>
-<td>Window, performance, language, hotkeys, license, updates</td>
-<td><a href="10-settings.html">Chapter 10</a></td>
+<td>Window, performance, language, hotkeys → <a href="10-settings.html">Chapter 10</a></td>
 </tr>
 </tbody>
 </table></div>
-<p>When an update is available, a green dot appears on <strong>Settings</strong>.</p>
-<p>The <strong>pin</strong> at the top right of the panel keeps the panel open while you click or drag in the scene. Close it with its menu button on the left or <strong>F1</strong>.</p>
-<h2 id="top">Top<a class="anchor" href="#top">#</a></h2>
+<p>Click the <strong>pin</strong> at the top right of a panel to pin the panel in place.</p>
+<h2 id="top">Top<a class="anchor" href="#top" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -87,28 +91,20 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Avatar name</strong> (left)</td>
-<td>Switch or add avatars (<a href="03-launcher-and-library.html#switching-avatars-while-running">Chapter 3</a>)</td>
+<td><strong>Avatar name</strong></td>
+<td>Switches the avatar.</td>
 </tr>
 <tr>
-<td><strong>FPS</strong> (right)</td>
-<td>Current frame rate. Click to change the frame rate</td>
+<td><strong>FPS</strong></td>
+<td>Click it to change the frame rate.</td>
 </tr>
 <tr>
-<td>Status</td>
-<td>The trackers, microphone, outputs and screen share currently in use</td>
-</tr>
-<tr>
-<td><strong>⟲ Reset</strong></td>
-<td>Return tracking, hands, PhysBones and more to their initial state (<a href="05-avatar-menu.html#reset-and-reset-everything">Chapter 5</a>). Right-click for recenter, camera start view or PhysBone reset on their own</td>
-</tr>
-<tr>
-<td>Quick Action buttons</td>
-<td>Buttons you have added (<a href="05-avatar-menu.html#quick-actions">Chapter 5</a>)</td>
+<td><strong>⟲</strong></td>
+<td>If the pose gets stuck or the hair gets tangled, click it to return to the initial state.</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="bottom-toolbar">Bottom toolbar<a class="anchor" href="#bottom-toolbar">#</a></h2>
+<h2 id="bottom-toolbar">Bottom toolbar<a class="anchor" href="#bottom-toolbar" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -118,72 +114,33 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Face / upper body / full body</strong></td>
-<td>Change the camera framing</td>
-</tr>
-<tr>
-<td>Saved views</td>
-<td>Move to a saved camera position (right-click: rename, order, hide, start view, delete)</td>
+<td><strong>Face · Upper body · Full body</strong></td>
+<td>Changes the camera framing.</td>
 </tr>
 <tr>
 <td><strong>+</strong></td>
-<td>Save the current camera as a view</td>
-</tr>
-<tr>
-<td>Quick Action buttons</td>
-<td>Buttons you have added</td>
-</tr>
-<tr>
-<td>View gizmo</td>
-<td>View from the front, side, top and other directions; switch perspective / orthographic</td>
+<td>Saves the current camera position.</td>
 </tr>
 <tr>
 <td><strong>Lock the camera</strong></td>
-<td>Stop the mouse from moving the camera</td>
+<td>Keeps the mouse from moving the camera.</td>
 </tr>
 <tr>
 <td><strong>Camera</strong></td>
-<td>Camera settings (below)</td>
+<td>Opens the camera settings.</td>
 </tr>
 </tbody>
 </table></div>
-<p>You can drag the toolbar to move it, and right-click it to change its opacity.</p>
-<h3 id="camera-settings">Camera settings<a class="anchor" href="#camera-settings">#</a></h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Item</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Save PNG / Open folder</strong></td>
-<td>Save the view as a picture without the UI</td>
-</tr>
-<tr>
-<td><strong>Lock the camera</strong></td>
-<td>Fix the camera in place</td>
-</tr>
-<tr>
-<td><strong>Lens</strong></td>
-<td>Perspective / orthographic, <strong>Field of view</strong>, <strong>View</strong></td>
-</tr>
-<tr>
-<td><strong>Saved views</strong></td>
-<td>Manage the view list, <strong>Save the current camera</strong>, <strong>Start with</strong></td>
-</tr>
-<tr>
-<td><strong>Mouse</strong></td>
-<td>Orbit, pan and zoom speed; invert vertical orbit</td>
-</tr>
-<tr>
-<td><strong>Grab PhysBones with the left mouse button</strong></td>
-<td>Grab hair, tails and so on with the mouse (below)</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="mouse-and-keyboard">Mouse and keyboard<a class="anchor" href="#mouse-and-keyboard">#</a></h2>
+<div class="shot">
+<figure><img src="../assets/shots/en/camera-pop.webp" width="860" height="750" alt="Camera settings" loading="lazy" decoding="async"><figcaption>Camera settings</figcaption></figure>
+<ul>
+<li><strong>Save PNG</strong> — Saves the view as a picture, without the menus.</li>
+<li><strong>Field of view</strong> — Makes the lens wider or narrower.</li>
+<li><strong>Saved views</strong> — Jumps straight to a camera position you've saved.</li>
+<li><strong>Grab PhysBones with the left mouse button</strong> — Lets you grab hair or tails with the mouse.</li>
+</ul>
+</div>
+<h2 id="mouse-and-keyboard">Mouse and keyboard<a class="anchor" href="#mouse-and-keyboard" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -197,164 +154,41 @@
 <td>Orbit the camera</td>
 </tr>
 <tr>
-<td>Wheel drag / Shift + right drag</td>
+<td>Wheel drag</td>
 <td>Pan the camera</td>
 </tr>
 <tr>
 <td>Wheel</td>
-<td>Zoom</td>
+<td>Zoom in · out</td>
 </tr>
-<tr>
-<td>Double-click an empty area</td>
-<td>Fit the whole avatar in view again</td>
-</tr>
-</tbody>
-</table></div>
-<p>These keys work while the Avatar Live window is in front. Keys that also work in games are set separately as <a href="10-settings.html#hotkeys--quick-actions">global hotkeys</a>.</p>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Key</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td><strong>F1</strong></td>
-<td>Clean view (hide / show the UI)</td>
+<td>Hide / show the menus</td>
 </tr>
 <tr>
 <td><strong>Ctrl + 1 / 2 / 3</strong></td>
 <td>Face / upper body / full body</td>
 </tr>
 <tr>
-<td><strong>Ctrl + 4 … 9</strong></td>
-<td>Saved views</td>
-</tr>
-<tr>
-<td><strong>F</strong></td>
-<td>Set the orbit center to the avatar</td>
-</tr>
-<tr>
-<td><strong>Ctrl + = / −</strong></td>
-<td>UI size</td>
-</tr>
-<tr>
-<td><strong>Alt + Enter</strong></td>
-<td>Fullscreen / window</td>
-</tr>
-<tr>
-<td><strong>Esc</strong></td>
-<td>Close menus, leave fullscreen</td>
-</tr>
-<tr>
-<td><strong>Ctrl + Z / Ctrl + Y</strong></td>
-<td>Undo / redo avatar and object placement</td>
+<td><strong>Ctrl + Z</strong></td>
+<td>Undo moving the avatar</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="clean-view">Clean view<a class="anchor" href="#clean-view">#</a></h2>
-<p>Press <strong>F1</strong> to hide all UI, leaving only the background and avatar. Tracking and output continue. Press <strong>F1</strong> again to bring it back.</p>
-<h2 id="scene-tools-left-icons">Scene tools (left icons)<a class="anchor" href="#scene-tools-left-icons">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Tool</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Camera</strong></td>
-<td>Default mode</td>
-</tr>
-<tr>
-<td><strong>Move / Rotate / Scale</strong></td>
-<td>Change the avatar's position, direction and size in the view (right-click: reset only that value)</td>
-</tr>
-<tr>
-<td><strong>Posing</strong> (Pro)</td>
-<td>Pick bones to create a pose (<a href="11-pro-features.html#posing">Chapter 11</a>)</td>
-</tr>
-<tr>
-<td><strong>⌂</strong></td>
-<td>Move the avatar to the center</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="grabbing-physbones">Grabbing PhysBones<a class="anchor" href="#grabbing-physbones">#</a></h2>
-<p>You can grab swinging parts such as hair, ears and tails in the view with the mouse.</p>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Input</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Left drag</td>
-<td>Pull</td>
-</tr>
-<tr>
-<td>Wheel while holding</td>
-<td>Nearer / farther</td>
-</tr>
-<tr>
-<td>Right-click while holding</td>
-<td><strong>Pose</strong> the bone in place</td>
-</tr>
-<tr>
-<td><strong>Release posed bones</strong></td>
-<td>Free the bones you posed</td>
-</tr>
-</tbody>
-</table></div>
-<p>A posed part stays posed until you grab that same part again.</p>
-<p>Only parts whose PhysBone settings on the avatar allow grabbing can be grabbed.</p>
-<h2 id="window-and-tray">Window and tray<a class="anchor" href="#window-and-tray">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Action</th>
-<th>Result</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Window <strong>X</strong></td>
-<td>Hide to the tray (the avatar and outputs keep running)</td>
-</tr>
-<tr>
-<td>Double-click the tray icon</td>
-<td>Open again</td>
-</tr>
-<tr>
-<td>Right-click the tray icon</td>
-<td><strong>Open Avatar Live</strong> / <strong>Open in clean view</strong> / <strong>Quit</strong></td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="screen-size-and-theme">Screen size and theme<a class="anchor" href="#screen-size-and-theme">#</a></h2>
-<p>Change the UI size, light / dark theme and panel position in <a href="10-settings.html#ui">Settings › UI</a>.</p></article>
-    <div class="pager"><a class="prev" href="03-launcher-and-library.html"><span>Previous</span>Start screen and avatar library</a><a class="next" href="05-avatar-menu.html"><span>Next</span>Avatar menu</a></div>
-    <p class="updated">Last updated: 2026-10-09</p>
-  </main>
-  <nav class="toc"><div class="toc-h">On this page</div><ul><li class="l2"><a href="#left-menu">Left menu</a></li><li class="l2"><a href="#top">Top</a></li><li class="l2"><a href="#bottom-toolbar">Bottom toolbar</a></li><li class="l3"><a href="#camera-settings">Camera settings</a></li><li class="l2"><a href="#mouse-and-keyboard">Mouse and keyboard</a></li><li class="l2"><a href="#clean-view">Clean view</a></li><li class="l2"><a href="#scene-tools-left-icons">Scene tools (left icons)</a></li><li class="l2"><a href="#grabbing-physbones">Grabbing PhysBones</a></li><li class="l2"><a href="#window-and-tray">Window and tray</a></li><li class="l2"><a href="#screen-size-and-theme">Screen size and theme</a></li></ul></nav>
+<h2 id="grabbing-physbones">Grabbing PhysBones<a class="anchor" href="#grabbing-physbones" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>In the view, <strong>left-drag</strong> hair, ears or a tail to pull it. <strong>Right-click</strong> while holding to keep it in that shape, and grab the same part again to release it.</p>
+<h2 id="moving-the-avatar">Moving the avatar<a class="anchor" href="#moving-the-avatar" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Use the <strong>Move · Rotate · Scale</strong> tools on the left of the view to move or turn the avatar. Click <strong>⌂</strong> to bring it back to the center.</p>
+<h2 id="window-and-tray">Window and tray<a class="anchor" href="#window-and-tray" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Clicking the window's <strong>X</strong> sends it to the tray, and tracking and output keep running. Double-click the tray icon to open it again.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="03-launcher-and-library.html"><span>Previous</span>Start screen and avatar library</a><a class="next" href="05-avatar-menu.html"><span>Next</span>Avatar menu</a></nav><p class="updated">Last updated: 2026-10-09</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#left-menu">Left menu</a></li><li><a href="#top">Top</a></li><li><a href="#bottom-toolbar">Bottom toolbar</a></li><li><a href="#mouse-and-keyboard">Mouse and keyboard</a></li><li><a href="#grabbing-physbones">Grabbing PhysBones</a></li><li><a href="#moving-the-avatar">Moving the avatar</a></li><li><a href="#window-and-tray">Window and tray</a></li></ul></nav>
 </div>
-<footer class="foot">
-  <div class="foot-in">
-    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
-    <div class="foot-links"><a href="legal-terms.html">Avatar Live Terms of Use</a> · <a href="legal-privacy.html">Privacy Policy</a> · <a href="legal-refund.html">Refund Policy</a> · <a href="legal-seller.html">Seller Information</a></div>
-    <p>Avatar Live is not affiliated with or endorsed by VRChat Inc. VRChat is a trademark of VRChat Inc.</p>
-    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
+  <div class="wrap fine"><p>AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>
-<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
-<script>
-function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
-(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
-function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
-</script>
 </body>
 </html>

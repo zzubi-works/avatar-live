@@ -3,40 +3,55 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>문제 해결 — Avatar Live</title>
-<meta name="description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
-<meta property="og:title" content="문제 해결 — Avatar Live">
-<meta property="og:description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
-<meta property="og:image" content="../assets/brand/og.jpg">
+<title>문제 해결 — AVATAR LIVE</title>
+<meta name="description" content="해결되지 않을 때는 설정 › 진단 › 오류 리포트 보내기로 알려 주세요.">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ko/12-troubleshooting.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/12-troubleshooting.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/12-troubleshooting.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/12-troubleshooting.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="문제 해결 — AVATAR LIVE">
+<meta property="og:description" content="해결되지 않을 때는 설정 › 진단 › 오류 리포트 보내기로 알려 주세요.">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ko/12-troubleshooting.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ko.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/site.css">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
-<header class="top">
-  <button class="burger" aria-label="메뉴" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
-  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
-  <div class="top-right">
-    <details class="lang"><summary>🌐 <span>한국어</span></summary><div class="lang-menu"><a href="../ko/12-troubleshooting.html" class="on">한국어</a><a href="../en/12-troubleshooting.html">English</a><a href="../ja/12-troubleshooting.html">日本語</a><a href="../zh/12-troubleshooting.html">简体中文</a></div></details>
-    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
-    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTH에서 구매</a>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">개요</a><a href="index.html#features">기능</a><a href="index.html#how">사용 방법</a><a href="index.html#editions">에디션</a><a href="01-getting-started.html" aria-current="page">가이드</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="언어"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>한국어</span></summary><div class="lang-menu" role="menu"><a href="../ko/12-troubleshooting.html" lang="ko" aria-current="true">한국어</a><a href="../en/12-troubleshooting.html" lang="en">English</a><a href="../ja/12-troubleshooting.html" lang="ja">日本語</a><a href="../zh/12-troubleshooting.html" lang="zh-Hans">简体中文</a></div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="테마 전환" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">구매하기</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="메뉴" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
   </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">개요</a><a href="index.html#features">기능</a><a href="index.html#how">사용 방법</a><a href="index.html#editions">에디션</a><a href="01-getting-started.html" aria-current="page">가이드</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">구매하기</a></div>
 </header>
-<div class="wrap">
-  <aside class="side"><a class="side-home" href="index.html">홈</a><div class="side-h">가이드</div><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기 (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html" class="on">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><div class="side-h">약관 · 정책</div><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></aside>
-  <main class="content">
-    <article><h1 id="12-문제-해결">12. 문제 해결<a class="anchor" href="#12-문제-해결">#</a></h1>
-<blockquote>
-<p>먼저 <strong>설정 › 진단</strong>을 확인하고, 해결되지 않으면 <strong>오류 리포트 보내기</strong>로 알려 주세요.
-장치 문제로 시작이 안 되면 <strong>Shift를 누른 채 실행</strong>(안전 시작)해 보세요.</p>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>가이드 목차</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html" aria-current="page">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="12-문제-해결">12. 문제 해결<a class="anchor" href="#12-문제-해결" aria-hidden="true" tabindex="-1">#</a></h1>
+<blockquote class="callout tip"><p>해결되지 않을 때는 <strong>설정 › 진단 › 오류 리포트 보내기</strong>로 알려 주세요.</p>
 </blockquote>
-<h2 id="시작설치">시작·설치<a class="anchor" href="#시작설치">#</a></h2>
+<h2 id="시작--설치">시작 · 설치<a class="anchor" href="#시작--설치" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th>증상</th>
-<th>해결</th>
+<th>해결 방법</th>
 </tr>
 </thead>
 <tbody>
@@ -46,73 +61,57 @@
 </tr>
 <tr>
 <td>"Avatar Live 파일이 변경되었습니다"</td>
-<td>BOOTH에서 받은 원본으로 다시 설치 (아바타·설정은 그대로)</td>
+<td>BOOTH에서 받은 원본으로 다시 설치해 주세요. 아바타와 설정은 그대로입니다.</td>
 </tr>
 <tr>
-<td>활성화가 안 됨</td>
-<td>인터넷 연결 확인 후 다시 시도</td>
-</tr>
-<tr>
-<td>실행하면 창만 앞으로 옴</td>
-<td>이미 실행 중입니다 (트레이 확인)</td>
+<td>시작이 잘 안 됨</td>
+<td><strong>Shift</strong>를 누른 채 실행해서 안전 시작</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="아바타">아바타<a class="anchor" href="#아바타">#</a></h2>
+<h2 id="아바타">아바타<a class="anchor" href="#아바타" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th>증상</th>
-<th>해결</th>
+<th>해결 방법</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>일부가 분홍색</td>
-<td>업로드가 정상인지 확인 후 다시 내보내기</td>
+<td>일부가 분홍색으로 보임</td>
+<td>VRChat 업로드가 정상인지 확인한 뒤 다시 내보내기</td>
 </tr>
 <tr>
-<td>"더 새로운 익스포터로 만든 파일입니다"</td>
-<td>Avatar Live 업데이트</td>
+<td>아바타가 보이지 않음</td>
+<td>뷰의 빈 곳을 더블클릭</td>
 </tr>
 <tr>
-<td>머리·손이 안 움직임</td>
-<td>휴머노이드 아바타인지 확인</td>
+<td>자세가 굳거나 머리카락이 엉킴</td>
+<td>위쪽 <strong>⟲</strong></td>
 </tr>
 <tr>
-<td>아바타 효과음이 안 남</td>
-<td>아바타 효과음은 재생되지 않습니다</td>
-</tr>
-<tr>
-<td>아바타가 안 보임</td>
-<td>뷰 빈 곳 더블클릭, 또는 씬 도구 <strong>⌂</strong></td>
-</tr>
-<tr>
-<td>자세가 굳음, 머리카락이 엉킴</td>
-<td>위쪽 <strong>⟲ 초기화</strong></td>
+<td>아바타 효과음이 들리지 않음</td>
+<td>아바타 효과음은 재생되지 않습니다.</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="웹캠얼굴">웹캠·얼굴<a class="anchor" href="#웹캠얼굴">#</a></h2>
+<h2 id="웹캠--얼굴">웹캠 · 얼굴<a class="anchor" href="#웹캠--얼굴" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th>증상</th>
-<th>해결</th>
+<th>해결 방법</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>카메라 "실패"</td>
-<td>다른 앱이 카메라를 쓰는지 확인</td>
+<td>카메라가 켜지지 않음</td>
+<td>다른 앱이 카메라를 쓰고 있는지 확인</td>
 </tr>
 <tr>
-<td>카메라 화면이 검음</td>
-<td>렌즈 덮개, Windows 카메라 개인정보 설정 확인</td>
-</tr>
-<tr>
-<td>표정이 작게/크게 나옴</td>
-<td><strong>자동 얼굴 설정</strong> 다시 하기, <strong>얼굴 조정</strong></td>
+<td>표정이 작거나 크게 나옴</td>
+<td><strong>자동 얼굴 설정</strong>을 다시 하거나 <strong>얼굴 조정</strong></td>
 </tr>
 <tr>
 <td>아바타가 옆을 봄</td>
@@ -120,24 +119,20 @@
 </tr>
 <tr>
 <td>윙크가 안 됨</td>
-<td>깜빡임 방식 <strong>따로</strong> 또는 <strong>스마트</strong></td>
+<td>깜빡임 방식을 <strong>따로</strong>로</td>
 </tr>
 <tr>
-<td>좌우가 반대</td>
-<td><strong>미러</strong></td>
-</tr>
-<tr>
-<td>CPU를 많이 씀</td>
-<td>트래킹 품질 <strong>균형</strong> 또는 <strong>절약</strong></td>
+<td>PC가 무거움</td>
+<td>트래킹 품질을 <strong>균형</strong>이나 <strong>절약</strong>으로</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="마이크">마이크<a class="anchor" href="#마이크">#</a></h2>
+<h2 id="마이크">마이크<a class="anchor" href="#마이크" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th>증상</th>
-<th>해결</th>
+<th>해결 방법</th>
 </tr>
 </thead>
 <tbody>
@@ -146,25 +141,21 @@
 <td>Windows 설정 › 개인정보 › 마이크에서 데스크톱 앱 허용</td>
 </tr>
 <tr>
-<td>"거의 무음"</td>
-<td>믹서 앱을 쓴다면 그 앱의 가상 마이크 선택</td>
-</tr>
-<tr>
-<td>소음에 입이 움직임</td>
+<td>잡음에 입이 움직임</td>
 <td><strong>배경 소음 측정</strong></td>
 </tr>
 <tr>
 <td>입이 덜 움직임</td>
-<td><strong>음성 보정</strong>, <strong>감도</strong></td>
+<td><strong>음성 보정</strong></td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="출력">출력<a class="anchor" href="#출력">#</a></h2>
+<h2 id="출력--화면-공유">출력 · 화면 공유<a class="anchor" href="#출력--화면-공유" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th>증상</th>
-<th>해결</th>
+<th>해결 방법</th>
 </tr>
 </thead>
 <tbody>
@@ -173,55 +164,24 @@
 <td>OBS에 Spout2 플러그인 설치</td>
 </tr>
 <tr>
-<td>OBS에서 배경이 검음</td>
-<td>배경 <strong>투명</strong> + OBS <strong>Composite with alpha</strong></td>
+<td>OBS에서 배경이 검게 보임</td>
+<td>배경을 <strong>투명</strong>으로, OBS에서 <strong>Composite with alpha</strong> 선택</td>
 </tr>
 <tr>
-<td>가상 카메라가 Discord에 없음</td>
-<td>가상 카메라 설치 후 Discord 완전히 껐다 켜기</td>
+<td>Discord 목록에 없음</td>
+<td><strong>화면 공유</strong>를 켠 뒤 <strong>애플리케이션</strong> 탭 확인</td>
 </tr>
 <tr>
-<td>4K가 1080p로 나감</td>
-<td>Basic 에디션입니다 (Pro는 4K)</td>
+<td>게임이 검게 보임</td>
+<td>게임을 창 모드로</td>
 </tr>
 <tr>
 <td>"Avatar Live Basic" 글씨</td>
-<td>Basic 워터마크 (Pro는 없음)</td>
+<td>Basic 워터마크입니다. Pro에서는 표시되지 않습니다.</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="discord-화면-공유">Discord 화면 공유<a class="anchor" href="#discord-화면-공유">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>증상</th>
-<th>해결</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Discord 목록에 없음</td>
-<td><strong>화면 공유</strong>를 켜고 Discord <strong>애플리케이션</strong> 탭 확인</td>
-</tr>
-<tr>
-<td>검은 화면</td>
-<td>Avatar Live를 관리자 권한 없이 실행, 게임을 창 모드로</td>
-</tr>
-<tr>
-<td>소리가 안 감</td>
-<td>Discord에서 소리 켜기, 가상 재생 장치 설치</td>
-</tr>
-<tr>
-<td>소리가 두 번 들림</td>
-<td><strong>Discord 오디오 장치</strong>를 듣지 않는 장치로</td>
-</tr>
-<tr>
-<td>영상이 검음</td>
-<td>보호된 영상(DRM)은 캡처되지 않습니다</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="지원-범위">지원 범위<a class="anchor" href="#지원-범위">#</a></h2>
+<h2 id="지원-범위">지원 범위<a class="anchor" href="#지원-범위" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -231,12 +191,12 @@
 </thead>
 <tbody>
 <tr>
-<td>✅ VRChat 아바타 기능</td>
-<td>Expression 메뉴·파라미터, FX 등 애니메이터, PhysBone, Contact, Constraint, Eye Look, LipSync</td>
+<td>✅ VRChat 아바타</td>
+<td>Expression 메뉴, 애니메이터, PhysBone, Contact, Constraint, Eye Look, LipSync</td>
 </tr>
 <tr>
 <td>✅ 제작 도구</td>
-<td>NDMF · Modular Avatar · VRCFury 등을 쓴 아바타</td>
+<td>NDMF · Modular Avatar · VRCFury를 쓴 아바타</td>
 </tr>
 <tr>
 <td>✅ 셰이더</td>
@@ -247,58 +207,46 @@
 <td>VRCFaceTracking, ARKit(Perfect Sync), MMD 눈 모프</td>
 </tr>
 <tr>
-<td>⚠️ 동작 안 함</td>
-<td>아바타 효과음, AudioLink, 미러·카메라 감지, Light Volumes, 사용자 스크립트</td>
-</tr>
-<tr>
 <td>🧪 실험적 기능</td>
-<td>Ultraleap, OSC·VMC, 혀·볼 카메라 감지 — 정상 동작을 예상하지만 해당 장치·앱이 개발자 환경에서 아직 테스트되지 않았습니다</td>
+<td>Ultraleap, OSC · VMC, 혀 · 볼 카메라 감지</td>
 </tr>
 <tr>
-<td>❌ 미지원</td>
-<td>VRM 파일, Live2D, macOS·Linux</td>
+<td>⚠️ 지원하지 않음</td>
+<td>아바타 효과음, AudioLink, 미러 감지, VRM 파일, Live2D, macOS · Linux</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="추가-지원-예정">추가 지원 예정<a class="anchor" href="#추가-지원-예정">#</a></h2>
+<p>실험적 기능은 정상적으로 동작할 것으로 예상하지만, 아직 개발자 환경에서 모든 장치와 앱으로 테스트하지는 못했습니다.</p>
+<h2 id="추가-지원-예정">추가 지원 예정<a class="anchor" href="#추가-지원-예정" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>VRM 모델(.vrm, VRM 0.x / 1.0) 불러오기와 .vrma 애니메이션 재생</li>
-<li>퍼펙트 싱크 강화: 쉐이프키를 직접 연결하는 매핑, 웹캠·iPhone별 얼굴 보정</li>
+<li>퍼펙트 싱크 강화: 쉐이프키를 직접 연결하는 매핑, 웹캠 · iPhone별 얼굴 보정, 52개 표정을 하나씩 확인하는 도구</li>
+<li>표정 단축키: 내 표정 · 표정 클립 · 저장한 자세에 단축키 (Stream Deck 키 입력으로도), 고른 표정 고정</li>
 <li>휴대폰 얼굴 앱 추가: VTube Studio(iPhone), MeowFace(Android)</li>
-<li>전신 트래킹 앱 연동 강화(VMC): 얼굴 앱과 몸 앱 동시 수신, 앉기·숙이기 반영 — TDPT, XR Animator 등</li>
+<li>OBS 게임 캡처로 투명 배경 (플러그인 없이)</li>
+<li>웹캠 상체: 어깨 움직임으로 상체 비틀기 · 기울기</li>
+<li>전신 트래킹 앱 연동 강화(VMC): 얼굴 앱과 몸 앱 동시 수신, 앉기 · 숙이기 반영 — TDPT, XR Animator 등</li>
 <li>데스크톱 마스코트 모드(투명 창), 마우스 커서 시선</li>
 <li>편의 기능: 아바타를 다시 내보내면 자동 새로고침, 할 일이 없을 때 FPS 절약</li>
 </ul>
 <p>※ 예정 기능과 시기는 변경될 수 있습니다.</p>
-<h2 id="자주-묻는-질문">자주 묻는 질문<a class="anchor" href="#자주-묻는-질문">#</a></h2>
-<p><strong>Q. VRChat 계정이 필요한가요?</strong>
-아니요. Avatar Live는 VRChat과 통신하지 않습니다.</p>
-<p><strong>Q. 방송에 써도 되나요?</strong>
-방송·영상 공개·상업적 이용에는 <strong>Pro</strong>가 필요합니다.</p>
-<p><strong>Q. 키보드 입력이 기록되나요?</strong>
-아니요. 책상 손 동작은 입력한 글자를 저장·기록·전송하지 않습니다.</p>
-<p><strong>Q. 아바타 파일을 다른 사람에게 줘도 되나요?</strong>
-아바타·의상 제작자의 이용 약관을 따르세요.</p>
-<p><strong>Q. 아바타를 여러 개 동시에 띄울 수 있나요?</strong>
-한 번에 하나입니다. 왼쪽 위 아바타 이름에서 바꿉니다.</p></article>
-    <div class="pager"><a class="prev" href="11-pro-features.html"><span>이전</span>포징 · 오브젝트 · 표정</a><a class="next" href="13-license.html"><span>다음</span>에디션 · 라이선스 · 고지</a></div>
-    <p class="updated">최종 업데이트: 2026-10-09</p>
-  </main>
-  <nav class="toc"><div class="toc-h">이 페이지</div><ul><li class="l2"><a href="#시작설치">시작·설치</a></li><li class="l2"><a href="#아바타">아바타</a></li><li class="l2"><a href="#웹캠얼굴">웹캠·얼굴</a></li><li class="l2"><a href="#마이크">마이크</a></li><li class="l2"><a href="#출력">출력</a></li><li class="l2"><a href="#discord-화면-공유">Discord 화면 공유</a></li><li class="l2"><a href="#지원-범위">지원 범위</a></li><li class="l2"><a href="#추가-지원-예정">추가 지원 예정</a></li><li class="l2"><a href="#자주-묻는-질문">자주 묻는 질문</a></li></ul></nav>
+<h2 id="자주-묻는-질문">자주 묻는 질문<a class="anchor" href="#자주-묻는-질문" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>VRChat 계정이 필요한가요?</strong>
+필요하지 않습니다. Avatar Live는 VRChat과 통신하지 않습니다.</p>
+<p><strong>방송에 써도 되나요?</strong>
+방송, 영상 공개, 상업적 이용에는 <strong>Pro</strong>를 이용해 주세요. 친구와의 비공개 Discord 공유는 Basic으로도 할 수 있습니다.</p>
+<p><strong>키보드 입력이 기록되나요?</strong>
+기록되지 않습니다. 책상 손 동작은 입력한 글자를 저장하거나 전송하지 않습니다.</p>
+<p><strong>아바타 파일을 다른 사람에게 줘도 되나요?</strong>
+아바타와 의상 제작자의 이용 약관을 따라 주세요.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="11-pro-features.html"><span>이전</span>포징 · 오브젝트 · 표정</a><a class="next" href="13-license.html"><span>다음</span>에디션 · 라이선스 · 고지</a></nav><p class="updated">최종 업데이트: 2026-10-09</p></main>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#시작--설치">시작 · 설치</a></li><li><a href="#아바타">아바타</a></li><li><a href="#웹캠--얼굴">웹캠 · 얼굴</a></li><li><a href="#마이크">마이크</a></li><li><a href="#출력--화면-공유">출력 · 화면 공유</a></li><li><a href="#지원-범위">지원 범위</a></li><li><a href="#추가-지원-예정">추가 지원 예정</a></li><li><a href="#자주-묻는-질문">자주 묻는 질문</a></li></ul></nav>
 </div>
-<footer class="foot">
-  <div class="foot-in">
-    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
-    <div class="foot-links"><a href="legal-terms.html">Avatar Live 이용약관</a> · <a href="legal-privacy.html">개인정보처리방침</a> · <a href="legal-refund.html">환불 정책</a> · <a href="legal-seller.html">판매자 정보</a></div>
-    <p>Avatar Live는 VRChat Inc.와 제휴하거나 승인받은 제품이 아닙니다. VRChat은 VRChat Inc.의 상표입니다.</p>
-    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>제품</h2><ul><li><a href="index.html#features">기능</a></li><li><a href="index.html#how">사용 방법</a></li><li><a href="index.html#editions">에디션</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li></ul></div><div class="fcol"><h2>가이드</h2><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul></div><div class="fcol"><h2>약관 · 정책</h2><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></div><div class="fcol"><h2>링크</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
+  <div class="wrap fine"><p>AVATAR LIVE는 VRChat Inc.의 공식 제품이 아니며, VRChat Inc.와 제휴 관계가 없습니다. VRChat은 VRChat Inc.의 상표입니다.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>
-<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
-<script>
-function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
-(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
-function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
-</script>
 </body>
 </html>

@@ -3,35 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>故障排除 — Avatar Live</title>
-<meta name="description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
-<meta property="og:title" content="故障排除 — Avatar Live">
-<meta property="og:description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
-<meta property="og:image" content="../assets/brand/og.jpg">
+<title>故障排除 — AVATAR LIVE</title>
+<meta name="description" content="如果问题仍未解决，请通过 设置 › 诊断 › 发送错误报告 告诉我们。">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/12-troubleshooting.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/12-troubleshooting.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/12-troubleshooting.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="故障排除 — AVATAR LIVE">
+<meta property="og:description" content="如果问题仍未解决，请通过 设置 › 诊断 › 发送错误报告 告诉我们。">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="../assets/brand/favicon.png">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
-<header class="top">
-  <button class="burger" aria-label="菜单" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
-  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
-  <div class="top-right">
-    <details class="lang"><summary>🌐 <span>简体中文</span></summary><div class="lang-menu"><a href="../ko/12-troubleshooting.html">한국어</a><a href="../en/12-troubleshooting.html">English</a><a href="../ja/12-troubleshooting.html">日本語</a><a href="../zh/12-troubleshooting.html" class="on">简体中文</a></div></details>
-    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
-    <a class="btn primary small" href="https://curiousbobby.booth.pm/">在 BOOTH 购买</a>
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">概览</a><a href="index.html#features">功能</a><a href="index.html#how">使用方法</a><a href="index.html#editions">版本</a><a href="01-getting-started.html" aria-current="page">指南</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="语言"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>简体中文</span></summary><div class="lang-menu" role="menu"><a href="../ko/12-troubleshooting.html" lang="ko">한국어</a><a href="../en/12-troubleshooting.html" lang="en">English</a><a href="../ja/12-troubleshooting.html" lang="ja">日本語</a><a href="../zh/12-troubleshooting.html" lang="zh-Hans" aria-current="true">简体中文</a></div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="切换主题" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">购买</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="菜单" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
   </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">概览</a><a href="index.html#features">功能</a><a href="index.html#how">使用方法</a><a href="index.html#editions">版本</a><a href="01-getting-started.html" aria-current="page">指南</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">购买</a></div>
 </header>
-<div class="wrap">
-  <aside class="side"><a class="side-home" href="index.html">首页</a><div class="side-h">指南</div><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html" class="on">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><div class="side-h">条款与政策</div><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></aside>
-  <main class="content">
-    <article><h1 id="12-故障排除">12. 故障排除<a class="anchor" href="#12-故障排除">#</a></h1>
-<blockquote>
-<p>请先查看 <strong>设置 › 诊断</strong>，如果仍未解决，请通过 <strong>发送错误报告</strong> 告知我们。
-如果因设备问题无法启动，请尝试 <strong>按住 Shift 运行</strong>（安全启动）。</p>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html" aria-current="page">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="12-故障排除">12. 故障排除<a class="anchor" href="#12-故障排除" aria-hidden="true" tabindex="-1">#</a></h1>
+<blockquote class="callout tip"><p>如果问题仍未解决，请通过 <strong>设置 › 诊断 › 发送错误报告</strong> 告诉我们。</p>
 </blockquote>
-<h2 id="启动与安装">启动与安装<a class="anchor" href="#启动与安装">#</a></h2>
+<h2 id="启动--安装">启动 · 安装<a class="anchor" href="#启动--安装" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -46,19 +61,15 @@
 </tr>
 <tr>
 <td>“Avatar Live 的文件已被更改”</td>
-<td>使用从 BOOTH 下载的原始文件重新安装（角色和设置会保留）</td>
+<td>请使用从 BOOTH 下载的原始文件重新安装。角色和设置会保留。</td>
 </tr>
 <tr>
-<td>无法激活</td>
-<td>确认网络连接后重试</td>
-</tr>
-<tr>
-<td>运行后只有窗口被调到前台</td>
-<td>程序已在运行（请查看托盘）</td>
+<td>无法正常启动</td>
+<td>按住 <strong>Shift</strong> 运行，进行安全启动</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="角色">角色<a class="anchor" href="#角色">#</a></h2>
+<h2 id="角色">角色<a class="anchor" href="#角色" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -69,31 +80,23 @@
 <tbody>
 <tr>
 <td>部分显示为粉色</td>
-<td>确认能否正常上传后重新导出</td>
-</tr>
-<tr>
-<td>“它由更新版本的导出器制作”</td>
-<td>更新 Avatar Live</td>
-</tr>
-<tr>
-<td>头和手不动</td>
-<td>确认是否为人形（Humanoid）角色</td>
-</tr>
-<tr>
-<td>角色音效不响</td>
-<td>不会播放角色音效</td>
+<td>确认能否正常上传到 VRChat 后重新导出</td>
 </tr>
 <tr>
 <td>看不到角色</td>
-<td>双击视图空白处，或点击场景工具 <strong>⌂</strong></td>
+<td>双击视图中的空白处</td>
 </tr>
 <tr>
-<td>姿势僵住、头发缠在一起</td>
-<td>顶部 <strong>⟲ 重置</strong></td>
+<td>姿势僵住或头发缠在一起</td>
+<td>顶部的 <strong>⟲</strong></td>
+</tr>
+<tr>
+<td>听不到角色音效</td>
+<td>不会播放角色音效。</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="摄像头与面部">摄像头与面部<a class="anchor" href="#摄像头与面部">#</a></h2>
+<h2 id="摄像头--面部">摄像头 · 面部<a class="anchor" href="#摄像头--面部" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -103,16 +106,12 @@
 </thead>
 <tbody>
 <tr>
-<td>摄像头“失败”</td>
+<td>摄像头无法开启</td>
 <td>确认是否有其他应用正在使用摄像头</td>
 </tr>
 <tr>
-<td>摄像头画面全黑</td>
-<td>确认镜头盖和 Windows 摄像头隐私设置</td>
-</tr>
-<tr>
-<td>表情过小 / 过大</td>
-<td>重新进行 <strong>自动面部设置</strong>，使用 <strong>面部调整</strong></td>
+<td>表情过小或过大</td>
+<td>重新进行 <strong>自动面部设置</strong>，或使用 <strong>面部调整</strong></td>
 </tr>
 <tr>
 <td>角色看向侧面</td>
@@ -120,19 +119,15 @@
 </tr>
 <tr>
 <td>无法眨单眼</td>
-<td>将眨眼模式设为 <strong>独立</strong> 或 <strong>智能</strong></td>
+<td>将眨眼模式设为 <strong>独立</strong></td>
 </tr>
 <tr>
-<td>左右相反</td>
-<td><strong>镜像</strong></td>
-</tr>
-<tr>
-<td>CPU 占用高</td>
+<td>电脑负担重</td>
 <td>将追踪质量设为 <strong>均衡</strong> 或 <strong>节能</strong></td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="麦克风">麦克风<a class="anchor" href="#麦克风">#</a></h2>
+<h2 id="麦克风">麦克风<a class="anchor" href="#麦克风" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -143,23 +138,19 @@
 <tbody>
 <tr>
 <td>“无信号”</td>
-<td>在 Windows 设置 › 隐私 › 麦克风 中允许桌面应用</td>
+<td>在 Windows 设置 › 隐私 › 麦克风 中允许桌面应用访问</td>
 </tr>
 <tr>
-<td>“几乎无声”</td>
-<td>如果使用混音应用，请选择该应用的虚拟麦克风</td>
-</tr>
-<tr>
-<td>噪声让嘴巴动起来</td>
+<td>杂音让嘴巴动起来</td>
 <td><strong>检测背景噪声</strong></td>
 </tr>
 <tr>
 <td>嘴巴动得不够</td>
-<td><strong>语音校准</strong>、<strong>灵敏度</strong></td>
+<td><strong>语音校准</strong></td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="输出">输出<a class="anchor" href="#输出">#</a></h2>
+<h2 id="输出--屏幕共享">输出 · 屏幕共享<a class="anchor" href="#输出--屏幕共享" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -173,55 +164,24 @@
 <td>在 OBS 中安装 Spout2 插件</td>
 </tr>
 <tr>
-<td>OBS 中背景为黑色</td>
-<td>背景设为 <strong>透明</strong> + OBS 中选择 <strong>Composite with alpha</strong></td>
+<td>OBS 中背景显示为黑色</td>
+<td>将背景设为 <strong>透明</strong>，并在 OBS 中选择 <strong>Composite with alpha</strong></td>
 </tr>
-<tr>
-<td>Discord 中没有虚拟摄像头</td>
-<td>安装虚拟摄像头后完全退出 Discord 再重新启动</td>
-</tr>
-<tr>
-<td>4K 以 1080p 输出</td>
-<td>当前为 Basic 版（Pro 支持 4K）</td>
-</tr>
-<tr>
-<td>“Avatar Live Basic”字样</td>
-<td>Basic 的水印（Pro 没有）</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="discord-屏幕共享">Discord 屏幕共享<a class="anchor" href="#discord-屏幕共享">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>症状</th>
-<th>解决方法</th>
-</tr>
-</thead>
-<tbody>
 <tr>
 <td>Discord 列表中没有</td>
-<td>开启 <strong>屏幕共享</strong>，并查看 Discord 的 <strong>应用程序</strong> 标签页</td>
+<td>开启 <strong>屏幕共享</strong> 后，查看 <strong>应用程序</strong> 标签页</td>
 </tr>
 <tr>
-<td>黑屏</td>
-<td>不以管理员权限运行 Avatar Live，将游戏设为窗口模式</td>
+<td>游戏显示为黑色</td>
+<td>将游戏设为窗口模式</td>
 </tr>
 <tr>
-<td>没有声音</td>
-<td>在 Discord 中开启声音，安装虚拟播放设备</td>
-</tr>
-<tr>
-<td>声音听到两次</td>
-<td>将 <strong>Discord 音频设备</strong> 设为不用于收听的设备</td>
-</tr>
-<tr>
-<td>视频为黑色</td>
-<td>受保护的视频（DRM）无法捕获</td>
+<td>出现“Avatar Live Basic”字样</td>
+<td>这是 Basic 的水印。Pro 中不会显示。</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="支持范围">支持范围<a class="anchor" href="#支持范围">#</a></h2>
+<h2 id="支持范围">支持范围<a class="anchor" href="#支持范围" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -231,12 +191,12 @@
 </thead>
 <tbody>
 <tr>
-<td>✅ VRChat 角色功能</td>
-<td>Expression 菜单与参数、FX 等动画器、PhysBone、Contact、Constraint、Eye Look、LipSync</td>
+<td>✅ VRChat 角色</td>
+<td>Expression 菜单、动画器、PhysBone、Contact、Constraint、Eye Look、LipSync</td>
 </tr>
 <tr>
 <td>✅ 制作工具</td>
-<td>使用 NDMF、Modular Avatar、VRCFury 等的角色</td>
+<td>使用 NDMF · Modular Avatar · VRCFury 的角色</td>
 </tr>
 <tr>
 <td>✅ 着色器</td>
@@ -247,58 +207,46 @@
 <td>VRCFaceTracking、ARKit（Perfect Sync）、MMD 眼部变形</td>
 </tr>
 <tr>
-<td>⚠️ 无法运行</td>
-<td>角色音效、AudioLink、镜子和相机检测、Light Volumes、用户脚本</td>
-</tr>
-<tr>
 <td>🧪 实验性功能</td>
-<td>Ultraleap、OSC·VMC、舌头与脸颊的摄像头检测 — 预计能够正常运行，但这些设备和应用尚未在开发者环境中测试</td>
+<td>Ultraleap、OSC · VMC、舌头 · 脸颊的摄像头检测</td>
 </tr>
 <tr>
-<td>❌ 不支持</td>
-<td>VRM 文件、Live2D、macOS·Linux</td>
+<td>⚠️ 不支持</td>
+<td>角色音效、AudioLink、镜子检测、VRM 文件、Live2D、macOS · Linux</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="计划支持">计划支持<a class="anchor" href="#计划支持">#</a></h2>
+<p>实验性功能预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。</p>
+<h2 id="计划支持">计划支持<a class="anchor" href="#计划支持" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>加载 VRM 模型（.vrm，VRM 0.x / 1.0）并播放 .vrma 动画</li>
-<li>强化完美同步：直接映射形态键，按摄像头·iPhone 分别进行面部校准</li>
+<li>强化 Perfect Sync：直接连接形态键的映射、按摄像头 · iPhone 分别进行的面部校准、逐一确认 52 种表情的工具</li>
+<li>表情快捷键：为我的表情 · 表情剪辑 · 已保存的姿势设置快捷键（也支持 Stream Deck 的按键输入），锁定所选表情</li>
 <li>新增手机面部应用：VTube Studio（iPhone）、MeowFace（Android）</li>
-<li>强化全身追踪应用联动（VMC）：同时接收面部与身体应用，反映坐下·弯腰 — TDPT、XR Animator 等</li>
-<li>桌面吉祥物模式（透明窗口），视线跟随鼠标光标</li>
-<li>便利功能：重新导出角色后自动刷新，空闲时节省 FPS</li>
+<li>通过 OBS 游戏捕获实现透明背景（无需插件）</li>
+<li>摄像头上半身：根据肩部动作扭转 · 倾斜上半身</li>
+<li>强化与全身追踪应用的联动（VMC）：同时接收面部应用与身体应用，反映坐下 · 弯腰 — TDPT、XR Animator 等</li>
+<li>桌面吉祥物模式（透明窗口）、视线跟随鼠标光标</li>
+<li>便利功能：重新导出角色后自动刷新、空闲时节省 FPS</li>
 </ul>
-<p>※ 计划的功能与时间可能会有变更。</p>
-<h2 id="常见问题">常见问题<a class="anchor" href="#常见问题">#</a></h2>
-<p><strong>Q. 需要 VRChat 账号吗？</strong>
+<p>※ 计划的功能和时间可能会有变更。</p>
+<h2 id="常见问题">常见问题<a class="anchor" href="#常见问题" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>需要 VRChat 账号吗？</strong>
 不需要。Avatar Live 不与 VRChat 通信。</p>
-<p><strong>Q. 可以用于直播吗？</strong>
-直播、公开发布视频和商业用途需要 <strong>Pro</strong>。</p>
-<p><strong>Q. 键盘输入会被记录吗？</strong>
-不会。桌面手部动作不会保存、记录或发送输入的文字。</p>
-<p><strong>Q. 可以把角色文件给别人吗？</strong>
-请遵守角色和服装制作者的使用条款。</p>
-<p><strong>Q. 可以同时显示多个角色吗？</strong>
-一次只能显示一个。可在左上角的角色名称处切换。</p></article>
-    <div class="pager"><a class="prev" href="11-pro-features.html"><span>上一页</span>摆姿势 · 物体 · 表情</a><a class="next" href="13-license.html"><span>下一页</span>版本 · 许可证 · 声明</a></div>
-    <p class="updated">最后更新: 2026-10-09</p>
-  </main>
-  <nav class="toc"><div class="toc-h">本页内容</div><ul><li class="l2"><a href="#启动与安装">启动与安装</a></li><li class="l2"><a href="#角色">角色</a></li><li class="l2"><a href="#摄像头与面部">摄像头与面部</a></li><li class="l2"><a href="#麦克风">麦克风</a></li><li class="l2"><a href="#输出">输出</a></li><li class="l2"><a href="#discord-屏幕共享">Discord 屏幕共享</a></li><li class="l2"><a href="#支持范围">支持范围</a></li><li class="l2"><a href="#计划支持">计划支持</a></li><li class="l2"><a href="#常见问题">常见问题</a></li></ul></nav>
+<p><strong>可以用于直播吗？</strong>
+直播、公开发布视频和商业用途请使用 <strong>Pro</strong>。与朋友之间的非公开 Discord 共享，使用 Basic 也可以。</p>
+<p><strong>键盘输入会被记录吗？</strong>
+不会。桌面手部动作不会保存或发送输入的文字。</p>
+<p><strong>可以把角色文件给别人吗？</strong>
+请遵守角色和服装制作者的使用条款。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="11-pro-features.html"><span>上一页</span>摆姿势 · 物体 · 表情</a><a class="next" href="13-license.html"><span>下一页</span>版本 · 许可证 · 声明</a></nav><p class="updated">最后更新: 2026-10-09</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#启动--安装">启动 · 安装</a></li><li><a href="#角色">角色</a></li><li><a href="#摄像头--面部">摄像头 · 面部</a></li><li><a href="#麦克风">麦克风</a></li><li><a href="#输出--屏幕共享">输出 · 屏幕共享</a></li><li><a href="#支持范围">支持范围</a></li><li><a href="#计划支持">计划支持</a></li><li><a href="#常见问题">常见问题</a></li></ul></nav>
 </div>
-<footer class="foot">
-  <div class="foot-in">
-    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
-    <div class="foot-links"><a href="legal-terms.html">Avatar Live 使用条款</a> · <a href="legal-privacy.html">隐私政策</a> · <a href="legal-refund.html">退款政策</a> · <a href="legal-seller.html">卖家信息</a></div>
-    <p>Avatar Live 与 VRChat Inc. 无关联，也未获其认可。VRChat 是 VRChat Inc. 的商标。</p>
-    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>产品</h2><ul><li><a href="index.html#features">功能</a></li><li><a href="index.html#how">使用方法</a></li><li><a href="index.html#editions">版本</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li></ul></div><div class="fcol"><h2>指南</h2><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul></div><div class="fcol"><h2>条款与政策</h2><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></div><div class="fcol"><h2>链接</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
+  <div class="wrap fine"><p>AVATAR LIVE 不是 VRChat Inc. 的官方产品，与 VRChat Inc. 无关联。VRChat 是 VRChat Inc. 的商标。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>
-<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
-<script>
-function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
-(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
-function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
-</script>
 </body>
 </html>

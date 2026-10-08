@@ -3,31 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Getting started — Avatar Live</title>
-<meta name="description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
-<meta property="og:title" content="Getting started — Avatar Live">
-<meta property="og:description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
-<meta property="og:image" content="../assets/brand/og.jpg">
+<title>Getting started — AVATAR LIVE</title>
+<meta name="description" content="If you&#x27;ll be showing it to other people, such as on a stream or in a published video, please choose Pro. You&#x27;ll find the details in Chapter 13.">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/01-getting-started.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/01-getting-started.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/01-getting-started.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/01-getting-started.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/01-getting-started.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="Getting started — AVATAR LIVE">
+<meta property="og:description" content="If you&#x27;ll be showing it to other people, such as on a stream or in a published video, please choose Pro. You&#x27;ll find the details in Chapter 13.">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/01-getting-started.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/site.css">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
-<header class="top">
-  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
-  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
-  <div class="top-right">
-    <details class="lang"><summary>🌐 <span>English</span></summary><div class="lang-menu"><a href="../ko/01-getting-started.html">한국어</a><a href="../en/01-getting-started.html" class="on">English</a><a href="../ja/01-getting-started.html">日本語</a><a href="../zh/01-getting-started.html">简体中文</a></div></details>
-    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
-    <a class="btn primary small" href="https://curiousbobby.booth.pm/">Buy on BOOTH</a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">Overview</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#editions">Editions</a><a href="01-getting-started.html" aria-current="page">Guide</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="Language"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>English</span></summary><div class="lang-menu" role="menu"><a href="../ko/01-getting-started.html" lang="ko">한국어</a><a href="../en/01-getting-started.html" lang="en" aria-current="true">English</a><a href="../ja/01-getting-started.html" lang="ja">日本語</a><a href="../zh/01-getting-started.html" lang="zh-Hans">简体中文</a></div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle theme" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">Buy</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
   </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">Overview</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#editions">Editions</a><a href="01-getting-started.html" aria-current="page">Guide</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">Buy</a></div>
 </header>
-<div class="wrap">
-  <aside class="side"><a class="side-home" href="index.html">Home</a><div class="side-h">Guide</div><ul><li><a href="01-getting-started.html" class="on">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting an avatar (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><div class="side-h">Legal</div><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></aside>
-  <main class="content">
-    <article><h1 id="1-getting-started">1. Getting started<a class="anchor" href="#1-getting-started">#</a></h1>
-<h2 id="what-you-need">What you need<a class="anchor" href="#what-you-need">#</a></h2>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html" aria-current="page">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="1-getting-started">1. Getting started<a class="anchor" href="#1-getting-started" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="what-you-need">What you need<a class="anchor" href="#what-you-need" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -38,15 +55,15 @@
 <tbody>
 <tr>
 <td>Operating system</td>
-<td><strong>Windows 10 / 11 (64-bit)</strong></td>
+<td>Windows 10 / 11 (64-bit)</td>
 </tr>
 <tr>
 <td>Graphics</td>
-<td>GPU with <strong>DirectX 11</strong> support</td>
+<td>GPU with DirectX 11 support</td>
 </tr>
 <tr>
 <td>Webcam</td>
-<td>A regular color webcam (for face, arm and hand tracking)</td>
+<td>A regular color webcam</td>
 </tr>
 <tr>
 <td>Microphone</td>
@@ -58,15 +75,11 @@
 </tr>
 <tr>
 <td>Avatar</td>
-<td>The <strong>Unity project</strong> of your VRChat avatar (Unity 2022.3.22f1) — exported to <code>.vavatar</code> in <a href="02-avatar-exporter.html">Chapter 2</a></td>
-</tr>
-<tr>
-<td>Optional devices</td>
-<td>Leap Motion / Ultraleap hand tracker, iPhone (iFacialMocap)</td>
+<td>The Unity project of your VRChat avatar (Unity 2022.3.22f1)</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="choosing-an-edition">Choosing an edition<a class="anchor" href="#choosing-an-edition">#</a></h2>
+<h2 id="editions">Editions<a class="anchor" href="#editions" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -77,83 +90,57 @@
 </thead>
 <tbody>
 <tr>
-<td>Use</td>
-<td>Personal use</td>
-<td><strong>Streaming, publishing videos, commercial use</strong></td>
+<td>Scope of use</td>
+<td>Personal use (including private Discord sharing with friends)</td>
+<td>Streaming · publishing videos · commercial use</td>
 </tr>
 <tr>
 <td>Output</td>
-<td>Up to 1080p, watermark</td>
-<td>Up to 4K, no watermark</td>
+<td>Up to 1080p · watermark</td>
+<td>Up to 4K · no watermark</td>
 </tr>
 <tr>
-<td>Posing · Objects · Screen share extra sources</td>
+<td>Posing · Objects · More screen share sources</td>
 <td>—</td>
 <td>✅</td>
 </tr>
 </tbody>
 </table></div>
-<blockquote>
-<p>For <strong>public or commercial use</strong> such as streaming (live streaming) or uploading videos, <strong>you need Pro</strong>. See <a href="13-license.html">Chapter 13</a> for details.</p>
-</blockquote>
-<h2 id="installation">Installation<a class="anchor" href="#installation">#</a></h2>
+<p>If you'll be showing it to other people, such as on a stream or in a published video, please choose <strong>Pro</strong>. You'll find the details in <a href="13-license.html">Chapter 13</a>.</p>
+<h2 id="installation">Installation<a class="anchor" href="#installation" aria-hidden="true" tabindex="-1">#</a></h2>
 <ol>
-<li>Download the Avatar Live ZIP file from your BOOTH purchase history.</li>
-<li><strong>Extract it</strong> to any folder you like. The extracted folder is the installation folder.</li>
+<li>Download the ZIP file from your BOOTH purchase history.</li>
+<li>Extract it to any folder you like.</li>
 <li>Run <code>AvatarLive.exe</code>.</li>
 </ol>
-<blockquote>
-<p><strong>If a "Windows protected your PC" window appears</strong>, click <strong>More info → Run anyway</strong>.</p>
-<p>⚠️ <strong>Do not change the files in the installation folder or add other programs to it.</strong> If the files differ from the originals, Avatar Live will not start. In that case, reinstall from the original you downloaded from BOOTH (your avatars and settings are kept).</p>
+<blockquote class="callout tip"><p>If a "Windows protected your PC" window appears, click <strong>More info → Run anyway</strong>.</p>
+<p>💡 We recommend leaving the files in the installation folder as they are. If the files change, Avatar Live may not start; in that case, simply reinstall from the original. Your avatars and settings are kept.</p>
 </blockquote>
-<h2 id="product-activation">Product activation<a class="anchor" href="#product-activation">#</a></h2>
-<p>The first time you run it, the <strong>Product activation</strong> screen appears.</p>
+<h2 id="activation">Activation<a class="anchor" href="#activation" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>The first time you run it, the <strong>Product activation</strong> screen appears. Enter the information you received with your purchase and click <strong>Activate</strong>, and you're all set.</p>
+<p>A license is for one person on one device. You can move it to another PC yourself once. After that, we're happy to help through an inquiry when it can't be avoided, but it may not always be easy. <strong>Please choose the PC you activate first carefully.</strong></p>
+<h2 id="getting-to-your-first-stream">Getting to your first stream<a class="anchor" href="#getting-to-your-first-stream" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="steps">
 <ol>
-<li>Choose your language at the top right.</li>
-<li>Enter the information you received with your purchase and click <strong>Activate</strong>.</li>
-<li>When "Activated." appears, you are done.</li>
+<li><strong>Export your avatar</strong> — Create a <code>.vavatar</code> file in Unity. → <a href="02-avatar-exporter.html">Chapter 2</a></li>
+<li><strong>Open your avatar</strong> — Open the file on the start screen and click <strong>▶ Start Avatar Live</strong>. → <a href="03-launcher-and-library.html">Chapter 3</a></li>
+<li><strong>Turn on the webcam and mic</strong> — Turn on the switches on the <strong>Devices</strong> page. → <a href="06-devices.html">Chapter 6</a></li>
+<li><strong>Fit your face</strong> — Click <strong>Motion › Automatic face setup</strong> and follow the guide. → <a href="07-motion.html">Chapter 7</a></li>
+<li><strong>Choose a background and lighting</strong> — Pick them on the <strong>Scene</strong> page. → <a href="08-scene.html">Chapter 8</a></li>
+<li><strong>Send it out</strong> — On the <strong>Output</strong> page, turn on Spout2, the virtual camera or screen share. → <a href="09-output.html">Chapter 9</a></li>
 </ol>
-<h3 id="moving-to-another-pc">Moving to another PC<a class="anchor" href="#moving-to-another-pc">#</a></h3>
-<ul>
-<li>A license is for <strong>one person, one device</strong>.</li>
-<li>You can move it to another PC <strong>only once</strong>. After moving, it can no longer be used on the previous PC, and <strong>after that it cannot be moved again under any circumstances.</strong></li>
-<li>Choose the PC to move to carefully before you proceed.</li>
-</ul>
-<h2 id="from-start-to-your-first-stream">From start to your first stream<a class="anchor" href="#from-start-to-your-first-stream">#</a></h2>
-<ol>
-<li><strong>Create your avatar</strong> — export a <code>.vavatar</code> from the avatar's Unity project (<a href="02-avatar-exporter.html">Chapter 2</a>)</li>
-<li><strong>Open the avatar</strong> — on the start screen, <strong>Open Avatar…</strong> → <strong>▶ Start Avatar Live</strong> (<a href="03-launcher-and-library.html">Chapter 3</a>)</li>
-<li><strong>Turn on the webcam</strong> — <strong>Devices</strong> → <strong>Webcam</strong> switch (<a href="06-devices.html">Chapter 6</a>)</li>
-<li><strong>Turn on the microphone</strong> — <strong>Devices</strong> → <strong>Microphone</strong> switch</li>
-<li><strong>Fit your face</strong> — <strong>Motion</strong> → <strong>Automatic face setup</strong> (<a href="07-motion.html">Chapter 7</a>)</li>
-<li><strong>Choose a background</strong> — <strong>Scene</strong> → <strong>Background</strong> (<a href="08-scene.html">Chapter 8</a>)</li>
-<li><strong>Send it out</strong> — <strong>Output</strong> → Spout2 / Virtual Camera / Screen share (<a href="09-output.html">Chapter 9</a>)</li>
-<li><strong>F1</strong> — a clean view with all UI hidden</li>
-</ol>
-<h2 id="quitting">Quitting<a class="anchor" href="#quitting">#</a></h2>
-<ul>
-<li>By default, the window's <strong>X</strong> <strong>hides it to the tray</strong>. The avatar and outputs keep running.</li>
-<li>To quit completely, <strong>right-click the tray icon → Quit</strong>.</li>
-<li>To quit directly with X, go to Settings › Window › <strong>Close button (X)</strong> → <strong>Quit</strong>.</li>
-</ul></article>
-    <div class="pager"><span></span><a class="next" href="02-avatar-exporter.html"><span>Next</span>Exporting an avatar (Avatar Exporter)</a></div>
-    <p class="updated">Last updated: 2026-10-09</p>
-  </main>
-  <nav class="toc"><div class="toc-h">On this page</div><ul><li class="l2"><a href="#what-you-need">What you need</a></li><li class="l2"><a href="#choosing-an-edition">Choosing an edition</a></li><li class="l2"><a href="#installation">Installation</a></li><li class="l2"><a href="#product-activation">Product activation</a></li><li class="l3"><a href="#moving-to-another-pc">Moving to another PC</a></li><li class="l2"><a href="#from-start-to-your-first-stream">From start to your first stream</a></li><li class="l2"><a href="#quitting">Quitting</a></li></ul></nav>
 </div>
-<footer class="foot">
-  <div class="foot-in">
-    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
-    <div class="foot-links"><a href="legal-terms.html">Avatar Live Terms of Use</a> · <a href="legal-privacy.html">Privacy Policy</a> · <a href="legal-refund.html">Refund Policy</a> · <a href="legal-seller.html">Seller Information</a></div>
-    <p>Avatar Live is not affiliated with or endorsed by VRChat Inc. VRChat is a trademark of VRChat Inc.</p>
-    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+<p>Press <strong>F1</strong> to hide the menus so that only the avatar is shown.</p>
+<h2 id="quitting">Quitting<a class="anchor" href="#quitting" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Clicking the window's <strong>X</strong> sends Avatar Live to the tray, and the avatar and outputs keep running. To quit completely, right-click the tray icon and click <strong>Quit</strong>.</p></article><nav class="pager" aria-label="Pager"><span></span><a class="next" href="02-avatar-exporter.html"><span>Next</span>Exporting your avatar</a></nav><p class="updated">Last updated: 2026-10-09</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#what-you-need">What you need</a></li><li><a href="#editions">Editions</a></li><li><a href="#installation">Installation</a></li><li><a href="#activation">Activation</a></li><li><a href="#getting-to-your-first-stream">Getting to your first stream</a></li><li><a href="#quitting">Quitting</a></li></ul></nav>
+</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
+  <div class="wrap fine"><p>AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>
-<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
-<script>
-function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
-(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
-function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
-</script>
 </body>
 </html>

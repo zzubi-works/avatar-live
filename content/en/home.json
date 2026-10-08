@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "title": "AVATAR LIVE — Your VRChat avatar, straight to your stream",
+    "description": "A Windows app that lets you use your VRChat avatar as it is for streaming, screen sharing and video creation, without VRM conversion. Your original shaders, PhysBones, Expressions menu and face tracking, just as they are."
+  },
+  "nav": {
+    "overview": "Overview",
+    "features": "Features",
+    "how": "How it works",
+    "editions": "Editions",
+    "docs": "Guide",
+    "get": "Buy",
+    "menu": "Menu",
+    "theme": "Toggle theme",
+    "language": "Language"
+  },
+  "hero": {
+    "eyebrow": "A Windows VTuber app for VRChat avatars",
+    "title": ["Your VRChat avatar,", "straight to your stream."],
+    "sub": "No VRM conversion, no complicated setup all over again.\nBring the avatar you know to your streams and screen shares.",
+    "primary": "Get started with AVATAR LIVE",
+    "secondary": "Explore the features",
+    "meta": "Windows 10 / 11 · Basic from ¥1,990",
+    "caption": "Actual AVATAR LIVE screen recording"
+  },
+  "works": {
+    "label": "Works right away with",
+    "items": ["OBS Studio", "Discord", "Zoom", "Microsoft Teams"]
+  },
+  "features": {
+    "kicker": "Features",
+    "title": "The avatar you know from VRChat, just as it is.",
+    "sub": "No need to rebuild anything. Everything built into your avatar moves just as it is.",
+    "items": [
+      {"title": "No VRM conversion", "body": "Export once from your avatar project and you're done. If you change the avatar, just export it again.", "media": "img:launcher", "size": "wide"},
+      {"title": "Your original shaders", "body": "Shows the shaders on your avatar, such as Poiyomi and lilToon, just as they are.", "media": "common:light-spot-light", "size": "tall"},
+      {"title": "PhysBones and menus as they are", "body": "Swaying hair, outfit toggles, even expression buttons move with the same settings as in VRChat.", "media": "video:physbone"},
+      {"title": "Face tracking", "body": "Expressions, gaze and even fingers with a single webcam. Uses your avatar's VRCFaceTracking setup as it is.", "media": "video:face"},
+      {"title": "Keyboard · mouse hand motion", "body": "Even when your hands are out of view, the avatar's hands move with your typing and mouse. The characters you type are not recorded.", "media": "img:motion-desk"},
+      {"title": "Streaming and screen sharing", "body": "Send a transparent background to OBS, and the game and your avatar on one screen to Discord.", "media": "video:share", "size": "wide"}
+    ]
+  },
+  "how": {
+    "kicker": "How it works",
+    "title": "Three steps are all it takes.",
+    "steps": [
+      {"title": "Open your Unity project", "body": "Open the Unity project (2022.3.22f1) of the avatar you upload to VRChat."},
+      {"title": "Export with the Exporter", "body": "Create a .vavatar file with a single click in Curious Bobby - Avatar Exporter."},
+      {"title": "Start in AVATAR LIVE", "body": "Open the file and turn on your webcam, and your avatar moves right away. From then on, you don't need Unity."}
+    ],
+    "note": "VRM or .vrca files alone can't be used. You need the avatar's Unity project.",
+    "link": "See the export guide"
+  },
+  "showcase": {
+    "kicker": "Take a look",
+    "title": "Everything you need to stream, in one place.",
+    "more": "Learn more",
+    "rows": [
+      {"title": "Pick an avatar and start", "body": "Choose a recently used avatar, or drag and drop a file. Lighting and camera are remembered for each avatar.", "points": ["Recent avatars", "Open by drag and drop", "Settings saved per avatar"], "media": "img:avatar-pop", "page": "03-launcher-and-library"},
+      {"title": "Your Expressions menu as it is", "body": "Press the same menu you used in VRChat. Items you use often can become buttons or hotkeys.", "points": ["Toggle · Button · Radial · Puppet", "Hotkeys and Quick Actions", "Favorites"], "media": "video:menu", "page": "05-avatar-menu"},
+      {"title": "Tracking that fits your face", "body": "Make the expressions as guided, and the tracking automatically adjusts to fit your face.", "points": ["Automatic face setup", "Blinking · gaze", "Mic lip sync"], "media": "img:facecal", "page": "07-motion"},
+      {"title": "Pull it, pose it", "body": "Grab hair or a tail with the mouse and pull, then pose it in exactly the shape you like.", "points": ["Grab with the mouse", "Pose it in place", "Marshmallow PB support"], "media": "common:grab", "page": "04-main-window"},
+      {"title": "To OBS and call apps", "body": "Send a transparent background over Spout2, and appear on Discord · Zoom through the virtual camera.", "points": ["Spout2 transparent background", "Virtual camera", "Save photos as PNG"], "media": "video:background", "page": "09-output"},
+      {"title": "Game + avatar to Discord", "body": "Share the game screen with your avatar on top, without OBS. Your friends see the game and your avatar, and you see only the game.", "points": ["No OBS needed", "Send only the game audio", "Position · size as you like"], "media": "img:share", "page": "09-output"},
+      {"title": "Lighting and camera", "body": "Change the mood with a single preset, and add backgrounds and effects.", "points": ["10 lighting presets", "Backgrounds · chroma key", "Bloom · depth of field"], "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool", "page": "08-scene"}
+    ]
+  },
+  "compare": {
+    "kicker": "Comparison",
+    "title": "No conversion, so it stays just as it is.",
+    "left": "VRM conversion workflow",
+    "leftNote": "Typical case",
+    "right": "AVATAR LIVE",
+    "rows": [
+      {"label": "VRM conversion", "left": "Required", "right": "Not needed"},
+      {"label": "Shaders", "left": "Often rebuilt for VRM", "right": "Your original shaders as they are"},
+      {"label": "PhysBones", "left": "Set up again as SpringBones", "right": "Work as they are"},
+      {"label": "Expressions menu", "left": "Has to be rebuilt", "right": "Used as it is"},
+      {"label": "After changing the avatar", "left": "Convert again from the start", "right": "Just export again"}
+    ],
+    "foot": "Supported features may vary from program to program."
+  },
+  "editions": {
+    "kicker": "Editions",
+    "title": "Choose what you need.",
+    "sub": "Basic and Pro are the same program. Your edition is set by the license you enter.",
+    "plans": [
+      {"name": "Basic", "price": "¥1,990", "for": "Personal use", "features": ["Avatar · tracking · menu · lighting · effects", "Spout2 · virtual camera · screen share", "My expressions · automatic expressions", "Private Discord sharing with friends", "Up to 1080p · watermark shown"], "cta": "Buy Basic"},
+      {"name": "Pro", "price": "¥3,980", "for": "Streaming · publishing videos · commercial use", "badge": "Recommended", "features": ["Everything in Basic", "Up to 4K · no watermark", "Posing", "Objects (text · images · 3D models)", "More screen share sources"], "cta": "Buy Pro"}
+    ],
+    "upgrade": "Already using Basic? The Upgrade (¥1,990) on BOOTH turns it into Pro.",
+    "note": "Prices are as shown on BOOTH. As this is a digital product, refunds are generally difficult after purchase, so please check the requirements before you buy.",
+    "noteLink": "Refund Policy"
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "Frequently asked questions",
+    "items": [
+      {"q": "Can I use my VRChat avatar as it is?", "a": "Yes. Export it with the Exporter from the Unity project of the avatar you upload to VRChat, and the shaders, PhysBones and Expressions menu work as they are."},
+      {"q": "Do I need a Unity project?", "a": "You need it once, to create the avatar file (Unity 2022.3.22f1). After that, you use Avatar Live without Unity."},
+      {"q": "Can I use just a VRM file?", "a": "Not at the moment. Support for loading VRM files is planned."},
+      {"q": "Which shaders are supported?", "a": "The shaders on your avatar are shown as they are, and we've confirmed major shaders such as Poiyomi and lilToon. AudioLink and mirror detection are not supported."},
+      {"q": "Can I screen share on Discord without OBS?", "a": "Yes. Turn on screen share and choose 'Avatar Live Share Output' in Discord, and the game and your avatar are shared together."},
+      {"q": "What's the difference between Basic and Pro?", "a": "Basic is the edition for personal use (including private Discord sharing with friends), and Pro is for streaming, publishing videos and commercial use. Pro offers 4K output, no watermark, posing and objects."},
+      {"q": "Does it support operating systems other than Windows?", "a": "Only Windows 10 / 11 (64-bit) is supported."}
+    ]
+  },
+  "cta": {
+    "title": "Your avatar. Your world. Your stream.",
+    "sub": "Start right now with the VRChat avatar you know.",
+    "primary": "Buy AVATAR LIVE",
+    "secondary": "Read the guide"
+  },
+  "footer": {
+    "product": "Product",
+    "docs": "Guide",
+    "legal": "Legal",
+    "links": "Links"
+  }
+}

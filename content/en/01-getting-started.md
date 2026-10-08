@@ -4,61 +4,54 @@
 
 | Item | Requirement |
 |---|---|
-| Operating system | **Windows 10 / 11 (64-bit)** |
-| Graphics | GPU with **DirectX 11** support |
-| Webcam | A regular color webcam (for face, arm and hand tracking) |
+| Operating system | Windows 10 / 11 (64-bit) |
+| Graphics | GPU with DirectX 11 support |
+| Webcam | A regular color webcam |
 | Microphone | For lip sync (optional) |
 | Internet | Needed for activation and license checks |
-| Avatar | The **Unity project** of your VRChat avatar (Unity 2022.3.22f1) — exported to `.vavatar` in [Chapter 2](02-avatar-exporter.md) |
-| Optional devices | Leap Motion / Ultraleap hand tracker, iPhone (iFacialMocap) |
+| Avatar | The Unity project of your VRChat avatar (Unity 2022.3.22f1) |
 
-## Choosing an edition
+## Editions
 
 | | Basic | Pro |
 |---|---|---|
-| Use | Personal use | **Streaming, publishing videos, commercial use** |
-| Output | Up to 1080p, watermark | Up to 4K, no watermark |
-| Posing · Objects · Screen share extra sources | — | ✅ |
+| Scope of use | Personal use (including private Discord sharing with friends) | Streaming · publishing videos · commercial use |
+| Output | Up to 1080p · watermark | Up to 4K · no watermark |
+| Posing · Objects · More screen share sources | — | ✅ |
 
-> For **public or commercial use** such as streaming (live streaming) or uploading videos, **you need Pro**. See [Chapter 13](13-license.md) for details.
+If you'll be showing it to other people, such as on a stream or in a published video, please choose **Pro**. You'll find the details in [Chapter 13](13-license.md).
 
 ## Installation
 
-1. Download the Avatar Live ZIP file from your BOOTH purchase history.
-2. **Extract it** to any folder you like. The extracted folder is the installation folder.
+1. Download the ZIP file from your BOOTH purchase history.
+2. Extract it to any folder you like.
 3. Run `AvatarLive.exe`.
 
-> **If a "Windows protected your PC" window appears**, click **More info → Run anyway**.
+> 💡 If a "Windows protected your PC" window appears, click **More info → Run anyway**.
 
-> ⚠️ **Do not change the files in the installation folder or add other programs to it.** If the files differ from the originals, Avatar Live will not start. In that case, reinstall from the original you downloaded from BOOTH (your avatars and settings are kept).
+> 💡 We recommend leaving the files in the installation folder as they are. If the files change, Avatar Live may not start; in that case, simply reinstall from the original. Your avatars and settings are kept.
 
-## Product activation
+## Activation
 
-The first time you run it, the **Product activation** screen appears.
+The first time you run it, the **Product activation** screen appears. Enter the information you received with your purchase and click **Activate**, and you're all set.
 
-1. Choose your language at the top right.
-2. Enter the information you received with your purchase and click **Activate**.
-3. When "Activated." appears, you are done.
+A license is for one person on one device. You can move it to another PC yourself once. After that, we're happy to help through an inquiry when it can't be avoided, but it may not always be easy. **Please choose the PC you activate first carefully.**
 
-### Moving to another PC
+## Getting to your first stream
 
-- A license is for **one person, one device**.
-- You can move it to another PC **only once**. After moving, it can no longer be used on the previous PC, and **after that it cannot be moved again under any circumstances.**
-- Choose the PC to move to carefully before you proceed.
+<div class="steps" markdown="1">
 
-## From start to your first stream
+1. **Export your avatar** — Create a `.vavatar` file in Unity. → [Chapter 2](02-avatar-exporter.md)
+2. **Open your avatar** — Open the file on the start screen and click **▶ Start Avatar Live**. → [Chapter 3](03-launcher-and-library.md)
+3. **Turn on the webcam and mic** — Turn on the switches on the **Devices** page. → [Chapter 6](06-devices.md)
+4. **Fit your face** — Click **Motion › Automatic face setup** and follow the guide. → [Chapter 7](07-motion.md)
+5. **Choose a background and lighting** — Pick them on the **Scene** page. → [Chapter 8](08-scene.md)
+6. **Send it out** — On the **Output** page, turn on Spout2, the virtual camera or screen share. → [Chapter 9](09-output.md)
 
-1. **Create your avatar** — export a `.vavatar` from the avatar's Unity project ([Chapter 2](02-avatar-exporter.md))
-2. **Open the avatar** — on the start screen, **Open Avatar…** → **▶ Start Avatar Live** ([Chapter 3](03-launcher-and-library.md))
-3. **Turn on the webcam** — **Devices** → **Webcam** switch ([Chapter 6](06-devices.md))
-4. **Turn on the microphone** — **Devices** → **Microphone** switch
-5. **Fit your face** — **Motion** → **Automatic face setup** ([Chapter 7](07-motion.md))
-6. **Choose a background** — **Scene** → **Background** ([Chapter 8](08-scene.md))
-7. **Send it out** — **Output** → Spout2 / Virtual Camera / Screen share ([Chapter 9](09-output.md))
-8. **F1** — a clean view with all UI hidden
+</div>
+
+Press **F1** to hide the menus so that only the avatar is shown.
 
 ## Quitting
 
-- By default, the window's **X** **hides it to the tray**. The avatar and outputs keep running.
-- To quit completely, **right-click the tray icon → Quit**.
-- To quit directly with X, go to Settings › Window › **Close button (X)** → **Quit**.
+Clicking the window's **X** sends Avatar Live to the tray, and the avatar and outputs keep running. To quit completely, right-click the tray icon and click **Quit**.

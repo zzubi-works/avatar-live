@@ -3,30 +3,47 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Posing · Objects · Expressions — Avatar Live</title>
-<meta name="description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
-<meta property="og:title" content="Posing · Objects · Expressions — Avatar Live">
-<meta property="og:description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
-<meta property="og:image" content="../assets/brand/og.jpg">
+<title>Posing · Objects · Expressions — AVATAR LIVE</title>
+<meta name="description" content="Turn on Scene › Posing › Posing mode to create a pose by moving the bones directly.">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/11-pro-features.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/11-pro-features.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/11-pro-features.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/11-pro-features.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/11-pro-features.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="Posing · Objects · Expressions — AVATAR LIVE">
+<meta property="og:description" content="Turn on Scene › Posing › Posing mode to create a pose by moving the bones directly.">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/11-pro-features.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/site.css">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
-<header class="top">
-  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
-  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
-  <div class="top-right">
-    <details class="lang"><summary>🌐 <span>English</span></summary><div class="lang-menu"><a href="../ko/11-pro-features.html">한국어</a><a href="../en/11-pro-features.html" class="on">English</a><a href="../ja/11-pro-features.html">日本語</a><a href="../zh/11-pro-features.html">简体中文</a></div></details>
-    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
-    <a class="btn primary small" href="https://curiousbobby.booth.pm/">Buy on BOOTH</a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">Overview</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#editions">Editions</a><a href="01-getting-started.html" aria-current="page">Guide</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="Language"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>English</span></summary><div class="lang-menu" role="menu"><a href="../ko/11-pro-features.html" lang="ko">한국어</a><a href="../en/11-pro-features.html" lang="en" aria-current="true">English</a><a href="../ja/11-pro-features.html" lang="ja">日本語</a><a href="../zh/11-pro-features.html" lang="zh-Hans">简体中文</a></div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle theme" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">Buy</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
   </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">Overview</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#editions">Editions</a><a href="01-getting-started.html" aria-current="page">Guide</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">Buy</a></div>
 </header>
-<div class="wrap">
-  <aside class="side"><a class="side-home" href="index.html">Home</a><div class="side-h">Guide</div><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting an avatar (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html" class="on">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><div class="side-h">Legal</div><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></aside>
-  <main class="content">
-    <article><h1 id="11-posing--objects--expressions">11. Posing · Objects · Expressions<a class="anchor" href="#11-posing--objects--expressions">#</a></h1>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html" aria-current="page">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="11-posing--objects--expressions">11. Posing · Objects · Expressions<a class="anchor" href="#11-posing--objects--expressions" aria-hidden="true" tabindex="-1">#</a></h1>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -37,15 +54,15 @@
 <tbody>
 <tr>
 <td><a href="#posing">Posing</a></td>
-<td><strong>Pro</strong></td>
+<td>Pro</td>
 </tr>
 <tr>
 <td><a href="#objects">Objects</a></td>
-<td><strong>Pro</strong></td>
+<td>Pro</td>
 </tr>
 <tr>
-<td><a href="#screen-share-extra-sources">Screen share extra sources</a></td>
-<td><strong>Pro</strong></td>
+<td><a href="#more-screen-share-sources">More screen share sources</a></td>
+<td>Pro</td>
 </tr>
 <tr>
 <td><a href="#my-expressions">My expressions</a></td>
@@ -57,228 +74,47 @@
 </tr>
 </tbody>
 </table></div>
-<h2 id="posing">Posing<a class="anchor" href="#posing">#</a></h2>
-<p>Move bones directly to create avatar poses and save them.</p>
-<p><strong>To start</strong>: Scene › <strong>Posing</strong> › <strong>Posing mode</strong>, or the person icon in the scene tools on the left</p>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Input</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Click a bone (Ctrl: several)</td>
-<td>Select bones</td>
-</tr>
-<tr>
-<td>Drag a bone</td>
-<td>Move it (dragging a hand or foot moves the whole arm or leg)</td>
-</tr>
-<tr>
-<td>Drag a ring</td>
-<td>Rotate (Ctrl: 15° steps)</td>
-</tr>
-<tr>
-<td><strong>Ctrl + Z / Ctrl + Y</strong></td>
-<td>Undo / redo</td>
-</tr>
-<tr>
-<td><strong>Back to normal</strong></td>
-<td>Return the selected bones to the avatar's own motion</td>
-</tr>
-<tr>
-<td><strong>Left / right</strong></td>
-<td>Flip left and right · copy left side to right · copy right side to left</td>
-</tr>
-<tr>
-<td><strong>Reset all</strong></td>
-<td>Back to the initial pose</td>
-</tr>
-<tr>
-<td><strong>Show finger bones</strong></td>
-<td>Show the finger bones</td>
-</tr>
-</tbody>
-</table></div>
-<blockquote>
-<p>Turning off posing mode releases the pose. Save it first.</p>
-</blockquote>
-<h3 id="poses">Poses<a class="anchor" href="#poses">#</a></h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Item</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>+ Add pose</strong></td>
-<td><strong>Save this pose</strong> · <strong>Import a .anim file…</strong> · <strong>Save as the desk pose (arms and hands)</strong></td>
-</tr>
-<tr>
-<td>Click a pose</td>
-<td>Apply / release</td>
-</tr>
-<tr>
-<td><strong>Edit pose</strong></td>
-<td>Edit a saved pose</td>
-</tr>
-<tr>
-<td><strong>Rename / Overwrite with the current pose / Delete</strong></td>
-<td>Manage poses</td>
-</tr>
-<tr>
-<td><strong>Rest pose (whole body)</strong></td>
-<td>Use this pose when your face is not visible</td>
-</tr>
-<tr>
-<td><strong>Use as the desk pose (arms and hands)</strong></td>
-<td>Use it as the desk hand pose</td>
-</tr>
-</tbody>
-</table></div>
-<p>You can also turn poses on and off with one button on the <strong>Poses</strong> card in the avatar menu.</p>
-<h2 id="objects">Objects<a class="anchor" href="#objects">#</a></h2>
-<p>Attach text, images, shapes and 3D models to the scene or the avatar (a hat, text above the head, a chair, a desk and so on).</p>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Item</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Basic environment (floor grid)</strong></td>
-<td>Show the floor</td>
-</tr>
-<tr>
-<td><strong>+ Add object</strong></td>
-<td><strong>Text</strong> · <strong>Picture file…</strong> · <strong>3D model (.vprop)…</strong> · <strong>Shape</strong> (cube, sphere, cylinder, capsule, board)</td>
-</tr>
-<tr>
-<td>Visibility switch · ⋯</td>
-<td>Hide; rename · duplicate · back to its first place · delete</td>
-</tr>
-<tr>
-<td><strong>Color</strong></td>
-<td>Change the color</td>
-</tr>
-<tr>
-<td><strong>Rides on</strong></td>
-<td>In the scene / Head / Chest / Torso / Left hand / Right hand</td>
-</tr>
-<tr>
-<td><strong>Follow softly</strong></td>
-<td>Follow the bone with a slight delay</td>
-</tr>
-<tr>
-<td><strong>Keep proportions / Size</strong></td>
-<td>Adjust the size</td>
-</tr>
-<tr>
-<td><strong>Always in front / Face the camera</strong></td>
-<td>How it is displayed</td>
-</tr>
-<tr>
-<td>Text: <strong>Font · Bold · Italic · Edge · Plate behind</strong></td>
-<td>Style the text</td>
-</tr>
-</tbody>
-</table></div>
-<p>In the view, move objects with the scene tools (Move, Rotate, Scale). Double-click text to edit it right away.</p>
-<h3 id="making-3d-models">Making 3D models<a class="anchor" href="#making-3d-models">#</a></h3>
-<p>In Unity, use <strong>Curious Bobby → Prop Exporter</strong> to export a GameObject or prefab as a <strong>.vprop</strong>. The model's swinging bones and animations work too.</p>
-<h2 id="screen-share-extra-sources">Screen share extra sources<a class="anchor" href="#screen-share-extra-sources">#</a></h2>
-<p>Under Output › Screen share › <strong>More sources</strong>, layer more windows or monitors on top (a chat window, a music player and so on).</p>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Item</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Add source</strong></td>
-<td>Add a window or display</td>
-</tr>
-<tr>
-<td>👁</td>
-<td>Show / hide</td>
-</tr>
-<tr>
-<td>⋯</td>
-<td>Bring forward · send back · back to the start · remove</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="my-expressions">My expressions<a class="anchor" href="#my-expressions">#</a></h2>
-<p>Create expressions yourself from the avatar's shape keys.</p>
-<ol>
-<li><strong>New expression</strong></li>
-<li><strong>Search shape keys</strong> → add with <strong>+</strong> → adjust the weight</li>
-<li><strong>While this expression shows</strong>: No blinking · Pause eye tracking · Pause mouth tracking</li>
-<li><strong>Save</strong></li>
-</ol>
+<h2 id="posing">Posing<a class="anchor" href="#posing" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/en/posing.webp" srcset="../assets/shots/en/posing-960.webp 960w, ../assets/shots/en/posing.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="Posing mode" loading="lazy" decoding="async"><figcaption>Posing mode</figcaption></figure>
+<p>Turn on <strong>Scene › Posing › Posing mode</strong> to create a pose by moving the bones directly.</p>
 <ul>
-<li>With <strong>Import .anim</strong> you can also use expression animations made in Unity.</li>
-<li>Click them on the <strong>My expressions</strong> card in the avatar menu or the scene to turn them on and off.</li>
+<li>Click a bone to select it, and drag to move it. Drag a hand or foot, and the whole arm or leg follows.</li>
+<li>Drag a ring to rotate.</li>
+<li><strong>Left / right</strong> — Flip the left and right sides of the pose, or copy one side to the other.</li>
+<li>Save it with <strong>+ Add pose › Save this pose</strong>, and turn it on right away from the <strong>Poses</strong> card in the avatar menu.</li>
+<li>You can also load <code>.anim</code> files made in Unity.</li>
 </ul>
-<h2 id="automatic-expressions">Automatic expressions<a class="anchor" href="#automatic-expressions">#</a></h2>
-<p>When you smile or look surprised, the avatar shows an expression you have chosen automatically.</p>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Item</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Automatic expressions</strong></td>
-<td>On / off</td>
-</tr>
-<tr>
-<td>Detected expressions</td>
-<td>Smile · Surprise · Angry · Sad · Wink (left / right) · Pout · Sleepy</td>
-</tr>
-<tr>
-<td><strong>Shows</strong></td>
-<td>Link to one of My expressions, a gesture, an avatar menu item or an expression clip</td>
-</tr>
-<tr>
-<td><strong>Threshold</strong></td>
-<td>How clearly you must make the expression for it to turn on</td>
-</tr>
-<tr>
-<td><strong>Timing</strong></td>
-<td>Smoothing · Start after · Show at least</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>Expression clips</strong> are the extra expressions you added when exporting with the Exporter (<a href="02-avatar-exporter.html#exporting">Chapter 2</a>).</p></article>
-    <div class="pager"><a class="prev" href="10-settings.html"><span>Previous</span>Settings</a><a class="next" href="12-troubleshooting.html"><span>Next</span>Troubleshooting</a></div>
-    <p class="updated">Last updated: 2026-10-09</p>
-  </main>
-  <nav class="toc"><div class="toc-h">On this page</div><ul><li class="l2"><a href="#posing">Posing</a></li><li class="l3"><a href="#poses">Poses</a></li><li class="l2"><a href="#objects">Objects</a></li><li class="l3"><a href="#making-3d-models">Making 3D models</a></li><li class="l2"><a href="#screen-share-extra-sources">Screen share extra sources</a></li><li class="l2"><a href="#my-expressions">My expressions</a></li><li class="l2"><a href="#automatic-expressions">Automatic expressions</a></li></ul></nav>
+<blockquote class="callout tip"><p>Please save your pose before you turn off posing mode.</p>
+</blockquote>
+<h2 id="objects">Objects<a class="anchor" href="#objects" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/en/props.webp" srcset="../assets/shots/en/props-960.webp 960w, ../assets/shots/en/props.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="Objects" loading="lazy" decoding="async"><figcaption>Objects</figcaption></figure>
+<p>Use <strong>Scene › Objects › + Add object</strong> to place text, images, shapes and 3D models.</p>
+<ul>
+<li>Set <strong>Rides on</strong> to the head or a hand, and the object moves with the avatar.</li>
+<li>Double-click text to edit it right there.</li>
+<li>For 3D models, create a <code>.vprop</code> file with <strong>Curious Bobby → Prop Exporter</strong> in Unity.</li>
+</ul>
+<h2 id="more-screen-share-sources">More screen share sources<a class="anchor" href="#more-screen-share-sources" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>You can layer more windows or monitors onto your screen share. Use this when you'd like to show a chat window or a music player as well.</p>
+<h2 id="my-expressions">My expressions<a class="anchor" href="#my-expressions" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Create your own expressions from the avatar's shape keys.</p>
+<ol>
+<li>Click <strong>New expression</strong>.</li>
+<li>Search for shape keys, add them with <strong>+</strong>, and adjust their strength.</li>
+<li>Click <strong>Save</strong>, and you can turn the expression on from the <strong>My expressions</strong> card in the avatar menu.</li>
+</ol>
+<h2 id="automatic-expressions">Automatic expressions<a class="anchor" href="#automatic-expressions" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>When you smile or look surprised, an expression you've chosen appears automatically. Turn it on in <strong>Motion › Automatic expressions</strong>, and link an expression to show for each one, such as smile · surprise · wink.</p>
+<blockquote class="callout tip"><p>Hotkeys for My expressions and saved poses are planned for a future update.</p>
+</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>Previous</span>Settings</a><a class="next" href="12-troubleshooting.html"><span>Next</span>Troubleshooting</a></nav><p class="updated">Last updated: 2026-10-09</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#posing">Posing</a></li><li><a href="#objects">Objects</a></li><li><a href="#more-screen-share-sources">More screen share sources</a></li><li><a href="#my-expressions">My expressions</a></li><li><a href="#automatic-expressions">Automatic expressions</a></li></ul></nav>
 </div>
-<footer class="foot">
-  <div class="foot-in">
-    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
-    <div class="foot-links"><a href="legal-terms.html">Avatar Live Terms of Use</a> · <a href="legal-privacy.html">Privacy Policy</a> · <a href="legal-refund.html">Refund Policy</a> · <a href="legal-seller.html">Seller Information</a></div>
-    <p>Avatar Live is not affiliated with or endorsed by VRChat Inc. VRChat is a trademark of VRChat Inc.</p>
-    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
+  <div class="wrap fine"><p>AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>
-<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
-<script>
-function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
-(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
-function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
-</script>
 </body>
 </html>

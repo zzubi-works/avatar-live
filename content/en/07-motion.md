@@ -1,139 +1,79 @@
 # 7. Motion
 
-On the **Motion** page you set how the face, body and hands move. Settings are saved separately for each avatar.
+Set how the face, body and hands move. Settings are saved separately for each avatar.
 
-![Motion page](img/motion.png)
+## Face tracking
 
-## Tracking control
+<div class="shot" markdown="1">
 
-| Switch | What it does |
-|---|---|
-| **Mirror (move like a mirror image)** | Match left and right like a mirror |
-| **Arms / Hands / Fingers** | Move each part with the webcam |
-| **Gestures → expressions** | Turn hand shapes into the avatar's gesture expressions |
+![Motion page](img/motion-face.png)
 
-## Face
+- **Mirror** — Moves to the same side as you, like a mirror.
+- **Arms · Hands · Fingers** — Moves each part with the webcam.
+- **Gestures → expressions** — The avatar's expression changes to match your hand shape.
+- **Face tracking** — Turns facial expression tracking on and off.
 
-| Item | What it does |
-|---|---|
-| **Face tracking** | Turn facial expression tracking on / off |
-| **Automatic face setup** | Make the expressions as guided, and it adjusts automatically to your face |
-| **Recenter** | Make your current face direction the front |
+</div>
 
-Avatar Live finds the face tracking setup your avatar already has (VRCFaceTracking, ARKit and MMD shape keys, VRChat Eye Look and LipSync) and uses it as it is. No separate setup is needed.
-
-### Automatic face setup
+## Automatic face setup
 
 ![Automatic face setup](img/facecal.png)
 
-Following the on-screen guide, make a neutral face, close your eyes, open your mouth, talk, smile, pucker your lips, puff your cheeks, stick out your tongue and move your gaze in turn, clicking **Capture** each time. When finished, click **Apply**.
+Click the **Automatic face setup** button to start calibration. Make each expression as the on-screen guide shows, then click **Capture**. At the end, click **Apply**, and the expressions are adjusted to fit your face.
 
-- Use **Back / Skip / Cancel** to move between steps.
-- Where you look in the first step becomes the avatar's forward gaze. Look at the screen as you do when streaming.
-- Lighting your face well makes it more accurate.
+> 💡 Where you look during the first step becomes the avatar's straight-ahead gaze. Please look at the screen the way you do while streaming.
 
-### Face adjustment
+## Face adjustment
 
-| Item | What it does |
-|---|---|
-| **Adjust the face values** | Turn the adjustment values on / off |
-| **Edit left and right together** | Changing one side changes the other too |
-| **Smoothing** | Reduce jitter |
-| Value list (eyes · brows · mouth · cheeks and nose) | Set how strongly each expression shows |
-| **Reset this value / Reset all values** | Back to the initial state |
+<div class="shot" markdown="1">
 
-### Camera face tuning
+![Face adjustment](img/face-adjust.png)
 
-Sets the reference values on the camera side. Shared by all avatars.
+- Adjust, one by one, how strongly the eye, brow, mouth and cheek expressions show.
+- Drag a slider to the right, and that expression shows more strongly.
+- Turn on **Edit left and right together** to change both sides at once.
+- Turn on **Smoothing** to reduce jitter in the expressions.
 
-| Slider | What it changes |
-|---|---|
-| **Blink closed at** | How far you must close your eyes for them to count as closed |
-| **Mouth fully open at** | How far you must open your mouth for it to count as fully open |
-| **Upper teeth show from** | How far the mouth opens before the upper teeth start to show |
-| **Smile hides upper teeth** | Show less of the upper teeth when smiling |
-| **Gaze range sideways / up/down** | How far the eyes move |
-| **Full cheek puff at** | The maximum size of a cheek puff |
+</div>
 
-### Blink
+## Blink · Mouth
 
-| Item | What it does |
-|---|---|
-| **Mode** | **Independent** (per eye, winks possible) / **Synchronized** (both eyes together) / **Smart** (together normally, separate for winks) |
-| **Blink strength / responsiveness** | How far the eyes close, how quickly they react |
-| **Advanced** | Left and right strength, closing and opening speed |
+<div class="shot" markdown="1">
 
-### Eye gaze tracking
+![Blink and mouth](img/motion-mouth.png)
 
-Makes the eyes follow your gaze.
+- **Blink › Mode** — **Independent** works well for winks, and with **Synchronized** both eyes close together.
+- **Eye gaze tracking** — The avatar's eyes follow your gaze.
+- **Auto level** — Automatically matches how wide the mouth opens to how loud your voice is.
+- **Voice calibration** — Click a vowel button and say the vowel, and it adapts to your voice.
+- **Tongue · cheek puff** — Stick out the tongue or puff the cheeks with a button or a hotkey.
 
-### Mouth · tongue · cheeks
-
-| Item | What it does |
-|---|---|
-| **Mouth** meter | The current lip sync state |
-| **Auto level** | Adjusts the mouth size to your voice level automatically (when off, set it yourself with **Sensitivity**) |
-| **Mic → face tracking** | Whether your voice also drives the mouth in face tracking |
-| **Voice calibration** | Press a vowel button and pronounce it to match your voice → **Save voice profile** |
-
-#### Tongue · cheek puff
-
-| Item | What it does |
-|---|---|
-| Name switch | Turn it on right now |
-| **Detect with the camera** | Recognize the tongue and cheeks with the camera (use after the automatic face setup) |
-| **Key** | Turn it on with a hotkey (**While held** / **Press to switch**) |
-
-> **Detect with the camera** for the tongue and cheek puff is expected to work, but it is an **experimental feature** that has not been tested with every face and camera.
-
-### When the face is lost
-
-| Item | What it does |
-|---|---|
-| **Hold the last face for** | How long the expression is held when the face is briefly lost |
-| **Return to neutral over / Blend back over** | How smoothly the expression changes |
-| **Blink automatically / Move the eyes (idle look) / Look at the camera** | Eye movement while the face is not visible |
+</div>
 
 ## Body
 
-| Item | What it does |
-|---|---|
-| **Head tracking** | Turn head movement on / off |
-| **Strength** | **Subtle / Natural / Expressive** |
-| **Body follow** | The chest and spine follow the head naturally |
-| **Natural body motion** | Move slightly even while still |
-| **Breathing** | Breathing motion |
-| **Head idle motion** | The head moves a little while it is not tracked |
+<div class="shot" markdown="1">
 
-## Hands · desk
+![Body motion](img/motion-body.png)
 
-### Desk Interaction
+- **Head motion** — Choose from **Subtle · Natural · Expressive**.
+- **Body follow** — When you turn your head, the body follows naturally.
+- **Natural body motion · Breathing** — The avatar moves as if it were alive, even while you keep still.
 
-When your hands are not visible to the camera, the avatar's hands type and move the mouse along with your real keyboard and mouse input.
+</div>
 
-> 🔒 Keyboard input is used only to move the avatar's hands. **The characters you type are never saved, recorded or sent.**
+## Hands · Desk
 
-| Item | What it does |
-|---|---|
-| **Desk Interaction** | On / off |
-| **Hand default pose** | Desk height and distance, hand spacing, elbows, wrists, finger bend |
-| **Preview hand default pose** | Check the pose |
-| **Keyboard input reaction** | How much the fingers, hands and wrists move when typing |
-| **Mouse input reaction** | The mouse hand (right / left / auto), size of movement and clicks |
-| **Own mouse pose** | Save the current pose as the mouse pose |
+<div class="shot" markdown="1">
 
-### When tracking is lost
+![Hands and desk](img/motion-desk.png)
 
-Choose the pose when your hands are not visible: **Keyboard / desk** · **Hold last pose** · **Relaxed at side** · **Avatar animation** · **My pose**
+- **Desk Interaction** — When your hands aren't visible to the camera, the avatar's hands move along with your keyboard and mouse.
+- **Hand default pose** — Adjust the desk height, hand spacing and wrist angle.
+- **Keyboard · Mouse input reaction** — Set how large the typing and mouse movements are.
 
-- **Lowered hands rest too** — when you lower your hands, they go to the default pose even if the camera can see them
+</div>
 
-## Advanced settings
+> 🔒 Keyboard input is used only to move the avatar's hands. The characters you type are not saved or sent.
 
-| Item | What it does |
-|---|---|
-| **Head and body details** | Head rotation and position strength, body follow details |
-| **Typing style** | **Subtle / Natural / Expressive** |
-| **Face compatibility** | Check the face tracking setup your avatar has |
-| **Face output** | **Auto (recommended)** / Prefer VRCFT / Prefer Perfect Sync |
-| **Shape key limits** | Limit the maximum value of each shape key |
+> 💡 Camera detection of the tongue and cheek puff is an experimental feature.

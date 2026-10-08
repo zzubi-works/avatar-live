@@ -3,155 +3,109 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>角色菜单 — Avatar Live</title>
-<meta name="description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
-<meta property="og:title" content="角色菜单 — Avatar Live">
-<meta property="og:description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
-<meta property="og:image" content="../assets/brand/og.jpg">
+<title>角色菜单 — AVATAR LIVE</title>
+<meta name="description" content="直接使用在 VRChat 中用过的角色 Expression 菜单。服装和发型开关、表情按钮、Radial、Puppet 都与 VRChat 中的运作方式完全相同。">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/05-avatar-menu.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/05-avatar-menu.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/05-avatar-menu.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/05-avatar-menu.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/05-avatar-menu.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="角色菜单 — AVATAR LIVE">
+<meta property="og:description" content="直接使用在 VRChat 中用过的角色 Expression 菜单。服装和发型开关、表情按钮、Radial、Puppet 都与 VRChat 中的运作方式完全相同。">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/05-avatar-menu.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="../assets/brand/favicon.png">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
-<header class="top">
-  <button class="burger" aria-label="菜单" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
-  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
-  <div class="top-right">
-    <details class="lang"><summary>🌐 <span>简体中文</span></summary><div class="lang-menu"><a href="../ko/05-avatar-menu.html">한국어</a><a href="../en/05-avatar-menu.html">English</a><a href="../ja/05-avatar-menu.html">日本語</a><a href="../zh/05-avatar-menu.html" class="on">简体中文</a></div></details>
-    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
-    <a class="btn primary small" href="https://curiousbobby.booth.pm/">在 BOOTH 购买</a>
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">概览</a><a href="index.html#features">功能</a><a href="index.html#how">使用方法</a><a href="index.html#editions">版本</a><a href="01-getting-started.html" aria-current="page">指南</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="语言"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>简体中文</span></summary><div class="lang-menu" role="menu"><a href="../ko/05-avatar-menu.html" lang="ko">한국어</a><a href="../en/05-avatar-menu.html" lang="en">English</a><a href="../ja/05-avatar-menu.html" lang="ja">日本語</a><a href="../zh/05-avatar-menu.html" lang="zh-Hans" aria-current="true">简体中文</a></div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="切换主题" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">购买</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="菜单" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
   </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">概览</a><a href="index.html#features">功能</a><a href="index.html#how">使用方法</a><a href="index.html#editions">版本</a><a href="01-getting-started.html" aria-current="page">指南</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">购买</a></div>
 </header>
-<div class="wrap">
-  <aside class="side"><a class="side-home" href="index.html">首页</a><div class="side-h">指南</div><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html" class="on">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><div class="side-h">条款与政策</div><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></aside>
-  <main class="content">
-    <article><h1 id="5-角色菜单">5. 角色菜单<a class="anchor" href="#5-角色菜单">#</a></h1>
-<p>在 <strong>菜单</strong> 页面中，可以直接使用在 VRChat 中使用的 <strong>角色自带的 Expression 菜单</strong>。服装、发型开关，表情按钮，Radial 和 Puppet 的运行方式与 VRChat 相同。</p>
-<h2 id="expression-菜单">Expression 菜单<a class="anchor" href="#expression-菜单">#</a></h2>
-<figure><a href="../assets/shots/zh/menu.webp" target="_blank" rel="noopener"><img alt="角色菜单" src="../assets/shots/zh/menu.webp" loading="lazy"></a><figcaption>角色菜单</figcaption></figure>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>类型</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Toggle</strong></td>
-<td>开启 / 关闭</td>
-</tr>
-<tr>
-<td><strong>Button</strong></td>
-<td>按住期间开启</td>
-</tr>
-<tr>
-<td><strong>Sub Menu</strong></td>
-<td>打开子菜单（用 <strong>返回</strong> 回到上一级）</td>
-</tr>
-<tr>
-<td><strong>Radial Puppet</strong></td>
-<td>用滑块设定数值</td>
-</tr>
-<tr>
-<td><strong>Two Axis / Four Axis Puppet</strong></td>
-<td>用方向盘设定方向</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="右键菜单项">右键菜单项<a class="anchor" href="#右键菜单项">#</a></h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>作用</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>添加到快捷操作</strong></td>
-<td>将此项设为工具栏按钮</td>
-</tr>
-<tr>
-<td><strong>设置快捷键…</strong></td>
-<td>为此项设置快捷键</td>
-</tr>
-<tr>
-<td><strong>收藏</strong></td>
-<td>添加到菜单上方的收藏</td>
-</tr>
-<tr>
-<td><strong>参数信息</strong></td>
-<td>查看此项的参数</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="收藏">收藏<a class="anchor" href="#收藏">#</a></h2>
-<p>可以在菜单最上方直接使用已收藏的项目。子菜单中的项目也可以直接操作。</p>
-<h2 id="手势">手势<a class="anchor" href="#手势">#</a></h2>
-<p>选择左手 / 右手手势（<strong>自然 · 握拳 · 张开 · 指向 · 胜利 · 摇滚 · 手枪 · 点赞</strong>），触发角色的手势表情。</p>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html" aria-current="page">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="5-角色菜单">5. 角色菜单<a class="anchor" href="#5-角色菜单" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>直接使用在 VRChat 中用过的角色 <strong>Expression 菜单</strong>。服装和发型开关、表情按钮、Radial、Puppet 都与 VRChat 中的运作方式完全相同。</p>
+<h2 id="expression-菜单">Expression 菜单<a class="anchor" href="#expression-菜单" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="shot">
+<figure><img src="../assets/shots/zh/menu.webp" srcset="../assets/shots/zh/menu-960.webp 960w, ../assets/shots/zh/menu.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="角色菜单" loading="lazy" decoding="async"><figcaption>角色菜单</figcaption></figure>
 <ul>
-<li><strong>用摄像头手形触发手势</strong> — 开启后，摄像头追踪到的手形会成为手势。</li>
+<li><strong>Toggle</strong> — 每次点击都会切换开启 / 关闭。</li>
+<li><strong>Button</strong> — 按住期间保持开启。</li>
+<li><strong>Sub Menu</strong> — 打开子菜单。用 <strong>返回</strong> 回到上一级。</li>
+<li><strong>Radial · Puppet</strong> — 用滑块或摇杆设定数值。</li>
 </ul>
-<h2 id="角色参数">角色参数<a class="anchor" href="#角色参数">#</a></h2>
+</div>
+<h2 id="右键菜单项">右键菜单项<a class="anchor" href="#右键菜单项" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="shot">
+<figure><img src="../assets/shots/zh/menu-ctx.webp" srcset="../assets/shots/zh/menu-ctx-960.webp 960w, ../assets/shots/zh/menu-ctx.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="菜单项的右键菜单" loading="lazy" decoding="async"><figcaption>菜单项的右键菜单</figcaption></figure>
 <ul>
-<li><strong>恢复默认值</strong> — 将所有菜单值恢复为角色的默认值（与 VRChat 的 Reset Avatar 相同）。</li>
+<li><strong>添加到快捷操作</strong> — 作为按钮放到底部工具栏。</li>
+<li><strong>设置快捷键…</strong> — 游戏中也能一键开启。</li>
+<li><strong>收藏</strong> — 在菜单最上方直接使用。</li>
 </ul>
-<p>服装状态等在 VRChat 中会被保存的值，下次运行时也会保留。</p>
-<h2 id="快捷操作">快捷操作<a class="anchor" href="#快捷操作">#</a></h2>
-<p>将常用动作做成 <strong>按钮</strong> 或 <strong>按键</strong>。</p>
-<p><strong>添加位置</strong>
-- 右键菜单项 → <strong>添加到快捷操作</strong>
-- 设置 › <strong>快捷键 · 快捷操作</strong> › <strong>添加快捷操作</strong></p>
-<p><strong>可加入的动作</strong>：角色菜单项 · 手势 · 相机视图 · 已保存的视图 · 追踪重置 · 灯光预设 · PhysBone 重置 · 全部重置</p>
-<p><strong>右键按钮</strong>：<strong>重命名</strong> · <strong>显示位置</strong>（顶部 HUD / 底部工具栏 / 仅快捷键）· <strong>设置快捷键…</strong> · <strong>移除</strong></p>
-<h2 id="重置与全部重置">重置与全部重置<a class="anchor" href="#重置与全部重置">#</a></h2>
+</div>
+<h2 id="手势">手势<a class="anchor" href="#手势" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="shot">
+<figure><img src="../assets/shots/zh/gestures.webp" srcset="../assets/shots/zh/gestures-960.webp 960w, ../assets/shots/zh/gestures.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="手势" loading="lazy" decoding="async"><figcaption>手势</figcaption></figure>
+<ul>
+<li>选择左手 · 右手手势，触发角色的手势表情。</li>
+<li>开启 <strong>用摄像头手形触发手势</strong> 后，你的手形会直接成为手势。</li>
+</ul>
+</div>
+<h2 id="恢复默认值">恢复默认值<a class="anchor" href="#恢复默认值" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>点击 <strong>角色参数 › 恢复默认值</strong>，菜单的数值会恢复为角色的默认值。服装状态等会被保存的数值，下次运行时也会保留。</p>
+<h2 id="快捷操作">快捷操作<a class="anchor" href="#快捷操作" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>将常用动作做成按钮或按键。可以加入菜单项、手势、相机视图、灯光预设等；右键按钮可更改名称和位置。</p>
+<h2 id="重置">重置<a class="anchor" href="#重置" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th></th>
-<th><strong>重置</strong></th>
-<th><strong>全部重置</strong></th>
+<th>重置</th>
+<th>全部重置</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>作用</td>
+<td>将追踪、手部姿势、PhysBone 恢复到初始状态</td>
+<td>除上述内容外，服装 · 位置 · 相机也恢复到初始状态</td>
+</tr>
+<tr>
 <td>执行</td>
-<td>点击顶部 <strong>⟲</strong>，设置 › 常规</td>
-<td>右键 ⟲，设置 › 常规</td>
-</tr>
-<tr>
-<td>恢复的内容</td>
-<td>追踪、手部姿势、按下的按钮、PhysBone、Contact</td>
-<td>以上内容 + 所有参数（包括服装）、角色位置和大小、姿势、相机</td>
-</tr>
-<tr>
-<td>保留的内容</td>
-<td>服装和开关、灯光、相机</td>
-<td>物体、已保存的姿势和表情、设置</td>
+<td>顶部的 <strong>⟲</strong></td>
+<td>右键 <strong>⟲</strong>，或 <strong>设置 › 常规</strong></td>
 </tr>
 </tbody>
-</table></div>
-<p>直播中角色僵住或头发缠在一起时，请点击 <strong>⟲ 重置</strong>。</p></article>
-    <div class="pager"><a class="prev" href="04-main-window.html"><span>上一页</span>主界面</a><a class="next" href="06-devices.html"><span>下一页</span>设备</a></div>
-    <p class="updated">最后更新: 2026-10-09</p>
-  </main>
-  <nav class="toc"><div class="toc-h">本页内容</div><ul><li class="l2"><a href="#expression-菜单">Expression 菜单</a></li><li class="l3"><a href="#右键菜单项">右键菜单项</a></li><li class="l2"><a href="#收藏">收藏</a></li><li class="l2"><a href="#手势">手势</a></li><li class="l2"><a href="#角色参数">角色参数</a></li><li class="l2"><a href="#快捷操作">快捷操作</a></li><li class="l2"><a href="#重置与全部重置">重置与全部重置</a></li></ul></nav>
+</table></div></article><nav class="pager" aria-label="Pager"><a class="prev" href="04-main-window.html"><span>上一页</span>主界面</a><a class="next" href="06-devices.html"><span>下一页</span>设备</a></nav><p class="updated">最后更新: 2026-10-09</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#expression-菜单">Expression 菜单</a></li><li><a href="#右键菜单项">右键菜单项</a></li><li><a href="#手势">手势</a></li><li><a href="#恢复默认值">恢复默认值</a></li><li><a href="#快捷操作">快捷操作</a></li><li><a href="#重置">重置</a></li></ul></nav>
 </div>
-<footer class="foot">
-  <div class="foot-in">
-    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
-    <div class="foot-links"><a href="legal-terms.html">Avatar Live 使用条款</a> · <a href="legal-privacy.html">隐私政策</a> · <a href="legal-refund.html">退款政策</a> · <a href="legal-seller.html">卖家信息</a></div>
-    <p>Avatar Live 与 VRChat Inc. 无关联，也未获其认可。VRChat 是 VRChat Inc. 的商标。</p>
-    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>产品</h2><ul><li><a href="index.html#features">功能</a></li><li><a href="index.html#how">使用方法</a></li><li><a href="index.html#editions">版本</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li></ul></div><div class="fcol"><h2>指南</h2><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul></div><div class="fcol"><h2>条款与政策</h2><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></div><div class="fcol"><h2>链接</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
+  <div class="wrap fine"><p>AVATAR LIVE 不是 VRChat Inc. 的官方产品，与 VRChat Inc. 无关联。VRChat 是 VRChat Inc. 的商标。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>
-<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
-<script>
-function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
-(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
-function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
-</script>
 </body>
 </html>

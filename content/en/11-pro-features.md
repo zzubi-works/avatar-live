@@ -2,98 +2,50 @@
 
 | Feature | Edition |
 |---|---|
-| [Posing](#posing) | **Pro** |
-| [Objects](#objects) | **Pro** |
-| [Screen share extra sources](#screen-share-extra-sources) | **Pro** |
+| [Posing](#posing) | Pro |
+| [Objects](#objects) | Pro |
+| [More screen share sources](#more-screen-share-sources) | Pro |
 | [My expressions](#my-expressions) | Basic · Pro |
 | [Automatic expressions](#automatic-expressions) | Basic · Pro |
 
 ## Posing
 
-Move bones directly to create avatar poses and save them.
+![Posing mode](img/posing.png)
 
-**To start**: Scene › **Posing** › **Posing mode**, or the person icon in the scene tools on the left
+Turn on **Scene › Posing › Posing mode** to create a pose by moving the bones directly.
 
-| Input | What it does |
-|---|---|
-| Click a bone (Ctrl: several) | Select bones |
-| Drag a bone | Move it (dragging a hand or foot moves the whole arm or leg) |
-| Drag a ring | Rotate (Ctrl: 15° steps) |
-| **Ctrl + Z / Ctrl + Y** | Undo / redo |
-| **Back to normal** | Return the selected bones to the avatar's own motion |
-| **Left / right** | Flip left and right · copy left side to right · copy right side to left |
-| **Reset all** | Back to the initial pose |
-| **Show finger bones** | Show the finger bones |
+- Click a bone to select it, and drag to move it. Drag a hand or foot, and the whole arm or leg follows.
+- Drag a ring to rotate.
+- **Left / right** — Flip the left and right sides of the pose, or copy one side to the other.
+- Save it with **+ Add pose › Save this pose**, and turn it on right away from the **Poses** card in the avatar menu.
+- You can also load `.anim` files made in Unity.
 
-> Turning off posing mode releases the pose. Save it first.
-
-### Poses
-
-| Item | What it does |
-|---|---|
-| **+ Add pose** | **Save this pose** · **Import a .anim file…** · **Save as the desk pose (arms and hands)** |
-| Click a pose | Apply / release |
-| **Edit pose** | Edit a saved pose |
-| **Rename / Overwrite with the current pose / Delete** | Manage poses |
-| **Rest pose (whole body)** | Use this pose when your face is not visible |
-| **Use as the desk pose (arms and hands)** | Use it as the desk hand pose |
-
-You can also turn poses on and off with one button on the **Poses** card in the avatar menu.
+> 💡 Please save your pose before you turn off posing mode.
 
 ## Objects
 
-Attach text, images, shapes and 3D models to the scene or the avatar (a hat, text above the head, a chair, a desk and so on).
+![Objects](img/props.png)
 
-| Item | What it does |
-|---|---|
-| **Basic environment (floor grid)** | Show the floor |
-| **+ Add object** | **Text** · **Picture file…** · **3D model (.vprop)…** · **Shape** (cube, sphere, cylinder, capsule, board) |
-| Visibility switch · ⋯ | Hide; rename · duplicate · back to its first place · delete |
-| **Color** | Change the color |
-| **Rides on** | In the scene / Head / Chest / Torso / Left hand / Right hand |
-| **Follow softly** | Follow the bone with a slight delay |
-| **Keep proportions / Size** | Adjust the size |
-| **Always in front / Face the camera** | How it is displayed |
-| Text: **Font · Bold · Italic · Edge · Plate behind** | Style the text |
+Use **Scene › Objects › + Add object** to place text, images, shapes and 3D models.
 
-In the view, move objects with the scene tools (Move, Rotate, Scale). Double-click text to edit it right away.
+- Set **Rides on** to the head or a hand, and the object moves with the avatar.
+- Double-click text to edit it right there.
+- For 3D models, create a `.vprop` file with **Curious Bobby → Prop Exporter** in Unity.
 
-### Making 3D models
+## More screen share sources
 
-In Unity, use **Curious Bobby → Prop Exporter** to export a GameObject or prefab as a **.vprop**. The model's swinging bones and animations work too.
-
-## Screen share extra sources
-
-Under Output › Screen share › **More sources**, layer more windows or monitors on top (a chat window, a music player and so on).
-
-| Item | What it does |
-|---|---|
-| **Add source** | Add a window or display |
-| 👁 | Show / hide |
-| ⋯ | Bring forward · send back · back to the start · remove |
+You can layer more windows or monitors onto your screen share. Use this when you'd like to show a chat window or a music player as well.
 
 ## My expressions
 
-Create expressions yourself from the avatar's shape keys.
+Create your own expressions from the avatar's shape keys.
 
-1. **New expression**
-2. **Search shape keys** → add with **+** → adjust the weight
-3. **While this expression shows**: No blinking · Pause eye tracking · Pause mouth tracking
-4. **Save**
-
-- With **Import .anim** you can also use expression animations made in Unity.
-- Click them on the **My expressions** card in the avatar menu or the scene to turn them on and off.
+1. Click **New expression**.
+2. Search for shape keys, add them with **+**, and adjust their strength.
+3. Click **Save**, and you can turn the expression on from the **My expressions** card in the avatar menu.
 
 ## Automatic expressions
 
-When you smile or look surprised, the avatar shows an expression you have chosen automatically.
+When you smile or look surprised, an expression you've chosen appears automatically. Turn it on in **Motion › Automatic expressions**, and link an expression to show for each one, such as smile · surprise · wink.
 
-| Item | What it does |
-|---|---|
-| **Automatic expressions** | On / off |
-| Detected expressions | Smile · Surprise · Angry · Sad · Wink (left / right) · Pout · Sleepy |
-| **Shows** | Link to one of My expressions, a gesture, an avatar menu item or an expression clip |
-| **Threshold** | How clearly you must make the expression for it to turn on |
-| **Timing** | Smoothing · Start after · Show at least |
-
-**Expression clips** are the extra expressions you added when exporting with the Exporter ([Chapter 2](02-avatar-exporter.md#exporting)).
+> 💡 Hotkeys for My expressions and saved poses are planned for a future update.

@@ -3,40 +3,55 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>トラブルシューティング — Avatar Live</title>
-<meta name="description" content="VRChat アバターを VRM 変換なしでそのまま使える Windows 用 VTuber ソフト Avatar Live の公式ガイド">
-<meta property="og:title" content="トラブルシューティング — Avatar Live">
-<meta property="og:description" content="VRChat アバターを VRM 変換なしでそのまま使える Windows 用 VTuber ソフト Avatar Live の公式ガイド">
-<meta property="og:image" content="../assets/brand/og.jpg">
+<title>トラブルシューティング — AVATAR LIVE</title>
+<meta name="description" content="解決しない場合は、設定 › 診断 › エラーレポートを送る からお知らせください。">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ja/12-troubleshooting.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/12-troubleshooting.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/12-troubleshooting.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/12-troubleshooting.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="トラブルシューティング — AVATAR LIVE">
+<meta property="og:description" content="解決しない場合は、設定 › 診断 › エラーレポートを送る からお知らせください。">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ja/12-troubleshooting.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ja.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="../assets/brand/favicon.png">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard-jp/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/site.css">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
-<header class="top">
-  <button class="burger" aria-label="メニュー" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
-  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
-  <div class="top-right">
-    <details class="lang"><summary>🌐 <span>日本語</span></summary><div class="lang-menu"><a href="../ko/12-troubleshooting.html">한국어</a><a href="../en/12-troubleshooting.html">English</a><a href="../ja/12-troubleshooting.html" class="on">日本語</a><a href="../zh/12-troubleshooting.html">简体中文</a></div></details>
-    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
-    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTHで購入</a>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">概要</a><a href="index.html#features">機能</a><a href="index.html#how">使い方</a><a href="index.html#editions">エディション</a><a href="01-getting-started.html" aria-current="page">ガイド</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="言語"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>日本語</span></summary><div class="lang-menu" role="menu"><a href="../ko/12-troubleshooting.html" lang="ko">한국어</a><a href="../en/12-troubleshooting.html" lang="en">English</a><a href="../ja/12-troubleshooting.html" lang="ja" aria-current="true">日本語</a><a href="../zh/12-troubleshooting.html" lang="zh-Hans">简体中文</a></div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="テーマ切り替え" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">購入する</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="メニュー" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
   </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">概要</a><a href="index.html#features">機能</a><a href="index.html#how">使い方</a><a href="index.html#editions">エディション</a><a href="01-getting-started.html" aria-current="page">ガイド</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">購入する</a></div>
 </header>
-<div class="wrap">
-  <aside class="side"><a class="side-home" href="index.html">ホーム</a><div class="side-h">ガイド</div><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング · オブジェクト · 表情</a></li><li><a href="12-troubleshooting.html" class="on">トラブルシューティング</a></li><li><a href="13-license.html">エディション · ライセンス · 告知</a></li></ul><div class="side-h">規約・ポリシー</div><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></aside>
-  <main class="content">
-    <article><h1 id="12-トラブルシューティング">12. トラブルシューティング<a class="anchor" href="#12-トラブルシューティング">#</a></h1>
-<blockquote>
-<p>まず <strong>設定 › 診断</strong> を確認し、解決しない場合は <strong>エラーレポートを送る</strong> でお知らせください。
-デバイスの問題で起動できない場合は、<strong>Shift を押したまま起動</strong>（セーフスタート）してみてください。</p>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html" aria-current="page">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="12-トラブルシューティング">12. トラブルシューティング<a class="anchor" href="#12-トラブルシューティング" aria-hidden="true" tabindex="-1">#</a></h1>
+<blockquote class="callout tip"><p>解決しない場合は、<strong>設定 › 診断 › エラーレポートを送る</strong> からお知らせください。</p>
 </blockquote>
-<h2 id="起動インストール">起動・インストール<a class="anchor" href="#起動インストール">#</a></h2>
+<h2 id="起動インストール">起動・インストール<a class="anchor" href="#起動インストール" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th>症状</th>
-<th>対処</th>
+<th>対処法</th>
 </tr>
 </thead>
 <tbody>
@@ -46,73 +61,57 @@
 </tr>
 <tr>
 <td>「Avatar Liveのファイルが変更されています」</td>
-<td>BOOTH からダウンロードした元のファイルで再インストール（アバター・設定はそのまま）</td>
+<td>BOOTH でダウンロードした元のファイルで再インストールしてください。アバターと設定はそのままです。</td>
 </tr>
 <tr>
-<td>アクティベートできない</td>
-<td>インターネット接続を確認してから再試行</td>
-</tr>
-<tr>
-<td>起動するとウィンドウが前面に出るだけ</td>
-<td>すでに起動しています（トレイを確認）</td>
+<td>うまく起動しない</td>
+<td><strong>Shift</strong> を押したまま起動して、セーフスタート</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="アバター">アバター<a class="anchor" href="#アバター">#</a></h2>
+<h2 id="アバター">アバター<a class="anchor" href="#アバター" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th>症状</th>
-<th>対処</th>
+<th>対処法</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>一部がピンク色になる</td>
-<td>アップロードが正常にできるか確認してから書き出し直す</td>
-</tr>
-<tr>
-<td>「新しいエクスポーターで作られています」</td>
-<td>Avatar Live をアップデート</td>
-</tr>
-<tr>
-<td>頭・手が動かない</td>
-<td>ヒューマノイドのアバターか確認</td>
-</tr>
-<tr>
-<td>アバターの効果音が鳴らない</td>
-<td>アバターの効果音は再生されません</td>
+<td>VRChat に正常にアップロードできるか確認してから、書き出し直す</td>
 </tr>
 <tr>
 <td>アバターが見えない</td>
-<td>ビューの何もない所をダブルクリック、またはシーンツールの <strong>⌂</strong></td>
+<td>ビューの何もない所をダブルクリック</td>
 </tr>
 <tr>
 <td>ポーズが固まる、髪が絡まる</td>
-<td>上部の <strong>⟲ リセット</strong></td>
+<td>上部の <strong>⟲</strong></td>
+</tr>
+<tr>
+<td>アバターの効果音が聞こえない</td>
+<td>アバターの効果音は再生されません。</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="web-カメラ顔">Web カメラ・顔<a class="anchor" href="#web-カメラ顔">#</a></h2>
+<h2 id="web-カメラ顔">Web カメラ・顔<a class="anchor" href="#web-カメラ顔" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th>症状</th>
-<th>対処</th>
+<th>対処法</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>カメラが「失敗」</td>
+<td>カメラがオンにならない</td>
 <td>ほかのアプリがカメラを使っていないか確認</td>
 </tr>
 <tr>
-<td>カメラの映像が黒い</td>
-<td>レンズカバー、Windows のカメラのプライバシー設定を確認</td>
-</tr>
-<tr>
-<td>表情が小さい / 大きい</td>
-<td><strong>自動フェイスセットアップ</strong> をやり直す、<strong>顔の調整</strong></td>
+<td>表情が小さすぎる、または大きすぎる</td>
+<td><strong>自動フェイスセットアップ</strong> をやり直す、または <strong>顔の調整</strong></td>
 </tr>
 <tr>
 <td>アバターが横を向く</td>
@@ -120,51 +119,43 @@
 </tr>
 <tr>
 <td>ウインクできない</td>
-<td>まばたきの方式を <strong>独立</strong> または <strong>スマート</strong> に</td>
+<td>まばたきの方式を <strong>独立</strong> に</td>
 </tr>
 <tr>
-<td>左右が逆</td>
-<td><strong>ミラー</strong></td>
-</tr>
-<tr>
-<td>CPU 使用率が高い</td>
-<td>トラッキング品質を <strong>バランス</strong> または <strong>エコ</strong> に</td>
+<td>PC が重い</td>
+<td>トラッキング品質を <strong>バランス</strong> か <strong>エコ</strong> に</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="マイク">マイク<a class="anchor" href="#マイク">#</a></h2>
+<h2 id="マイク">マイク<a class="anchor" href="#マイク" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th>症状</th>
-<th>対処</th>
+<th>対処法</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>「信号なし」</td>
-<td>Windows の設定 › プライバシー › マイクでデスクトップアプリを許可</td>
+<td>Windows の設定 › プライバシー › マイク で、デスクトップアプリを許可</td>
 </tr>
 <tr>
-<td>「ほぼ無音」</td>
-<td>ミキサーアプリを使っている場合は、そのアプリの仮想マイクを選ぶ</td>
-</tr>
-<tr>
-<td>ノイズで口が動く</td>
+<td>雑音で口が動く</td>
 <td><strong>背景ノイズを測定</strong></td>
 </tr>
 <tr>
 <td>口の動きが小さい</td>
-<td><strong>音声キャリブレーション</strong>、<strong>感度</strong></td>
+<td><strong>音声キャリブレーション</strong></td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="出力">出力<a class="anchor" href="#出力">#</a></h2>
+<h2 id="出力画面共有">出力・画面共有<a class="anchor" href="#出力画面共有" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th>症状</th>
-<th>対処</th>
+<th>対処法</th>
 </tr>
 </thead>
 <tbody>
@@ -173,55 +164,24 @@
 <td>OBS に Spout2 プラグインをインストール</td>
 </tr>
 <tr>
-<td>OBS で背景が黒い</td>
-<td>背景を <strong>透明</strong> + OBS で <strong>Composite with alpha</strong></td>
+<td>OBS で背景が黒くなる</td>
+<td>背景を <strong>透明</strong> にして、OBS で <strong>Composite with alpha</strong> を選ぶ</td>
 </tr>
 <tr>
-<td>仮想カメラが Discord に出ない</td>
-<td>仮想カメラをインストールしてから Discord を完全に終了して起動し直す</td>
+<td>Discord の一覧にない</td>
+<td><strong>画面共有</strong> をオンにしてから、<strong>アプリケーション</strong> タブを確認</td>
 </tr>
 <tr>
-<td>4K が 1080p で出力される</td>
-<td>Basic エディションです（Pro は 4K）</td>
+<td>ゲームが黒く映る</td>
+<td>ゲームをウィンドウモードに</td>
 </tr>
 <tr>
 <td>「Avatar Live Basic」の文字</td>
-<td>Basic のウォーターマーク（Pro はなし）</td>
+<td>Basic のウォーターマークです。Pro では表示されません。</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="discord-の画面共有">Discord の画面共有<a class="anchor" href="#discord-の画面共有">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>症状</th>
-<th>対処</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Discord の一覧にない</td>
-<td><strong>画面共有</strong> をオンにして、Discord の <strong>アプリケーション</strong> タブを確認</td>
-</tr>
-<tr>
-<td>黒い画面</td>
-<td>Avatar Live を管理者権限なしで実行、ゲームをウィンドウモードに</td>
-</tr>
-<tr>
-<td>音が届かない</td>
-<td>Discord でサウンドをオン、仮想再生デバイスをインストール</td>
-</tr>
-<tr>
-<td>音が二重に聞こえる</td>
-<td><strong>Discord オーディオデバイス</strong> を自分では聞かないデバイスに</td>
-</tr>
-<tr>
-<td>動画が黒い</td>
-<td>保護された動画（DRM）はキャプチャされません</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="対応範囲">対応範囲<a class="anchor" href="#対応範囲">#</a></h2>
+<h2 id="対応範囲">対応範囲<a class="anchor" href="#対応範囲" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -231,12 +191,12 @@
 </thead>
 <tbody>
 <tr>
-<td>✅ VRChat アバターの機能</td>
-<td>Expression メニュー・パラメーター、FX などのアニメーター、PhysBone、Contact、Constraint、Eye Look、LipSync</td>
+<td>✅ VRChat アバター</td>
+<td>Expression メニュー、アニメーター、PhysBone、Contact、Constraint、Eye Look、LipSync</td>
 </tr>
 <tr>
 <td>✅ 制作ツール</td>
-<td>NDMF · Modular Avatar · VRCFury などを使ったアバター</td>
+<td>NDMF・Modular Avatar・VRCFury を使ったアバター</td>
 </tr>
 <tr>
 <td>✅ シェーダー</td>
@@ -247,58 +207,46 @@
 <td>VRCFaceTracking、ARKit（Perfect Sync）、MMD の目のモーフ</td>
 </tr>
 <tr>
-<td>⚠️ 動作しない</td>
-<td>アバターの効果音、AudioLink、ミラー・カメラの検出、Light Volumes、ユーザースクリプト</td>
-</tr>
-<tr>
 <td>🧪 実験的機能</td>
-<td>Ultraleap、OSC・VMC、舌・頬のカメラ検出 — 正常に動作する見込みですが、該当するデバイス・アプリが開発者の環境でまだテストされていません</td>
+<td>Ultraleap、OSC・VMC、舌・頬のカメラ検出</td>
 </tr>
 <tr>
-<td>❌ 非対応</td>
-<td>VRM ファイル、Live2D、macOS・Linux</td>
+<td>⚠️ 非対応</td>
+<td>アバターの効果音、AudioLink、ミラー検出、VRM ファイル、Live2D、macOS・Linux</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="今後の対応予定">今後の対応予定<a class="anchor" href="#今後の対応予定">#</a></h2>
+<p>実験的機能は正常に動作する見込みですが、まだ開発者の環境ですべてのデバイスとアプリでテストできてはいません。</p>
+<h2 id="今後の対応予定">今後の対応予定<a class="anchor" href="#今後の対応予定" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li>VRM モデル（.vrm、VRM 0.x / 1.0）の読み込みと .vrma アニメーションの再生</li>
-<li>パーフェクトシンクの強化：シェイプキーを直接割り当てるマッピング、Web カメラ・iPhone ごとの顔補正</li>
+<li>VRM モデル（.vrm、VRM 0.x / 1.0）の読み込みと、.vrma アニメーションの再生</li>
+<li>パーフェクトシンクの強化：シェイプキーを直接割り当てるマッピング、Web カメラ・iPhone ごとの顔補正、52種類の表情をひとつずつ確認できるツール</li>
+<li>表情のショートカット：マイ表情・表情クリップ・保存したポーズへのショートカット（Stream Deck のキー入力でも）、選んだ表情の固定</li>
 <li>スマホの顔アプリの追加：VTube Studio（iPhone）、MeowFace（Android）</li>
-<li>全身トラッキングアプリ連携の強化（VMC）：顔アプリと体アプリの同時受信、座る・かがむ動作の反映 — TDPT、XR Animator など</li>
-<li>デスクトップマスコットモード（透明ウィンドウ）、マウスカーソルへの視線</li>
-<li>便利機能：アバターを書き出し直すと自動で再読み込み、操作がないときの FPS 節約</li>
+<li>OBS のゲームキャプチャでの透明背景（プラグインなし）</li>
+<li>Web カメラでの上半身：肩の動きによる上半身のひねり・傾き</li>
+<li>全身トラッキングアプリとの連携強化（VMC）：顔アプリと体アプリの同時受信、座る・かがむ動作の反映 — TDPT、XR Animator など</li>
+<li>デスクトップマスコットモード（透明ウィンドウ）、マウスカーソルを追う視線</li>
+<li>便利機能：アバターを書き出し直すと自動で再読み込み、何もしていないときの FPS 節約</li>
 </ul>
-<p>※予定の機能・時期は変更される場合があります。</p>
-<h2 id="よくある質問">よくある質問<a class="anchor" href="#よくある質問">#</a></h2>
-<p><strong>Q. VRChat のアカウントは必要ですか？</strong>
-いいえ。Avatar Live は VRChat と通信しません。</p>
-<p><strong>Q. 配信に使ってもいいですか？</strong>
-配信・動画の公開・商用利用には <strong>Pro</strong> が必要です。</p>
-<p><strong>Q. キーボード入力は記録されますか？</strong>
-いいえ。デスクの手の動きは、入力した文字を保存・記録・送信しません。</p>
-<p><strong>Q. アバターファイルをほかの人に渡してもいいですか？</strong>
-アバター・衣装の制作者の利用規約に従ってください。</p>
-<p><strong>Q. アバターを複数同時に表示できますか？</strong>
-一度にひとつです。左上のアバター名から切り替えます。</p></article>
-    <div class="pager"><a class="prev" href="11-pro-features.html"><span>前へ</span>ポージング · オブジェクト · 表情</a><a class="next" href="13-license.html"><span>次へ</span>エディション · ライセンス · 告知</a></div>
-    <p class="updated">最終更新: 2026-10-09</p>
-  </main>
-  <nav class="toc"><div class="toc-h">このページ</div><ul><li class="l2"><a href="#起動インストール">起動・インストール</a></li><li class="l2"><a href="#アバター">アバター</a></li><li class="l2"><a href="#web-カメラ顔">Web カメラ・顔</a></li><li class="l2"><a href="#マイク">マイク</a></li><li class="l2"><a href="#出力">出力</a></li><li class="l2"><a href="#discord-の画面共有">Discord の画面共有</a></li><li class="l2"><a href="#対応範囲">対応範囲</a></li><li class="l2"><a href="#今後の対応予定">今後の対応予定</a></li><li class="l2"><a href="#よくある質問">よくある質問</a></li></ul></nav>
+<p>※予定の機能と時期は、変更になる場合があります。</p>
+<h2 id="よくある質問">よくある質問<a class="anchor" href="#よくある質問" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>VRChat のアカウントは必要ですか？</strong>
+必要ありません。Avatar Live は VRChat と通信しません。</p>
+<p><strong>配信に使ってもいいですか？</strong>
+配信、動画の公開、商用利用には <strong>Pro</strong> をご利用ください。フレンドとの非公開の Discord 共有は、Basic でも行えます。</p>
+<p><strong>キーボード入力は記録されますか？</strong>
+記録されません。デスクでの手の動きは、入力した文字を保存・送信しません。</p>
+<p><strong>アバターファイルをほかの人に渡してもいいですか？</strong>
+アバターや衣装の制作者の利用規約に従ってください。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="11-pro-features.html"><span>前へ</span>ポージング・オブジェクト・表情</a><a class="next" href="13-license.html"><span>次へ</span>エディション・ライセンス・告知</a></nav><p class="updated">最終更新: 2026-10-09</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#起動インストール">起動・インストール</a></li><li><a href="#アバター">アバター</a></li><li><a href="#web-カメラ顔">Web カメラ・顔</a></li><li><a href="#マイク">マイク</a></li><li><a href="#出力画面共有">出力・画面共有</a></li><li><a href="#対応範囲">対応範囲</a></li><li><a href="#今後の対応予定">今後の対応予定</a></li><li><a href="#よくある質問">よくある質問</a></li></ul></nav>
 </div>
-<footer class="foot">
-  <div class="foot-in">
-    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
-    <div class="foot-links"><a href="legal-terms.html">Avatar Live 利用規約</a> · <a href="legal-privacy.html">プライバシーポリシー</a> · <a href="legal-refund.html">返金ポリシー</a> · <a href="legal-seller.html">販売者情報</a></div>
-    <p>Avatar Live は VRChat Inc. と提携・承認関係にある製品ではありません。VRChat は VRChat Inc. の商標です。</p>
-    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>製品</h2><ul><li><a href="index.html#features">機能</a></li><li><a href="index.html#how">使い方</a></li><li><a href="index.html#editions">エディション</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li></ul></div><div class="fcol"><h2>ガイド</h2><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul></div><div class="fcol"><h2>規約・ポリシー</h2><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></div><div class="fcol"><h2>リンク</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
+  <div class="wrap fine"><p>AVATAR LIVE は VRChat Inc. の公式製品ではなく、VRChat Inc. とは提携していません。VRChat は VRChat Inc. の商標です。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>
-<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
-<script>
-function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
-(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
-function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
-</script>
 </body>
 </html>

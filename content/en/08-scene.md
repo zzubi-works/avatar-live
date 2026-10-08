@@ -1,73 +1,66 @@
 # 8. Scene
 
-On the **Scene** page you set the background, lighting and effects. For posing, objects and My expressions, see [Chapter 11](11-pro-features.md).
-
-![Scene page](img/scene.png)
-
-## Avatar
-
-| Item | What it does |
-|---|---|
-| **Brightness** | Overall avatar brightness |
-| **Size** | Avatar size |
-| **Back to the centre** | Move the avatar to the center |
-
-## Background
-
-| Option | Use |
-|---|---|
-| **Color** | A background in any color |
-| **Green / Blue** | Chroma key (OBS Chroma Key filter) |
-| **Transparent** | Send a transparent background over Spout2 (shows as black in the window) |
-| **Image** | A PNG / JPG picture background |
+Choose the background, lighting and effects.
 
 ## Lighting
 
-### Presets
+<div class="shot" markdown="1">
 
-| Preset | Look |
+![Scene page](img/scene-light.png)
+
+- Choose a mood under **Preset**, and the lighting changes all at once.
+- Turn each light on and off with its switch, and change its brightness and color.
+- Use **+ Add light** to add a face light or a rim light.
+- Save lighting you like with **⋯ › Save as new…**.
+
+</div>
+
+<div class="gallery" markdown="1">
+
+![Spot Light](img/common/light-spot-light.png)
+
+![Studio Soft](img/common/light-studio-soft.png)
+
+![Warm Tone](img/common/light-warm.png)
+
+![Cool Tone](img/common/light-cool.png)
+
+</div>
+
+## Background
+
+| Option | When to use it |
 |---|---|
-| **Spot Light** | Stage lighting on the face (default) |
-| **Camera Light** | Simple lighting from the camera's direction |
-| **Studio Soft / Studio Bright** | Soft / bright studio lighting |
-| **Face Focus** | Focused on the face |
-| **Flat VTuber** | Flat, without shadows |
-| **Warm Tone / Cool Tone** | Warm / cool colors |
-| **Dramatic** | Strong side lighting |
-| **Scene Lighting** | The lighting of the Unity scene the avatar was exported from |
+| **Color** | A background in the color you want |
+| **Green · Blue** | When you remove it with a chroma key in your streaming software |
+| **Transparent** | When you send it over Spout2 without a background |
+| **Image** | When you use a picture as the background |
 
-**⋯** menu: Save as new · Rename · Update from current lighting · Duplicate · Delete · Reset lighting
+<div class="gallery" markdown="1">
 
-### Lights
+![Image background](img/common/bg-lilac.png)
 
-| Item | What it does |
-|---|---|
-| Light switch | On / off |
-| **Intensity · Color · Temperature** | Brightness and color |
-| **Position, direction & target** | Where it shines from and what it lights |
-| **Shadows & range** | Shadows and how far the light reaches |
-| **+ Add light** | Face light · fill light · rim light · directional · point · spot |
-| **Edit in view** | Move lights directly in the view |
+![Green background](img/common/bg-green.png)
 
-### Environment / Ambient
+![Solid color background](img/common/bg-dark.png)
 
-Sets the brightness and color of the light coming from all directions: **Scene sky / Gradient / Flat**
+![Image background 2](img/common/bg-peach.png)
+
+</div>
 
 ## Effects
 
-| Effect | What it does |
-|---|---|
-| **Post-processing** | Turn all effects on / off |
-| **Anti-aliasing** | Reduce jagged edges |
-| **Bloom** | Light glow |
-| **Color grading** | Exposure, contrast, saturation, color temperature |
-| **Vignette** | Darken the edges |
-| **Film grain** | Film texture |
-| **Chromatic aberration** | Color fringing at the edges |
-| **Depth of field** | Background blur (**Focus on the face**) |
-| **Motion blur** | Motion trails |
+<div class="shot" markdown="1">
+
+![Effects](img/scene-fx.png)
+
+- **Bloom** — Bright areas glow softly.
+- **Color grading** — Adjust brightness, contrast, saturation and color temperature.
+- **Depth of field** — Blurs the background so the avatar stands out.
+- **Vignette · Film grain** — Add atmosphere to the edges of the image and to its texture.
+
+</div>
 
 ## Shaders
 
-The shaders on your avatar are used as they are. Checked with major shaders such as Poiyomi and lilToon.
-AudioLink, mirror and camera detection, and Light Volumes do not work.
+The shaders on your avatar are shown as they are. We've confirmed this with major shaders such as Poiyomi and lilToon. AudioLink and mirror detection are not supported.

@@ -1,61 +1,60 @@
 # 13. Editions · License · Notices
 
-## Editions
-
-Avatar Live is **paid software** sold on [BOOTH](https://curiousbobby.booth.pm/).
+## Editions and prices
 
 | | **Basic** | **Pro** |
 |---|---|---|
-| Scope of use | **Personal, private use** | **Streaming (live streaming), publishing videos, commercial use** |
-| Avatar, tracking, menu, lighting, effects | ✅ | ✅ |
+| Price (BOOTH) | ¥1,990 | ¥3,980 |
+| Scope of use | Personal use (including private Discord sharing with friends) | Streaming · publishing videos · commercial use |
+| Avatar · tracking · menu · lighting · effects | ✅ | ✅ |
 | My expressions · Automatic expressions | ✅ | ✅ |
 | Spout2 · Virtual camera · Screen share | ✅ | ✅ |
 | Maximum output | 1080p | 4K |
 | Watermark | Yes | No |
-| Posing · Objects · Screen share extra sources | — | ✅ |
+| Posing · Objects · More screen share sources | — | ✅ |
 
-> **For public or commercial use such as streaming, uploading videos or commissioned work, you need Pro.** Basic is the standard edition for personal use; private Discord sharing with friends is fine on Basic.
-
-## License terms (summary)
-
-- A license is for **one person, one device**.
-- You can move it to another PC **only once**. After moving, it can no longer be used on the previous PC, and **it cannot be moved again under any circumstances after that** (we cannot move it for you even if you contact us).
-- An internet connection is required for activation and license checks.
-- Redistribution, sale, rental, sharing, reverse engineering, modification and circumvention of the license check are prohibited.
-
-The full terms are set out in the [Terms of Use](legal-terms.md).
+Prices are as shown on the BOOTH product page.
 
 ## Upgrades and trials
 
-- **Basic → Pro upgrade**: buy the **Upgrade** item on BOOTH and enter it in **Settings › License › Upgrade to Pro** on the PC that has Basic. That PC's license becomes Pro. The joined purchase belongs to this license and cannot be used separately on another PC. Registered on its own, the Upgrade works as Basic; a PC that already has Pro cannot take it.
-- **Buying during a trial**: enter your purchase in **Settings › License › Enter your purchase**. It replaces the trial.
-- **When a trial ends**, the input screen opens with "Your trial has ended". Enter your purchased license to keep using Avatar Live.
+- **Basic → Pro**: Buy the **Upgrade (¥1,990)** on BOOTH and enter it in **Settings › License › Upgrade to Pro** on the PC where you use Basic, and it becomes Pro. The upgrade purchase is tied to that license.
+- **If you bought during a trial**, please enter your purchase in **Settings › License › Enter your purchase**.
+- **When the trial ends**, the input screen appears. Enter the license you bought to keep using Avatar Live.
+
+## License terms (summary)
+
+- A license is for one person on one device.
+- You can move it to another PC yourself **once**. After that, we're happy to help through an inquiry when it can't be avoided, but it may not always be easy, so **please choose the PC you activate first carefully.**
+- An internet connection is needed for activation and license checks.
+- The program and license are for the purchaser's own use. Redistribution, sale, rental, sharing, modification, reverse engineering and bypassing the license check are not permitted.
+
+The full conditions are set out in the [Terms of Use](legal-terms.md).
 
 ## Experimental features
 
-Features marked "experimental" (Ultraleap, OSC / VMC, camera detection of tongue and cheeks) are expected to work, but the devices and apps involved have not yet been tested in the developer's environment.
+Ultraleap, OSC · VMC and camera detection of the tongue and cheeks are experimental features. We expect them to work properly, but we haven't yet been able to test them with every device and app in the developer's environment.
 
-## Files you make
+## Files you create
 
-- The `.vavatar` / `.vprop` files you make with the Exporter belong to you. The rights to the avatars, outfits and shaders inside them belong to their respective creators, so follow the original creators' terms when sharing them.
-- For avatars appearing in streams and videos, also follow each creator's terms of use.
+- The `.vavatar` · `.vprop` files you create with the Exporter belong to you.
+- The rights to the avatars, outfits and shaders inside those files belong to their respective creators. When you share them or use them in a stream, please check the original creators' terms.
 
 ## Independence notice
 
-Avatar Live and Avatar Exporter are **software developed independently by Curious Bobby Co.**
+Avatar Live and Avatar Exporter are software developed independently by Curious Bobby Co.
 
-- **They do not use or include any code from the VRChat SDK, and do not distribute the VRChat SDK.**
-- **They do not include or distribute avatar creation tools such as NDMF, Modular Avatar or VRCFury.** Such tools run in your environment as you have installed them in your own project.
-- **They do not communicate with VRChat servers or accounts**, and have no function for obtaining other people's avatars.
+- They do not use or include any code from the VRChat SDK, and do not distribute the VRChat SDK.
+- They do not include or distribute avatar creation tools such as NDMF, Modular Avatar or VRCFury. These tools run in your environment, as you have installed them in your own project.
+- They do not communicate with VRChat servers or accounts.
 - They are not affiliated with or endorsed by VRChat Inc. or the developers of any of these tools.
 
 ## Open source notice
 
-The included open source components **are subject to their respective licenses.** The notices are bundled with the program and the Exporter package.
+The included open source components are subject to their respective licenses. The notices are included with the program and the Exporter package. Part of the code in Avatar Exporter is based on open source code released under the MIT License.
 
 ## Trademarks
 
-VRChat is a trademark of VRChat Inc. Other product names are trademarks of their respective owners and are mentioned in this document only to describe compatibility.
+VRChat is a trademark of VRChat Inc. Other product names are trademarks of their respective owners and are mentioned only to describe compatibility.
 
 ## Related documents
 

@@ -3,35 +3,50 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Troubleshooting — Avatar Live</title>
-<meta name="description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
-<meta property="og:title" content="Troubleshooting — Avatar Live">
-<meta property="og:description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
-<meta property="og:image" content="../assets/brand/og.jpg">
+<title>Troubleshooting — AVATAR LIVE</title>
+<meta name="description" content="If something isn&#x27;t solved, please let us know with Settings › Diagnostics › Send an error report.">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/12-troubleshooting.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/12-troubleshooting.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/12-troubleshooting.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/12-troubleshooting.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="Troubleshooting — AVATAR LIVE">
+<meta property="og:description" content="If something isn&#x27;t solved, please let us know with Settings › Diagnostics › Send an error report.">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/12-troubleshooting.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/site.css">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
-<header class="top">
-  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
-  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
-  <div class="top-right">
-    <details class="lang"><summary>🌐 <span>English</span></summary><div class="lang-menu"><a href="../ko/12-troubleshooting.html">한국어</a><a href="../en/12-troubleshooting.html" class="on">English</a><a href="../ja/12-troubleshooting.html">日本語</a><a href="../zh/12-troubleshooting.html">简体中文</a></div></details>
-    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
-    <a class="btn primary small" href="https://curiousbobby.booth.pm/">Buy on BOOTH</a>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">Overview</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#editions">Editions</a><a href="01-getting-started.html" aria-current="page">Guide</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="Language"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>English</span></summary><div class="lang-menu" role="menu"><a href="../ko/12-troubleshooting.html" lang="ko">한국어</a><a href="../en/12-troubleshooting.html" lang="en" aria-current="true">English</a><a href="../ja/12-troubleshooting.html" lang="ja">日本語</a><a href="../zh/12-troubleshooting.html" lang="zh-Hans">简体中文</a></div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle theme" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">Buy</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
   </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">Overview</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#editions">Editions</a><a href="01-getting-started.html" aria-current="page">Guide</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">Buy</a></div>
 </header>
-<div class="wrap">
-  <aside class="side"><a class="side-home" href="index.html">Home</a><div class="side-h">Guide</div><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting an avatar (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html" class="on">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><div class="side-h">Legal</div><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></aside>
-  <main class="content">
-    <article><h1 id="12-troubleshooting">12. Troubleshooting<a class="anchor" href="#12-troubleshooting">#</a></h1>
-<blockquote>
-<p>First check <strong>Settings › Diagnostics</strong>, and if that does not solve it, let us know with <strong>Send an error report</strong>.
-If a device problem stops Avatar Live from starting, try <strong>launching while holding Shift</strong> (Safe Start).</p>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html" aria-current="page">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="12-troubleshooting">12. Troubleshooting<a class="anchor" href="#12-troubleshooting" aria-hidden="true" tabindex="-1">#</a></h1>
+<blockquote class="callout tip"><p>If something isn't solved, please let us know with <strong>Settings › Diagnostics › Send an error report</strong>.</p>
 </blockquote>
-<h2 id="start-up-and-installation">Start-up and installation<a class="anchor" href="#start-up-and-installation">#</a></h2>
+<h2 id="start-up--installation">Start-up · Installation<a class="anchor" href="#start-up--installation" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -46,19 +61,15 @@ If a device problem stops Avatar Live from starting, try <strong>launching while
 </tr>
 <tr>
 <td>"Avatar Live's files have been changed"</td>
-<td>Reinstall from the original you downloaded from BOOTH (avatars and settings are kept)</td>
+<td>Please reinstall from the original you downloaded from BOOTH. Your avatars and settings are kept.</td>
 </tr>
 <tr>
-<td>Activation does not work</td>
-<td>Check your internet connection and try again</td>
-</tr>
-<tr>
-<td>Launching only brings the window to the front</td>
-<td>It is already running (check the tray)</td>
+<td>It doesn't start smoothly</td>
+<td>Launch while holding <strong>Shift</strong> for a safe start</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="avatar">Avatar<a class="anchor" href="#avatar">#</a></h2>
+<h2 id="avatar">Avatar<a class="anchor" href="#avatar" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -68,32 +79,24 @@ If a device problem stops Avatar Live from starting, try <strong>launching while
 </thead>
 <tbody>
 <tr>
-<td>Some parts are pink</td>
-<td>Check that the avatar uploads normally, then export again</td>
+<td>Some parts look pink</td>
+<td>Check that the avatar uploads to VRChat normally, then export it again</td>
 </tr>
 <tr>
-<td>"It was made by a newer exporter"</td>
-<td>Update Avatar Live</td>
+<td>The avatar isn't visible</td>
+<td>Double-click an empty spot in the view</td>
 </tr>
 <tr>
-<td>The head and hands do not move</td>
-<td>Check that it is a humanoid avatar</td>
+<td>The pose is stuck or the hair is tangled</td>
+<td><strong>⟲</strong> at the top</td>
 </tr>
 <tr>
-<td>Avatar sound effects do not play</td>
-<td>Avatar sound effects are not played</td>
-</tr>
-<tr>
-<td>The avatar is not visible</td>
-<td>Double-click an empty area of the view, or use the <strong>⌂</strong> scene tool</td>
-</tr>
-<tr>
-<td>The pose is frozen, the hair is tangled</td>
-<td><strong>⟲ Reset</strong> at the top</td>
+<td>Avatar sound effects aren't heard</td>
+<td>Avatar sound effects are not played.</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="webcam-and-face">Webcam and face<a class="anchor" href="#webcam-and-face">#</a></h2>
+<h2 id="webcam--face">Webcam · Face<a class="anchor" href="#webcam--face" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -103,36 +106,28 @@ If a device problem stops Avatar Live from starting, try <strong>launching while
 </thead>
 <tbody>
 <tr>
-<td>Camera "Failed"</td>
+<td>The camera doesn't turn on</td>
 <td>Check whether another app is using the camera</td>
 </tr>
 <tr>
-<td>The camera image is black</td>
-<td>Check the lens cover and the Windows camera privacy settings</td>
-</tr>
-<tr>
-<td>Expressions are too small / too large</td>
-<td>Run <strong>Automatic face setup</strong> again, use <strong>Face adjustment</strong></td>
+<td>Expressions come out too small or too large</td>
+<td>Run <strong>Automatic face setup</strong> again, or use <strong>Face adjustment</strong></td>
 </tr>
 <tr>
 <td>The avatar looks to the side</td>
 <td><strong>Recenter</strong></td>
 </tr>
 <tr>
-<td>Winks do not work</td>
-<td>Set the blink mode to <strong>Independent</strong> or <strong>Smart</strong></td>
+<td>Winks don't work</td>
+<td>Set the blink mode to <strong>Independent</strong></td>
 </tr>
 <tr>
-<td>Left and right are swapped</td>
-<td><strong>Mirror</strong></td>
-</tr>
-<tr>
-<td>High CPU usage</td>
-<td>Set tracking quality to <strong>Balanced</strong> or <strong>Eco</strong></td>
+<td>The PC feels slow</td>
+<td>Set the tracking quality to <strong>Balanced</strong> or <strong>Eco</strong></td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="microphone">Microphone<a class="anchor" href="#microphone">#</a></h2>
+<h2 id="microphone">Microphone<a class="anchor" href="#microphone" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -143,11 +138,7 @@ If a device problem stops Avatar Live from starting, try <strong>launching while
 <tbody>
 <tr>
 <td>"No signal"</td>
-<td>In Windows Settings › Privacy › Microphone, allow desktop apps</td>
-</tr>
-<tr>
-<td>"Nearly silent"</td>
-<td>If you use a mixer app, choose that app's virtual microphone</td>
+<td>Allow desktop apps in Windows Settings › Privacy › Microphone</td>
 </tr>
 <tr>
 <td>Noise moves the mouth</td>
@@ -155,11 +146,11 @@ If a device problem stops Avatar Live from starting, try <strong>launching while
 </tr>
 <tr>
 <td>The mouth moves too little</td>
-<td><strong>Voice calibration</strong>, <strong>Sensitivity</strong></td>
+<td><strong>Voice calibration</strong></td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="output">Output<a class="anchor" href="#output">#</a></h2>
+<h2 id="output--screen-share">Output · Screen share<a class="anchor" href="#output--screen-share" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -173,55 +164,24 @@ If a device problem stops Avatar Live from starting, try <strong>launching while
 <td>Install the Spout2 plugin in OBS</td>
 </tr>
 <tr>
-<td>The background is black in OBS</td>
-<td>Background <strong>Transparent</strong> + OBS <strong>Composite with alpha</strong></td>
+<td>The background looks black in OBS</td>
+<td>Set the background to <strong>Transparent</strong> and choose <strong>Composite with alpha</strong> in OBS</td>
 </tr>
 <tr>
-<td>The virtual camera is not in Discord</td>
-<td>Install the virtual camera, then quit Discord completely and open it again</td>
+<td>Not in the Discord list</td>
+<td>Turn on <strong>Screen share</strong>, then check the <strong>Applications</strong> tab</td>
 </tr>
 <tr>
-<td>4K goes out as 1080p</td>
-<td>You are using the Basic edition (Pro supports 4K)</td>
+<td>The game shows up black</td>
+<td>Switch the game to windowed mode</td>
 </tr>
 <tr>
 <td>"Avatar Live Basic" text</td>
-<td>The Basic watermark (Pro has none)</td>
+<td>This is the Basic watermark. It isn't shown in Pro.</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="discord-screen-share">Discord screen share<a class="anchor" href="#discord-screen-share">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Symptom</th>
-<th>Solution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Not in the Discord list</td>
-<td>Turn on <strong>Screen share</strong> and check Discord's <strong>Applications</strong> tab</td>
-</tr>
-<tr>
-<td>Black screen</td>
-<td>Run Avatar Live without administrator rights, put the game in windowed mode</td>
-</tr>
-<tr>
-<td>No sound</td>
-<td>Turn on sound in Discord, install a virtual playback device</td>
-</tr>
-<tr>
-<td>Sound is heard twice</td>
-<td>Set <strong>Discord audio device</strong> to a device you do not listen to</td>
-</tr>
-<tr>
-<td>Video is black</td>
-<td>Protected video (DRM) cannot be captured</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="supported-features">Supported features<a class="anchor" href="#supported-features">#</a></h2>
+<h2 id="supported-features">Supported features<a class="anchor" href="#supported-features" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -231,12 +191,12 @@ If a device problem stops Avatar Live from starting, try <strong>launching while
 </thead>
 <tbody>
 <tr>
-<td>✅ VRChat avatar features</td>
-<td>Expressions menu and parameters, animators such as FX, PhysBones, Contacts, Constraints, Eye Look, LipSync</td>
+<td>✅ VRChat avatars</td>
+<td>Expressions menu, animators, PhysBones, Contacts, Constraints, Eye Look, LipSync</td>
 </tr>
 <tr>
 <td>✅ Creation tools</td>
-<td>Avatars made with NDMF, Modular Avatar, VRCFury and similar tools</td>
+<td>Avatars that use NDMF · Modular Avatar · VRCFury</td>
 </tr>
 <tr>
 <td>✅ Shaders</td>
@@ -247,58 +207,46 @@ If a device problem stops Avatar Live from starting, try <strong>launching while
 <td>VRCFaceTracking, ARKit (Perfect Sync), MMD eye morphs</td>
 </tr>
 <tr>
-<td>⚠️ Does not work</td>
-<td>Avatar sound effects, AudioLink, mirror and camera detection, Light Volumes, custom scripts</td>
-</tr>
-<tr>
 <td>🧪 Experimental features</td>
-<td>Ultraleap, OSC / VMC, camera detection of tongue and cheeks — expected to work, but the devices and apps involved have not yet been tested in the developer's environment</td>
+<td>Ultraleap, OSC · VMC, camera detection of the tongue and cheeks</td>
 </tr>
 <tr>
-<td>❌ Not supported</td>
-<td>VRM files, Live2D, macOS, Linux</td>
+<td>⚠️ Not supported</td>
+<td>Avatar sound effects, AudioLink, mirror detection, VRM files, Live2D, macOS · Linux</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="planned-support">Planned support<a class="anchor" href="#planned-support">#</a></h2>
+<p>We expect the experimental features to work properly, but we haven't yet been able to test them with every device and app in the developer's environment.</p>
+<h2 id="planned-support">Planned support<a class="anchor" href="#planned-support" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>Loading VRM models (.vrm, VRM 0.x / 1.0) and playing .vrma animations</li>
-<li>Stronger Perfect Sync: mapping shape keys directly, face tuning per webcam and iPhone</li>
+<li>Stronger Perfect Sync: mapping that links shape keys directly, face calibration for each webcam · iPhone, and a tool to check the 52 expressions one by one</li>
+<li>Expression hotkeys: hotkeys for My expressions · expression clips · saved poses (also from Stream Deck key presses), and holding a chosen expression</li>
 <li>More phone face apps: VTube Studio (iPhone), MeowFace (Android)</li>
-<li>Better full-body tracking app support (VMC): face and body apps at the same time, sitting and leaning — TDPT, XR Animator and more</li>
-<li>Desktop mascot mode (transparent window), eyes following the mouse cursor</li>
-<li>Conveniences: automatic refresh when you export the avatar again, lower FPS when idle</li>
+<li>Transparent backgrounds through OBS Game Capture (without a plugin)</li>
+<li>Webcam upper body: twisting · tilting the upper body from your shoulder movement</li>
+<li>Better full-body tracking app support (VMC): receiving a face app and a body app at the same time, reflecting sitting · leaning — TDPT, XR Animator and more</li>
+<li>Desktop mascot mode (transparent window), eyes that follow the mouse cursor</li>
+<li>Conveniences: automatic refresh when you export the avatar again, lower FPS when there's nothing to do</li>
 </ul>
-<p>※ Planned features and schedules may change.</p>
-<h2 id="frequently-asked-questions">Frequently asked questions<a class="anchor" href="#frequently-asked-questions">#</a></h2>
-<p><strong>Q. Do I need a VRChat account?</strong>
-No. Avatar Live does not communicate with VRChat.</p>
-<p><strong>Q. Can I use it for streaming?</strong>
-Streaming, publishing videos and commercial use require <strong>Pro</strong>.</p>
-<p><strong>Q. Is my keyboard input recorded?</strong>
-No. Desk hand motion never saves, records or sends the characters you type.</p>
-<p><strong>Q. Can I give my avatar file to other people?</strong>
-Follow the terms of use of the avatar and outfit creators.</p>
-<p><strong>Q. Can I show several avatars at once?</strong>
-One at a time. Switch avatars from the avatar name at the top left.</p></article>
-    <div class="pager"><a class="prev" href="11-pro-features.html"><span>Previous</span>Posing · Objects · Expressions</a><a class="next" href="13-license.html"><span>Next</span>Editions · License · Notices</a></div>
-    <p class="updated">Last updated: 2026-10-09</p>
-  </main>
-  <nav class="toc"><div class="toc-h">On this page</div><ul><li class="l2"><a href="#start-up-and-installation">Start-up and installation</a></li><li class="l2"><a href="#avatar">Avatar</a></li><li class="l2"><a href="#webcam-and-face">Webcam and face</a></li><li class="l2"><a href="#microphone">Microphone</a></li><li class="l2"><a href="#output">Output</a></li><li class="l2"><a href="#discord-screen-share">Discord screen share</a></li><li class="l2"><a href="#supported-features">Supported features</a></li><li class="l2"><a href="#planned-support">Planned support</a></li><li class="l2"><a href="#frequently-asked-questions">Frequently asked questions</a></li></ul></nav>
+<p>※ Planned features and their timing may change.</p>
+<h2 id="frequently-asked-questions">Frequently asked questions<a class="anchor" href="#frequently-asked-questions" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>Do I need a VRChat account?</strong>
+No, you don't. Avatar Live does not communicate with VRChat.</p>
+<p><strong>Can I use it for streaming?</strong>
+For streaming, publishing videos and commercial use, please use <strong>Pro</strong>. Private Discord sharing with friends is fine with Basic, too.</p>
+<p><strong>Is my keyboard input recorded?</strong>
+No, it isn't. Desk hand motion does not save or send the characters you type.</p>
+<p><strong>Can I give my avatar file to other people?</strong>
+Please follow the terms of use of the avatar and outfit creators.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="11-pro-features.html"><span>Previous</span>Posing · Objects · Expressions</a><a class="next" href="13-license.html"><span>Next</span>Editions · License · Notices</a></nav><p class="updated">Last updated: 2026-10-09</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#start-up--installation">Start-up · Installation</a></li><li><a href="#avatar">Avatar</a></li><li><a href="#webcam--face">Webcam · Face</a></li><li><a href="#microphone">Microphone</a></li><li><a href="#output--screen-share">Output · Screen share</a></li><li><a href="#supported-features">Supported features</a></li><li><a href="#planned-support">Planned support</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ul></nav>
 </div>
-<footer class="foot">
-  <div class="foot-in">
-    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
-    <div class="foot-links"><a href="legal-terms.html">Avatar Live Terms of Use</a> · <a href="legal-privacy.html">Privacy Policy</a> · <a href="legal-refund.html">Refund Policy</a> · <a href="legal-seller.html">Seller Information</a></div>
-    <p>Avatar Live is not affiliated with or endorsed by VRChat Inc. VRChat is a trademark of VRChat Inc.</p>
-    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
+  <div class="wrap fine"><p>AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>
-<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
-<script>
-function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
-(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
-function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
-</script>
 </body>
 </html>

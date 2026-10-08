@@ -3,31 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>はじめに — Avatar Live</title>
-<meta name="description" content="VRChat アバターを VRM 変換なしでそのまま使える Windows 用 VTuber ソフト Avatar Live の公式ガイド">
-<meta property="og:title" content="はじめに — Avatar Live">
-<meta property="og:description" content="VRChat アバターを VRM 変換なしでそのまま使える Windows 用 VTuber ソフト Avatar Live の公式ガイド">
-<meta property="og:image" content="../assets/brand/og.jpg">
+<title>はじめに — AVATAR LIVE</title>
+<meta name="description" content="配信や動画の公開など、ほかの人に見せる用途には Pro を選んでください。詳しくは13章をご覧ください。">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ja/01-getting-started.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/01-getting-started.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/01-getting-started.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/01-getting-started.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/01-getting-started.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="はじめに — AVATAR LIVE">
+<meta property="og:description" content="配信や動画の公開など、ほかの人に見せる用途には Pro を選んでください。詳しくは13章をご覧ください。">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ja/01-getting-started.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ja.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="../assets/brand/favicon.png">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard-jp/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/site.css">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
-<header class="top">
-  <button class="burger" aria-label="メニュー" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
-  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
-  <div class="top-right">
-    <details class="lang"><summary>🌐 <span>日本語</span></summary><div class="lang-menu"><a href="../ko/01-getting-started.html">한국어</a><a href="../en/01-getting-started.html">English</a><a href="../ja/01-getting-started.html" class="on">日本語</a><a href="../zh/01-getting-started.html">简体中文</a></div></details>
-    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
-    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTHで購入</a>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">概要</a><a href="index.html#features">機能</a><a href="index.html#how">使い方</a><a href="index.html#editions">エディション</a><a href="01-getting-started.html" aria-current="page">ガイド</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="言語"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>日本語</span></summary><div class="lang-menu" role="menu"><a href="../ko/01-getting-started.html" lang="ko">한국어</a><a href="../en/01-getting-started.html" lang="en">English</a><a href="../ja/01-getting-started.html" lang="ja" aria-current="true">日本語</a><a href="../zh/01-getting-started.html" lang="zh-Hans">简体中文</a></div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="テーマ切り替え" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">購入する</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="メニュー" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
   </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">概要</a><a href="index.html#features">機能</a><a href="index.html#how">使い方</a><a href="index.html#editions">エディション</a><a href="01-getting-started.html" aria-current="page">ガイド</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">購入する</a></div>
 </header>
-<div class="wrap">
-  <aside class="side"><a class="side-home" href="index.html">ホーム</a><div class="side-h">ガイド</div><ul><li><a href="01-getting-started.html" class="on">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング · オブジェクト · 表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション · ライセンス · 告知</a></li></ul><div class="side-h">規約・ポリシー</div><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></aside>
-  <main class="content">
-    <article><h1 id="1-はじめに">1. はじめに<a class="anchor" href="#1-はじめに">#</a></h1>
-<h2 id="必要なもの">必要なもの<a class="anchor" href="#必要なもの">#</a></h2>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html" aria-current="page">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="1-はじめに">1. はじめに<a class="anchor" href="#1-はじめに" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="必要なもの">必要なもの<a class="anchor" href="#必要なもの" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -38,15 +55,15 @@
 <tbody>
 <tr>
 <td>OS</td>
-<td><strong>Windows 10 / 11（64 ビット）</strong></td>
+<td>Windows 10 / 11（64ビット）</td>
 </tr>
 <tr>
 <td>グラフィック</td>
-<td><strong>DirectX 11</strong> 対応 GPU</td>
+<td>DirectX 11 対応 GPU</td>
 </tr>
 <tr>
 <td>Web カメラ</td>
-<td>一般的なカラー Web カメラ（顔・腕・手のトラッキング用）</td>
+<td>一般的なカラー Web カメラ</td>
 </tr>
 <tr>
 <td>マイク</td>
@@ -54,19 +71,15 @@
 </tr>
 <tr>
 <td>インターネット</td>
-<td>アクティベートとライセンス確認に必要</td>
+<td>アクティベーションとライセンス確認に必要</td>
 </tr>
 <tr>
 <td>アバター</td>
-<td>VRChat アバターの <strong>Unity プロジェクト</strong>（Unity 2022.3.22f1）— <a href="02-avatar-exporter.html">2 章</a>で <code>.vavatar</code> に書き出します</td>
-</tr>
-<tr>
-<td>任意のデバイス</td>
-<td>Leap Motion / Ultraleap ハンドトラッカー、iPhone（iFacialMocap）</td>
+<td>VRChat アバターの Unity プロジェクト（Unity 2022.3.22f1）</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="エディションを選ぶ">エディションを選ぶ<a class="anchor" href="#エディションを選ぶ">#</a></h2>
+<h2 id="エディション">エディション<a class="anchor" href="#エディション" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -77,83 +90,57 @@
 </thead>
 <tbody>
 <tr>
-<td>用途</td>
-<td>個人での利用</td>
-<td><strong>配信・動画の公開・商用利用</strong></td>
+<td>利用範囲</td>
+<td>個人での利用（フレンドとの非公開の Discord 共有を含む）</td>
+<td>配信・動画の公開・商用利用</td>
 </tr>
 <tr>
 <td>出力</td>
-<td>最大 1080p、ウォーターマークあり</td>
-<td>最大 4K、ウォーターマークなし</td>
+<td>最大 1080p・ウォーターマークあり</td>
+<td>最大 4K・ウォーターマークなし</td>
 </tr>
 <tr>
-<td>ポージング · オブジェクト · 画面共有のほかのソース</td>
+<td>ポージング・オブジェクト・画面共有のほかのソース</td>
 <td>—</td>
 <td>✅</td>
 </tr>
 </tbody>
 </table></div>
-<blockquote>
-<p>配信（ライブストリーミング）や動画のアップロードなど、<strong>公開・商用目的で使うには Pro</strong> が必要です。詳しくは <a href="13-license.html">13 章</a>をご覧ください。</p>
-</blockquote>
-<h2 id="インストール">インストール<a class="anchor" href="#インストール">#</a></h2>
+<p>配信や動画の公開など、ほかの人に見せる用途には <strong>Pro</strong> を選んでください。詳しくは<a href="13-license.html">13章</a>をご覧ください。</p>
+<h2 id="インストール">インストール<a class="anchor" href="#インストール" aria-hidden="true" tabindex="-1">#</a></h2>
 <ol>
-<li>BOOTH の購入履歴から Avatar Live の ZIP ファイルをダウンロードします。</li>
-<li>好きなフォルダーに <strong>展開します。</strong> 展開したフォルダーがインストールフォルダーになります。</li>
+<li>BOOTH の購入履歴から ZIP ファイルをダウンロードします。</li>
+<li>好きなフォルダーに展開します。</li>
 <li><code>AvatarLive.exe</code> を実行します。</li>
 </ol>
-<blockquote>
-<p><strong>「Windows によって PC が保護されました」画面が出たら</strong> <strong>詳細情報 → 実行</strong> を押してください。</p>
-<p>⚠️ <strong>インストールフォルダーのファイルを変更したり、ほかのプログラムを入れたりしないでください。</strong> 元のファイルと異なると Avatar Live は起動しません。その場合は BOOTH からダウンロードした元のファイルで再インストールしてください（アバターと設定はそのまま残ります）。</p>
+<blockquote class="callout tip"><p>「Windows によって PC が保護されました」という画面が表示されたら、<strong>詳細情報 → 実行</strong> を押してください。</p>
+<p>💡 インストールフォルダーのファイルは、そのままにしておくことをおすすめします。ファイルが変わると Avatar Live が起動しないことがありますが、その場合は元のファイルで再インストールすれば大丈夫です。アバターと設定はそのまま残ります。</p>
 </blockquote>
-<h2 id="製品のアクティベーション">製品のアクティベーション<a class="anchor" href="#製品のアクティベーション">#</a></h2>
-<p>初めて起動すると <strong>製品のアクティベーション</strong> 画面が表示されます。</p>
+<h2 id="アクティベーション">アクティベーション<a class="anchor" href="#アクティベーション" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>初めて起動すると、<strong>製品のアクティベーション</strong> 画面が表示されます。購入時に案内された情報を入力して <strong>アクティベート</strong> を押せば完了です。</p>
+<p>ライセンスは1人1台です。別の PC への移行は、ご自身で1回行えます。それ以降は、やむを得ない場合にお問い合わせを通じてお手伝いしていますが、難しい場合もあります。<strong>最初にアクティベートする PC は、慎重に決めてください。</strong></p>
+<h2 id="初めての配信まで">初めての配信まで<a class="anchor" href="#初めての配信まで" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="steps">
 <ol>
-<li>右上で言語を選びます。</li>
-<li>購入時に案内された情報を入力し、<strong>アクティベート</strong> を押します。</li>
-<li>「アクティベートしました。」と表示されれば完了です。</li>
+<li><strong>アバターを書き出す</strong> — Unity で <code>.vavatar</code> ファイルを作ります。→ <a href="02-avatar-exporter.html">2章</a></li>
+<li><strong>アバターを開く</strong> — スタート画面でファイルを開き、<strong>▶ Avatar Live を開始</strong> を押します。→ <a href="03-launcher-and-library.html">3章</a></li>
+<li><strong>Web カメラ・マイクをオンにする</strong> — <strong>デバイス</strong> ページのスイッチをオンにします。→ <a href="06-devices.html">6章</a></li>
+<li><strong>自分の顔に合わせる</strong> — <strong>動き › 自動フェイスセットアップ</strong> を押して、案内に従います。→ <a href="07-motion.html">7章</a></li>
+<li><strong>背景・ライティングを選ぶ</strong> — <strong>シーン</strong> ページで選びます。→ <a href="08-scene.html">8章</a></li>
+<li><strong>出力する</strong> — <strong>出力</strong> ページで、Spout2、仮想カメラ、画面共有のどれかをオンにします。→ <a href="09-output.html">9章</a></li>
 </ol>
-<h3 id="別の-pc-に移す">別の PC に移す<a class="anchor" href="#別の-pc-に移す">#</a></h3>
-<ul>
-<li>ライセンスは <strong>1 人 1 台</strong> です。</li>
-<li>別の PC への移行は <strong>1 回だけ</strong> できます。移行すると以前の PC では使えなくなり、<strong>その後はいかなる場合も再び移行することはできません。</strong></li>
-<li>移行先の PC を慎重に決めてから行ってください。</li>
-</ul>
-<h2 id="初めての配信まで">初めての配信まで<a class="anchor" href="#初めての配信まで">#</a></h2>
-<ol>
-<li><strong>アバターを作る</strong> — アバターの Unity プロジェクトで <code>.vavatar</code> を書き出す（<a href="02-avatar-exporter.html">2 章</a>）</li>
-<li><strong>アバターを開く</strong> — スタート画面で <strong>アバターを開く…</strong> → <strong>▶ Avatar Live を開始</strong>（<a href="03-launcher-and-library.html">3 章</a>）</li>
-<li><strong>Web カメラをオン</strong> — <strong>デバイス</strong> → <strong>Web カメラ</strong> スイッチ（<a href="06-devices.html">6 章</a>）</li>
-<li><strong>マイクをオン</strong> — <strong>デバイス</strong> → <strong>マイク</strong> スイッチ</li>
-<li><strong>顔を合わせる</strong> — <strong>動き</strong> → <strong>自動フェイスセットアップ</strong>（<a href="07-motion.html">7 章</a>）</li>
-<li><strong>背景を選ぶ</strong> — <strong>シーン</strong> → <strong>背景</strong>（<a href="08-scene.html">8 章</a>）</li>
-<li><strong>出力する</strong> — <strong>出力</strong> → Spout2 / 仮想カメラ / 画面共有（<a href="09-output.html">9 章</a>）</li>
-<li><strong>F1</strong> — UI をすべて隠したクリーンな画面</li>
-</ol>
-<h2 id="終了する">終了する<a class="anchor" href="#終了する">#</a></h2>
-<ul>
-<li>ウィンドウの <strong>X</strong> は、標準では <strong>トレイに隠す</strong> 動作です。アバターと出力は動作し続けます。</li>
-<li>完全に終了するには <strong>トレイアイコンを右クリック → 終了</strong>。</li>
-<li>X ですぐに終了したい場合は、設定 › ウィンドウ › <strong>閉じるボタン（×）</strong> → <strong>終了</strong>。</li>
-</ul></article>
-    <div class="pager"><span></span><a class="next" href="02-avatar-exporter.html"><span>次へ</span>アバターの書き出し（Avatar Exporter）</a></div>
-    <p class="updated">最終更新: 2026-10-09</p>
-  </main>
-  <nav class="toc"><div class="toc-h">このページ</div><ul><li class="l2"><a href="#必要なもの">必要なもの</a></li><li class="l2"><a href="#エディションを選ぶ">エディションを選ぶ</a></li><li class="l2"><a href="#インストール">インストール</a></li><li class="l2"><a href="#製品のアクティベーション">製品のアクティベーション</a></li><li class="l3"><a href="#別の-pc-に移す">別の PC に移す</a></li><li class="l2"><a href="#初めての配信まで">初めての配信まで</a></li><li class="l2"><a href="#終了する">終了する</a></li></ul></nav>
 </div>
-<footer class="foot">
-  <div class="foot-in">
-    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
-    <div class="foot-links"><a href="legal-terms.html">Avatar Live 利用規約</a> · <a href="legal-privacy.html">プライバシーポリシー</a> · <a href="legal-refund.html">返金ポリシー</a> · <a href="legal-seller.html">販売者情報</a></div>
-    <p>Avatar Live は VRChat Inc. と提携・承認関係にある製品ではありません。VRChat は VRChat Inc. の商標です。</p>
-    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+<p><strong>F1</strong> を押すと、メニューが消えてアバターだけが表示されます。</p>
+<h2 id="終了">終了<a class="anchor" href="#終了" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>ウィンドウの <strong>X</strong> を押すとトレイに最小化され、アバターと出力は動き続けます。完全に終了するには、トレイアイコンを右クリックして <strong>終了</strong> を押します。</p></article><nav class="pager" aria-label="Pager"><span></span><a class="next" href="02-avatar-exporter.html"><span>次へ</span>アバターの書き出し</a></nav><p class="updated">最終更新: 2026-10-09</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#必要なもの">必要なもの</a></li><li><a href="#エディション">エディション</a></li><li><a href="#インストール">インストール</a></li><li><a href="#アクティベーション">アクティベーション</a></li><li><a href="#初めての配信まで">初めての配信まで</a></li><li><a href="#終了">終了</a></li></ul></nav>
+</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>製品</h2><ul><li><a href="index.html#features">機能</a></li><li><a href="index.html#how">使い方</a></li><li><a href="index.html#editions">エディション</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li></ul></div><div class="fcol"><h2>ガイド</h2><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul></div><div class="fcol"><h2>規約・ポリシー</h2><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></div><div class="fcol"><h2>リンク</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
+  <div class="wrap fine"><p>AVATAR LIVE は VRChat Inc. の公式製品ではなく、VRChat Inc. とは提携していません。VRChat は VRChat Inc. の商標です。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>
-<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
-<script>
-function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
-(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
-function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
-</script>
 </body>
 </html>

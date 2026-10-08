@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "title": "AVATAR LIVE — 당신의 VRChat 아바타, 그대로 방송으로",
+    "description": "VRM 변환 없이 VRChat 아바타를 그대로 방송·화면 공유·영상 제작에 쓰는 Windows 앱. 원래 셰이더, PhysBone, Expression 메뉴, 얼굴 트래킹을 그대로."
+  },
+  "nav": {
+    "overview": "개요",
+    "features": "기능",
+    "how": "사용 방법",
+    "editions": "에디션",
+    "docs": "가이드",
+    "get": "구매하기",
+    "menu": "메뉴",
+    "theme": "테마 전환",
+    "language": "언어"
+  },
+  "hero": {
+    "eyebrow": "VRChat 아바타를 위한 Windows VTuber 앱",
+    "title": ["당신의 VRChat 아바타,", "그대로 방송으로."],
+    "sub": "VRM 변환도, 복잡한 재설정도 없이.\n익숙한 아바타를 방송과 화면 공유에 활용하세요.",
+    "primary": "AVATAR LIVE 시작하기",
+    "secondary": "기능 살펴보기",
+    "meta": "Windows 10 / 11 · Basic 1,990엔부터",
+    "caption": "실제 AVATAR LIVE 녹화 화면"
+  },
+  "works": {
+    "label": "이런 곳에서 바로",
+    "items": ["OBS Studio", "Discord", "Zoom", "Microsoft Teams"]
+  },
+  "features": {
+    "kicker": "기능",
+    "title": "VRChat에서 보던 그 아바타 그대로.",
+    "sub": "다시 만들지 않아도 됩니다. 아바타에 담긴 것들이 그대로 움직입니다.",
+    "items": [
+      {"title": "VRM 변환 없이", "body": "아바타 프로젝트에서 한 번 내보내면 끝. 아바타를 고쳐도 다시 내보내기만 하면 됩니다.", "media": "img:launcher", "size": "wide"},
+      {"title": "원래 셰이더 그대로", "body": "Poiyomi, lilToon 등 아바타에 쓴 셰이더를 그대로 보여 줍니다.", "media": "common:light-spot-light", "size": "tall"},
+      {"title": "PhysBone과 메뉴 그대로", "body": "머리카락의 흔들림, 옷 토글, 표정 버튼까지 VRChat과 같은 설정으로 움직입니다.", "media": "video:physbone"},
+      {"title": "얼굴 트래킹", "body": "웹캠 하나로 표정과 시선, 손가락까지. 아바타의 VRCFaceTracking 설정을 그대로 씁니다.", "media": "video:face"},
+      {"title": "키보드 · 마우스 손 동작", "body": "손이 화면에 없을 때도 타이핑과 마우스에 맞춰 손이 움직입니다. 입력한 글자는 기록하지 않습니다.", "media": "img:motion-desk"},
+      {"title": "방송과 화면 공유", "body": "OBS에는 투명 배경으로, Discord에는 게임과 아바타를 한 화면으로 보냅니다.", "media": "video:share", "size": "wide"}
+    ]
+  },
+  "how": {
+    "kicker": "사용 방법",
+    "title": "세 단계면 충분합니다.",
+    "steps": [
+      {"title": "Unity 프로젝트 열기", "body": "VRChat에 업로드하던 아바타의 Unity 프로젝트(2022.3.22f1)를 엽니다."},
+      {"title": "Exporter로 내보내기", "body": "Curious Bobby - Avatar Exporter에서 버튼 한 번으로 .vavatar 파일을 만듭니다."},
+      {"title": "AVATAR LIVE에서 시작", "body": "파일을 열고 웹캠을 켜면 바로 움직입니다. 그 뒤로는 Unity가 필요하지 않습니다."}
+    ],
+    "note": "VRM · .vrca 파일만으로는 사용할 수 없습니다. 아바타의 Unity 프로젝트가 필요합니다.",
+    "link": "내보내기 가이드 보기"
+  },
+  "showcase": {
+    "kicker": "둘러보기",
+    "title": "방송에 필요한 것을 한 곳에.",
+    "more": "자세히 보기",
+    "rows": [
+      {"title": "아바타를 골라 바로 시작", "body": "최근에 쓴 아바타를 고르거나 파일을 끌어다 놓으면 됩니다. 조명과 카메라는 아바타마다 기억합니다.", "points": ["최근 아바타", "끌어다 놓기로 열기", "아바타별 설정 저장"], "media": "img:avatar-pop", "page": "03-launcher-and-library"},
+      {"title": "Expression 메뉴 그대로", "body": "VRChat에서 쓰던 메뉴를 그대로 누릅니다. 자주 쓰는 항목은 버튼이나 단축키로 만들어 둘 수 있습니다.", "points": ["토글 · 버튼 · Radial · Puppet", "단축키와 퀵 액션", "즐겨찾기"], "media": "video:menu", "page": "05-avatar-menu"},
+      {"title": "내 얼굴에 맞추는 트래킹", "body": "안내에 따라 표정을 지으면 내 얼굴에 맞게 자동으로 맞춰집니다.", "points": ["자동 얼굴 설정", "깜빡임 · 시선", "마이크 립싱크"], "media": "img:facecal", "page": "07-motion"},
+      {"title": "잡아당기고, 고정하고", "body": "머리카락이나 꼬리를 마우스로 잡아당기고, 원하는 모양 그대로 고정할 수 있습니다.", "points": ["마우스로 잡기", "그 자리에 포즈 고정", "마시멜로PB 지원"], "media": "common:grab", "page": "04-main-window"},
+      {"title": "OBS와 통화 앱으로", "body": "Spout2로 투명 배경을 보내고, 가상 카메라로 Discord · Zoom에 나갑니다.", "points": ["Spout2 투명 배경", "가상 카메라", "PNG 사진 저장"], "media": "video:background", "page": "09-output"},
+      {"title": "게임 + 아바타를 Discord로", "body": "OBS 없이 게임 화면 위에 아바타를 얹어 공유합니다. 친구에게는 게임과 아바타가, 나에게는 게임만 보입니다.", "points": ["OBS 없이", "게임 소리만 보내기", "위치 · 크기 자유롭게"], "media": "img:share", "page": "09-output"},
+      {"title": "조명과 카메라", "body": "프리셋 하나로 분위기를 바꾸고, 배경과 효과를 더합니다.", "points": ["조명 프리셋 10종", "배경 · 크로마키", "블룸 · 피사계 심도"], "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool", "page": "08-scene"}
+    ]
+  },
+  "compare": {
+    "kicker": "비교",
+    "title": "변환하지 않으니까, 그대로.",
+    "left": "VRM 변환 방식",
+    "leftNote": "일반적인 경우",
+    "right": "AVATAR LIVE",
+    "rows": [
+      {"label": "VRM 변환", "left": "필요", "right": "필요 없음"},
+      {"label": "셰이더", "left": "VRM용으로 다시 구성하는 경우가 많음", "right": "원래 셰이더 그대로"},
+      {"label": "PhysBone", "left": "SpringBone으로 다시 설정", "right": "그대로 동작"},
+      {"label": "Expression 메뉴", "left": "다시 만들어야 함", "right": "그대로 사용"},
+      {"label": "아바타를 고친 뒤", "left": "변환부터 다시", "right": "다시 내보내기만"}
+    ],
+    "foot": "프로그램마다 지원 범위는 다를 수 있습니다."
+  },
+  "editions": {
+    "kicker": "에디션",
+    "title": "필요한 만큼 고르세요.",
+    "sub": "Basic과 Pro는 같은 프로그램입니다. 입력한 라이선스로 에디션이 정해집니다.",
+    "plans": [
+      {"name": "Basic", "price": "1,990엔", "for": "개인 사용", "features": ["아바타 · 트래킹 · 메뉴 · 조명 · 효과", "Spout2 · 가상 카메라 · 화면 공유", "내 표정 · 자동 표정", "친구와의 비공개 Discord 공유", "최대 1080p · 워터마크 표시"], "cta": "Basic 구매"},
+      {"name": "Pro", "price": "3,980엔", "for": "방송 · 영상 공개 · 상업적 이용", "badge": "추천", "features": ["Basic의 모든 기능", "최대 4K · 워터마크 없음", "포징", "오브젝트 (텍스트 · 이미지 · 3D 모델)", "화면 공유 추가 소스"], "cta": "Pro 구매"}
+    ],
+    "upgrade": "이미 Basic을 쓰고 있다면 BOOTH의 업그레이드(1,990엔)로 Pro가 됩니다.",
+    "note": "가격은 BOOTH 표시 기준입니다. 디지털 상품 특성상 구매 후에는 기본적으로 환불이 어려우니 구매 전에 준비물을 확인해 주세요.",
+    "noteLink": "환불 정책"
+  },
+  "faq": {
+    "kicker": "FAQ",
+    "title": "자주 묻는 질문",
+    "items": [
+      {"q": "VRChat 아바타를 그대로 사용할 수 있나요?", "a": "네. VRChat에 업로드하던 아바타의 Unity 프로젝트에서 Exporter로 내보내면, 셰이더 · PhysBone · Expression 메뉴를 그대로 씁니다."},
+      {"q": "Unity 프로젝트가 필요한가요?", "a": "아바타 파일을 만들 때 한 번 필요합니다(Unity 2022.3.22f1). 만든 뒤에는 Unity 없이 사용합니다."},
+      {"q": "VRM 파일만으로 사용할 수 있나요?", "a": "지금은 지원하지 않습니다. VRM 불러오기는 추가 지원 예정입니다."},
+      {"q": "어떤 셰이더를 지원하나요?", "a": "아바타에 쓴 셰이더를 그대로 보여 주며, Poiyomi, lilToon 등 주요 셰이더에서 확인했습니다. AudioLink와 미러 감지는 지원하지 않습니다."},
+      {"q": "OBS 없이 Discord 화면 공유가 가능한가요?", "a": "네. 화면 공유를 켜고 Discord에서 'Avatar Live Share Output'을 고르면 게임과 아바타가 함께 공유됩니다."},
+      {"q": "Basic과 Pro의 차이는 무엇인가요?", "a": "Basic은 개인 사용(친구와의 비공개 Discord 공유 포함), Pro는 방송 · 영상 공개 · 상업적 이용을 위한 에디션입니다. Pro는 4K 출력, 워터마크 없음, 포징, 오브젝트를 지원합니다."},
+      {"q": "Windows 이외의 운영체제를 지원하나요?", "a": "Windows 10 / 11(64비트)만 지원합니다."}
+    ]
+  },
+  "cta": {
+    "title": "내 아바타, 내 세계, 내 방송.",
+    "sub": "익숙한 VRChat 아바타로 지금 바로 시작하세요.",
+    "primary": "AVATAR LIVE 구매하기",
+    "secondary": "가이드 읽기"
+  },
+  "footer": {
+    "product": "제품",
+    "docs": "가이드",
+    "legal": "약관 · 정책",
+    "links": "링크"
+  }
+}

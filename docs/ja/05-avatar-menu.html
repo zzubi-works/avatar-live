@@ -3,155 +3,109 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>アバターメニュー — Avatar Live</title>
-<meta name="description" content="VRChat アバターを VRM 変換なしでそのまま使える Windows 用 VTuber ソフト Avatar Live の公式ガイド">
-<meta property="og:title" content="アバターメニュー — Avatar Live">
-<meta property="og:description" content="VRChat アバターを VRM 変換なしでそのまま使える Windows 用 VTuber ソフト Avatar Live の公式ガイド">
-<meta property="og:image" content="../assets/brand/og.jpg">
+<title>アバターメニュー — AVATAR LIVE</title>
+<meta name="description" content="VRChat で使っていたアバターの Expression メニュー を、そのまま使えます。衣装やヘアのトグル、表情ボタン、Radial、Puppet が VRChat と同じように動作します。">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ja/05-avatar-menu.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/05-avatar-menu.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/05-avatar-menu.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/05-avatar-menu.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/05-avatar-menu.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="アバターメニュー — AVATAR LIVE">
+<meta property="og:description" content="VRChat で使っていたアバターの Expression メニュー を、そのまま使えます。衣装やヘアのトグル、表情ボタン、Radial、Puppet が VRChat と同じように動作します。">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ja/05-avatar-menu.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ja.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="../assets/brand/favicon.png">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard-jp/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/site.css">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
-<header class="top">
-  <button class="burger" aria-label="メニュー" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
-  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
-  <div class="top-right">
-    <details class="lang"><summary>🌐 <span>日本語</span></summary><div class="lang-menu"><a href="../ko/05-avatar-menu.html">한국어</a><a href="../en/05-avatar-menu.html">English</a><a href="../ja/05-avatar-menu.html" class="on">日本語</a><a href="../zh/05-avatar-menu.html">简体中文</a></div></details>
-    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
-    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTHで購入</a>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">概要</a><a href="index.html#features">機能</a><a href="index.html#how">使い方</a><a href="index.html#editions">エディション</a><a href="01-getting-started.html" aria-current="page">ガイド</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="言語"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>日本語</span></summary><div class="lang-menu" role="menu"><a href="../ko/05-avatar-menu.html" lang="ko">한국어</a><a href="../en/05-avatar-menu.html" lang="en">English</a><a href="../ja/05-avatar-menu.html" lang="ja" aria-current="true">日本語</a><a href="../zh/05-avatar-menu.html" lang="zh-Hans">简体中文</a></div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="テーマ切り替え" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">購入する</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="メニュー" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
   </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">概要</a><a href="index.html#features">機能</a><a href="index.html#how">使い方</a><a href="index.html#editions">エディション</a><a href="01-getting-started.html" aria-current="page">ガイド</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">購入する</a></div>
 </header>
-<div class="wrap">
-  <aside class="side"><a class="side-home" href="index.html">ホーム</a><div class="side-h">ガイド</div><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html" class="on">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング · オブジェクト · 表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション · ライセンス · 告知</a></li></ul><div class="side-h">規約・ポリシー</div><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></aside>
-  <main class="content">
-    <article><h1 id="5-アバターメニュー">5. アバターメニュー<a class="anchor" href="#5-アバターメニュー">#</a></h1>
-<p><strong>メニュー</strong> ページでは、VRChat で使っていた <strong>アバター自体の Expression メニュー</strong> をそのまま使います。衣装・ヘアのトグル、表情ボタン、Radial、Puppet が VRChat と同じように動作します。</p>
-<h2 id="expression-メニュー">Expression メニュー<a class="anchor" href="#expression-メニュー">#</a></h2>
-<figure><a href="../assets/shots/ja/menu.webp" target="_blank" rel="noopener"><img alt="アバターメニュー" src="../assets/shots/ja/menu.webp" loading="lazy"></a><figcaption>アバターメニュー</figcaption></figure>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>種類</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Toggle</strong></td>
-<td>オン / オフ</td>
-</tr>
-<tr>
-<td><strong>Button</strong></td>
-<td>押している間だけオン</td>
-</tr>
-<tr>
-<td><strong>Sub Menu</strong></td>
-<td>サブメニューを開く（<strong>戻る</strong> で戻る）</td>
-</tr>
-<tr>
-<td><strong>Radial Puppet</strong></td>
-<td>スライダーで値を決める</td>
-</tr>
-<tr>
-<td><strong>Two Axis / Four Axis Puppet</strong></td>
-<td>パッドで方向を決める</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="項目を右クリック">項目を右クリック<a class="anchor" href="#項目を右クリック">#</a></h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>項目</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>クイックアクションに追加</strong></td>
-<td>この項目をツールバーのボタンにする</td>
-</tr>
-<tr>
-<td><strong>ショートカットを設定…</strong></td>
-<td>この項目にショートカットを設定</td>
-</tr>
-<tr>
-<td><strong>お気に入り</strong></td>
-<td>メニュー上部のお気に入りに追加</td>
-</tr>
-<tr>
-<td><strong>パラメーター情報</strong></td>
-<td>この項目のパラメーターを表示</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="お気に入り">お気に入り<a class="anchor" href="#お気に入り">#</a></h2>
-<p>お気に入りにした項目を、メニューの一番上からすぐに使えます。サブメニュー内の項目もそのまま操作できます。</p>
-<h2 id="ハンドジェスチャー">ハンドジェスチャー<a class="anchor" href="#ハンドジェスチャー">#</a></h2>
-<p>左手 / 右手のジェスチャー（<strong>ニュートラル · グー · パー · 指差し · ピース · ロック · ガン · サムズアップ</strong>）を選んで、アバターのジェスチャー表情を出します。</p>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html" aria-current="page">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="5-アバターメニュー">5. アバターメニュー<a class="anchor" href="#5-アバターメニュー" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>VRChat で使っていたアバターの <strong>Expression メニュー</strong> を、そのまま使えます。衣装やヘアのトグル、表情ボタン、Radial、Puppet が VRChat と同じように動作します。</p>
+<h2 id="expression-メニュー">Expression メニュー<a class="anchor" href="#expression-メニュー" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="shot">
+<figure><img src="../assets/shots/ja/menu.webp" srcset="../assets/shots/ja/menu-960.webp 960w, ../assets/shots/ja/menu.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="アバターメニュー" loading="lazy" decoding="async"><figcaption>アバターメニュー</figcaption></figure>
 <ul>
-<li><strong>Web カメラの手の形でジェスチャー</strong> — オンにすると、Web カメラでトラッキングした手の形がジェスチャーになります。</li>
+<li><strong>Toggle</strong> — 押すたびにオン / オフが切り替わります。</li>
+<li><strong>Button</strong> — 押している間だけオンになります。</li>
+<li><strong>Sub Menu</strong> — サブメニューを開きます。<strong>戻る</strong> で戻ります。</li>
+<li><strong>Radial・Puppet</strong> — スライダーやパッドで値を決めます。</li>
 </ul>
-<h2 id="アバターのパラメーター">アバターのパラメーター<a class="anchor" href="#アバターのパラメーター">#</a></h2>
+</div>
+<h2 id="項目を右クリック">項目を右クリック<a class="anchor" href="#項目を右クリック" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="shot">
+<figure><img src="../assets/shots/ja/menu-ctx.webp" srcset="../assets/shots/ja/menu-ctx-960.webp 960w, ../assets/shots/ja/menu-ctx.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="項目の右クリックメニュー" loading="lazy" decoding="async"><figcaption>項目の右クリックメニュー</figcaption></figure>
 <ul>
-<li><strong>デフォルトに戻す</strong> — すべてのメニューの値をアバターの初期値に戻します（VRChat の Reset Avatar と同じ）。</li>
+<li><strong>クイックアクションに追加</strong> — 下のツールバーに、ボタンとして置きます。</li>
+<li><strong>ショートカットを設定…</strong> — ゲーム中でも、キーひとつでオンにできます。</li>
+<li><strong>お気に入り</strong> — メニューの一番上から、すぐに使えます。</li>
 </ul>
-<p>衣装の状態など、VRChat で保存される値は次回の起動時もそのまま保持されます。</p>
-<h2 id="クイックアクション">クイックアクション<a class="anchor" href="#クイックアクション">#</a></h2>
-<p>よく使う操作を <strong>ボタン</strong> や <strong>キー</strong> にします。</p>
-<p><strong>追加する場所</strong>
-- メニュー項目を右クリック → <strong>クイックアクションに追加</strong>
-- 設定 › <strong>ショートカット・クイックアクション</strong> › <strong>クイックアクションを追加</strong></p>
-<p><strong>設定できる操作</strong>：アバターメニューの項目 · ジェスチャー · カメラビュー · 保存したビュー · トラッキングリセット · ライティングプリセット · PhysBone リセット · すべてリセット</p>
-<p><strong>ボタンを右クリック</strong>：<strong>名前を変更</strong> · <strong>表示場所</strong>（上部 HUD / 下部ツールバー / ショートカットのみ）· <strong>ショートカットを設定…</strong> · <strong>削除</strong></p>
-<h2 id="リセットとすべてリセット">リセットとすべてリセット<a class="anchor" href="#リセットとすべてリセット">#</a></h2>
+</div>
+<h2 id="ハンドジェスチャー">ハンドジェスチャー<a class="anchor" href="#ハンドジェスチャー" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="shot">
+<figure><img src="../assets/shots/ja/gestures.webp" srcset="../assets/shots/ja/gestures-960.webp 960w, ../assets/shots/ja/gestures.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="ハンドジェスチャー" loading="lazy" decoding="async"><figcaption>ハンドジェスチャー</figcaption></figure>
+<ul>
+<li>左手・右手のジェスチャーを選んで、アバターのジェスチャー表情を出します。</li>
+<li><strong>Web カメラの手の形でジェスチャー</strong> をオンにすると、自分の手の形がそのままジェスチャーになります。</li>
+</ul>
+</div>
+<h2 id="デフォルトに戻す">デフォルトに戻す<a class="anchor" href="#デフォルトに戻す" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>アバターのパラメーター › デフォルトに戻す</strong> を押すと、メニューの値がアバターの初期値に戻ります。衣装の状態のように保存される値は、次回の起動時にも引き継がれます。</p>
+<h2 id="クイックアクション">クイックアクション<a class="anchor" href="#クイックアクション" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>よく使う操作を、ボタンやキーにしておけます。メニュー項目、ジェスチャー、カメラビュー、ライティングプリセットなどを登録でき、ボタンを右クリックすると名前や位置を変更できます。</p>
+<h2 id="リセット">リセット<a class="anchor" href="#リセット" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th></th>
-<th><strong>リセット</strong></th>
-<th><strong>すべてリセット</strong></th>
+<th>リセット</th>
+<th>すべてリセット</th>
 </tr>
 </thead>
 <tbody>
 <tr>
+<td>内容</td>
+<td>トラッキング、手のポーズ、PhysBone を最初の状態に</td>
+<td>上記に加えて、衣装・位置・カメラまで最初の状態に</td>
+</tr>
+<tr>
 <td>実行</td>
-<td>上部の <strong>⟲</strong> をクリック、設定 › 一般</td>
-<td>⟲ を右クリック、設定 › 一般</td>
-</tr>
-<tr>
-<td>元に戻るもの</td>
-<td>トラッキング、手のポーズ、押されたボタン、PhysBone、Contact</td>
-<td>上記 + すべてのパラメーター（衣装を含む）、アバターの位置・サイズ、ポーズ、カメラ</td>
-</tr>
-<tr>
-<td>そのまま残るもの</td>
-<td>衣装・トグル、ライティング、カメラ</td>
-<td>オブジェクト、保存したポーズ・表情、設定</td>
+<td>上部の <strong>⟲</strong></td>
+<td><strong>⟲</strong> を右クリック、または <strong>設定 › 一般</strong></td>
 </tr>
 </tbody>
-</table></div>
-<p>配信中にアバターが固まったり、髪が絡まったりしたときは <strong>⟲ リセット</strong> を押してください。</p></article>
-    <div class="pager"><a class="prev" href="04-main-window.html"><span>前へ</span>メイン画面</a><a class="next" href="06-devices.html"><span>次へ</span>デバイス</a></div>
-    <p class="updated">最終更新: 2026-10-09</p>
-  </main>
-  <nav class="toc"><div class="toc-h">このページ</div><ul><li class="l2"><a href="#expression-メニュー">Expression メニュー</a></li><li class="l3"><a href="#項目を右クリック">項目を右クリック</a></li><li class="l2"><a href="#お気に入り">お気に入り</a></li><li class="l2"><a href="#ハンドジェスチャー">ハンドジェスチャー</a></li><li class="l2"><a href="#アバターのパラメーター">アバターのパラメーター</a></li><li class="l2"><a href="#クイックアクション">クイックアクション</a></li><li class="l2"><a href="#リセットとすべてリセット">リセットとすべてリセット</a></li></ul></nav>
+</table></div></article><nav class="pager" aria-label="Pager"><a class="prev" href="04-main-window.html"><span>前へ</span>メイン画面</a><a class="next" href="06-devices.html"><span>次へ</span>デバイス</a></nav><p class="updated">最終更新: 2026-10-09</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#expression-メニュー">Expression メニュー</a></li><li><a href="#項目を右クリック">項目を右クリック</a></li><li><a href="#ハンドジェスチャー">ハンドジェスチャー</a></li><li><a href="#デフォルトに戻す">デフォルトに戻す</a></li><li><a href="#クイックアクション">クイックアクション</a></li><li><a href="#リセット">リセット</a></li></ul></nav>
 </div>
-<footer class="foot">
-  <div class="foot-in">
-    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
-    <div class="foot-links"><a href="legal-terms.html">Avatar Live 利用規約</a> · <a href="legal-privacy.html">プライバシーポリシー</a> · <a href="legal-refund.html">返金ポリシー</a> · <a href="legal-seller.html">販売者情報</a></div>
-    <p>Avatar Live は VRChat Inc. と提携・承認関係にある製品ではありません。VRChat は VRChat Inc. の商標です。</p>
-    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>製品</h2><ul><li><a href="index.html#features">機能</a></li><li><a href="index.html#how">使い方</a></li><li><a href="index.html#editions">エディション</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li></ul></div><div class="fcol"><h2>ガイド</h2><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul></div><div class="fcol"><h2>規約・ポリシー</h2><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></div><div class="fcol"><h2>リンク</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
+  <div class="wrap fine"><p>AVATAR LIVE は VRChat Inc. の公式製品ではなく、VRChat Inc. とは提携していません。VRChat は VRChat Inc. の商標です。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>
-<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
-<script>
-function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
-(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
-function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
-</script>
 </body>
 </html>

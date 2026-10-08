@@ -3,31 +3,48 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>출력 — Avatar Live</title>
-<meta name="description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
-<meta property="og:title" content="출력 — Avatar Live">
-<meta property="og:description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
-<meta property="og:image" content="../assets/brand/og.jpg">
+<title>출력 — AVATAR LIVE</title>
+<meta name="description" content="아바타 화면을 방송 프로그램이나 통화 앱으로 보냅니다.">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ko/09-output.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/09-output.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/09-output.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/09-output.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/09-output.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="출력 — AVATAR LIVE">
+<meta property="og:description" content="아바타 화면을 방송 프로그램이나 통화 앱으로 보냅니다.">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ko/09-output.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ko.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f">
 <link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" href="../assets/site.css">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+<script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
-<header class="top">
-  <button class="burger" aria-label="메뉴" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
-  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
-  <div class="top-right">
-    <details class="lang"><summary>🌐 <span>한국어</span></summary><div class="lang-menu"><a href="../ko/09-output.html" class="on">한국어</a><a href="../en/09-output.html">English</a><a href="../ja/09-output.html">日本語</a><a href="../zh/09-output.html">简体中文</a></div></details>
-    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
-    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTH에서 구매</a>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">개요</a><a href="index.html#features">기능</a><a href="index.html#how">사용 방법</a><a href="index.html#editions">에디션</a><a href="01-getting-started.html" aria-current="page">가이드</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="언어"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>한국어</span></summary><div class="lang-menu" role="menu"><a href="../ko/09-output.html" lang="ko" aria-current="true">한국어</a><a href="../en/09-output.html" lang="en">English</a><a href="../ja/09-output.html" lang="ja">日本語</a><a href="../zh/09-output.html" lang="zh-Hans">简体中文</a></div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="테마 전환" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
+      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">구매하기</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="메뉴" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
   </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">개요</a><a href="index.html#features">기능</a><a href="index.html#how">사용 방법</a><a href="index.html#editions">에디션</a><a href="01-getting-started.html" aria-current="page">가이드</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">구매하기</a></div>
 </header>
-<div class="wrap">
-  <aside class="side"><a class="side-home" href="index.html">홈</a><div class="side-h">가이드</div><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기 (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html" class="on">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><div class="side-h">약관 · 정책</div><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></aside>
-  <main class="content">
-    <article><h1 id="9-출력">9. 출력<a class="anchor" href="#9-출력">#</a></h1>
-<p><strong>출력</strong> 페이지에서 아바타 화면을 다른 프로그램으로 보냅니다. 탭은 <strong>송출</strong>과 <strong>화면 공유</strong> 두 개입니다.</p>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>가이드 목차</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html" aria-current="page">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="9-출력">9. 출력<a class="anchor" href="#9-출력" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>아바타 화면을 방송 프로그램이나 통화 앱으로 보냅니다.</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -38,294 +55,61 @@
 <tbody>
 <tr>
 <td>OBS (투명 배경)</td>
-<td><strong>Spout2</strong></td>
+<td>Spout2</td>
 </tr>
 <tr>
-<td>Discord · Zoom · Teams의 카메라</td>
-<td><strong>가상 카메라</strong></td>
+<td>Discord · Zoom · Teams 카메라</td>
+<td>가상 카메라</td>
 </tr>
 <tr>
 <td>Discord 게임 방송</td>
-<td><strong>화면 공유</strong></td>
-</tr>
-<tr>
-<td>다른 모션 앱</td>
-<td><strong>VMC 출력</strong></td>
+<td>화면 공유</td>
 </tr>
 <tr>
 <td>사진</td>
-<td><strong>PNG 저장</strong></td>
+<td>PNG 저장</td>
 </tr>
 </tbody>
 </table></div>
-<p>출력에는 아바타와 배경만 나가고, Avatar Live의 메뉴는 나가지 않습니다. 창을 최소화하거나 트레이로 숨겨도 계속 나갑니다.</p>
-<h2 id="송출">송출<a class="anchor" href="#송출">#</a></h2>
-<figure><a href="../assets/shots/ko/output.webp" target="_blank" rel="noopener"><img alt="출력 › 송출" src="../assets/shots/ko/output.webp" loading="lazy"></a><figcaption>출력 › 송출</figcaption></figure>
-<h3 id="출력-이미지">출력 이미지<a class="anchor" href="#출력-이미지">#</a></h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>항목</th>
-<th>하는 일</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>해상도</strong></td>
-<td>720p · 1080p · 1440p · 4K · 세로</td>
-</tr>
-<tr>
-<td><strong>직접 입력</strong></td>
-<td>원하는 크기</td>
-</tr>
-<tr>
-<td><strong>출력 FPS</strong></td>
-<td>출력 프레임 레이트</td>
-</tr>
-</tbody>
-</table></div>
-<p>Basic은 1080p까지, 워터마크가 표시됩니다. Pro는 4K까지, 워터마크가 없습니다.</p>
-<h3 id="spout2--obs">Spout2 → OBS<a class="anchor" href="#spout2--obs">#</a></h3>
-<ol>
-<li><strong>Spout2</strong>를 켭니다.</li>
-<li>OBS에 <strong>Spout2 플러그인</strong>을 설치하고 <strong>Spout2 Capture</strong> 소스를 추가한 뒤 <strong>Avatar Live</strong>를 고릅니다.</li>
-<li>투명 배경: Avatar Live 배경을 <strong>투명</strong>으로, OBS에서 <strong>Composite with alpha</strong>를 고릅니다.</li>
-</ol>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>항목</th>
-<th>하는 일</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>송신 이름</strong></td>
-<td>OBS에 보일 이름</td>
-</tr>
-<tr>
-<td><strong>투명도(알파) 보내기</strong></td>
-<td>투명 배경 보내기</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="가상-카메라">가상 카메라<a class="anchor" href="#가상-카메라">#</a></h3>
-<ol>
-<li>처음 한 번 <strong>가상 카메라 설치…</strong> 를 누릅니다 (관리자 권한을 묻습니다).</li>
-<li><strong>가상 카메라</strong>를 켭니다.</li>
-<li>Discord·Zoom 등에서 카메라로 <strong>Avatar Live Camera</strong>를 고릅니다.</li>
-</ol>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>항목</th>
-<th>하는 일</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>이미지 좌우 반전</strong></td>
-<td>좌우 뒤집기</td>
-</tr>
-<tr>
-<td><strong>'Avatar Live Camera'(으)로 다시 등록…</strong></td>
-<td>카메라 이름이 다르게 보일 때</td>
-</tr>
-</tbody>
-</table></div>
+<h2 id="송출">송출<a class="anchor" href="#송출" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="shot">
+<figure><img src="../assets/shots/ko/stream.webp" srcset="../assets/shots/ko/stream-960.webp 960w, ../assets/shots/ko/stream.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="출력 › 송출" loading="lazy" decoding="async"><figcaption>출력 › 송출</figcaption></figure>
 <ul>
-<li>Discord는 시작할 때만 카메라를 찾습니다. 목록에 없으면 Discord를 완전히 껐다 켜세요.</li>
-<li>투명 배경은 지원하지 않습니다 (크로마키 배경을 쓰세요).</li>
-<li>설치 폴더를 옮기거나 지우기 전에는 <code>VirtualCamera\Uninstall.bat</code>을 실행하세요.</li>
+<li><strong>출력 이미지</strong> — 내보낼 화면 크기를 고릅니다.</li>
+<li><strong>Spout2</strong> — 켜고 OBS에서 <strong>Spout2 Capture</strong> 소스를 추가하면 아바타가 나옵니다. 배경을 <strong>투명</strong>으로 하면 배경 없이 보낼 수 있습니다.</li>
+<li><strong>가상 카메라</strong> — 처음 한 번 <strong>가상 카메라 설치…</strong> 를 누르고, 상대 앱에서 카메라로 <strong>Avatar Live Camera</strong>를 고릅니다.</li>
+<li><strong>사진</strong> — <strong>PNG 저장</strong>으로 메뉴 없이 화면을 저장합니다.</li>
 </ul>
-<h3 id="사진">사진<a class="anchor" href="#사진">#</a></h3>
-<p><strong>PNG 저장</strong>으로 UI 없이 화면을 저장하고, <strong>폴더 열기</strong>로 저장 폴더를 엽니다. 투명 배경은 투명하게 저장됩니다.</p>
-<h3 id="외부-출력-vmc">외부 출력 (VMC)<a class="anchor" href="#외부-출력-vmc">#</a></h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>항목</th>
-<th>하는 일</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>VMC 출력 (다른 앱으로)</strong></td>
-<td>아바타의 자세와 표정을 다른 앱으로 보내기</td>
-</tr>
-<tr>
-<td><strong>주소 / 포트</strong></td>
-<td>받을 앱의 주소</td>
-</tr>
-<tr>
-<td><strong>블렌드셰이프</strong></td>
-<td>표정도 함께 보내기</td>
-</tr>
-</tbody>
-</table></div>
-<blockquote>
-<p>VMC 출력은 정상 동작을 예상하지만, 받는 앱이 개발자 환경에서 아직 테스트되지 않은 <strong>실험적 기능</strong>입니다.</p>
+</div>
+<blockquote class="callout tip"><p>Discord는 시작할 때만 카메라를 찾습니다. 목록에 없으면 Discord를 완전히 껐다가 다시 열어 주세요.</p>
 </blockquote>
-<h2 id="화면-공유">화면 공유<a class="anchor" href="#화면-공유">#</a></h2>
-<figure><a href="../assets/shots/ko/share.webp" target="_blank" rel="noopener"><img alt="출력 › 화면 공유" src="../assets/shots/ko/share.webp" loading="lazy"></a><figcaption>출력 › 화면 공유</figcaption></figure>
-<p>Discord 친구에게는 <strong>게임 + 아바타 + 소리</strong>를, 나에게는 게임만 보여 줍니다. OBS가 필요 없습니다.</p>
-<h3 id="사용-순서">사용 순서<a class="anchor" href="#사용-순서">#</a></h3>
+<h2 id="discord-화면-공유">Discord 화면 공유<a class="anchor" href="#discord-화면-공유" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="shot">
+<figure><img src="../assets/shots/ko/share.webp" srcset="../assets/shots/ko/share-960.webp 960w, ../assets/shots/ko/share.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="출력 › 화면 공유" loading="lazy" decoding="async"><figcaption>출력 › 화면 공유</figcaption></figure>
 <ol>
-<li><strong>공유 대상</strong>에서 <strong>게임</strong> 또는 <strong>디스플레이</strong>를 고릅니다.</li>
+<li><strong>공유 대상</strong>에서 게임 또는 디스플레이를 고릅니다.</li>
 <li><strong>화면 공유</strong>를 켭니다.</li>
 <li>Discord에서 <strong>화면 공유 → 애플리케이션 → Avatar Live Share Output</strong>을 고르고 소리를 켭니다.</li>
-<li>미리보기에서 아바타 위치와 크기를 맞춥니다.</li>
 </ol>
-<blockquote class="callout"><p>⚠️ Avatar Live를 <strong>관리자 권한으로 실행하지 마세요.</strong> Discord에 검은 화면이 나옵니다.</p>
-</blockquote>
-<h3 id="공유-상태">공유 상태<a class="anchor" href="#공유-상태">#</a></h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>항목</th>
-<th>하는 일</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>화면 공유</strong></td>
-<td>켜기 / 끄기</td>
-</tr>
-<tr>
-<td><strong>해상도 / 프레임레이트</strong></td>
-<td>Discord로 보내는 화질</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="공유-대상">공유 대상<a class="anchor" href="#공유-대상">#</a></h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>항목</th>
-<th>하는 일</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>게임</strong></td>
-<td>공유할 게임 창 고르기 (껐다 켜도 다시 찾음)</td>
-</tr>
-<tr>
-<td><strong>디스플레이</strong></td>
-<td>모니터 전체 공유</td>
-</tr>
-<tr>
-<td><strong>추가 소스</strong> (Pro)</td>
-<td>창이나 모니터를 더 겹치기 (<a href="11-pro-features.html#화면-공유-추가-소스">11장</a>)</td>
-</tr>
-</tbody>
-</table></div>
-<blockquote class="callout"><p>💡 게임이 검게 나오면 게임을 <strong>테두리 없는 창</strong>이나 <strong>창 모드</strong>로 바꿔 보세요.</p>
-</blockquote>
-<h3 id="오디오">오디오<a class="anchor" href="#오디오">#</a></h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>항목</th>
-<th>하는 일</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>게임 소리</strong></td>
-<td>게임 소리만 보내기 (Discord 통화·알림음은 제외)</td>
-</tr>
-<tr>
-<td><strong>데스크톱 소리 / 추가한 앱만 / 소리 없음</strong></td>
-<td>디스플레이 공유일 때 보낼 소리</td>
-</tr>
-<tr>
-<td><strong>+ 앱 추가</strong></td>
-<td>음악 등 다른 앱 소리 더하기, 앱별 볼륨</td>
-</tr>
-</tbody>
-</table></div>
-<p>공유 소리가 나가려면 <strong>Steam Streaming Speakers</strong>나 <strong>VB-Audio CABLE</strong> 같은 듣지 않는 가상 재생 장치가 필요합니다.</p>
-<h3 id="아바타-오버레이">아바타 오버레이<a class="anchor" href="#아바타-오버레이">#</a></h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>항목</th>
-<th>하는 일</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>아바타 오버레이</strong></td>
-<td>공유 화면에 아바타 보이기</td>
-</tr>
-<tr>
-<td>미리보기</td>
-<td>드래그로 이동, 모서리로 크기, 손잡이로 회전, Alt + 가장자리로 자르기</td>
-</tr>
-<tr>
-<td><strong>↙ ↓ ↘ ↖ ↗ ◎</strong></td>
-<td>빠른 위치</td>
-</tr>
-<tr>
-<td><strong>크기 / 불투명도 / 회전</strong></td>
-<td>숫자로 조절</td>
-</tr>
-<tr>
-<td><strong>반전과 스냅</strong></td>
-<td>좌우·상하 반전, 비율 고정, 맞추기</td>
-</tr>
-<tr>
-<td>⛶</td>
-<td>큰 화면에서 편집</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="고급">고급<a class="anchor" href="#고급">#</a></h3>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>항목</th>
-<th>하는 일</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>캡처 방식 강제 지정</strong></td>
-<td>자동 / 창 캡처 / 디스플레이</td>
-</tr>
-<tr>
-<td><strong>소스 트림</strong></td>
-<td>공유 화면 자르기</td>
-</tr>
-<tr>
-<td><strong>Discord 오디오 장치</strong></td>
-<td>공유 소리를 재생할 장치 (헤드폰·스피커는 고르지 마세요)</td>
-</tr>
-<tr>
-<td><strong>오디오 지연</strong></td>
-<td>영상과 소리 맞추기</td>
-</tr>
-</tbody>
-</table></div></article>
-    <div class="pager"><a class="prev" href="08-scene.html"><span>이전</span>씬</a><a class="next" href="10-settings.html"><span>다음</span>설정</a></div>
-    <p class="updated">최종 업데이트: 2026-10-09</p>
-  </main>
-  <nav class="toc"><div class="toc-h">이 페이지</div><ul><li class="l2"><a href="#송출">송출</a></li><li class="l3"><a href="#출력-이미지">출력 이미지</a></li><li class="l3"><a href="#spout2--obs">Spout2 → OBS</a></li><li class="l3"><a href="#가상-카메라">가상 카메라</a></li><li class="l3"><a href="#사진">사진</a></li><li class="l3"><a href="#외부-출력-vmc">외부 출력 (VMC)</a></li><li class="l2"><a href="#화면-공유">화면 공유</a></li><li class="l3"><a href="#사용-순서">사용 순서</a></li><li class="l3"><a href="#공유-상태">공유 상태</a></li><li class="l3"><a href="#공유-대상">공유 대상</a></li><li class="l3"><a href="#오디오">오디오</a></li><li class="l3"><a href="#아바타-오버레이">아바타 오버레이</a></li><li class="l3"><a href="#고급">고급</a></li></ul></nav>
 </div>
-<footer class="foot">
-  <div class="foot-in">
-    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
-    <div class="foot-links"><a href="legal-terms.html">Avatar Live 이용약관</a> · <a href="legal-privacy.html">개인정보처리방침</a> · <a href="legal-refund.html">환불 정책</a> · <a href="legal-seller.html">판매자 정보</a></div>
-    <p>Avatar Live는 VRChat Inc.와 제휴하거나 승인받은 제품이 아닙니다. VRChat은 VRChat Inc.의 상표입니다.</p>
-    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+<ul>
+<li>친구에게는 게임과 아바타가 함께 보이고, 나에게는 게임만 보입니다.</li>
+<li>미리보기에서 아바타를 드래그해 위치와 크기를 맞춥니다.</li>
+<li><strong>게임 소리</strong>를 켜면 게임 소리만 친구에게 보냅니다.</li>
+</ul>
+<blockquote class="callout tip"><p>게임이 검게 보이면 게임을 <strong>테두리 없는 창</strong>이나 <strong>창 모드</strong>로 바꿔 보세요. Avatar Live는 관리자 권한 없이 실행하는 것을 권장합니다.</p>
+<p>💡 공유 소리에는 Steam Streaming Speakers나 VB-Audio CABLE 같은 가상 재생 장치가 필요합니다.</p>
+</blockquote>
+<h2 id="외부-출력-vmc">외부 출력 (VMC)<a class="anchor" href="#외부-출력-vmc" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>VMC 출력</strong>을 켜면 아바타의 움직임을 다른 앱으로 보냅니다. 실험적 기능입니다.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="08-scene.html"><span>이전</span>씬</a><a class="next" href="10-settings.html"><span>다음</span>설정</a></nav><p class="updated">최종 업데이트: 2026-10-09</p></main>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#송출">송출</a></li><li><a href="#discord-화면-공유">Discord 화면 공유</a></li><li><a href="#외부-출력-vmc">외부 출력 (VMC)</a></li></ul></nav>
+</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>제품</h2><ul><li><a href="index.html#features">기능</a></li><li><a href="index.html#how">사용 방법</a></li><li><a href="index.html#editions">에디션</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li></ul></div><div class="fcol"><h2>가이드</h2><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul></div><div class="fcol"><h2>약관 · 정책</h2><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></div><div class="fcol"><h2>링크</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
+  <div class="wrap fine"><p>AVATAR LIVE는 VRChat Inc.의 공식 제품이 아니며, VRChat Inc.와 제휴 관계가 없습니다. VRChat은 VRChat Inc.의 상표입니다.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>
-<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
-<script>
-function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
-(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
-function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
-</script>
 </body>
 </html>
