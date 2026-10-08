@@ -14,7 +14,7 @@ These Terms set out the conditions for using Avatar Live and Curious Bobby - Ava
 
 1. The Company grants the Purchaser a non-transferable, non-exclusive License.
 2. One License may be used by one person on one PC.
-3. The **Basic** edition may be used only for personal and private use.
+3. The **Basic** edition may be used only for personal and private use (including private Discord sharing with friends).
 4. **Public or commercial use**, such as streaming (live streaming), publishing or uploading videos, commissioned work or revenue-generating activities, **requires the Pro edition.**
 5. Trial and promotional codes may be used only within the period and conditions set by the Company.
 

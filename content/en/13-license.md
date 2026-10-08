@@ -14,7 +14,7 @@ Avatar Live is **paid software** sold on [BOOTH](https://curiousbobby.booth.pm/)
 | Watermark | Yes | No |
 | Posing · Objects · Screen share extra sources | — | ✅ |
 
-> **For public or commercial use such as streaming, uploading videos or commissioned work, you need Pro.** Basic is the standard edition for personal use.
+> **For public or commercial use such as streaming, uploading videos or commissioned work, you need Pro.** Basic is the standard edition for personal use; private Discord sharing with friends is fine on Basic.
 
 ## License terms (summary)
 
@@ -27,7 +27,7 @@ The full terms are set out in the [Terms of Use](legal-terms.md).
 
 ## Upgrades and trials
 
-- **Basic → Pro upgrade**: buy Basic once more and enter it in **Settings › License › Upgrade to Pro** to make this PC's license Pro (two Basic = Pro). The added purchase belongs to this license and cannot be used separately on another PC. A PC that already has Pro cannot take more Basic.
+- **Basic → Pro upgrade**: buy the **Upgrade** item on BOOTH and enter it in **Settings › License › Upgrade to Pro** on the PC that has Basic. That PC's license becomes Pro. The joined purchase belongs to this license and cannot be used separately on another PC. Registered on its own, the Upgrade works as Basic; a PC that already has Pro cannot take it.
 - **Buying during a trial**: enter your purchase in **Settings › License › Enter your purchase**. It replaces the trial.
 - **When a trial ends**, the input screen opens with "Your trial has ended". Enter your purchased license to keep using Avatar Live.
 
