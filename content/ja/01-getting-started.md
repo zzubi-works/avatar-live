@@ -9,7 +9,7 @@
 | Web カメラ | 一般的なカラー Web カメラ（顔・腕・手のトラッキング用） |
 | マイク | リップシンク用（任意） |
 | インターネット | アクティベートとライセンス確認に必要 |
-| アバター | VRChat アバターの **Unity プロジェクト**（Unity 2022.3）— [2 章](02-avatar-exporter.md)で `.vavatar` に書き出します |
+| アバター | VRChat アバターの **Unity プロジェクト**（Unity 2022.3.22f1）— [2 章](02-avatar-exporter.md)で `.vavatar` に書き出します |
 | 任意のデバイス | Leap Motion / Ultraleap ハンドトラッカー、iPhone（iFacialMocap） |
 
 ## エディションを選ぶ

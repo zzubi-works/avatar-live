@@ -73,7 +73,7 @@
 | ✅ シェーダー | Poiyomi、lilToon など |
 | ✅ 顔 | VRCFaceTracking、ARKit（Perfect Sync）、MMD の目のモーフ |
 | ⚠️ 動作しない | アバターの効果音、AudioLink、ミラー・カメラの検出、Light Volumes、ユーザースクリプト |
-| 🧪 実験的機能 | Ultraleap、iFacialMocap、OSC・VMC、舌・頬のカメラ検出 — 正常に動作する見込みですが、該当するデバイス・アプリが開発者の環境でまだテストされていません |
+| 🧪 実験的機能 | Ultraleap、OSC・VMC、舌・頬のカメラ検出 — 正常に動作する見込みですが、該当するデバイス・アプリが開発者の環境でまだテストされていません |
 | ❌ 非対応 | VRM ファイル、Live2D、macOS・Linux |
 
 ## よくある質問

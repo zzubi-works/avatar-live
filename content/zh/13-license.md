@@ -33,7 +33,7 @@ Avatar Live 是 **付费软件**，在 [BOOTH](https://curiousbobby.booth.pm/) �
 
 ## 实验性功能
 
-标记为“实验性”的功能（Ultraleap、iFacialMocap、OSC·VMC、舌头与脸颊的摄像头检测）预计能够正常运行，但这些设备和应用尚未在开发者环境中测试。
+标记为“实验性”的功能（Ultraleap、OSC·VMC、舌头与脸颊的摄像头检测）预计能够正常运行，但这些设备和应用尚未在开发者环境中测试。
 
 ## 自己制作的文件
 

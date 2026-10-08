@@ -9,7 +9,7 @@
 | 摄像头 | 普通彩色摄像头（用于面部、手臂、手部追踪） |
 | 麦克风 | 用于口型同步（可选） |
 | 网络 | 激活和许可证确认时需要 |
-| 角色 | VRChat 角色的 **Unity 项目**（Unity 2022.3）— 在 [第 2 章](02-avatar-exporter.md) 中导出为 `.vavatar` |
+| 角色 | VRChat 角色的 **Unity 项目**（Unity 2022.3.22f1）— 在 [第 2 章](02-avatar-exporter.md) 中导出为 `.vavatar` |
 | 可选设备 | Leap Motion / Ultraleap 手部追踪器、iPhone（iFacialMocap） |
 
 ## 选择版本

@@ -10,7 +10,7 @@ Avatar Live opens avatars as **`.vavatar`** files. You make this file by install
 
 | Item | Details |
 |---|---|
-| Unity | **2022.3** |
+| Unity | **2022.3.22f1** |
 | Avatar | **An avatar project that uploads to VRChat normally** |
 | Creation tools | Avatars made with NDMF, Modular Avatar, VRCFury and similar tools can also be exported (these tools are not included in the Exporter; the ones installed in your project are used) |
 

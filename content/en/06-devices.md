@@ -74,6 +74,6 @@ Connects with other apps on this PC. Off by default.
 | **VMC input (body and bones from another app)** | Receive the body from another motion app, and choose which **Parts** to receive |
 | **Write the sender's shapes onto the avatar** | Apply the received expressions as they are |
 
-> **Ultraleap, iFacialMocap and OSC / VMC** are expected to work, but they are **experimental features**: the devices and apps involved have not yet been tested in the developer's environment.
+> **Ultraleap and OSC / VMC** are expected to work, but they are **experimental features**: the devices and apps involved have not yet been tested in the developer's environment.
 
 VMC **output** is in [Chapter 9](09-output.md#external-output-vmc).

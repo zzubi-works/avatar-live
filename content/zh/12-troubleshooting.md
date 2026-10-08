@@ -73,7 +73,7 @@
 | ✅ 着色器 | Poiyomi、lilToon 等 |
 | ✅ 面部 | VRCFaceTracking、ARKit（Perfect Sync）、MMD 眼部变形 |
 | ⚠️ 无法运行 | 角色音效、AudioLink、镜子和相机检测、Light Volumes、用户脚本 |
-| 🧪 实验性功能 | Ultraleap、iFacialMocap、OSC·VMC、舌头与脸颊的摄像头检测 — 预计能够正常运行，但这些设备和应用尚未在开发者环境中测试 |
+| 🧪 实验性功能 | Ultraleap、OSC·VMC、舌头与脸颊的摄像头检测 — 预计能够正常运行，但这些设备和应用尚未在开发者环境中测试 |
 | ❌ 不支持 | VRM 文件、Live2D、macOS·Linux |
 
 ## 常见问题

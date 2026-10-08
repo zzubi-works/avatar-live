@@ -33,7 +33,7 @@ The full terms are set out in the [Terms of Use](legal-terms.md).
 
 ## Experimental features
 
-Features marked "experimental" (Ultraleap, iFacialMocap, OSC / VMC, camera detection of tongue and cheeks) are expected to work, but the devices and apps involved have not yet been tested in the developer's environment.
+Features marked "experimental" (Ultraleap, OSC / VMC, camera detection of tongue and cheeks) are expected to work, but the devices and apps involved have not yet been tested in the developer's environment.
 
 ## Files you make
 

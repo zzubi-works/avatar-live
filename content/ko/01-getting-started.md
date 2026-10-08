@@ -9,7 +9,7 @@
 | 웹캠 | 일반 컬러 웹캠 (얼굴·팔·손 트래킹용) |
 | 마이크 | 립싱크용 (선택) |
 | 인터넷 | 활성화와 라이선스 확인에 필요 |
-| 아바타 | VRChat 아바타의 **Unity 프로젝트** (Unity 2022.3) — [2장](02-avatar-exporter.md)에서 `.vavatar`로 내보냅니다 |
+| 아바타 | VRChat 아바타의 **Unity 프로젝트** (Unity 2022.3.22f1) — [2장](02-avatar-exporter.md)에서 `.vavatar`로 내보냅니다 |
 | 선택 장치 | Leap Motion / Ultraleap 손 트래커, iPhone (iFacialMocap) |
 
 ## 에디션 고르기

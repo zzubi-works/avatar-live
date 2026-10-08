@@ -73,7 +73,7 @@
 | ✅ Shaders | Poiyomi, lilToon and others |
 | ✅ Face | VRCFaceTracking, ARKit (Perfect Sync), MMD eye morphs |
 | ⚠️ Does not work | Avatar sound effects, AudioLink, mirror and camera detection, Light Volumes, custom scripts |
-| 🧪 Experimental features | Ultraleap, iFacialMocap, OSC / VMC, camera detection of tongue and cheeks — expected to work, but the devices and apps involved have not yet been tested in the developer's environment |
+| 🧪 Experimental features | Ultraleap, OSC / VMC, camera detection of tongue and cheeks — expected to work, but the devices and apps involved have not yet been tested in the developer's environment |
 | ❌ Not supported | VRM files, Live2D, macOS, Linux |
 
 ## Frequently asked questions

@@ -73,7 +73,7 @@
 | ✅ 셰이더 | Poiyomi, lilToon 등 |
 | ✅ 얼굴 | VRCFaceTracking, ARKit(Perfect Sync), MMD 눈 모프 |
 | ⚠️ 동작 안 함 | 아바타 효과음, AudioLink, 미러·카메라 감지, Light Volumes, 사용자 스크립트 |
-| 🧪 실험적 기능 | Ultraleap, iFacialMocap, OSC·VMC, 혀·볼 카메라 감지 — 정상 동작을 예상하지만 해당 장치·앱이 개발자 환경에서 아직 테스트되지 않았습니다 |
+| 🧪 실험적 기능 | Ultraleap, OSC·VMC, 혀·볼 카메라 감지 — 정상 동작을 예상하지만 해당 장치·앱이 개발자 환경에서 아직 테스트되지 않았습니다 |
 | ❌ 미지원 | VRM 파일, Live2D, macOS·Linux |
 
 ## 자주 묻는 질문

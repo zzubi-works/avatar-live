@@ -14,7 +14,7 @@ Avatar Live is a **downloadable digital product**.
 
 - [ ] Is your PC running Windows 10 / 11 64-bit? (macOS and Linux are not supported)
 - [ ] Do you have a graphics card that supports DirectX 11?
-- [ ] Do you have the **Unity project** of the avatar you want to use (Unity 2022.3, in a state that uploads to VRChat normally)? VRM or .vrca files alone cannot be used.
+- [ ] Do you have the **Unity project** of the avatar you want to use (Unity 2022.3.22f1, in a state that uploads to VRChat normally)? VRM or .vrca files alone cannot be used.
 - [ ] Do you have a regular color webcam?
 - [ ] Can you connect to the internet for activation and license checks?
 - [ ] Have you checked the [supported features](12-troubleshooting.md#supported-features)?

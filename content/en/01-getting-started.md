@@ -9,7 +9,7 @@
 | Webcam | A regular color webcam (for face, arm and hand tracking) |
 | Microphone | For lip sync (optional) |
 | Internet | Needed for activation and license checks |
-| Avatar | The **Unity project** of your VRChat avatar (Unity 2022.3) — exported to `.vavatar` in [Chapter 2](02-avatar-exporter.md) |
+| Avatar | The **Unity project** of your VRChat avatar (Unity 2022.3.22f1) — exported to `.vavatar` in [Chapter 2](02-avatar-exporter.md) |
 | Optional devices | Leap Motion / Ultraleap hand tracker, iPhone (iFacialMocap) |
 
 ## Choosing an edition
