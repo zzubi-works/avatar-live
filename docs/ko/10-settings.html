@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>설정 — Avatar Live</title>
+<meta name="description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:title" content="설정 — Avatar Live">
+<meta property="og:description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="메뉴" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>한국어</span></summary><div class="lang-menu"><a href="../ko/10-settings.html" class="on">한국어</a><a href="../en/10-settings.html">English</a><a href="../ja/10-settings.html">日本語</a><a href="../zh/10-settings.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTH에서 구매</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">홈</a><div class="side-h">가이드</div><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기 (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html" class="on">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><div class="side-h">약관 · 정책</div><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="10-설정">10. 설정<a class="anchor" href="#10-설정">#</a></h1>
+<figure><a href="../assets/shots/ko/settings.webp" target="_blank" rel="noopener"><img alt="설정 페이지" src="../assets/shots/ko/settings.webp" loading="lazy"></a><figcaption>설정 페이지</figcaption></figure>
+<h2 id="일반">일반<a class="anchor" href="#일반">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>시작할 때 메뉴 열기</strong></td>
+<td>끄면 UI 없이 시작</td>
+</tr>
+<tr>
+<td><strong>초기화</strong></td>
+<td>트래킹·손·PhysBone 등을 처음 상태로</td>
+</tr>
+<tr>
+<td><strong>모두 초기화</strong></td>
+<td>파라미터·아바타 위치·자세·카메라까지 처음 상태로</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="창">창<a class="anchor" href="#창">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>해상도</strong></td>
+<td>창 크기</td>
+</tr>
+<tr>
+<td><strong>전체 화면 (테두리 없음)</strong></td>
+<td>전체 화면</td>
+</tr>
+<tr>
+<td><strong>항상 위</strong></td>
+<td>다른 창 위에 두기</td>
+</tr>
+<tr>
+<td><strong>창 닫기 (X)</strong></td>
+<td><strong>트레이로 최소화</strong> / <strong>종료</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="성능">성능<a class="anchor" href="#성능">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VSync / 프레임 제한</strong></td>
+<td>프레임 레이트</td>
+</tr>
+<tr>
+<td><strong>안티에일리어싱 / 그림자</strong></td>
+<td>화질</td>
+</tr>
+<tr>
+<td><strong>현재</strong></td>
+<td>지금 성능 보기</td>
+</tr>
+<tr>
+<td><strong>상단에 항상 표시</strong></td>
+<td>성능을 위쪽에 표시</td>
+</tr>
+<tr>
+<td><strong>우선순위·코어·GPU (고급)</strong></td>
+<td>게임·OBS와 함께 쓸 때 CPU·GPU 배분</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="시작">시작<a class="anchor" href="#시작">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>웹캠 트래킹 시작 / 마이크 시작</strong></td>
+<td>시작할 때 자동으로 켜기</td>
+</tr>
+<tr>
+<td><strong>시작 아바타</strong></td>
+<td>매번 묻기 / 마지막 아바타 / 기본 아바타</td>
+</tr>
+<tr>
+<td><strong>아바타 폴더</strong></td>
+<td>시작 화면에 보일 아바타 폴더</td>
+</tr>
+<tr>
+<td><strong>다시 시작</strong></td>
+<td>시작 화면으로 다시 시작</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="언어">언어<a class="anchor" href="#언어">#</a></h2>
+<p>English · 한국어 · 日本語 · 简体中文</p>
+<h2 id="ui">UI<a class="anchor" href="#ui">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>테마</strong></td>
+<td>라이트 / 다크</td>
+</tr>
+<tr>
+<td><strong>패널 위치</strong></td>
+<td>왼쪽 / 오른쪽</td>
+</tr>
+<tr>
+<td><strong>크기</strong></td>
+<td>UI 크기</td>
+</tr>
+<tr>
+<td><strong>퀵 툴바</strong></td>
+<td>툴바 불투명도, 위치 초기화</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="단축키--퀵-액션">단축키 · 퀵 액션<a class="anchor" href="#단축키--퀵-액션">#</a></h2>
+<h3 id="어디서나-전역-단축키">어디서나 (전역 단축키)<a class="anchor" href="#어디서나-전역-단축키">#</a></h3>
+<p>게임 중이나 Avatar Live가 뒤에 있을 때도 쓰는 키입니다. 다른 프로그램의 키 입력을 막지 않습니다.</p>
+<ol>
+<li><strong>+ 단축키 추가</strong></li>
+<li>동작 고르기: 아바타 메뉴 · 제스처 · 카메라 뷰 · 저장된 뷰 · 트래킹 리셋 · 조명 프리셋 · PhysBone 리셋 · 전체 초기화</li>
+<li><strong>키 지정…</strong> 을 누르고 원하는 키 조합 누르기</li>
+</ol>
+<ul>
+<li>메뉴 버튼·제스처는 <strong>누르는 동안</strong> / <strong>눌러서 켜고 끄기</strong>를 고를 수 있습니다.</li>
+<li><strong>F1</strong>만 단독으로는 쓸 수 없습니다 (클린 뷰 전용).</li>
+</ul>
+<h3 id="퀵-액션">퀵 액션<a class="anchor" href="#퀵-액션">#</a></h3>
+<p>전역 단축키와 같은 동작을 버튼으로 둡니다. <a href="05-avatar-menu.html#퀵-액션">5장</a>을 보세요.</p>
+<h2 id="설정-파일">설정 파일<a class="anchor" href="#설정-파일">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>폴더 열기</strong></td>
+<td>설정 폴더 열기</td>
+</tr>
+<tr>
+<td><strong>앱 설정 초기화</strong></td>
+<td>앱 설정을 처음으로 (아바타별 설정·장치 설정은 그대로, 단축키·퀵 액션은 지워짐)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="라이선스">라이선스<a class="anchor" href="#라이선스">#</a></h2>
+<p>현재 에디션과 라이선스 ID를 보여 줍니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>버튼</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>다른 코드 입력</strong></td>
+<td>다른 라이선스로 바꾸기</td>
+</tr>
+<tr>
+<td><strong>지금 확인</strong></td>
+<td>라이선스 다시 확인</td>
+</tr>
+<tr>
+<td><strong>BOOTH에서 구매</strong></td>
+<td>Pro 구매</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="진단">진단<a class="anchor" href="#진단">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>오류 리포트 보내기</strong></td>
+<td>문제 설명과 로그 보내기 (누를 때만 전송)</td>
+</tr>
+<tr>
+<td><strong>로그 폴더 열기</strong></td>
+<td>로그 폴더 열기</td>
+</tr>
+<tr>
+<td>로그 보기</td>
+<td>오류·경고 확인</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="정보">정보<a class="anchor" href="#정보">#</a></h2>
+<p>버전과 개발자 링크.</p>
+<h2 id="업데이트">업데이트<a class="anchor" href="#업데이트">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>지금 확인</strong></td>
+<td>새 버전 확인</td>
+</tr>
+<tr>
+<td><strong>내려받기</strong></td>
+<td>새 버전 받기</td>
+</tr>
+<tr>
+<td><strong>다시 시작해서 설치</strong></td>
+<td>바로 설치</td>
+</tr>
+<tr>
+<td><strong>자동으로 확인하고 내려받기</strong></td>
+<td>새 버전을 자동으로 받아 두기</td>
+</tr>
+<tr>
+<td><strong>종료할 때 설치</strong></td>
+<td>끌 때 설치</td>
+</tr>
+</tbody>
+</table></div>
+<p>설치에 실패하면 이전 버전으로 자동으로 돌아갑니다. 아바타와 설정은 그대로입니다.</p></article>
+    <div class="pager"><a class="prev" href="09-output.html"><span>이전</span>출력</a><a class="next" href="11-pro-features.html"><span>다음</span>포징 · 오브젝트 · 표정</a></div>
+    <p class="updated">최종 업데이트: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">이 페이지</div><ul><li class="l2"><a href="#일반">일반</a></li><li class="l2"><a href="#창">창</a></li><li class="l2"><a href="#성능">성능</a></li><li class="l2"><a href="#시작">시작</a></li><li class="l2"><a href="#언어">언어</a></li><li class="l2"><a href="#ui">UI</a></li><li class="l2"><a href="#단축키--퀵-액션">단축키 · 퀵 액션</a></li><li class="l3"><a href="#어디서나-전역-단축키">어디서나 (전역 단축키)</a></li><li class="l3"><a href="#퀵-액션">퀵 액션</a></li><li class="l2"><a href="#설정-파일">설정 파일</a></li><li class="l2"><a href="#라이선스">라이선스</a></li><li class="l2"><a href="#진단">진단</a></li><li class="l2"><a href="#정보">정보</a></li><li class="l2"><a href="#업데이트">업데이트</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 이용약관</a> · <a href="legal-privacy.html">개인정보처리방침</a> · <a href="legal-refund.html">환불 정책</a> · <a href="legal-seller.html">판매자 정보</a></div>
+    <p>Avatar Live는 VRChat Inc.와 제휴하거나 승인받은 제품이 아닙니다. VRChat은 VRChat Inc.의 상표입니다.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

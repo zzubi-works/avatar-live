@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>시작 화면과 아바타 라이브러리 — Avatar Live</title>
+<meta name="description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:title" content="시작 화면과 아바타 라이브러리 — Avatar Live">
+<meta property="og:description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="메뉴" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>한국어</span></summary><div class="lang-menu"><a href="../ko/03-launcher-and-library.html" class="on">한국어</a><a href="../en/03-launcher-and-library.html">English</a><a href="../ja/03-launcher-and-library.html">日本語</a><a href="../zh/03-launcher-and-library.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTH에서 구매</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">홈</a><div class="side-h">가이드</div><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기 (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html" class="on">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><div class="side-h">약관 · 정책</div><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="3-시작-화면과-아바타-라이브러리">3. 시작 화면과 아바타 라이브러리<a class="anchor" href="#3-시작-화면과-아바타-라이브러리">#</a></h1>
+<h2 id="시작-화면">시작 화면<a class="anchor" href="#시작-화면">#</a></h2>
+<figure><a href="../assets/shots/ko/launcher.webp" target="_blank" rel="noopener"><img alt="시작 화면" src="../assets/shots/ko/launcher.webp" loading="lazy"></a><figcaption>시작 화면</figcaption></figure>
+<p>Avatar Live를 실행하면 시작 화면에서 아바타와 장치를 고른 뒤 시작합니다.</p>
+<h3 id="아바타">아바타<a class="anchor" href="#아바타">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>아바타 열기…</strong></td>
+<td><code>.vavatar</code> 파일 열기 (창에 끌어다 놓아도 됨)</td>
+</tr>
+<tr>
+<td><strong>최근 / 폴더 / 가져옴</strong></td>
+<td>최근 연 아바타 / 아바타 폴더의 아바타 / 보관함으로 가져온 아바타</td>
+</tr>
+<tr>
+<td>타일 클릭 · 더블클릭</td>
+<td>선택 · 바로 시작</td>
+</tr>
+<tr>
+<td><strong>기본으로 지정</strong></td>
+<td>이 아바타를 기본 아바타로</td>
+</tr>
+<tr>
+<td><strong>파일 위치</strong></td>
+<td>탐색기에서 파일 보기</td>
+</tr>
+<tr>
+<td><strong>목록에서 제거</strong></td>
+<td>최근 목록에서만 지우기 (파일은 그대로)</td>
+</tr>
+<tr>
+<td><strong>위치 찾기…</strong></td>
+<td>옮겨진 파일 다시 지정</td>
+</tr>
+<tr>
+<td><strong>변경 / 폴더 열기</strong> (폴더 탭)</td>
+<td>아바타 폴더 바꾸기 / 탐색기로 열기</td>
+</tr>
+</tbody>
+</table></div>
+<p>상태 표시: <strong>사용 가능</strong> · <strong>파일 없음</strong> · <strong>열 수 없음</strong> · ★ <strong>기본</strong></p>
+<h3 id="장치와-시작-설정">장치와 시작 설정<a class="anchor" href="#장치와-시작-설정">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>카메라</strong> 스위치 · 목록</td>
+<td>시작할 때 웹캠 트래킹 켜기, 사용할 카메라</td>
+</tr>
+<tr>
+<td><strong>미리보기</strong></td>
+<td>카메라 화면 확인 (방송 중이면 다른 사람에게도 보이니 주의)</td>
+</tr>
+<tr>
+<td><strong>마이크</strong> 스위치 · 목록</td>
+<td>시작할 때 마이크(립싱크) 켜기, 사용할 마이크</td>
+</tr>
+<tr>
+<td><strong>테스트</strong></td>
+<td>마이크 소리가 들어오는지 확인</td>
+</tr>
+<tr>
+<td><strong>얼굴</strong></td>
+<td>얼굴 트래킹 엔진 (자동 / MediaPipe / OpenSeeFace)</td>
+</tr>
+<tr>
+<td><strong>손</strong></td>
+<td>손 트래킹 (MediaPipe / Ultraleap / 끔)</td>
+</tr>
+<tr>
+<td><strong>시작 아바타</strong></td>
+<td>매번 묻기 / 마지막 아바타 / 기본 아바타</td>
+</tr>
+<tr>
+<td><strong>항상 시작 화면 보이기</strong></td>
+<td>매번 이 화면에서 시작</td>
+</tr>
+<tr>
+<td><strong>▶ Avatar Live 시작</strong></td>
+<td>고른 아바타로 시작</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="안전-시작">안전 시작<a class="anchor" href="#안전-시작">#</a></h2>
+<p>웹캠·마이크·트래커 없이 시작합니다. 장치 문제로 시작이 안 될 때 씁니다.
+<strong>Shift를 누른 채</strong> 실행하고 시작 화면이 뜰 때까지 누르고 있으세요.</p>
+<h2 id="복구-화면">복구 화면<a class="anchor" href="#복구-화면">#</a></h2>
+<p>지난번 아바타를 불러오는 중에 꺼졌다면 다음 실행 때 나타납니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>버튼</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>다시 시도</strong></td>
+<td>같은 아바타 다시 불러오기</td>
+</tr>
+<tr>
+<td><strong>다른 아바타 고르기</strong></td>
+<td>시작 화면으로</td>
+</tr>
+<tr>
+<td><strong>안전 시작</strong></td>
+<td>장치 없이 같은 아바타 불러오기</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="실행-중에-아바타-바꾸기">실행 중에 아바타 바꾸기<a class="anchor" href="#실행-중에-아바타-바꾸기">#</a></h2>
+<figure><a href="../assets/shots/ko/avatar-popover.webp" target="_blank" rel="noopener"><img alt="아바타 팝오버" src="../assets/shots/ko/avatar-popover.webp" loading="lazy"></a><figcaption>아바타 팝오버</figcaption></figure>
+<p>왼쪽 위 <strong>아바타 이름</strong>을 누르면 아바타 라이브러리가 열립니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>아바타 정보</td>
+<td>PhysBone · Contact · 표정 파라미터 · 메뉴 항목 수, 날짜, 크기</td>
+</tr>
+<tr>
+<td><strong>아바타 파일 추가…</strong></td>
+<td><code>.vavatar</code>를 보관함으로 가져오기</td>
+</tr>
+<tr>
+<td><strong>보관함 폴더</strong></td>
+<td>보관함 폴더 열기</td>
+</tr>
+<tr>
+<td><strong>최근 아바타</strong></td>
+<td>최근 연 아바타로 전환</td>
+</tr>
+<tr>
+<td><strong>아바타 목록</strong></td>
+<td>보관함의 아바타로 전환, 🗑 삭제 (설정은 남음)</td>
+</tr>
+<tr>
+<td><strong>내 아바타 가져오기</strong></td>
+<td>Exporter 사용법 안내</td>
+</tr>
+</tbody>
+</table></div>
+<p>아바타를 바꾸면 설정을 저장하고 새 아바타로 다시 시작합니다. 켜 둔 웹캠과 마이크는 그대로 다시 켜집니다.</p>
+<h2 id="시작-화면으로-돌아가기">시작 화면으로 돌아가기<a class="anchor" href="#시작-화면으로-돌아가기">#</a></h2>
+<ul>
+<li>왼쪽 위 <strong>로고</strong> → <strong>다시 시작</strong></li>
+<li>설정 › 시작 › <strong>다시 시작</strong></li>
+</ul></article>
+    <div class="pager"><a class="prev" href="02-avatar-exporter.html"><span>이전</span>아바타 내보내기 (Avatar Exporter)</a><a class="next" href="04-main-window.html"><span>다음</span>메인 화면</a></div>
+    <p class="updated">최종 업데이트: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">이 페이지</div><ul><li class="l2"><a href="#시작-화면">시작 화면</a></li><li class="l3"><a href="#아바타">아바타</a></li><li class="l3"><a href="#장치와-시작-설정">장치와 시작 설정</a></li><li class="l2"><a href="#안전-시작">안전 시작</a></li><li class="l2"><a href="#복구-화면">복구 화면</a></li><li class="l2"><a href="#실행-중에-아바타-바꾸기">실행 중에 아바타 바꾸기</a></li><li class="l2"><a href="#시작-화면으로-돌아가기">시작 화면으로 돌아가기</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 이용약관</a> · <a href="legal-privacy.html">개인정보처리방침</a> · <a href="legal-refund.html">환불 정책</a> · <a href="legal-seller.html">판매자 정보</a></div>
+    <p>Avatar Live는 VRChat Inc.와 제휴하거나 승인받은 제품이 아닙니다. VRChat은 VRChat Inc.의 상표입니다.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

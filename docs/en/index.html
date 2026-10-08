@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Avatar Live — Your VRChat Avatar, As It Is, as a VTuber</title>
+<meta name="description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:title" content="Avatar Live — Your VRChat Avatar, As It Is, as a VTuber">
+<meta property="og:description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="home">
+<header class="top">
+  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>English</span></summary><div class="lang-menu"><a href="../ko/index.html">한국어</a><a href="../en/index.html" class="on">English</a><a href="../ja/index.html">日本語</a><a href="../zh/index.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">Buy on BOOTH</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">Home</a><div class="side-h">Guide</div><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting an avatar (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><div class="side-h">Legal</div><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></aside>
+  <main class="content">
+    <article><div class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">VTuber software for Windows</p>
+    <h1 id="your-vrchat-avataras-a-vtuber-as-it-is">Your VRChat avatar<br>as a VTuber, <span class="grad">as it is</span><a class="anchor" href="#your-vrchat-avataras-a-vtuber-as-it-is">#</a></h1>
+    <p class="lead">No conversion to VRM. No setting up shaders, swinging bones, expression menus or outfit toggles all over again.<br>
+    The avatar you see in VRChat moves with your webcam and microphone, and goes straight out to OBS, Discord and Zoom.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://curiousbobby.booth.pm/">Buy on BOOTH</a>
+      <a class="btn" href="01-getting-started.html">Start the guide →</a>
+    </div>
+  </div>
+  <div class="hero-shot"><img src="../assets/shots/en/main.webp" alt="Avatar Live main window"></div>
+</div>
+
+<h2 id="how-it-used-to-be">How it used to be<a class="anchor" href="#how-it-used-to-be">#</a></h2>
+<p>Most free VTuber programs are built around the <strong>VRM format</strong>. To use a VRChat avatar, you had to convert it to VRM, rebuild its shaders, and set up its swinging bones, expressions and outfit toggles again. In the end, <strong>the avatar on stream is not the avatar you see in VRChat.</strong> And you had to repeat all of this every time you changed the avatar.</p>
+<h2 id="how-avatar-live-is-different">How Avatar Live is different<a class="anchor" href="#how-avatar-live-is-different">#</a></h2>
+<div class="cards">
+<div class="card"><div class="ic">🎨</div><h3 id="your-original-shaders">Your original shaders<a class="anchor" href="#your-original-shaders">#</a></h3><p>Poiyomi, lilToon and the other shaders on your avatar are used as they are.</p></div>
+<div class="card"><div class="ic">💇</div><h3 id="physbones-as-they-are">PhysBones as they are<a class="anchor" href="#physbones-as-they-are">#</a></h3><p>Hair, skirts and tails sway with the same settings as in VRChat. Grab them with the mouse and pose them in place.</p></div>
+<div class="card"><div class="ic">📋</div><h3 id="your-expression-menu-as-it-is">Your expression menu as it is<a class="anchor" href="#your-expression-menu-as-it-is">#</a></h3><p>Toggles, buttons, Radials and Puppets from the VRChat Expressions menu, hand-gesture expressions, Contacts and Parameter Drivers all work.</p></div>
+<div class="card"><div class="ic">🙂</div><h3 id="face-tracking-connected-automatically">Face tracking, connected automatically<a class="anchor" href="#face-tracking-connected-automatically">#</a></h3><p>Uses the face tracking setup your avatar already has. A guided automatic face setup.</p></div>
+<div class="card"><div class="ic">⌨️</div><h3 id="desk-hand-motion">Desk hand motion<a class="anchor" href="#desk-hand-motion">#</a></h3><p>Even when your hands are out of view, the avatar types along with your real keyboard and mouse. What you type is never recorded.</p></div>
+<div class="card"><div class="ic">🎮</div><h3 id="game--avatar-on-discord">Game + avatar on Discord<a class="anchor" href="#game--avatar-on-discord">#</a></h3><p>Sends your game and avatar together in a Discord screen share, without OBS. You see only the game.</p></div>
+</div>
+
+<h2 id="at-a-glance">At a glance<a class="anchor" href="#at-a-glance">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>VRM-based programs (typical)</th>
+<th><strong>Avatar Live</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Preparing the avatar</td>
+<td>Convert to VRM + set up shaders, sway and expressions again</td>
+<td><strong>One click in the Exporter</strong></td>
+</tr>
+<tr>
+<td>Shaders</td>
+<td>Often have to be replaced with VRM shaders</td>
+<td><strong>Original shaders as they are</strong></td>
+</tr>
+<tr>
+<td>Swinging bones</td>
+<td>Set up again as SpringBones</td>
+<td><strong>PhysBones as they are</strong></td>
+</tr>
+<tr>
+<td>Outfit and hair toggles, expression menu</td>
+<td>Mostly have to be rebuilt</td>
+<td><strong>VRChat menu as it is</strong></td>
+</tr>
+<tr>
+<td>FX animator and Contact gimmicks</td>
+<td>Do not work</td>
+<td><strong>Work</strong></td>
+</tr>
+<tr>
+<td>Applying avatar changes</td>
+<td>Convert again from the start</td>
+<td><strong>Just export again</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="also-included">Also included<a class="anchor" href="#also-included">#</a></h2>
+<ul>
+<li><strong>Spout2</strong> (OBS, transparent background) · <strong>Virtual camera</strong> (Zoom, Discord, Teams) · <strong>Discord screen share</strong> · <strong>PNG photos</strong></li>
+<li>10 lighting presets and direct light editing, plus effects such as bloom, color grading and depth of field</li>
+<li><strong>Global hotkeys</strong> that work even in games, and <strong>Quick Actions</strong> buttons</li>
+<li>Keeps sending from the tray even after you close the window</li>
+<li>한국어 · English · 日本語 · 简体中文</li>
+</ul>
+<h2 id="it-may-not-be-right-for-you-if">It may not be right for you if<a class="anchor" href="#it-may-not-be-right-for-you-if">#</a></h2>
+<ul>
+<li>You <strong>do not have the Unity project</strong> of your VRChat avatar (VRM or .vrca files alone cannot be used)</li>
+<li>You use a <strong>Live2D (2D)</strong> avatar, or <strong>macOS or Linux</strong></li>
+</ul>
+<blockquote>
+<p><strong>Streaming, publishing videos and commercial use require the Pro edition.</strong> Basic is the standard edition for personal use. (<a href="13-license.html#editions">Edition comparison</a>)</p>
+</blockquote>
+<p>Before buying, please check the <a href="01-getting-started.html">requirements</a> and the <a href="legal-refund.html">refund policy</a>. As this is a digital product, it cannot be refunded after purchase.</p>
+<h2 id="guide">Guide<a class="anchor" href="#guide">#</a></h2>
+<div class="toc-grid">
+<a href="01-getting-started.html"><b>1</b> Getting started</a>
+<a href="02-avatar-exporter.html"><b>2</b> Exporting an avatar</a>
+<a href="03-launcher-and-library.html"><b>3</b> Start screen and library</a>
+<a href="04-main-window.html"><b>4</b> Main window</a>
+<a href="05-avatar-menu.html"><b>5</b> Avatar menu</a>
+<a href="06-devices.html"><b>6</b> Devices</a>
+<a href="07-motion.html"><b>7</b> Motion</a>
+<a href="08-scene.html"><b>8</b> Scene</a>
+<a href="09-output.html"><b>9</b> Output · Screen share</a>
+<a href="10-settings.html"><b>10</b> Settings</a>
+<a href="11-pro-features.html"><b>11</b> Posing · Objects · Expressions</a>
+<a href="12-troubleshooting.html"><b>12</b> Troubleshooting</a>
+<a href="13-license.html"><b>13</b> Editions · License</a>
+</div></article>
+    
+    <p class="updated">Last updated: 2026-10-09</p>
+  </main>
+  
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live Terms of Use</a> · <a href="legal-privacy.html">Privacy Policy</a> · <a href="legal-refund.html">Refund Policy</a> · <a href="legal-seller.html">Seller Information</a></div>
+    <p>Avatar Live is not affiliated with or endorsed by VRChat Inc. VRChat is a trademark of VRChat Inc.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

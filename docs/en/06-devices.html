@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Devices — Avatar Live</title>
+<meta name="description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:title" content="Devices — Avatar Live">
+<meta property="og:description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>English</span></summary><div class="lang-menu"><a href="../ko/06-devices.html">한국어</a><a href="../en/06-devices.html" class="on">English</a><a href="../ja/06-devices.html">日本語</a><a href="../zh/06-devices.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">Buy on BOOTH</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">Home</a><div class="side-h">Guide</div><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting an avatar (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html" class="on">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><div class="side-h">Legal</div><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="6-devices">6. Devices<a class="anchor" href="#6-devices">#</a></h1>
+<p>On the <strong>Devices</strong> page you choose what moves your avatar. The devices you set here are shared by all avatars.</p>
+<figure><a href="../assets/shots/en/devices.webp" target="_blank" rel="noopener"><img alt="Devices page" src="../assets/shots/en/devices.webp" loading="lazy"></a><figcaption>Devices page</figcaption></figure>
+<h2 id="webcam">Webcam<a class="anchor" href="#webcam">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Webcam</strong> switch</td>
+<td>Turn webcam tracking on / off</td>
+</tr>
+<tr>
+<td>Camera list</td>
+<td>Choose the camera to use</td>
+</tr>
+<tr>
+<td><strong>Recenter</strong></td>
+<td>Make your current face direction the front</td>
+</tr>
+<tr>
+<td><strong>Tracking quality</strong></td>
+<td><strong>Smooth</strong> / <strong>Balanced</strong> / <strong>Eco</strong> — use Balanced or Eco alongside a game</td>
+</tr>
+</tbody>
+</table></div>
+<p>If there is a problem with the camera, the reason is shown on this card (not connected, image too dark, in use by another app, and so on).</p>
+<h2 id="microphone">Microphone<a class="anchor" href="#microphone">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Microphone</strong> switch</td>
+<td>Turn the microphone (lip sync) on / off</td>
+</tr>
+<tr>
+<td>Microphone list</td>
+<td>Choose the microphone to use</td>
+</tr>
+<tr>
+<td><strong>Input</strong> meter</td>
+<td>The sound level coming in now</td>
+</tr>
+<tr>
+<td><strong>Noise gate</strong></td>
+<td>Keep background noise from moving the mouth</td>
+</tr>
+<tr>
+<td><strong>Detect background noise</strong></td>
+<td>Measures the noise while you stay quiet and sets the gate automatically</td>
+</tr>
+<tr>
+<td><strong>Noise gate details</strong></td>
+<td><strong>Auto / Manual</strong>, open and close levels, response time</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="tracking-sources">Tracking sources<a class="anchor" href="#tracking-sources">#</a></h2>
+<p>Choose what moves each body part.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Options</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Face engine</strong></td>
+<td>Auto / MediaPipe / OpenSeeFace</td>
+</tr>
+<tr>
+<td><strong>Arms · Hands · Fingers</strong></td>
+<td>MediaPipe / Ultraleap / Off</td>
+</tr>
+<tr>
+<td><strong>Mouth</strong></td>
+<td>Face + mic / Face / Mic / Off</td>
+</tr>
+<tr>
+<td><strong>Advanced</strong> › Face · Head · Eyes</td>
+<td>Face / Off</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="openseeface">OpenSeeFace<a class="anchor" href="#openseeface">#</a></h3>
+<p>Another engine that tracks the face only. It is not included with Avatar Live, so download it yourself, place it <strong>outside the installation folder</strong>, and choose it under <strong>OpenSeeFace folder</strong>.</p>
+<h3 id="face-app-vmc--ifacialmocap">Face app (VMC · iFacialMocap)<a class="anchor" href="#face-app-vmc--ifacialmocap">#</a></h3>
+<p>Receives the face from another app or an iPhone instead of the webcam.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Source</strong></td>
+<td>None / VMC / iFacialMocap</td>
+</tr>
+<tr>
+<td>Switch</td>
+<td>Start receiving</td>
+</tr>
+<tr>
+<td><strong>Port</strong> / <strong>iPhone address</strong></td>
+<td>Connection details</td>
+</tr>
+<tr>
+<td><strong>Allow devices on my network</strong></td>
+<td>Receive from phones and PCs on the same network</td>
+</tr>
+<tr>
+<td><strong>This PC's addresses</strong> · <strong>Copy</strong></td>
+<td>The address to enter in the iFacialMocap app</td>
+</tr>
+<tr>
+<td><strong>Recenter</strong></td>
+<td>Make your current head direction the front</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="ultraleap-hand-tracking">Ultraleap hand tracking<a class="anchor" href="#ultraleap-hand-tracking">#</a></h2>
+<p>Tracks arms, hands and fingers with a Leap Motion / Ultraleap device. Install the Ultraleap software, connect the device, then choose <strong>Ultraleap</strong> in the tracking sources.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Switch · status</td>
+<td>Turn it on; whether the device and hands are visible</td>
+</tr>
+<tr>
+<td><strong>Calibration (where the device is)</strong></td>
+<td>Device position and direction, hand size, smoothing</td>
+</tr>
+<tr>
+<td><strong>Calibrate</strong></td>
+<td>Put your hands on the keyboard and click it to set that spot as the keyboard position</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="external-tracking-osc--vmc">External tracking (OSC · VMC)<a class="anchor" href="#external-tracking-osc--vmc">#</a></h2>
+<p>Connects with other apps on this PC. Off by default.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OSC input (avatar parameters)</strong></td>
+<td>Change avatar parameters with OSC tools made for VRChat</td>
+</tr>
+<tr>
+<td><strong>VMC input (body and bones from another app)</strong></td>
+<td>Receive the body from another motion app, and choose which <strong>Parts</strong> to receive</td>
+</tr>
+<tr>
+<td><strong>Write the sender's shapes onto the avatar</strong></td>
+<td>Apply the received expressions as they are</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>Ultraleap, iFacialMocap and OSC / VMC</strong> are expected to work, but they are <strong>experimental features</strong>: the devices and apps involved have not yet been tested in the developer's environment.</p>
+</blockquote>
+<p>VMC <strong>output</strong> is in <a href="09-output.html#external-output-vmc">Chapter 9</a>.</p></article>
+    <div class="pager"><a class="prev" href="05-avatar-menu.html"><span>Previous</span>Avatar menu</a><a class="next" href="07-motion.html"><span>Next</span>Motion</a></div>
+    <p class="updated">Last updated: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">On this page</div><ul><li class="l2"><a href="#webcam">Webcam</a></li><li class="l2"><a href="#microphone">Microphone</a></li><li class="l2"><a href="#tracking-sources">Tracking sources</a></li><li class="l3"><a href="#openseeface">OpenSeeFace</a></li><li class="l3"><a href="#face-app-vmc--ifacialmocap">Face app (VMC · iFacialMocap)</a></li><li class="l2"><a href="#ultraleap-hand-tracking">Ultraleap hand tracking</a></li><li class="l2"><a href="#external-tracking-osc--vmc">External tracking (OSC · VMC)</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live Terms of Use</a> · <a href="legal-privacy.html">Privacy Policy</a> · <a href="legal-refund.html">Refund Policy</a> · <a href="legal-seller.html">Seller Information</a></div>
+    <p>Avatar Live is not affiliated with or endorsed by VRChat Inc. VRChat is a trademark of VRChat Inc.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

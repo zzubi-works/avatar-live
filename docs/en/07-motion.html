@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Motion — Avatar Live</title>
+<meta name="description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:title" content="Motion — Avatar Live">
+<meta property="og:description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>English</span></summary><div class="lang-menu"><a href="../ko/07-motion.html">한국어</a><a href="../en/07-motion.html" class="on">English</a><a href="../ja/07-motion.html">日本語</a><a href="../zh/07-motion.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">Buy on BOOTH</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">Home</a><div class="side-h">Guide</div><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting an avatar (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html" class="on">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><div class="side-h">Legal</div><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="7-motion">7. Motion<a class="anchor" href="#7-motion">#</a></h1>
+<p>On the <strong>Motion</strong> page you set how the face, body and hands move. Settings are saved separately for each avatar.</p>
+<figure><a href="../assets/shots/en/motion.webp" target="_blank" rel="noopener"><img alt="Motion page" src="../assets/shots/en/motion.webp" loading="lazy"></a><figcaption>Motion page</figcaption></figure>
+<h2 id="tracking-control">Tracking control<a class="anchor" href="#tracking-control">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Switch</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mirror (move like a mirror image)</strong></td>
+<td>Match left and right like a mirror</td>
+</tr>
+<tr>
+<td><strong>Arms / Hands / Fingers</strong></td>
+<td>Move each part with the webcam</td>
+</tr>
+<tr>
+<td><strong>Gestures → expressions</strong></td>
+<td>Turn hand shapes into the avatar's gesture expressions</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="face">Face<a class="anchor" href="#face">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Face tracking</strong></td>
+<td>Turn facial expression tracking on / off</td>
+</tr>
+<tr>
+<td><strong>Automatic face setup</strong></td>
+<td>Make the expressions as guided, and it adjusts automatically to your face</td>
+</tr>
+<tr>
+<td><strong>Recenter</strong></td>
+<td>Make your current face direction the front</td>
+</tr>
+</tbody>
+</table></div>
+<p>Avatar Live finds the face tracking setup your avatar already has (VRCFaceTracking, ARKit and MMD shape keys, VRChat Eye Look and LipSync) and uses it as it is. No separate setup is needed.</p>
+<h3 id="automatic-face-setup">Automatic face setup<a class="anchor" href="#automatic-face-setup">#</a></h3>
+<figure><a href="../assets/shots/en/facecal.webp" target="_blank" rel="noopener"><img alt="Automatic face setup" src="../assets/shots/en/facecal.webp" loading="lazy"></a><figcaption>Automatic face setup</figcaption></figure>
+<p>Following the on-screen guide, make a neutral face, close your eyes, open your mouth, talk, smile, pucker your lips, puff your cheeks, stick out your tongue and move your gaze in turn, clicking <strong>Capture</strong> each time. When finished, click <strong>Apply</strong>.</p>
+<ul>
+<li>Use <strong>Back / Skip / Cancel</strong> to move between steps.</li>
+<li>Where you look in the first step becomes the avatar's forward gaze. Look at the screen as you do when streaming.</li>
+<li>Lighting your face well makes it more accurate.</li>
+</ul>
+<h3 id="face-adjustment">Face adjustment<a class="anchor" href="#face-adjustment">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Adjust the face values</strong></td>
+<td>Turn the adjustment values on / off</td>
+</tr>
+<tr>
+<td><strong>Edit left and right together</strong></td>
+<td>Changing one side changes the other too</td>
+</tr>
+<tr>
+<td><strong>Smoothing</strong></td>
+<td>Reduce jitter</td>
+</tr>
+<tr>
+<td>Value list (eyes · brows · mouth · cheeks and nose)</td>
+<td>Set how strongly each expression shows</td>
+</tr>
+<tr>
+<td><strong>Reset this value / Reset all values</strong></td>
+<td>Back to the initial state</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="camera-face-tuning">Camera face tuning<a class="anchor" href="#camera-face-tuning">#</a></h3>
+<p>Sets the reference values on the camera side. Shared by all avatars.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Slider</th>
+<th>What it changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Blink closed at</strong></td>
+<td>How far you must close your eyes for them to count as closed</td>
+</tr>
+<tr>
+<td><strong>Mouth fully open at</strong></td>
+<td>How far you must open your mouth for it to count as fully open</td>
+</tr>
+<tr>
+<td><strong>Upper teeth show from</strong></td>
+<td>How far the mouth opens before the upper teeth start to show</td>
+</tr>
+<tr>
+<td><strong>Smile hides upper teeth</strong></td>
+<td>Show less of the upper teeth when smiling</td>
+</tr>
+<tr>
+<td><strong>Gaze range sideways / up/down</strong></td>
+<td>How far the eyes move</td>
+</tr>
+<tr>
+<td><strong>Full cheek puff at</strong></td>
+<td>The maximum size of a cheek puff</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="blink">Blink<a class="anchor" href="#blink">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mode</strong></td>
+<td><strong>Independent</strong> (per eye, winks possible) / <strong>Synchronized</strong> (both eyes together) / <strong>Smart</strong> (together normally, separate for winks)</td>
+</tr>
+<tr>
+<td><strong>Blink strength / responsiveness</strong></td>
+<td>How far the eyes close, how quickly they react</td>
+</tr>
+<tr>
+<td><strong>Advanced</strong></td>
+<td>Left and right strength, closing and opening speed</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="eye-gaze-tracking">Eye gaze tracking<a class="anchor" href="#eye-gaze-tracking">#</a></h3>
+<p>Makes the eyes follow your gaze.</p>
+<h3 id="mouth--tongue--cheeks">Mouth · tongue · cheeks<a class="anchor" href="#mouth--tongue--cheeks">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mouth</strong> meter</td>
+<td>The current lip sync state</td>
+</tr>
+<tr>
+<td><strong>Auto level</strong></td>
+<td>Adjusts the mouth size to your voice level automatically (when off, set it yourself with <strong>Sensitivity</strong>)</td>
+</tr>
+<tr>
+<td><strong>Mic → face tracking</strong></td>
+<td>Whether your voice also drives the mouth in face tracking</td>
+</tr>
+<tr>
+<td><strong>Voice calibration</strong></td>
+<td>Press a vowel button and pronounce it to match your voice → <strong>Save voice profile</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="tongue--cheek-puff">Tongue · cheek puff<a class="anchor" href="#tongue--cheek-puff">#</a></h4>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Name switch</td>
+<td>Turn it on right now</td>
+</tr>
+<tr>
+<td><strong>Detect with the camera</strong></td>
+<td>Recognize the tongue and cheeks with the camera (use after the automatic face setup)</td>
+</tr>
+<tr>
+<td><strong>Key</strong></td>
+<td>Turn it on with a hotkey (<strong>While held</strong> / <strong>Press to switch</strong>)</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>Detect with the camera</strong> for the tongue and cheek puff is expected to work, but it is an <strong>experimental feature</strong> that has not been tested with every face and camera.</p>
+</blockquote>
+<h3 id="when-the-face-is-lost">When the face is lost<a class="anchor" href="#when-the-face-is-lost">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Hold the last face for</strong></td>
+<td>How long the expression is held when the face is briefly lost</td>
+</tr>
+<tr>
+<td><strong>Return to neutral over / Blend back over</strong></td>
+<td>How smoothly the expression changes</td>
+</tr>
+<tr>
+<td><strong>Blink automatically / Move the eyes (idle look) / Look at the camera</strong></td>
+<td>Eye movement while the face is not visible</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="body">Body<a class="anchor" href="#body">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Head tracking</strong></td>
+<td>Turn head movement on / off</td>
+</tr>
+<tr>
+<td><strong>Strength</strong></td>
+<td><strong>Subtle / Natural / Expressive</strong></td>
+</tr>
+<tr>
+<td><strong>Body follow</strong></td>
+<td>The chest and spine follow the head naturally</td>
+</tr>
+<tr>
+<td><strong>Natural body motion</strong></td>
+<td>Move slightly even while still</td>
+</tr>
+<tr>
+<td><strong>Breathing</strong></td>
+<td>Breathing motion</td>
+</tr>
+<tr>
+<td><strong>Head idle motion</strong></td>
+<td>The head moves a little while it is not tracked</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="hands--desk">Hands · desk<a class="anchor" href="#hands--desk">#</a></h2>
+<h3 id="desk-interaction">Desk Interaction<a class="anchor" href="#desk-interaction">#</a></h3>
+<p>When your hands are not visible to the camera, the avatar's hands type and move the mouse along with your real keyboard and mouse input.</p>
+<blockquote class="callout"><p>🔒 Keyboard input is used only to move the avatar's hands. <strong>The characters you type are never saved, recorded or sent.</strong></p>
+</blockquote>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Desk Interaction</strong></td>
+<td>On / off</td>
+</tr>
+<tr>
+<td><strong>Hand default pose</strong></td>
+<td>Desk height and distance, hand spacing, elbows, wrists, finger bend</td>
+</tr>
+<tr>
+<td><strong>Preview hand default pose</strong></td>
+<td>Check the pose</td>
+</tr>
+<tr>
+<td><strong>Keyboard input reaction</strong></td>
+<td>How much the fingers, hands and wrists move when typing</td>
+</tr>
+<tr>
+<td><strong>Mouse input reaction</strong></td>
+<td>The mouse hand (right / left / auto), size of movement and clicks</td>
+</tr>
+<tr>
+<td><strong>Own mouse pose</strong></td>
+<td>Save the current pose as the mouse pose</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="when-tracking-is-lost">When tracking is lost<a class="anchor" href="#when-tracking-is-lost">#</a></h3>
+<p>Choose the pose when your hands are not visible: <strong>Keyboard / desk</strong> · <strong>Hold last pose</strong> · <strong>Relaxed at side</strong> · <strong>Avatar animation</strong> · <strong>My pose</strong></p>
+<ul>
+<li><strong>Lowered hands rest too</strong> — when you lower your hands, they go to the default pose even if the camera can see them</li>
+</ul>
+<h2 id="advanced-settings">Advanced settings<a class="anchor" href="#advanced-settings">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Head and body details</strong></td>
+<td>Head rotation and position strength, body follow details</td>
+</tr>
+<tr>
+<td><strong>Typing style</strong></td>
+<td><strong>Subtle / Natural / Expressive</strong></td>
+</tr>
+<tr>
+<td><strong>Face compatibility</strong></td>
+<td>Check the face tracking setup your avatar has</td>
+</tr>
+<tr>
+<td><strong>Face output</strong></td>
+<td><strong>Auto (recommended)</strong> / Prefer VRCFT / Prefer Perfect Sync</td>
+</tr>
+<tr>
+<td><strong>Shape key limits</strong></td>
+<td>Limit the maximum value of each shape key</td>
+</tr>
+</tbody>
+</table></div></article>
+    <div class="pager"><a class="prev" href="06-devices.html"><span>Previous</span>Devices</a><a class="next" href="08-scene.html"><span>Next</span>Scene</a></div>
+    <p class="updated">Last updated: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">On this page</div><ul><li class="l2"><a href="#tracking-control">Tracking control</a></li><li class="l2"><a href="#face">Face</a></li><li class="l3"><a href="#automatic-face-setup">Automatic face setup</a></li><li class="l3"><a href="#face-adjustment">Face adjustment</a></li><li class="l3"><a href="#camera-face-tuning">Camera face tuning</a></li><li class="l3"><a href="#blink">Blink</a></li><li class="l3"><a href="#eye-gaze-tracking">Eye gaze tracking</a></li><li class="l3"><a href="#mouth--tongue--cheeks">Mouth · tongue · cheeks</a></li><li class="l3"><a href="#when-the-face-is-lost">When the face is lost</a></li><li class="l2"><a href="#body">Body</a></li><li class="l2"><a href="#hands--desk">Hands · desk</a></li><li class="l3"><a href="#desk-interaction">Desk Interaction</a></li><li class="l3"><a href="#when-tracking-is-lost">When tracking is lost</a></li><li class="l2"><a href="#advanced-settings">Advanced settings</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live Terms of Use</a> · <a href="legal-privacy.html">Privacy Policy</a> · <a href="legal-refund.html">Refund Policy</a> · <a href="legal-seller.html">Seller Information</a></div>
+    <p>Avatar Live is not affiliated with or endorsed by VRChat Inc. VRChat is a trademark of VRChat Inc.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

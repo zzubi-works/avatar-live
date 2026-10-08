@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>开始界面与角色库 — Avatar Live</title>
+<meta name="description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
+<meta property="og:title" content="开始界面与角色库 — Avatar Live">
+<meta property="og:description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="菜单" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>简体中文</span></summary><div class="lang-menu"><a href="../ko/03-launcher-and-library.html">한국어</a><a href="../en/03-launcher-and-library.html">English</a><a href="../ja/03-launcher-and-library.html">日本語</a><a href="../zh/03-launcher-and-library.html" class="on">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">在 BOOTH 购买</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">首页</a><div class="side-h">指南</div><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html" class="on">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><div class="side-h">条款与政策</div><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="3-开始界面与角色库">3. 开始界面与角色库<a class="anchor" href="#3-开始界面与角色库">#</a></h1>
+<h2 id="开始界面">开始界面<a class="anchor" href="#开始界面">#</a></h2>
+<figure><a href="../assets/shots/zh/launcher.webp" target="_blank" rel="noopener"><img alt="开始界面" src="../assets/shots/zh/launcher.webp" loading="lazy"></a><figcaption>开始界面</figcaption></figure>
+<p>运行 Avatar Live 后，在开始界面选择角色和设备，然后启动。</p>
+<h3 id="角色">角色<a class="anchor" href="#角色">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>打开角色…</strong></td>
+<td>打开 <code>.vavatar</code> 文件（也可以拖放到窗口中）</td>
+</tr>
+<tr>
+<td><strong>最近 / 文件夹 / 已导入</strong></td>
+<td>最近打开的角色 / 角色文件夹中的角色 / 导入角色库的角色</td>
+</tr>
+<tr>
+<td>单击 · 双击卡片</td>
+<td>选择 · 直接启动</td>
+</tr>
+<tr>
+<td><strong>设为默认</strong></td>
+<td>将此角色设为默认角色</td>
+</tr>
+<tr>
+<td><strong>文件位置</strong></td>
+<td>在资源管理器中显示文件</td>
+</tr>
+<tr>
+<td><strong>从列表移除</strong></td>
+<td>仅从最近列表中移除（文件保留）</td>
+</tr>
+<tr>
+<td><strong>查找位置…</strong></td>
+<td>重新指定已移动的文件</td>
+</tr>
+<tr>
+<td><strong>更改 / 打开文件夹</strong>（文件夹标签页）</td>
+<td>更改角色文件夹 / 在资源管理器中打开</td>
+</tr>
+</tbody>
+</table></div>
+<p>状态显示：<strong>可用</strong> · <strong>文件丢失</strong> · <strong>无法打开</strong> · ★ <strong>默认</strong></p>
+<h3 id="设备与启动设置">设备与启动设置<a class="anchor" href="#设备与启动设置">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>摄像头</strong> 开关 · 列表</td>
+<td>启动时开启摄像头追踪，选择要使用的摄像头</td>
+</tr>
+<tr>
+<td><strong>预览</strong></td>
+<td>查看摄像头画面（直播中他人也能看到，请注意）</td>
+</tr>
+<tr>
+<td><strong>麦克风</strong> 开关 · 列表</td>
+<td>启动时开启麦克风（口型同步），选择要使用的麦克风</td>
+</tr>
+<tr>
+<td><strong>测试</strong></td>
+<td>确认麦克风是否有声音输入</td>
+</tr>
+<tr>
+<td><strong>面部</strong></td>
+<td>面部追踪引擎（自动 / MediaPipe / OpenSeeFace）</td>
+</tr>
+<tr>
+<td><strong>手部</strong></td>
+<td>手部追踪（MediaPipe / Ultraleap / 关闭）</td>
+</tr>
+<tr>
+<td><strong>启动角色</strong></td>
+<td>每次询问 / 上次使用 / 默认角色</td>
+</tr>
+<tr>
+<td><strong>总是显示开始界面</strong></td>
+<td>每次都从此界面开始</td>
+</tr>
+<tr>
+<td><strong>▶ 启动 Avatar Live</strong></td>
+<td>以所选角色启动</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="安全启动">安全启动<a class="anchor" href="#安全启动">#</a></h2>
+<p>不使用摄像头、麦克风和追踪器启动。用于因设备问题无法启动的情况。
+请 <strong>按住 Shift</strong> 运行，并一直按住直到开始界面出现。</p>
+<h2 id="恢复界面">恢复界面<a class="anchor" href="#恢复界面">#</a></h2>
+<p>如果上次在加载角色时程序关闭，下次运行时会显示此界面。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>按钮</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>重试</strong></td>
+<td>重新加载同一个角色</td>
+</tr>
+<tr>
+<td><strong>选择其他角色</strong></td>
+<td>返回开始界面</td>
+</tr>
+<tr>
+<td><strong>安全启动</strong></td>
+<td>不使用设备加载同一个角色</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="运行中切换角色">运行中切换角色<a class="anchor" href="#运行中切换角色">#</a></h2>
+<figure><a href="../assets/shots/zh/avatar-popover.webp" target="_blank" rel="noopener"><img alt="角色弹出窗口" src="../assets/shots/zh/avatar-popover.webp" loading="lazy"></a><figcaption>角色弹出窗口</figcaption></figure>
+<p>点击左上角的 <strong>角色名称</strong> 会打开角色库。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>角色信息</td>
+<td>PhysBone、Contact、表情参数、菜单项的数量，日期，大小</td>
+</tr>
+<tr>
+<td><strong>添加角色文件…</strong></td>
+<td>将 <code>.vavatar</code> 导入角色库</td>
+</tr>
+<tr>
+<td><strong>角色库文件夹</strong></td>
+<td>打开角色库文件夹</td>
+</tr>
+<tr>
+<td><strong>最近的角色</strong></td>
+<td>切换到最近打开的角色</td>
+</tr>
+<tr>
+<td><strong>角色列表</strong></td>
+<td>切换到角色库中的角色，🗑 删除（设置保留）</td>
+</tr>
+<tr>
+<td><strong>自己的角色</strong></td>
+<td>导出器使用方法说明</td>
+</tr>
+</tbody>
+</table></div>
+<p>切换角色时会保存设置，并以新角色重新启动。已开启的摄像头和麦克风会照常重新开启。</p>
+<h2 id="返回开始界面">返回开始界面<a class="anchor" href="#返回开始界面">#</a></h2>
+<ul>
+<li>左上角 <strong>标志</strong> → <strong>重新启动</strong></li>
+<li>设置 › 启动 › <strong>重新启动</strong></li>
+</ul></article>
+    <div class="pager"><a class="prev" href="02-avatar-exporter.html"><span>上一页</span>导出角色（Avatar Exporter）</a><a class="next" href="04-main-window.html"><span>下一页</span>主界面</a></div>
+    <p class="updated">最后更新: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">本页内容</div><ul><li class="l2"><a href="#开始界面">开始界面</a></li><li class="l3"><a href="#角色">角色</a></li><li class="l3"><a href="#设备与启动设置">设备与启动设置</a></li><li class="l2"><a href="#安全启动">安全启动</a></li><li class="l2"><a href="#恢复界面">恢复界面</a></li><li class="l2"><a href="#运行中切换角色">运行中切换角色</a></li><li class="l2"><a href="#返回开始界面">返回开始界面</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 使用条款</a> · <a href="legal-privacy.html">隐私政策</a> · <a href="legal-refund.html">退款政策</a> · <a href="legal-seller.html">卖家信息</a></div>
+    <p>Avatar Live 与 VRChat Inc. 无关联，也未获其认可。VRChat 是 VRChat Inc. 的商标。</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

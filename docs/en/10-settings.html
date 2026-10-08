@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Settings — Avatar Live</title>
+<meta name="description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:title" content="Settings — Avatar Live">
+<meta property="og:description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>English</span></summary><div class="lang-menu"><a href="../ko/10-settings.html">한국어</a><a href="../en/10-settings.html" class="on">English</a><a href="../ja/10-settings.html">日本語</a><a href="../zh/10-settings.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">Buy on BOOTH</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">Home</a><div class="side-h">Guide</div><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting an avatar (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html" class="on">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><div class="side-h">Legal</div><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="10-settings">10. Settings<a class="anchor" href="#10-settings">#</a></h1>
+<figure><a href="../assets/shots/en/settings.webp" target="_blank" rel="noopener"><img alt="Settings page" src="../assets/shots/en/settings.webp" loading="lazy"></a><figcaption>Settings page</figcaption></figure>
+<h2 id="general">General<a class="anchor" href="#general">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Open the menu at start</strong></td>
+<td>When off, Avatar Live starts without the UI</td>
+</tr>
+<tr>
+<td><strong>Reset</strong></td>
+<td>Return tracking, hands, PhysBones and more to their initial state</td>
+</tr>
+<tr>
+<td><strong>Reset everything</strong></td>
+<td>Also return parameters, avatar position, pose and camera to their initial state</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="window">Window<a class="anchor" href="#window">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Resolution</strong></td>
+<td>Window size</td>
+</tr>
+<tr>
+<td><strong>Fullscreen (borderless)</strong></td>
+<td>Fullscreen</td>
+</tr>
+<tr>
+<td><strong>Always on top</strong></td>
+<td>Keep it above other windows</td>
+</tr>
+<tr>
+<td><strong>Close button (X)</strong></td>
+<td><strong>Minimize to tray</strong> / <strong>Quit</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="performance">Performance<a class="anchor" href="#performance">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VSync / Frame limit</strong></td>
+<td>Frame rate</td>
+</tr>
+<tr>
+<td><strong>Anti-aliasing / Shadows</strong></td>
+<td>Image quality</td>
+</tr>
+<tr>
+<td><strong>Now</strong></td>
+<td>Show current performance</td>
+</tr>
+<tr>
+<td><strong>Show in the top bar</strong></td>
+<td>Show performance at the top</td>
+</tr>
+<tr>
+<td><strong>Priority, processors and GPU (advanced)</strong></td>
+<td>CPU and GPU sharing when used alongside games or OBS</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="start-up">Start-up<a class="anchor" href="#start-up">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Start webcam tracking / Start microphone</strong></td>
+<td>Turn them on automatically at start</td>
+</tr>
+<tr>
+<td><strong>Startup avatar</strong></td>
+<td>Ask every time / Last used / Default avatar</td>
+</tr>
+<tr>
+<td><strong>Avatar folder</strong></td>
+<td>The avatar folder shown on the start screen</td>
+</tr>
+<tr>
+<td><strong>Restart</strong></td>
+<td>Restart from the start screen</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="language">Language<a class="anchor" href="#language">#</a></h2>
+<p>English · 한국어 · 日本語 · 简体中文</p>
+<h2 id="ui">UI<a class="anchor" href="#ui">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Theme</strong></td>
+<td>Light / Dark</td>
+</tr>
+<tr>
+<td><strong>Panel position</strong></td>
+<td>Left / Right</td>
+</tr>
+<tr>
+<td><strong>Size</strong></td>
+<td>UI size</td>
+</tr>
+<tr>
+<td><strong>Quick toolbar</strong></td>
+<td>Toolbar opacity, reset position</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="hotkeys--quick-actions">Hotkeys · Quick Actions<a class="anchor" href="#hotkeys--quick-actions">#</a></h2>
+<h3 id="everywhere-global-hotkeys">Everywhere (global hotkeys)<a class="anchor" href="#everywhere-global-hotkeys">#</a></h3>
+<p>Keys that work even in games or while Avatar Live is in the background. They do not block key input to other programs.</p>
+<ol>
+<li><strong>+ Add a hotkey</strong></li>
+<li>Choose an action: avatar menu · gesture · camera view · saved view · tracking reset · lighting preset · PhysBone reset · reset all</li>
+<li>Click <strong>Set the key…</strong> and press the key combination you want</li>
+</ol>
+<ul>
+<li>For menu buttons and gestures you can choose <strong>While held</strong> / <strong>Press to switch</strong>.</li>
+<li><strong>F1</strong> alone cannot be used (it is reserved for clean view).</li>
+</ul>
+<h3 id="quick-actions">Quick Actions<a class="anchor" href="#quick-actions">#</a></h3>
+<p>Puts the same actions as global hotkeys on buttons. See <a href="05-avatar-menu.html#quick-actions">Chapter 5</a>.</p>
+<h2 id="settings-files">Settings files<a class="anchor" href="#settings-files">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Open folder</strong></td>
+<td>Open the settings folder</td>
+</tr>
+<tr>
+<td><strong>Reset app settings</strong></td>
+<td>Reset the app settings to their initial state (per-avatar and device settings are kept; hotkeys and Quick Actions are deleted)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="license">License<a class="anchor" href="#license">#</a></h2>
+<p>Shows the current edition and license ID.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Button</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Enter another code</strong></td>
+<td>Switch to another license</td>
+</tr>
+<tr>
+<td><strong>Check now</strong></td>
+<td>Check the license again</td>
+</tr>
+<tr>
+<td><strong>Buy on BOOTH</strong></td>
+<td>Buy Pro</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="diagnostics">Diagnostics<a class="anchor" href="#diagnostics">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Send an error report</strong></td>
+<td>Send a description of the problem and the logs (sent only when you click it)</td>
+</tr>
+<tr>
+<td><strong>Open log folder</strong></td>
+<td>Open the log folder</td>
+</tr>
+<tr>
+<td>Log view</td>
+<td>Check errors and warnings</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="about">About<a class="anchor" href="#about">#</a></h2>
+<p>Version and developer links.</p>
+<h2 id="updates">Updates<a class="anchor" href="#updates">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Check now</strong></td>
+<td>Check for a new version</td>
+</tr>
+<tr>
+<td><strong>Download</strong></td>
+<td>Download the new version</td>
+</tr>
+<tr>
+<td><strong>Restart to install</strong></td>
+<td>Install right away</td>
+</tr>
+<tr>
+<td><strong>Check and download automatically</strong></td>
+<td>Download new versions automatically in advance</td>
+</tr>
+<tr>
+<td><strong>Install when quitting</strong></td>
+<td>Install when you quit</td>
+</tr>
+</tbody>
+</table></div>
+<p>If installation fails, Avatar Live automatically returns to the previous version. Your avatars and settings are kept.</p></article>
+    <div class="pager"><a class="prev" href="09-output.html"><span>Previous</span>Output</a><a class="next" href="11-pro-features.html"><span>Next</span>Posing · Objects · Expressions</a></div>
+    <p class="updated">Last updated: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">On this page</div><ul><li class="l2"><a href="#general">General</a></li><li class="l2"><a href="#window">Window</a></li><li class="l2"><a href="#performance">Performance</a></li><li class="l2"><a href="#start-up">Start-up</a></li><li class="l2"><a href="#language">Language</a></li><li class="l2"><a href="#ui">UI</a></li><li class="l2"><a href="#hotkeys--quick-actions">Hotkeys · Quick Actions</a></li><li class="l3"><a href="#everywhere-global-hotkeys">Everywhere (global hotkeys)</a></li><li class="l3"><a href="#quick-actions">Quick Actions</a></li><li class="l2"><a href="#settings-files">Settings files</a></li><li class="l2"><a href="#license">License</a></li><li class="l2"><a href="#diagnostics">Diagnostics</a></li><li class="l2"><a href="#about">About</a></li><li class="l2"><a href="#updates">Updates</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live Terms of Use</a> · <a href="legal-privacy.html">Privacy Policy</a> · <a href="legal-refund.html">Refund Policy</a> · <a href="legal-seller.html">Seller Information</a></div>
+    <p>Avatar Live is not affiliated with or endorsed by VRChat Inc. VRChat is a trademark of VRChat Inc.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

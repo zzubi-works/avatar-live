@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Troubleshooting — Avatar Live</title>
+<meta name="description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:title" content="Troubleshooting — Avatar Live">
+<meta property="og:description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>English</span></summary><div class="lang-menu"><a href="../ko/12-troubleshooting.html">한국어</a><a href="../en/12-troubleshooting.html" class="on">English</a><a href="../ja/12-troubleshooting.html">日本語</a><a href="../zh/12-troubleshooting.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">Buy on BOOTH</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">Home</a><div class="side-h">Guide</div><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting an avatar (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html" class="on">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><div class="side-h">Legal</div><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="12-troubleshooting">12. Troubleshooting<a class="anchor" href="#12-troubleshooting">#</a></h1>
+<blockquote>
+<p>First check <strong>Settings › Diagnostics</strong>, and if that does not solve it, let us know with <strong>Send an error report</strong>.
+If a device problem stops Avatar Live from starting, try <strong>launching while holding Shift</strong> (Safe Start).</p>
+</blockquote>
+<h2 id="start-up-and-installation">Start-up and installation<a class="anchor" href="#start-up-and-installation">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"Windows protected your PC" window</td>
+<td><strong>More info → Run anyway</strong></td>
+</tr>
+<tr>
+<td>"Avatar Live's files have been changed"</td>
+<td>Reinstall from the original you downloaded from BOOTH (avatars and settings are kept)</td>
+</tr>
+<tr>
+<td>Activation does not work</td>
+<td>Check your internet connection and try again</td>
+</tr>
+<tr>
+<td>Launching only brings the window to the front</td>
+<td>It is already running (check the tray)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="avatar">Avatar<a class="anchor" href="#avatar">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Some parts are pink</td>
+<td>Check that the avatar uploads normally, then export again</td>
+</tr>
+<tr>
+<td>"It was made by a newer exporter"</td>
+<td>Update Avatar Live</td>
+</tr>
+<tr>
+<td>The head and hands do not move</td>
+<td>Check that it is a humanoid avatar</td>
+</tr>
+<tr>
+<td>Avatar sound effects do not play</td>
+<td>Avatar sound effects are not played</td>
+</tr>
+<tr>
+<td>The avatar is not visible</td>
+<td>Double-click an empty area of the view, or use the <strong>⌂</strong> scene tool</td>
+</tr>
+<tr>
+<td>The pose is frozen, the hair is tangled</td>
+<td><strong>⟲ Reset</strong> at the top</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="webcam-and-face">Webcam and face<a class="anchor" href="#webcam-and-face">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Camera "Failed"</td>
+<td>Check whether another app is using the camera</td>
+</tr>
+<tr>
+<td>The camera image is black</td>
+<td>Check the lens cover and the Windows camera privacy settings</td>
+</tr>
+<tr>
+<td>Expressions are too small / too large</td>
+<td>Run <strong>Automatic face setup</strong> again, use <strong>Face adjustment</strong></td>
+</tr>
+<tr>
+<td>The avatar looks to the side</td>
+<td><strong>Recenter</strong></td>
+</tr>
+<tr>
+<td>Winks do not work</td>
+<td>Set the blink mode to <strong>Independent</strong> or <strong>Smart</strong></td>
+</tr>
+<tr>
+<td>Left and right are swapped</td>
+<td><strong>Mirror</strong></td>
+</tr>
+<tr>
+<td>High CPU usage</td>
+<td>Set tracking quality to <strong>Balanced</strong> or <strong>Eco</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="microphone">Microphone<a class="anchor" href="#microphone">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>"No signal"</td>
+<td>In Windows Settings › Privacy › Microphone, allow desktop apps</td>
+</tr>
+<tr>
+<td>"Nearly silent"</td>
+<td>If you use a mixer app, choose that app's virtual microphone</td>
+</tr>
+<tr>
+<td>Noise moves the mouth</td>
+<td><strong>Detect background noise</strong></td>
+</tr>
+<tr>
+<td>The mouth moves too little</td>
+<td><strong>Voice calibration</strong>, <strong>Sensitivity</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="output">Output<a class="anchor" href="#output">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>No Spout2 source in OBS</td>
+<td>Install the Spout2 plugin in OBS</td>
+</tr>
+<tr>
+<td>The background is black in OBS</td>
+<td>Background <strong>Transparent</strong> + OBS <strong>Composite with alpha</strong></td>
+</tr>
+<tr>
+<td>The virtual camera is not in Discord</td>
+<td>Install the virtual camera, then quit Discord completely and open it again</td>
+</tr>
+<tr>
+<td>4K goes out as 1080p</td>
+<td>You are using the Basic edition (Pro supports 4K)</td>
+</tr>
+<tr>
+<td>"Avatar Live Basic" text</td>
+<td>The Basic watermark (Pro has none)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="discord-screen-share">Discord screen share<a class="anchor" href="#discord-screen-share">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Symptom</th>
+<th>Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Not in the Discord list</td>
+<td>Turn on <strong>Screen share</strong> and check Discord's <strong>Applications</strong> tab</td>
+</tr>
+<tr>
+<td>Black screen</td>
+<td>Run Avatar Live without administrator rights, put the game in windowed mode</td>
+</tr>
+<tr>
+<td>No sound</td>
+<td>Turn on sound in Discord, install a virtual playback device</td>
+</tr>
+<tr>
+<td>Sound is heard twice</td>
+<td>Set <strong>Discord audio device</strong> to a device you do not listen to</td>
+</tr>
+<tr>
+<td>Video is black</td>
+<td>Protected video (DRM) cannot be captured</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="supported-features">Supported features<a class="anchor" href="#supported-features">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>✅ VRChat avatar features</td>
+<td>Expressions menu and parameters, animators such as FX, PhysBones, Contacts, Constraints, Eye Look, LipSync</td>
+</tr>
+<tr>
+<td>✅ Creation tools</td>
+<td>Avatars made with NDMF, Modular Avatar, VRCFury and similar tools</td>
+</tr>
+<tr>
+<td>✅ Shaders</td>
+<td>Poiyomi, lilToon and others</td>
+</tr>
+<tr>
+<td>✅ Face</td>
+<td>VRCFaceTracking, ARKit (Perfect Sync), MMD eye morphs</td>
+</tr>
+<tr>
+<td>⚠️ Does not work</td>
+<td>Avatar sound effects, AudioLink, mirror and camera detection, Light Volumes, custom scripts</td>
+</tr>
+<tr>
+<td>🧪 Experimental features</td>
+<td>Ultraleap, iFacialMocap, OSC / VMC, camera detection of tongue and cheeks — expected to work, but the devices and apps involved have not yet been tested in the developer's environment</td>
+</tr>
+<tr>
+<td>❌ Not supported</td>
+<td>VRM files, Live2D, macOS, Linux</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="frequently-asked-questions">Frequently asked questions<a class="anchor" href="#frequently-asked-questions">#</a></h2>
+<p><strong>Q. Do I need a VRChat account?</strong>
+No. Avatar Live does not communicate with VRChat.</p>
+<p><strong>Q. Can I use it for streaming?</strong>
+Streaming, publishing videos and commercial use require <strong>Pro</strong>.</p>
+<p><strong>Q. Is my keyboard input recorded?</strong>
+No. Desk hand motion never saves, records or sends the characters you type.</p>
+<p><strong>Q. Can I give my avatar file to other people?</strong>
+Follow the terms of use of the avatar and outfit creators.</p>
+<p><strong>Q. Can I show several avatars at once?</strong>
+One at a time. Switch avatars from the avatar name at the top left.</p></article>
+    <div class="pager"><a class="prev" href="11-pro-features.html"><span>Previous</span>Posing · Objects · Expressions</a><a class="next" href="13-license.html"><span>Next</span>Editions · License · Notices</a></div>
+    <p class="updated">Last updated: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">On this page</div><ul><li class="l2"><a href="#start-up-and-installation">Start-up and installation</a></li><li class="l2"><a href="#avatar">Avatar</a></li><li class="l2"><a href="#webcam-and-face">Webcam and face</a></li><li class="l2"><a href="#microphone">Microphone</a></li><li class="l2"><a href="#output">Output</a></li><li class="l2"><a href="#discord-screen-share">Discord screen share</a></li><li class="l2"><a href="#supported-features">Supported features</a></li><li class="l2"><a href="#frequently-asked-questions">Frequently asked questions</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live Terms of Use</a> · <a href="legal-privacy.html">Privacy Policy</a> · <a href="legal-refund.html">Refund Policy</a> · <a href="legal-seller.html">Seller Information</a></div>
+    <p>Avatar Live is not affiliated with or endorsed by VRChat Inc. VRChat is a trademark of VRChat Inc.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

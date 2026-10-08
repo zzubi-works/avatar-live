@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>快速上手 — Avatar Live</title>
+<meta name="description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
+<meta property="og:title" content="快速上手 — Avatar Live">
+<meta property="og:description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="菜单" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>简体中文</span></summary><div class="lang-menu"><a href="../ko/01-getting-started.html">한국어</a><a href="../en/01-getting-started.html">English</a><a href="../ja/01-getting-started.html">日本語</a><a href="../zh/01-getting-started.html" class="on">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">在 BOOTH 购买</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">首页</a><div class="side-h">指南</div><ul><li><a href="01-getting-started.html" class="on">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><div class="side-h">条款与政策</div><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="1-快速上手">1. 快速上手<a class="anchor" href="#1-快速上手">#</a></h1>
+<h2 id="准备事项">准备事项<a class="anchor" href="#准备事项">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>要求</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>操作系统</td>
+<td><strong>Windows 10 / 11（64 位）</strong></td>
+</tr>
+<tr>
+<td>显卡</td>
+<td>支持 <strong>DirectX 11</strong> 的 GPU</td>
+</tr>
+<tr>
+<td>摄像头</td>
+<td>普通彩色摄像头（用于面部、手臂、手部追踪）</td>
+</tr>
+<tr>
+<td>麦克风</td>
+<td>用于口型同步（可选）</td>
+</tr>
+<tr>
+<td>网络</td>
+<td>激活和许可证确认时需要</td>
+</tr>
+<tr>
+<td>角色</td>
+<td>VRChat 角色的 <strong>Unity 项目</strong>（Unity 2022.3）— 在 <a href="02-avatar-exporter.html">第 2 章</a> 中导出为 <code>.vavatar</code></td>
+</tr>
+<tr>
+<td>可选设备</td>
+<td>Leap Motion / Ultraleap 手部追踪器、iPhone（iFacialMocap）</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="选择版本">选择版本<a class="anchor" href="#选择版本">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Basic</th>
+<th>Pro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>用途</td>
+<td>个人使用</td>
+<td><strong>直播、公开发布视频、商业用途</strong></td>
+</tr>
+<tr>
+<td>输出</td>
+<td>最高 1080p，有水印</td>
+<td>最高 4K，无水印</td>
+</tr>
+<tr>
+<td>摆姿势 · 物体 · 屏幕共享更多来源</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>直播（Live Streaming）、上传视频等 <strong>公开或商业用途需要 Pro</strong>。详情请参阅 <a href="13-license.html">第 13 章</a>。</p>
+</blockquote>
+<h2 id="安装">安装<a class="anchor" href="#安装">#</a></h2>
+<ol>
+<li>在 BOOTH 购买记录中下载 Avatar Live 的 ZIP 文件。</li>
+<li>将其 <strong>解压</strong> 到任意文件夹。解压后的文件夹即为安装文件夹。</li>
+<li>运行 <code>AvatarLive.exe</code>。</li>
+</ol>
+<blockquote>
+<p><strong>如果出现“Windows 已保护你的电脑”窗口</strong>，请点击 <strong>更多信息 → 仍要运行</strong>。</p>
+<p>⚠️ <strong>请勿更改安装文件夹中的文件，也不要放入其他程序。</strong> 与原始文件不一致时 Avatar Live 将无法启动。此时请使用从 BOOTH 下载的原始文件重新安装（角色和设置会保留）。</p>
+</blockquote>
+<h2 id="产品激活">产品激活<a class="anchor" href="#产品激活">#</a></h2>
+<p>首次运行时会显示 <strong>产品激活</strong> 界面。</p>
+<ol>
+<li>在右上角选择语言。</li>
+<li>输入购买时收到的信息，然后点击 <strong>激活</strong>。</li>
+<li>显示“已激活。”即完成。</li>
+</ol>
+<h3 id="转移到其他电脑">转移到其他电脑<a class="anchor" href="#转移到其他电脑">#</a></h3>
+<ul>
+<li>许可证为 <strong>一人一台设备</strong>。</li>
+<li>转移到其他电脑 <strong>仅限一次</strong>。转移后，之前的电脑将无法再使用，<strong>之后无论任何情况都无法再次转移。</strong></li>
+<li>请慎重决定要转移到的电脑后再进行操作。</li>
+</ul>
+<h2 id="首次直播前的步骤">首次直播前的步骤<a class="anchor" href="#首次直播前的步骤">#</a></h2>
+<ol>
+<li><strong>制作角色</strong> — 在角色的 Unity 项目中导出 <code>.vavatar</code>（<a href="02-avatar-exporter.html">第 2 章</a>）</li>
+<li><strong>打开角色</strong> — 在开始界面点击 <strong>打开角色…</strong> → <strong>▶ 启动 Avatar Live</strong>（<a href="03-launcher-and-library.html">第 3 章</a>）</li>
+<li><strong>开启摄像头</strong> — <strong>设备</strong> → <strong>摄像头</strong> 开关（<a href="06-devices.html">第 6 章</a>）</li>
+<li><strong>开启麦克风</strong> — <strong>设备</strong> → <strong>麦克风</strong> 开关</li>
+<li><strong>匹配面部</strong> — <strong>动作</strong> → <strong>自动面部设置</strong>（<a href="07-motion.html">第 7 章</a>）</li>
+<li><strong>选择背景</strong> — <strong>场景</strong> → <strong>背景</strong>（<a href="08-scene.html">第 8 章</a>）</li>
+<li><strong>输出</strong> — <strong>输出</strong> → Spout2 / 虚拟摄像头 / 屏幕共享（<a href="09-output.html">第 9 章</a>）</li>
+<li><strong>F1</strong> — 隐藏全部 UI 的纯净画面</li>
+</ol>
+<h2 id="退出">退出<a class="anchor" href="#退出">#</a></h2>
+<ul>
+<li>窗口的 <strong>X</strong> 默认是 <strong>最小化到托盘</strong>。角色和输出会继续运行。</li>
+<li>要完全退出，请 <strong>右键托盘图标 → 退出</strong>。</li>
+<li>若要点击 X 直接退出，请在 设置 › 窗口 › <strong>关闭按钮（×）</strong> 中选择 <strong>退出</strong>。</li>
+</ul></article>
+    <div class="pager"><span></span><a class="next" href="02-avatar-exporter.html"><span>下一页</span>导出角色（Avatar Exporter）</a></div>
+    <p class="updated">最后更新: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">本页内容</div><ul><li class="l2"><a href="#准备事项">准备事项</a></li><li class="l2"><a href="#选择版本">选择版本</a></li><li class="l2"><a href="#安装">安装</a></li><li class="l2"><a href="#产品激活">产品激活</a></li><li class="l3"><a href="#转移到其他电脑">转移到其他电脑</a></li><li class="l2"><a href="#首次直播前的步骤">首次直播前的步骤</a></li><li class="l2"><a href="#退出">退出</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 使用条款</a> · <a href="legal-privacy.html">隐私政策</a> · <a href="legal-refund.html">退款政策</a> · <a href="legal-seller.html">卖家信息</a></div>
+    <p>Avatar Live 与 VRChat Inc. 无关联，也未获其认可。VRChat 是 VRChat Inc. 的商标。</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>장치 — Avatar Live</title>
+<meta name="description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:title" content="장치 — Avatar Live">
+<meta property="og:description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="메뉴" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>한국어</span></summary><div class="lang-menu"><a href="../ko/06-devices.html" class="on">한국어</a><a href="../en/06-devices.html">English</a><a href="../ja/06-devices.html">日本語</a><a href="../zh/06-devices.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTH에서 구매</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">홈</a><div class="side-h">가이드</div><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기 (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html" class="on">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><div class="side-h">약관 · 정책</div><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="6-장치">6. 장치<a class="anchor" href="#6-장치">#</a></h1>
+<p><strong>장치</strong> 페이지에서 무엇으로 아바타를 움직일지 정합니다. 여기서 정한 장치는 모든 아바타에 공통입니다.</p>
+<figure><a href="../assets/shots/ko/devices.webp" target="_blank" rel="noopener"><img alt="장치 페이지" src="../assets/shots/ko/devices.webp" loading="lazy"></a><figcaption>장치 페이지</figcaption></figure>
+<h2 id="웹캠">웹캠<a class="anchor" href="#웹캠">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>웹캠</strong> 스위치</td>
+<td>웹캠 트래킹 켜기 / 끄기</td>
+</tr>
+<tr>
+<td>카메라 목록</td>
+<td>사용할 카메라 고르기</td>
+</tr>
+<tr>
+<td><strong>정면 보정</strong></td>
+<td>지금 얼굴 방향을 정면으로 맞추기</td>
+</tr>
+<tr>
+<td><strong>트래킹 품질</strong></td>
+<td><strong>부드럽게</strong> / <strong>균형</strong> / <strong>절약</strong> — 게임과 함께 쓸 때는 균형이나 절약</td>
+</tr>
+</tbody>
+</table></div>
+<p>카메라에 문제가 있으면 이 카드에 이유가 표시됩니다 (연결 안 됨, 화면이 어두움, 다른 앱이 사용 중 등).</p>
+<h2 id="마이크">마이크<a class="anchor" href="#마이크">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>마이크</strong> 스위치</td>
+<td>마이크(립싱크) 켜기 / 끄기</td>
+</tr>
+<tr>
+<td>마이크 목록</td>
+<td>사용할 마이크 고르기</td>
+</tr>
+<tr>
+<td><strong>입력</strong> 미터</td>
+<td>지금 들어오는 소리 크기</td>
+</tr>
+<tr>
+<td><strong>노이즈 게이트</strong></td>
+<td>배경 소음으로는 입이 움직이지 않게</td>
+</tr>
+<tr>
+<td><strong>배경 소음 측정</strong></td>
+<td>조용히 있는 동안 소음을 재서 게이트를 자동으로 맞추기</td>
+</tr>
+<tr>
+<td><strong>노이즈 게이트 상세 설정</strong></td>
+<td><strong>자동 / 수동</strong>, 열림·닫힘 기준, 반응 시간</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="트래킹-소스">트래킹 소스<a class="anchor" href="#트래킹-소스">#</a></h2>
+<p>부위마다 무엇으로 움직일지 고릅니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>선택</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>얼굴 엔진</strong></td>
+<td>자동 / MediaPipe / OpenSeeFace</td>
+</tr>
+<tr>
+<td><strong>팔 · 손 · 손가락</strong></td>
+<td>MediaPipe / Ultraleap / 끔</td>
+</tr>
+<tr>
+<td><strong>입</strong></td>
+<td>얼굴 + 마이크 / 얼굴 / 마이크 / 끔</td>
+</tr>
+<tr>
+<td><strong>고급</strong> › 얼굴 표정 · 머리 · 눈</td>
+<td>얼굴 / 끔</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="openseeface">OpenSeeFace<a class="anchor" href="#openseeface">#</a></h3>
+<p>얼굴만 추적하는 다른 엔진입니다. Avatar Live에 포함되지 않으므로 직접 받아서 <strong>설치 폴더 밖</strong>에 두고, <strong>OpenSeeFace 폴더</strong>에서 지정합니다.</p>
+<h3 id="얼굴-앱-연결-vmc--ifacialmocap">얼굴 앱 연결 (VMC · iFacialMocap)<a class="anchor" href="#얼굴-앱-연결-vmc--ifacialmocap">#</a></h3>
+<p>웹캠 대신 다른 앱이나 iPhone에서 얼굴을 받습니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>소스</strong></td>
+<td>없음 / VMC / iFacialMocap</td>
+</tr>
+<tr>
+<td>스위치</td>
+<td>받기 시작</td>
+</tr>
+<tr>
+<td><strong>포트</strong> / <strong>iPhone 주소</strong></td>
+<td>연결 정보</td>
+</tr>
+<tr>
+<td><strong>내 네트워크의 기기 허용</strong></td>
+<td>같은 네트워크의 휴대폰·PC에서 받기</td>
+</tr>
+<tr>
+<td><strong>이 PC의 주소</strong> · <strong>복사</strong></td>
+<td>iFacialMocap 앱에 입력할 주소</td>
+</tr>
+<tr>
+<td><strong>정면 보정</strong></td>
+<td>지금 머리 방향을 정면으로</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="ultraleap-손-트래킹">Ultraleap 손 트래킹<a class="anchor" href="#ultraleap-손-트래킹">#</a></h2>
+<p>Leap Motion / Ultraleap 장치로 팔·손·손가락을 추적합니다. Ultraleap 소프트웨어를 설치하고 장치를 연결한 뒤, 트래킹 소스에서 <strong>Ultraleap</strong>을 고르세요.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>스위치 · 상태</td>
+<td>켜기, 장치와 손이 보이는지</td>
+</tr>
+<tr>
+<td><strong>보정 (장치 위치)</strong></td>
+<td>장치 위치·방향, 손 크기, 스무딩</td>
+</tr>
+<tr>
+<td><strong>보정</strong></td>
+<td>손을 키보드 위에 두고 누르면 그 자리를 키보드 위치로</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="외부-트래킹-osc--vmc">외부 트래킹 (OSC · VMC)<a class="anchor" href="#외부-트래킹-osc--vmc">#</a></h2>
+<p>이 PC의 다른 앱과 연결합니다. 기본은 꺼져 있습니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>OSC 입력 (아바타 파라미터)</strong></td>
+<td>VRChat용 OSC 도구로 아바타 파라미터 바꾸기</td>
+</tr>
+<tr>
+<td><strong>VMC 입력 (다른 앱의 몸·뼈)</strong></td>
+<td>다른 모션 앱에서 몸을 받기, 받을 <strong>부위</strong> 고르기</td>
+</tr>
+<tr>
+<td><strong>송신 측 쉐이프키를 아바타에 그대로 쓰기</strong></td>
+<td>받은 표정을 그대로 적용</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>Ultraleap, iFacialMocap, OSC·VMC</strong>는 정상 동작을 예상하지만, 해당 장치·앱이 개발자 환경에서 아직 테스트되지 않은 <strong>실험적 기능</strong>입니다.</p>
+</blockquote>
+<p>VMC <strong>출력</strong>은 <a href="09-output.html#외부-출력-vmc">9장</a>에 있습니다.</p></article>
+    <div class="pager"><a class="prev" href="05-avatar-menu.html"><span>이전</span>아바타 메뉴</a><a class="next" href="07-motion.html"><span>다음</span>동작</a></div>
+    <p class="updated">최종 업데이트: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">이 페이지</div><ul><li class="l2"><a href="#웹캠">웹캠</a></li><li class="l2"><a href="#마이크">마이크</a></li><li class="l2"><a href="#트래킹-소스">트래킹 소스</a></li><li class="l3"><a href="#openseeface">OpenSeeFace</a></li><li class="l3"><a href="#얼굴-앱-연결-vmc--ifacialmocap">얼굴 앱 연결 (VMC · iFacialMocap)</a></li><li class="l2"><a href="#ultraleap-손-트래킹">Ultraleap 손 트래킹</a></li><li class="l2"><a href="#외부-트래킹-osc--vmc">외부 트래킹 (OSC · VMC)</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 이용약관</a> · <a href="legal-privacy.html">개인정보처리방침</a> · <a href="legal-refund.html">환불 정책</a> · <a href="legal-seller.html">판매자 정보</a></div>
+    <p>Avatar Live는 VRChat Inc.와 제휴하거나 승인받은 제품이 아닙니다. VRChat은 VRChat Inc.의 상표입니다.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

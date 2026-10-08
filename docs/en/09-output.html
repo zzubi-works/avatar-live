@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Output — Avatar Live</title>
+<meta name="description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:title" content="Output — Avatar Live">
+<meta property="og:description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>English</span></summary><div class="lang-menu"><a href="../ko/09-output.html">한국어</a><a href="../en/09-output.html" class="on">English</a><a href="../ja/09-output.html">日本語</a><a href="../zh/09-output.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">Buy on BOOTH</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">Home</a><div class="side-h">Guide</div><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting an avatar (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html" class="on">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><div class="side-h">Legal</div><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="9-output">9. Output<a class="anchor" href="#9-output">#</a></h1>
+<p>On the <strong>Output</strong> page you send the avatar image to other programs. There are two tabs: <strong>Stream</strong> and <strong>Screen share</strong>.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Destination</th>
+<th>Method</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OBS (transparent background)</td>
+<td><strong>Spout2</strong></td>
+</tr>
+<tr>
+<td>Camera in Discord, Zoom or Teams</td>
+<td><strong>Virtual Camera</strong></td>
+</tr>
+<tr>
+<td>Streaming a game on Discord</td>
+<td><strong>Screen share</strong></td>
+</tr>
+<tr>
+<td>Other motion apps</td>
+<td><strong>VMC out</strong></td>
+</tr>
+<tr>
+<td>Photos</td>
+<td><strong>Save PNG</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>Only the avatar and background are sent; Avatar Live's menus are not. Output continues even when the window is minimized or hidden to the tray.</p>
+<h2 id="stream">Stream<a class="anchor" href="#stream">#</a></h2>
+<figure><a href="../assets/shots/en/output.webp" target="_blank" rel="noopener"><img alt="Output › Stream" src="../assets/shots/en/output.webp" loading="lazy"></a><figcaption>Output › Stream</figcaption></figure>
+<h3 id="output-image">Output image<a class="anchor" href="#output-image">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Resolution</strong></td>
+<td>720p · 1080p · 1440p · 4K · portrait</td>
+</tr>
+<tr>
+<td><strong>Custom size</strong></td>
+<td>Any size you like</td>
+</tr>
+<tr>
+<td><strong>Output frame rate</strong></td>
+<td>The output frame rate</td>
+</tr>
+</tbody>
+</table></div>
+<p>Basic goes up to 1080p and shows a watermark. Pro goes up to 4K with no watermark.</p>
+<h3 id="spout2--obs">Spout2 → OBS<a class="anchor" href="#spout2--obs">#</a></h3>
+<ol>
+<li>Turn on <strong>Spout2</strong>.</li>
+<li>In OBS, install the <strong>Spout2 plugin</strong>, add a <strong>Spout2 Capture</strong> source and choose <strong>Avatar Live</strong>.</li>
+<li>Transparent background: set the Avatar Live background to <strong>Transparent</strong>, and choose <strong>Composite with alpha</strong> in OBS.</li>
+</ol>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sender name</strong></td>
+<td>The name shown in OBS</td>
+</tr>
+<tr>
+<td><strong>Send transparency (alpha)</strong></td>
+<td>Send a transparent background</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="virtual-camera">Virtual camera<a class="anchor" href="#virtual-camera">#</a></h3>
+<ol>
+<li>The first time only, click <strong>Install the virtual camera…</strong> (you are asked for administrator permission).</li>
+<li>Turn on <strong>Virtual Camera</strong>.</li>
+<li>In Discord, Zoom or similar apps, choose <strong>Avatar Live Camera</strong> as the camera.</li>
+</ol>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mirror the image</strong></td>
+<td>Flip left and right</td>
+</tr>
+<tr>
+<td><strong>Register again as 'Avatar Live Camera'…</strong></td>
+<td>When the camera shows under a different name</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Discord looks for cameras only when it starts. If the camera is not in the list, quit Discord completely and open it again.</li>
+<li>Transparent backgrounds are not supported (use a chroma key background).</li>
+<li>Before moving or deleting the installation folder, run <code>VirtualCamera\Uninstall.bat</code>.</li>
+</ul>
+<h3 id="photo">Photo<a class="anchor" href="#photo">#</a></h3>
+<p><strong>Save PNG</strong> saves the view without the UI, and <strong>Open folder</strong> opens the folder it is saved in. A transparent background is saved as transparent.</p>
+<h3 id="external-output-vmc">External output (VMC)<a class="anchor" href="#external-output-vmc">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VMC output (to another app)</strong></td>
+<td>Send the avatar's pose and expressions to another app</td>
+</tr>
+<tr>
+<td><strong>Address / Port</strong></td>
+<td>The address of the receiving app</td>
+</tr>
+<tr>
+<td><strong>Blend shapes</strong></td>
+<td>Send expressions too</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>VMC output is expected to work, but it is an <strong>experimental feature</strong>: the receiving apps have not yet been tested in the developer's environment.</p>
+</blockquote>
+<h2 id="screen-share">Screen share<a class="anchor" href="#screen-share">#</a></h2>
+<figure><a href="../assets/shots/en/share.webp" target="_blank" rel="noopener"><img alt="Output › Screen share" src="../assets/shots/en/share.webp" loading="lazy"></a><figcaption>Output › Screen share</figcaption></figure>
+<p>Shows your Discord friends <strong>the game + avatar + sound</strong>, while you see only the game. No OBS needed.</p>
+<h3 id="how-to-use">How to use<a class="anchor" href="#how-to-use">#</a></h3>
+<ol>
+<li>Under <strong>Share target</strong>, choose <strong>Game</strong> or <strong>Display</strong>.</li>
+<li>Turn on <strong>Screen share</strong>.</li>
+<li>In Discord, choose <strong>Screen Share → Applications → Avatar Live Share Output</strong> and turn on sound.</li>
+<li>Adjust the avatar's position and size in the preview.</li>
+</ol>
+<blockquote class="callout"><p>⚠️ <strong>Do not run Avatar Live as administrator.</strong> Discord will show a black screen.</p>
+</blockquote>
+<h3 id="share-status">Share status<a class="anchor" href="#share-status">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Screen share</strong></td>
+<td>On / off</td>
+</tr>
+<tr>
+<td><strong>Resolution / Frame rate</strong></td>
+<td>The quality sent to Discord</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="share-target">Share target<a class="anchor" href="#share-target">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Game</strong></td>
+<td>Choose the game window to share (found again even after the game restarts)</td>
+</tr>
+<tr>
+<td><strong>Display</strong></td>
+<td>Share a whole monitor</td>
+</tr>
+<tr>
+<td><strong>More sources</strong> (Pro)</td>
+<td>Layer more windows or monitors on top (<a href="11-pro-features.html#screen-share-extra-sources">Chapter 11</a>)</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="callout"><p>💡 If the game shows up black, try switching the game to <strong>borderless window</strong> or <strong>windowed mode</strong>.</p>
+</blockquote>
+<h3 id="audio">Audio<a class="anchor" href="#audio">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Game audio</strong></td>
+<td>Send only the game's sound (Discord calls and notification sounds are excluded)</td>
+</tr>
+<tr>
+<td><strong>Desktop audio / Added apps only / No audio</strong></td>
+<td>The sound to send when sharing a display</td>
+</tr>
+<tr>
+<td><strong>+ Add an app</strong></td>
+<td>Add sound from other apps such as music, with per-app volume</td>
+</tr>
+</tbody>
+</table></div>
+<p>For share audio to go out, you need a virtual playback device that you do not listen to, such as <strong>Steam Streaming Speakers</strong> or <strong>VB-Audio CABLE</strong>.</p>
+<h3 id="avatar-overlay">Avatar overlay<a class="anchor" href="#avatar-overlay">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Avatar overlay</strong></td>
+<td>Show the avatar on the shared screen</td>
+</tr>
+<tr>
+<td>Preview</td>
+<td>Drag to move, corners to resize, handle to rotate, Alt + edge to crop</td>
+</tr>
+<tr>
+<td><strong>↙ ↓ ↘ ↖ ↗ ◎</strong></td>
+<td>Quick positions</td>
+</tr>
+<tr>
+<td><strong>Size / Opacity / Rotation</strong></td>
+<td>Adjust with numbers</td>
+</tr>
+<tr>
+<td><strong>Flip and snapping</strong></td>
+<td>Flip horizontally and vertically, lock aspect ratio, snap</td>
+</tr>
+<tr>
+<td>⛶</td>
+<td>Edit on a larger screen</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="advanced">Advanced<a class="anchor" href="#advanced">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Force capture method</strong></td>
+<td>Auto / Window / Display</td>
+</tr>
+<tr>
+<td><strong>Source trim</strong></td>
+<td>Crop the shared screen</td>
+</tr>
+<tr>
+<td><strong>Discord audio device</strong></td>
+<td>The device that plays the share audio (do not choose headphones or speakers)</td>
+</tr>
+<tr>
+<td><strong>Audio delay</strong></td>
+<td>Sync sound with video</td>
+</tr>
+</tbody>
+</table></div></article>
+    <div class="pager"><a class="prev" href="08-scene.html"><span>Previous</span>Scene</a><a class="next" href="10-settings.html"><span>Next</span>Settings</a></div>
+    <p class="updated">Last updated: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">On this page</div><ul><li class="l2"><a href="#stream">Stream</a></li><li class="l3"><a href="#output-image">Output image</a></li><li class="l3"><a href="#spout2--obs">Spout2 → OBS</a></li><li class="l3"><a href="#virtual-camera">Virtual camera</a></li><li class="l3"><a href="#photo">Photo</a></li><li class="l3"><a href="#external-output-vmc">External output (VMC)</a></li><li class="l2"><a href="#screen-share">Screen share</a></li><li class="l3"><a href="#how-to-use">How to use</a></li><li class="l3"><a href="#share-status">Share status</a></li><li class="l3"><a href="#share-target">Share target</a></li><li class="l3"><a href="#audio">Audio</a></li><li class="l3"><a href="#avatar-overlay">Avatar overlay</a></li><li class="l3"><a href="#advanced">Advanced</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live Terms of Use</a> · <a href="legal-privacy.html">Privacy Policy</a> · <a href="legal-refund.html">Refund Policy</a> · <a href="legal-seller.html">Seller Information</a></div>
+    <p>Avatar Live is not affiliated with or endorsed by VRChat Inc. VRChat is a trademark of VRChat Inc.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

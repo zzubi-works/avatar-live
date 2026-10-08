@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>主界面 — Avatar Live</title>
+<meta name="description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
+<meta property="og:title" content="主界面 — Avatar Live">
+<meta property="og:description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="菜单" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>简体中文</span></summary><div class="lang-menu"><a href="../ko/04-main-window.html">한국어</a><a href="../en/04-main-window.html">English</a><a href="../ja/04-main-window.html">日本語</a><a href="../zh/04-main-window.html" class="on">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">在 BOOTH 购买</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">首页</a><div class="side-h">指南</div><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html" class="on">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><div class="side-h">条款与政策</div><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="4-主界面">4. 主界面<a class="anchor" href="#4-主界面">#</a></h1>
+<figure><a href="../assets/shots/zh/main.webp" target="_blank" rel="noopener"><img alt="主界面" src="../assets/shots/zh/main.webp" loading="lazy"></a><figcaption>主界面</figcaption></figure>
+<h2 id="左侧菜单">左侧菜单<a class="anchor" href="#左侧菜单">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>菜单</th>
+<th>作用</th>
+<th>指南</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>标志</td>
+<td><strong>重新启动</strong>（返回开始界面）</td>
+<td><a href="03-launcher-and-library.html#返回开始界面">第 3 章</a></td>
+</tr>
+<tr>
+<td><strong>菜单</strong></td>
+<td>角色的 Expression 菜单、手势、快捷操作</td>
+<td><a href="05-avatar-menu.html">第 5 章</a></td>
+</tr>
+<tr>
+<td><strong>设备</strong></td>
+<td>摄像头、麦克风、追踪来源、外部追踪器</td>
+<td><a href="06-devices.html">第 6 章</a></td>
+</tr>
+<tr>
+<td><strong>动作</strong></td>
+<td>面部、身体、手与桌面</td>
+<td><a href="07-motion.html">第 7 章</a></td>
+</tr>
+<tr>
+<td><strong>场景</strong></td>
+<td>背景、灯光、效果、摆姿势、物体</td>
+<td><a href="08-scene.html">第 8 章</a></td>
+</tr>
+<tr>
+<td><strong>输出</strong></td>
+<td>Spout2、虚拟摄像头、屏幕共享</td>
+<td><a href="09-output.html">第 9 章</a></td>
+</tr>
+<tr>
+<td><strong>设置</strong></td>
+<td>窗口、性能、语言、快捷键、许可证、更新</td>
+<td><a href="10-settings.html">第 10 章</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>有更新时，<strong>设置</strong> 上会显示绿点。</p>
+<h2 id="顶部">顶部<a class="anchor" href="#顶部">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>角色名称</strong>（左侧）</td>
+<td>切换、添加角色（<a href="03-launcher-and-library.html#运行中切换角色">第 3 章</a>）</td>
+</tr>
+<tr>
+<td><strong>FPS</strong>（右侧）</td>
+<td>当前帧率。点击可更改帧率</td>
+</tr>
+<tr>
+<td>状态显示</td>
+<td>当前使用中的追踪器、麦克风、输出、屏幕共享状态</td>
+</tr>
+<tr>
+<td><strong>⟲ 重置</strong></td>
+<td>将追踪、手、PhysBone 等恢复到初始状态（<a href="05-avatar-menu.html#重置与全部重置">第 5 章</a>）。右键可单独执行正面校准、相机初始视图、PhysBone 复位</td>
+</tr>
+<tr>
+<td>快捷操作按钮</td>
+<td>自己添加的按钮（<a href="05-avatar-menu.html#快捷操作">第 5 章</a>）</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="底部工具栏">底部工具栏<a class="anchor" href="#底部工具栏">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>按钮</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>面部 / 上半身 / 全身</strong></td>
+<td>切换相机构图</td>
+</tr>
+<tr>
+<td>已保存的视图</td>
+<td>移动到已保存的相机位置（右键：重命名、排序、隐藏、启动视图、删除）</td>
+</tr>
+<tr>
+<td><strong>+</strong></td>
+<td>将当前相机保存为视图</td>
+</tr>
+<tr>
+<td>快捷操作按钮</td>
+<td>自己添加的按钮</td>
+</tr>
+<tr>
+<td>方向小部件</td>
+<td>从正面、侧面、上方等方向观看，切换透视 / 正交</td>
+</tr>
+<tr>
+<td><strong>锁定相机</strong></td>
+<td>防止鼠标移动相机</td>
+</tr>
+<tr>
+<td><strong>相机</strong></td>
+<td>相机设置（见下文）</td>
+</tr>
+</tbody>
+</table></div>
+<p>工具栏可以拖动移动，右键可更改不透明度。</p>
+<h3 id="相机设置">相机设置<a class="anchor" href="#相机设置">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>保存 PNG / 打开文件夹</strong></td>
+<td>不含 UI 将画面保存为照片</td>
+</tr>
+<tr>
+<td><strong>锁定相机</strong></td>
+<td>固定相机</td>
+</tr>
+<tr>
+<td><strong>镜头</strong></td>
+<td>透视 / 正交、<strong>视场角</strong>、<strong>方向</strong></td>
+</tr>
+<tr>
+<td><strong>已保存的视图</strong></td>
+<td>管理视图列表、<strong>保存当前相机</strong>、<strong>启动视图</strong></td>
+</tr>
+<tr>
+<td><strong>鼠标</strong></td>
+<td>旋转、移动、缩放速度，反转垂直环绕</td>
+</tr>
+<tr>
+<td><strong>用鼠标左键抓取 PhysBone</strong></td>
+<td>用鼠标抓取头发、尾巴等（见下文）</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="鼠标与键盘">鼠标与键盘<a class="anchor" href="#鼠标与键盘">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>右键拖动</td>
+<td>旋转相机</td>
+</tr>
+<tr>
+<td>滚轮拖动 / Shift + 右键拖动</td>
+<td>移动相机</td>
+</tr>
+<tr>
+<td>滚轮</td>
+<td>缩放</td>
+</tr>
+<tr>
+<td>双击空白处</td>
+<td>重新调整为显示角色全身</td>
+</tr>
+</tbody>
+</table></div>
+<p>以下是 Avatar Live 窗口在前台时使用的按键。游戏中也能使用的按键请在 <a href="10-settings.html#快捷键--快捷操作">全局快捷键</a> 中另行设置。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>按键</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>F1</strong></td>
+<td>纯净视图（隐藏 / 显示 UI）</td>
+</tr>
+<tr>
+<td><strong>Ctrl + 1 / 2 / 3</strong></td>
+<td>面部 / 上半身 / 全身</td>
+</tr>
+<tr>
+<td><strong>Ctrl + 4 … 9</strong></td>
+<td>已保存的视图</td>
+</tr>
+<tr>
+<td><strong>F</strong></td>
+<td>将旋转中心设为角色</td>
+</tr>
+<tr>
+<td><strong>Ctrl + = / −</strong></td>
+<td>UI 大小</td>
+</tr>
+<tr>
+<td><strong>Alt + Enter</strong></td>
+<td>全屏 / 窗口</td>
+</tr>
+<tr>
+<td><strong>Esc</strong></td>
+<td>关闭菜单，退出全屏</td>
+</tr>
+<tr>
+<td><strong>Ctrl + Z / Ctrl + Y</strong></td>
+<td>撤销 / 重做角色和物体的摆放</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="纯净视图">纯净视图<a class="anchor" href="#纯净视图">#</a></h2>
+<p>按 <strong>F1</strong> 会隐藏全部 UI，只留下背景和角色。追踪和输出会继续。再次按 <strong>F1</strong> 即可恢复。</p>
+<h2 id="场景工具左侧图标">场景工具（左侧图标）<a class="anchor" href="#场景工具左侧图标">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>工具</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>相机</strong></td>
+<td>默认模式</td>
+</tr>
+<tr>
+<td><strong>移动 / 旋转 / 缩放</strong></td>
+<td>在视图中更改角色的位置、方向、大小（右键：仅重置该值）</td>
+</tr>
+<tr>
+<td><strong>摆姿势</strong>（Pro）</td>
+<td>选择骨骼来摆出姿势（<a href="11-pro-features.html#摆姿势">第 11 章</a>）</td>
+</tr>
+<tr>
+<td><strong>⌂</strong></td>
+<td>将角色移到中心</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="抓取-physbone">抓取 PhysBone<a class="anchor" href="#抓取-physbone">#</a></h2>
+<p>在视图中可以用鼠标抓取头发、耳朵、尾巴等摆动部分。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>左键拖动</td>
+<td>拉拽</td>
+</tr>
+<tr>
+<td>抓住时滚动滚轮</td>
+<td>拉近 / 推远</td>
+</tr>
+<tr>
+<td>抓住时右键</td>
+<td>在该位置 <strong>固定姿势</strong></td>
+</tr>
+<tr>
+<td><strong>解除固定姿势</strong></td>
+<td>解除已固定的部分</td>
+</tr>
+</tbody>
+</table></div>
+<p>只有角色 PhysBone 设置中允许抓取的部分才能被抓取。</p>
+<h2 id="窗口与托盘">窗口与托盘<a class="anchor" href="#窗口与托盘">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>窗口 <strong>X</strong></td>
+<td>最小化到托盘（角色和输出继续）</td>
+</tr>
+<tr>
+<td>双击托盘图标</td>
+<td>重新打开</td>
+</tr>
+<tr>
+<td>右键托盘</td>
+<td><strong>打开 Avatar Live</strong> / <strong>以纯净视图打开</strong> / <strong>退出</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="界面大小与主题">界面大小与主题<a class="anchor" href="#界面大小与主题">#</a></h2>
+<p>UI 大小、浅色 / 深色主题和面板位置可在 <a href="10-settings.html#界面">设置 › 界面</a> 中更改。</p></article>
+    <div class="pager"><a class="prev" href="03-launcher-and-library.html"><span>上一页</span>开始界面与角色库</a><a class="next" href="05-avatar-menu.html"><span>下一页</span>角色菜单</a></div>
+    <p class="updated">最后更新: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">本页内容</div><ul><li class="l2"><a href="#左侧菜单">左侧菜单</a></li><li class="l2"><a href="#顶部">顶部</a></li><li class="l2"><a href="#底部工具栏">底部工具栏</a></li><li class="l3"><a href="#相机设置">相机设置</a></li><li class="l2"><a href="#鼠标与键盘">鼠标与键盘</a></li><li class="l2"><a href="#纯净视图">纯净视图</a></li><li class="l2"><a href="#场景工具左侧图标">场景工具（左侧图标）</a></li><li class="l2"><a href="#抓取-physbone">抓取 PhysBone</a></li><li class="l2"><a href="#窗口与托盘">窗口与托盘</a></li><li class="l2"><a href="#界面大小与主题">界面大小与主题</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 使用条款</a> · <a href="legal-privacy.html">隐私政策</a> · <a href="legal-refund.html">退款政策</a> · <a href="legal-seller.html">卖家信息</a></div>
+    <p>Avatar Live 与 VRChat Inc. 无关联，也未获其认可。VRChat 是 VRChat Inc. 的商标。</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

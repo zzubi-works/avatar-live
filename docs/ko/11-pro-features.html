@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>포징 · 오브젝트 · 표정 — Avatar Live</title>
+<meta name="description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:title" content="포징 · 오브젝트 · 표정 — Avatar Live">
+<meta property="og:description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="메뉴" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>한국어</span></summary><div class="lang-menu"><a href="../ko/11-pro-features.html" class="on">한국어</a><a href="../en/11-pro-features.html">English</a><a href="../ja/11-pro-features.html">日本語</a><a href="../zh/11-pro-features.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTH에서 구매</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">홈</a><div class="side-h">가이드</div><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기 (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html" class="on">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><div class="side-h">약관 · 정책</div><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="11-포징--오브젝트--표정">11. 포징 · 오브젝트 · 표정<a class="anchor" href="#11-포징--오브젝트--표정">#</a></h1>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>기능</th>
+<th>에디션</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#포징">포징</a></td>
+<td><strong>Pro</strong></td>
+</tr>
+<tr>
+<td><a href="#오브젝트">오브젝트</a></td>
+<td><strong>Pro</strong></td>
+</tr>
+<tr>
+<td><a href="#화면-공유-추가-소스">화면 공유 추가 소스</a></td>
+<td><strong>Pro</strong></td>
+</tr>
+<tr>
+<td><a href="#내-표정">내 표정</a></td>
+<td>Basic · Pro</td>
+</tr>
+<tr>
+<td><a href="#자동-표정">자동 표정</a></td>
+<td>Basic · Pro</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="포징">포징<a class="anchor" href="#포징">#</a></h2>
+<p>뼈를 직접 움직여 아바타 자세를 만들고 저장합니다.</p>
+<p><strong>시작</strong>: 씬 › <strong>포징</strong> › <strong>포징 모드</strong>, 또는 왼쪽 씬 도구의 사람 아이콘</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>조작</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>뼈 클릭 (Ctrl: 여러 개)</td>
+<td>뼈 선택</td>
+</tr>
+<tr>
+<td>뼈 끌기</td>
+<td>움직이기 (손·발을 끌면 팔·다리 전체)</td>
+</tr>
+<tr>
+<td>링 끌기</td>
+<td>회전 (Ctrl: 15° 단위)</td>
+</tr>
+<tr>
+<td><strong>Ctrl + Z / Ctrl + Y</strong></td>
+<td>되돌리기 / 다시 하기</td>
+</tr>
+<tr>
+<td><strong>원래대로</strong></td>
+<td>선택한 뼈를 원래 동작으로</td>
+</tr>
+<tr>
+<td><strong>좌우</strong></td>
+<td>좌우 반전 · 왼쪽을 오른쪽에 복사 · 오른쪽을 왼쪽에 복사</td>
+</tr>
+<tr>
+<td><strong>전체 초기화</strong></td>
+<td>처음 자세로</td>
+</tr>
+<tr>
+<td><strong>손가락 뼈 표시</strong></td>
+<td>손가락 뼈 보이기</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>포징 모드를 끄면 자세가 풀립니다. 먼저 저장하세요.</p>
+</blockquote>
+<h3 id="자세">자세<a class="anchor" href="#자세">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>+ 자세 추가</strong></td>
+<td><strong>현재 자세 저장</strong> · <strong>.anim 파일 불러오기…</strong> · <strong>이 자세를 책상 자세로 저장 (팔·손)</strong></td>
+</tr>
+<tr>
+<td>자세 클릭</td>
+<td>적용 / 해제</td>
+</tr>
+<tr>
+<td><strong>자세 수정</strong></td>
+<td>저장한 자세 고치기</td>
+</tr>
+<tr>
+<td><strong>이름 변경 / 현재 자세로 덮어쓰기 / 삭제</strong></td>
+<td>자세 관리</td>
+</tr>
+<tr>
+<td><strong>휴식 자세로 지정 (전신)</strong></td>
+<td>얼굴이 안 보이면 이 자세로</td>
+</tr>
+<tr>
+<td><strong>책상 자세로 쓰기 (팔·손)</strong></td>
+<td>책상 손 자세로 쓰기</td>
+</tr>
+</tbody>
+</table></div>
+<p>아바타 메뉴의 <strong>자세</strong> 카드에서도 버튼 하나로 자세를 켜고 끕니다.</p>
+<h2 id="오브젝트">오브젝트<a class="anchor" href="#오브젝트">#</a></h2>
+<p>텍스트·이미지·도형·3D 모델을 씬이나 아바타에 붙입니다 (모자, 머리 위 글씨, 의자, 책상 등).</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>기본 환경 (바닥 격자)</strong></td>
+<td>바닥 표시</td>
+</tr>
+<tr>
+<td><strong>+ 오브젝트 추가</strong></td>
+<td><strong>텍스트</strong> · <strong>이미지 파일…</strong> · <strong>3D 모델 (.vprop)…</strong> · <strong>도형</strong> (큐브·구·원기둥·캡슐·판)</td>
+</tr>
+<tr>
+<td>보이기 스위치 · ⋯</td>
+<td>숨기기, 이름 변경 · 복제 · 처음 위치로 · 삭제</td>
+</tr>
+<tr>
+<td><strong>색상</strong></td>
+<td>색 바꾸기</td>
+</tr>
+<tr>
+<td><strong>붙일 곳</strong></td>
+<td>씬에 고정 / 머리 / 가슴 / 몸통 / 왼손 / 오른손</td>
+</tr>
+<tr>
+<td><strong>부드럽게 따라오기</strong></td>
+<td>뼈를 살짝 늦게 따라가기</td>
+</tr>
+<tr>
+<td><strong>비율 고정 / 크기</strong></td>
+<td>크기 조절</td>
+</tr>
+<tr>
+<td><strong>항상 맨 앞에 보이기 / 항상 카메라를 향하기</strong></td>
+<td>보이는 방식</td>
+</tr>
+<tr>
+<td>텍스트: <strong>폰트 · 굵게 · 기울임 · 외곽선 · 배경 판</strong></td>
+<td>글자 꾸미기</td>
+</tr>
+</tbody>
+</table></div>
+<p>뷰에서는 씬 도구(이동·회전·크기)로 옮깁니다. 텍스트는 더블클릭하면 바로 고칠 수 있습니다.</p>
+<h3 id="3d-모델-만들기">3D 모델 만들기<a class="anchor" href="#3d-모델-만들기">#</a></h3>
+<p>Unity에서 <strong>Curious Bobby → Prop Exporter</strong>로 GameObject나 프리팹을 <strong>.vprop</strong>으로 내보냅니다. 모델의 흔들리는 본과 애니메이션도 함께 동작합니다.</p>
+<h2 id="화면-공유-추가-소스">화면 공유 추가 소스<a class="anchor" href="#화면-공유-추가-소스">#</a></h2>
+<p>출력 › 화면 공유 › <strong>추가 소스</strong>에서 창이나 모니터를 더 겹칩니다 (채팅 창, 음악 플레이어 등).</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>소스 추가</strong></td>
+<td>창 또는 디스플레이 추가</td>
+</tr>
+<tr>
+<td>👁</td>
+<td>보이기 / 숨기기</td>
+</tr>
+<tr>
+<td>⋯</td>
+<td>앞으로 · 뒤로 · 처음 위치로 · 삭제</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="내-표정">내 표정<a class="anchor" href="#내-표정">#</a></h2>
+<p>아바타의 쉐이프키로 표정을 직접 만듭니다.</p>
+<ol>
+<li><strong>새 표정 만들기</strong></li>
+<li><strong>쉐이프키 검색</strong> → <strong>+</strong> 로 추가 → 세기 조절</li>
+<li><strong>이 표정이 보이는 동안</strong>: 눈 깜빡임 끄기 · 눈 추적 끄기 · 입 추적 끄기</li>
+<li><strong>저장</strong></li>
+</ol>
+<ul>
+<li><strong>.anim 불러오기</strong>로 Unity에서 만든 표정 애니메이션도 쓸 수 있습니다.</li>
+<li>아바타 메뉴·씬의 <strong>내 표정</strong> 카드에서 눌러서 켜고 끕니다.</li>
+</ul>
+<h2 id="자동-표정">자동 표정<a class="anchor" href="#자동-표정">#</a></h2>
+<p>웃거나 놀라면 아바타가 정해 둔 표정을 자동으로 냅니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>자동 표정</strong></td>
+<td>켜기 / 끄기</td>
+</tr>
+<tr>
+<td>감지 표정</td>
+<td>미소 · 놀람 · 화남 · 슬픔 · 윙크(왼쪽/오른쪽) · 삐죽 · 졸림</td>
+</tr>
+<tr>
+<td><strong>보여 줄 표정</strong></td>
+<td>내 표정 · 제스처 · 아바타 메뉴 항목 · 표정 클립 중에서 연결</td>
+</tr>
+<tr>
+<td><strong>기준값</strong></td>
+<td>얼마나 확실하게 지어야 켜질지</td>
+</tr>
+<tr>
+<td><strong>타이밍</strong></td>
+<td>부드럽게 · 시작 지연 · 최소 유지</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>표정 클립</strong>은 Exporter에서 내보낼 때 넣은 추가 표정입니다 (<a href="02-avatar-exporter.html#내보내기">2장</a>).</p></article>
+    <div class="pager"><a class="prev" href="10-settings.html"><span>이전</span>설정</a><a class="next" href="12-troubleshooting.html"><span>다음</span>문제 해결</a></div>
+    <p class="updated">최종 업데이트: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">이 페이지</div><ul><li class="l2"><a href="#포징">포징</a></li><li class="l3"><a href="#자세">자세</a></li><li class="l2"><a href="#오브젝트">오브젝트</a></li><li class="l3"><a href="#3d-모델-만들기">3D 모델 만들기</a></li><li class="l2"><a href="#화면-공유-추가-소스">화면 공유 추가 소스</a></li><li class="l2"><a href="#내-표정">내 표정</a></li><li class="l2"><a href="#자동-표정">자동 표정</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 이용약관</a> · <a href="legal-privacy.html">개인정보처리방침</a> · <a href="legal-refund.html">환불 정책</a> · <a href="legal-seller.html">판매자 정보</a></div>
+    <p>Avatar Live는 VRChat Inc.와 제휴하거나 승인받은 제품이 아닙니다. VRChat은 VRChat Inc.의 상표입니다.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>スタート画面とアバターライブラリ — Avatar Live</title>
+<meta name="description" content="VRChat アバターを VRM 変換なしでそのまま使える Windows 用 VTuber ソフト Avatar Live の公式ガイド">
+<meta property="og:title" content="スタート画面とアバターライブラリ — Avatar Live">
+<meta property="og:description" content="VRChat アバターを VRM 変換なしでそのまま使える Windows 用 VTuber ソフト Avatar Live の公式ガイド">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="メニュー" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>日本語</span></summary><div class="lang-menu"><a href="../ko/03-launcher-and-library.html">한국어</a><a href="../en/03-launcher-and-library.html">English</a><a href="../ja/03-launcher-and-library.html" class="on">日本語</a><a href="../zh/03-launcher-and-library.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTHで購入</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">ホーム</a><div class="side-h">ガイド</div><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html" class="on">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング · オブジェクト · 表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション · ライセンス · 告知</a></li></ul><div class="side-h">規約・ポリシー</div><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="3-スタート画面とアバターライブラリ">3. スタート画面とアバターライブラリ<a class="anchor" href="#3-スタート画面とアバターライブラリ">#</a></h1>
+<h2 id="スタート画面">スタート画面<a class="anchor" href="#スタート画面">#</a></h2>
+<figure><a href="../assets/shots/ja/launcher.webp" target="_blank" rel="noopener"><img alt="スタート画面" src="../assets/shots/ja/launcher.webp" loading="lazy"></a><figcaption>スタート画面</figcaption></figure>
+<p>Avatar Live を起動すると、スタート画面でアバターとデバイスを選んでから開始します。</p>
+<h3 id="アバター">アバター<a class="anchor" href="#アバター">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>アバターを開く…</strong></td>
+<td><code>.vavatar</code> ファイルを開く（ウィンドウにドラッグ＆ドロップしても可）</td>
+</tr>
+<tr>
+<td><strong>最近 / フォルダー / 読み込み済み</strong></td>
+<td>最近開いたアバター / アバターフォルダーのアバター / 保存フォルダーに読み込んだアバター</td>
+</tr>
+<tr>
+<td>タイルをクリック · ダブルクリック</td>
+<td>選択 · すぐに開始</td>
+</tr>
+<tr>
+<td><strong>既定に設定</strong></td>
+<td>このアバターを既定のアバターにする</td>
+</tr>
+<tr>
+<td><strong>ファイルの場所</strong></td>
+<td>エクスプローラーでファイルを表示</td>
+</tr>
+<tr>
+<td><strong>一覧から削除</strong></td>
+<td>最近の一覧からだけ削除（ファイルはそのまま）</td>
+</tr>
+<tr>
+<td><strong>場所を指定…</strong></td>
+<td>移動したファイルを指定し直す</td>
+</tr>
+<tr>
+<td><strong>変更 / フォルダーを開く</strong>（フォルダータブ）</td>
+<td>アバターフォルダーを変更 / エクスプローラーで開く</td>
+</tr>
+</tbody>
+</table></div>
+<p>状態表示：<strong>使用可能</strong> · <strong>ファイルなし</strong> · <strong>開けません</strong> · ★ <strong>既定</strong></p>
+<h3 id="デバイスと起動設定">デバイスと起動設定<a class="anchor" href="#デバイスと起動設定">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>カメラ</strong> スイッチ · 一覧</td>
+<td>開始時に Web カメラのトラッキングをオン、使用するカメラ</td>
+</tr>
+<tr>
+<td><strong>プレビュー</strong></td>
+<td>カメラの映像を確認（配信中はほかの人にも見えるので注意）</td>
+</tr>
+<tr>
+<td><strong>マイク</strong> スイッチ · 一覧</td>
+<td>開始時にマイク（リップシンク）をオン、使用するマイク</td>
+</tr>
+<tr>
+<td><strong>テスト</strong></td>
+<td>マイクの音が入っているか確認</td>
+</tr>
+<tr>
+<td><strong>顔</strong></td>
+<td>フェイストラッキングのエンジン（自動 / MediaPipe / OpenSeeFace）</td>
+</tr>
+<tr>
+<td><strong>手</strong></td>
+<td>ハンドトラッキング（MediaPipe / Ultraleap / オフ）</td>
+</tr>
+<tr>
+<td><strong>起動時のアバター</strong></td>
+<td>毎回確認 / 前回のアバター / 既定のアバター</td>
+</tr>
+<tr>
+<td><strong>常にスタート画面を表示</strong></td>
+<td>毎回この画面から開始</td>
+</tr>
+<tr>
+<td><strong>▶ Avatar Live を開始</strong></td>
+<td>選んだアバターで開始</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="セーフスタート">セーフスタート<a class="anchor" href="#セーフスタート">#</a></h2>
+<p>Web カメラ・マイク・トラッカーなしで開始します。デバイスの問題で起動できないときに使います。
+<strong>Shift を押したまま</strong> 起動し、スタート画面が表示されるまで押し続けてください。</p>
+<h2 id="復旧画面">復旧画面<a class="anchor" href="#復旧画面">#</a></h2>
+<p>前回アバターを読み込んでいる途中で終了した場合、次回の起動時に表示されます。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>ボタン</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>もう一度試す</strong></td>
+<td>同じアバターをもう一度読み込む</td>
+</tr>
+<tr>
+<td><strong>別のアバターを選ぶ</strong></td>
+<td>スタート画面へ</td>
+</tr>
+<tr>
+<td><strong>セーフスタート</strong></td>
+<td>デバイスなしで同じアバターを読み込む</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="起動中にアバターを切り替える">起動中にアバターを切り替える<a class="anchor" href="#起動中にアバターを切り替える">#</a></h2>
+<figure><a href="../assets/shots/ja/avatar-popover.webp" target="_blank" rel="noopener"><img alt="アバターのポップオーバー" src="../assets/shots/ja/avatar-popover.webp" loading="lazy"></a><figcaption>アバターのポップオーバー</figcaption></figure>
+<p>左上の <strong>アバター名</strong> を押すと、アバターライブラリが開きます。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アバター情報</td>
+<td>PhysBone · Contact · 表情パラメーター · メニュー項目の数、日付、サイズ</td>
+</tr>
+<tr>
+<td><strong>アバターファイルを追加…</strong></td>
+<td><code>.vavatar</code> を保存フォルダーに読み込む</td>
+</tr>
+<tr>
+<td><strong>保存フォルダー</strong></td>
+<td>保存フォルダーを開く</td>
+</tr>
+<tr>
+<td><strong>最近のアバター</strong></td>
+<td>最近開いたアバターに切り替え</td>
+</tr>
+<tr>
+<td><strong>アバター一覧</strong></td>
+<td>保存フォルダーのアバターに切り替え、🗑 で削除（設定は残ります）</td>
+</tr>
+<tr>
+<td><strong>自分のアバター</strong></td>
+<td>Exporter の使い方の案内</td>
+</tr>
+</tbody>
+</table></div>
+<p>アバターを切り替えると、設定を保存して新しいアバターで再起動します。オンにしていた Web カメラとマイクは、そのまま再びオンになります。</p>
+<h2 id="スタート画面に戻る">スタート画面に戻る<a class="anchor" href="#スタート画面に戻る">#</a></h2>
+<ul>
+<li>左上の <strong>ロゴ</strong> → <strong>再起動</strong></li>
+<li>設定 › 起動時 › <strong>再起動</strong></li>
+</ul></article>
+    <div class="pager"><a class="prev" href="02-avatar-exporter.html"><span>前へ</span>アバターの書き出し（Avatar Exporter）</a><a class="next" href="04-main-window.html"><span>次へ</span>メイン画面</a></div>
+    <p class="updated">最終更新: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">このページ</div><ul><li class="l2"><a href="#スタート画面">スタート画面</a></li><li class="l3"><a href="#アバター">アバター</a></li><li class="l3"><a href="#デバイスと起動設定">デバイスと起動設定</a></li><li class="l2"><a href="#セーフスタート">セーフスタート</a></li><li class="l2"><a href="#復旧画面">復旧画面</a></li><li class="l2"><a href="#起動中にアバターを切り替える">起動中にアバターを切り替える</a></li><li class="l2"><a href="#スタート画面に戻る">スタート画面に戻る</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 利用規約</a> · <a href="legal-privacy.html">プライバシーポリシー</a> · <a href="legal-refund.html">返金ポリシー</a> · <a href="legal-seller.html">販売者情報</a></div>
+    <p>Avatar Live は VRChat Inc. と提携・承認関係にある製品ではありません。VRChat は VRChat Inc. の商標です。</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

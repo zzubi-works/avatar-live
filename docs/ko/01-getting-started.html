@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>시작하기 — Avatar Live</title>
+<meta name="description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:title" content="시작하기 — Avatar Live">
+<meta property="og:description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="메뉴" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>한국어</span></summary><div class="lang-menu"><a href="../ko/01-getting-started.html" class="on">한국어</a><a href="../en/01-getting-started.html">English</a><a href="../ja/01-getting-started.html">日本語</a><a href="../zh/01-getting-started.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTH에서 구매</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">홈</a><div class="side-h">가이드</div><ul><li><a href="01-getting-started.html" class="on">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기 (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><div class="side-h">약관 · 정책</div><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="1-시작하기">1. 시작하기<a class="anchor" href="#1-시작하기">#</a></h1>
+<h2 id="준비물">준비물<a class="anchor" href="#준비물">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>필요 사항</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>운영체제</td>
+<td><strong>Windows 10 / 11 (64비트)</strong></td>
+</tr>
+<tr>
+<td>그래픽</td>
+<td><strong>DirectX 11</strong> 지원 GPU</td>
+</tr>
+<tr>
+<td>웹캠</td>
+<td>일반 컬러 웹캠 (얼굴·팔·손 트래킹용)</td>
+</tr>
+<tr>
+<td>마이크</td>
+<td>립싱크용 (선택)</td>
+</tr>
+<tr>
+<td>인터넷</td>
+<td>활성화와 라이선스 확인에 필요</td>
+</tr>
+<tr>
+<td>아바타</td>
+<td>VRChat 아바타의 <strong>Unity 프로젝트</strong> (Unity 2022.3) — <a href="02-avatar-exporter.html">2장</a>에서 <code>.vavatar</code>로 내보냅니다</td>
+</tr>
+<tr>
+<td>선택 장치</td>
+<td>Leap Motion / Ultraleap 손 트래커, iPhone (iFacialMocap)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="에디션-고르기">에디션 고르기<a class="anchor" href="#에디션-고르기">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Basic</th>
+<th>Pro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>용도</td>
+<td>개인적인 사용</td>
+<td><strong>방송·영상 공개·상업적 이용</strong></td>
+</tr>
+<tr>
+<td>출력</td>
+<td>최대 1080p, 워터마크</td>
+<td>최대 4K, 워터마크 없음</td>
+</tr>
+<tr>
+<td>포징 · 오브젝트 · 화면 공유 추가 소스</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>방송(라이브 스트리밍), 영상 업로드 등 <strong>공개·상업적 용도로 쓰려면 Pro</strong>가 필요합니다. 자세한 내용은 <a href="13-license.html">13장</a>을 보세요.</p>
+</blockquote>
+<h2 id="설치">설치<a class="anchor" href="#설치">#</a></h2>
+<ol>
+<li>BOOTH 구매 내역에서 Avatar Live ZIP 파일을 내려받습니다.</li>
+<li>원하는 폴더에 <strong>압축을 풉니다.</strong> 압축을 푼 폴더가 설치 폴더입니다.</li>
+<li><code>AvatarLive.exe</code>를 실행합니다.</li>
+</ol>
+<blockquote>
+<p><strong>"Windows의 PC 보호" 창이 뜨면</strong> <strong>추가 정보 → 실행</strong>을 누르세요.</p>
+<p>⚠️ <strong>설치 폴더의 파일을 바꾸거나 다른 프로그램을 넣지 마세요.</strong> 원본과 다르면 Avatar Live가 시작하지 않습니다. 이때는 BOOTH에서 받은 원본으로 다시 설치하세요 (아바타와 설정은 그대로 남습니다).</p>
+</blockquote>
+<h2 id="제품-활성화">제품 활성화<a class="anchor" href="#제품-활성화">#</a></h2>
+<p>처음 실행하면 <strong>제품 활성화</strong> 화면이 뜹니다.</p>
+<ol>
+<li>오른쪽 위에서 언어를 고릅니다.</li>
+<li>구매 시 안내받은 정보를 입력하고 <strong>활성화</strong>를 누릅니다.</li>
+<li>"활성화되었습니다."가 뜨면 끝입니다.</li>
+</ol>
+<h3 id="다른-pc로-옮기기">다른 PC로 옮기기<a class="anchor" href="#다른-pc로-옮기기">#</a></h3>
+<ul>
+<li>라이선스는 <strong>1인 1기기</strong>입니다.</li>
+<li>다른 PC로 옮기는 것은 <strong>딱 1회만</strong> 가능합니다. 옮기면 이전 PC에서는 더 이상 쓸 수 없고, <strong>그 뒤에는 어떤 경우에도 다시 옮길 수 없습니다.</strong></li>
+<li>옮길 PC를 신중하게 정한 뒤 진행하세요.</li>
+</ul>
+<h2 id="처음-방송까지">처음 방송까지<a class="anchor" href="#처음-방송까지">#</a></h2>
+<ol>
+<li><strong>아바타 만들기</strong> — 아바타 Unity 프로젝트에서 <code>.vavatar</code> 내보내기 (<a href="02-avatar-exporter.html">2장</a>)</li>
+<li><strong>아바타 열기</strong> — 시작 화면에서 <strong>아바타 열기…</strong> → <strong>▶ Avatar Live 시작</strong> (<a href="03-launcher-and-library.html">3장</a>)</li>
+<li><strong>웹캠 켜기</strong> — <strong>장치</strong> → <strong>웹캠</strong> 스위치 (<a href="06-devices.html">6장</a>)</li>
+<li><strong>마이크 켜기</strong> — <strong>장치</strong> → <strong>마이크</strong> 스위치</li>
+<li><strong>얼굴 맞추기</strong> — <strong>동작</strong> → <strong>자동 얼굴 설정</strong> (<a href="07-motion.html">7장</a>)</li>
+<li><strong>배경 고르기</strong> — <strong>씬</strong> → <strong>배경</strong> (<a href="08-scene.html">8장</a>)</li>
+<li><strong>내보내기</strong> — <strong>출력</strong> → Spout2 / 가상 카메라 / 화면 공유 (<a href="09-output.html">9장</a>)</li>
+<li><strong>F1</strong> — UI를 모두 숨긴 깨끗한 화면</li>
+</ol>
+<h2 id="종료하기">종료하기<a class="anchor" href="#종료하기">#</a></h2>
+<ul>
+<li>창의 <strong>X</strong>는 기본적으로 <strong>트레이로 숨기기</strong>입니다. 아바타와 출력은 계속 동작합니다.</li>
+<li>완전히 끄려면 <strong>트레이 아이콘 우클릭 → 종료</strong>.</li>
+<li>X로 바로 종료하려면 설정 › 창 › <strong>창 닫기 (X)</strong> → <strong>종료</strong>.</li>
+</ul></article>
+    <div class="pager"><span></span><a class="next" href="02-avatar-exporter.html"><span>다음</span>아바타 내보내기 (Avatar Exporter)</a></div>
+    <p class="updated">최종 업데이트: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">이 페이지</div><ul><li class="l2"><a href="#준비물">준비물</a></li><li class="l2"><a href="#에디션-고르기">에디션 고르기</a></li><li class="l2"><a href="#설치">설치</a></li><li class="l2"><a href="#제품-활성화">제품 활성화</a></li><li class="l3"><a href="#다른-pc로-옮기기">다른 PC로 옮기기</a></li><li class="l2"><a href="#처음-방송까지">처음 방송까지</a></li><li class="l2"><a href="#종료하기">종료하기</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 이용약관</a> · <a href="legal-privacy.html">개인정보처리방침</a> · <a href="legal-refund.html">환불 정책</a> · <a href="legal-seller.html">판매자 정보</a></div>
+    <p>Avatar Live는 VRChat Inc.와 제휴하거나 승인받은 제품이 아닙니다. VRChat은 VRChat Inc.의 상표입니다.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

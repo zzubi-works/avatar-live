@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Avatar Live — VRChat 아바타를 그대로, VTuber로</title>
+<meta name="description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:title" content="Avatar Live — VRChat 아바타를 그대로, VTuber로">
+<meta property="og:description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="home">
+<header class="top">
+  <button class="burger" aria-label="메뉴" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>한국어</span></summary><div class="lang-menu"><a href="../ko/index.html" class="on">한국어</a><a href="../en/index.html">English</a><a href="../ja/index.html">日本語</a><a href="../zh/index.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTH에서 구매</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">홈</a><div class="side-h">가이드</div><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기 (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><div class="side-h">약관 · 정책</div><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></aside>
+  <main class="content">
+    <article><div class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Windows용 VTuber 소프트웨어</p>
+    <h1 id="vrchat-아바타를그대로-vtuber로">VRChat 아바타를<br><span class="grad">그대로</span> VTuber로<a class="anchor" href="#vrchat-아바타를그대로-vtuber로">#</a></h1>
+    <p class="lead">VRM으로 바꾸지 않습니다. 셰이더·흔들리는 본·표정 메뉴·옷 토글을 다시 세팅하지 않습니다.<br>
+    VRChat에서 보던 내 아바타가 웹캠과 마이크로 움직이고, OBS·Discord·Zoom으로 바로 나갑니다.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://curiousbobby.booth.pm/">BOOTH에서 구매</a>
+      <a class="btn" href="01-getting-started.html">가이드 시작하기 →</a>
+    </div>
+  </div>
+  <div class="hero-shot"><img src="../assets/shots/ko/main.webp" alt="Avatar Live 메인 화면"></div>
+</div>
+
+<h2 id="지금까지는-이랬습니다">지금까지는 이랬습니다<a class="anchor" href="#지금까지는-이랬습니다">#</a></h2>
+<p>무료 VTuber 프로그램은 대부분 <strong>VRM 형식</strong>을 기준으로 합니다. VRChat 아바타를 쓰려면 VRM으로 변환하고, 셰이더를 다시 만들고, 흔들리는 본과 표정·옷 토글을 다시 설정해야 했습니다. 결국 <strong>VRChat에서 보던 내 아바타와 방송에 나오는 아바타가 달라집니다.</strong> 아바타를 고칠 때마다 이 과정을 반복해야 했고요.</p>
+<h2 id="avatar-live는-이렇게-다릅니다">Avatar Live는 이렇게 다릅니다<a class="anchor" href="#avatar-live는-이렇게-다릅니다">#</a></h2>
+<div class="cards">
+<div class="card"><div class="ic">🎨</div><h3 id="원래-셰이더-그대로">원래 셰이더 그대로<a class="anchor" href="#원래-셰이더-그대로">#</a></h3><p>Poiyomi·lilToon 등 아바타에 쓴 셰이더를 바꾸지 않고 그대로 씁니다.</p></div>
+<div class="card"><div class="ic">💇</div><h3 id="physbone-그대로">PhysBone 그대로<a class="anchor" href="#physbone-그대로">#</a></h3><p>머리카락·치마·꼬리의 흔들림을 VRChat과 같은 설정으로. 마우스로 잡아당기고 포즈 고정도 됩니다.</p></div>
+<div class="card"><div class="ic">📋</div><h3 id="표정-메뉴-그대로">표정 메뉴 그대로<a class="anchor" href="#표정-메뉴-그대로">#</a></h3><p>VRChat Expression 메뉴의 토글·버튼·Radial·Puppet, 손 제스처 표정, Contact·Parameter Driver까지 동작합니다.</p></div>
+<div class="card"><div class="ic">🙂</div><h3 id="얼굴-트래킹-자동-연결">얼굴 트래킹 자동 연결<a class="anchor" href="#얼굴-트래킹-자동-연결">#</a></h3><p>아바타가 가진 얼굴 트래킹 설정을 그대로 씁니다. 안내를 따라 하는 자동 얼굴 설정.</p></div>
+<div class="card"><div class="ic">⌨️</div><h3 id="책상-손-동작">책상 손 동작<a class="anchor" href="#책상-손-동작">#</a></h3><p>손이 카메라에 안 보여도 실제 키보드·마우스에 맞춰 아바타가 타이핑합니다. 입력한 내용은 기록하지 않습니다.</p></div>
+<div class="card"><div class="ic">🎮</div><h3 id="discord에-게임--아바타">Discord에 게임 + 아바타<a class="anchor" href="#discord에-게임--아바타">#</a></h3><p>OBS 없이 Discord 화면 공유에 게임과 아바타를 합성해서 보냅니다. 나는 게임만 봅니다.</p></div>
+</div>
+
+<h2 id="한눈에-비교">한눈에 비교<a class="anchor" href="#한눈에-비교">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>VRM 기반 프로그램 (일반적인 경우)</th>
+<th><strong>Avatar Live</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>아바타 준비</td>
+<td>VRM 변환 + 셰이더·흔들림·표정 재설정</td>
+<td><strong>Exporter 버튼 한 번</strong></td>
+</tr>
+<tr>
+<td>셰이더</td>
+<td>VRM용 셰이더로 바꿔야 하는 경우가 많음</td>
+<td><strong>원래 셰이더 그대로</strong></td>
+</tr>
+<tr>
+<td>흔들리는 본</td>
+<td>SpringBone으로 다시 설정</td>
+<td><strong>PhysBone 그대로</strong></td>
+</tr>
+<tr>
+<td>옷·헤어 토글, 표정 메뉴</td>
+<td>대부분 다시 만들어야 함</td>
+<td><strong>VRChat 메뉴 그대로</strong></td>
+</tr>
+<tr>
+<td>FX 애니메이터·Contact 기믹</td>
+<td>동작하지 않음</td>
+<td><strong>동작</strong></td>
+</tr>
+<tr>
+<td>아바타 수정 반영</td>
+<td>변환부터 다시</td>
+<td><strong>다시 내보내기만</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="이것도-됩니다">이것도 됩니다<a class="anchor" href="#이것도-됩니다">#</a></h2>
+<ul>
+<li><strong>Spout2</strong>(OBS, 투명 배경) · <strong>가상 카메라</strong>(Zoom·Discord·Teams) · <strong>Discord 화면 공유</strong> · <strong>PNG 사진</strong></li>
+<li>조명 프리셋 10종과 라이트 직접 편집, 블룸·색 보정·피사계 심도 등 효과</li>
+<li>게임 중에도 쓰는 <strong>전역 단축키</strong>와 <strong>퀵 액션</strong> 버튼</li>
+<li>창을 닫아도 트레이에서 계속 송출</li>
+<li>한국어 · English · 日本語 · 简体中文</li>
+</ul>
+<h2 id="이런-분께는-맞지-않을-수-있어요">이런 분께는 맞지 않을 수 있어요<a class="anchor" href="#이런-분께는-맞지-않을-수-있어요">#</a></h2>
+<ul>
+<li>VRChat 아바타의 <strong>Unity 프로젝트가 없는</strong> 경우 (VRM·.vrca 파일만으로는 쓸 수 없습니다)</li>
+<li><strong>Live2D(2D)</strong> 아바타, <strong>macOS·Linux</strong> 사용자</li>
+</ul>
+<blockquote>
+<p><strong>방송·영상 공개·상업적 이용에는 Pro 에디션이 필요합니다.</strong> Basic은 개인적인 사용을 위한 기본 에디션입니다. (<a href="13-license.html#에디션">에디션 비교</a>)</p>
+</blockquote>
+<p>구매 전에 <a href="01-getting-started.html">요구 사항</a>과 <a href="legal-refund.html">환불 정책</a>을 꼭 확인해 주세요. 디지털 상품이므로 구매 후 환불되지 않습니다.</p>
+<h2 id="가이드">가이드<a class="anchor" href="#가이드">#</a></h2>
+<div class="toc-grid">
+<a href="01-getting-started.html"><b>1</b> 시작하기</a>
+<a href="02-avatar-exporter.html"><b>2</b> 아바타 내보내기</a>
+<a href="03-launcher-and-library.html"><b>3</b> 시작 화면과 라이브러리</a>
+<a href="04-main-window.html"><b>4</b> 메인 화면</a>
+<a href="05-avatar-menu.html"><b>5</b> 아바타 메뉴</a>
+<a href="06-devices.html"><b>6</b> 장치</a>
+<a href="07-motion.html"><b>7</b> 동작</a>
+<a href="08-scene.html"><b>8</b> 씬</a>
+<a href="09-output.html"><b>9</b> 출력 · 화면 공유</a>
+<a href="10-settings.html"><b>10</b> 설정</a>
+<a href="11-pro-features.html"><b>11</b> 포징 · 오브젝트 · 표정</a>
+<a href="12-troubleshooting.html"><b>12</b> 문제 해결</a>
+<a href="13-license.html"><b>13</b> 에디션 · 라이선스</a>
+</div></article>
+    
+    <p class="updated">최종 업데이트: 2026-10-09</p>
+  </main>
+  
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 이용약관</a> · <a href="legal-privacy.html">개인정보처리방침</a> · <a href="legal-refund.html">환불 정책</a> · <a href="legal-seller.html">판매자 정보</a></div>
+    <p>Avatar Live는 VRChat Inc.와 제휴하거나 승인받은 제품이 아닙니다. VRChat은 VRChat Inc.의 상표입니다.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

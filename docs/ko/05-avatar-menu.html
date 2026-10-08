@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>아바타 메뉴 — Avatar Live</title>
+<meta name="description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:title" content="아바타 메뉴 — Avatar Live">
+<meta property="og:description" content="VRChat 아바타를 VRM 변환 없이 그대로 쓰는 Windows용 VTuber 소프트웨어 Avatar Live 공식 가이드">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="메뉴" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>한국어</span></summary><div class="lang-menu"><a href="../ko/05-avatar-menu.html" class="on">한국어</a><a href="../en/05-avatar-menu.html">English</a><a href="../ja/05-avatar-menu.html">日本語</a><a href="../zh/05-avatar-menu.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTH에서 구매</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">홈</a><div class="side-h">가이드</div><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기 (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html" class="on">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><div class="side-h">약관 · 정책</div><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="5-아바타-메뉴">5. 아바타 메뉴<a class="anchor" href="#5-아바타-메뉴">#</a></h1>
+<p><strong>메뉴</strong> 페이지에서 VRChat에서 쓰던 <strong>아바타 자체의 Expression 메뉴</strong>를 그대로 씁니다. 옷·헤어 토글, 표정 버튼, Radial, Puppet이 VRChat과 같이 동작합니다.</p>
+<h2 id="expression-메뉴">Expression 메뉴<a class="anchor" href="#expression-메뉴">#</a></h2>
+<figure><a href="../assets/shots/ko/menu.webp" target="_blank" rel="noopener"><img alt="아바타 메뉴" src="../assets/shots/ko/menu.webp" loading="lazy"></a><figcaption>아바타 메뉴</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>종류</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Toggle</strong></td>
+<td>켜기 / 끄기</td>
+</tr>
+<tr>
+<td><strong>Button</strong></td>
+<td>누르고 있는 동안 켜기</td>
+</tr>
+<tr>
+<td><strong>Sub Menu</strong></td>
+<td>하위 메뉴 열기 (<strong>뒤로</strong>로 돌아가기)</td>
+</tr>
+<tr>
+<td><strong>Radial Puppet</strong></td>
+<td>슬라이더로 값 정하기</td>
+</tr>
+<tr>
+<td><strong>Two Axis / Four Axis Puppet</strong></td>
+<td>패드로 방향 정하기</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="항목-우클릭">항목 우클릭<a class="anchor" href="#항목-우클릭">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>퀵 액션에 추가</strong></td>
+<td>이 항목을 툴바 버튼으로</td>
+</tr>
+<tr>
+<td><strong>단축키 지정…</strong></td>
+<td>이 항목에 단축키 지정</td>
+</tr>
+<tr>
+<td><strong>즐겨찾기</strong></td>
+<td>메뉴 위 즐겨찾기에 추가</td>
+</tr>
+<tr>
+<td><strong>Parameter 정보</strong></td>
+<td>이 항목의 파라미터 보기</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="즐겨찾기">즐겨찾기<a class="anchor" href="#즐겨찾기">#</a></h2>
+<p>즐겨찾기한 항목을 메뉴 맨 위에서 바로 씁니다. 하위 메뉴 안의 항목도 바로 조작할 수 있습니다.</p>
+<h2 id="손-제스처">손 제스처<a class="anchor" href="#손-제스처">#</a></h2>
+<p>왼손 / 오른손 제스처(<strong>기본 · 주먹 · 펴기 · 가리키기 · 브이 · 락앤롤 · 총 · 엄지</strong>)를 골라 아바타의 제스처 표정을 냅니다.</p>
+<ul>
+<li><strong>웹캠 손 모양으로 제스처</strong> — 켜면 웹캠으로 추적한 손 모양이 제스처가 됩니다.</li>
+</ul>
+<h2 id="아바타-파라미터">아바타 파라미터<a class="anchor" href="#아바타-파라미터">#</a></h2>
+<ul>
+<li><strong>기본값으로 되돌리기</strong> — 모든 메뉴 값을 아바타 기본값으로 되돌립니다 (VRChat의 Reset Avatar와 같음).</li>
+</ul>
+<p>옷 상태처럼 VRChat에서 저장되는 값은 다음 실행에도 그대로 유지됩니다.</p>
+<h2 id="퀵-액션">퀵 액션<a class="anchor" href="#퀵-액션">#</a></h2>
+<p>자주 쓰는 동작을 <strong>버튼</strong>이나 <strong>키</strong>로 만듭니다.</p>
+<p><strong>추가하는 곳</strong>
+- 메뉴 항목 우클릭 → <strong>퀵 액션에 추가</strong>
+- 설정 › <strong>단축키 · 퀵 액션</strong> › <strong>퀵 액션 추가</strong></p>
+<p><strong>넣을 수 있는 동작</strong>: 아바타 메뉴 항목 · 제스처 · 카메라 뷰 · 저장된 뷰 · 트래킹 리셋 · 조명 프리셋 · PhysBone 리셋 · 전체 초기화</p>
+<p><strong>버튼 우클릭</strong>: <strong>이름 변경</strong> · <strong>표시 위치</strong> (상단 HUD / 하단 툴바 / 단축키만) · <strong>단축키 지정…</strong> · <strong>제거</strong></p>
+<h2 id="초기화와-모두-초기화">초기화와 모두 초기화<a class="anchor" href="#초기화와-모두-초기화">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th><strong>초기화</strong></th>
+<th><strong>모두 초기화</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>실행</td>
+<td>위쪽 <strong>⟲</strong> 클릭, 설정 › 일반</td>
+<td>⟲ 우클릭, 설정 › 일반</td>
+</tr>
+<tr>
+<td>되돌리는 것</td>
+<td>트래킹, 손 자세, 눌린 버튼, PhysBone, Contact</td>
+<td>위 + 모든 파라미터(옷 포함), 아바타 위치·크기, 자세, 카메라</td>
+</tr>
+<tr>
+<td>그대로 두는 것</td>
+<td>옷·토글, 조명, 카메라</td>
+<td>오브젝트, 저장한 자세·표정, 설정</td>
+</tr>
+</tbody>
+</table></div>
+<p>방송 중 아바타가 굳거나 머리카락이 엉켰을 때는 <strong>⟲ 초기화</strong>를 누르세요.</p></article>
+    <div class="pager"><a class="prev" href="04-main-window.html"><span>이전</span>메인 화면</a><a class="next" href="06-devices.html"><span>다음</span>장치</a></div>
+    <p class="updated">최종 업데이트: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">이 페이지</div><ul><li class="l2"><a href="#expression-메뉴">Expression 메뉴</a></li><li class="l3"><a href="#항목-우클릭">항목 우클릭</a></li><li class="l2"><a href="#즐겨찾기">즐겨찾기</a></li><li class="l2"><a href="#손-제스처">손 제스처</a></li><li class="l2"><a href="#아바타-파라미터">아바타 파라미터</a></li><li class="l2"><a href="#퀵-액션">퀵 액션</a></li><li class="l2"><a href="#초기화와-모두-초기화">초기화와 모두 초기화</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 이용약관</a> · <a href="legal-privacy.html">개인정보처리방침</a> · <a href="legal-refund.html">환불 정책</a> · <a href="legal-seller.html">판매자 정보</a></div>
+    <p>Avatar Live는 VRChat Inc.와 제휴하거나 승인받은 제품이 아닙니다. VRChat은 VRChat Inc.의 상표입니다.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

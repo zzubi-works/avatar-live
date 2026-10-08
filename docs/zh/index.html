@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Avatar Live — 让 VRChat 角色原样成为 VTuber</title>
+<meta name="description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
+<meta property="og:title" content="Avatar Live — 让 VRChat 角色原样成为 VTuber">
+<meta property="og:description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="home">
+<header class="top">
+  <button class="burger" aria-label="菜单" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>简体中文</span></summary><div class="lang-menu"><a href="../ko/index.html">한국어</a><a href="../en/index.html">English</a><a href="../ja/index.html">日本語</a><a href="../zh/index.html" class="on">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">在 BOOTH 购买</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">首页</a><div class="side-h">指南</div><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><div class="side-h">条款与政策</div><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></aside>
+  <main class="content">
+    <article><div class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Windows 版 VTuber 软件</p>
+    <h1 id="让-vrchat-角色原样成为-vtuber">让 VRChat 角色<br><span class="grad">原样</span>成为 VTuber<a class="anchor" href="#让-vrchat-角色原样成为-vtuber">#</a></h1>
+    <p class="lead">无需转换为 VRM。无需重新设置着色器、摆动骨骼、表情菜单和服装开关。<br>
+    你在 VRChat 中看到的角色会随摄像头和麦克风动起来，并直接输出到 OBS、Discord 和 Zoom。</p>
+    <div class="cta">
+      <a class="btn primary" href="https://curiousbobby.booth.pm/">在 BOOTH 购买</a>
+      <a class="btn" href="01-getting-started.html">开始阅读指南 →</a>
+    </div>
+  </div>
+  <div class="hero-shot"><img src="../assets/shots/zh/main.webp" alt="Avatar Live 主界面"></div>
+</div>
+
+<h2 id="以往的做法">以往的做法<a class="anchor" href="#以往的做法">#</a></h2>
+<p>大多数免费 VTuber 软件以 <strong>VRM 格式</strong> 为基础。要使用 VRChat 角色，必须先转换为 VRM，重新制作着色器，并重新设置摆动骨骼、表情和服装开关。结果，<strong>在 VRChat 中看到的角色与直播中出现的角色并不一样。</strong> 而且每次修改角色都要重复这一过程。</p>
+<h2 id="avatar-live-的不同之处">Avatar Live 的不同之处<a class="anchor" href="#avatar-live-的不同之处">#</a></h2>
+<div class="cards">
+<div class="card"><div class="ic">🎨</div><h3 id="原有着色器原样使用">原有着色器原样使用<a class="anchor" href="#原有着色器原样使用">#</a></h3><p>Poiyomi、lilToon 等角色所用的着色器无需更换，直接使用。</p></div>
+<div class="card"><div class="ic">💇</div><h3 id="physbone-原样使用">PhysBone 原样使用<a class="anchor" href="#physbone-原样使用">#</a></h3><p>头发、裙子、尾巴的摆动与 VRChat 设置相同。还可以用鼠标拉拽并固定姿势。</p></div>
+<div class="card"><div class="ic">📋</div><h3 id="表情菜单原样使用">表情菜单原样使用<a class="anchor" href="#表情菜单原样使用">#</a></h3><p>VRChat Expression 菜单中的开关、按钮、Radial、Puppet，手势表情，以及 Contact 和 Parameter Driver 均可运行。</p></div>
+<div class="card"><div class="ic">🙂</div><h3 id="面部追踪自动对接">面部追踪自动对接<a class="anchor" href="#面部追踪自动对接">#</a></h3><p>直接使用角色自带的面部追踪设置。按引导操作即可完成自动面部设置。</p></div>
+<div class="card"><div class="ic">⌨️</div><h3 id="桌面手部动作">桌面手部动作<a class="anchor" href="#桌面手部动作">#</a></h3><p>即使摄像头看不到手，角色也会配合真实的键盘和鼠标打字。不会记录输入的内容。</p></div>
+<div class="card"><div class="ic">🎮</div><h3 id="discord-中的游戏--角色">Discord 中的游戏 + 角色<a class="anchor" href="#discord-中的游戏--角色">#</a></h3><p>无需 OBS，即可在 Discord 屏幕共享中合成游戏与角色并发送。你自己只看到游戏。</p></div>
+</div>
+
+<h2 id="一览对比">一览对比<a class="anchor" href="#一览对比">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>基于 VRM 的软件（一般情况）</th>
+<th><strong>Avatar Live</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>角色准备</td>
+<td>VRM 转换 + 重新设置着色器、摆动和表情</td>
+<td><strong>导出器一键完成</strong></td>
+</tr>
+<tr>
+<td>着色器</td>
+<td>常需更换为 VRM 用着色器</td>
+<td><strong>原有着色器原样使用</strong></td>
+</tr>
+<tr>
+<td>摆动骨骼</td>
+<td>用 SpringBone 重新设置</td>
+<td><strong>PhysBone 原样使用</strong></td>
+</tr>
+<tr>
+<td>服装、发型开关和表情菜单</td>
+<td>大多需要重新制作</td>
+<td><strong>VRChat 菜单原样使用</strong></td>
+</tr>
+<tr>
+<td>FX 动画器、Contact 机关</td>
+<td>无法运行</td>
+<td><strong>可以运行</strong></td>
+</tr>
+<tr>
+<td>反映角色修改</td>
+<td>从转换开始重做</td>
+<td><strong>只需重新导出</strong></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="还可以做到">还可以做到<a class="anchor" href="#还可以做到">#</a></h2>
+<ul>
+<li><strong>Spout2</strong>（OBS，透明背景）· <strong>虚拟摄像头</strong>（Zoom、Discord、Teams）· <strong>Discord 屏幕共享</strong> · <strong>PNG 照片</strong></li>
+<li>10 种灯光预设与灯光直接编辑，泛光、调色、景深等效果</li>
+<li>游戏中也能使用的 <strong>全局快捷键</strong> 和 <strong>快捷操作</strong> 按钮</li>
+<li>关闭窗口后仍在托盘中持续输出</li>
+<li>한국어 · English · 日本語 · 简体中文</li>
+</ul>
+<h2 id="以下情况可能不适合">以下情况可能不适合<a class="anchor" href="#以下情况可能不适合">#</a></h2>
+<ul>
+<li><strong>没有</strong> VRChat 角色的 <strong>Unity 项目</strong> 的情况（仅有 VRM 或 .vrca 文件无法使用）</li>
+<li><strong>Live2D（2D）</strong> 角色，<strong>macOS、Linux</strong> 用户</li>
+</ul>
+<blockquote>
+<p><strong>直播、公开发布视频或商业用途需要 Pro 版。</strong> Basic 是供个人使用的基础版本。（<a href="13-license.html#版本">版本对比</a>）</p>
+</blockquote>
+<p>购买前请务必确认 <a href="01-getting-started.html">系统要求</a> 和 <a href="legal-refund.html">退款政策</a>。本产品为数字商品，购买后不予退款。</p>
+<h2 id="指南">指南<a class="anchor" href="#指南">#</a></h2>
+<div class="toc-grid">
+<a href="01-getting-started.html"><b>1</b> 快速上手</a>
+<a href="02-avatar-exporter.html"><b>2</b> 导出角色</a>
+<a href="03-launcher-and-library.html"><b>3</b> 开始界面与角色库</a>
+<a href="04-main-window.html"><b>4</b> 主界面</a>
+<a href="05-avatar-menu.html"><b>5</b> 角色菜单</a>
+<a href="06-devices.html"><b>6</b> 设备</a>
+<a href="07-motion.html"><b>7</b> 动作</a>
+<a href="08-scene.html"><b>8</b> 场景</a>
+<a href="09-output.html"><b>9</b> 输出 · 屏幕共享</a>
+<a href="10-settings.html"><b>10</b> 设置</a>
+<a href="11-pro-features.html"><b>11</b> 摆姿势 · 物体 · 表情</a>
+<a href="12-troubleshooting.html"><b>12</b> 故障排除</a>
+<a href="13-license.html"><b>13</b> 版本 · 许可证</a>
+</div></article>
+    
+    <p class="updated">最后更新: 2026-10-09</p>
+  </main>
+  
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 使用条款</a> · <a href="legal-privacy.html">隐私政策</a> · <a href="legal-refund.html">退款政策</a> · <a href="legal-seller.html">卖家信息</a></div>
+    <p>Avatar Live 与 VRChat Inc. 无关联，也未获其认可。VRChat 是 VRChat Inc. 的商标。</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

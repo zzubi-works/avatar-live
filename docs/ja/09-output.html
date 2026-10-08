@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>出力 — Avatar Live</title>
+<meta name="description" content="VRChat アバターを VRM 変換なしでそのまま使える Windows 用 VTuber ソフト Avatar Live の公式ガイド">
+<meta property="og:title" content="出力 — Avatar Live">
+<meta property="og:description" content="VRChat アバターを VRM 変換なしでそのまま使える Windows 用 VTuber ソフト Avatar Live の公式ガイド">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="メニュー" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>日本語</span></summary><div class="lang-menu"><a href="../ko/09-output.html">한국어</a><a href="../en/09-output.html">English</a><a href="../ja/09-output.html" class="on">日本語</a><a href="../zh/09-output.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">BOOTHで購入</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">ホーム</a><div class="side-h">ガイド</div><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html" class="on">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング · オブジェクト · 表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション · ライセンス · 告知</a></li></ul><div class="side-h">規約・ポリシー</div><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="9-出力">9. 出力<a class="anchor" href="#9-出力">#</a></h1>
+<p><strong>出力</strong> ページでは、アバターの映像をほかのソフトに送ります。タブは <strong>配信出力</strong> と <strong>画面共有</strong> の 2 つです。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>送り先</th>
+<th>方法</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OBS（透明背景）</td>
+<td><strong>Spout2</strong></td>
+</tr>
+<tr>
+<td>Discord · Zoom · Teams のカメラ</td>
+<td><strong>仮想カメラ</strong></td>
+</tr>
+<tr>
+<td>Discord でのゲーム配信</td>
+<td><strong>画面共有</strong></td>
+</tr>
+<tr>
+<td>ほかのモーションアプリ</td>
+<td><strong>VMC 出力</strong></td>
+</tr>
+<tr>
+<td>写真</td>
+<td><strong>PNG を保存</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p>出力されるのはアバターと背景だけで、Avatar Live のメニューは出力されません。ウィンドウを最小化したりトレイに隠したりしても出力は続きます。</p>
+<h2 id="配信出力">配信出力<a class="anchor" href="#配信出力">#</a></h2>
+<figure><a href="../assets/shots/ja/output.webp" target="_blank" rel="noopener"><img alt="出力 › 配信出力" src="../assets/shots/ja/output.webp" loading="lazy"></a><figcaption>出力 › 配信出力</figcaption></figure>
+<h3 id="出力映像">出力映像<a class="anchor" href="#出力映像">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>解像度</strong></td>
+<td>720p · 1080p · 1440p · 4K · 縦</td>
+</tr>
+<tr>
+<td><strong>カスタムサイズ</strong></td>
+<td>好きなサイズ</td>
+</tr>
+<tr>
+<td><strong>出力フレームレート</strong></td>
+<td>出力のフレームレート</td>
+</tr>
+</tbody>
+</table></div>
+<p>Basic は 1080p までで、ウォーターマークが表示されます。Pro は 4K までで、ウォーターマークはありません。</p>
+<h3 id="spout2--obs">Spout2 → OBS<a class="anchor" href="#spout2--obs">#</a></h3>
+<ol>
+<li><strong>Spout2</strong> をオンにします。</li>
+<li>OBS に <strong>Spout2 プラグイン</strong> をインストールし、<strong>Spout2 Capture</strong> ソースを追加して <strong>Avatar Live</strong> を選びます。</li>
+<li>透明背景：Avatar Live の背景を <strong>透明</strong> にし、OBS で <strong>Composite with alpha</strong> を選びます。</li>
+</ol>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>送信名</strong></td>
+<td>OBS に表示される名前</td>
+</tr>
+<tr>
+<td><strong>透明度（アルファ）を送る</strong></td>
+<td>透明背景を送る</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="仮想カメラ">仮想カメラ<a class="anchor" href="#仮想カメラ">#</a></h3>
+<ol>
+<li>最初に一度だけ <strong>仮想カメラをインストール…</strong> を押します（管理者権限を求められます）。</li>
+<li><strong>仮想カメラ</strong> をオンにします。</li>
+<li>Discord・Zoom などで、カメラとして <strong>Avatar Live Camera</strong> を選びます。</li>
+</ol>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>映像を左右反転</strong></td>
+<td>左右を反転</td>
+</tr>
+<tr>
+<td><strong>「Avatar Live Camera」として登録し直す…</strong></td>
+<td>カメラ名が違って表示されるとき</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Discord は起動時にしかカメラを探しません。一覧にない場合は Discord を完全に終了してから起動し直してください。</li>
+<li>透明背景には対応していません（クロマキー背景を使ってください）。</li>
+<li>インストールフォルダーを移動・削除する前に、<code>VirtualCamera\Uninstall.bat</code> を実行してください。</li>
+</ul>
+<h3 id="写真">写真<a class="anchor" href="#写真">#</a></h3>
+<p><strong>PNG を保存</strong> で UI なしの画面を保存し、<strong>フォルダー</strong> で保存フォルダーを開きます。透明背景は透明のまま保存されます。</p>
+<h3 id="外部出力vmc">外部出力（VMC）<a class="anchor" href="#外部出力vmc">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VMC 出力（ほかのアプリへ）</strong></td>
+<td>アバターのポーズと表情をほかのアプリに送る</td>
+</tr>
+<tr>
+<td><strong>アドレス / ポート</strong></td>
+<td>受信側アプリのアドレス</td>
+</tr>
+<tr>
+<td><strong>ブレンドシェイプ</strong></td>
+<td>表情も一緒に送る</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>VMC 出力は正常に動作する見込みですが、受信側のアプリが開発者の環境でまだテストされていない <strong>実験的機能</strong> です。</p>
+</blockquote>
+<h2 id="画面共有">画面共有<a class="anchor" href="#画面共有">#</a></h2>
+<figure><a href="../assets/shots/ja/share.webp" target="_blank" rel="noopener"><img alt="出力 › 画面共有" src="../assets/shots/ja/share.webp" loading="lazy"></a><figcaption>出力 › 画面共有</figcaption></figure>
+<p>Discord のフレンドには <strong>ゲーム + アバター + 音声</strong> を、自分にはゲームだけを見せます。OBS は不要です。</p>
+<h3 id="使い方">使い方<a class="anchor" href="#使い方">#</a></h3>
+<ol>
+<li><strong>共有する対象</strong> で <strong>ゲーム</strong> または <strong>ディスプレイ</strong> を選びます。</li>
+<li><strong>画面共有</strong> をオンにします。</li>
+<li>Discord で <strong>画面共有 → アプリケーション → Avatar Live Share Output</strong> を選び、サウンドをオンにします。</li>
+<li>プレビューでアバターの位置とサイズを合わせます。</li>
+</ol>
+<blockquote class="callout"><p>⚠️ Avatar Live を <strong>管理者として実行しないでください。</strong> Discord に黒い画面が表示されます。</p>
+</blockquote>
+<h3 id="共有の状態">共有の状態<a class="anchor" href="#共有の状態">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>画面共有</strong></td>
+<td>オン / オフ</td>
+</tr>
+<tr>
+<td><strong>解像度 / フレームレート</strong></td>
+<td>Discord に送る画質</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="共有する対象">共有する対象<a class="anchor" href="#共有する対象">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ゲーム</strong></td>
+<td>共有するゲームのウィンドウを選ぶ（ゲームを再起動しても再び見つけます）</td>
+</tr>
+<tr>
+<td><strong>ディスプレイ</strong></td>
+<td>モニター全体を共有</td>
+</tr>
+<tr>
+<td><strong>ほかのソース</strong>（Pro）</td>
+<td>ウィンドウやモニターをさらに重ねる（<a href="11-pro-features.html#画面共有のほかのソース">11 章</a>）</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote class="callout"><p>💡 ゲームが黒く映る場合は、ゲームを <strong>ボーダーレスウィンドウ</strong> または <strong>ウィンドウモード</strong> に変えてみてください。</p>
+</blockquote>
+<h3 id="オーディオ">オーディオ<a class="anchor" href="#オーディオ">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>ゲーム音</strong></td>
+<td>ゲームの音だけを送る（Discord の通話・通知音は除く）</td>
+</tr>
+<tr>
+<td><strong>デスクトップ音声 / 追加したアプリのみ / 音声なし</strong></td>
+<td>ディスプレイ共有のときに送る音</td>
+</tr>
+<tr>
+<td><strong>+ アプリを追加</strong></td>
+<td>音楽などほかのアプリの音を加える、アプリごとの音量</td>
+</tr>
+</tbody>
+</table></div>
+<p>共有の音を送るには、<strong>Steam Streaming Speakers</strong> や <strong>VB-Audio CABLE</strong> のような、自分では聞かない仮想再生デバイスが必要です。</p>
+<h3 id="アバターオーバーレイ">アバターオーバーレイ<a class="anchor" href="#アバターオーバーレイ">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>アバターオーバーレイ</strong></td>
+<td>共有画面にアバターを表示</td>
+</tr>
+<tr>
+<td>プレビュー</td>
+<td>ドラッグで移動、角でサイズ変更、ハンドルで回転、Alt + 端でトリミング</td>
+</tr>
+<tr>
+<td><strong>↙ ↓ ↘ ↖ ↗ ◎</strong></td>
+<td>クイック配置</td>
+</tr>
+<tr>
+<td><strong>大きさ / 不透明度 / 回転</strong></td>
+<td>数値で調整</td>
+</tr>
+<tr>
+<td><strong>反転とスナップ</strong></td>
+<td>左右・上下反転、比率の固定、位置合わせ</td>
+</tr>
+<tr>
+<td>⛶</td>
+<td>大きな画面で編集</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="詳細">詳細<a class="anchor" href="#詳細">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>キャプチャ方式を固定</strong></td>
+<td>自動 / ウィンドウ / ディスプレイ</td>
+</tr>
+<tr>
+<td><strong>ソースのトリミング</strong></td>
+<td>共有画面を切り抜く</td>
+</tr>
+<tr>
+<td><strong>Discord オーディオデバイス</strong></td>
+<td>共有の音を再生するデバイス（ヘッドホン・スピーカーは選ばないでください）</td>
+</tr>
+<tr>
+<td><strong>音声の遅延</strong></td>
+<td>映像と音を合わせる</td>
+</tr>
+</tbody>
+</table></div></article>
+    <div class="pager"><a class="prev" href="08-scene.html"><span>前へ</span>シーン</a><a class="next" href="10-settings.html"><span>次へ</span>設定</a></div>
+    <p class="updated">最終更新: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">このページ</div><ul><li class="l2"><a href="#配信出力">配信出力</a></li><li class="l3"><a href="#出力映像">出力映像</a></li><li class="l3"><a href="#spout2--obs">Spout2 → OBS</a></li><li class="l3"><a href="#仮想カメラ">仮想カメラ</a></li><li class="l3"><a href="#写真">写真</a></li><li class="l3"><a href="#外部出力vmc">外部出力（VMC）</a></li><li class="l2"><a href="#画面共有">画面共有</a></li><li class="l3"><a href="#使い方">使い方</a></li><li class="l3"><a href="#共有の状態">共有の状態</a></li><li class="l3"><a href="#共有する対象">共有する対象</a></li><li class="l3"><a href="#オーディオ">オーディオ</a></li><li class="l3"><a href="#アバターオーバーレイ">アバターオーバーレイ</a></li><li class="l3"><a href="#詳細">詳細</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 利用規約</a> · <a href="legal-privacy.html">プライバシーポリシー</a> · <a href="legal-refund.html">返金ポリシー</a> · <a href="legal-seller.html">販売者情報</a></div>
+    <p>Avatar Live は VRChat Inc. と提携・承認関係にある製品ではありません。VRChat は VRChat Inc. の商標です。</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

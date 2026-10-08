@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Avatar menu — Avatar Live</title>
+<meta name="description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:title" content="Avatar menu — Avatar Live">
+<meta property="og:description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>English</span></summary><div class="lang-menu"><a href="../ko/05-avatar-menu.html">한국어</a><a href="../en/05-avatar-menu.html" class="on">English</a><a href="../ja/05-avatar-menu.html">日本語</a><a href="../zh/05-avatar-menu.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">Buy on BOOTH</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">Home</a><div class="side-h">Guide</div><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting an avatar (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html" class="on">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><div class="side-h">Legal</div><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="5-avatar-menu">5. Avatar menu<a class="anchor" href="#5-avatar-menu">#</a></h1>
+<p>On the <strong>Menu</strong> page you use <strong>the avatar's own Expressions menu</strong>, just as in VRChat. Outfit and hair toggles, expression buttons, Radials and Puppets work the same way as in VRChat.</p>
+<h2 id="expressions-menu">Expressions menu<a class="anchor" href="#expressions-menu">#</a></h2>
+<figure><a href="../assets/shots/en/menu.webp" target="_blank" rel="noopener"><img alt="Avatar menu" src="../assets/shots/en/menu.webp" loading="lazy"></a><figcaption>Avatar menu</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Type</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Toggle</strong></td>
+<td>On / off</td>
+</tr>
+<tr>
+<td><strong>Button</strong></td>
+<td>On while held</td>
+</tr>
+<tr>
+<td><strong>Sub Menu</strong></td>
+<td>Open a submenu (<strong>Back</strong> to return)</td>
+</tr>
+<tr>
+<td><strong>Radial Puppet</strong></td>
+<td>Set a value with a slider</td>
+</tr>
+<tr>
+<td><strong>Two Axis / Four Axis Puppet</strong></td>
+<td>Set a direction with a pad</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="right-clicking-an-item">Right-clicking an item<a class="anchor" href="#right-clicking-an-item">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Add to Quick Actions</strong></td>
+<td>Turn this item into a toolbar button</td>
+</tr>
+<tr>
+<td><strong>Set hotkey…</strong></td>
+<td>Assign a hotkey to this item</td>
+</tr>
+<tr>
+<td><strong>Favorite</strong></td>
+<td>Add it to the favorites above the menu</td>
+</tr>
+<tr>
+<td><strong>Parameter info</strong></td>
+<td>Show this item's parameter</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="favorites">Favorites<a class="anchor" href="#favorites">#</a></h2>
+<p>Use favorited items directly at the top of the menu. Items inside submenus can also be used right there.</p>
+<h2 id="hand-gestures">Hand gestures<a class="anchor" href="#hand-gestures">#</a></h2>
+<p>Pick a left / right hand gesture (<strong>Neutral · Fist · Open · Point · Victory · Rock · Gun · Thumbs</strong>) to show the avatar's gesture expressions.</p>
+<ul>
+<li><strong>Gestures from the webcam's hands</strong> — when on, the hand shapes tracked by the webcam become gestures.</li>
+</ul>
+<h2 id="avatar-parameters">Avatar parameters<a class="anchor" href="#avatar-parameters">#</a></h2>
+<ul>
+<li><strong>Reset to defaults</strong> — returns every menu value to the avatar's default (the same as Reset Avatar in VRChat).</li>
+</ul>
+<p>Values that VRChat saves, such as outfit state, are kept the next time you run Avatar Live.</p>
+<h2 id="quick-actions">Quick Actions<a class="anchor" href="#quick-actions">#</a></h2>
+<p>Turn actions you use often into <strong>buttons</strong> or <strong>keys</strong>.</p>
+<p><strong>Where to add them</strong>
+- Right-click a menu item → <strong>Add to Quick Actions</strong>
+- Settings › <strong>Hotkeys · Quick Actions</strong> › <strong>Add Quick Action</strong></p>
+<p><strong>Actions you can use</strong>: avatar menu item · gesture · camera view · saved view · tracking reset · lighting preset · PhysBone reset · reset all</p>
+<p><strong>Right-click a button</strong>: <strong>Rename</strong> · <strong>Show in</strong> (Top HUD / Bottom toolbar / Hotkey only) · <strong>Set hotkey…</strong> · <strong>Remove</strong></p>
+<h2 id="reset-and-reset-everything">Reset and Reset everything<a class="anchor" href="#reset-and-reset-everything">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th><strong>Reset</strong></th>
+<th><strong>Reset everything</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>How</td>
+<td>Click <strong>⟲</strong> at the top, Settings › General</td>
+<td>Right-click ⟲, Settings › General</td>
+</tr>
+<tr>
+<td>What it resets</td>
+<td>Tracking, hand pose, held buttons, PhysBones, Contacts</td>
+<td>The above + all parameters (including outfits), avatar position and size, pose, camera</td>
+</tr>
+<tr>
+<td>What it keeps</td>
+<td>Outfits and toggles, lighting, camera</td>
+<td>Objects, saved poses and expressions, settings</td>
+</tr>
+</tbody>
+</table></div>
+<p>If the avatar freezes or its hair gets tangled during a stream, click <strong>⟲ Reset</strong>.</p></article>
+    <div class="pager"><a class="prev" href="04-main-window.html"><span>Previous</span>Main window</a><a class="next" href="06-devices.html"><span>Next</span>Devices</a></div>
+    <p class="updated">Last updated: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">On this page</div><ul><li class="l2"><a href="#expressions-menu">Expressions menu</a></li><li class="l3"><a href="#right-clicking-an-item">Right-clicking an item</a></li><li class="l2"><a href="#favorites">Favorites</a></li><li class="l2"><a href="#hand-gestures">Hand gestures</a></li><li class="l2"><a href="#avatar-parameters">Avatar parameters</a></li><li class="l2"><a href="#quick-actions">Quick Actions</a></li><li class="l2"><a href="#reset-and-reset-everything">Reset and Reset everything</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live Terms of Use</a> · <a href="legal-privacy.html">Privacy Policy</a> · <a href="legal-refund.html">Refund Policy</a> · <a href="legal-seller.html">Seller Information</a></div>
+    <p>Avatar Live is not affiliated with or endorsed by VRChat Inc. VRChat is a trademark of VRChat Inc.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

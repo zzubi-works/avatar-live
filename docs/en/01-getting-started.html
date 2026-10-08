@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Getting started — Avatar Live</title>
+<meta name="description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:title" content="Getting started — Avatar Live">
+<meta property="og:description" content="Official guide for Avatar Live — Windows VTuber software that uses your VRChat avatar as is, without VRM conversion.">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>English</span></summary><div class="lang-menu"><a href="../ko/01-getting-started.html">한국어</a><a href="../en/01-getting-started.html" class="on">English</a><a href="../ja/01-getting-started.html">日本語</a><a href="../zh/01-getting-started.html">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">Buy on BOOTH</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">Home</a><div class="side-h">Guide</div><ul><li><a href="01-getting-started.html" class="on">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting an avatar (Avatar Exporter)</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><div class="side-h">Legal</div><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="1-getting-started">1. Getting started<a class="anchor" href="#1-getting-started">#</a></h1>
+<h2 id="what-you-need">What you need<a class="anchor" href="#what-you-need">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Requirement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Operating system</td>
+<td><strong>Windows 10 / 11 (64-bit)</strong></td>
+</tr>
+<tr>
+<td>Graphics</td>
+<td>GPU with <strong>DirectX 11</strong> support</td>
+</tr>
+<tr>
+<td>Webcam</td>
+<td>A regular color webcam (for face, arm and hand tracking)</td>
+</tr>
+<tr>
+<td>Microphone</td>
+<td>For lip sync (optional)</td>
+</tr>
+<tr>
+<td>Internet</td>
+<td>Needed for activation and license checks</td>
+</tr>
+<tr>
+<td>Avatar</td>
+<td>The <strong>Unity project</strong> of your VRChat avatar (Unity 2022.3) — exported to <code>.vavatar</code> in <a href="02-avatar-exporter.html">Chapter 2</a></td>
+</tr>
+<tr>
+<td>Optional devices</td>
+<td>Leap Motion / Ultraleap hand tracker, iPhone (iFacialMocap)</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="choosing-an-edition">Choosing an edition<a class="anchor" href="#choosing-an-edition">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th></th>
+<th>Basic</th>
+<th>Pro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Use</td>
+<td>Personal use</td>
+<td><strong>Streaming, publishing videos, commercial use</strong></td>
+</tr>
+<tr>
+<td>Output</td>
+<td>Up to 1080p, watermark</td>
+<td>Up to 4K, no watermark</td>
+</tr>
+<tr>
+<td>Posing · Objects · Screen share extra sources</td>
+<td>—</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>For <strong>public or commercial use</strong> such as streaming (live streaming) or uploading videos, <strong>you need Pro</strong>. See <a href="13-license.html">Chapter 13</a> for details.</p>
+</blockquote>
+<h2 id="installation">Installation<a class="anchor" href="#installation">#</a></h2>
+<ol>
+<li>Download the Avatar Live ZIP file from your BOOTH purchase history.</li>
+<li><strong>Extract it</strong> to any folder you like. The extracted folder is the installation folder.</li>
+<li>Run <code>AvatarLive.exe</code>.</li>
+</ol>
+<blockquote>
+<p><strong>If a "Windows protected your PC" window appears</strong>, click <strong>More info → Run anyway</strong>.</p>
+<p>⚠️ <strong>Do not change the files in the installation folder or add other programs to it.</strong> If the files differ from the originals, Avatar Live will not start. In that case, reinstall from the original you downloaded from BOOTH (your avatars and settings are kept).</p>
+</blockquote>
+<h2 id="product-activation">Product activation<a class="anchor" href="#product-activation">#</a></h2>
+<p>The first time you run it, the <strong>Product activation</strong> screen appears.</p>
+<ol>
+<li>Choose your language at the top right.</li>
+<li>Enter the information you received with your purchase and click <strong>Activate</strong>.</li>
+<li>When "Activated." appears, you are done.</li>
+</ol>
+<h3 id="moving-to-another-pc">Moving to another PC<a class="anchor" href="#moving-to-another-pc">#</a></h3>
+<ul>
+<li>A license is for <strong>one person, one device</strong>.</li>
+<li>You can move it to another PC <strong>only once</strong>. After moving, it can no longer be used on the previous PC, and <strong>after that it cannot be moved again under any circumstances.</strong></li>
+<li>Choose the PC to move to carefully before you proceed.</li>
+</ul>
+<h2 id="from-start-to-your-first-stream">From start to your first stream<a class="anchor" href="#from-start-to-your-first-stream">#</a></h2>
+<ol>
+<li><strong>Create your avatar</strong> — export a <code>.vavatar</code> from the avatar's Unity project (<a href="02-avatar-exporter.html">Chapter 2</a>)</li>
+<li><strong>Open the avatar</strong> — on the start screen, <strong>Open Avatar…</strong> → <strong>▶ Start Avatar Live</strong> (<a href="03-launcher-and-library.html">Chapter 3</a>)</li>
+<li><strong>Turn on the webcam</strong> — <strong>Devices</strong> → <strong>Webcam</strong> switch (<a href="06-devices.html">Chapter 6</a>)</li>
+<li><strong>Turn on the microphone</strong> — <strong>Devices</strong> → <strong>Microphone</strong> switch</li>
+<li><strong>Fit your face</strong> — <strong>Motion</strong> → <strong>Automatic face setup</strong> (<a href="07-motion.html">Chapter 7</a>)</li>
+<li><strong>Choose a background</strong> — <strong>Scene</strong> → <strong>Background</strong> (<a href="08-scene.html">Chapter 8</a>)</li>
+<li><strong>Send it out</strong> — <strong>Output</strong> → Spout2 / Virtual Camera / Screen share (<a href="09-output.html">Chapter 9</a>)</li>
+<li><strong>F1</strong> — a clean view with all UI hidden</li>
+</ol>
+<h2 id="quitting">Quitting<a class="anchor" href="#quitting">#</a></h2>
+<ul>
+<li>By default, the window's <strong>X</strong> <strong>hides it to the tray</strong>. The avatar and outputs keep running.</li>
+<li>To quit completely, <strong>right-click the tray icon → Quit</strong>.</li>
+<li>To quit directly with X, go to Settings › Window › <strong>Close button (X)</strong> → <strong>Quit</strong>.</li>
+</ul></article>
+    <div class="pager"><span></span><a class="next" href="02-avatar-exporter.html"><span>Next</span>Exporting an avatar (Avatar Exporter)</a></div>
+    <p class="updated">Last updated: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">On this page</div><ul><li class="l2"><a href="#what-you-need">What you need</a></li><li class="l2"><a href="#choosing-an-edition">Choosing an edition</a></li><li class="l2"><a href="#installation">Installation</a></li><li class="l2"><a href="#product-activation">Product activation</a></li><li class="l3"><a href="#moving-to-another-pc">Moving to another PC</a></li><li class="l2"><a href="#from-start-to-your-first-stream">From start to your first stream</a></li><li class="l2"><a href="#quitting">Quitting</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live Terms of Use</a> · <a href="legal-privacy.html">Privacy Policy</a> · <a href="legal-refund.html">Refund Policy</a> · <a href="legal-seller.html">Seller Information</a></div>
+    <p>Avatar Live is not affiliated with or endorsed by VRChat Inc. VRChat is a trademark of VRChat Inc.</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>

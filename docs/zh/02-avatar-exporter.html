@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>导出角色（Avatar Exporter） — Avatar Live</title>
+<meta name="description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
+<meta property="og:title" content="导出角色（Avatar Exporter） — Avatar Live">
+<meta property="og:description" content="Avatar Live 官方指南 —— 无需转换为 VRM，直接使用 VRChat 模型的 Windows VTuber 软件">
+<meta property="og:image" content="../assets/brand/og.jpg">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
+</head>
+<body class="doc">
+<header class="top">
+  <button class="burger" aria-label="菜单" onclick="document.body.classList.toggle('nav-open')"><span></span><span></span><span></span></button>
+  <a class="brand" href="index.html"><img src="../assets/brand/logo-wide.png" alt="Avatar Live"></a>
+  <div class="top-right">
+    <details class="lang"><summary>🌐 <span>简体中文</span></summary><div class="lang-menu"><a href="../ko/02-avatar-exporter.html">한국어</a><a href="../en/02-avatar-exporter.html">English</a><a href="../ja/02-avatar-exporter.html">日本語</a><a href="../zh/02-avatar-exporter.html" class="on">简体中文</a></div></details>
+    <button class="theme" aria-label="theme" onclick="toggleTheme()">◐</button>
+    <a class="btn primary small" href="https://curiousbobby.booth.pm/">在 BOOTH 购买</a>
+  </div>
+</header>
+<div class="wrap">
+  <aside class="side"><a class="side-home" href="index.html">首页</a><div class="side-h">指南</div><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html" class="on">导出角色（Avatar Exporter）</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><div class="side-h">条款与政策</div><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></aside>
+  <main class="content">
+    <article><h1 id="2-导出角色avatar-exporter">2. 导出角色（Avatar Exporter）<a class="anchor" href="#2-导出角色avatar-exporter">#</a></h1>
+<p>Avatar Live 以 <strong><code>.vavatar</code></strong> 文件打开角色。该文件通过在你的 VRChat 角色 Unity 项目中安装 <strong>Curious Bobby - Avatar Exporter</strong> 来制作。</p>
+<ul>
+<li>原始角色、场景和材质不会被更改。</li>
+<li>导出器不会向互联网上传任何内容。</li>
+<li>制作出的 <code>.vavatar</code> 文件归用户所有。但其中角色和服装的权利归各自的制作者所有。</li>
+</ul>
+<h2 id="要求">要求<a class="anchor" href="#要求">#</a></h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Unity</td>
+<td><strong>2022.3</strong></td>
+</tr>
+<tr>
+<td>角色</td>
+<td><strong>能够正常上传到 VRChat 的角色项目</strong></td>
+</tr>
+<tr>
+<td>制作工具</td>
+<td>使用 NDMF、Modular Avatar、VRCFury 等的角色也可以导出（这些工具不包含在导出器中，使用的是项目中已安装的工具）</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="安装">安装<a class="anchor" href="#安装">#</a></h2>
+<h3 id="vcc--alcom推荐">VCC / ALCOM（推荐）<a class="anchor" href="#vcc--alcom推荐">#</a></h3>
+<ol>
+<li>在 VCC 或 ALCOM 中添加仓库。
+   - <code>vcc://vpm/addRepo?url=https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json</code>
+   - 或直接添加地址：<code>https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json</code></li>
+<li>在角色项目中添加 <strong>Curious Bobby - Avatar Exporter</strong>。</li>
+</ol>
+<h3 id="unitypackage">.unitypackage<a class="anchor" href="#unitypackage">#</a></h3>
+<p>在 Unity 中通过 <strong>Assets → Import Package → Custom Package…</strong> 导入。</p>
+<p>安装后，Unity 顶部菜单中会出现 <strong>Curious Bobby</strong>。</p>
+<h2 id="导出">导出<a class="anchor" href="#导出">#</a></h2>
+<ol>
+<li>打开 <strong>Curious Bobby → Avatar Exporter</strong>。</li>
+<li>在 <strong>角色</strong> 栏中放入要导出的角色。</li>
+<li>确认 <strong>在 Avatar Live 中显示的名称</strong>。</li>
+<li>如有需要，更改 <strong>输出文件夹</strong>。</li>
+<li>点击 <strong>导出 .vavatar</strong>。</li>
+<li><strong>结果</strong> 中显示文件名即完成。点击 <strong>显示文件</strong> 可在资源管理器中打开。</li>
+</ol>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>角色</strong></td>
+<td>要导出的角色</td>
+</tr>
+<tr>
+<td><strong>已打开场景中的角色</strong></td>
+<td>场景中有多个角色时进行选择</td>
+</tr>
+<tr>
+<td><strong>在 Avatar Live 中显示的名称</strong></td>
+<td>在 Avatar Live 中显示的名称</td>
+</tr>
+<tr>
+<td><strong>表情剪辑（可选）</strong></td>
+<td>加入额外的表情动画，用于 <a href="11-pro-features.html#自动表情">自动表情</a></td>
+</tr>
+<tr>
+<td><strong>输出文件夹</strong></td>
+<td><code>.vavatar</code> 的保存位置</td>
+</tr>
+<tr>
+<td><strong>导出 .vavatar</strong></td>
+<td>生成文件</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p>如果导出失败，请先确认角色能否正常上传到 VRChat。</p>
+</blockquote>
+<h2 id="在-avatar-live-中打开">在 Avatar Live 中打开<a class="anchor" href="#在-avatar-live-中打开">#</a></h2>
+<ul>
+<li>在开始界面点击 <strong>打开角色…</strong>，或将文件 <strong>拖放</strong> 到窗口中</li>
+<li>放入 <strong>角色文件夹</strong>（默认为 <code>文档\Avatar Live\Avatars</code>）后会自动显示在开始界面</li>
+<li>运行中点击左上角的角色名称 → <strong>添加角色文件…</strong></li>
+</ul>
+<h2 id="修改角色后">修改角色后<a class="anchor" href="#修改角色后">#</a></h2>
+<p>在 Unity 中修改后，只需 <strong>重新导出</strong> 即可。每个角色的设置（灯光、相机、面部调整、服装状态等）会保留。</p>
+<ul>
+<li>“它由更新版本的导出器制作” → 请更新 Avatar Live。</li>
+<li>提示格式过旧时 → 请用最新的导出器重新导出。</li>
+<li>非人形（Humanoid）角色可以使用菜单和表情，但无法使用身体追踪。</li>
+</ul></article>
+    <div class="pager"><a class="prev" href="01-getting-started.html"><span>上一页</span>快速上手</a><a class="next" href="03-launcher-and-library.html"><span>下一页</span>开始界面与角色库</a></div>
+    <p class="updated">最后更新: 2026-10-09</p>
+  </main>
+  <nav class="toc"><div class="toc-h">本页内容</div><ul><li class="l2"><a href="#要求">要求</a></li><li class="l2"><a href="#安装">安装</a></li><li class="l3"><a href="#vcc--alcom推荐">VCC / ALCOM（推荐）</a></li><li class="l3"><a href="#unitypackage">.unitypackage</a></li><li class="l2"><a href="#导出">导出</a></li><li class="l2"><a href="#在-avatar-live-中打开">在 Avatar Live 中打开</a></li><li class="l2"><a href="#修改角色后">修改角色后</a></li></ul></nav>
+</div>
+<footer class="foot">
+  <div class="foot-in">
+    <div><img src="../assets/brand/icon-256.png" alt="" width="36" height="36"><b>Avatar Live</b> · Curious Bobby Co.</div>
+    <div class="foot-links"><a href="legal-terms.html">Avatar Live 使用条款</a> · <a href="legal-privacy.html">隐私政策</a> · <a href="legal-refund.html">退款政策</a> · <a href="legal-seller.html">卖家信息</a></div>
+    <p>Avatar Live 与 VRChat Inc. 无关联，也未获其认可。VRChat 是 VRChat Inc. 的商标。</p>
+    <p>© 2026 Curious Bobby Co. All rights reserved.</p>
+  </div>
+</footer>
+<div class="scrim" onclick="document.body.classList.remove('nav-open')"></div>
+<script>
+function toggleTheme(){var d=document.documentElement;var dark=d.dataset.theme?d.dataset.theme==='dark':matchMedia('(prefers-color-scheme: dark)').matches;d.dataset.theme=dark?'light':'dark';try{localStorage.setItem('al-theme',d.dataset.theme)}catch(e){}}
+(function(){var links=[].slice.call(document.querySelectorAll('.toc a'));if(!links.length)return;var hs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+function on(){var y=scrollY+90,cur=0;hs.forEach(function(h,i){if(h&&h.offsetTop<=y)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}addEventListener('scroll',on,{passive:true});on();})();
+</script>
+</body>
+</html>
