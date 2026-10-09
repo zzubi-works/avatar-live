@@ -46,6 +46,15 @@ Click **Avatar parameters › Reset to defaults** to return the menu values to t
 
 Turn actions you use often into buttons or keys. You can add menu items, gestures, camera views, lighting presets and more, and right-click a button to change its name and position.
 
+## Hierarchy · Meshes · Shape keys
+
+View your avatar's objects as a tree, just like in Unity, and change them right there.
+
+- **Hierarchy** — Shows the avatar's objects as a tree. Use the checkboxes to turn them on and off. The eye icon hides an object from view while leaving it on.
+- **Meshes** — Shows every mesh in one list. Use search to find one quickly.
+- Click a mesh to adjust its **shape keys** one by one in the side panel. Values you set yourself take priority over face tracking and avatar animations.
+- **Reset all** at the top returns every mesh to the avatar's original state, and **Collapse all** closes the tree.
+
 ## Reset
 
 | | Reset | Reset everything |

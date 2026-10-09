@@ -1,6 +1,6 @@
 # 12. Troubleshooting
 
-> 💡 If something isn't solved, please let us know with **Settings › Diagnostics › Send an error report**.
+> 💡 For bugs or problems that aren't solved, please let us know with **Settings › Diagnostics › Send an error report**, and for features or improvements you need, with **Settings › About › Send a suggestion**.
 
 ## Start-up · Installation
 
@@ -28,6 +28,9 @@
 | The avatar looks to the side | **Recenter** |
 | Winks don't work | Set the blink mode to **Independent** |
 | The PC feels slow | Set the tracking quality to **Balanced** or **Eco** |
+| Hands · fingers jitter | Raise **Devices › Tracking sources › Hand steadiness** |
+| The avatar doesn't move | In **Devices › Tracking sources**, check that no part's source is set to a device you aren't using (such as VMC) |
+| The pose received over VMC is off | **T-pose** or **Align** in **VMC settings** |
 
 ## Microphone
 
@@ -54,19 +57,18 @@
 | ✅ VRChat avatars | Expressions menu, animators, PhysBones, Contacts, Constraints, Eye Look, LipSync |
 | ✅ Creation tools | Avatars that use NDMF · Modular Avatar · VRCFury |
 | ✅ Shaders | Poiyomi, lilToon and others |
-| ✅ Face | VRCFaceTracking, ARKit (Perfect Sync), MMD eye morphs |
-| 🧪 Experimental features | Ultraleap, OSC · VMC, camera detection of the tongue and cheeks |
+| ✅ Face | Follows the avatar's setup: VRCFaceTracking, 52 ARKit shape keys (Perfect Sync), MMD eye morphs |
+| ✅ Tracking | Webcam (face · arms · hands · fingers), iPhone (iFacialMocap · FaceMotion3D), VMC (per part: arms · hands · fingers · body · head · eyes) |
+| 🧪 Experimental features | Ultraleap, OSC, VMC output, camera detection of the tongue and cheeks |
 | ⚠️ Not supported | Avatar sound effects, AudioLink, mirror detection, VRM files, Live2D, macOS · Linux |
 
-We expect the experimental features to work properly, but we haven't yet been able to test them with every device and app in the developer's environment.
+We've confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the experimental features to work properly, but we haven't yet been able to test them with every device and app in the developer's environment, so they're marked **experimental** in the app. If you try them and something goes wrong, please let us know with **Send an error report**.
 
 ## Planned support
 
 - Loading VRM models (.vrm, VRM 0.x / 1.0) and playing .vrma animations
 - Stronger Perfect Sync: mapping that links shape keys directly, face calibration for each webcam · iPhone, and a tool to check the 52 expressions one by one
 - More phone face apps: VTube Studio (iPhone), MeowFace (Android)
-- Webcam upper body: twisting · tilting the upper body from your shoulder movement
-- Better full-body tracking app support (VMC): receiving a face app and a body app at the same time, reflecting sitting · leaning — TDPT, XR Animator and more
 - Conveniences: automatic refresh when you export the avatar again, lower FPS when there's nothing to do
 
 ※ Planned features and their timing may change.

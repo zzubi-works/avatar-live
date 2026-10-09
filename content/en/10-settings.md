@@ -38,11 +38,20 @@ Check your current edition.
 | **Upgrade to Pro** | Enter the upgrade you bought on BOOTH to switch to Pro. |
 | **Check now** | Checks the license again. |
 
-## Diagnostics · Updates
+## Diagnostics · About · Updates
 
 | Item | What it does |
 |---|---|
-| **Send an error report** | When something goes wrong, sends a description and the logs. It is sent only when you click it. |
+| **Diagnostics › Send an error report** | When something goes wrong, sends a description and the logs. It is sent only when you click it. |
+| **About › Send a suggestion** | Sends a feature you'd like to have or something you'd like us to fix. |
+| **Notices** | New notices are shown once at start-up, and you can look at past notices again in Settings. |
 | **Open log folder** | Lets you look at the log files. |
 | **Check now · Download** | Checks for a new version and downloads it. |
 | **Restart to install** | Updates right away. Your avatars and settings stay as they are. |
+
+> ⚠️ Updates download automatically with **Settings › Updates › Check and download automatically** and install when you restart or quit. If the download is slow because of the server, please download the new version from BOOTH again. Your avatars and settings are kept.
+
+## Sending problems and suggestions
+
+- If you run into a **bug or problem** while using Avatar Live, please let us know with **Settings › Diagnostics › Send an error report**. A line or two about what was happening helps us a great deal in finding the cause.
+- If there's a **feature or improvement you need**, please send it with **Settings › About › Send a suggestion**. We take your feedback into account when planning updates.

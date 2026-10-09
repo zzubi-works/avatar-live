@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Troubleshooting — AVATAR LIVE</title>
-<meta name="description" content="If something isn&#x27;t solved, please let us know with Settings › Diagnostics › Send an error report.">
+<meta name="description" content="For bugs or problems that aren&#x27;t solved, please let us know with Settings › Diagnostics › Send an error report, and for features or improvements you n…">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/12-troubleshooting.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/12-troubleshooting.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/12-troubleshooting.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/12-troubleshooting.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="Troubleshooting — AVATAR LIVE">
-<meta property="og:description" content="If something isn&#x27;t solved, please let us know with Settings › Diagnostics › Send an error report.">
+<meta property="og:description" content="For bugs or problems that aren&#x27;t solved, please let us know with Settings › Diagnostics › Send an error report, and for features or improvements you n…">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/12-troubleshooting.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
 <meta property="og:image:width" content="1200">
@@ -44,7 +44,7 @@
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
   <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html" aria-current="page">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="12-troubleshooting">12. Troubleshooting<a class="anchor" href="#12-troubleshooting" aria-hidden="true" tabindex="-1">#</a></h1>
-<blockquote class="callout tip"><p>If something isn't solved, please let us know with <strong>Settings › Diagnostics › Send an error report</strong>.</p>
+<blockquote class="callout tip"><p>For bugs or problems that aren't solved, please let us know with <strong>Settings › Diagnostics › Send an error report</strong>, and for features or improvements you need, with <strong>Settings › About › Send a suggestion</strong>.</p>
 </blockquote>
 <h2 id="start-up--installation">Start-up · Installation<a class="anchor" href="#start-up--installation" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
@@ -125,6 +125,18 @@
 <td>The PC feels slow</td>
 <td>Set the tracking quality to <strong>Balanced</strong> or <strong>Eco</strong></td>
 </tr>
+<tr>
+<td>Hands · fingers jitter</td>
+<td>Raise <strong>Devices › Tracking sources › Hand steadiness</strong></td>
+</tr>
+<tr>
+<td>The avatar doesn't move</td>
+<td>In <strong>Devices › Tracking sources</strong>, check that no part's source is set to a device you aren't using (such as VMC)</td>
+</tr>
+<tr>
+<td>The pose received over VMC is off</td>
+<td><strong>T-pose</strong> or <strong>Align</strong> in <strong>VMC settings</strong></td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="microphone">Microphone<a class="anchor" href="#microphone" aria-hidden="true" tabindex="-1">#</a></h2>
@@ -204,11 +216,15 @@
 </tr>
 <tr>
 <td>✅ Face</td>
-<td>VRCFaceTracking, ARKit (Perfect Sync), MMD eye morphs</td>
+<td>Follows the avatar's setup: VRCFaceTracking, 52 ARKit shape keys (Perfect Sync), MMD eye morphs</td>
+</tr>
+<tr>
+<td>✅ Tracking</td>
+<td>Webcam (face · arms · hands · fingers), iPhone (iFacialMocap · FaceMotion3D), VMC (per part: arms · hands · fingers · body · head · eyes)</td>
 </tr>
 <tr>
 <td>🧪 Experimental features</td>
-<td>Ultraleap, OSC · VMC, camera detection of the tongue and cheeks</td>
+<td>Ultraleap, OSC, VMC output, camera detection of the tongue and cheeks</td>
 </tr>
 <tr>
 <td>⚠️ Not supported</td>
@@ -216,14 +232,12 @@
 </tr>
 </tbody>
 </table></div>
-<p>We expect the experimental features to work properly, but we haven't yet been able to test them with every device and app in the developer's environment.</p>
+<p>We've confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the experimental features to work properly, but we haven't yet been able to test them with every device and app in the developer's environment, so they're marked <strong>experimental</strong> in the app. If you try them and something goes wrong, please let us know with <strong>Send an error report</strong>.</p>
 <h2 id="planned-support">Planned support<a class="anchor" href="#planned-support" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>Loading VRM models (.vrm, VRM 0.x / 1.0) and playing .vrma animations</li>
 <li>Stronger Perfect Sync: mapping that links shape keys directly, face calibration for each webcam · iPhone, and a tool to check the 52 expressions one by one</li>
 <li>More phone face apps: VTube Studio (iPhone), MeowFace (Android)</li>
-<li>Webcam upper body: twisting · tilting the upper body from your shoulder movement</li>
-<li>Better full-body tracking app support (VMC): receiving a face app and a body app at the same time, reflecting sitting · leaning — TDPT, XR Animator and more</li>
 <li>Conveniences: automatic refresh when you export the avatar again, lower FPS when there's nothing to do</li>
 </ul>
 <p>※ Planned features and their timing may change.</p>

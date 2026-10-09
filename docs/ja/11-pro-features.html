@@ -57,6 +57,10 @@
 <td>Pro</td>
 </tr>
 <tr>
+<td><a href="#ポーズライブラリ">ポーズライブラリ</a></td>
+<td>Pro</td>
+</tr>
+<tr>
 <td><a href="#オブジェクト">オブジェクト</a></td>
 <td>Pro</td>
 </tr>
@@ -78,14 +82,25 @@
 <figure><img src="../assets/shots/ja/posing.webp" srcset="../assets/shots/ja/posing-960.webp 960w, ../assets/shots/ja/posing.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="ポージングモード" loading="lazy" decoding="async"><figcaption>ポージングモード</figcaption></figure>
 <p><strong>シーン › ポージング › ポージングモード</strong> をオンにすると、ボーンを直接動かしてポーズを作れます。</p>
 <ul>
-<li>ボーンをクリックして選び、ドラッグして動かします。手や足をドラッグすると、腕・脚全体がついてきます。</li>
-<li>リングをドラッグすると回転します。</li>
-<li><strong>左右</strong> — 左右のポーズを反転したり、コピーしたりします。</li>
-<li><strong>+ ポーズを追加 › このポーズを保存</strong> で保存し、アバターメニューの <strong>ポーズ</strong> カードからすぐにオンにできます。</li>
-<li>Unity で作った <code>.anim</code> ファイルも読み込めます。</li>
+<li>ボーンをクリックして選び、リングをドラッグして回します。回転ギズモは、ボーンの大きさに合わせて表示されます。</li>
+<li>手や足をドラッグすると腕・脚全体がついてきて、<strong>Alt+ドラッグ</strong> でひじ・ひざの向きを変えられます。</li>
+<li><strong>左右対称</strong> — 片側を動かすと、反対側も一緒に動きます。<strong>左右</strong> で反転したり、片側をコピーしたりします。</li>
+<li><strong>カメラを見る</strong>・<strong>床に足をつける</strong> — 顔をカメラに向けたり、足を床に合わせたりします。</li>
+<li><strong>固定</strong> — 選んだボーンは、トラッキングやアニメーションで動かなくなります。</li>
+<li><strong>完了</strong> でポーズを保存し、アバターメニューの <strong>ポーズ</strong> カードからすぐにオンにできます。<strong>破棄</strong> したあとでも、<strong>Ctrl+Z</strong> で元に戻せます。</li>
+<li>最初から <strong>立ち休憩ポーズ</strong> と <strong>座りポーズ</strong> が入っています。座りポーズは腰・脚だけを変えて、頭・腕はトラッキングのままです。</li>
+<li>作ったポーズは、<strong>机のポーズにする</strong>（腕・手）や <strong>休憩ポーズにする</strong>（全身）に指定できます。</li>
 </ul>
 <blockquote class="callout tip"><p>ポージングモードをオフにする前に、ポーズを保存しておいてください。</p>
 </blockquote>
+<h2 id="ポーズライブラリ">ポーズライブラリ<a class="anchor" href="#ポーズライブラリ" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>シーン › ポージング › ポーズライブラリ</strong> で <code>.anim</code> ファイルが入ったフォルダーを選ぶと、すべてのポーズを <strong>今のアバターのサムネイル</strong> で表示します。</p>
+<ul>
+<li>サブフォルダーまで読み込み、ポーズ・手の形・モーションに分けて表示します。検索とお気に入りも使えます。</li>
+<li><strong>適用</strong> するとすぐにそのポーズになり、動くクリップはアニメーションとして再生されます。<strong>解除</strong> で元に戻ります。</li>
+<li><strong>編集</strong> でポージングモードに入って直し、新しいポーズとして保存します。</li>
+<li>Unity で作ったヒューマノイド・ボーンの <code>.anim</code> を、ひとつずつ読み込むこともできます。</li>
+</ul>
 <h2 id="オブジェクト">オブジェクト<a class="anchor" href="#オブジェクト" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/ja/props.webp" srcset="../assets/shots/ja/props-960.webp 960w, ../assets/shots/ja/props.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="オブジェクト" loading="lazy" decoding="async"><figcaption>オブジェクト</figcaption></figure>
 <p><strong>シーン › オブジェクト › + オブジェクトを追加</strong> で、テキスト、画像、図形、3D モデルを置きます。</p>
@@ -100,12 +115,15 @@
 <p>アバターのシェイプキーで、自分だけの表情を作ります。</p>
 <ol>
 <li><strong>新しい表情</strong> を押します。</li>
-<li>シェイプキーを検索して <strong>+</strong> で追加し、強さを調整します。</li>
+<li>横のパネルで、録画するようにシェイプキーを動かして表情を作ります。<strong>プレビュー強度</strong> で、無表情（0%）から表情（100%）までなぞりながら確認します。</li>
 <li><strong>保存</strong> すると、アバターメニューの <strong>マイ表情</strong> カードから押してオンにできます。</li>
 </ol>
+<ul>
+<li>Unity で作った表情のアニメーション（<code>.anim</code>、シェイプキー）も読み込めます。動くクリップは、表情をオンにしている間、再生されます。</li>
+</ul>
 <h2 id="自動表情">自動表情<a class="anchor" href="#自動表情" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>笑ったり驚いたりすると、決めておいた表情が自動で出ます。<strong>動き › 自動表情</strong> でオンにして、笑顔・驚き・ウインクなどの表情ごとに、表示する表情を割り当てます。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>前へ</span>設定</a><a class="next" href="12-troubleshooting.html"><span>次へ</span>トラブルシューティング</a></nav><p class="updated">最終更新: 2026-10-09</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#ポージング">ポージング</a></li><li><a href="#オブジェクト">オブジェクト</a></li><li><a href="#画面共有のほかのソース">画面共有のほかのソース</a></li><li><a href="#マイ表情">マイ表情</a></li><li><a href="#自動表情">自動表情</a></li></ul></nav>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#ポージング">ポージング</a></li><li><a href="#ポーズライブラリ">ポーズライブラリ</a></li><li><a href="#オブジェクト">オブジェクト</a></li><li><a href="#画面共有のほかのソース">画面共有のほかのソース</a></li><li><a href="#マイ表情">マイ表情</a></li><li><a href="#自動表情">自動表情</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

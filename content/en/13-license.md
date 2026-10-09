@@ -7,11 +7,11 @@
 | Price (BOOTH) | ¥1,990 | ¥3,980 |
 | Scope of use | Personal use (including private Discord sharing with friends) | Streaming · publishing videos · commercial use |
 | Avatar · tracking · menu · lighting · effects | ✅ | ✅ |
-| My expressions · Automatic expressions | ✅ | ✅ |
+| My expressions · Automatic expressions · Hierarchy · Shape keys · Photo | ✅ | ✅ |
 | Spout2 · Virtual camera · Screen share | ✅ | ✅ |
 | Maximum output | 1080p | 4K |
 | Watermark | Yes | No |
-| Posing · Objects · More screen share sources | — | ✅ |
+| Posing · Pose library · Objects · More screen share sources | — | ✅ |
 
 Prices are as shown on the BOOTH product page.
 
@@ -32,7 +32,7 @@ The full conditions are set out in the [Terms of Use](legal-terms.md).
 
 ## Experimental features
 
-Ultraleap, OSC · VMC and camera detection of the tongue and cheeks are experimental features. We expect them to work properly, but we haven't yet been able to test them with every device and app in the developer's environment.
+We expect the features marked **experimental** in the app, such as Ultraleap, OSC, VMC output and camera detection of the tongue and cheeks, to work properly, but we haven't yet been able to test them with every device and app in the developer's environment. We've confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment.
 
 ## Files you create
 

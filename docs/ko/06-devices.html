@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>장치 — AVATAR LIVE</title>
-<meta name="description" content="Ultraleap과 OSC · VMC는 실험적 기능입니다. 정상적으로 동작할 것으로 예상하지만, 아직 개발자 환경에서 모든 장치와 앱으로 테스트하지는 못했습니다.">
+<meta name="description" content="웹캠(전신 · 손가락 관절 포함), iPhone, VMC 입력은 실제 장비로 확인했습니다. 실험적으로 표시된 기능(Ultraleap, OSC 등)은 정상적으로 동작할 것으로 예상하지만, 아직 개발자 환경에서 모든 장치와 앱으로 테스트하지는 못했습니다. 문제가 있으면 설…">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ko/06-devices.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/06-devices.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/06-devices.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/06-devices.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/06-devices.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="장치 — AVATAR LIVE">
-<meta property="og:description" content="Ultraleap과 OSC · VMC는 실험적 기능입니다. 정상적으로 동작할 것으로 예상하지만, 아직 개발자 환경에서 모든 장치와 앱으로 테스트하지는 못했습니다.">
+<meta property="og:description" content="웹캠(전신 · 손가락 관절 포함), iPhone, VMC 입력은 실제 장비로 확인했습니다. 실험적으로 표시된 기능(Ultraleap, OSC 등)은 정상적으로 동작할 것으로 예상하지만, 아직 개발자 환경에서 모든 장치와 앱으로 테스트하지는 못했습니다. 문제가 있으면 설…">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ko/06-devices.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ko.jpg">
 <meta property="og:image:width" content="1200">
@@ -61,27 +61,48 @@
 <div class="shot">
 <figure><img src="../assets/shots/ko/sources.webp" srcset="../assets/shots/ko/sources-960.webp 960w, ../assets/shots/ko/sources.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="트래킹 소스" loading="lazy" decoding="async"><figcaption>트래킹 소스</figcaption></figure>
 <ul>
-<li>얼굴, 팔, 손, 손가락, 입을 무엇으로 움직일지 부위마다 고릅니다.</li>
+<li>얼굴, 입, 머리, 눈, 팔, 손, 손가락, 몸을 무엇으로 움직일지 부위마다 고릅니다.</li>
+<li>부위마다 <strong>웹캠</strong>, <strong>iPhone</strong>, <strong>VMC</strong>, <strong>Ultraleap</strong>(손)을 섞어 쓸 수 있습니다. 예를 들어 얼굴은 iPhone, 몸은 전신 트래커, 손은 웹캠으로 둘 수 있습니다.</li>
+<li><strong>얼굴 엔진</strong> — 웹캠 엔진이나 얼굴 앱(iPhone · VMC)을 고릅니다. 각 장치의 설정은 그 장치를 쓰는 부위 아래에 나옵니다.</li>
 <li><strong>입</strong>을 <strong>얼굴 + 마이크</strong>로 두면 말할 때는 목소리, 아닐 때는 입 모양을 따라갑니다.</li>
-<li><strong>얼굴 앱 연결</strong> — 웹캠 대신 iPhone(iFacialMocap) 같은 앱에서 얼굴을 받습니다.</li>
-<li><strong>Ultraleap 손 트래킹</strong> — Leap Motion 장치로 손을 추적합니다.</li>
-<li><strong>외부 트래킹</strong> — OSC · VMC로 다른 앱과 연결합니다.</li>
+<li><strong>손 떨림 보정</strong> — 가만히 있을 때 손과 손가락이 떨리지 않게 합니다.</li>
 </ul>
 </div>
-<blockquote class="callout tip"><p>Ultraleap과 OSC · VMC는 실험적 기능입니다. 정상적으로 동작할 것으로 예상하지만, 아직 개발자 환경에서 모든 장치와 앱으로 테스트하지는 못했습니다.</p>
+<h2 id="전신--손가락-관절-웹캠">전신 · 손가락 관절 (웹캠)<a class="anchor" href="#전신--손가락-관절-웹캠" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li><strong>몸</strong>을 웹캠으로 두면 <strong>전신</strong> 스위치가 나옵니다. 켜면 카메라에 보이는 몸통과 다리를 따라가고, 옆에 <strong>앉음 · 서 있음 · 다리 추적 · 다리 추정</strong>이 표시됩니다.</li>
+<li>책상 앞처럼 다리가 보이지 않을 때는 어깨 움직임만으로 상체가 기울고 돌아갑니다. 보이지 않는 다리는 아바타 자세로 둡니다.</li>
+<li><strong>손가락</strong>을 웹캠으로 두면 <strong>손가락 관절 추적</strong> 스위치가 나옵니다. 켜면 손가락 마디마다의 굽힘, 벌림, 엄지를 카메라로 따라갑니다.</li>
+</ul>
+<h2 id="vmc로-받기-전신-트래커--장갑--다른-앱">VMC로 받기 (전신 트래커 · 장갑 · 다른 앱)<a class="anchor" href="#vmc로-받기-전신-트래커--장갑--다른-앱" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="steps">
+<ol>
+<li>보내는 앱(전신 트래커 앱, 장갑 앱, 모션 캡처 앱 등)에서 VMC 송신을 켜고 이 PC로 보냅니다.</li>
+<li><strong>트래킹 소스</strong>에서 VMC로 받을 부위의 소스를 <strong>VMC</strong>로 고릅니다. 다른 부위는 웹캠 · iPhone 그대로 둘 수 있습니다.</li>
+<li><strong>VMC 설정</strong>에서 받는 본 개수와 데이터가 들어오는지 확인합니다.</li>
+<li>자세가 어긋나면 <strong>T자세</strong> 또는 <strong>정렬</strong>을 누릅니다. <strong>초기화</strong>로 되돌립니다.</li>
+</ol>
+</div>
+<ul>
+<li>손가락은 마디마다의 회전, 벌림, 엄지까지 그대로 반영합니다.</li>
+<li>팔을 VMC로 받는 중에 입력이 끊기면 팔이 책상(키보드 · 마우스) 자세로 돌아갑니다.</li>
+</ul>
+<blockquote class="callout tip"><p>웹캠(전신 · 손가락 관절 포함), iPhone, VMC 입력은 실제 장비로 확인했습니다. <strong>실험적</strong>으로 표시된 기능(Ultraleap, OSC 등)은 정상적으로 동작할 것으로 예상하지만, 아직 개발자 환경에서 모든 장치와 앱으로 테스트하지는 못했습니다. 문제가 있으면 <strong>설정 › 진단 › 오류 리포트 보내기</strong>로 알려 주세요.</p>
 </blockquote>
-<h2 id="iphone으로-얼굴-트래킹-ifacialmocap">iPhone으로 얼굴 트래킹 (iFacialMocap)<a class="anchor" href="#iphone으로-얼굴-트래킹-ifacialmocap" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="iphone으로-얼굴-트래킹-ifacialmocap--facemotion3d">iPhone으로 얼굴 트래킹 (iFacialMocap · FaceMotion3D)<a class="anchor" href="#iphone으로-얼굴-트래킹-ifacialmocap--facemotion3d" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="steps">
 <ol>
 <li>iPhone과 PC를 같은 Wi-Fi에 연결합니다.</li>
-<li><strong>얼굴 앱 연결</strong>에서 소스를 <strong>iFacialMocap</strong>으로 고르고, <strong>이 PC의 주소</strong>를 <strong>복사</strong>합니다.</li>
-<li>iPhone의 iFacialMocap 앱에서 톱니바퀴 › <strong>Destination IP address</strong>에 그 주소를 입력합니다.</li>
-<li>스위치를 켜면 iPhone의 표정이 아바타에 반영됩니다.</li>
+<li><strong>얼굴 엔진</strong>에서 얼굴 앱으로 <strong>iFacialMocap</strong> 또는 <strong>FaceMotion3D</strong>를 고르고, <strong>이 PC의 주소</strong>를 <strong>복사</strong>합니다.</li>
+<li>iPhone의 iFacialMocap 앱에서는 톱니바퀴 › <strong>Destination IP address</strong>에 그 주소를 입력합니다. FaceMotion3D는 앱의 연결 설정에서 이 PC 주소로 보내도록 합니다.</li>
+<li>스위치를 켜면 iPhone의 표정이 아바타에 반영됩니다. 표정이 어떻게 나오는지는 아바타 설정을 따릅니다 (<a href="07-motion.html#표정이-움직이는-방식">표정이 움직이는 방식</a> 참고).</li>
+<li>연결이 안 되면 <strong>연결 테스트</strong>를 눌러 데이터가 들어오는지 확인합니다.</li>
 </ol>
 </div>
 <blockquote class="callout tip"><p><strong>iPhone 주소 (선택)</strong> 칸은 비워 두어도 됩니다. iFacialMocap 앱에서 Destination IP address를 쓰지 않을 때만 입력하세요.</p>
+<p>💡 <strong>끊기면 웹캠으로 대체</strong>를 켜 두면 iPhone 연결이 끊겼을 때 웹캠이 잠시 대신 추적합니다.</p>
 </blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>이전</span>아바타 메뉴</a><a class="next" href="07-motion.html"><span>다음</span>동작</a></nav><p class="updated">최종 업데이트: 2026-10-09</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#웹캠과-마이크">웹캠과 마이크</a></li><li><a href="#트래킹-소스">트래킹 소스</a></li><li><a href="#iphone으로-얼굴-트래킹-ifacialmocap">iPhone으로 얼굴 트래킹 (iFacialMocap)</a></li></ul></nav>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#웹캠과-마이크">웹캠과 마이크</a></li><li><a href="#트래킹-소스">트래킹 소스</a></li><li><a href="#전신--손가락-관절-웹캠">전신 · 손가락 관절 (웹캠)</a></li><li><a href="#vmc로-받기-전신-트래커--장갑--다른-앱">VMC로 받기 (전신 트래커 · 장갑 · 다른 앱)</a></li><li><a href="#iphone으로-얼굴-트래킹-ifacialmocap--facemotion3d">iPhone으로 얼굴 트래킹 (iFacialMocap · FaceMotion3D)</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

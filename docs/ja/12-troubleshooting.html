@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>トラブルシューティング — AVATAR LIVE</title>
-<meta name="description" content="解決しない場合は、設定 › 診断 › エラーレポートを送る からお知らせください。">
+<meta name="description" content="解決しないバグや問題は 設定 › 診断 › エラーレポートを送る から、欲しい機能や改善点は 設定 › 情報 › 改善の提案を送る からお知らせください。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ja/12-troubleshooting.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/12-troubleshooting.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/12-troubleshooting.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/12-troubleshooting.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="トラブルシューティング — AVATAR LIVE">
-<meta property="og:description" content="解決しない場合は、設定 › 診断 › エラーレポートを送る からお知らせください。">
+<meta property="og:description" content="解決しないバグや問題は 設定 › 診断 › エラーレポートを送る から、欲しい機能や改善点は 設定 › 情報 › 改善の提案を送る からお知らせください。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ja/12-troubleshooting.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ja.jpg">
 <meta property="og:image:width" content="1200">
@@ -44,7 +44,7 @@
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
   <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html" aria-current="page">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="12-トラブルシューティング">12. トラブルシューティング<a class="anchor" href="#12-トラブルシューティング" aria-hidden="true" tabindex="-1">#</a></h1>
-<blockquote class="callout tip"><p>解決しない場合は、<strong>設定 › 診断 › エラーレポートを送る</strong> からお知らせください。</p>
+<blockquote class="callout tip"><p>解決しないバグや問題は <strong>設定 › 診断 › エラーレポートを送る</strong> から、欲しい機能や改善点は <strong>設定 › 情報 › 改善の提案を送る</strong> からお知らせください。</p>
 </blockquote>
 <h2 id="起動インストール">起動・インストール<a class="anchor" href="#起動インストール" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
@@ -125,6 +125,18 @@
 <td>PC が重い</td>
 <td>トラッキング品質を <strong>バランス</strong> か <strong>エコ</strong> に</td>
 </tr>
+<tr>
+<td>手・指が震える</td>
+<td><strong>デバイス › トラッキングソース › 手ぶれ補正</strong> を上げる</td>
+</tr>
+<tr>
+<td>アバターが動かない</td>
+<td><strong>デバイス › トラッキングソース</strong> で、部位のソースが使っていないデバイス（VMC など）になっていないか確認</td>
+</tr>
+<tr>
+<td>VMC で受け取ったポーズがずれる</td>
+<td><strong>VMC 設定</strong> で <strong>Tポーズ</strong> または <strong>合わせる</strong></td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="マイク">マイク<a class="anchor" href="#マイク" aria-hidden="true" tabindex="-1">#</a></h2>
@@ -204,11 +216,15 @@
 </tr>
 <tr>
 <td>✅ 顔</td>
-<td>VRCFaceTracking、ARKit（Perfect Sync）、MMD の目のモーフ</td>
+<td>アバターの設定に従う：VRCFaceTracking、ARKit の 52 個のシェイプキー（Perfect Sync）、MMD の目のモーフ</td>
+</tr>
+<tr>
+<td>✅ トラッキング</td>
+<td>Web カメラ（顔・腕・手・指）、iPhone（iFacialMocap・FaceMotion3D）、VMC（部位ごと：腕・手・指・体・頭・目）</td>
 </tr>
 <tr>
 <td>🧪 実験的機能</td>
-<td>Ultraleap、OSC・VMC、舌・頬のカメラ検出</td>
+<td>Ultraleap、OSC、VMC 出力、舌・頬のカメラ検出</td>
 </tr>
 <tr>
 <td>⚠️ 非対応</td>
@@ -216,14 +232,12 @@
 </tr>
 </tbody>
 </table></div>
-<p>実験的機能は正常に動作する見込みですが、まだ開発者の環境ですべてのデバイスとアプリでテストできてはいません。</p>
+<p>Web カメラ（全身・指の関節を含む）、iPhone、VMC の入力は、実際の機器で確認済みです。実験的機能は正常に動作する見込みですが、まだ開発者の環境ですべてのデバイスとアプリでテストできていないため、アプリに <strong>試験的</strong> と表示しています。使ってみて問題があれば、<strong>エラーレポートを送る</strong> からお知らせください。</p>
 <h2 id="今後の対応予定">今後の対応予定<a class="anchor" href="#今後の対応予定" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>VRM モデル（.vrm、VRM 0.x / 1.0）の読み込みと、.vrma アニメーションの再生</li>
 <li>パーフェクトシンクの強化：シェイプキーを直接割り当てるマッピング、Web カメラ・iPhone ごとの顔補正、52種類の表情をひとつずつ確認できるツール</li>
 <li>スマホの顔アプリの追加：VTube Studio（iPhone）、MeowFace（Android）</li>
-<li>Web カメラでの上半身：肩の動きによる上半身のひねり・傾き</li>
-<li>全身トラッキングアプリとの連携強化（VMC）：顔アプリと体アプリの同時受信、座る・かがむ動作の反映 — TDPT、XR Animator など</li>
 <li>便利機能：アバターを書き出し直すと自動で再読み込み、何もしていないときの FPS 節約</li>
 </ul>
 <p>※予定の機能と時期は、変更になる場合があります。</p>

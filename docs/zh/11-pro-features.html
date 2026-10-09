@@ -57,6 +57,10 @@
 <td>Pro</td>
 </tr>
 <tr>
+<td><a href="#姿势库">姿势库</a></td>
+<td>Pro</td>
+</tr>
+<tr>
 <td><a href="#物体">物体</a></td>
 <td>Pro</td>
 </tr>
@@ -78,14 +82,25 @@
 <figure><img src="../assets/shots/zh/posing.webp" srcset="../assets/shots/zh/posing-960.webp 960w, ../assets/shots/zh/posing.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="摆姿势模式" loading="lazy" decoding="async"><figcaption>摆姿势模式</figcaption></figure>
 <p>开启 <strong>场景 › 摆姿势 › 摆姿势模式</strong> 后，可以直接移动骨骼来摆出姿势。</p>
 <ul>
-<li>点击骨骼进行选择，拖动即可移动。拖动手或脚时，整条手臂 · 腿会随之移动。</li>
-<li>拖动圆环即可旋转。</li>
-<li><strong>左右</strong> — 翻转或复制左右两侧的姿势。</li>
-<li>用 <strong>+ 添加姿势 › 保存当前姿势</strong> 保存后，可在角色菜单的 <strong>姿势</strong> 卡片中直接开启。</li>
-<li>也可以导入在 Unity 中制作的 <code>.anim</code> 文件。</li>
+<li>点击骨骼进行选择，拖动圆环即可旋转。旋转控件会按骨骼的大小显示。</li>
+<li>拖动手或脚时，整条手臂 · 腿会随之移动；用 <strong>Alt+拖动</strong> 改变手肘 · 膝盖的朝向。</li>
+<li><strong>对称编辑</strong> — 移动一侧时，另一侧也会一起移动。用 <strong>左右</strong> 翻转，或复制一侧。</li>
+<li><strong>看向镜头</strong> · <strong>脚贴地面</strong> — 让面部转向镜头，让脚贴合地面。</li>
+<li><strong>锁定</strong> — 选中的骨骼不会被追踪和动画移动。</li>
+<li>用 <strong>完成</strong> 保存姿势后，可在角色菜单的 <strong>姿势</strong> 卡片中直接开启。即使点击了 <strong>放弃</strong>，也可以用 <strong>Ctrl+Z</strong> 恢复。</li>
+<li>默认包含 <strong>站立休息姿势</strong> 和 <strong>坐姿</strong>。坐姿只改变骨盆 · 腿部，头部 · 手臂保持追踪。</li>
+<li>制作的姿势可以通过 <strong>设为桌面姿势</strong>（手臂 · 手）或 <strong>设为休息姿势</strong>（全身）来使用。</li>
 </ul>
 <blockquote class="callout tip"><p>关闭摆姿势模式前，请先保存姿势。</p>
 </blockquote>
+<h2 id="姿势库">姿势库<a class="anchor" href="#姿势库" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>在 <strong>场景 › 摆姿势 › 姿势库</strong> 中选择存放 <code>.anim</code> 文件的文件夹后，所有姿势都会以 <strong>当前角色的缩略图</strong> 显示。</p>
+<ul>
+<li>会读取到子文件夹，并按姿势 · 手势 · 动作分类显示。可以使用搜索和收藏。</li>
+<li>点击 <strong>应用</strong> 即可立即摆出该姿势，会动的剪辑则作为动画播放。用 <strong>解除</strong> 恢复原状。</li>
+<li>用 <strong>编辑</strong> 在摆姿势模式中修改后，保存为新姿势。</li>
+<li>也可以逐个导入在 Unity 中制作的人形 · 骨骼 <code>.anim</code>。</li>
+</ul>
 <h2 id="物体">物体<a class="anchor" href="#物体" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/zh/props.webp" srcset="../assets/shots/zh/props-960.webp 960w, ../assets/shots/zh/props.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="物体" loading="lazy" decoding="async"><figcaption>物体</figcaption></figure>
 <p>通过 <strong>场景 › 物体 › + 添加物体</strong> 放置文字、图片、形状和 3D 模型。</p>
@@ -100,12 +115,15 @@
 <p>用角色的形态键制作属于自己的表情。</p>
 <ol>
 <li>点击 <strong>新建表情</strong>。</li>
-<li>搜索形态键，用 <strong>+</strong> 添加并调整强度。</li>
+<li>在旁边的面板中，像录制一样调整形态键来制作表情。用 <strong>预览强度</strong> 从无表情（0%）到表情（100%）滑动查看。</li>
 <li>点击 <strong>保存</strong> 后，即可在角色菜单的 <strong>我的表情</strong> 卡片中点击开启。</li>
 </ol>
+<ul>
+<li>也可以导入在 Unity 中制作的表情动画（<code>.anim</code>，形态键）。会动的剪辑在表情开启期间播放。</li>
+</ul>
 <h2 id="自动表情">自动表情<a class="anchor" href="#自动表情" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>微笑或惊讶时，会自动显示预先设定的表情。在 <strong>动作 › 自动表情</strong> 中开启，并为微笑 · 惊讶 · 眨眼等每种表情关联要显示的表情。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>上一页</span>设置</a><a class="next" href="12-troubleshooting.html"><span>下一页</span>故障排除</a></nav><p class="updated">最后更新: 2026-10-09</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#摆姿势">摆姿势</a></li><li><a href="#物体">物体</a></li><li><a href="#屏幕共享更多来源">屏幕共享更多来源</a></li><li><a href="#我的表情">我的表情</a></li><li><a href="#自动表情">自动表情</a></li></ul></nav>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#摆姿势">摆姿势</a></li><li><a href="#姿势库">姿势库</a></li><li><a href="#物体">物体</a></li><li><a href="#屏幕共享更多来源">屏幕共享更多来源</a></li><li><a href="#我的表情">我的表情</a></li><li><a href="#自动表情">自动表情</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

@@ -18,7 +18,7 @@ Send the avatar image to your streaming software or call apps.
 - **Output image** — Choose the size of the image you send.
 - **Spout2** — Turn it on and add a **Spout2 Capture** source in OBS, and the avatar appears. Set the background to **Transparent** to send it without a background.
 - **Virtual camera** — The first time only, click **Install the virtual camera…**, then choose **Avatar Live Camera** as the camera in the other app.
-- **Photo** — **Save PNG** saves the view without the menus.
+- **Photo** — **Save PNG** saves the view. Choose from **No UI · With UI · Clear background**, and turn on **Eyes on the camera** to have the avatar look at the camera. Available in both Basic and Pro.
 
 </div>
 
@@ -46,4 +46,4 @@ Send the avatar image to your streaming software or call apps.
 
 ## External output (VMC)
 
-Turn on **VMC output** to send the avatar's movement to another app. This is an experimental feature.
+Turn on **VMC output** to send the avatar's movement to another app. This is an experimental feature. To **receive** movement over VMC, please see [Devices › Receiving over VMC](06-devices.md#receiving-over-vmc-full-body-trackers--gloves--other-apps).

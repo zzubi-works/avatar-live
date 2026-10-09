@@ -57,6 +57,10 @@
 <td>Pro</td>
 </tr>
 <tr>
+<td><a href="#pose-library">Pose library</a></td>
+<td>Pro</td>
+</tr>
+<tr>
 <td><a href="#objects">Objects</a></td>
 <td>Pro</td>
 </tr>
@@ -78,14 +82,25 @@
 <figure><img src="../assets/shots/en/posing.webp" srcset="../assets/shots/en/posing-960.webp 960w, ../assets/shots/en/posing.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="Posing mode" loading="lazy" decoding="async"><figcaption>Posing mode</figcaption></figure>
 <p>Turn on <strong>Scene › Posing › Posing mode</strong> to create a pose by moving the bones directly.</p>
 <ul>
-<li>Click a bone to select it, and drag to move it. Drag a hand or foot, and the whole arm or leg follows.</li>
-<li>Drag a ring to rotate.</li>
-<li><strong>Left / right</strong> — Flip the left and right sides of the pose, or copy one side to the other.</li>
-<li>Save it with <strong>+ Add pose › Save this pose</strong>, and turn it on right away from the <strong>Poses</strong> card in the avatar menu.</li>
-<li>You can also load <code>.anim</code> files made in Unity.</li>
+<li>Click a bone to select it, and drag a ring to rotate it. The rotation gizmo is sized to fit the bone.</li>
+<li>Drag a hand or foot, and the whole arm or leg follows. Use <strong>Alt+drag</strong> to change which way the elbow or knee points.</li>
+<li><strong>Symmetry</strong> — Move one side, and the other side moves with it. Use <strong>Left / right</strong> to flip the pose or copy one side to the other.</li>
+<li><strong>Face camera</strong> · <strong>Feet on floor</strong> — Turn the face toward the camera, and line the feet up with the floor.</li>
+<li><strong>Lock</strong> — Tracking and animations don't move the bones you lock.</li>
+<li>Save the pose with <strong>Done</strong>, and turn it on right away from the <strong>Poses</strong> card in the avatar menu. Even after <strong>Discard</strong>, you can bring it back with <strong>Ctrl+Z</strong>.</li>
+<li><strong>Standing rest</strong> and <strong>Sitting</strong> poses are included from the start. The sitting pose changes only the hips and legs, and the head and arms keep tracking.</li>
+<li>You can set a pose you made as <strong>Use as the desk pose (arms and hands)</strong> or <strong>Rest pose (whole body)</strong>.</li>
 </ul>
 <blockquote class="callout tip"><p>Please save your pose before you turn off posing mode.</p>
 </blockquote>
+<h2 id="pose-library">Pose library<a class="anchor" href="#pose-library" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>In <strong>Scene › Posing › Pose library</strong>, choose a folder that holds <code>.anim</code> files, and every pose is shown as a <strong>thumbnail of your current avatar</strong>.</p>
+<ul>
+<li>Subfolders are read too, and clips are sorted into poses, hand shapes and motions. You can use search and favorites.</li>
+<li>Click <strong>Apply</strong>, and the avatar takes that pose right away. Clips that move play as animations. Use <strong>Release</strong> to go back.</li>
+<li>Use <strong>Edit</strong> to fix it up in posing mode, then save it as a new pose.</li>
+<li>You can also load humanoid · bone <code>.anim</code> files made in Unity one at a time.</li>
+</ul>
 <h2 id="objects">Objects<a class="anchor" href="#objects" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/en/props.webp" srcset="../assets/shots/en/props-960.webp 960w, ../assets/shots/en/props.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="Objects" loading="lazy" decoding="async"><figcaption>Objects</figcaption></figure>
 <p>Use <strong>Scene › Objects › + Add object</strong> to place text, images, shapes and 3D models.</p>
@@ -100,12 +115,15 @@
 <p>Create your own expressions from the avatar's shape keys.</p>
 <ol>
 <li>Click <strong>New expression</strong>.</li>
-<li>Search for shape keys, add them with <strong>+</strong>, and adjust their strength.</li>
+<li>In the side panel, move the shape keys as if you were recording them to build the expression. Use <strong>Preview</strong> to sweep from a neutral face (0%) to the full expression (100%) and check it.</li>
 <li>Click <strong>Save</strong>, and you can turn the expression on from the <strong>My expressions</strong> card in the avatar menu.</li>
 </ol>
+<ul>
+<li>You can also load expression animations made in Unity (<code>.anim</code> with shape keys). Clips that move play while the expression is on.</li>
+</ul>
 <h2 id="automatic-expressions">Automatic expressions<a class="anchor" href="#automatic-expressions" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>When you smile or look surprised, an expression you've chosen appears automatically. Turn it on in <strong>Motion › Automatic expressions</strong>, and link an expression to show for each one, such as smile · surprise · wink.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>Previous</span>Settings</a><a class="next" href="12-troubleshooting.html"><span>Next</span>Troubleshooting</a></nav><p class="updated">Last updated: 2026-10-09</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#posing">Posing</a></li><li><a href="#objects">Objects</a></li><li><a href="#more-screen-share-sources">More screen share sources</a></li><li><a href="#my-expressions">My expressions</a></li><li><a href="#automatic-expressions">Automatic expressions</a></li></ul></nav>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#posing">Posing</a></li><li><a href="#pose-library">Pose library</a></li><li><a href="#objects">Objects</a></li><li><a href="#more-screen-share-sources">More screen share sources</a></li><li><a href="#my-expressions">My expressions</a></li><li><a href="#automatic-expressions">Automatic expressions</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

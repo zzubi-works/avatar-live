@@ -55,6 +55,36 @@
 <li><strong>面部追踪</strong> — 开启或关闭面部表情追踪。</li>
 </ul>
 </div>
+<h2 id="表情的驱动方式">表情的驱动方式<a class="anchor" href="#表情的驱动方式" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>面部表情 <strong>完全按照角色中已有的设置来驱动。</strong> Avatar Live 不会为角色新建或转换表情。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>角色设置</th>
+<th>驱动方式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>有 <strong>VRCFaceTracking（VRCFT）</strong> 参数</td>
+<td>通过角色的 VRCFT 设置驱动。</td>
+</tr>
+<tr>
+<td>有 <strong>52 个 ARKit 形态键</strong>（Perfect Sync）</td>
+<td>直接驱动这些形态键。</td>
+</tr>
+<tr>
+<td>两者都没有</td>
+<td>以眨眼、口型同步等角色自带的基本表情为主，细腻的表情可能无法呈现。</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>即使摄像头或 iPhone 以 52 个表情为单位读取，角色中没有对应参数或形态键的表情也不会显示。</li>
+<li>如果角色只有部分形态键，则只驱动已有的部分。</li>
+</ul>
+<blockquote class="callout tip"><p>今后计划改进为：识别全部 52 个表情并对应到角色上，或者让没有这些设置的角色也能直接绑定到面部。时间可能会有变动。</p>
+</blockquote>
 <h2 id="自动面部设置">自动面部设置<a class="anchor" href="#自动面部设置" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/zh/facecal.webp" srcset="../assets/shots/zh/facecal-960.webp 960w, ../assets/shots/zh/facecal.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="自动面部设置" loading="lazy" decoding="async"><figcaption>自动面部设置</figcaption></figure>
 <p>点击 <strong>自动面部设置</strong> 按钮即开始校准。请按照画面引导做出表情，然后点击 <strong>测量</strong>。最后点击 <strong>应用</strong>，表情就会按照你的面部进行调整。</p>
@@ -88,6 +118,8 @@
 <li><strong>头部动作</strong> — 从 <strong>轻微 · 自然 · 夸张</strong> 中选择。</li>
 <li><strong>身体跟随</strong> — 转动头部时，身体也会自然地跟随。</li>
 <li><strong>自然的身体动作 · 呼吸</strong> — 即使静止不动，也会像活着一样动起来。</li>
+<li><strong>上半身</strong> — 开启摄像头全身后，会根据肩部动作让上半身倾斜和转动。在看不到腿部的桌前也可以使用。</li>
+<li><strong>全身</strong> — 用摄像头或 VMC 跟随躯干、腿部以及坐下 · 站立。请参考 <a href="06-devices.html#全身--手指关节摄像头">设备 › 全身 · 手指关节</a>。</li>
 </ul>
 </div>
 <h2 id="手--桌面">手 · 桌面<a class="anchor" href="#手--桌面" aria-hidden="true" tabindex="-1">#</a></h2>
@@ -97,12 +129,14 @@
 <li><strong>桌面互动</strong> — 摄像头看不到手时，角色的手会配合键盘和鼠标操作而动。</li>
 <li><strong>手部默认姿势</strong> — 调整桌面高度、双手间距和手腕角度。</li>
 <li><strong>键盘 · 鼠标输入反应</strong> — 设定打字和鼠标动作的幅度。</li>
+<li>放下手后会立即进入桌面姿势，再次抬起时会平滑地回到追踪。即使身体大幅摇晃或处于坐姿，手肘也会自然地跟随。</li>
+<li>在摆姿势中制作的手臂 · 手部姿势，可以通过 <strong>设为桌面姿势</strong> 来使用（Pro）。</li>
 </ul>
 </div>
 <blockquote class="callout privacy"><p>键盘输入仅用于驱动角色的手，不会保存或发送输入的文字。</p>
 <p>💡 舌头 · 鼓腮的摄像头检测是实验性功能。</p>
 </blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>上一页</span>设备</a><a class="next" href="08-scene.html"><span>下一页</span>场景</a></nav><p class="updated">最后更新: 2026-10-09</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#面部追踪">面部追踪</a></li><li><a href="#自动面部设置">自动面部设置</a></li><li><a href="#面部调整">面部调整</a></li><li><a href="#眨眼--嘴巴">眨眼 · 嘴巴</a></li><li><a href="#身体">身体</a></li><li><a href="#手--桌面">手 · 桌面</a></li></ul></nav>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#面部追踪">面部追踪</a></li><li><a href="#表情的驱动方式">表情的驱动方式</a></li><li><a href="#自动面部设置">自动面部设置</a></li><li><a href="#面部调整">面部调整</a></li><li><a href="#眨眼--嘴巴">眨眼 · 嘴巴</a></li><li><a href="#身体">身体</a></li><li><a href="#手--桌面">手 · 桌面</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

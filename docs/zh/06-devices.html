@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>设备 — AVATAR LIVE</title>
-<meta name="description" content="Ultraleap 和 OSC · VMC 是实验性功能。预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。">
+<meta name="description" content="摄像头（含全身 · 手指关节）、iPhone、VMC 输入已用实际设备确认。标有 实验性 的功能（Ultraleap、OSC 等）预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。如有问题，请通过 设置 › 诊断 › 发送错误报告 告诉我们。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/06-devices.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/06-devices.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/06-devices.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/06-devices.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/06-devices.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="设备 — AVATAR LIVE">
-<meta property="og:description" content="Ultraleap 和 OSC · VMC 是实验性功能。预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。">
+<meta property="og:description" content="摄像头（含全身 · 手指关节）、iPhone、VMC 输入已用实际设备确认。标有 实验性 的功能（Ultraleap、OSC 等）预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。如有问题，请通过 设置 › 诊断 › 发送错误报告 告诉我们。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/06-devices.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
 <meta property="og:image:width" content="1200">
@@ -61,27 +61,48 @@
 <div class="shot">
 <figure><img src="../assets/shots/zh/sources.webp" srcset="../assets/shots/zh/sources-960.webp 960w, ../assets/shots/zh/sources.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="追踪来源" loading="lazy" decoding="async"><figcaption>追踪来源</figcaption></figure>
 <ul>
-<li>为面部、手臂、手、手指、嘴分别选择用什么来驱动。</li>
+<li>为面部、嘴、头部、眼睛、手臂、手、手指、身体分别选择用什么来驱动。</li>
+<li>每个部位都可以混用 <strong>摄像头</strong>、<strong>iPhone</strong>、<strong>VMC</strong>、<strong>Ultraleap</strong>（手）。例如，面部用 iPhone，身体用全身追踪器，手用摄像头。</li>
+<li><strong>面部引擎</strong> — 选择摄像头引擎或面部应用（iPhone · VMC）。各设备的设置会显示在使用该设备的部位下方。</li>
 <li>将 <strong>嘴</strong> 设为 <strong>面部 + 麦克风</strong> 后，说话时跟随声音，不说话时跟随嘴形。</li>
-<li><strong>面部应用连接</strong> — 不使用摄像头，而是从 iPhone（iFacialMocap）等应用接收面部数据。</li>
-<li><strong>Ultraleap 手部追踪</strong> — 使用 Leap Motion 设备追踪手部。</li>
-<li><strong>外部追踪</strong> — 通过 OSC · VMC 与其他应用连接。</li>
+<li><strong>手部防抖</strong> — 静止时让手和手指不会抖动。</li>
 </ul>
 </div>
-<blockquote class="callout tip"><p>Ultraleap 和 OSC · VMC 是实验性功能。预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。</p>
+<h2 id="全身--手指关节摄像头">全身 · 手指关节（摄像头）<a class="anchor" href="#全身--手指关节摄像头" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>将 <strong>身体</strong> 设为摄像头后，会出现 <strong>全身</strong> 开关。开启后会跟随摄像头中可见的躯干和腿部，旁边会显示 <strong>坐姿 · 站姿 · 腿部追踪 · 腿部推定</strong>。</li>
+<li>在桌前等看不到腿部时，仅凭肩部动作也能让上半身倾斜和转动。看不到的腿部保持角色自身的姿势。</li>
+<li>将 <strong>手指</strong> 设为摄像头后，会出现 <strong>手指关节追踪</strong> 开关。开启后，摄像头会跟随每个手指关节的弯曲、张开以及拇指的动作。</li>
+</ul>
+<h2 id="通过-vmc-接收全身追踪器--手套--其他应用">通过 VMC 接收（全身追踪器 · 手套 · 其他应用）<a class="anchor" href="#通过-vmc-接收全身追踪器--手套--其他应用" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="steps">
+<ol>
+<li>在发送端应用（全身追踪器应用、手套应用、动作捕捉应用等）中开启 VMC 发送，并发送到本机。</li>
+<li>在 <strong>追踪来源</strong> 中，将要通过 VMC 接收的部位的来源选为 <strong>VMC</strong>。其他部位可以继续使用摄像头 · iPhone。</li>
+<li>在 <strong>VMC 设置</strong> 中确认接收的骨骼数量以及数据是否传入。</li>
+<li>姿势有偏差时，点击 <strong>T 姿势</strong> 或 <strong>对齐</strong>。用 <strong>重置</strong> 恢复原状。</li>
+</ol>
+</div>
+<ul>
+<li>手指会如实反映每个关节的旋转、张开，乃至拇指的动作。</li>
+<li>通过 VMC 接收手臂时，如果输入中断，手臂会回到桌面（键盘 · 鼠标）姿势。</li>
+</ul>
+<blockquote class="callout tip"><p>摄像头（含全身 · 手指关节）、iPhone、VMC 输入已用实际设备确认。标有 <strong>实验性</strong> 的功能（Ultraleap、OSC 等）预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。如有问题，请通过 <strong>设置 › 诊断 › 发送错误报告</strong> 告诉我们。</p>
 </blockquote>
-<h2 id="用-iphone-进行面部追踪ifacialmocap">用 iPhone 进行面部追踪（iFacialMocap）<a class="anchor" href="#用-iphone-进行面部追踪ifacialmocap" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="用-iphone-进行面部追踪ifacialmocap--facemotion3d">用 iPhone 进行面部追踪（iFacialMocap · FaceMotion3D）<a class="anchor" href="#用-iphone-进行面部追踪ifacialmocap--facemotion3d" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="steps">
 <ol>
 <li>将 iPhone 和电脑连接到同一个 Wi-Fi。</li>
-<li>在 <strong>面部应用连接</strong> 中将来源选为 <strong>iFacialMocap</strong>，然后 <strong>复制</strong> <strong>本机地址</strong>。</li>
-<li>在 iPhone 的 iFacialMocap 应用中，点击齿轮 › <strong>Destination IP address</strong>（目标 IP 地址），输入该地址。</li>
-<li>打开开关后，iPhone 的表情就会应用到角色上。</li>
+<li>在 <strong>面部引擎</strong> 中选择面部应用 <strong>iFacialMocap</strong> 或 <strong>FaceMotion3D</strong>，然后 <strong>复制</strong> <strong>本机地址</strong>。</li>
+<li>在 iPhone 的 iFacialMocap 应用中，点击齿轮 › <strong>Destination IP address</strong>（目标 IP 地址），输入该地址。使用 FaceMotion3D 时，请在应用的连接设置中设为发送到本机地址。</li>
+<li>打开开关后，iPhone 的表情就会应用到角色上。表情如何呈现取决于角色自身的设置（参见 <a href="07-motion.html#表情的驱动方式">表情的驱动方式</a>）。</li>
+<li>无法连接时，点击 <strong>测试连接</strong>，确认是否有数据传入。</li>
 </ol>
 </div>
 <blockquote class="callout tip"><p><strong>iPhone地址（可选）</strong> 栏可以留空。仅在 iFacialMocap 应用中不使用 Destination IP address 时才需要填写。</p>
+<p>💡 开启 <strong>断开时由摄像头接替</strong> 后，iPhone 连接断开时，摄像头会暂时代为追踪。</p>
 </blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>上一页</span>角色菜单</a><a class="next" href="07-motion.html"><span>下一页</span>动作</a></nav><p class="updated">最后更新: 2026-10-09</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#摄像头与麦克风">摄像头与麦克风</a></li><li><a href="#追踪来源">追踪来源</a></li><li><a href="#用-iphone-进行面部追踪ifacialmocap">用 iPhone 进行面部追踪（iFacialMocap）</a></li></ul></nav>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#摄像头与麦克风">摄像头与麦克风</a></li><li><a href="#追踪来源">追踪来源</a></li><li><a href="#全身--手指关节摄像头">全身 · 手指关节（摄像头）</a></li><li><a href="#通过-vmc-接收全身追踪器--手套--其他应用">通过 VMC 接收（全身追踪器 · 手套 · 其他应用）</a></li><li><a href="#用-iphone-进行面部追踪ifacialmocap--facemotion3d">用 iPhone 进行面部追踪（iFacialMocap · FaceMotion3D）</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

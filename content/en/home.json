@@ -58,8 +58,8 @@
         "media": "video:physbone"
       },
       {
-        "title": "Face tracking",
-        "body": "Expressions, gaze and even fingers with a single webcam. Uses your avatar's VRCFaceTracking setup as it is.",
+        "title": "From face to full body",
+        "body": "Expressions, gaze, finger joints and even full body with a single webcam. Mix in an iPhone and VMC (full-body trackers · gloves) part by part.",
         "media": "video:face"
       },
       {
@@ -168,11 +168,11 @@
       },
       {
         "title": "Lighting and camera",
-        "body": "Change the mood with a single preset, and add backgrounds and effects.",
+        "body": "Change the mood with a single preset, and adjust each light's color · angle · range right in the view.",
         "points": [
-          "10 lighting presets",
-          "Backgrounds · chroma key",
-          "Bloom · depth of field"
+          "Lighting presets · color editing",
+          "Angle · range in the view",
+          "Backgrounds · chroma key · effects"
         ],
         "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
         "page": "08-scene"
@@ -226,7 +226,7 @@
         "features": [
           "Avatar · tracking · menu · lighting · effects",
           "Spout2 · virtual camera · screen share",
-          "My expressions · automatic expressions",
+          "My expressions · automatic expressions · shape keys · photos",
           "Private Discord sharing with friends",
           "Up to 1080p · watermark shown"
         ],
@@ -240,7 +240,7 @@
         "features": [
           "Everything in Basic",
           "Up to 4K · no watermark",
-          "Posing",
+          "Posing · pose library",
           "Objects (text · images · 3D models)",
           "More screen share sources"
         ],
@@ -277,7 +277,7 @@
       },
       {
         "q": "What's the difference between Basic and Pro?",
-        "a": "Basic is the edition for personal use (including private Discord sharing with friends), and Pro is for streaming, publishing videos and commercial use. Pro offers 4K output, no watermark, posing and objects."
+        "a": "Basic is the edition for personal use (including private Discord sharing with friends), and Pro is for streaming, publishing videos and commercial use. Pro offers 4K output, no watermark, posing, the pose library and objects."
       },
       {
         "q": "Does it support operating systems other than Windows?",

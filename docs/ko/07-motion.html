@@ -55,6 +55,36 @@
 <li><strong>얼굴 추적</strong> — 얼굴 표정 트래킹을 켜고 끕니다.</li>
 </ul>
 </div>
+<h2 id="표정이-움직이는-방식">표정이 움직이는 방식<a class="anchor" href="#표정이-움직이는-방식" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>얼굴 표정은 <strong>아바타에 들어 있는 설정을 그대로 따라갑니다.</strong> Avatar Live가 아바타의 표정을 새로 만들거나 변환하지는 않습니다.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>아바타 설정</th>
+<th>움직이는 방식</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VRCFaceTracking(VRCFT)</strong> 파라미터가 있음</td>
+<td>아바타의 VRCFT 설정으로 움직입니다.</td>
+</tr>
+<tr>
+<td><strong>ARKit 52개 쉐이프키</strong>(퍼펙트 싱크)가 있음</td>
+<td>그 쉐이프키를 직접 움직입니다.</td>
+</tr>
+<tr>
+<td>둘 다 없음</td>
+<td>깜빡임, 립싱크 등 아바타가 가진 기본 표정 위주로 움직이며, 세밀한 표정은 나오지 않을 수 있습니다.</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>웹캠이나 iPhone이 표정을 52개 단위로 읽더라도, 아바타에 해당 파라미터나 쉐이프키가 없는 표정은 나오지 않습니다.</li>
+<li>아바타에 일부 쉐이프키만 있으면 있는 것만 움직입니다.</li>
+</ul>
+<blockquote class="callout tip"><p>앞으로 52개 표정을 모두 인식해 아바타에 맞게 연결하거나, 해당 설정이 없는 아바타도 얼굴에 직접 연결해 주도록 개선할 예정입니다. 시기는 바뀔 수 있습니다.</p>
+</blockquote>
 <h2 id="자동-얼굴-설정">자동 얼굴 설정<a class="anchor" href="#자동-얼굴-설정" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/ko/facecal.webp" srcset="../assets/shots/ko/facecal-960.webp 960w, ../assets/shots/ko/facecal.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="자동 얼굴 설정" loading="lazy" decoding="async"><figcaption>자동 얼굴 설정</figcaption></figure>
 <p><strong>자동 얼굴 설정</strong> 버튼을 누르면 캘리브레이션이 시작됩니다. 화면 안내에 따라 표정을 짓고 <strong>측정</strong>을 눌러 주세요. 마지막에 <strong>적용</strong>을 누르면 내 얼굴에 맞게 표정이 조정됩니다.</p>
@@ -88,6 +118,8 @@
 <li><strong>머리 움직임</strong> — <strong>작게 · 자연스럽게 · 크게</strong> 중에서 고릅니다.</li>
 <li><strong>몸 따라오기</strong> — 머리를 돌리면 몸도 자연스럽게 따라옵니다.</li>
 <li><strong>자연스러운 몸 움직임 · 호흡</strong> — 가만히 있어도 살아 있는 것처럼 움직입니다.</li>
+<li><strong>상체</strong> — 웹캠 전신을 켜면 어깨 움직임으로 상체가 기울고 돌아갑니다. 다리가 보이지 않는 책상 앞에서도 됩니다.</li>
+<li><strong>전신</strong> — 몸통, 다리, 앉기 · 서기를 웹캠이나 VMC로 따라갑니다. <a href="06-devices.html#전신--손가락-관절-웹캠">장치 › 전신 · 손가락 관절</a>을 참고해 주세요.</li>
 </ul>
 </div>
 <h2 id="손--책상">손 · 책상<a class="anchor" href="#손--책상" aria-hidden="true" tabindex="-1">#</a></h2>
@@ -97,12 +129,14 @@
 <li><strong>책상 동작</strong> — 손이 카메라에 보이지 않을 때 키보드와 마우스에 맞춰 아바타 손이 움직입니다.</li>
 <li><strong>손 기본 자세</strong> — 책상 높이, 손 간격, 손목 각도를 맞춥니다.</li>
 <li><strong>키보드 · 마우스 입력 반응</strong> — 타이핑과 마우스 움직임의 크기를 정합니다.</li>
+<li>손을 내리면 바로 책상 자세로 가고, 다시 올리면 부드럽게 트래킹으로 돌아옵니다. 몸이 크게 흔들리거나 앉은 자세여도 팔꿈치가 자연스럽게 따라옵니다.</li>
+<li>포징에서 만든 팔 · 손 자세를 <strong>책상 자세로 쓰기</strong>로 지정할 수 있습니다 (Pro).</li>
 </ul>
 </div>
 <blockquote class="callout privacy"><p>키보드 입력은 아바타 손을 움직이는 데만 쓰이며, 입력한 글자는 저장하거나 전송하지 않습니다.</p>
 <p>💡 혀 · 볼 부풀림의 카메라 감지는 실험적 기능입니다.</p>
 </blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>이전</span>장치</a><a class="next" href="08-scene.html"><span>다음</span>씬</a></nav><p class="updated">최종 업데이트: 2026-10-09</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#얼굴-트래킹">얼굴 트래킹</a></li><li><a href="#자동-얼굴-설정">자동 얼굴 설정</a></li><li><a href="#얼굴-조정">얼굴 조정</a></li><li><a href="#깜빡임--입">깜빡임 · 입</a></li><li><a href="#몸">몸</a></li><li><a href="#손--책상">손 · 책상</a></li></ul></nav>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#얼굴-트래킹">얼굴 트래킹</a></li><li><a href="#표정이-움직이는-방식">표정이 움직이는 방식</a></li><li><a href="#자동-얼굴-설정">자동 얼굴 설정</a></li><li><a href="#얼굴-조정">얼굴 조정</a></li><li><a href="#깜빡임--입">깜빡임 · 입</a></li><li><a href="#몸">몸</a></li><li><a href="#손--책상">손 · 책상</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

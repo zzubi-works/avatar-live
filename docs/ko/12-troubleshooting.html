@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>문제 해결 — AVATAR LIVE</title>
-<meta name="description" content="해결되지 않을 때는 설정 › 진단 › 오류 리포트 보내기로 알려 주세요.">
+<meta name="description" content="해결되지 않는 버그나 문제는 설정 › 진단 › 오류 리포트 보내기로, 필요한 기능이나 개선 사항은 설정 › 정보 › 개선 사항 보내기로 알려 주세요.">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ko/12-troubleshooting.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/12-troubleshooting.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/12-troubleshooting.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/12-troubleshooting.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="문제 해결 — AVATAR LIVE">
-<meta property="og:description" content="해결되지 않을 때는 설정 › 진단 › 오류 리포트 보내기로 알려 주세요.">
+<meta property="og:description" content="해결되지 않는 버그나 문제는 설정 › 진단 › 오류 리포트 보내기로, 필요한 기능이나 개선 사항은 설정 › 정보 › 개선 사항 보내기로 알려 주세요.">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ko/12-troubleshooting.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ko.jpg">
 <meta property="og:image:width" content="1200">
@@ -44,7 +44,7 @@
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>가이드 목차</button>
   <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html" aria-current="page">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="12-문제-해결">12. 문제 해결<a class="anchor" href="#12-문제-해결" aria-hidden="true" tabindex="-1">#</a></h1>
-<blockquote class="callout tip"><p>해결되지 않을 때는 <strong>설정 › 진단 › 오류 리포트 보내기</strong>로 알려 주세요.</p>
+<blockquote class="callout tip"><p>해결되지 않는 버그나 문제는 <strong>설정 › 진단 › 오류 리포트 보내기</strong>로, 필요한 기능이나 개선 사항은 <strong>설정 › 정보 › 개선 사항 보내기</strong>로 알려 주세요.</p>
 </blockquote>
 <h2 id="시작--설치">시작 · 설치<a class="anchor" href="#시작--설치" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
@@ -125,6 +125,18 @@
 <td>PC가 무거움</td>
 <td>트래킹 품질을 <strong>균형</strong>이나 <strong>절약</strong>으로</td>
 </tr>
+<tr>
+<td>손 · 손가락이 떨림</td>
+<td><strong>장치 › 트래킹 소스 › 손 떨림 보정</strong>을 높이기</td>
+</tr>
+<tr>
+<td>아바타가 움직이지 않음</td>
+<td><strong>장치 › 트래킹 소스</strong>에서 부위의 소스가 쓰지 않는 장치(VMC 등)로 되어 있지 않은지 확인</td>
+</tr>
+<tr>
+<td>VMC로 받은 자세가 어긋남</td>
+<td><strong>VMC 설정</strong>에서 <strong>T자세</strong> 또는 <strong>정렬</strong></td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="마이크">마이크<a class="anchor" href="#마이크" aria-hidden="true" tabindex="-1">#</a></h2>
@@ -204,11 +216,15 @@
 </tr>
 <tr>
 <td>✅ 얼굴</td>
-<td>VRCFaceTracking, ARKit(Perfect Sync), MMD 눈 모프</td>
+<td>아바타 설정을 따름: VRCFaceTracking, ARKit 52개 쉐이프키(Perfect Sync), MMD 눈 모프</td>
+</tr>
+<tr>
+<td>✅ 트래킹</td>
+<td>웹캠(얼굴 · 팔 · 손 · 손가락), iPhone(iFacialMocap · FaceMotion3D), VMC(부위별: 팔 · 손 · 손가락 · 몸 · 머리 · 눈)</td>
 </tr>
 <tr>
 <td>🧪 실험적 기능</td>
-<td>Ultraleap, OSC · VMC, 혀 · 볼 카메라 감지</td>
+<td>Ultraleap, OSC, VMC 출력, 혀 · 볼 카메라 감지</td>
 </tr>
 <tr>
 <td>⚠️ 지원하지 않음</td>
@@ -216,14 +232,12 @@
 </tr>
 </tbody>
 </table></div>
-<p>실험적 기능은 정상적으로 동작할 것으로 예상하지만, 아직 개발자 환경에서 모든 장치와 앱으로 테스트하지는 못했습니다.</p>
+<p>웹캠(전신 · 손가락 관절 포함), iPhone, VMC 입력은 실제 장비로 확인했습니다. 실험적 기능은 정상적으로 동작할 것으로 예상하지만, 아직 개발자 환경에서 모든 장치와 앱으로 테스트하지는 못해 앱에 <strong>실험적</strong>으로 표시해 두었습니다. 써 보시고 문제가 있으면 <strong>오류 리포트 보내기</strong>로 알려 주세요.</p>
 <h2 id="추가-지원-예정">추가 지원 예정<a class="anchor" href="#추가-지원-예정" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>VRM 모델(.vrm, VRM 0.x / 1.0) 불러오기와 .vrma 애니메이션 재생</li>
 <li>퍼펙트 싱크 강화: 쉐이프키를 직접 연결하는 매핑, 웹캠 · iPhone별 얼굴 보정, 52개 표정을 하나씩 확인하는 도구</li>
 <li>휴대폰 얼굴 앱 추가: VTube Studio(iPhone), MeowFace(Android)</li>
-<li>웹캠 상체: 어깨 움직임으로 상체 비틀기 · 기울기</li>
-<li>전신 트래킹 앱 연동 강화(VMC): 얼굴 앱과 몸 앱 동시 수신, 앉기 · 숙이기 반영 — TDPT, XR Animator 등</li>
 <li>편의 기능: 아바타를 다시 내보내면 자동 새로고침, 할 일이 없을 때 FPS 절약</li>
 </ul>
 <p>※ 예정 기능과 시기는 변경될 수 있습니다.</p>

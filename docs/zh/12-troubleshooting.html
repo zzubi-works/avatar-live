@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>故障排除 — AVATAR LIVE</title>
-<meta name="description" content="如果问题仍未解决，请通过 设置 › 诊断 › 发送错误报告 告诉我们。">
+<meta name="description" content="无法解决的错误或问题，请通过 设置 › 诊断 › 发送错误报告 告诉我们；需要的功能或改进建议，请通过 设置 › 关于 › 发送改进建议 告诉我们。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/12-troubleshooting.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/12-troubleshooting.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/12-troubleshooting.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="故障排除 — AVATAR LIVE">
-<meta property="og:description" content="如果问题仍未解决，请通过 设置 › 诊断 › 发送错误报告 告诉我们。">
+<meta property="og:description" content="无法解决的错误或问题，请通过 设置 › 诊断 › 发送错误报告 告诉我们；需要的功能或改进建议，请通过 设置 › 关于 › 发送改进建议 告诉我们。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
 <meta property="og:image:width" content="1200">
@@ -44,7 +44,7 @@
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
   <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html" aria-current="page">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="12-故障排除">12. 故障排除<a class="anchor" href="#12-故障排除" aria-hidden="true" tabindex="-1">#</a></h1>
-<blockquote class="callout tip"><p>如果问题仍未解决，请通过 <strong>设置 › 诊断 › 发送错误报告</strong> 告诉我们。</p>
+<blockquote class="callout tip"><p>无法解决的错误或问题，请通过 <strong>设置 › 诊断 › 发送错误报告</strong> 告诉我们；需要的功能或改进建议，请通过 <strong>设置 › 关于 › 发送改进建议</strong> 告诉我们。</p>
 </blockquote>
 <h2 id="启动--安装">启动 · 安装<a class="anchor" href="#启动--安装" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
@@ -125,6 +125,18 @@
 <td>电脑负担重</td>
 <td>将追踪质量设为 <strong>均衡</strong> 或 <strong>节能</strong></td>
 </tr>
+<tr>
+<td>手 · 手指抖动</td>
+<td>调高 <strong>设备 › 追踪来源 › 手部防抖</strong></td>
+</tr>
+<tr>
+<td>角色不动</td>
+<td>在 <strong>设备 › 追踪来源</strong> 中确认部位的来源没有设为未使用的设备（如 VMC）</td>
+</tr>
+<tr>
+<td>通过 VMC 接收的姿势有偏差</td>
+<td>在 <strong>VMC 设置</strong> 中点击 <strong>T 姿势</strong> 或 <strong>对齐</strong></td>
+</tr>
 </tbody>
 </table></div>
 <h2 id="麦克风">麦克风<a class="anchor" href="#麦克风" aria-hidden="true" tabindex="-1">#</a></h2>
@@ -204,11 +216,15 @@
 </tr>
 <tr>
 <td>✅ 面部</td>
-<td>VRCFaceTracking、ARKit（Perfect Sync）、MMD 眼部变形</td>
+<td>遵循角色设置：VRCFaceTracking、52 个 ARKit 形态键（Perfect Sync）、MMD 眼部变形</td>
+</tr>
+<tr>
+<td>✅ 追踪</td>
+<td>摄像头（面部 · 手臂 · 手 · 手指）、iPhone（iFacialMocap · FaceMotion3D）、VMC（按部位：手臂 · 手 · 手指 · 身体 · 头部 · 眼睛）</td>
 </tr>
 <tr>
 <td>🧪 实验性功能</td>
-<td>Ultraleap、OSC · VMC、舌头 · 脸颊的摄像头检测</td>
+<td>Ultraleap、OSC、VMC 输出、舌头 · 脸颊的摄像头检测</td>
 </tr>
 <tr>
 <td>⚠️ 不支持</td>
@@ -216,14 +232,12 @@
 </tr>
 </tbody>
 </table></div>
-<p>实验性功能预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。</p>
+<p>摄像头（含全身 · 手指关节）、iPhone、VMC 输入已用实际设备确认。实验性功能预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试，因此在应用中标为 <strong>实验性</strong>。试用后如有问题，请通过 <strong>发送错误报告</strong> 告诉我们。</p>
 <h2 id="计划支持">计划支持<a class="anchor" href="#计划支持" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>加载 VRM 模型（.vrm，VRM 0.x / 1.0）并播放 .vrma 动画</li>
 <li>强化 Perfect Sync：直接连接形态键的映射、按摄像头 · iPhone 分别进行的面部校准、逐一确认 52 种表情的工具</li>
 <li>新增手机面部应用：VTube Studio（iPhone）、MeowFace（Android）</li>
-<li>摄像头上半身：根据肩部动作扭转 · 倾斜上半身</li>
-<li>强化与全身追踪应用的联动（VMC）：同时接收面部应用与身体应用，反映坐下 · 弯腰 — TDPT、XR Animator 等</li>
 <li>便利功能：重新导出角色后自动刷新、空闲时节省 FPS</li>
 </ul>
 <p>※ 计划的功能和时间可能会有变更。</p>

@@ -15,6 +15,21 @@ Set how the face, body and hands move. Settings are saved separately for each av
 
 </div>
 
+## How expressions move
+
+Facial expressions **follow the setup already in your avatar.** Avatar Live does not create or convert the avatar's expressions.
+
+| Avatar setup | How it moves |
+|---|---|
+| Has **VRCFaceTracking (VRCFT)** parameters | Moves through the avatar's VRCFT setup. |
+| Has the **52 ARKit shape keys** (Perfect Sync) | Drives those shape keys directly. |
+| Neither | Mostly the avatar's basic expressions such as blinking and lip sync; finer expressions may not show. |
+
+- Even though the webcam or iPhone reads expressions as 52 values, an expression shows only when the avatar has the matching parameter or shape key.
+- If the avatar has only some of the shape keys, only those move.
+
+> 💡 We plan to improve this so that all 52 expressions are recognised and connected to your avatar, and so that avatars without these setups can be bound to the face directly. Timing may change.
+
 ## Automatic face setup
 
 ![Automatic face setup](img/facecal.png)
@@ -59,6 +74,8 @@ Click the **Automatic face setup** button to start calibration. Make each expres
 - **Head motion** — Choose from **Subtle · Natural · Expressive**.
 - **Body follow** — When you turn your head, the body follows naturally.
 - **Natural body motion · Breathing** — The avatar moves as if it were alive, even while you keep still.
+- **Upper body** — With webcam full body on, your shoulder movement tilts and turns the upper body. This works even at a desk where your legs can't be seen.
+- **Full body** — Follows the torso, legs, sitting and standing with the webcam or VMC. Please see [Devices › Full body · Finger joints](06-devices.md#full-body--finger-joints-webcam).
 
 </div>
 
@@ -71,6 +88,8 @@ Click the **Automatic face setup** button to start calibration. Make each expres
 - **Desk Interaction** — When your hands aren't visible to the camera, the avatar's hands move along with your keyboard and mouse.
 - **Hand default pose** — Adjust the desk height, hand spacing and wrist angle.
 - **Keyboard · Mouse input reaction** — Set how large the typing and mouse movements are.
+- Lower your hands, and the arms go straight to the desk pose. Raise them again, and they return smoothly to tracking. The elbows follow naturally even when your body sways a lot or you're sitting.
+- You can set an arm · hand pose made in Posing with **Use as the desk pose (arms and hands)** (Pro).
 
 </div>
 

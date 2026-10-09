@@ -55,6 +55,36 @@
 <li><strong>顔トラッキング</strong> — 表情のトラッキングをオン / オフします。</li>
 </ul>
 </div>
+<h2 id="表情が動くしくみ">表情が動くしくみ<a class="anchor" href="#表情が動くしくみ" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>顔の表情は <strong>アバターに入っている設定にそのまま従います。</strong> Avatar Live がアバターの表情を新しく作ったり、変換したりすることはありません。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>アバターの設定</th>
+<th>動き方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>VRCFaceTracking（VRCFT）</strong> のパラメーターがある</td>
+<td>アバターの VRCFT 設定で動きます。</td>
+</tr>
+<tr>
+<td><strong>ARKit の 52 個のシェイプキー</strong>（パーフェクトシンク）がある</td>
+<td>そのシェイプキーを直接動かします。</td>
+</tr>
+<tr>
+<td>どちらもない</td>
+<td>まばたき・リップシンクなど、アバターが持つ基本の表情が中心になり、細かい表情は出ない場合があります。</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Webカメラや iPhone が表情を 52 個の単位で読み取っても、アバターに対応するパラメーターやシェイプキーがない表情は出ません。</li>
+<li>シェイプキーが一部だけある場合は、あるものだけが動きます。</li>
+</ul>
+<blockquote class="callout tip"><p>今後、52 個の表情をすべて認識してアバターに合わせて接続したり、設定のないアバターでも顔に直接バインドしたりできるよう改善する予定です。時期は変わる場合があります。</p>
+</blockquote>
 <h2 id="自動フェイスセットアップ">自動フェイスセットアップ<a class="anchor" href="#自動フェイスセットアップ" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/ja/facecal.webp" srcset="../assets/shots/ja/facecal-960.webp 960w, ../assets/shots/ja/facecal.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="自動フェイスセットアップ" loading="lazy" decoding="async"><figcaption>自動フェイスセットアップ</figcaption></figure>
 <p><strong>自動フェイスセットアップ</strong> ボタンを押すと、キャリブレーションが始まります。画面の案内に従って表情を作り、<strong>測定</strong> を押してください。最後に <strong>適用</strong> を押すと、自分の顔に合わせて表情が調整されます。</p>
@@ -88,6 +118,8 @@
 <li><strong>頭の動き</strong> — <strong>控えめ・自然・大きめ</strong> から選びます。</li>
 <li><strong>体の追従</strong> — 頭の向きを変えると、体も自然についてきます。</li>
 <li><strong>自然な体の動き・呼吸</strong> — じっとしていても、生きているように動きます。</li>
+<li><strong>上半身</strong> — Web カメラの全身をオンにすると、肩の動きで上半身が傾いたり回ったりします。脚が映らないデスクの前でも動きます。</li>
+<li><strong>全身</strong> — 胴体、脚、座る・立つを、Web カメラや VMC で追います。詳しくは<a href="06-devices.html#全身指の関節web-カメラ">デバイス › 全身・指の関節</a>をご覧ください。</li>
 </ul>
 </div>
 <h2 id="手デスク">手・デスク<a class="anchor" href="#手デスク" aria-hidden="true" tabindex="-1">#</a></h2>
@@ -97,12 +129,14 @@
 <li><strong>デスク操作</strong> — 手がカメラに映っていないとき、キーボードとマウスに合わせてアバターの手が動きます。</li>
 <li><strong>手の基本姿勢</strong> — 机の高さ、手の間隔、手首の角度を合わせます。</li>
 <li><strong>キーボード・マウス入力への反応</strong> — タイピングやマウスの動きの大きさを決めます。</li>
+<li>手を下ろすとすぐにデスクのポーズになり、また上げると、なめらかにトラッキングに戻ります。体が大きく揺れても、座っていても、ひじが自然についてきます。</li>
+<li>ポージングで作った腕・手のポーズを、<strong>机のポーズにする</strong> でデスクのポーズにできます（Pro）。</li>
 </ul>
 </div>
 <blockquote class="callout privacy"><p>キーボード入力はアバターの手を動かすためだけに使われ、入力した文字を保存・送信することはありません。</p>
 <p>💡 舌・頬の膨らみのカメラ検出は、実験的機能です。</p>
 </blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>前へ</span>デバイス</a><a class="next" href="08-scene.html"><span>次へ</span>シーン</a></nav><p class="updated">最終更新: 2026-10-09</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#フェイストラッキング">フェイストラッキング</a></li><li><a href="#自動フェイスセットアップ">自動フェイスセットアップ</a></li><li><a href="#顔の調整">顔の調整</a></li><li><a href="#まばたき口">まばたき・口</a></li><li><a href="#体">体</a></li><li><a href="#手デスク">手・デスク</a></li></ul></nav>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#フェイストラッキング">フェイストラッキング</a></li><li><a href="#表情が動くしくみ">表情が動くしくみ</a></li><li><a href="#自動フェイスセットアップ">自動フェイスセットアップ</a></li><li><a href="#顔の調整">顔の調整</a></li><li><a href="#まばたき口">まばたき・口</a></li><li><a href="#体">体</a></li><li><a href="#手デスク">手・デスク</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

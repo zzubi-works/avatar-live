@@ -57,6 +57,10 @@
 <td>Pro</td>
 </tr>
 <tr>
+<td><a href="#포즈-라이브러리">포즈 라이브러리</a></td>
+<td>Pro</td>
+</tr>
+<tr>
 <td><a href="#오브젝트">오브젝트</a></td>
 <td>Pro</td>
 </tr>
@@ -78,14 +82,25 @@
 <figure><img src="../assets/shots/ko/posing.webp" srcset="../assets/shots/ko/posing-960.webp 960w, ../assets/shots/ko/posing.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="포징 모드" loading="lazy" decoding="async"><figcaption>포징 모드</figcaption></figure>
 <p><strong>씬 › 포징 › 포징 모드</strong>를 켜면 뼈를 직접 움직여 자세를 만들 수 있습니다.</p>
 <ul>
-<li>뼈를 클릭해서 고르고, 끌어서 움직입니다. 손이나 발을 끌면 팔 · 다리 전체가 따라옵니다.</li>
-<li>링을 끌면 회전합니다.</li>
-<li><strong>좌우</strong> — 왼쪽과 오른쪽 자세를 뒤집거나 복사합니다.</li>
-<li><strong>+ 자세 추가 › 현재 자세 저장</strong>으로 저장하고, 아바타 메뉴의 <strong>자세</strong> 카드에서 바로 켭니다.</li>
-<li>Unity에서 만든 <code>.anim</code> 파일도 불러올 수 있습니다.</li>
+<li>뼈를 클릭해서 고르고, 링을 끌어 돌립니다. 회전 기즈모는 뼈 크기에 맞춰 나옵니다.</li>
+<li>손이나 발을 끌면 팔 · 다리 전체가 따라오고, <strong>Alt+드래그</strong>로 팔꿈치 · 무릎 방향을 바꿉니다.</li>
+<li><strong>대칭 편집</strong> — 한쪽을 움직이면 반대쪽도 같이 움직입니다. <strong>좌우</strong>로 뒤집거나 한쪽을 복사합니다.</li>
+<li><strong>카메라 보기</strong> · <strong>바닥에 붙이기</strong> — 얼굴을 카메라로 돌리고, 발을 바닥에 맞춥니다.</li>
+<li><strong>고정</strong> — 고른 뼈는 트래킹과 애니메이션이 움직이지 않습니다.</li>
+<li><strong>완료</strong>로 자세를 저장하고, 아바타 메뉴의 <strong>자세</strong> 카드에서 바로 켭니다. <strong>버리기</strong> 뒤에도 <strong>Ctrl+Z</strong>로 되살릴 수 있습니다.</li>
+<li>기본으로 <strong>서 있는 휴식 자세</strong>와 <strong>앉은 자세</strong>가 들어 있습니다. 앉은 자세는 골반 · 다리만 바꾸고 머리 · 팔은 트래킹을 유지합니다.</li>
+<li>만든 자세를 <strong>책상 자세로 쓰기</strong>(팔 · 손)나 <strong>휴식 자세</strong>(전신)로 지정할 수 있습니다.</li>
 </ul>
 <blockquote class="callout tip"><p>포징 모드를 끄기 전에 자세를 저장해 두세요.</p>
 </blockquote>
+<h2 id="포즈-라이브러리">포즈 라이브러리<a class="anchor" href="#포즈-라이브러리" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>씬 › 포징 › 포즈 라이브러리</strong>에서 <code>.anim</code> 파일이 들어 있는 폴더를 고르면, 모든 자세를 <strong>지금 아바타의 썸네일</strong>로 보여 줍니다.</p>
+<ul>
+<li>하위 폴더까지 읽고, 자세 · 손 모양 · 모션으로 나눠 보여 줍니다. 검색과 즐겨찾기를 쓸 수 있습니다.</li>
+<li><strong>적용</strong>하면 바로 그 자세가 되고, 움직이는 클립은 애니메이션으로 재생됩니다. <strong>해제</strong>로 돌아옵니다.</li>
+<li><strong>편집</strong>으로 포징 모드에서 고친 뒤 새 자세로 저장합니다.</li>
+<li>Unity에서 만든 휴머노이드 · 본 <code>.anim</code>을 하나씩 불러올 수도 있습니다.</li>
+</ul>
 <h2 id="오브젝트">오브젝트<a class="anchor" href="#오브젝트" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/ko/props.webp" srcset="../assets/shots/ko/props-960.webp 960w, ../assets/shots/ko/props.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="오브젝트" loading="lazy" decoding="async"><figcaption>오브젝트</figcaption></figure>
 <p><strong>씬 › 오브젝트 › + 오브젝트 추가</strong>로 텍스트, 이미지, 도형, 3D 모델을 놓습니다.</p>
@@ -100,12 +115,15 @@
 <p>아바타의 쉐이프키로 나만의 표정을 만듭니다.</p>
 <ol>
 <li><strong>새 표정 만들기</strong>를 누릅니다.</li>
-<li>쉐이프키를 검색해서 <strong>+</strong> 로 추가하고 세기를 맞춥니다.</li>
+<li>옆 패널에서 쉐이프키를 녹화하듯 움직여 표정을 만듭니다. <strong>미리보기 강도</strong>로 무표정(0%)부터 표정(100%)까지 훑어보며 확인합니다.</li>
 <li><strong>저장</strong>하면 아바타 메뉴의 <strong>내 표정</strong> 카드에서 눌러서 켤 수 있습니다.</li>
 </ol>
+<ul>
+<li>Unity에서 만든 표정 애니메이션(<code>.anim</code>, 쉐이프키)도 불러올 수 있습니다. 움직이는 클립은 표정을 켜는 동안 재생됩니다.</li>
+</ul>
 <h2 id="자동-표정">자동 표정<a class="anchor" href="#자동-표정" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>웃거나 놀라면 정해 둔 표정이 자동으로 나옵니다. <strong>동작 › 자동 표정</strong>에서 켜고, 미소 · 놀람 · 윙크 같은 표정마다 보여 줄 표정을 연결합니다.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>이전</span>설정</a><a class="next" href="12-troubleshooting.html"><span>다음</span>문제 해결</a></nav><p class="updated">최종 업데이트: 2026-10-09</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#포징">포징</a></li><li><a href="#오브젝트">오브젝트</a></li><li><a href="#화면-공유-추가-소스">화면 공유 추가 소스</a></li><li><a href="#내-표정">내 표정</a></li><li><a href="#자동-표정">자동 표정</a></li></ul></nav>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#포징">포징</a></li><li><a href="#포즈-라이브러리">포즈 라이브러리</a></li><li><a href="#오브젝트">오브젝트</a></li><li><a href="#화면-공유-추가-소스">화면 공유 추가 소스</a></li><li><a href="#내-표정">내 표정</a></li><li><a href="#자동-표정">자동 표정</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

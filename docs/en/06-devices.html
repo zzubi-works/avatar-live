@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Devices — AVATAR LIVE</title>
-<meta name="description" content="Ultraleap and OSC · VMC are experimental features. We expect them to work properly, but we haven&#x27;t yet been able to test them with every device and ap…">
+<meta name="description" content="We&#x27;ve confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the features marked experimental (…">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/06-devices.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/06-devices.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/06-devices.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/06-devices.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/06-devices.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="Devices — AVATAR LIVE">
-<meta property="og:description" content="Ultraleap and OSC · VMC are experimental features. We expect them to work properly, but we haven&#x27;t yet been able to test them with every device and ap…">
+<meta property="og:description" content="We&#x27;ve confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the features marked experimental (…">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/06-devices.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
 <meta property="og:image:width" content="1200">
@@ -61,27 +61,48 @@
 <div class="shot">
 <figure><img src="../assets/shots/en/sources.webp" srcset="../assets/shots/en/sources-960.webp 960w, ../assets/shots/en/sources.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="Tracking sources" loading="lazy" decoding="async"><figcaption>Tracking sources</figcaption></figure>
 <ul>
-<li>For each part (face, arms, hands, fingers, mouth), choose what moves it.</li>
+<li>For each part (face, mouth, head, eyes, arms, hands, fingers, body), choose what moves it.</li>
+<li>You can mix <strong>Webcam</strong>, <strong>iPhone</strong>, <strong>VMC</strong> and <strong>Ultraleap</strong> (hands) part by part. For example, the face can come from your iPhone, the body from full-body trackers and the hands from the webcam.</li>
+<li><strong>Face engine</strong> — Choose a webcam engine or a face app (iPhone · VMC). Each device's settings appear under the parts that use it.</li>
 <li>With <strong>Mouth</strong> set to <strong>Face + mic</strong>, the mouth follows your voice while you speak and your mouth shape the rest of the time.</li>
-<li><strong>Face app</strong> — Receives your face from an app such as iFacialMocap on iPhone instead of the webcam.</li>
-<li><strong>Ultraleap Hand Tracking</strong> — Tracks your hands with a Leap Motion device.</li>
-<li><strong>External tracking</strong> — Connects with other apps over OSC · VMC.</li>
+<li><strong>Hand steadiness</strong> — Keeps your hands and fingers from jittering while you hold still.</li>
 </ul>
 </div>
-<blockquote class="callout tip"><p>Ultraleap and OSC · VMC are experimental features. We expect them to work properly, but we haven't yet been able to test them with every device and app in the developer's environment.</p>
+<h2 id="full-body--finger-joints-webcam">Full body · Finger joints (webcam)<a class="anchor" href="#full-body--finger-joints-webcam" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>Set <strong>Body</strong> to the webcam, and a <strong>Full body</strong> switch appears. Turn it on, and the avatar follows the torso and legs the camera can see, with <strong>Sitting · Standing · Legs tracked · Legs estimated</strong> shown beside it.</li>
+<li>When your legs aren't visible, such as at a desk, your shoulder movement alone tilts and turns the upper body. Legs that can't be seen stay in the avatar's pose.</li>
+<li>Set <strong>Fingers</strong> to the webcam, and a <strong>Finger joints</strong> switch appears. Turn it on, and the camera follows the bend of each finger joint, the spread of the fingers and the thumb.</li>
+</ul>
+<h2 id="receiving-over-vmc-full-body-trackers--gloves--other-apps">Receiving over VMC (full-body trackers · gloves · other apps)<a class="anchor" href="#receiving-over-vmc-full-body-trackers--gloves--other-apps" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="steps">
+<ol>
+<li>In the sending app (a full-body tracker app, a glove app, a motion capture app and so on), turn on VMC sending and send to this PC.</li>
+<li>In <strong>Tracking sources</strong>, set the source to <strong>VMC</strong> for the parts you want to receive over VMC. Other parts can stay on the webcam · iPhone.</li>
+<li>In <strong>VMC settings</strong>, check how many bones are being received and that data is coming in.</li>
+<li>If the pose is off, click <strong>T-pose</strong> or <strong>Align</strong>. Use <strong>Reset</strong> to undo it.</li>
+</ol>
+</div>
+<ul>
+<li>Fingers come through as they are, right down to the rotation of each joint, the spread and the thumb.</li>
+<li>If the input drops while you're receiving arms over VMC, the arms return to the desk (keyboard · mouse) pose.</li>
+</ul>
+<blockquote class="callout tip"><p>We've confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the features marked <strong>experimental</strong> (Ultraleap, OSC and so on) to work properly, but we haven't yet been able to test them with every device and app in the developer's environment. If something goes wrong, please let us know with <strong>Settings › Diagnostics › Send an error report</strong>.</p>
 </blockquote>
-<h2 id="face-tracking-with-an-iphone-ifacialmocap">Face tracking with an iPhone (iFacialMocap)<a class="anchor" href="#face-tracking-with-an-iphone-ifacialmocap" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="face-tracking-with-an-iphone-ifacialmocap--facemotion3d">Face tracking with an iPhone (iFacialMocap · FaceMotion3D)<a class="anchor" href="#face-tracking-with-an-iphone-ifacialmocap--facemotion3d" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="steps">
 <ol>
 <li>Connect your iPhone and PC to the same Wi-Fi.</li>
-<li>In <strong>Face app</strong>, set the source to <strong>iFacialMocap</strong>, then <strong>Copy</strong> the address under <strong>This PC's addresses</strong>.</li>
-<li>In the iFacialMocap app on your iPhone, go to the gear › <strong>Destination IP address</strong> and enter that address.</li>
-<li>Turn on the switch, and the expressions from your iPhone appear on the avatar.</li>
+<li>In <strong>Face engine</strong>, choose <strong>iFacialMocap</strong> or <strong>FaceMotion3D</strong> as the face app, then <strong>Copy</strong> the address under <strong>This PC's addresses</strong>.</li>
+<li>In the iFacialMocap app on your iPhone, go to the gear › <strong>Destination IP address</strong> and enter that address. In FaceMotion3D, set the app's connection settings to send to this PC's address.</li>
+<li>Turn on the switch, and the expressions from your iPhone appear on the avatar. How the expressions show depends on the avatar's own setup (see <a href="07-motion.html#how-expressions-move">How expressions move</a>).</li>
+<li>If it doesn't connect, click <strong>Test connection</strong> to check whether data is coming in.</li>
 </ol>
 </div>
 <blockquote class="callout tip"><p>You can leave the <strong>iPhone address (optional)</strong> field empty. Fill it in only if you don't use Destination IP address in the iFacialMocap app.</p>
+<p>💡 Turn on <strong>Webcam takes over if it drops</strong>, and the webcam tracks for you for a while when the iPhone connection drops.</p>
 </blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>Previous</span>Avatar menu</a><a class="next" href="07-motion.html"><span>Next</span>Motion</a></nav><p class="updated">Last updated: 2026-10-09</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#webcam-and-microphone">Webcam and microphone</a></li><li><a href="#tracking-sources">Tracking sources</a></li><li><a href="#face-tracking-with-an-iphone-ifacialmocap">Face tracking with an iPhone (iFacialMocap)</a></li></ul></nav>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#webcam-and-microphone">Webcam and microphone</a></li><li><a href="#tracking-sources">Tracking sources</a></li><li><a href="#full-body--finger-joints-webcam">Full body · Finger joints (webcam)</a></li><li><a href="#receiving-over-vmc-full-body-trackers--gloves--other-apps">Receiving over VMC (full-body trackers · gloves · other apps)</a></li><li><a href="#face-tracking-with-an-iphone-ifacialmocap--facemotion3d">Face tracking with an iPhone (iFacialMocap · FaceMotion3D)</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
