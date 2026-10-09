@@ -169,7 +169,7 @@ nav.primary a:hover, nav.primary a[aria-current] { color: var(--text); backgroun
 .bento-card:hover .bento-media img, .bento-card:hover .bento-media video { transform: scale(1.03); }
 .bento-card.wide .bento-media { min-height: 300px; }
 .bento-card.wide .bento-media img { object-position: left top; }
-.bento-card.tall .bento-media img { object-position: 54% 45%; }
+.bento-card.tall .bento-media img { object-position: 38% 40%; }
 .bento-card:not(.wide):not(.tall) .bento-media img { object-position: left top; }
 .bento-text { padding: 22px 24px 24px; }
 .bento-text h3 { margin: 0 0 6px; font-size: 18px; letter-spacing: -0.015em; font-weight: 680; }

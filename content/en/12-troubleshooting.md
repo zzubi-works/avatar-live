@@ -64,12 +64,9 @@ We expect the experimental features to work properly, but we haven't yet been ab
 
 - Loading VRM models (.vrm, VRM 0.x / 1.0) and playing .vrma animations
 - Stronger Perfect Sync: mapping that links shape keys directly, face calibration for each webcam · iPhone, and a tool to check the 52 expressions one by one
-- Expression hotkeys: hotkeys for My expressions · expression clips · saved poses (also from Stream Deck key presses), and holding a chosen expression
 - More phone face apps: VTube Studio (iPhone), MeowFace (Android)
-- Transparent backgrounds through OBS Game Capture (without a plugin)
 - Webcam upper body: twisting · tilting the upper body from your shoulder movement
 - Better full-body tracking app support (VMC): receiving a face app and a body app at the same time, reflecting sitting · leaning — TDPT, XR Animator and more
-- Desktop mascot mode (transparent window), eyes that follow the mouse cursor
 - Conveniences: automatic refresh when you export the avatar again, lower FPS when there's nothing to do
 
 ※ Planned features and their timing may change.

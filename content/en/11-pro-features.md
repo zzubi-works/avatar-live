@@ -47,5 +47,3 @@ Create your own expressions from the avatar's shape keys.
 ## Automatic expressions
 
 When you smile or look surprised, an expression you've chosen appears automatically. Turn it on in **Motion › Automatic expressions**, and link an expression to show for each one, such as smile · surprise · wink.
-
-> 💡 Hotkeys for My expressions and saved poses are planned for a future update.

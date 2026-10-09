@@ -42,7 +42,7 @@ Send the avatar image to your streaming software or call apps.
 
 > 💡 If the game shows up black, try switching the game to **borderless window** or **windowed mode**. We recommend running Avatar Live without administrator rights.
 
-> 💡 Sharing sound needs a virtual playback device such as Steam Streaming Speakers or VB-Audio CABLE.
+> 💡 Screen sharing may not work with games that run only in exclusive full screen. In that case, please stream through OBS.
 
 ## External output (VMC)
 

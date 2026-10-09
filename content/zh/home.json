@@ -16,7 +16,10 @@
   },
   "hero": {
     "eyebrow": "为 VRChat 角色打造的 Windows VTuber 应用",
-    "title": ["你的 VRChat 角色，", "原样带进直播。"],
+    "title": [
+      "你的 VRChat 角色，",
+      "原样带进直播。"
+    ],
     "sub": "无需转换 VRM，也无需繁琐的重新设置。\n把熟悉的角色用在直播和屏幕共享中吧。",
     "primary": "开始使用 AVATAR LIVE",
     "secondary": "了解功能",
@@ -25,28 +28,69 @@
   },
   "works": {
     "label": "可直接用于",
-    "items": ["OBS Studio", "Discord", "Zoom", "Microsoft Teams"]
+    "items": [
+      "OBS Studio",
+      "Discord",
+      "Zoom",
+      "Microsoft Teams"
+    ]
   },
   "features": {
     "kicker": "功能",
     "title": "VRChat 里的那个角色，原样呈现。",
     "sub": "无需重新制作。角色里的一切都会照原样运作。",
     "items": [
-      {"title": "无需 VRM 转换", "body": "在角色项目中导出一次即可。修改角色后，也只需重新导出。", "media": "img:launcher", "size": "wide"},
-      {"title": "原有着色器，原样呈现", "body": "直接呈现角色所用的 Poiyomi、lilToon 等着色器。", "media": "common:light-spot-light", "size": "tall"},
-      {"title": "PhysBone 与菜单原样运作", "body": "从头发的摆动、服装开关到表情按钮，都以与 VRChat 相同的设置运作。", "media": "video:physbone"},
-      {"title": "面部追踪", "body": "只需一个摄像头，即可追踪表情、视线乃至手指。直接使用角色的 VRCFaceTracking 设置。", "media": "video:face"},
-      {"title": "键盘 · 鼠标手部动作", "body": "即使手不在画面中，角色的手也会配合打字和鼠标操作而动。不会记录输入的文字。", "media": "img:motion-desk"},
-      {"title": "直播与屏幕共享", "body": "向 OBS 发送透明背景画面，向 Discord 发送游戏与角色合一的画面。", "media": "video:share", "size": "wide"}
+      {
+        "title": "无需 VRM 转换",
+        "body": "在角色项目中导出一次即可。修改角色后，也只需重新导出。",
+        "media": "img:launcher",
+        "size": "wide"
+      },
+      {
+        "title": "原有着色器，原样呈现",
+        "body": "直接呈现角色所用的 Poiyomi、lilToon 等着色器。",
+        "media": "common:shader-side",
+        "size": "tall"
+      },
+      {
+        "title": "PhysBone 与菜单原样运作",
+        "body": "从头发的摆动、服装开关到表情按钮，都以与 VRChat 相同的设置运作。",
+        "media": "video:physbone"
+      },
+      {
+        "title": "面部追踪",
+        "body": "只需一个摄像头，即可追踪表情、视线乃至手指。直接使用角色的 VRCFaceTracking 设置。",
+        "media": "video:face"
+      },
+      {
+        "title": "键盘 · 鼠标手部动作",
+        "body": "即使手不在画面中，角色的手也会配合打字和鼠标操作而动。不会记录输入的文字。",
+        "media": "img:motion-desk"
+      },
+      {
+        "title": "直播与屏幕共享",
+        "body": "向 OBS 发送透明背景画面，向 Discord 发送游戏与角色合一的画面。",
+        "media": "video:share",
+        "size": "wide"
+      }
     ]
   },
   "how": {
     "kicker": "使用方法",
     "title": "只需三个步骤。",
     "steps": [
-      {"title": "打开 Unity 项目", "body": "打开平时上传到 VRChat 的角色的 Unity 项目（2022.3.22f1）。"},
-      {"title": "用 Exporter 导出", "body": "在 Curious Bobby - Avatar Exporter 中一键生成 .vavatar 文件。"},
-      {"title": "在 AVATAR LIVE 中开始", "body": "打开文件并开启摄像头，角色就会立刻动起来。之后不再需要 Unity。"}
+      {
+        "title": "打开 Unity 项目",
+        "body": "打开平时上传到 VRChat 的角色的 Unity 项目（2022.3.22f1）。"
+      },
+      {
+        "title": "用 Exporter 导出",
+        "body": "在 Curious Bobby - Avatar Exporter 中一键生成 .vavatar 文件。"
+      },
+      {
+        "title": "在 AVATAR LIVE 中开始",
+        "body": "打开文件并开启摄像头，角色就会立刻动起来。之后不再需要 Unity。"
+      }
     ],
     "note": "仅有 VRM · .vrca 文件无法使用，需要角色的 Unity 项目。",
     "link": "查看导出指南"
@@ -56,13 +100,83 @@
     "title": "直播所需，尽在一处。",
     "more": "了解详情",
     "rows": [
-      {"title": "选好角色，立即开始", "body": "选择最近使用的角色，或直接拖放文件即可。灯光和相机会按角色分别记住。", "points": ["最近的角色", "拖放即可打开", "按角色保存设置"], "media": "img:avatar-pop", "page": "03-launcher-and-library"},
-      {"title": "Expression 菜单原样可用", "body": "直接点按在 VRChat 中用过的菜单。常用项目可以做成按钮或快捷键。", "points": ["开关 · 按钮 · Radial · Puppet", "快捷键与快捷操作", "收藏"], "media": "video:menu", "page": "05-avatar-menu"},
-      {"title": "贴合你面部的追踪", "body": "按照引导做出表情，就会自动调整为贴合你的面部。", "points": ["自动面部设置", "眨眼 · 视线", "麦克风口型同步"], "media": "img:facecal", "page": "07-motion"},
-      {"title": "抓住拉拽，原样固定", "body": "用鼠标抓住头发或尾巴拉拽，还能按想要的形状固定下来。", "points": ["用鼠标抓取", "就地固定姿势", "支持 MarshmallowPB"], "media": "common:grab", "page": "04-main-window"},
-      {"title": "发送到 OBS 和通话应用", "body": "通过 Spout2 发送透明背景，通过虚拟摄像头出现在 Discord · Zoom 中。", "points": ["Spout2 透明背景", "虚拟摄像头", "保存 PNG 照片"], "media": "video:background", "page": "09-output"},
-      {"title": "游戏 + 角色，一起发到 Discord", "body": "无需 OBS，即可把角色叠加在游戏画面上共享。好友看到的是游戏和角色，你自己只看到游戏。", "points": ["无需 OBS", "只发送游戏声音", "自由调整位置 · 大小"], "media": "img:share", "page": "09-output"},
-      {"title": "灯光与相机", "body": "一个预设即可改变氛围，还能添加背景和效果。", "points": ["10 种灯光预设", "背景 · 色度键", "泛光 · 景深"], "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool", "page": "08-scene"}
+      {
+        "title": "选好角色，立即开始",
+        "body": "选择最近使用的角色，或直接拖放文件即可。灯光和相机会按角色分别记住。",
+        "points": [
+          "最近的角色",
+          "拖放即可打开",
+          "按角色保存设置"
+        ],
+        "media": "img:avatar-pop",
+        "page": "03-launcher-and-library"
+      },
+      {
+        "title": "Expression 菜单原样可用",
+        "body": "直接点按在 VRChat 中用过的菜单。常用项目可以做成按钮或快捷键。",
+        "points": [
+          "开关 · 按钮 · Radial · Puppet",
+          "快捷键与快捷操作",
+          "收藏"
+        ],
+        "media": "video:menu",
+        "page": "05-avatar-menu"
+      },
+      {
+        "title": "贴合你面部的追踪",
+        "body": "按照引导做出表情，就会自动调整为贴合你的面部。",
+        "points": [
+          "自动面部设置",
+          "眨眼 · 视线",
+          "麦克风口型同步"
+        ],
+        "media": "img:facecal",
+        "page": "07-motion"
+      },
+      {
+        "title": "抓住拉拽，原样固定",
+        "body": "用鼠标抓住头发或尾巴拉拽，还能按想要的形状固定下来。",
+        "points": [
+          "用鼠标抓取",
+          "就地固定姿势",
+          "支持 MarshmallowPB"
+        ],
+        "media": "common:grab",
+        "page": "04-main-window"
+      },
+      {
+        "title": "发送到 OBS 和通话应用",
+        "body": "通过 Spout2 发送透明背景，通过虚拟摄像头出现在 Discord · Zoom 中。",
+        "points": [
+          "Spout2 透明背景",
+          "虚拟摄像头",
+          "保存 PNG 照片"
+        ],
+        "media": "video:background",
+        "page": "09-output"
+      },
+      {
+        "title": "游戏 + 角色，一起发到 Discord",
+        "body": "无需 OBS，即可把角色叠加在游戏画面上共享。好友看到的是游戏和角色，你自己只看到游戏。",
+        "points": [
+          "无需 OBS",
+          "只发送游戏声音",
+          "自由调整位置 · 大小"
+        ],
+        "media": "img:share",
+        "page": "09-output"
+      },
+      {
+        "title": "灯光与相机",
+        "body": "一个预设即可改变氛围，还能添加背景和效果。",
+        "points": [
+          "10 种灯光预设",
+          "背景 · 色度键",
+          "泛光 · 景深"
+        ],
+        "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
+        "page": "08-scene"
+      }
     ]
   },
   "compare": {
@@ -72,11 +186,31 @@
     "leftNote": "一般情况",
     "right": "AVATAR LIVE",
     "rows": [
-      {"label": "VRM 转换", "left": "需要", "right": "不需要"},
-      {"label": "着色器", "left": "多需为 VRM 重新配置", "right": "原有着色器原样使用"},
-      {"label": "PhysBone", "left": "需用 SpringBone 重新设置", "right": "照常运作"},
-      {"label": "Expression 菜单", "left": "需要重新制作", "right": "直接使用"},
-      {"label": "修改角色后", "left": "从转换开始重来", "right": "只需重新导出"}
+      {
+        "label": "VRM 转换",
+        "left": "需要",
+        "right": "不需要"
+      },
+      {
+        "label": "着色器",
+        "left": "多需为 VRM 重新配置",
+        "right": "原有着色器原样使用"
+      },
+      {
+        "label": "PhysBone",
+        "left": "需用 SpringBone 重新设置",
+        "right": "照常运作"
+      },
+      {
+        "label": "Expression 菜单",
+        "left": "需要重新制作",
+        "right": "直接使用"
+      },
+      {
+        "label": "修改角色后",
+        "left": "从转换开始重来",
+        "right": "只需重新导出"
+      }
     ],
     "foot": "支持范围可能因软件而异。"
   },
@@ -85,8 +219,33 @@
     "title": "按需选择。",
     "sub": "Basic 和 Pro 是同一个程序，版本由输入的许可证决定。",
     "plans": [
-      {"name": "Basic", "price": "1,990 日元", "for": "个人使用", "features": ["角色 · 追踪 · 菜单 · 灯光 · 效果", "Spout2 · 虚拟摄像头 · 屏幕共享", "我的表情 · 自动表情", "与朋友之间的非公开 Discord 共享", "最高 1080p · 显示水印"], "cta": "购买 Basic"},
-      {"name": "Pro", "price": "3,980 日元", "for": "直播 · 公开发布视频 · 商业用途", "badge": "推荐", "features": ["Basic 的全部功能", "最高 4K · 无水印", "摆姿势", "物体（文字 · 图片 · 3D 模型）", "屏幕共享更多来源"], "cta": "购买 Pro"}
+      {
+        "name": "Basic",
+        "price": "1,990 日元",
+        "for": "个人使用",
+        "features": [
+          "角色 · 追踪 · 菜单 · 灯光 · 效果",
+          "Spout2 · 虚拟摄像头 · 屏幕共享",
+          "我的表情 · 自动表情",
+          "与朋友之间的非公开 Discord 共享",
+          "最高 1080p · 显示水印"
+        ],
+        "cta": "购买 Basic"
+      },
+      {
+        "name": "Pro",
+        "price": "3,980 日元",
+        "for": "直播 · 公开发布视频 · 商业用途",
+        "badge": "推荐",
+        "features": [
+          "Basic 的全部功能",
+          "最高 4K · 无水印",
+          "摆姿势",
+          "物体（文字 · 图片 · 3D 模型）",
+          "屏幕共享更多来源"
+        ],
+        "cta": "购买 Pro"
+      }
     ],
     "upgrade": "如果已经在使用 Basic，通过 BOOTH 的升级（1,990 日元）即可成为 Pro。",
     "note": "价格以 BOOTH 上的标示为准。由于数字商品的特性，购买后原则上难以退款，请在购买前确认准备事项。",
@@ -96,13 +255,34 @@
     "kicker": "FAQ",
     "title": "常见问题",
     "items": [
-      {"q": "可以直接使用 VRChat 角色吗？", "a": "可以。在平时上传到 VRChat 的角色的 Unity 项目中用 Exporter 导出后，着色器 · PhysBone · Expression 菜单都会原样使用。"},
-      {"q": "需要 Unity 项目吗？", "a": "制作角色文件时需要一次（Unity 2022.3.22f1）。制作完成后，无需 Unity 即可使用。"},
-      {"q": "只有 VRM 文件可以使用吗？", "a": "目前不支持。计划今后支持加载 VRM。"},
-      {"q": "支持哪些着色器？", "a": "会直接呈现角色所用的着色器，已在 Poiyomi、lilToon 等主要着色器上确认。不支持 AudioLink 和镜子检测。"},
-      {"q": "不用 OBS 也能进行 Discord 屏幕共享吗？", "a": "可以。开启屏幕共享，然后在 Discord 中选择“Avatar Live Share Output”，游戏和角色就会一起共享。"},
-      {"q": "Basic 和 Pro 有什么区别？", "a": "Basic 是用于个人使用（包括与朋友之间的非公开 Discord 共享）的版本，Pro 是用于直播 · 公开发布视频 · 商业用途的版本。Pro 支持 4K 输出、无水印、摆姿势和物体。"},
-      {"q": "支持 Windows 以外的操作系统吗？", "a": "仅支持 Windows 10 / 11（64 位）。"}
+      {
+        "q": "可以直接使用 VRChat 角色吗？",
+        "a": "可以。从上传到 VRChat 的角色 Unity 项目中用 Exporter 导出后，Expression 菜单会和在 VRChat 中一样工作，连服装和配饰的开关也原样保留。着色器和 PhysBone 也保持不变。"
+      },
+      {
+        "q": "需要 Unity 项目吗？",
+        "a": "制作角色文件时需要一次（Unity 2022.3.22f1）。制作完成后，无需 Unity 即可使用。"
+      },
+      {
+        "q": "只有 VRM 文件可以使用吗？",
+        "a": "目前不支持。计划今后支持加载 VRM。"
+      },
+      {
+        "q": "支持哪些着色器？",
+        "a": "角色使用的着色器会原样显示。我们已在 Poiyomi、lilToon 等 200 多种着色器上进行了测试。"
+      },
+      {
+        "q": "不用 OBS 也能进行 Discord 屏幕共享吗？",
+        "a": "可以。开启屏幕共享，然后在 Discord 中选择“Avatar Live Share Output”，游戏和角色就会一起共享。"
+      },
+      {
+        "q": "Basic 和 Pro 有什么区别？",
+        "a": "Basic 是用于个人使用（包括与朋友之间的非公开 Discord 共享）的版本，Pro 是用于直播 · 公开发布视频 · 商业用途的版本。Pro 支持 4K 输出、无水印、摆姿势和物体。"
+      },
+      {
+        "q": "支持 Windows 以外的操作系统吗？",
+        "a": "仅支持 Windows 10 / 11（64 位）。"
+      }
     ]
   },
   "cta": {
