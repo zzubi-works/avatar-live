@@ -23,7 +23,7 @@ SHOTS = os.path.join(ROOT, "shots")
 BASE = "https://zzubi-works.github.io/avatar-live"
 BOOTH = "https://curiousbobby.booth.pm/items/8953441"
 X_URL = "https://x.com/User_Not_Online"
-UPDATED = "2026-10-09"
+UPDATED = "2026-10-11"
 
 LANGS = {
     "ko": {"name": "한국어", "html": "ko", "shots": "ko", "locale": "ko_KR", "preconnect": ["https://cdn.jsdelivr.net"], "font": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"},
@@ -34,6 +34,9 @@ LANGS = {
 GUIDE = ["01-getting-started", "02-avatar-exporter", "03-launcher-and-library", "04-main-window", "05-avatar-menu",
          "06-devices", "07-motion", "08-scene", "09-output", "10-settings", "11-pro-features", "12-troubleshooting",
          "13-license"]
+UPDATES = ["updates"]
+UPDATE_LABEL = {"ko": "업데이트 내역", "en": "Updates", "ja": "更新履歴", "zh": "更新记录"}
+
 LEGAL = ["legal-terms", "legal-privacy", "legal-refund", "legal-seller"]
 
 CHROME = {
@@ -235,7 +238,8 @@ def header(lang, page, home, is_home):
     pre = "" if is_home else "index.html"
     links = [("#overview", n["overview"]), ("#features", n["features"]), ("#how", n["how"]), ("#editions", n["editions"])]
     navl = "".join('<a href="%s%s">%s</a>' % (pre, h, esc(t)) for h, t in links)
-    navl += '<a href="01-getting-started.html"%s>%s</a>' % (' aria-current="page"' if not is_home else "", esc(n["docs"]))
+    navl += '<a href="01-getting-started.html"%s>%s</a>' % (' aria-current="page"' if page[:-5] in GUIDE + LEGAL else "", esc(n["docs"]))
+    navl += '<a href="updates.html"%s>%s</a>' % (' aria-current="page"' if page == "updates.html" else "", esc(UPDATE_LABEL[lang]))
     langs = "".join('<a href="../%s/%s" lang="%s"%s>%s</a>' % (k, page, LANGS[k]["html"], ' aria-current="true"' if k == lang else "", v["name"])
                     for k, v in LANGS.items())
     return """<a class="skip" href="#main">{skip}</a>
@@ -260,7 +264,7 @@ def footer(lang, home, titles):
     C = CHROME[lang]
     n, f = home["nav"], home["footer"]
     col = lambda title, items: '<div class="fcol"><h2>%s</h2><ul>%s</ul></div>' % (esc(title), "".join('<li><a href="%s">%s</a></li>' % (h, esc(t)) for h, t in items))
-    product = [("index.html#features", n["features"]), ("index.html#how", n["how"]), ("index.html#editions", n["editions"]), (BOOTH, C["booth"])]
+    product = [("index.html#features", n["features"]), ("index.html#how", n["how"]), ("index.html#editions", n["editions"]), (BOOTH, C["booth"]), ("updates.html", UPDATE_LABEL[lang])]
     docs = [(p + ".html", nav_title(titles[p])) for p in ["01-getting-started", "02-avatar-exporter", "12-troubleshooting", "13-license"] if p in titles]
     legal = [(p + ".html", nav_title(titles[p])) for p in LEGAL if p in titles]
     links = [(BOOTH, C["booth"]), (X_URL, C["x"]), ("https://github.com/zzubi-works/avatar-live", "GitHub")]
@@ -396,8 +400,10 @@ def doc_page(lang, name, title, body, toc, titles):
     for p in LEGAL:
         if p in titles:
             side.append('<li><a href="%s.html"%s>%s</a></li>' % (p, ' aria-current="page"' if p == name else "", esc(nav_title(titles[p]))))
+    side.append('</ul><p class="side-h">%s</p><ul>' % esc(UPDATE_LABEL[lang]))
+    side.append('<li><a href="updates.html"%s>%s</a></li>' % (' aria-current="page"' if name == "updates" else "", esc(UPDATE_LABEL[lang])))
     side.append("</ul>")
-    seq = [p for p in GUIDE + LEGAL if p in titles]
+    seq = [p for p in GUIDE + LEGAL + UPDATES if p in titles]
     i = seq.index(name)
     prev_, next_ = (seq[i - 1] if i > 0 else None), (seq[i + 1] if i + 1 < len(seq) else None)
     pager = '<nav class="pager" aria-label="Pager">%s%s</nav>' % (
@@ -443,7 +449,7 @@ def main():
     for lang in LANGS:
         home = json.load(open(os.path.join(ROOT, "content", lang, "home.json"), encoding="utf-8"))
         titles, pages = {}, {}
-        for name in GUIDE + LEGAL:
+        for name in GUIDE + LEGAL + UPDATES:
             r = read_md(lang, name)
             if r:
                 titles[name], pages[name] = r[0], r
