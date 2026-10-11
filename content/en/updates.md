@@ -10,12 +10,12 @@ Changes in each Avatar Live release, starting with the latest update.
 - The default sitting pose now allows tracking while holding the hips and legs. All five controls start enabled for new settings. On upgrade, tracking permission for the existing built-in sitting pose is enabled once; individual controls and custom poses are preserved. Turning it off afterwards remains saved.
 - Shortened saved-pose descriptions with full-text tooltips, camera on/off icons and expand arrows. Tracking settings now form a connected card with the pose row, with improved spacing in narrow windows.
 
-Existing avatars, menu order, poses and settings are preserved. Basic/Pro feature access is unchanged.
+- Existing avatars, menu order, poses and settings are preserved. Basic/Pro feature access is unchanged.
 
 ## 2026/10/11 — v1.1.2
 
-- **My expressions in Scene and Menu:** Added **Import .anim** next to **New expression** in both places, using the same import feature already available under Motion › Automatic expressions.
-- You can import supported Unity `.anim` face/shape-key clips, including still expressions and multi-frame animations. Animation looping follows the clip's original settings.
+- My expressions in Scene and Menu: Added Import .anim next to New expression in both places, using the same import feature already available under Motion › Automatic expressions.
+- You can import supported Unity .anim face/shape-key clips, including still expressions and multi-frame animations. Animation looping follows the clip's original settings.
 - The v1.1.1 hand-depth default-OFF behavior is unchanged. Hand-depth estimation remains experimental and may cause unnatural or twisted arm motion when enabled.
 
 ## 2026/10/11 — v1.1.1
@@ -25,15 +25,15 @@ Existing avatars, menu order, poses and settings are preserved. Basic/Pro featur
 
 ## 2026/10/11 — v1.1.0
 
-- **MediaPipe webcam receiving:** Improved UDP packet reception and tracking loss/restart handling. Duplicate or stale detections no longer count as fresh movement observations.
-- **Arm and wrist stability:** Adjusted tracking timestamps, shoulder references, elbow directions, and wrist processing to reduce severe webcam arm jitter. Results may vary by camera and setup.
-- **Separate default and waiting poses:** Choose one pose for normal use and another for when tracking is lost. Tracking recovery returns to the active movement; explicitly applied manual poses take priority.
-- **Waiting facial expressions:** Assign an expression saved under **My expressions** to the tracking-lost waiting state. You can also use a waiting expression without a waiting pose.
-- **Webcam hand reach (experimental):** Added estimated hand depth using camera field of view (FOV) and body measurements, plus camera- and resolution-specific calibration settings.
-- **Settings and update reliability:** Improved profile save ordering, failure recovery, and restoration when an update is interrupted.
-- **Discord screen-share audio:** A missing virtual audio device now shows a warning and **Install virtual audio driver** button. With your consent, Avatar Live can install **VB-CABLE** by VB-Audio; no installation is needed if a compatible device is already present. See the [installation, licensing, and donation guide](09-output.md).
+- MediaPipe webcam receiving: Improved UDP packet reception and tracking loss/restart handling. Duplicate or stale detections no longer count as fresh movement observations.
+- Arm and wrist stability: Adjusted tracking timestamps, shoulder references, elbow directions, and wrist processing to reduce severe webcam arm jitter. Results may vary by camera and setup.
+- Separate default and waiting poses: Choose one pose for normal use and another for when tracking is lost. Tracking recovery returns to the active movement; explicitly applied manual poses take priority.
+- Waiting facial expressions: Assign an expression saved under My expressions to the tracking-lost waiting state. You can also use a waiting expression without a waiting pose.
+- Webcam hand reach (experimental): Added estimated hand depth using camera field of view (FOV) and body measurements, plus camera- and resolution-specific calibration settings.
+- Settings and update reliability: Improved profile save ordering, failure recovery, and restoration when an update is interrupted.
+- Discord screen-share audio: A missing virtual audio device now shows a warning and Install virtual audio driver button. With your consent, Avatar Live can install VB-CABLE by VB-Audio; no installation is needed if a compatible device is already present. See the [installation, licensing, and donation guide](09-output.md).
 
-> ⚠️ **Hand depth estimation is experimental and may be unstable.** It can reduce arm jitter but may also make normal arm movement unnatural or twist the arm/wrist. If affected, turn **Estimate depth** **off** under **Motion › Hands › Webcam reach**. Testing and improvements with real cameras are ongoing.
+- ⚠️ Hand depth estimation is experimental and may be unstable. It can reduce arm jitter but may also make normal arm movement unnatural or twist the arm/wrist. If affected, turn Estimate depth off under Motion › Hands › Webcam reach. Testing and improvements with real cameras are ongoing.
 
 ## 2026/10/11 — v1.0.10
 
