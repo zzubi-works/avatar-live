@@ -45,15 +45,17 @@
   <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html" aria-current="page">업데이트 내역</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="업데이트-내역">업데이트 내역<a class="anchor" href="#업데이트-내역" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>Avatar Live의 버전별 변경 사항입니다. 최신 업데이트부터 확인할 수 있습니다.</p>
-<h2 id="20261011--웹사이트-가이드-업데이트">2026/10/11 — 웹사이트 가이드 업데이트<a class="anchor" href="#20261011--웹사이트-가이드-업데이트" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="20261011--v110">2026/10/11 — v1.1.0<a class="anchor" href="#20261011--v110" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li><strong>Discord 화면 공유 소리 안내:</strong> 가상 오디오 재생 장치가 없으면 화면은 공유되어도 게임 소리는 전달되지 않는다는 점을 명확히 설명했습니다.</li>
-<li><strong>드라이버 설치 방법:</strong> 오디오 장치 경고가 표시될 때 <strong>가상 오디오 드라이버 설치</strong> 버튼을 사용하는 방법, 설치 후 Windows 재부팅, 오디오 장치 <strong>자동</strong> 설정을 안내합니다.</li>
-<li><strong>VB-CABLE 출처·라이선스:</strong> 개발사 <strong>VB-Audio Software</strong>의 공식 홈페이지, Donationware 후원 안내, 업무·기업·기관용 라이선스 정보를 추가했습니다.</li>
-<li>자세한 내용은 <a href="09-output.html">출력 가이드</a>를 확인해 주세요.</li>
+<li><strong>MediaPipe 웹캠 수신 개선:</strong> UDP 패킷 수신과 추적 중단·재시작 처리를 수정하고, 중복되거나 오래된 관측값이 움직임에 다시 사용되지 않도록 개선했습니다.</li>
+<li><strong>팔·손목 추적 안정성:</strong> 웹캠 팔의 심한 떨림을 줄이기 위해 추적 시각, 어깨 기준점, 팔꿈치 방향 및 손목 보정 처리를 개선했습니다. 카메라 환경에 따라 결과는 달라질 수 있습니다.</li>
+<li><strong>기본 자세·대기 자세 분리:</strong> 평소 기본 자세와 추적이 끊겼을 때 사용할 대기 자세를 별도로 지정할 수 있습니다. 추적 복귀 시 기존 동작으로 돌아오며, 사용자가 직접 적용한 포즈가 우선합니다.</li>
+<li><strong>대기 표정 지정:</strong> <strong>내 표정</strong>에서 저장한 표정을 대기 중에만 사용하도록 설정할 수 있습니다. 대기 자세 없이 표정만 적용하는 것도 가능합니다.</li>
+<li><strong>웹캠 손 뻗기 (실험적):</strong> 카메라 시야각(FOV)과 신체 치수를 이용한 손 깊이 추정 및 카메라·해상도별 보정값 저장을 추가했습니다.</li>
+<li><strong>설정·업데이트 신뢰성:</strong> 프로필 저장 순서와 실패 복구, 업데이트 도중 문제가 생겼을 때의 복원 처리를 강화했습니다.</li>
+<li><strong>Discord 화면 공유 오디오:</strong> 사용할 수 있는 가상 오디오 장치가 없을 때 경고와 <strong>가상 오디오 드라이버 설치</strong> 버튼을 표시합니다. 동의 후 VB-Audio의 <strong>VB-CABLE</strong>을 설치할 수 있으며, 기존 장치가 있으면 추가 설치가 필요하지 않습니다. <a href="09-output.html">설치 방법 및 라이선스·후원 안내</a>를 확인해 주세요.</li>
 </ul>
-<blockquote>
-<p>이번 변경은 <strong>웹사이트 안내 업데이트</strong>입니다. 새로운 Avatar Live 실행 파일이 배포되었다는 의미는 아닙니다.</p>
+<blockquote class="callout warn"><p><strong>손 깊이 추정은 개발 중인 실험적 기능으로 불안정할 수 있습니다.</strong> 팔 떨림이 줄어들 수 있지만 평소 팔 움직임이 부자연스럽거나 팔·손목이 비틀릴 수 있습니다. 문제가 있다면 <strong>동작 › 손 상태 › 웹캠 손 뻗기 › 손 깊이 추정</strong>을 <strong>끄세요</strong>. 실제 카메라 환경별 검증과 개선은 계속 진행 중입니다.</p>
 </blockquote>
 <h2 id="20261011--v1010">2026/10/11 — v1.0.10<a class="anchor" href="#20261011--v1010" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
@@ -149,7 +151,7 @@
 <li>PhysBone 포즈 유지 처리를 개선했습니다.</li>
 <li>업그레이드 상품 표기를 변경했습니다.</li>
 </ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="legal-seller.html"><span>이전</span>판매자 정보</a><span></span></nav><p class="updated">최종 업데이트: 2026-10-11</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#20261011--웹사이트-가이드-업데이트">2026/10/11 — 웹사이트 가이드 업데이트</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#20261011--v110">2026/10/11 — v1.1.0</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

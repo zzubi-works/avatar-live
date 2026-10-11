@@ -45,15 +45,17 @@
   <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html" aria-current="page">更新记录</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="更新记录">更新记录<a class="anchor" href="#更新记录" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>Avatar Live各版本的更新内容，按最新版本优先排列。</p>
-<h2 id="20261011--网站指南更新">2026/10/11 — 网站指南更新<a class="anchor" href="#20261011--网站指南更新" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="20261011--v110">2026/10/11 — v1.1.0<a class="anchor" href="#20261011--v110" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li><strong>Discord 屏幕共享声音：</strong> 明确说明没有可用的虚拟音频播放设备时，即使画面正常共享，也无法传送游戏声音。</li>
-<li><strong>驱动安装指南：</strong> 说明设备缺失警告中出现的 <strong>安装虚拟音频驱动</strong> 按钮、安装后重新启动 Windows 的要求，以及推荐的 <strong>自动</strong> 音频设备设置。</li>
-<li><strong>VB-CABLE 来源和许可：</strong> 新增开发者 <strong>VB-Audio Software</strong> 的官方网站、Donationware 捐助说明，以及专业、企业和机构用途的独立许可信息。</li>
-<li>详情请参阅 <a href="09-output.html">输出指南</a>。</li>
+<li><strong>MediaPipe 摄像头接收：</strong> 改进了UDP数据包接收及跟踪丢失、重启时的处理，避免把重复或过时的检测结果当作新的动作。</li>
+<li><strong>手臂和手腕稳定性：</strong> 调整了跟踪时间戳、肩部基准点、手肘方向和手腕修正，以减少报告过的严重手臂抖动。实际效果可能因摄像头和环境而异。</li>
+<li><strong>基础姿势与等待姿势分离：</strong> 可以分别设置正常使用时的基础姿势和跟踪中断时的等待姿势。重新检测到动作后恢复跟踪，手动应用的姿势优先。</li>
+<li><strong>等待表情：</strong> 可将保存在 <strong>我的表情</strong> 中的表情设置为跟踪丢失时的等待表情，也可以不设置等待姿势、只应用表情。</li>
+<li><strong>摄像头手部前伸（实验性）：</strong> 增加了利用摄像头视场角（FOV）和身体尺寸估算手部深度，以及按摄像头和分辨率保存校准的功能。</li>
+<li><strong>设置与更新可靠性：</strong> 改进配置保存顺序、失败后的恢复，以及更新中断时的文件还原处理。</li>
+<li><strong>Discord 屏幕共享音频：</strong> 缺少可用的虚拟音频设备时显示警告与 <strong>安装虚拟音频驱动</strong> 按钮。经用户同意后，可以安装由VB-Audio开发的 <strong>VB-CABLE</strong>；已有兼容设备则无需安装。请参阅<a href="09-output.html">安装、许可和捐助说明</a>。</li>
 </ul>
-<blockquote>
-<p>本次为 <strong>网站文档更新</strong>，不代表发布了新的 Avatar Live 程序版本。</p>
+<blockquote class="callout warn"><p><strong>手部深度估算仍是开发中的实验性功能，可能不稳定。</strong> 虽可减少手臂抖动，但也可能使正常手臂动作不自然，甚至导致手臂或手腕扭曲。如遇此问题，请在 <strong>动作 › 手部 › 摄像头手部前伸 › 深度估算</strong> 中将其 <strong>关闭</strong>。实际摄像头环境下的验证与改进仍在进行中。</p>
 </blockquote>
 <h2 id="20261011--v1010">2026/10/11 — v1.0.10<a class="anchor" href="#20261011--v1010" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
@@ -202,7 +204,7 @@
 <li>改善 PhysBone 姿势保持处理。</li>
 <li>更新升级商品的表述。</li>
 </ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="legal-seller.html"><span>上一页</span>卖家信息</a><span></span></nav><p class="updated">最后更新: 2026-10-11</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#20261011--网站指南更新">2026/10/11 — 网站指南更新</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#20261011--v110">2026/10/11 — v1.1.0</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

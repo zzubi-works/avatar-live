@@ -2,14 +2,17 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
-## 2026/10/11 — Website guide update
+## 2026/10/11 — v1.1.0
 
-- **Discord screen-share sound:** Clarified that video may still be shared without a virtual audio playback device, but game sound will not be transmitted.
-- **Driver installation guide:** Explained the **Install virtual audio driver** button shown with the missing-device warning, the Windows restart after installation, and the recommended **Automatic** audio device setting.
-- **VB-CABLE credit and licensing:** Added VB-Audio Software's official website, Donationware contribution information, and separate licensing guidance for professional, business and institutional use.
-- See the [Output guide](09-output.md) for details.
+- **MediaPipe webcam receiving:** Improved UDP packet reception and tracking loss/restart handling. Duplicate or stale detections no longer count as fresh movement observations.
+- **Arm and wrist stability:** Adjusted tracking timestamps, shoulder references, elbow directions, and wrist processing to reduce severe webcam arm jitter. Results may vary by camera and setup.
+- **Separate default and waiting poses:** Choose one pose for normal use and another for when tracking is lost. Tracking recovery returns to the active movement; explicitly applied manual poses take priority.
+- **Waiting facial expressions:** Assign an expression saved under **My expressions** to the tracking-lost waiting state. You can also use a waiting expression without a waiting pose.
+- **Webcam hand reach (experimental):** Added estimated hand depth using camera field of view (FOV) and body measurements, plus camera- and resolution-specific calibration settings.
+- **Settings and update reliability:** Improved profile save ordering, failure recovery, and restoration when an update is interrupted.
+- **Discord screen-share audio:** A missing virtual audio device now shows a warning and **Install virtual audio driver** button. With your consent, Avatar Live can install **VB-CABLE** by VB-Audio; no installation is needed if a compatible device is already present. See the [installation, licensing, and donation guide](09-output.md).
 
-> This is a **website documentation update**, not an announcement of a new Avatar Live executable release.
+> ⚠️ **Hand depth estimation is experimental and may be unstable.** It can reduce arm jitter but may also make normal arm movement unnatural or twist the arm/wrist. If affected, turn **Estimate depth** **off** under **Motion › Hands › Webcam reach**. Testing and improvements with real cameras are ongoing.
 
 ## 2026/10/11 — v1.0.10
 

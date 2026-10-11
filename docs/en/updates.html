@@ -45,15 +45,17 @@
   <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html" aria-current="page">Updates</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="update-history">Update History<a class="anchor" href="#update-history" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>Changes in each Avatar Live release, starting with the latest update.</p>
-<h2 id="20261011--website-guide-update">2026/10/11 — Website guide update<a class="anchor" href="#20261011--website-guide-update" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="20261011--v110">2026/10/11 — v1.1.0<a class="anchor" href="#20261011--v110" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li><strong>Discord screen-share sound:</strong> Clarified that video may still be shared without a virtual audio playback device, but game sound will not be transmitted.</li>
-<li><strong>Driver installation guide:</strong> Explained the <strong>Install virtual audio driver</strong> button shown with the missing-device warning, the Windows restart after installation, and the recommended <strong>Automatic</strong> audio device setting.</li>
-<li><strong>VB-CABLE credit and licensing:</strong> Added VB-Audio Software's official website, Donationware contribution information, and separate licensing guidance for professional, business and institutional use.</li>
-<li>See the <a href="09-output.html">Output guide</a> for details.</li>
+<li><strong>MediaPipe webcam receiving:</strong> Improved UDP packet reception and tracking loss/restart handling. Duplicate or stale detections no longer count as fresh movement observations.</li>
+<li><strong>Arm and wrist stability:</strong> Adjusted tracking timestamps, shoulder references, elbow directions, and wrist processing to reduce severe webcam arm jitter. Results may vary by camera and setup.</li>
+<li><strong>Separate default and waiting poses:</strong> Choose one pose for normal use and another for when tracking is lost. Tracking recovery returns to the active movement; explicitly applied manual poses take priority.</li>
+<li><strong>Waiting facial expressions:</strong> Assign an expression saved under <strong>My expressions</strong> to the tracking-lost waiting state. You can also use a waiting expression without a waiting pose.</li>
+<li><strong>Webcam hand reach (experimental):</strong> Added estimated hand depth using camera field of view (FOV) and body measurements, plus camera- and resolution-specific calibration settings.</li>
+<li><strong>Settings and update reliability:</strong> Improved profile save ordering, failure recovery, and restoration when an update is interrupted.</li>
+<li><strong>Discord screen-share audio:</strong> A missing virtual audio device now shows a warning and <strong>Install virtual audio driver</strong> button. With your consent, Avatar Live can install <strong>VB-CABLE</strong> by VB-Audio; no installation is needed if a compatible device is already present. See the <a href="09-output.html">installation, licensing, and donation guide</a>.</li>
 </ul>
-<blockquote>
-<p>This is a <strong>website documentation update</strong>, not an announcement of a new Avatar Live executable release.</p>
+<blockquote class="callout warn"><p><strong>Hand depth estimation is experimental and may be unstable.</strong> It can reduce arm jitter but may also make normal arm movement unnatural or twist the arm/wrist. If affected, turn <strong>Estimate depth</strong> <strong>off</strong> under <strong>Motion › Hands › Webcam reach</strong>. Testing and improvements with real cameras are ongoing.</p>
 </blockquote>
 <h2 id="20261011--v1010">2026/10/11 — v1.0.10<a class="anchor" href="#20261011--v1010" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
@@ -149,7 +151,7 @@
 <li>Improved PhysBone pose retention.</li>
 <li>Updated the wording of the Upgrade product.</li>
 </ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="legal-seller.html"><span>Previous</span>Seller Information</a><span></span></nav><p class="updated">Last updated: 2026-10-11</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#20261011--website-guide-update">2026/10/11 — Website guide update</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#20261011--v110">2026/10/11 — v1.1.0</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
