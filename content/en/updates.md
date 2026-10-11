@@ -2,6 +2,17 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/12 — v1.1.4
+
+- Corrected left/right expression channels, including blinking, in iFacialMocap mirror mode.
+- Improved AFK/waiting pose entry when the iPhone reports face tracking loss through trackingStatus.
+- Fixed desk-mode arm fallback with iPhone-only face tracking when webcam body data is unavailable.
+- Added per-avatar settings for AFK entry delay, blend-in and return durations.
+- Prepared menu layouts during avatar loading to reduce first-open lag. Initial loading may take slightly longer.
+- Added top-bar settings search to find controls such as Mirror and Language.
+
+- Existing avatars, saved poses, settings and menu-card order are preserved. Keep experimental hand-depth tracking OFF for regular use.
+
 ## 2026/10/12 — v1.1.3
 
 - Fixed an input error that could stop menu buttons and switches from responding.
