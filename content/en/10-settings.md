@@ -49,7 +49,7 @@ Check your current edition.
 | **Check now · Download** | Checks for a new version and downloads it. |
 | **Restart to install** | Updates right away. Your avatars and settings stay as they are. |
 
-> ⚠️ Updates download automatically with **Settings › Updates › Check and download automatically** and install when you restart or quit. If the download is slow because of the server, please download the new version from BOOTH again. Your avatars and settings are kept.
+> Avatar Live checks for updates once at every launch and shows a green indicator when a newer version is available. Turn on **Settings › Updates › Auto-download updates** to download automatically. Installation follows the separate **Install when quitting** option or **Restart to install** button. You can also get the new version from BOOTH; existing avatars and settings are preserved.
 
 ## Sending problems and suggestions
 
