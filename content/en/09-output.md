@@ -40,6 +40,17 @@ Send the avatar image to your streaming software or call apps.
 - Drag the avatar in the preview to set its position and size.
 - Turn on **Game audio** to send only the game's sound to your friends.
 
+### No game sound in Discord — virtual audio driver
+
+> ⚠️ **Discord screen-share sound needs an available virtual audio playback device.** Without one, video may still be shared, but game audio will not be transmitted. If a warning appears under **Output › Screen share**, click **Install virtual audio driver**. Windows will request administrator permission, and you must restart your PC after installation.
+
+Avatar Live's install option uses **VB-CABLE Virtual Audio Device** by **VB-Audio Software**. If another compatible virtual audio device is already available, you do not need to install it. We recommend **Automatic** for the shared audio device.
+
+- **Developer · official download:** [VB-Audio Software — VB-CABLE (www.vb-cable.com)](https://vb-cable.com/)
+- **Donations · licensing:** [VB-Audio's official Donationware and licensing information](https://vb-audio.com/Services/licensing.htm)
+
+**VB-CABLE is third-party Donationware made by VB-Audio Software, not by Avatar Live.** All contributions are welcome. If you find it useful, please support its developer through a donation or license purchase on the official site. **Professional, business, or institutional use requires a separate VB-CABLE license.**
+
 > 💡 If the game shows up black, try switching the game to **borderless window** or **windowed mode**. We recommend running Avatar Live without administrator rights.
 
 > 💡 Screen sharing may not work with games that run only in exclusive full screen. In that case, please stream through OBS.

@@ -40,6 +40,17 @@
 - 在预览中拖动角色，调整位置和大小。
 - 开启 **游戏声音** 后，只会把游戏的声音发送给好友。
 
+### Discord 共享没有游戏声音时 — 虚拟音频驱动
+
+> ⚠️ **Discord 屏幕共享要传输游戏声音，需要可用的虚拟音频播放设备。** 没有此设备时，即使画面正常共享，也无法传送声音。如果 **输出 › 屏幕共享** 显示警告，请点击 **安装虚拟音频驱动**。Windows 会请求管理员权限，安装后必须重新启动电脑。
+
+Avatar Live 的安装功能使用 **VB-Audio Software 开发的 VB-CABLE Virtual Audio Device**。如果已有其他可用的虚拟音频设备，则无需重复安装。建议将共享音频设备设置为 **自动**。
+
+- **开发者及官方下载：** [VB-Audio Software — VB-CABLE (www.vb-cable.com)](https://vb-cable.com/)
+- **捐助与许可：** [VB-Audio 官方 Donationware 与许可说明](https://vb-audio.com/Services/licensing.htm)
+
+**VB-CABLE 是由 VB-Audio Software 开发的第三方 Donationware（捐助型软件），并非 Avatar Live 自行开发。** 开发者欢迎大家支持；如果觉得实用，请通过官方网站捐助或购买许可。**专业、企业或机构用途必须另外购买相应的 VB-CABLE 许可。**
+
 > 💡 如果游戏显示为黑色，请尝试将游戏切换为 **无边框窗口** 或 **窗口模式**。建议不要以管理员权限运行 Avatar Live。
 
 > 💡 仅支持全屏的游戏可能无法使用屏幕共享。这种情况下，请通过 OBS 进行推流。
