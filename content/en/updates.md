@@ -2,6 +2,15 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/11 — Website guide update
+
+- **Discord screen-share sound:** Clarified that video may still be shared without a virtual audio playback device, but game sound will not be transmitted.
+- **Driver installation guide:** Explained the **Install virtual audio driver** button shown with the missing-device warning, the Windows restart after installation, and the recommended **Automatic** audio device setting.
+- **VB-CABLE credit and licensing:** Added VB-Audio Software's official website, Donationware contribution information, and separate licensing guidance for professional, business and institutional use.
+- See the [Output guide](09-output.md) for details.
+
+> This is a **website documentation update**, not an announcement of a new Avatar Live executable release.
+
 ## 2026/10/11 — v1.0.10
 
 - Improved some excessive PhysBone movement. This is a temporary improvement, with further improvements planned.
