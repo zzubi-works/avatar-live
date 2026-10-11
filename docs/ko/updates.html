@@ -45,6 +45,17 @@
   <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html" aria-current="page">업데이트 내역</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="업데이트-내역">업데이트 내역<a class="anchor" href="#업데이트-내역" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>Avatar Live의 버전별 변경 사항입니다. 최신 업데이트부터 확인할 수 있습니다.</p>
+<h2 id="20261011--v112">2026/10/11 — v1.1.2<a class="anchor" href="#20261011--v112" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li><strong>내 표정 불러오기 UI 통일:</strong> <strong>씬</strong>과 <strong>메뉴</strong>의 <strong>내 표정</strong>에 <strong>새 표정 만들기</strong>와 <strong>.anim 불러오기</strong> 버튼을 나란히 배치했습니다. 기존 <strong>동작 › 자동 표정</strong>의 가져오기 기능과 동일하게 동작합니다.</li>
+<li>Unity <code>.anim</code> 파일의 정적 셰이프키 표정과 여러 프레임의 표정 애니메이션을 불러올 수 있습니다. 반복 여부는 원본 클립의 설정을 따릅니다.</li>
+<li>1.1.1의 손 깊이 추정 기본 OFF 설정은 유지됩니다. 손 깊이 추정은 아직 실험적이며 켜면 팔 움직임이 부자연스러워질 수 있습니다.</li>
+</ul>
+<h2 id="20261011--v111">2026/10/11 — v1.1.1<a class="anchor" href="#20261011--v111" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>웹캠 손 깊이 추정(실험적)을 기본 OFF로 변경했습니다. 이전에 켜 두었던 설정도 업데이트 후 첫 실행 시 한 번 OFF로 전환되며, 카메라 보정값과 다른 설정은 보존됩니다.</li>
+<li>이후 직접 ON으로 바꿀 수 있지만 팔이 비틀리거나 움직임이 이상하면 OFF로 사용해 주세요.</li>
+</ul>
 <h2 id="20261011--v110">2026/10/11 — v1.1.0<a class="anchor" href="#20261011--v110" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li><strong>MediaPipe 웹캠 수신 개선:</strong> UDP 패킷 수신과 추적 중단·재시작 처리를 수정하고, 중복되거나 오래된 관측값이 움직임에 다시 사용되지 않도록 개선했습니다.</li>
@@ -151,7 +162,7 @@
 <li>PhysBone 포즈 유지 처리를 개선했습니다.</li>
 <li>업그레이드 상품 표기를 변경했습니다.</li>
 </ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="legal-seller.html"><span>이전</span>판매자 정보</a><span></span></nav><p class="updated">최종 업데이트: 2026-10-11</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#20261011--v110">2026/10/11 — v1.1.0</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#20261011--v112">2026/10/11 — v1.1.2</a></li><li><a href="#20261011--v111">2026/10/11 — v1.1.1</a></li><li><a href="#20261011--v110">2026/10/11 — v1.1.0</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

@@ -2,6 +2,17 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/11 — v1.1.2
+
+- **My expressions in Scene and Menu:** Added **Import .anim** next to **New expression** in both places, using the same import feature already available under Motion › Automatic expressions.
+- You can import supported Unity `.anim` face/shape-key clips, including still expressions and multi-frame animations. Animation looping follows the clip's original settings.
+- The v1.1.1 hand-depth default-OFF behavior is unchanged. Hand-depth estimation remains experimental and may cause unnatural or twisted arm motion when enabled.
+
+## 2026/10/11 — v1.1.1
+
+- Experimental webcam hand-depth estimation is now OFF by default, including a one-time reset of previously enabled settings on upgrade. Camera calibration and unrelated settings are preserved.
+- You may turn it on manually afterwards, but keep it OFF if normal arm movement becomes distorted.
+
 ## 2026/10/11 — v1.1.0
 
 - **MediaPipe webcam receiving:** Improved UDP packet reception and tracking loss/restart handling. Duplicate or stale detections no longer count as fresh movement observations.
