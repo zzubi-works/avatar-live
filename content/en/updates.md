@@ -70,14 +70,14 @@ Changes in each Avatar Live release, starting with the latest update.
 
 ## 2026/10/11 — v1.0.9
 
-- My expressions: right-click to assign a global key; hold or toggle, with keyboard expressions taking priority over automatic expressions
-- Saved poses: choose a key from right-click or the more menu; press to apply, press again to release, saved per avatar
-- Scene > Scenes: save background, lights, objects, pose, expression and camera together with a thumbnail; restore in one click, undo with Ctrl+Z
-- Drag expression menu and My expression tiles to reorder them
-- Choose an avatar: return to the avatar list and switch without restarting the app
-- Allow tracking per pose, object groups and pose folders, X/Y/Z object sizing with linked proportions
-- Improved upper-body movement when shoulders are visible at the desk, with its own switch and strength
-- Simplified Settings > License
+- Right-click a custom expression to assign a global hotkey. Hold-to-apply and press-to-toggle modes are supported, and hotkey expressions take priority over automatic expressions.
+- Saved poses can be assigned hotkeys from the right-click or ⋯ menu. Press once to apply and again to release; hotkeys are saved per avatar.
+- In Scene > Scenes, you can save the current background, lights, objects, pose, expression and camera with a thumbnail, then restore them together. Ctrl+Z undo is also supported.
+- You can drag expression-menu items and My Expressions tiles to change their order.
+- You can return to avatar selection and switch avatars without restarting the app.
+- Added per-pose tracking permissions, object groups and pose folders. Object size can be entered separately for X/Y/Z with optional linked proportions.
+- Improved upper-body movement when shoulders are visible in desk mode, and added a separate upper-body tracking toggle and strength control.
+- Simplified the Settings > License screen.
 
 ## 2026/10/09 — v1.0.8
 
