@@ -2,6 +2,16 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/12 — v1.1.3
+
+- Fixed an input error that could stop menu buttons and switches from responding.
+- Reorder menu cards by dropping anywhere in an expanded card's body or between cards. Added a full-card preview, insertion guide, automatic scrolling and Escape cancellation.
+- Split pose tracking into facial, head, arms, fingers and torso controls. Facial tracking can remain active while head tracking is disabled.
+- The default sitting pose now allows tracking while holding the hips and legs. All five controls start enabled for new settings. On upgrade, tracking permission for the existing built-in sitting pose is enabled once; individual controls and custom poses are preserved. Turning it off afterwards remains saved.
+- Shortened saved-pose descriptions with full-text tooltips, camera on/off icons and expand arrows. Tracking settings now form a connected card with the pose row, with improved spacing in narrow windows.
+
+Existing avatars, menu order, poses and settings are preserved. Basic/Pro feature access is unchanged.
+
 ## 2026/10/11 — v1.1.2
 
 - **My expressions in Scene and Menu:** Added **Import .anim** next to **New expression** in both places, using the same import feature already available under Motion › Automatic expressions.
