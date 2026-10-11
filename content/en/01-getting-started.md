@@ -52,6 +52,12 @@ A license is for one person on one device. You can move it to another PC yoursel
 
 Press **F1** to hide the menus so that only the avatar is shown.
 
+## Important locations in 1.1.5
+
+- Use the top magnifying glass to search for AFK, Mirror, Spout2 and other settings.
+- Configure the default pose and tracking-loss idle pose separately. AFK timing is now under Motion › Body, not Settings.
+- Click a section heading to fold it and drag headings to reorder cards. Each pose has independent facial, head, arms, fingers and body tracking switches.
+
 ## Quitting
 
-Clicking the window's **X** sends Avatar Live to the tray, and the avatar and outputs keep running. To quit completely, right-click the tray icon and click **Quit**.
+By default, clicking the window's **X** quits Avatar Live. You can select **Minimize to tray** under **Settings › Window**. While streaming, closing the window may keep output running in the tray. The **power** button at the lower-left quits the program completely.

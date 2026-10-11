@@ -55,6 +55,12 @@ Avatar Live's install option uses **VB-CABLE Virtual Audio Device** by **VB-Audi
 
 > 💡 Screen sharing may not work with games that run only in exclusive full screen. In that case, please stream through OBS.
 
+## Screen-share audio settings
+
+![Audio settings for screen sharing](img/share-audio.png)
+
+Under Output › Screen share › Audio, check the game audio and playback devices. The virtual-audio-driver warning and install button are shown only when no suitable device is present. An existing working device needs no extra installation. Read the Windows administrator prompt and reboot if the installer requires it.
+
 ## External output (VMC)
 
 Turn on **VMC output** to send the avatar's movement to another app. This is an experimental feature. To **receive** movement over VMC, please see [Devices › Receiving over VMC](06-devices.md#receiving-over-vmc-full-body-trackers--gloves--other-apps).

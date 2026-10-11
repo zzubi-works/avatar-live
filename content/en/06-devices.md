@@ -52,6 +52,16 @@
 
 > 💡 We've confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the features marked **experimental** (Ultraleap, OSC and so on) to work properly, but we haven't yet been able to test them with every device and app in the developer's environment. If something goes wrong, please let us know with **Settings › Diagnostics › Send an error report**.
 
+## iPhone mirror mode and tracking loss
+
+- iFacialMocap mirror mode correctly swaps left/right expression channels, including blinking. If the avatar closes the wrong eye, check Mirror.
+- When the iPhone sends tracking loss through trackingStatus, Avatar Live can switch to the assigned AFK pose. Adjust return timing under Motion › Body.
+- An iPhone face tracker does not automatically provide full-body tracking. Desk-mode arm rest can still work without webcam body data; use webcam or VMC to track body movement.
+
+## Experimental webcam hand-depth estimation
+
+Motion › Hands › Webcam hand reach includes experimental depth estimation. It may twist or jitter arms and wrists when reaching toward the camera, so keep it OFF for normal use. See [Motion](07-motion.md).
+
 ## Face tracking with an iPhone (iFacialMocap · FaceMotion3D)
 
 <div class="steps" markdown="1">

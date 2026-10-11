@@ -46,7 +46,7 @@
   <main id="main" class="docs-main"><article class="prose"><h1 id="6-장치">6. 장치<a class="anchor" href="#6-장치" aria-hidden="true" tabindex="-1">#</a></h1>
 <h2 id="웹캠과-마이크">웹캠과 마이크<a class="anchor" href="#웹캠과-마이크" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/ko/devices.webp" srcset="../assets/shots/ko/devices-960.webp 960w, ../assets/shots/ko/devices.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="장치 페이지" loading="lazy" decoding="async"><figcaption>장치 페이지</figcaption></figure>
+<figure><img src="../assets/shots/ko/devices.webp" width="960" height="900" alt="장치 페이지" loading="lazy" decoding="async"><figcaption>장치 페이지</figcaption></figure>
 <ul>
 <li><strong>웹캠</strong> 스위치를 켜면 얼굴과 손 트래킹이 시작됩니다.</li>
 <li>카메라 목록에서 사용할 웹캠을 고릅니다.</li>
@@ -59,7 +59,7 @@
 </div>
 <h2 id="트래킹-소스">트래킹 소스<a class="anchor" href="#트래킹-소스" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/ko/sources.webp" srcset="../assets/shots/ko/sources-960.webp 960w, ../assets/shots/ko/sources.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="트래킹 소스" loading="lazy" decoding="async"><figcaption>트래킹 소스</figcaption></figure>
+<figure><img src="../assets/shots/ko/sources.webp" width="960" height="900" alt="트래킹 소스" loading="lazy" decoding="async"><figcaption>트래킹 소스</figcaption></figure>
 <ul>
 <li>얼굴, 입, 머리, 눈, 팔, 손, 손가락, 몸을 무엇으로 움직일지 부위마다 고릅니다.</li>
 <li>부위마다 <strong>웹캠</strong>, <strong>iPhone</strong>, <strong>VMC</strong>, <strong>Ultraleap</strong>(손)을 섞어 쓸 수 있습니다. 예를 들어 얼굴은 iPhone, 몸은 전신 트래커, 손은 웹캠으로 둘 수 있습니다.</li>
@@ -89,6 +89,14 @@
 </ul>
 <blockquote class="callout tip"><p>웹캠(전신 · 손가락 관절 포함), iPhone, VMC 입력은 실제 장비로 확인했습니다. <strong>실험적</strong>으로 표시된 기능(Ultraleap, OSC 등)은 정상적으로 동작할 것으로 예상하지만, 아직 개발자 환경에서 모든 장치와 앱으로 테스트하지는 못했습니다. 문제가 있으면 <strong>설정 › 진단 › 오류 리포트 보내기</strong>로 알려 주세요.</p>
 </blockquote>
+<h2 id="iphone-미러-모드와-추적-상실">iPhone 미러 모드와 추적 상실<a class="anchor" href="#iphone-미러-모드와-추적-상실" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>iFacialMocap 미러 모드는 눈 깜빡임 등 왼쪽·오른쪽 표정 채널도 올바르게 반전합니다. 좌우 눈이 반대로 감기면 미러 설정을 확인하세요.</li>
+<li>iPhone이 trackingStatus를 통해 얼굴 추적 상실을 알리면 지정한 AFK 자세로 전환할 수 있습니다. 복귀 시간은 동작 › 몸에서 조절합니다.</li>
+<li>iPhone의 얼굴 추적만으로 전신 추적이 제공되지는 않습니다. 다만 웹캠 전신 입력이 없어도 책상모드의 팔 복귀는 사용할 수 있습니다. 전신 움직임이 필요하면 웹캠 또는 VMC를 사용하세요.</li>
+</ul>
+<h2 id="실험적-웹캠-손-깊이-추정">실험적 웹캠 손 깊이 추정<a class="anchor" href="#실험적-웹캠-손-깊이-추정" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>동작 › 손의 웹캠 손 뻗기 항목에 있는 손 깊이 추정은 아직 실험적입니다. 손을 앞으로 뻗을 때 팔·손목이 뒤틀리거나 떨릴 수 있으므로 일반 사용자는 OFF를 권장합니다. <a href="07-motion.html">동작 설명</a>을 참고하세요.</p>
 <h2 id="iphone으로-얼굴-트래킹-ifacialmocap--facemotion3d">iPhone으로 얼굴 트래킹 (iFacialMocap · FaceMotion3D)<a class="anchor" href="#iphone으로-얼굴-트래킹-ifacialmocap--facemotion3d" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="steps">
 <ol>
@@ -101,8 +109,8 @@
 </div>
 <blockquote class="callout tip"><p><strong>iPhone 주소 (선택)</strong> 칸은 비워 두어도 됩니다. iFacialMocap 앱에서 Destination IP address를 쓰지 않을 때만 입력하세요.</p>
 <p>💡 <strong>끊기면 웹캠으로 대체</strong>를 켜 두면 iPhone 연결이 끊겼을 때 웹캠이 잠시 대신 추적합니다.</p>
-</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>이전</span>아바타 메뉴</a><a class="next" href="07-motion.html"><span>다음</span>동작</a></nav><p class="updated">최종 업데이트: 2026-10-11</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#웹캠과-마이크">웹캠과 마이크</a></li><li><a href="#트래킹-소스">트래킹 소스</a></li><li><a href="#전신--손가락-관절-웹캠">전신 · 손가락 관절 (웹캠)</a></li><li><a href="#vmc로-받기-전신-트래커--장갑--다른-앱">VMC로 받기 (전신 트래커 · 장갑 · 다른 앱)</a></li><li><a href="#iphone으로-얼굴-트래킹-ifacialmocap--facemotion3d">iPhone으로 얼굴 트래킹 (iFacialMocap · FaceMotion3D)</a></li></ul></nav>
+</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>이전</span>아바타 메뉴</a><a class="next" href="07-motion.html"><span>다음</span>동작</a></nav><p class="updated">최종 업데이트: 2026-10-12</p></main>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#웹캠과-마이크">웹캠과 마이크</a></li><li><a href="#트래킹-소스">트래킹 소스</a></li><li><a href="#전신--손가락-관절-웹캠">전신 · 손가락 관절 (웹캠)</a></li><li><a href="#vmc로-받기-전신-트래커--장갑--다른-앱">VMC로 받기 (전신 트래커 · 장갑 · 다른 앱)</a></li><li><a href="#iphone-미러-모드와-추적-상실">iPhone 미러 모드와 추적 상실</a></li><li><a href="#실험적-웹캠-손-깊이-추정">실험적 웹캠 손 깊이 추정</a></li><li><a href="#iphone으로-얼굴-트래킹-ifacialmocap--facemotion3d">iPhone으로 얼굴 트래킹 (iFacialMocap · FaceMotion3D)</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

@@ -46,7 +46,7 @@
   <main id="main" class="docs-main"><article class="prose"><h1 id="6-设备">6. 设备<a class="anchor" href="#6-设备" aria-hidden="true" tabindex="-1">#</a></h1>
 <h2 id="摄像头与麦克风">摄像头与麦克风<a class="anchor" href="#摄像头与麦克风" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/zh/devices.webp" srcset="../assets/shots/zh/devices-960.webp 960w, ../assets/shots/zh/devices.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="设备页面" loading="lazy" decoding="async"><figcaption>设备页面</figcaption></figure>
+<figure><img src="../assets/shots/zh/devices.webp" width="960" height="900" alt="设备页面" loading="lazy" decoding="async"><figcaption>设备页面</figcaption></figure>
 <ul>
 <li>打开 <strong>摄像头</strong> 开关，即开始面部和手部追踪。</li>
 <li>在摄像头列表中选择要使用的摄像头。</li>
@@ -59,7 +59,7 @@
 </div>
 <h2 id="追踪来源">追踪来源<a class="anchor" href="#追踪来源" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/zh/sources.webp" srcset="../assets/shots/zh/sources-960.webp 960w, ../assets/shots/zh/sources.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="追踪来源" loading="lazy" decoding="async"><figcaption>追踪来源</figcaption></figure>
+<figure><img src="../assets/shots/zh/sources.webp" width="960" height="900" alt="追踪来源" loading="lazy" decoding="async"><figcaption>追踪来源</figcaption></figure>
 <ul>
 <li>为面部、嘴、头部、眼睛、手臂、手、手指、身体分别选择用什么来驱动。</li>
 <li>每个部位都可以混用 <strong>摄像头</strong>、<strong>iPhone</strong>、<strong>VMC</strong>、<strong>Ultraleap</strong>（手）。例如，面部用 iPhone，身体用全身追踪器，手用摄像头。</li>
@@ -89,6 +89,14 @@
 </ul>
 <blockquote class="callout tip"><p>摄像头（含全身 · 手指关节）、iPhone、VMC 输入已用实际设备确认。标有 <strong>实验性</strong> 的功能（Ultraleap、OSC 等）预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。如有问题，请通过 <strong>设置 › 诊断 › 发送错误报告</strong> 告诉我们。</p>
 </blockquote>
+<h2 id="iphone镜像与追踪丢失">iPhone镜像与追踪丢失<a class="anchor" href="#iphone镜像与追踪丢失" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>iFacialMocap镜像模式会正确交换眨眼等左右表情通道。若角色闭错眼睛，请检查镜像设置。</li>
+<li>当iPhone通过trackingStatus报告面部追踪丢失时，可以切换到指定的AFK姿势。恢复时间在动作 › 身体调整。</li>
+<li>单纯使用iPhone面部追踪不会自动得到全身数据。没有摄像头全身数据时也能使用桌面模式的手臂休息姿势；全身动作需要摄像头或VMC输入。</li>
+</ul>
+<h2 id="实验性的摄像头手部深度估算">实验性的摄像头手部深度估算<a class="anchor" href="#实验性的摄像头手部深度估算" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>动作 › 手 › 摄像头伸手中的深度估算仍在测试，可能导致手臂或手腕扭曲、抖动。普通使用建议OFF。参见<a href="07-motion.html">动作说明</a>。</p>
 <h2 id="用-iphone-进行面部追踪ifacialmocap--facemotion3d">用 iPhone 进行面部追踪（iFacialMocap · FaceMotion3D）<a class="anchor" href="#用-iphone-进行面部追踪ifacialmocap--facemotion3d" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="steps">
 <ol>
@@ -101,8 +109,8 @@
 </div>
 <blockquote class="callout tip"><p><strong>iPhone地址（可选）</strong> 栏可以留空。仅在 iFacialMocap 应用中不使用 Destination IP address 时才需要填写。</p>
 <p>💡 开启 <strong>断开时由摄像头接替</strong> 后，iPhone 连接断开时，摄像头会暂时代为追踪。</p>
-</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>上一页</span>角色菜单</a><a class="next" href="07-motion.html"><span>下一页</span>动作</a></nav><p class="updated">最后更新: 2026-10-11</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#摄像头与麦克风">摄像头与麦克风</a></li><li><a href="#追踪来源">追踪来源</a></li><li><a href="#全身--手指关节摄像头">全身 · 手指关节（摄像头）</a></li><li><a href="#通过-vmc-接收全身追踪器--手套--其他应用">通过 VMC 接收（全身追踪器 · 手套 · 其他应用）</a></li><li><a href="#用-iphone-进行面部追踪ifacialmocap--facemotion3d">用 iPhone 进行面部追踪（iFacialMocap · FaceMotion3D）</a></li></ul></nav>
+</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>上一页</span>角色菜单</a><a class="next" href="07-motion.html"><span>下一页</span>动作</a></nav><p class="updated">最后更新: 2026-10-12</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#摄像头与麦克风">摄像头与麦克风</a></li><li><a href="#追踪来源">追踪来源</a></li><li><a href="#全身--手指关节摄像头">全身 · 手指关节（摄像头）</a></li><li><a href="#通过-vmc-接收全身追踪器--手套--其他应用">通过 VMC 接收（全身追踪器 · 手套 · 其他应用）</a></li><li><a href="#iphone镜像与追踪丢失">iPhone镜像与追踪丢失</a></li><li><a href="#实验性的摄像头手部深度估算">实验性的摄像头手部深度估算</a></li><li><a href="#用-iphone-进行面部追踪ifacialmocap--facemotion3d">用 iPhone 进行面部追踪（iFacialMocap · FaceMotion3D）</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

@@ -38,6 +38,20 @@ You use your avatar's **Expressions menu** from VRChat just as it is. Outfit and
 
 </div>
 
+## Card order, saved poses and My expressions
+
+![Saved poses in the Avatar Menu](img/menu-poses.png)
+
+Click headings for Poses, My expressions and Hand gestures to expand their cards. Drag card headings to reorder the cards, and drag individual saved pose or expression tiles to rearrange them.
+
+![My expressions in the Avatar Menu](img/menu-myexpr.png)
+
+- Click a pose to apply or remove it. The camera icon beside it expands its per-pose tracking switches.
+- Facial, head, arms, fingers and body tracking can be enabled independently. For example, you can hold the head still while tracking facial expressions.
+- The built-in Sitting pose holds the hips and legs while initially allowing all five tracking parts.
+- Right-click tiles for available actions such as hotkeys, duplication or Quick Actions.
+- Create expression and Import .anim are available in both Scene and Avatar Menu. Multi-frame clips follow their original loop setting.
+
 ## Reset to defaults
 
 Click **Avatar parameters › Reset to defaults** to return the menu values to the avatar's defaults. Values that are saved, such as outfit state, carry over to the next launch.

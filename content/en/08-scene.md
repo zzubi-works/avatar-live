@@ -42,6 +42,16 @@ Select a light in the view, and handles appear.
 
 </div>
 
+## Light groups and card order
+
+Lighting has separate Add light and Add group controls. Drag lights into a group and rearrange their order. You can move, rotate and adjust group brightness together; selecting a light in Scene also selects its Lighting settings.
+
+## Save and restore scenes
+
+![Saved scenes card](img/scene-scenes.png)
+
+Use Scene › Scenes to save the current background, lights, objects, pose, expression and camera as one preset. Choose scenes by their thumbnails and use Ctrl+Z to undo a change. Save again to preserve subsequent edits.
+
 ## Background
 
 | Option | When to use it |

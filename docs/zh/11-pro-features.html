@@ -79,7 +79,7 @@
 </tbody>
 </table></div>
 <h2 id="摆姿势">摆姿势<a class="anchor" href="#摆姿势" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/zh/posing.webp" srcset="../assets/shots/zh/posing-960.webp 960w, ../assets/shots/zh/posing.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="摆姿势模式" loading="lazy" decoding="async"><figcaption>摆姿势模式</figcaption></figure>
+<figure><img src="../assets/shots/zh/posing.webp" width="960" height="900" alt="摆姿势模式" loading="lazy" decoding="async"><figcaption>摆姿势模式</figcaption></figure>
 <p>开启 <strong>场景 › 摆姿势 › 摆姿势模式</strong> 后，可以直接移动骨骼来摆出姿势。</p>
 <ul>
 <li>点击骨骼进行选择，拖动圆环即可旋转。旋转控件会按骨骼的大小显示。</li>
@@ -93,6 +93,22 @@
 </ul>
 <blockquote class="callout tip"><p>关闭摆姿势模式前，请先保存姿势。</p>
 </blockquote>
+<h2 id="每个姿势的五项独立追踪">每个姿势的五项独立追踪<a class="anchor" href="#每个姿势的五项独立追踪" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/zh/menu-poses.webp" width="960" height="900" alt="姿势卡片与追踪控制" loading="lazy" decoding="async"><figcaption>姿势卡片与追踪控制</figcaption></figure>
+<p>点击角色菜单或场景中保存姿势旁的相机图标，可分别控制面部、头部、手臂、手指、身体五项追踪。启用的部位继续跟踪，关闭的部位保持姿势。设置按姿势分别保存。</p>
+<ul>
+<li>头部OFF、面部ON可固定头部角度，同时保留表情追踪。</li>
+<li>面部OFF时仍可独立使用眼睛看镜头。</li>
+<li>内置坐姿固定骨盆和双腿，但最初允许五项追踪。</li>
+</ul>
+<h2 id="默认姿势与afk待机姿势">默认姿势与AFK待机姿势<a class="anchor" href="#默认姿势与afk待机姿势" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>默认姿势是角色正在被追踪时的基础休息姿势。</li>
+<li>追踪丢失姿势是在AFK状态使用的另一套姿势。</li>
+<li>待机表情是AFK时自动播放的已保存我的表情。可以不指定待机姿势，只播放表情。</li>
+<li>手动应用的姿势优先于自动待机姿势。重新获取追踪后会恢复正常动作。</li>
+<li>等待、过渡及恢复时间位于动作 › 身体 › AFK过渡时间。</li>
+</ul>
 <h2 id="姿势库">姿势库<a class="anchor" href="#姿势库" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>在 <strong>场景 › 摆姿势 › 姿势库</strong> 中选择存放 <code>.anim</code> 文件的文件夹后，所有姿势都会以 <strong>当前角色的缩略图</strong> 显示。</p>
 <ul>
@@ -102,7 +118,7 @@
 <li>也可以逐个导入在 Unity 中制作的人形 · 骨骼 <code>.anim</code>。</li>
 </ul>
 <h2 id="物体">物体<a class="anchor" href="#物体" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/zh/props.webp" srcset="../assets/shots/zh/props-960.webp 960w, ../assets/shots/zh/props.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="物体" loading="lazy" decoding="async"><figcaption>物体</figcaption></figure>
+<figure><img src="../assets/shots/zh/props.webp" width="960" height="900" alt="物体" loading="lazy" decoding="async"><figcaption>物体</figcaption></figure>
 <p>通过 <strong>场景 › 物体 › + 添加物体</strong> 放置文字、图片、形状和 3D 模型。</p>
 <ul>
 <li>将 <strong>附着位置</strong> 设为头部或手，物体就会随角色一起移动。</li>
@@ -121,9 +137,11 @@
 <ul>
 <li>也可以导入在 Unity 中制作的表情动画（<code>.anim</code>，形态键）。会动的剪辑在表情开启期间播放。</li>
 </ul>
+<figure><img src="../assets/shots/zh/menu-myexpr.webp" width="960" height="900" alt="角色菜单中的我的表情卡片" loading="lazy" decoding="async"><figcaption>角色菜单中的我的表情卡片</figcaption></figure>
+<p>创建新表情与导入 .anim 按钮同时显示在场景和角色菜单。可导入静态形态键表情，也能导入多帧的 Unity .anim 表情。动画是否循环由原始片段的设置决定。拖动表情图块可调整排序；右键可添加快捷键或快捷操作。</p>
 <h2 id="自动表情">自动表情<a class="anchor" href="#自动表情" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>微笑或惊讶时，会自动显示预先设定的表情。在 <strong>动作 › 自动表情</strong> 中开启，并为微笑 · 惊讶 · 眨眼等每种表情关联要显示的表情。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>上一页</span>设置</a><a class="next" href="12-troubleshooting.html"><span>下一页</span>故障排除</a></nav><p class="updated">最后更新: 2026-10-11</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#摆姿势">摆姿势</a></li><li><a href="#姿势库">姿势库</a></li><li><a href="#物体">物体</a></li><li><a href="#屏幕共享更多来源">屏幕共享更多来源</a></li><li><a href="#我的表情">我的表情</a></li><li><a href="#自动表情">自动表情</a></li></ul></nav>
+<p>微笑或惊讶时，会自动显示预先设定的表情。在 <strong>动作 › 自动表情</strong> 中开启，并为微笑 · 惊讶 · 眨眼等每种表情关联要显示的表情。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>上一页</span>设置</a><a class="next" href="12-troubleshooting.html"><span>下一页</span>故障排除</a></nav><p class="updated">最后更新: 2026-10-12</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#摆姿势">摆姿势</a></li><li><a href="#每个姿势的五项独立追踪">每个姿势的五项独立追踪</a></li><li><a href="#默认姿势与afk待机姿势">默认姿势与AFK待机姿势</a></li><li><a href="#姿势库">姿势库</a></li><li><a href="#物体">物体</a></li><li><a href="#屏幕共享更多来源">屏幕共享更多来源</a></li><li><a href="#我的表情">我的表情</a></li><li><a href="#自动表情">自动表情</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

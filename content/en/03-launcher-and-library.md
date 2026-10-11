@@ -29,6 +29,10 @@
 
 </div>
 
+## Opening a menu for the first time
+
+Menus are prepared while the avatar loads, reducing the delay when opening each menu for the first time. Initial loading may take a little longer. The top-left logo returns to avatar selection without restarting the program.
+
 ## Returning to the start screen
 
 Click the **logo** at the top left and choose **Restart**.

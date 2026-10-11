@@ -13,6 +13,7 @@ import json
 import os
 import re
 import shutil
+import tempfile
 
 import markdown
 from PIL import Image
@@ -23,7 +24,7 @@ SHOTS = os.path.join(ROOT, "shots")
 BASE = "https://zzubi-works.github.io/avatar-live"
 BOOTH = "https://curiousbobby.booth.pm/items/8953441"
 X_URL = "https://x.com/User_Not_Online"
-UPDATED = "2026-10-11"
+UPDATED = "2026-10-12"
 
 LANGS = {
     "ko": {"name": "한국어", "html": "ko", "shots": "ko", "locale": "ko_KR", "preconnect": ["https://cdn.jsdelivr.net"], "font": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"},
@@ -440,11 +441,30 @@ location.replace(t+'/index.html');
 
 
 def main():
-    if os.path.isdir(OUT):
-        shutil.rmtree(OUT)
-    os.makedirs(OUT)
-    shutil.copytree(os.path.join(ROOT, "assets"), os.path.join(OUT, "assets"))
-    build_images()
+    IMAGES.clear()
+    # The original PNG sources are local-only. Keep the committed WebP shots
+    # when rebuilding from a fresh clone, then replace them with any newly
+    # captured PNGs in shots/ so guide screenshots are reproducible.
+    with tempfile.TemporaryDirectory(prefix="avatar-live-shots-") as cache:
+        old_shots = os.path.join(OUT, "assets", "shots")
+        saved_shots = os.path.join(cache, "shots")
+        if os.path.isdir(old_shots):
+            shutil.copytree(old_shots, saved_shots)
+        if os.path.isdir(OUT):
+            shutil.rmtree(OUT)
+        os.makedirs(OUT)
+        shutil.copytree(os.path.join(ROOT, "assets"), os.path.join(OUT, "assets"))
+        if os.path.isdir(saved_shots):
+            shutil.copytree(saved_shots, os.path.join(OUT, "assets", "shots"), dirs_exist_ok=True)
+            for folder in list(LANGS) + ["common"]:
+                source = os.path.join(saved_shots, folder)
+                if not os.path.isdir(source):
+                    continue
+                for filename in os.listdir(source):
+                    if filename.endswith(".webp") and not filename.endswith("-960.webp"):
+                        with Image.open(os.path.join(source, filename)) as im:
+                            IMAGES[folder + "/" + filename[:-5]] = im.size
+        build_images()
     urls = []
     for lang in LANGS:
         home = json.load(open(os.path.join(ROOT, "content", lang, "home.json"), encoding="utf-8"))

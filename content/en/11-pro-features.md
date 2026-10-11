@@ -26,6 +26,24 @@ Turn on **Scene › Posing › Posing mode** to create a pose by moving the bone
 
 > 💡 Please save your pose before you turn off posing mode.
 
+## Five tracking controls for each pose
+
+![Saved pose and tracking controls](img/menu-poses.png)
+
+Click the camera icon beside a saved pose in the Avatar Menu or Scene to control facial, head, arms, fingers and body independently. Enabled parts follow live tracking; disabled parts remain posed. These five choices are saved for each pose.
+
+- Head OFF, facial ON holds the head while continuing face expressions.
+- Facial OFF can still allow Eyes on the camera independently.
+- The built-in Sitting pose holds hips and legs but initially permits all five tracking parts.
+
+## Default pose and AFK idle pose
+
+- Default pose is the resting pose while the avatar is being tracked.
+- Tracking-loss pose is a separate pose for the AFK state.
+- Idle expression is a saved My expression automatically played during AFK. It can also be used without an idle pose.
+- A manually applied pose takes priority over the automatic idle pose. Regular tracking resumes when input returns.
+- Adjust the wait, transition and return durations under Motion › Body › AFK transition timing.
+
 ## Pose library
 
 In **Scene › Posing › Pose library**, choose a folder that holds `.anim` files, and every pose is shown as a **thumbnail of your current avatar**.
@@ -58,6 +76,10 @@ Create your own expressions from the avatar's shape keys.
 3. Click **Save**, and you can turn the expression on from the **My expressions** card in the avatar menu.
 
 - You can also load expression animations made in Unity (`.anim` with shape keys). Clips that move play while the expression is on.
+
+![My expressions card](img/menu-myexpr.png)
+
+Create expression and Import .anim appear side by side in both Scene and the Avatar Menu. You can import a static shape-key expression or a multi-frame Unity .anim expression. Animated clips loop only when the original clip is configured to loop. Drag expression tiles to reorder them or right-click to assign hotkeys and Quick Actions.
 
 ## Automatic expressions
 

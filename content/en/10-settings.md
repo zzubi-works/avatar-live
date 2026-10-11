@@ -15,6 +15,12 @@
 
 </div>
 
+## Search menus and settings
+
+![Global menu search](img/settings-search.png)
+
+Use the magnifying glass at the top-right to search for AFK, Mirror, Language, Spout2, eye gaze, desk mode or hotkeys. A result opens the matching Menu, Devices, Motion, Scene, Output or Settings page and expands the relevant cards. AFK timing results navigate to Motion › Body rather than its old Settings location.
+
 ## Hotkeys
 
 <div class="shot" markdown="1">
@@ -50,6 +56,18 @@ Check your current edition.
 | **Restart to install** | Updates right away. Your avatars and settings stay as they are. |
 
 > Avatar Live checks for updates once at every launch and shows a green indicator when a newer version is available. Turn on **Settings › Updates › Auto-download updates** to download automatically. Installation follows the separate **Install when quitting** option or **Restart to install** button. You can also get the new version from BOOTH; existing avatars and settings are preserved.
+
+## Automatic update checks and downloading
+
+![Update settings](img/settings-updates.png)
+
+Avatar Live checks for a newer release once whenever the app starts. Disabling automatic downloading does not disable the version check or update notification. From the Update settings, you can check or download manually and install after restarting or when quitting. Existing avatars and saved settings are preserved.
+
+## Send an error report
+
+![Diagnostics and error report](img/settings-diagnostics.png)
+
+If you experience a bug, open Settings › Diagnostics › Send error report. Include what you were doing when the problem occurred; the diagnostic data and reproduction steps are much more useful than a general message.
 
 ## Sending problems and suggestions
 

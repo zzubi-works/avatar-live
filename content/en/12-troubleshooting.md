@@ -50,6 +50,17 @@
 | The game shows up black | Switch the game to windowed mode |
 | "Avatar Live Basic" text | This is the Basic watermark. It isn't shown in Pro. |
 
+## Common issues after 1.1.5
+
+| Symptom | Fix |
+|---|---|
+| Tracking loss never activates the AFK pose | Check the wait/transition values in Motion › Body and whether an [idle pose](11-pro-features.md) is assigned |
+| Winks are mirrored incorrectly on iPhone | Update to at least 1.1.4 and check Mirror |
+| Arms do not fall back to the desk with iPhone only | Check Motion › Hands · Desk and arm tracking sources; full-body input requires webcam or VMC |
+| Arms jitter when reaching forward | Turn OFF experimental hand-depth estimation and check webcam calibration |
+| A setting is hard to find | Search AFK, Mirror, Spout2 or Language using the upper-right magnifying glass |
+| A bug is difficult to explain | Use Settings › Diagnostics › Send error report with reproduction steps and logs |
+
 ## Supported features
 
 | | Details |

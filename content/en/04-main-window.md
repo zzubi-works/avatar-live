@@ -62,6 +62,19 @@ In the view, **left-drag** hair, ears or a tail to pull it. **Right-click** whil
 
 Use the **Move · Rotate · Scale** tools on the left of the view to move or turn the avatar. Click **⌂** to bring it back to the center.
 
+## Search menus and settings
+
+![Search for AFK settings](img/settings-search.png)
+
+Click the magnifying glass in the upper-right corner and search for AFK, tracking loss, Mirror, eye gaze, Spout, Bloom or hotkeys. Selecting a result navigates to the relevant page and expands its settings. Both Korean and English search terms are supported.
+
+## Collapse, expand and reorder cards
+
+- Click a section heading to collapse or expand it.
+- Drag a heading onto another card's body or into the gap between cards to change the order.
+- While dragging, a preview and insertion line appear and scrolling begins near the edge. Press Esc to cancel.
+- Each page saves its card order. Sorting pose or expression tiles is a separate action.
+
 ## Window and tray
 
-Clicking the window's **X** sends it to the tray, and tracking and output keep running. Double-click the tray icon to open it again.
+**X** normally quits Avatar Live. Under **Settings › Window**, select **Minimize to tray** to keep tracking and output active while hiding the window. During streaming, the window may minimize to the tray to protect the output. Double-click the tray icon to restore it or use the lower-left **power** button to quit.

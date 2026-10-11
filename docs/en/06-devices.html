@@ -46,7 +46,7 @@
   <main id="main" class="docs-main"><article class="prose"><h1 id="6-devices">6. Devices<a class="anchor" href="#6-devices" aria-hidden="true" tabindex="-1">#</a></h1>
 <h2 id="webcam-and-microphone">Webcam and microphone<a class="anchor" href="#webcam-and-microphone" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/en/devices.webp" srcset="../assets/shots/en/devices-960.webp 960w, ../assets/shots/en/devices.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="Devices page" loading="lazy" decoding="async"><figcaption>Devices page</figcaption></figure>
+<figure><img src="../assets/shots/en/devices.webp" width="960" height="900" alt="Devices page" loading="lazy" decoding="async"><figcaption>Devices page</figcaption></figure>
 <ul>
 <li>Turn on the <strong>Webcam</strong> switch to start face and hand tracking.</li>
 <li>Choose the webcam to use from the camera list.</li>
@@ -59,7 +59,7 @@
 </div>
 <h2 id="tracking-sources">Tracking sources<a class="anchor" href="#tracking-sources" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/en/sources.webp" srcset="../assets/shots/en/sources-960.webp 960w, ../assets/shots/en/sources.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="Tracking sources" loading="lazy" decoding="async"><figcaption>Tracking sources</figcaption></figure>
+<figure><img src="../assets/shots/en/sources.webp" width="960" height="900" alt="Tracking sources" loading="lazy" decoding="async"><figcaption>Tracking sources</figcaption></figure>
 <ul>
 <li>For each part (face, mouth, head, eyes, arms, hands, fingers, body), choose what moves it.</li>
 <li>You can mix <strong>Webcam</strong>, <strong>iPhone</strong>, <strong>VMC</strong> and <strong>Ultraleap</strong> (hands) part by part. For example, the face can come from your iPhone, the body from full-body trackers and the hands from the webcam.</li>
@@ -89,6 +89,14 @@
 </ul>
 <blockquote class="callout tip"><p>We've confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the features marked <strong>experimental</strong> (Ultraleap, OSC and so on) to work properly, but we haven't yet been able to test them with every device and app in the developer's environment. If something goes wrong, please let us know with <strong>Settings › Diagnostics › Send an error report</strong>.</p>
 </blockquote>
+<h2 id="iphone-mirror-mode-and-tracking-loss">iPhone mirror mode and tracking loss<a class="anchor" href="#iphone-mirror-mode-and-tracking-loss" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>iFacialMocap mirror mode correctly swaps left/right expression channels, including blinking. If the avatar closes the wrong eye, check Mirror.</li>
+<li>When the iPhone sends tracking loss through trackingStatus, Avatar Live can switch to the assigned AFK pose. Adjust return timing under Motion › Body.</li>
+<li>An iPhone face tracker does not automatically provide full-body tracking. Desk-mode arm rest can still work without webcam body data; use webcam or VMC to track body movement.</li>
+</ul>
+<h2 id="experimental-webcam-hand-depth-estimation">Experimental webcam hand-depth estimation<a class="anchor" href="#experimental-webcam-hand-depth-estimation" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Motion › Hands › Webcam hand reach includes experimental depth estimation. It may twist or jitter arms and wrists when reaching toward the camera, so keep it OFF for normal use. See <a href="07-motion.html">Motion</a>.</p>
 <h2 id="face-tracking-with-an-iphone-ifacialmocap--facemotion3d">Face tracking with an iPhone (iFacialMocap · FaceMotion3D)<a class="anchor" href="#face-tracking-with-an-iphone-ifacialmocap--facemotion3d" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="steps">
 <ol>
@@ -101,8 +109,8 @@
 </div>
 <blockquote class="callout tip"><p>You can leave the <strong>iPhone address (optional)</strong> field empty. Fill it in only if you don't use Destination IP address in the iFacialMocap app.</p>
 <p>💡 Turn on <strong>Webcam takes over if it drops</strong>, and the webcam tracks for you for a while when the iPhone connection drops.</p>
-</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>Previous</span>Avatar menu</a><a class="next" href="07-motion.html"><span>Next</span>Motion</a></nav><p class="updated">Last updated: 2026-10-11</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#webcam-and-microphone">Webcam and microphone</a></li><li><a href="#tracking-sources">Tracking sources</a></li><li><a href="#full-body--finger-joints-webcam">Full body · Finger joints (webcam)</a></li><li><a href="#receiving-over-vmc-full-body-trackers--gloves--other-apps">Receiving over VMC (full-body trackers · gloves · other apps)</a></li><li><a href="#face-tracking-with-an-iphone-ifacialmocap--facemotion3d">Face tracking with an iPhone (iFacialMocap · FaceMotion3D)</a></li></ul></nav>
+</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>Previous</span>Avatar menu</a><a class="next" href="07-motion.html"><span>Next</span>Motion</a></nav><p class="updated">Last updated: 2026-10-12</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#webcam-and-microphone">Webcam and microphone</a></li><li><a href="#tracking-sources">Tracking sources</a></li><li><a href="#full-body--finger-joints-webcam">Full body · Finger joints (webcam)</a></li><li><a href="#receiving-over-vmc-full-body-trackers--gloves--other-apps">Receiving over VMC (full-body trackers · gloves · other apps)</a></li><li><a href="#iphone-mirror-mode-and-tracking-loss">iPhone mirror mode and tracking loss</a></li><li><a href="#experimental-webcam-hand-depth-estimation">Experimental webcam hand-depth estimation</a></li><li><a href="#face-tracking-with-an-iphone-ifacialmocap--facemotion3d">Face tracking with an iPhone (iFacialMocap · FaceMotion3D)</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

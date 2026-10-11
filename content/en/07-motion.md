@@ -65,6 +65,12 @@ Click the **Automatic face setup** button to start calibration. Make each expres
 
 </div>
 
+## Eye gaze and Eyes on the camera
+
+![Eye gaze controls](img/motion-gaze.png)
+
+Adjust gaze tracking under Motion › Face. Enable Eyes on the camera to have the avatar look toward the camera. This works independently even when facial tracking is OFF for a pose. Head tracking also has its own switch; camera gaze does not restore unrelated facial expressions.
+
 ## Body
 
 <div class="shot" markdown="1">
@@ -78,6 +84,24 @@ Click the **Automatic face setup** button to start calibration. Make each expres
 - **Full body** — Follows the torso, legs, sitting and standing with the webcam or VMC. Please see [Devices › Full body · Finger joints](06-devices.md#full-body--finger-joints-webcam).
 
 </div>
+
+## AFK timing and tracking loss
+
+![AFK transition timing under Motion](img/motion-afk.png)
+
+AFK timing has moved out of Settings to Motion › Body. Adjust these three values for each avatar with sliders or direct numeric entry:
+
+- Tracking-loss wait: how long tracking must be lost before entering AFK.
+- Transition into AFK: how long the pose blends toward the idle pose.
+- Return after tracking resumes: how long it takes to return to normal motion.
+
+Existing per-avatar values are preserved. The default pose, tracking-loss idle pose and idle expression are configured separately; see [Posing](11-pro-features.md).
+
+## Webcam hand-depth estimation (experimental)
+
+![Experimental webcam hand-reach controls](img/motion-hand-depth.png)
+
+This estimates how far a hand reaches toward the webcam. Depending on the camera, it may cause the arms or wrists to twist or jitter. Keep it OFF for ordinary use, and review hand jitter reduction if tracking becomes unstable.
 
 ## Hands · Desk
 

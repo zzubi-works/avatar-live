@@ -79,7 +79,7 @@
 </tbody>
 </table></div>
 <h2 id="ポージング">ポージング<a class="anchor" href="#ポージング" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ja/posing.webp" srcset="../assets/shots/ja/posing-960.webp 960w, ../assets/shots/ja/posing.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="ポージングモード" loading="lazy" decoding="async"><figcaption>ポージングモード</figcaption></figure>
+<figure><img src="../assets/shots/ja/posing.webp" width="960" height="900" alt="ポージングモード" loading="lazy" decoding="async"><figcaption>ポージングモード</figcaption></figure>
 <p><strong>シーン › ポージング › ポージングモード</strong> をオンにすると、ボーンを直接動かしてポーズを作れます。</p>
 <ul>
 <li>ボーンをクリックして選び、リングをドラッグして回します。回転ギズモは、ボーンの大きさに合わせて表示されます。</li>
@@ -93,6 +93,22 @@
 </ul>
 <blockquote class="callout tip"><p>ポージングモードをオフにする前に、ポーズを保存しておいてください。</p>
 </blockquote>
+<h2 id="ポーズごとの5つの追跡設定">ポーズごとの5つの追跡設定<a class="anchor" href="#ポーズごとの5つの追跡設定" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/ja/menu-poses.webp" width="960" height="900" alt="ポーズと追跡設定" loading="lazy" decoding="async"><figcaption>ポーズと追跡設定</figcaption></figure>
+<p>アバターメニューやシーンで保存したポーズの横のカメラアイコンを押すと、フェイシャル、頭、腕、指、胴体を独立してON/OFFできます。ONの部分は追跡され、OFFの部分はポーズを維持します。5項目はポーズごとに保存されます。</p>
+<ul>
+<li>頭OFF・フェイシャルONなら頭の角度を固定しながら表情を追跡できます。</li>
+<li>フェイシャルOFFでもカメラ目線は独立して利用できます。</li>
+<li>標準の座りポーズは骨盤と脚を固定し、5つの追跡項目を初期状態で許可します。</li>
+</ul>
+<h2 id="基本ポーズとafk待機ポーズ">基本ポーズとAFK待機ポーズ<a class="anchor" href="#基本ポーズとafk待機ポーズ" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>基本ポーズは追跡中のアバターの休憩ポーズです。</li>
+<li>追跡が切れたときのポーズはAFK状態で使う別のポーズです。</li>
+<li>待機中の表情はAFK時に自動再生する保存済みのマイ表情です。待機ポーズなしで表情のみ設定することもできます。</li>
+<li>手動適用したポーズは自動待機ポーズより優先されます。追跡が復帰すると通常の動作に戻ります。</li>
+<li>待機・切り替え・復帰の時間は動作 › 体 › AFK切り替え時間で設定します。</li>
+</ul>
 <h2 id="ポーズライブラリ">ポーズライブラリ<a class="anchor" href="#ポーズライブラリ" aria-hidden="true" tabindex="-1">#</a></h2>
 <p><strong>シーン › ポージング › ポーズライブラリ</strong> で <code>.anim</code> ファイルが入ったフォルダーを選ぶと、すべてのポーズを <strong>今のアバターのサムネイル</strong> で表示します。</p>
 <ul>
@@ -102,7 +118,7 @@
 <li>Unity で作ったヒューマノイド・ボーンの <code>.anim</code> を、ひとつずつ読み込むこともできます。</li>
 </ul>
 <h2 id="オブジェクト">オブジェクト<a class="anchor" href="#オブジェクト" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ja/props.webp" srcset="../assets/shots/ja/props-960.webp 960w, ../assets/shots/ja/props.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="オブジェクト" loading="lazy" decoding="async"><figcaption>オブジェクト</figcaption></figure>
+<figure><img src="../assets/shots/ja/props.webp" width="960" height="900" alt="オブジェクト" loading="lazy" decoding="async"><figcaption>オブジェクト</figcaption></figure>
 <p><strong>シーン › オブジェクト › + オブジェクトを追加</strong> で、テキスト、画像、図形、3D モデルを置きます。</p>
 <ul>
 <li><strong>付ける場所</strong> を頭や手にすると、アバターと一緒に動きます。</li>
@@ -121,9 +137,11 @@
 <ul>
 <li>Unity で作った表情のアニメーション（<code>.anim</code>、シェイプキー）も読み込めます。動くクリップは、表情をオンにしている間、再生されます。</li>
 </ul>
+<figure><img src="../assets/shots/ja/menu-myexpr.webp" width="960" height="900" alt="アバターメニューのマイ表情カード" loading="lazy" decoding="async"><figcaption>アバターメニューのマイ表情カード</figcaption></figure>
+<p>新しい表情を作成と .anim を読み込むボタンは、シーンとアバターメニューの両方に並んでいます。静止したシェイプキー表情と複数フレームの Unity .anim 表情を取り込めます。アニメーションのループは元のクリップ設定に従います。表情タイルをドラッグして並べ替え、右クリックでショートカットやクイックアクションを登録できます。</p>
 <h2 id="自動表情">自動表情<a class="anchor" href="#自動表情" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>笑ったり驚いたりすると、決めておいた表情が自動で出ます。<strong>動き › 自動表情</strong> でオンにして、笑顔・驚き・ウインクなどの表情ごとに、表示する表情を割り当てます。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>前へ</span>設定</a><a class="next" href="12-troubleshooting.html"><span>次へ</span>トラブルシューティング</a></nav><p class="updated">最終更新: 2026-10-11</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#ポージング">ポージング</a></li><li><a href="#ポーズライブラリ">ポーズライブラリ</a></li><li><a href="#オブジェクト">オブジェクト</a></li><li><a href="#画面共有のほかのソース">画面共有のほかのソース</a></li><li><a href="#マイ表情">マイ表情</a></li><li><a href="#自動表情">自動表情</a></li></ul></nav>
+<p>笑ったり驚いたりすると、決めておいた表情が自動で出ます。<strong>動き › 自動表情</strong> でオンにして、笑顔・驚き・ウインクなどの表情ごとに、表示する表情を割り当てます。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>前へ</span>設定</a><a class="next" href="12-troubleshooting.html"><span>次へ</span>トラブルシューティング</a></nav><p class="updated">最終更新: 2026-10-12</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#ポージング">ポージング</a></li><li><a href="#ポーズごとの5つの追跡設定">ポーズごとの5つの追跡設定</a></li><li><a href="#基本ポーズとafk待機ポーズ">基本ポーズとAFK待機ポーズ</a></li><li><a href="#ポーズライブラリ">ポーズライブラリ</a></li><li><a href="#オブジェクト">オブジェクト</a></li><li><a href="#画面共有のほかのソース">画面共有のほかのソース</a></li><li><a href="#マイ表情">マイ表情</a></li><li><a href="#自動表情">自動表情</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

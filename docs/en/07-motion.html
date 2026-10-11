@@ -47,7 +47,7 @@
 <p>Set how the face, body and hands move. Settings are saved separately for each avatar.</p>
 <h2 id="face-tracking">Face tracking<a class="anchor" href="#face-tracking" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/en/motion-face.webp" srcset="../assets/shots/en/motion-face-960.webp 960w, ../assets/shots/en/motion-face.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="Motion page" loading="lazy" decoding="async"><figcaption>Motion page</figcaption></figure>
+<figure><img src="../assets/shots/en/motion-face.webp" width="960" height="900" alt="Motion page" loading="lazy" decoding="async"><figcaption>Motion page</figcaption></figure>
 <ul>
 <li><strong>Mirror</strong> — Moves to the same side as you, like a mirror.</li>
 <li><strong>Arms · Hands · Fingers</strong> — Moves each part with the webcam.</li>
@@ -92,7 +92,7 @@
 </blockquote>
 <h2 id="face-adjustment">Face adjustment<a class="anchor" href="#face-adjustment" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/en/face-adjust.webp" srcset="../assets/shots/en/face-adjust-960.webp 960w, ../assets/shots/en/face-adjust.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="Face adjustment" loading="lazy" decoding="async"><figcaption>Face adjustment</figcaption></figure>
+<figure><img src="../assets/shots/en/face-adjust.webp" width="960" height="900" alt="Face adjustment" loading="lazy" decoding="async"><figcaption>Face adjustment</figcaption></figure>
 <ul>
 <li>Adjust, one by one, how strongly the eye, brow, mouth and cheek expressions show.</li>
 <li>Drag a slider to the right, and that expression shows more strongly.</li>
@@ -102,7 +102,7 @@
 </div>
 <h2 id="blink--mouth">Blink · Mouth<a class="anchor" href="#blink--mouth" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/en/motion-mouth.webp" srcset="../assets/shots/en/motion-mouth-960.webp 960w, ../assets/shots/en/motion-mouth.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="Blink and mouth" loading="lazy" decoding="async"><figcaption>Blink and mouth</figcaption></figure>
+<figure><img src="../assets/shots/en/motion-mouth.webp" width="960" height="900" alt="Blink and mouth" loading="lazy" decoding="async"><figcaption>Blink and mouth</figcaption></figure>
 <ul>
 <li><strong>Blink › Mode</strong> — <strong>Independent</strong> works well for winks, and with <strong>Synchronized</strong> both eyes close together.</li>
 <li><strong>Eye gaze tracking</strong> — The avatar's eyes follow your gaze.</li>
@@ -111,9 +111,12 @@
 <li><strong>Tongue · cheek puff</strong> — Stick out the tongue or puff the cheeks with a button or a hotkey.</li>
 </ul>
 </div>
+<h2 id="eye-gaze-and-eyes-on-the-camera">Eye gaze and Eyes on the camera<a class="anchor" href="#eye-gaze-and-eyes-on-the-camera" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/en/motion-gaze.webp" width="960" height="900" alt="Eye gaze controls" loading="lazy" decoding="async"><figcaption>Eye gaze controls</figcaption></figure>
+<p>Adjust gaze tracking under Motion › Face. Enable Eyes on the camera to have the avatar look toward the camera. This works independently even when facial tracking is OFF for a pose. Head tracking also has its own switch; camera gaze does not restore unrelated facial expressions.</p>
 <h2 id="body">Body<a class="anchor" href="#body" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/en/motion-body.webp" srcset="../assets/shots/en/motion-body-960.webp 960w, ../assets/shots/en/motion-body.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="Body motion" loading="lazy" decoding="async"><figcaption>Body motion</figcaption></figure>
+<figure><img src="../assets/shots/en/motion-body.webp" width="960" height="900" alt="Body motion" loading="lazy" decoding="async"><figcaption>Body motion</figcaption></figure>
 <ul>
 <li><strong>Head motion</strong> — Choose from <strong>Subtle · Natural · Expressive</strong>.</li>
 <li><strong>Body follow</strong> — When you turn your head, the body follows naturally.</li>
@@ -122,9 +125,21 @@
 <li><strong>Full body</strong> — Follows the torso, legs, sitting and standing with the webcam or VMC. Please see <a href="06-devices.html#full-body--finger-joints-webcam">Devices › Full body · Finger joints</a>.</li>
 </ul>
 </div>
+<h2 id="afk-timing-and-tracking-loss">AFK timing and tracking loss<a class="anchor" href="#afk-timing-and-tracking-loss" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/en/motion-afk.webp" width="960" height="900" alt="AFK transition timing under Motion" loading="lazy" decoding="async"><figcaption>AFK transition timing under Motion</figcaption></figure>
+<p>AFK timing has moved out of Settings to Motion › Body. Adjust these three values for each avatar with sliders or direct numeric entry:</p>
+<ul>
+<li>Tracking-loss wait: how long tracking must be lost before entering AFK.</li>
+<li>Transition into AFK: how long the pose blends toward the idle pose.</li>
+<li>Return after tracking resumes: how long it takes to return to normal motion.</li>
+</ul>
+<p>Existing per-avatar values are preserved. The default pose, tracking-loss idle pose and idle expression are configured separately; see <a href="11-pro-features.html">Posing</a>.</p>
+<h2 id="webcam-hand-depth-estimation-experimental">Webcam hand-depth estimation (experimental)<a class="anchor" href="#webcam-hand-depth-estimation-experimental" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/en/motion-hand-depth.webp" width="960" height="900" alt="Experimental webcam hand-reach controls" loading="lazy" decoding="async"><figcaption>Experimental webcam hand-reach controls</figcaption></figure>
+<p>This estimates how far a hand reaches toward the webcam. Depending on the camera, it may cause the arms or wrists to twist or jitter. Keep it OFF for ordinary use, and review hand jitter reduction if tracking becomes unstable.</p>
 <h2 id="hands--desk">Hands · Desk<a class="anchor" href="#hands--desk" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/en/motion-desk.webp" srcset="../assets/shots/en/motion-desk-960.webp 960w, ../assets/shots/en/motion-desk.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="Hands and desk" loading="lazy" decoding="async"><figcaption>Hands and desk</figcaption></figure>
+<figure><img src="../assets/shots/en/motion-desk.webp" width="960" height="900" alt="Hands and desk" loading="lazy" decoding="async"><figcaption>Hands and desk</figcaption></figure>
 <ul>
 <li><strong>Desk Interaction</strong> — When your hands aren't visible to the camera, the avatar's hands move along with your keyboard and mouse.</li>
 <li><strong>Hand default pose</strong> — Adjust the desk height, hand spacing and wrist angle.</li>
@@ -135,8 +150,8 @@
 </div>
 <blockquote class="callout privacy"><p>Keyboard input is used only to move the avatar's hands. The characters you type are not saved or sent.</p>
 <p>💡 Camera detection of the tongue and cheek puff is an experimental feature.</p>
-</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>Previous</span>Devices</a><a class="next" href="08-scene.html"><span>Next</span>Scene</a></nav><p class="updated">Last updated: 2026-10-11</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#face-tracking">Face tracking</a></li><li><a href="#how-expressions-move">How expressions move</a></li><li><a href="#automatic-face-setup">Automatic face setup</a></li><li><a href="#face-adjustment">Face adjustment</a></li><li><a href="#blink--mouth">Blink · Mouth</a></li><li><a href="#body">Body</a></li><li><a href="#hands--desk">Hands · Desk</a></li></ul></nav>
+</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>Previous</span>Devices</a><a class="next" href="08-scene.html"><span>Next</span>Scene</a></nav><p class="updated">Last updated: 2026-10-12</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#face-tracking">Face tracking</a></li><li><a href="#how-expressions-move">How expressions move</a></li><li><a href="#automatic-face-setup">Automatic face setup</a></li><li><a href="#face-adjustment">Face adjustment</a></li><li><a href="#blink--mouth">Blink · Mouth</a></li><li><a href="#eye-gaze-and-eyes-on-the-camera">Eye gaze and Eyes on the camera</a></li><li><a href="#body">Body</a></li><li><a href="#afk-timing-and-tracking-loss">AFK timing and tracking loss</a></li><li><a href="#webcam-hand-depth-estimation-experimental">Webcam hand-depth estimation (experimental)</a></li><li><a href="#hands--desk">Hands · Desk</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

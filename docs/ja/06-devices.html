@@ -46,7 +46,7 @@
   <main id="main" class="docs-main"><article class="prose"><h1 id="6-デバイス">6. デバイス<a class="anchor" href="#6-デバイス" aria-hidden="true" tabindex="-1">#</a></h1>
 <h2 id="web-カメラとマイク">Web カメラとマイク<a class="anchor" href="#web-カメラとマイク" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/ja/devices.webp" srcset="../assets/shots/ja/devices-960.webp 960w, ../assets/shots/ja/devices.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="デバイスページ" loading="lazy" decoding="async"><figcaption>デバイスページ</figcaption></figure>
+<figure><img src="../assets/shots/ja/devices.webp" width="960" height="900" alt="デバイスページ" loading="lazy" decoding="async"><figcaption>デバイスページ</figcaption></figure>
 <ul>
 <li><strong>Web カメラ</strong> のスイッチをオンにすると、顔と手のトラッキングが始まります。</li>
 <li>カメラの一覧から、使う Web カメラを選びます。</li>
@@ -59,7 +59,7 @@
 </div>
 <h2 id="トラッキングソース">トラッキングソース<a class="anchor" href="#トラッキングソース" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/ja/sources.webp" srcset="../assets/shots/ja/sources-960.webp 960w, ../assets/shots/ja/sources.webp 1060w" sizes="(max-width: 900px) 100vw, 860px" width="1060" height="900" alt="トラッキングソース" loading="lazy" decoding="async"><figcaption>トラッキングソース</figcaption></figure>
+<figure><img src="../assets/shots/ja/sources.webp" width="960" height="900" alt="トラッキングソース" loading="lazy" decoding="async"><figcaption>トラッキングソース</figcaption></figure>
 <ul>
 <li>顔、口、頭、目、腕、手、指、体を何で動かすか、部位ごとに選びます。</li>
 <li>部位ごとに、<strong>Web カメラ</strong>、<strong>iPhone</strong>、<strong>VMC</strong>、<strong>Ultraleap</strong>（手）を組み合わせて使えます。たとえば、顔は iPhone、体は全身トラッカー、手は Web カメラ、という使い方ができます。</li>
@@ -89,6 +89,14 @@
 </ul>
 <blockquote class="callout tip"><p>Web カメラ（全身・指の関節を含む）、iPhone、VMC の入力は、実際の機器で確認済みです。<strong>試験的</strong> と表示されている機能（Ultraleap、OSC など）は正常に動作する見込みですが、まだ開発者の環境ですべてのデバイスとアプリでテストできてはいません。問題があれば、<strong>設定 › 診断 › エラーレポートを送る</strong> からお知らせください。</p>
 </blockquote>
+<h2 id="iphoneのミラーと追跡喪失">iPhoneのミラーと追跡喪失<a class="anchor" href="#iphoneのミラーと追跡喪失" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>iFacialMocapのミラーでは、まばたきなど左右の表情チャンネルも正しく入れ替わります。逆の目を閉じる場合はミラー設定を確認してください。</li>
+<li>iPhoneがtrackingStatusで顔の追跡喪失を送信すると、設定したAFKポーズへ切り替えられます。復帰時間は動作 › 体で調整します。</li>
+<li>iPhoneの顔追跡だけで全身の追跡データが得られるわけではありません。Webカメラの全身データがなくてもデスクモードの腕休憩は使えます。全身の動作にはWebカメラかVMCを併用してください。</li>
+</ul>
+<h2 id="webカメラの手の奥行き推定実験的">Webカメラの手の奥行き推定（実験的）<a class="anchor" href="#webカメラの手の奥行き推定実験的" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>動作 › 手 › Webカメラで手を伸ばす内の奥行き推定は開発中の機能です。腕・手首がねじれたり揺れたりする可能性があるため、通常はOFFを推奨します。<a href="07-motion.html">動作ガイド</a> を参照してください。</p>
 <h2 id="iphone-でフェイストラッキングifacialmocapfacemotion3d">iPhone でフェイストラッキング（iFacialMocap・FaceMotion3D）<a class="anchor" href="#iphone-でフェイストラッキングifacialmocapfacemotion3d" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="steps">
 <ol>
@@ -101,8 +109,8 @@
 </div>
 <blockquote class="callout tip"><p><strong>iPhoneのアドレス（任意）</strong> 欄は、空欄のままで大丈夫です。iFacialMocap アプリで Destination IP address を使わない場合だけ入力してください。</p>
 <p>💡 <strong>途切れたらウェブカメラで代替</strong> をオンにしておくと、iPhone との接続が途切れたとき、Web カメラが一時的に代わりにトラッキングします。</p>
-</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>前へ</span>アバターメニュー</a><a class="next" href="07-motion.html"><span>次へ</span>動き</a></nav><p class="updated">最終更新: 2026-10-11</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#web-カメラとマイク">Web カメラとマイク</a></li><li><a href="#トラッキングソース">トラッキングソース</a></li><li><a href="#全身指の関節web-カメラ">全身・指の関節（Web カメラ）</a></li><li><a href="#vmc-で受け取る全身トラッカーグローブほかのアプリ">VMC で受け取る（全身トラッカー・グローブ・ほかのアプリ）</a></li><li><a href="#iphone-でフェイストラッキングifacialmocapfacemotion3d">iPhone でフェイストラッキング（iFacialMocap・FaceMotion3D）</a></li></ul></nav>
+</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>前へ</span>アバターメニュー</a><a class="next" href="07-motion.html"><span>次へ</span>動き</a></nav><p class="updated">最終更新: 2026-10-12</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#web-カメラとマイク">Web カメラとマイク</a></li><li><a href="#トラッキングソース">トラッキングソース</a></li><li><a href="#全身指の関節web-カメラ">全身・指の関節（Web カメラ）</a></li><li><a href="#vmc-で受け取る全身トラッカーグローブほかのアプリ">VMC で受け取る（全身トラッカー・グローブ・ほかのアプリ）</a></li><li><a href="#iphoneのミラーと追跡喪失">iPhoneのミラーと追跡喪失</a></li><li><a href="#webカメラの手の奥行き推定実験的">Webカメラの手の奥行き推定（実験的）</a></li><li><a href="#iphone-でフェイストラッキングifacialmocapfacemotion3d">iPhone でフェイストラッキング（iFacialMocap・FaceMotion3D）</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

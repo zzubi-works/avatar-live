@@ -79,7 +79,7 @@
 </tbody>
 </table></div>
 <h2 id="posing">Posing<a class="anchor" href="#posing" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/en/posing.webp" srcset="../assets/shots/en/posing-960.webp 960w, ../assets/shots/en/posing.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="Posing mode" loading="lazy" decoding="async"><figcaption>Posing mode</figcaption></figure>
+<figure><img src="../assets/shots/en/posing.webp" width="960" height="900" alt="Posing mode" loading="lazy" decoding="async"><figcaption>Posing mode</figcaption></figure>
 <p>Turn on <strong>Scene › Posing › Posing mode</strong> to create a pose by moving the bones directly.</p>
 <ul>
 <li>Click a bone to select it, and drag a ring to rotate it. The rotation gizmo is sized to fit the bone.</li>
@@ -93,6 +93,22 @@
 </ul>
 <blockquote class="callout tip"><p>Please save your pose before you turn off posing mode.</p>
 </blockquote>
+<h2 id="five-tracking-controls-for-each-pose">Five tracking controls for each pose<a class="anchor" href="#five-tracking-controls-for-each-pose" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/en/menu-poses.webp" width="960" height="900" alt="Saved pose and tracking controls" loading="lazy" decoding="async"><figcaption>Saved pose and tracking controls</figcaption></figure>
+<p>Click the camera icon beside a saved pose in the Avatar Menu or Scene to control facial, head, arms, fingers and body independently. Enabled parts follow live tracking; disabled parts remain posed. These five choices are saved for each pose.</p>
+<ul>
+<li>Head OFF, facial ON holds the head while continuing face expressions.</li>
+<li>Facial OFF can still allow Eyes on the camera independently.</li>
+<li>The built-in Sitting pose holds hips and legs but initially permits all five tracking parts.</li>
+</ul>
+<h2 id="default-pose-and-afk-idle-pose">Default pose and AFK idle pose<a class="anchor" href="#default-pose-and-afk-idle-pose" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>Default pose is the resting pose while the avatar is being tracked.</li>
+<li>Tracking-loss pose is a separate pose for the AFK state.</li>
+<li>Idle expression is a saved My expression automatically played during AFK. It can also be used without an idle pose.</li>
+<li>A manually applied pose takes priority over the automatic idle pose. Regular tracking resumes when input returns.</li>
+<li>Adjust the wait, transition and return durations under Motion › Body › AFK transition timing.</li>
+</ul>
 <h2 id="pose-library">Pose library<a class="anchor" href="#pose-library" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>In <strong>Scene › Posing › Pose library</strong>, choose a folder that holds <code>.anim</code> files, and every pose is shown as a <strong>thumbnail of your current avatar</strong>.</p>
 <ul>
@@ -102,7 +118,7 @@
 <li>You can also load humanoid · bone <code>.anim</code> files made in Unity one at a time.</li>
 </ul>
 <h2 id="objects">Objects<a class="anchor" href="#objects" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/en/props.webp" srcset="../assets/shots/en/props-960.webp 960w, ../assets/shots/en/props.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="Objects" loading="lazy" decoding="async"><figcaption>Objects</figcaption></figure>
+<figure><img src="../assets/shots/en/props.webp" width="960" height="900" alt="Objects" loading="lazy" decoding="async"><figcaption>Objects</figcaption></figure>
 <p>Use <strong>Scene › Objects › + Add object</strong> to place text, images, shapes and 3D models.</p>
 <ul>
 <li>Set <strong>Rides on</strong> to the head or a hand, and the object moves with the avatar.</li>
@@ -121,9 +137,11 @@
 <ul>
 <li>You can also load expression animations made in Unity (<code>.anim</code> with shape keys). Clips that move play while the expression is on.</li>
 </ul>
+<figure><img src="../assets/shots/en/menu-myexpr.webp" width="960" height="900" alt="My expressions card" loading="lazy" decoding="async"><figcaption>My expressions card</figcaption></figure>
+<p>Create expression and Import .anim appear side by side in both Scene and the Avatar Menu. You can import a static shape-key expression or a multi-frame Unity .anim expression. Animated clips loop only when the original clip is configured to loop. Drag expression tiles to reorder them or right-click to assign hotkeys and Quick Actions.</p>
 <h2 id="automatic-expressions">Automatic expressions<a class="anchor" href="#automatic-expressions" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>When you smile or look surprised, an expression you've chosen appears automatically. Turn it on in <strong>Motion › Automatic expressions</strong>, and link an expression to show for each one, such as smile · surprise · wink.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>Previous</span>Settings</a><a class="next" href="12-troubleshooting.html"><span>Next</span>Troubleshooting</a></nav><p class="updated">Last updated: 2026-10-11</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#posing">Posing</a></li><li><a href="#pose-library">Pose library</a></li><li><a href="#objects">Objects</a></li><li><a href="#more-screen-share-sources">More screen share sources</a></li><li><a href="#my-expressions">My expressions</a></li><li><a href="#automatic-expressions">Automatic expressions</a></li></ul></nav>
+<p>When you smile or look surprised, an expression you've chosen appears automatically. Turn it on in <strong>Motion › Automatic expressions</strong>, and link an expression to show for each one, such as smile · surprise · wink.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>Previous</span>Settings</a><a class="next" href="12-troubleshooting.html"><span>Next</span>Troubleshooting</a></nav><p class="updated">Last updated: 2026-10-12</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#posing">Posing</a></li><li><a href="#five-tracking-controls-for-each-pose">Five tracking controls for each pose</a></li><li><a href="#default-pose-and-afk-idle-pose">Default pose and AFK idle pose</a></li><li><a href="#pose-library">Pose library</a></li><li><a href="#objects">Objects</a></li><li><a href="#more-screen-share-sources">More screen share sources</a></li><li><a href="#my-expressions">My expressions</a></li><li><a href="#automatic-expressions">Automatic expressions</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
