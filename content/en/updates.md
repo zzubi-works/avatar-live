@@ -4,8 +4,8 @@ Changes in each Avatar Live release, starting with the latest update.
 
 ## 2026/10/12 — v1.1.5
 
-- Fixed **Eyes on the camera** so it works even when facial tracking is disabled for a pose.
-- Moved per-avatar AFK wait, transition and recovery timing from Settings to **Motion › Body**, preserving saved values.
+- Fixed Eyes on the camera so it works even when facial tracking is disabled for a pose.
+- Moved per-avatar AFK wait, transition and recovery timing from Settings to Motion › Body, preserving saved values.
 - Expanded settings search to include AFK, tracking loss, gaze, desk mode, lighting effects, output options and hotkeys.
 - Avatar Live now checks for updates once on every launch and displays the update indicator when a newer version is available, even if automatic downloading is disabled.
 - Removed the duplicate version from About and shortened pose and AFK explanations, including repetitive card fold-and-drag tips.
