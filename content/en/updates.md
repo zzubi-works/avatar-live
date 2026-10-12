@@ -5,6 +5,7 @@ Changes in each Avatar Live release, starting with the latest update.
 ## 2026/10/12 — v1.1.6
 
 - Completely revised PhysBone and physics calculations.
+- Updated Animator logic and animation property bindings to improve coordination between fingers, gestures and physics.
 
 ## 2026/10/12 — v1.1.5
 
