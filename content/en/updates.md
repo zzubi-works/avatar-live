@@ -2,6 +2,16 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/12 — v1.1.6
+
+- Integrated the REA-informed PhysBone solver with Grab, Pose and Release, and fixed grabbed joint stretching under nonuniform scale.
+- Preserved the finger fix and manual gesture priority; automatic hand colliders no longer distort hand-driven helper finger bones.
+- Retained Milltina breast SurfacePress isolation. The new exporter preserves collider dependencies on raycast results regardless of object names.
+- Avatar Exporter 1.0.5 preserves collider activation, collision/grab/pose filters, external blend trees, override controllers and standalone text animation bindings when the SDK is absent.
+- Long-chain oscillation at Spring 1.0 and complete VRChat raycast hit/miss behavior remain limitations.
+
+- [Avatar Exporter 1.0.5](https://github.com/zzubi-works/avatar-exporter/releases/tag/v1.0.5)
+
 ## 2026/10/12 — v1.1.5
 
 - Fixed Eyes on the camera so it works even when facial tracking is disabled for a pose.

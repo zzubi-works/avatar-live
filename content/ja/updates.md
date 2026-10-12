@@ -2,6 +2,16 @@
 
 Avatar Liveのバージョンごとの変更内容です。最新の更新から確認できます。
 
+## 2026/10/12 — v1.1.6
+
+- REA解析を反映したPhysBone計算とGrab・Pose・Releaseを統合し、非均一Scaleで掴んだ関節が伸びる問題を修正しました。
+- 指の修正と手動Gestureの優先順位を維持し、自動手Colliderによる補助指ボーンの変形を防止しました。
+- Milltinaの未対応SurfacePress Colliderの隔離を維持しました。新しいエクスポーターは名前に依存せずRaycast結果とColliderの依存関係を保存します。
+- Avatar Exporter 1.0.5ではCollider有効状態、衝突・Grab・Poseフィルター、外部BlendTree、Override Controller、SDKがないテキストAnimationClipのバインディングを保持します。
+- Spring 1.0の長いチェーンの振動とVRChat Raycastの完全なhit/miss動作は引き続き制限事項です。
+
+- [Avatar Exporter 1.0.5](https://github.com/zzubi-works/avatar-exporter/releases/tag/v1.0.5)
+
 ## 2026/10/12 — v1.1.5
 
 - ポーズのフェイシャルトラッキングがOFFでも、目線をカメラに機能が独立して動作するよう修正しました。

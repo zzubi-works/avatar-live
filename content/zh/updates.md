@@ -2,6 +2,16 @@
 
 Avatar Live各版本的更新内容，按最新版本优先排列。
 
+## 2026/10/12 — v1.1.6
+
+- 整合了基于REA分析的PhysBone计算与Grab、Pose、Release，并修复非均匀Scale下抓取关节伸长的问题。
+- 保留手指修复和手动Gesture优先级，防止自动手部Collider挤压辅助手指骨骼。
+- 保留Milltina胸部SurfacePress Collider隔离。新导出器按引用关系保存Raycast结果与Collider的依赖，不依赖对象名称。
+- Avatar Exporter 1.0.5保留Collider启用状态、碰撞与Grab/Pose筛选、外部BlendTree、Override Controller，以及无SDK时独立文本AnimationClip的绑定。
+- Spring 1.0长链振荡与完整VRChat Raycast hit/miss行为仍有限制。
+
+- [Avatar Exporter 1.0.5](https://github.com/zzubi-works/avatar-exporter/releases/tag/v1.0.5)
+
 ## 2026/10/12 — v1.1.5
 
 - 修复了关闭姿态面部跟踪时眼睛看镜头功能无法独立工作的情况。
