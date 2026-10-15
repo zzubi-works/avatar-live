@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Main window — AVATAR LIVE</title>
-<meta name="description" content="Click the pin at the top right of a panel to pin the panel in place.">
+<meta name="description" content="The v2.0.0 app window remains the editable scene view. Even when a studio camera is on air, you can use this window to inspect and adjust avatars, lig…">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/04-main-window.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/04-main-window.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/04-main-window.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/04-main-window.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/04-main-window.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="Main window — AVATAR LIVE">
-<meta property="og:description" content="Click the pin at the top right of a panel to pin the panel in place.">
+<meta property="og:description" content="The v2.0.0 app window remains the editable scene view. Even when a studio camera is on air, you can use this window to inspect and adjust avatars, lig…">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/04-main-window.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,156 +42,72 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html" aria-current="page">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html" aria-current="page">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio: scenes, cameras, lights and effects</a></li><li><a href="09-output.html">Output: OBS, NDI, screen sharing and remote sessions</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="4-main-window">4. Main window<a class="anchor" href="#4-main-window" aria-hidden="true" tabindex="-1">#</a></h1>
-<figure><img src="../assets/shots/en/main.webp" srcset="../assets/shots/en/main-960.webp 960w, ../assets/shots/en/main.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="Main window" loading="lazy" decoding="async"><figcaption>Main window</figcaption></figure>
-<h2 id="left-menu">Left menu<a class="anchor" href="#left-menu" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>The v2.0.0 app window remains the <strong>editable scene view</strong>. Even when a studio camera is on air, you can use this window to inspect and adjust avatars, lighting and props.</p>
+<figure><img src="../assets/shots/en/v45-menu.webp" srcset="../assets/shots/en/v45-menu-960.webp 960w, ../assets/shots/en/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="The v45 main interface" loading="lazy" decoding="async"><figcaption>The v45 main interface</figcaption></figure>
+<h2 id="finding-each-setting">Finding each setting<a class="anchor" href="#finding-each-setting" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th>Menu</th>
-<th>What it does</th>
+<th>Left menu</th>
+<th>What its controls actually affect</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>Menu</strong></td>
-<td>The avatar's Expressions menu and gestures → <a href="05-avatar-menu.html">Chapter 5</a></td>
+<td>Expression menu, avatar toggles, saved faces and gestures of the selected character. <a href="05-avatar-menu.html">Chapter 5</a></td>
 </tr>
 <tr>
-<td><strong>Devices</strong></td>
-<td>Webcam, microphone, tracking → <a href="06-devices.html">Chapter 6</a></td>
+<td><strong>Input / Devices</strong></td>
+<td>Which camera, mic, phone or tracker supplies data to each body part. <a href="06-devices.html">Chapter 6</a></td>
 </tr>
 <tr>
 <td><strong>Motion</strong></td>
-<td>Face, body, hands → <a href="07-motion.html">Chapter 7</a></td>
+<td>Face, eyes, arms, fingers, body, AFK, smoothing and lip-sync behavior. <a href="07-motion.html">Chapter 7</a></td>
 </tr>
 <tr>
-<td><strong>Scene</strong></td>
-<td>Background, lighting, effects → <a href="08-scene.html">Chapter 8</a></td>
+<td><strong>Studio</strong></td>
+<td>Scenes, avatar placement, props, room, lighting, cameras and effects. <a href="08-scene.html">Chapter 8</a></td>
 </tr>
 <tr>
 <td><strong>Output</strong></td>
-<td>Sending to streaming software, screen share → <a href="09-output.html">Chapter 9</a></td>
+<td>Spout2, NDI, virtual camera, screen sharing, recording and remote session. <a href="09-output.html">Chapter 9</a></td>
 </tr>
 <tr>
 <td><strong>Settings</strong></td>
-<td>Window, performance, language, hotkeys → <a href="10-settings.html">Chapter 10</a></td>
+<td>Performance, window, hotkeys, language, files, updates and diagnostics. <a href="10-settings.html">Chapter 10</a></td>
 </tr>
 </tbody>
 </table></div>
-<p>Click the <strong>pin</strong> at the top right of a panel to pin the panel in place.</p>
-<h2 id="top">Top<a class="anchor" href="#top" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Item</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Avatar name</strong></td>
-<td>Switches the avatar.</td>
-</tr>
-<tr>
-<td><strong>FPS</strong></td>
-<td>Click it to change the frame rate.</td>
-</tr>
-<tr>
-<td><strong>⟲</strong></td>
-<td>If the pose gets stuck or the hair gets tangled, click it to return to the initial state.</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="bottom-toolbar">Bottom toolbar<a class="anchor" href="#bottom-toolbar" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Button</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Face · Upper body · Full body</strong></td>
-<td>Changes the camera framing.</td>
-</tr>
-<tr>
-<td><strong>+</strong></td>
-<td>Saves the current camera position.</td>
-</tr>
-<tr>
-<td><strong>Lock the camera</strong></td>
-<td>Keeps the mouse from moving the camera.</td>
-</tr>
-<tr>
-<td><strong>Camera</strong></td>
-<td>Opens the camera settings.</td>
-</tr>
-</tbody>
-</table></div>
-<div class="shot">
-<figure><img src="../assets/shots/en/camera-pop.webp" srcset="../assets/shots/en/camera-pop-960.webp 960w, ../assets/shots/en/camera-pop.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="Camera settings" loading="lazy" decoding="async"><figcaption>Camera settings</figcaption></figure>
+<p>Pin a drawer with the <strong>pin icon</strong> to stop it closing when clicking elsewhere. The mouse wheel scrolls settings <strong>over the drawer</strong>, but zooms the <strong>scene view</strong> outside it. If the camera moves unexpectedly, first check where your cursor was.</p>
+<h2 id="scene-view-versus-the-on-air-picture">Scene view versus the on-air picture<a class="anchor" href="#scene-view-versus-the-on-air-picture" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li><strong>Save PNG</strong> — Saves the view as a picture, without the menus.</li>
-<li><strong>Field of view</strong> — Makes the lens wider or narrower.</li>
-<li><strong>Saved views</strong> — Jumps straight to a camera position you've saved.</li>
-<li><strong>Grab PhysBones with the left mouse button</strong> — Lets you grab hair or tails with the mouse.</li>
+<li>Moving the bottom-toolbar camera changes <strong>your editing point of view</strong>.</li>
+<li>When a <strong>studio camera is on air</strong>, OBS/NDI receives that saved camera picture instead. You can move behind the character to adjust lights without automatically broadcasting that backstage view.</li>
+<li>If <strong>Scene view</strong> itself is on air, your camera edits also change what viewers see. Verify the active source in <a href="08-scene.html">Studio cameras</a> and <a href="09-output.html">Output</a>.</li>
+<li>Always verify the receiving application's program monitor, particularly after changing camera, aspect ratio, background transparency or effects.</li>
 </ul>
-</div>
-<h2 id="mouse-and-keyboard">Mouse and keyboard<a class="anchor" href="#mouse-and-keyboard" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>Input</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Right drag</td>
-<td>Orbit the camera</td>
-</tr>
-<tr>
-<td>Wheel drag</td>
-<td>Pan the camera</td>
-</tr>
-<tr>
-<td>Wheel</td>
-<td>Zoom in · out</td>
-</tr>
-<tr>
-<td><strong>F1</strong></td>
-<td>Hide / show the menus</td>
-</tr>
-<tr>
-<td><strong>Ctrl + 1 / 2 / 3</strong></td>
-<td>Face / upper body / full body</td>
-</tr>
-<tr>
-<td><strong>Ctrl + Z</strong></td>
-<td>Undo moving the avatar</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="grabbing-physbones">Grabbing PhysBones<a class="anchor" href="#grabbing-physbones" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>In the view, <strong>left-drag</strong> hair, ears or a tail to pull it. <strong>Right-click</strong> while holding to keep it in that shape, and grab the same part again to release it.</p>
-<h2 id="moving-the-avatar">Moving the avatar<a class="anchor" href="#moving-the-avatar" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>Use the <strong>Move · Rotate · Scale</strong> tools on the left of the view to move or turn the avatar. Click <strong>⌂</strong> to bring it back to the center.</p>
-<h2 id="search-menus-and-settings">Search menus and settings<a class="anchor" href="#search-menus-and-settings" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/en/settings-search.webp" srcset="../assets/shots/en/settings-search-960.webp 960w, ../assets/shots/en/settings-search.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="Search for AFK settings" loading="lazy" decoding="async"><figcaption>Search for AFK settings</figcaption></figure>
-<p>Click the magnifying glass in the upper-right corner and search for AFK, tracking loss, Mirror, eye gaze, Spout, Bloom or hotkeys. Selecting a result navigates to the relevant page and expands its settings. Both Korean and English search terms are supported.</p>
-<h2 id="collapse-expand-and-reorder-cards">Collapse, expand and reorder cards<a class="anchor" href="#collapse-expand-and-reorder-cards" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="bottom-toolbar-what-the-controls-change">Bottom toolbar: what the controls change<a class="anchor" href="#bottom-toolbar-what-the-controls-change" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li>Click a section heading to collapse or expand it.</li>
-<li>Drag a heading onto another card's body or into the gap between cards to change the order.</li>
-<li>While dragging, a preview and insertion line appear and scrolling begins near the edge. Press Esc to cancel.</li>
-<li>Each page saves its card order. Sorting pose or expression tiles is a separate action.</li>
+<li><strong>Face / Upper body / Full body</strong> quickly adjust framing distance and angle relative to the selected avatar. Face is useful for lip sync; upper body for chat streams; full body for poses.</li>
+<li><strong>+ Save view</strong> stores your current camera position, direction and lens as an avatar-specific preset. Selecting it later restores that composition.</li>
+<li><strong>Camera lock</strong> prevents accidental scene-view mouse movement; it does <strong>not</strong> freeze your avatar's tracking or a separate studio broadcast camera.</li>
+<li><strong>None / Free / Orbit</strong> changes <strong>how your mouse moves the scene view</strong>. Free moves your look direction; Orbit circles the selected avatar. These are different from the Studio Camera's independent position/aim methods.</li>
+<li><strong>Field of View (FOV)</strong>: decreasing it magnifies the subject and shows less background; increasing it shows more scene. <strong>Mouse movement speed</strong> adjusts how far/faster the view travels for the same physical mouse movement.</li>
+<li><strong>Toolbar opacity</strong> changes how faint idle controls look (around 60% by default); hovering reveals them more strongly. Right-click empty toolbar space for opacity and placement settings.</li>
+<li><strong>Quick Actions</strong> let you pin frequently used avatar toggles, poses and expressions to the toolbar. Which parameter they affect depends on the currently selected avatar's menu.</li>
 </ul>
-<h2 id="window-and-tray">Window and tray<a class="anchor" href="#window-and-tray" aria-hidden="true" tabindex="-1">#</a></h2>
-<p><strong>X</strong> normally quits Avatar Live. Under <strong>Settings › Window</strong>, select <strong>Minimize to tray</strong> to keep tracking and output active while hiding the window. During streaming, the window may minimize to the tray to protect the output. Double-click the tray icon to restore it or use the lower-left <strong>power</strong> button to quit.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="03-launcher-and-library.html"><span>Previous</span>Start screen and avatar library</a><a class="next" href="05-avatar-menu.html"><span>Next</span>Avatar menu</a></nav><p class="updated">Last updated: 2026-10-12</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#left-menu">Left menu</a></li><li><a href="#top">Top</a></li><li><a href="#bottom-toolbar">Bottom toolbar</a></li><li><a href="#mouse-and-keyboard">Mouse and keyboard</a></li><li><a href="#grabbing-physbones">Grabbing PhysBones</a></li><li><a href="#moving-the-avatar">Moving the avatar</a></li><li><a href="#search-menus-and-settings">Search menus and settings</a></li><li><a href="#collapse-expand-and-reorder-cards">Collapse, expand and reorder cards</a></li><li><a href="#window-and-tray">Window and tray</a></li></ul></nav>
+<h2 id="clean-view-reset-and-exit">Clean view, reset and exit<a class="anchor" href="#clean-view-reset-and-exit" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li><strong>F1</strong> hides or restores the app's interface when Avatar Live is the focused window. It is <strong>not</strong> a substitute for transparent-background Spout2/NDI.</li>
+<li><strong>Reset</strong> can restore avatar physical state after hair or tails become stuck; it is not an asset re-export function.</li>
+<li>The window <strong>X</strong> may quit or minimise to tray depending on Settings. While output is running, the program can keep streaming from the tray; choose <strong>Quit</strong> explicitly to stop it completely.</li>
+<li>Use the <strong>search icon</strong> in Settings to jump directly to AFK, gaze, hotkeys, Spout2 and other controls without expanding every drawer.</li>
+</ul>
+<p><a href="05-avatar-menu.html">Next: Avatar Menu →</a></p></article><nav class="pager" aria-label="Pager"><a class="prev" href="03-launcher-and-library.html"><span>Previous</span>Start screen and avatar library</a><a class="next" href="05-avatar-menu.html"><span>Next</span>Avatar menu</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#finding-each-setting">Finding each setting</a></li><li><a href="#scene-view-versus-the-on-air-picture">Scene view versus the on-air picture</a></li><li><a href="#bottom-toolbar-what-the-controls-change">Bottom toolbar: what the controls change</a></li><li><a href="#clean-view-reset-and-exit">Clean view, reset and exit</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Settings — AVATAR LIVE</title>
-<meta name="description" content="Use the magnifying glass at the top-right to search for AFK, Mirror, Language, Spout2, eye gaze, desk mode or hotkeys. A result opens the matching Men…">
+<meta name="description" content="Hotkeys may work when the program is in the background. Select combinations that do not conflict with game controls. An expression can work while held…">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/10-settings.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/10-settings.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/10-settings.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/10-settings.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/10-settings.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="Settings — AVATAR LIVE">
-<meta property="og:description" content="Use the magnifying glass at the top-right to search for AFK, Mirror, Language, Spout2, eye gaze, desk mode or hotkeys. A result opens the matching Men…">
+<meta property="og:description" content="Hotkeys may work when the program is in the background. Select combinations that do not conflict with game controls. An expression can work while held…">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/10-settings.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,58 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html" aria-current="page">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio: scenes, cameras, lights and effects</a></li><li><a href="09-output.html">Output: OBS, NDI, screen sharing and remote sessions</a></li><li><a href="10-settings.html" aria-current="page">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="10-settings">10. Settings<a class="anchor" href="#10-settings" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200-performance-interface-and-update-settings">v2.0.0 performance, interface and update settings<a class="anchor" href="#v200-performance-interface-and-update-settings" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/en/v45-settings.webp" srcset="../assets/shots/en/v45-settings-960.webp 960w, ../assets/shots/en/v45-settings.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 Settings" loading="lazy" decoding="async"><figcaption>v45 Settings</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>What it actually changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>App FPS cap</strong></td>
+<td>Higher refreshes view/physics more often at a CPU/GPU cost; lower saves power but makes motion less fluid. Broadcast output has its own FPS limit.</td>
+</tr>
+<tr>
+<td><strong>Render quality/resolution</strong></td>
+<td>Higher improves hair and outline detail at a GPU cost. Scene-view window size and broadcast image resolution may be different.</td>
+</tr>
+<tr>
+<td><strong>Shadows/post-effects</strong></td>
+<td>Disabling them reduces rendering load, but depth and film effects become flatter. Studio-owned effects can vary per saved scene.</td>
+</tr>
+<tr>
+<td><strong>Window size / Always on top</strong></td>
+<td>Changes the Windows app window, not the pixel dimensions of the OBS Spout2/NDI sender.</td>
+</tr>
+<tr>
+<td><strong>Close-button behavior</strong></td>
+<td>X can quit or minimise to tray; active output may continue when minimised.</td>
+</tr>
+<tr>
+<td><strong>UI scaling</strong></td>
+<td>Makes labels and controls larger or smaller. At very high scaling, narrow windows need more scrolling.</td>
+</tr>
+<tr>
+<td><strong>Quick-toolbar opacity</strong></td>
+<td>Higher makes idle camera controls easier to see; lower leaves more of the character unobstructed.</td>
+</tr>
+<tr>
+<td><strong>Automatic update downloads</strong></td>
+<td>Downloads available updates for later installation. Even when off, startup can check and notify you of new versions.</td>
+</tr>
+<tr>
+<td><strong>Send diagnostics</strong></td>
+<td>Used after the user chooses to send a report; include the steps leading to the issue rather than assuming all logs are uploaded automatically.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Hotkeys may work when the program is in the background. Select combinations that do not conflict with game controls. An expression can work <strong>while held</strong> or as <strong>press to toggle</strong>. F13–F24 and modifiers are supported; basic hotkeys can also be triggered by devices such as Stream Deck.</p>
+<p>Remember the <strong>scope</strong> of each setting: pose/expressions/saved editor camera views are typically per-avatar; room/studio lights/broadcast studio cameras are saved per studio; a selected hardware microphone or webcam may need updating when Windows devices change.</p>
 <h2 id="general--window--performance">General · Window · Performance<a class="anchor" href="#general--window--performance" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
 <figure><img src="../assets/shots/en/settings.webp" width="960" height="900" alt="Settings page" loading="lazy" decoding="async"><figcaption>Settings page</figcaption></figure>
@@ -58,7 +108,7 @@
 </div>
 <h2 id="search-menus-and-settings">Search menus and settings<a class="anchor" href="#search-menus-and-settings" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/en/settings-search.webp" srcset="../assets/shots/en/settings-search-960.webp 960w, ../assets/shots/en/settings-search.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="Global menu search" loading="lazy" decoding="async"><figcaption>Global menu search</figcaption></figure>
-<p>Use the magnifying glass at the top-right to search for AFK, Mirror, Language, Spout2, eye gaze, desk mode or hotkeys. A result opens the matching Menu, Devices, Motion, Scene, Output or Settings page and expands the relevant cards. AFK timing results navigate to Motion › Body rather than its old Settings location.</p>
+<p>Use the magnifying glass at the top-right to search for AFK, Mirror, Language, Spout2, eye gaze, desk mode or hotkeys. A result opens the matching Menu, Devices, Motion, Studio, Output or Settings page and expands the relevant cards. AFK timing results navigate to Motion › Body rather than its old Settings location.</p>
 <h2 id="hotkeys">Hotkeys<a class="anchor" href="#hotkeys" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
 <figure><img src="../assets/shots/en/hotkeys.webp" width="960" height="900" alt="Hotkeys" loading="lazy" decoding="async"><figcaption>Hotkeys</figcaption></figure>
@@ -141,8 +191,8 @@
 <ul>
 <li>If you run into a <strong>bug or problem</strong> while using Avatar Live, please let us know with <strong>Settings › Diagnostics › Send an error report</strong>. A line or two about what was happening helps us a great deal in finding the cause.</li>
 <li>If there's a <strong>feature or improvement you need</strong>, please send it with <strong>Settings › About › Send a suggestion</strong>. We take your feedback into account when planning updates.</li>
-</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-output.html"><span>Previous</span>Output</a><a class="next" href="11-pro-features.html"><span>Next</span>Posing · Objects · Expressions</a></nav><p class="updated">Last updated: 2026-10-12</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#general--window--performance">General · Window · Performance</a></li><li><a href="#search-menus-and-settings">Search menus and settings</a></li><li><a href="#hotkeys">Hotkeys</a></li><li><a href="#license">License</a></li><li><a href="#diagnostics--about--updates">Diagnostics · About · Updates</a></li><li><a href="#automatic-update-checks-and-downloading">Automatic update checks and downloading</a></li><li><a href="#send-an-error-report">Send an error report</a></li><li><a href="#sending-problems-and-suggestions">Sending problems and suggestions</a></li></ul></nav>
+</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-output.html"><span>Previous</span>Output: OBS, NDI, screen sharing and remote sessions</a><a class="next" href="11-pro-features.html"><span>Next</span>Posing · Objects · Expressions</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#v200-performance-interface-and-update-settings">v2.0.0 performance, interface and update settings</a></li><li><a href="#general--window--performance">General · Window · Performance</a></li><li><a href="#search-menus-and-settings">Search menus and settings</a></li><li><a href="#hotkeys">Hotkeys</a></li><li><a href="#license">License</a></li><li><a href="#diagnostics--about--updates">Diagnostics · About · Updates</a></li><li><a href="#automatic-update-checks-and-downloading">Automatic update checks and downloading</a></li><li><a href="#send-an-error-report">Send an error report</a></li><li><a href="#sending-problems-and-suggestions">Sending problems and suggestions</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

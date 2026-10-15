@@ -1,5 +1,26 @@
 # 12. Troubleshooting
 
+## v2.0.0 diagnosis by symptom
+
+![v45 Settings / diagnostics](img/v45-settings.png)
+
+| Symptom | Steps to check |
+|---|---|
+| **OBS has no Spout2 Capture** | Close OBS, install the [official OBS Spout2 plugin](https://github.com/Off-World-Live/obs-spout2-plugin/releases), restart OBS, then add Spout2 Capture. Re-select a sender if its name changed. |
+| **OBS has no NDI Source** | Install [DistroAV](https://github.com/DistroAV/DistroAV/releases) and the required NDI Runtime; restart OBS and remove conflicts with older OBS-NDI. **NDI is available in Basic.** |
+| **NDI feed is missing or black** | Check Avatar Live NDI on → connection between PCs → firewall → NDI Tools Studio Monitor → source name and alpha handling. Guest Wi-Fi client isolation can block discovery. |
+| **Black backdrop in Spout2** | Use **Transparent** studio background and enable alpha output/compositing (**Composite with alpha**) in OBS's receiver plugin. Ordinary window capture is different. |
+| **Virtual camera Install does nothing** | Registration may need Windows admin rights. Restart the app, inspect **VirtualCamera/Install.bat**, then restart Discord/Zoom and select **Avatar Live Camera**. |
+| **Remote session only works on local network** | Verify server on, v2.0.0 compatibility, default **47700**, router forwarding for **both TCP and UDP**, Windows firewall, actual public WAN IP rather than CGNAT, and test from another network. |
+| **Friend appears as a stand-in avatar** | Verify **Send my avatar data** consent and the asset's permission for temporary transfer, or install an owned legal VRM in the local Vrm folder and use **Find again**. Do not extract another person's files. |
+| **Studio camera orbits unexpectedly** | See [target rotation vs aim](08-scene.md). Position binding **Lock to target** does not aim the lens at the face. Combine with **Straight at target** or **Framed on screen**. |
+| **iPhone connected but face frozen** | Wait about 3 seconds after first valid face detection for calibration, check fresh tracking values, AFK settings and source reconnection. A connection alone is not fresh motion. |
+| **Webcam arms twist** | Compare **Legacy** versus Dynamic arm mode, turn off experimental hand-depth estimation, and review excess smoothing. |
+| **SteamVR tracking is displaced** | Verify tracking and calibration within SteamVR first; then reassign Avatar Live's trackers/body parts and calibrate again. |
+| **Recording/multiview is slow** | Reduce independent Spout2 senders, multiview grid/update cost, volumetric/HBAO, output resolution and FPS one by one while watching OBS. |
+
+If unresolved, send a report from **Settings → Diagnostics → Send error report**, including exact reproduction steps, tracking devices, avatar type, version (v2.0.0/v45) and the last setting changed. Sending is user initiated, not automatic. See the [Output and remote session guide](09-output.md).
+
 > 💡 For bugs or problems that aren't solved, please let us know with **Settings › Diagnostics › Send an error report**, and for features or improvements you need, with **Settings › About › Send a suggestion**.
 
 ## Start-up · Installation

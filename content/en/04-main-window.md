@@ -1,80 +1,44 @@
 # 4. Main window
 
-![Main window](img/main.png)
+The v2.0.0 app window remains the **editable scene view**. Even when a studio camera is on air, you can use this window to inspect and adjust avatars, lighting and props.
 
-## Left menu
+![The v45 main interface](img/v45-menu.png)
 
-| Menu | What it does |
+## Finding each setting
+
+| Left menu | What its controls actually affect |
 |---|---|
-| **Menu** | The avatar's Expressions menu and gestures → [Chapter 5](05-avatar-menu.md) |
-| **Devices** | Webcam, microphone, tracking → [Chapter 6](06-devices.md) |
-| **Motion** | Face, body, hands → [Chapter 7](07-motion.md) |
-| **Scene** | Background, lighting, effects → [Chapter 8](08-scene.md) |
-| **Output** | Sending to streaming software, screen share → [Chapter 9](09-output.md) |
-| **Settings** | Window, performance, language, hotkeys → [Chapter 10](10-settings.md) |
+| **Menu** | Expression menu, avatar toggles, saved faces and gestures of the selected character. [Chapter 5](05-avatar-menu.md) |
+| **Input / Devices** | Which camera, mic, phone or tracker supplies data to each body part. [Chapter 6](06-devices.md) |
+| **Motion** | Face, eyes, arms, fingers, body, AFK, smoothing and lip-sync behavior. [Chapter 7](07-motion.md) |
+| **Studio** | Scenes, avatar placement, props, room, lighting, cameras and effects. [Chapter 8](08-scene.md) |
+| **Output** | Spout2, NDI, virtual camera, screen sharing, recording and remote session. [Chapter 9](09-output.md) |
+| **Settings** | Performance, window, hotkeys, language, files, updates and diagnostics. [Chapter 10](10-settings.md) |
 
-Click the **pin** at the top right of a panel to pin the panel in place.
+Pin a drawer with the **pin icon** to stop it closing when clicking elsewhere. The mouse wheel scrolls settings **over the drawer**, but zooms the **scene view** outside it. If the camera moves unexpectedly, first check where your cursor was.
 
-## Top
+## Scene view versus the on-air picture
 
-| Item | What it does |
-|---|---|
-| **Avatar name** | Switches the avatar. |
-| **FPS** | Click it to change the frame rate. |
-| **⟲** | If the pose gets stuck or the hair gets tangled, click it to return to the initial state. |
+- Moving the bottom-toolbar camera changes **your editing point of view**.
+- When a **studio camera is on air**, OBS/NDI receives that saved camera picture instead. You can move behind the character to adjust lights without automatically broadcasting that backstage view.
+- If **Scene view** itself is on air, your camera edits also change what viewers see. Verify the active source in [Studio cameras](08-scene.md) and [Output](09-output.md).
+- Always verify the receiving application's program monitor, particularly after changing camera, aspect ratio, background transparency or effects.
 
-## Bottom toolbar
+## Bottom toolbar: what the controls change
 
-| Button | What it does |
-|---|---|
-| **Face · Upper body · Full body** | Changes the camera framing. |
-| **+** | Saves the current camera position. |
-| **Lock the camera** | Keeps the mouse from moving the camera. |
-| **Camera** | Opens the camera settings. |
+- **Face / Upper body / Full body** quickly adjust framing distance and angle relative to the selected avatar. Face is useful for lip sync; upper body for chat streams; full body for poses.
+- **+ Save view** stores your current camera position, direction and lens as an avatar-specific preset. Selecting it later restores that composition.
+- **Camera lock** prevents accidental scene-view mouse movement; it does **not** freeze your avatar's tracking or a separate studio broadcast camera.
+- **None / Free / Orbit** changes **how your mouse moves the scene view**. Free moves your look direction; Orbit circles the selected avatar. These are different from the Studio Camera's independent position/aim methods.
+- **Field of View (FOV)**: decreasing it magnifies the subject and shows less background; increasing it shows more scene. **Mouse movement speed** adjusts how far/faster the view travels for the same physical mouse movement.
+- **Toolbar opacity** changes how faint idle controls look (around 60% by default); hovering reveals them more strongly. Right-click empty toolbar space for opacity and placement settings.
+- **Quick Actions** let you pin frequently used avatar toggles, poses and expressions to the toolbar. Which parameter they affect depends on the currently selected avatar's menu.
 
-<div class="shot" markdown="1">
+## Clean view, reset and exit
 
-![Camera settings](img/camera-pop.png)
+- **F1** hides or restores the app's interface when Avatar Live is the focused window. It is **not** a substitute for transparent-background Spout2/NDI.
+- **Reset** can restore avatar physical state after hair or tails become stuck; it is not an asset re-export function.
+- The window **X** may quit or minimise to tray depending on Settings. While output is running, the program can keep streaming from the tray; choose **Quit** explicitly to stop it completely.
+- Use the **search icon** in Settings to jump directly to AFK, gaze, hotkeys, Spout2 and other controls without expanding every drawer.
 
-- **Save PNG** — Saves the view as a picture, without the menus.
-- **Field of view** — Makes the lens wider or narrower.
-- **Saved views** — Jumps straight to a camera position you've saved.
-- **Grab PhysBones with the left mouse button** — Lets you grab hair or tails with the mouse.
-
-</div>
-
-## Mouse and keyboard
-
-| Input | What it does |
-|---|---|
-| Right drag | Orbit the camera |
-| Wheel drag | Pan the camera |
-| Wheel | Zoom in · out |
-| **F1** | Hide / show the menus |
-| **Ctrl + 1 / 2 / 3** | Face / upper body / full body |
-| **Ctrl + Z** | Undo moving the avatar |
-
-## Grabbing PhysBones
-
-In the view, **left-drag** hair, ears or a tail to pull it. **Right-click** while holding to keep it in that shape, and grab the same part again to release it.
-
-## Moving the avatar
-
-Use the **Move · Rotate · Scale** tools on the left of the view to move or turn the avatar. Click **⌂** to bring it back to the center.
-
-## Search menus and settings
-
-![Search for AFK settings](img/settings-search.png)
-
-Click the magnifying glass in the upper-right corner and search for AFK, tracking loss, Mirror, eye gaze, Spout, Bloom or hotkeys. Selecting a result navigates to the relevant page and expands its settings. Both Korean and English search terms are supported.
-
-## Collapse, expand and reorder cards
-
-- Click a section heading to collapse or expand it.
-- Drag a heading onto another card's body or into the gap between cards to change the order.
-- While dragging, a preview and insertion line appear and scrolling begins near the edge. Press Esc to cancel.
-- Each page saves its card order. Sorting pose or expression tiles is a separate action.
-
-## Window and tray
-
-**X** normally quits Avatar Live. Under **Settings › Window**, select **Minimize to tray** to keep tracking and output active while hiding the window. During streaming, the window may minimize to the tray to protect the output. Double-click the tray icon to restore it or use the lower-left **power** button to quit.
+[Next: Avatar Menu →](05-avatar-menu.md)

@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>设置 — AVATAR LIVE</title>
-<meta name="description" content="使用右上角的放大镜搜索AFK、镜像、语言、Spout2、目光、桌面模式或快捷键。选择结果后会定位到相应的菜单、设备、动作、场景、输出或设置页面，并展开相关卡片。AFK时间会定位到动作 › 身体，而不是旧设置位置。">
+<meta name="description" content="快捷键在程序位于后台时也可能生效，请避免与游戏按键冲突。表情可以设置为按住生效或按一次切换，支持 F13–F24 及组合键，也可由 Stream Deck 的普通热键触发。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/10-settings.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/10-settings.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/10-settings.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/10-settings.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/10-settings.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="设置 — AVATAR LIVE">
-<meta property="og:description" content="使用右上角的放大镜搜索AFK、镜像、语言、Spout2、目光、桌面模式或快捷键。选择结果后会定位到相应的菜单、设备、动作、场景、输出或设置页面，并展开相关卡片。AFK时间会定位到动作 › 身体，而不是旧设置位置。">
+<meta property="og:description" content="快捷键在程序位于后台时也可能生效，请避免与游戏按键冲突。表情可以设置为按住生效或按一次切换，支持 F13–F24 及组合键，也可由 Stream Deck 的普通热键触发。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/10-settings.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,58 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html" aria-current="page">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室：场景、摄像机、灯光和效果</a></li><li><a href="09-output.html">输出：OBS、NDI、屏幕共享与远程会话</a></li><li><a href="10-settings.html" aria-current="page">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="10-设置">10. 设置<a class="anchor" href="#10-设置" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200性能界面与更新设置的实际影响">v2.0.0：性能、界面与更新设置的实际影响<a class="anchor" href="#v200性能界面与更新设置的实际影响" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/zh/v45-settings.webp" srcset="../assets/shots/zh/v45-settings-960.webp 960w, ../assets/shots/zh/v45-settings.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 设置界面" loading="lazy" decoding="async"><figcaption>v45 设置界面</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>更改后会发生什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>应用 FPS 限制</strong></td>
+<td>提高让画面/物理更频繁更新，但 CPU/GPU 负担增加；降低更节能但动作不够连贯。直播输出还有自己的 FPS 设置。</td>
+</tr>
+<tr>
+<td><strong>渲染质量/分辨率</strong></td>
+<td>高质量改善发丝和轮廓细节但更占 GPU。程序窗口尺寸与 OBS 发送画面分辨率可能不同。</td>
+</tr>
+<tr>
+<td><strong>阴影/后处理</strong></td>
+<td>关闭后渲染更轻，但立体阴影及光学效果减少；部分效果跟随工作室分别保存。</td>
+</tr>
+<tr>
+<td><strong>窗口大小/置顶</strong></td>
+<td>只改变 Windows 中显示的窗口，并不等于修改 Spout2/NDI 画面的输出像素数。</td>
+</tr>
+<tr>
+<td><strong>关闭按钮行为</strong></td>
+<td>可选择退出或最小化到托盘；直播中最小化可能继续发送画面。</td>
+</tr>
+<tr>
+<td><strong>UI 缩放</strong></td>
+<td>改变字体与按钮尺寸；缩放太大时窄窗口需要更多滚动。</td>
+</tr>
+<tr>
+<td><strong>快捷工具条透明度</strong></td>
+<td>提高使空闲按钮更明显，降低使角色较少被遮挡。</td>
+</tr>
+<tr>
+<td><strong>自动下载更新</strong></td>
+<td>开启可预先下载，关闭仍可在启动时检测并显示更新提示。</td>
+</tr>
+<tr>
+<td><strong>发送诊断报告</strong></td>
+<td>用户主动选择发送时传送问题资料，建议写明重现步骤。</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>快捷键</strong>在程序位于后台时也可能生效，请避免与游戏按键冲突。表情可以设置为<strong>按住生效</strong>或<strong>按一次切换</strong>，支持 F13–F24 及组合键，也可由 Stream Deck 的普通热键触发。</p>
+<p>注意<strong>保存范围</strong>：表情、姿势和保存视角属于角色；房间、舞台灯光、直播摄像机属于工作室；摄像头、话筒可能跟随 Windows 设备变化而需要重新选择。</p>
 <h2 id="常规--窗口--性能">常规 · 窗口 · 性能<a class="anchor" href="#常规--窗口--性能" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
 <figure><img src="../assets/shots/zh/settings.webp" width="960" height="900" alt="设置页面" loading="lazy" decoding="async"><figcaption>设置页面</figcaption></figure>
@@ -58,7 +108,7 @@
 </div>
 <h2 id="搜索菜单与设置">搜索菜单与设置<a class="anchor" href="#搜索菜单与设置" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/zh/settings-search.webp" srcset="../assets/shots/zh/settings-search-960.webp 960w, ../assets/shots/zh/settings-search.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="全局菜单搜索" loading="lazy" decoding="async"><figcaption>全局菜单搜索</figcaption></figure>
-<p>使用右上角的放大镜搜索AFK、镜像、语言、Spout2、目光、桌面模式或快捷键。选择结果后会定位到相应的菜单、设备、动作、场景、输出或设置页面，并展开相关卡片。AFK时间会定位到动作 › 身体，而不是旧设置位置。</p>
+<p>使用右上角的放大镜搜索AFK、镜像、语言、Spout2、目光、桌面模式或快捷键。选择结果后会定位到相应的菜单、设备、动作、工作室、输出或设置页面，并展开相关卡片。AFK时间会定位到动作 › 身体，而不是旧设置位置。</p>
 <h2 id="快捷键">快捷键<a class="anchor" href="#快捷键" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
 <figure><img src="../assets/shots/zh/hotkeys.webp" width="960" height="900" alt="快捷键" loading="lazy" decoding="async"><figcaption>快捷键</figcaption></figure>
@@ -141,8 +191,8 @@
 <ul>
 <li>使用中遇到 <strong>错误或问题</strong> 时，请通过 <strong>设置 › 诊断 › 发送错误报告</strong> 告诉我们。写上一两句当时的情况，会对查找原因有很大帮助。</li>
 <li>如果有 <strong>需要的功能或改进建议</strong>，请通过 <strong>设置 › 关于 › 发送改进建议</strong> 发送给我们。收到的意见会反映到更新计划中。</li>
-</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-output.html"><span>上一页</span>输出</a><a class="next" href="11-pro-features.html"><span>下一页</span>摆姿势 · 物体 · 表情</a></nav><p class="updated">最后更新: 2026-10-12</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#常规--窗口--性能">常规 · 窗口 · 性能</a></li><li><a href="#搜索菜单与设置">搜索菜单与设置</a></li><li><a href="#快捷键">快捷键</a></li><li><a href="#许可证">许可证</a></li><li><a href="#诊断--关于--更新">诊断 · 关于 · 更新</a></li><li><a href="#启动时自动检查更新">启动时自动检查更新</a></li><li><a href="#发送错误报告">发送错误报告</a></li><li><a href="#发送问题--建议">发送问题 · 建议</a></li></ul></nav>
+</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-output.html"><span>上一页</span>输出：OBS、NDI、屏幕共享与远程会话</a><a class="next" href="11-pro-features.html"><span>下一页</span>摆姿势 · 物体 · 表情</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#v200性能界面与更新设置的实际影响">v2.0.0：性能、界面与更新设置的实际影响</a></li><li><a href="#常规--窗口--性能">常规 · 窗口 · 性能</a></li><li><a href="#搜索菜单与设置">搜索菜单与设置</a></li><li><a href="#快捷键">快捷键</a></li><li><a href="#许可证">许可证</a></li><li><a href="#诊断--关于--更新">诊断 · 关于 · 更新</a></li><li><a href="#启动时自动检查更新">启动时自动检查更新</a></li><li><a href="#发送错误报告">发送错误报告</a></li><li><a href="#发送问题--建议">发送问题 · 建议</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

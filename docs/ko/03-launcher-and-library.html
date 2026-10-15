@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>시작 화면과 아바타 라이브러리 — AVATAR LIVE</title>
-<meta name="description" content="Shift를 누른 채 실행하면 웹캠 · 마이크 없이 안전하게 시작합니다. 장치 문제로 시작이 잘 안 될 때 사용해 보세요.">
+<meta name="description" content="세션에 관한 중요한 구분: 라이브러리에 저장한 아바타 원본은 내 PC에 있습니다. 원격 세션의 내 아바타 데이터 보내기는 별도 동의가 있을 때만 켜는 기능이고, 다른 참여자가 받는 데이터는 세션 전용 암호화 임시 캐시로 관리됩니다. 아바타 라이브러리에 누군가의 원본을 …">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ko/03-launcher-and-library.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/03-launcher-and-library.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/03-launcher-and-library.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/03-launcher-and-library.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/03-launcher-and-library.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="시작 화면과 아바타 라이브러리 — AVATAR LIVE">
-<meta property="og:description" content="Shift를 누른 채 실행하면 웹캠 · 마이크 없이 안전하게 시작합니다. 장치 문제로 시작이 잘 안 될 때 사용해 보세요.">
+<meta property="og:description" content="세션에 관한 중요한 구분: 라이브러리에 저장한 아바타 원본은 내 PC에 있습니다. 원격 세션의 내 아바타 데이터 보내기는 별도 동의가 있을 때만 켜는 기능이고, 다른 참여자가 받는 데이터는 세션 전용 암호화 임시 캐시로 관리됩니다. 아바타 라이브러리에 누군가의 원본을 …">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ko/03-launcher-and-library.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ko.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,19 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>가이드 목차</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html" aria-current="page">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html" aria-current="page">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">스튜디오: 장면 · 카메라 · 조명 · 효과</a></li><li><a href="09-output.html">출력: OBS · NDI · 화면 공유 · 원격 세션</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="3-시작-화면과-아바타-라이브러리">3. 시작 화면과 아바타 라이브러리<a class="anchor" href="#3-시작-화면과-아바타-라이브러리" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200-라이브러리-아바타-선택-결과가-달라지는-경우">v2.0.0 라이브러리: 아바타 선택 결과가 달라지는 경우<a class="anchor" href="#v200-라이브러리-아바타-선택-결과가-달라지는-경우" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/ko/v45-menu.webp" srcset="../assets/shots/ko/v45-menu-960.webp 960w, ../assets/shots/ko/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 아바타 로딩 후 메뉴" loading="lazy" decoding="async"><figcaption>v45 아바타 로딩 후 메뉴</figcaption></figure>
+<ul>
+<li><strong>.vavatar 가져오기</strong>는 Exporter 1.0.6에서 나온 Windows 파일을 라이브러리에 등록합니다. Unity 원본 프로젝트를 직접 읽는 방식은 아닙니다. <strong>.vrm 가져오기</strong>는 VRM 0.x·1.0을 지원하지만 모델에 포함된 일부 비표준/미지원 셰이더가 안 보일 수 있습니다.</li>
+<li><strong>최근 사용/폴더/가져온 파일</strong>은 아바타 목록을 어디에서 고를지 바꿀 뿐, 실제로 트래킹 입력이나 방송 카메라를 켜거나 끄는 설정이 아닙니다.</li>
+<li><strong>기본 아바타 / 마지막 아바타 / 매번 묻기</strong>: 기본은 고정 지정한 모델, 마지막은 직전에 열었던 모델, 매번 묻기는 시작 때 목록을 표시합니다. 방송마다 다른 캐릭터를 사용하면 매번 묻기가 실수를 줄입니다.</li>
+<li><strong>시작 시 카메라·마이크 자동 켜기</strong>는 프로그램 실행 직후 장치를 점유할 수 있습니다. 다른 화상 회의 앱과 충돌한다면 시작 설정에서 끄고 앱 안에서 직접 켜세요.</li>
+<li><strong>아바타 전환 시</strong> 기존 아바타의 표정·포즈·카메라 프리셋 등은 그 아바타의 설정 범위에 따라 유지됩니다. 이전 아바타의 프로필을 모두 새 모델로 복사하는 동작은 아닙니다.</li>
+<li>**멀티 아바타 (Pro)**는 한 명을 완전히 교체하는 대신 같은 스튜디오에 여러 캐릭터를 동시에 배치합니다. 각 캐릭터를 <strong>조종 대상</strong>으로 선택한 후 수정하세요.</li>
+</ul>
+<p><strong>세션에 관한 중요한 구분:</strong> 라이브러리에 저장한 아바타 원본은 내 PC에 있습니다. <a href="09-output.html">원격 세션</a>의 <strong>내 아바타 데이터 보내기</strong>는 별도 동의가 있을 때만 켜는 기능이고, 다른 참여자가 받는 데이터는 세션 전용 암호화 임시 캐시로 관리됩니다. 아바타 라이브러리에 누군가의 원본을 자동으로 등록하는 기능이 아닙니다.</p>
 <h2 id="시작-화면">시작 화면<a class="anchor" href="#시작-화면" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/ko/launcher.webp" srcset="../assets/shots/ko/launcher-960.webp 960w, ../assets/shots/ko/launcher.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="시작 화면" loading="lazy" decoding="async"><figcaption>시작 화면</figcaption></figure>
 <div class="table-wrap"><table>
@@ -99,8 +110,8 @@
 <h2 id="메뉴를-처음-열-때">메뉴를 처음 열 때<a class="anchor" href="#메뉴를-처음-열-때" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>아바타를 불러올 때 메뉴 레이아웃을 미리 준비하므로 각 메뉴를 처음 열 때 생기던 지연이 줄었습니다. 초기 아바타 로딩은 조금 길어질 수 있습니다. 왼쪽 상단 로고에서 재시작 없이 아바타 선택으로 돌아갈 수 있습니다.</p>
 <h2 id="시작-화면으로-돌아가기">시작 화면으로 돌아가기<a class="anchor" href="#시작-화면으로-돌아가기" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>왼쪽 위 <strong>로고</strong>를 누르고 <strong>다시 시작</strong>을 선택합니다.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="02-avatar-exporter.html"><span>이전</span>아바타 내보내기</a><a class="next" href="04-main-window.html"><span>다음</span>메인 화면</a></nav><p class="updated">최종 업데이트: 2026-10-12</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#시작-화면">시작 화면</a></li><li><a href="#실행-중에-아바타-바꾸기">실행 중에 아바타 바꾸기</a></li><li><a href="#메뉴를-처음-열-때">메뉴를 처음 열 때</a></li><li><a href="#시작-화면으로-돌아가기">시작 화면으로 돌아가기</a></li></ul></nav>
+<p>왼쪽 위 <strong>로고</strong>를 누르고 <strong>다시 시작</strong>을 선택합니다.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="02-avatar-exporter.html"><span>이전</span>아바타 내보내기</a><a class="next" href="04-main-window.html"><span>다음</span>메인 화면</a></nav><p class="updated">최종 업데이트: 2026-10-15</p></main>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#v200-라이브러리-아바타-선택-결과가-달라지는-경우">v2.0.0 라이브러리: 아바타 선택 결과가 달라지는 경우</a></li><li><a href="#시작-화면">시작 화면</a></li><li><a href="#실행-중에-아바타-바꾸기">실행 중에 아바타 바꾸기</a></li><li><a href="#메뉴를-처음-열-때">메뉴를 처음 열 때</a></li><li><a href="#시작-화면으로-돌아가기">시작 화면으로 돌아가기</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

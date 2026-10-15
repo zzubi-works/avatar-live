@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>导出角色 — AVATAR LIVE</title>
-<meta name="description" content="Avatar Live 使用的角色文件（.vavatar），需要在角色的 Unity 项目中安装 Curious Bobby - Avatar Exporter 来制作。">
+<meta name="description" content="**Unity 角色（.vavatar）**与 **VRM 模型（.vrm）**的导入方法不同。VRChat 的 Unity 角色需要使用 Curious Bobby - Avatar Exporter 1.0.6导出；支持的 VRM 0.x / 1.0则可在 Avatar Live 中直接导入，无…">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/02-avatar-exporter.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/02-avatar-exporter.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/02-avatar-exporter.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/02-avatar-exporter.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/02-avatar-exporter.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="导出角色 — AVATAR LIVE">
-<meta property="og:description" content="Avatar Live 使用的角色文件（.vavatar），需要在角色的 Unity 项目中安装 Curious Bobby - Avatar Exporter 来制作。">
+<meta property="og:description" content="**Unity 角色（.vavatar）**与 **VRM 模型（.vrm）**的导入方法不同。VRChat 的 Unity 角色需要使用 Curious Bobby - Avatar Exporter 1.0.6导出；支持的 VRM 0.x / 1.0则可在 Avatar Live 中直接导入，无…">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/02-avatar-exporter.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,18 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html" aria-current="page">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html" aria-current="page">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室：场景、摄像机、灯光和效果</a></li><li><a href="09-output.html">输出：OBS、NDI、屏幕共享与远程会话</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="2-导出角色">2. 导出角色<a class="anchor" href="#2-导出角色" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200exporter-106-与-vrm-直接导入">v2.0.0：Exporter 1.0.6 与 VRM 直接导入<a class="anchor" href="#v200exporter-106-与-vrm-直接导入" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>**Unity 角色（.vavatar）**与 **VRM 模型（.vrm）**的导入方法不同。VRChat 的 Unity 角色需要使用 <strong>Curious Bobby - Avatar Exporter 1.0.6</strong>导出；支持的 <strong>VRM 0.x / 1.0</strong>则可在 Avatar Live 中直接导入，无须 Exporter。</p>
+<ul>
+<li><strong>Unity 项目</strong>：从 Unity <strong>2022.3.22f1</strong> 的原项目和兼容 VRChat SDK 开始，选中角色并执行<strong>导出 .vavatar</strong>。Exporter 1.0.6 针对 VRChat SDK 3.10.5 改进 PhysBone、碰撞体，并修复部分服装合并导致发丝和装饰骨骼被关闭的问题。</li>
+<li><strong>显示名称、表情片段、保存位置</strong>：分别决定程序里显示的名字、附带的表情动画和 Windows 中实际生成文件的位置。导出成功并不代表已经加入程序角色库，仍需打开该文件。</li>
+<li><strong>修改后重新导出</strong>：服装、骨架、材质改变后必须重新导出，并在直播前检查原来保存的动作、镜头与表情是否仍符合新的模型。</li>
+<li><strong>VRM 导入</strong>：部分 VRM 0.x 模型含不受支持的着色器，可能无法加载；简单改扩展名不能转换着色器。</li>
+<li><strong>资源授权</strong>：拥有或制作文件，不代表可以把它分发给别人。使用<a href="09-output.html">远程会话</a>的数据分享前，应确认角色、服装、贴图和道具的原作者许可。</li>
+</ul>
+<p>如出现粉色材质或部分模型消失，请检查 Unity 项目的材质/着色器、PhysBone 和碰撞体，再导出并重新加载最新模型。</p>
 <p>Avatar Live 使用的角色文件（<code>.vavatar</code>），需要在角色的 Unity 项目中安装 <strong>Curious Bobby - Avatar Exporter</strong> 来制作。</p>
 <h2 id="准备">准备<a class="anchor" href="#准备" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
@@ -92,8 +102,8 @@
 <ul>
 <li>原始角色和场景不会被更改。</li>
 <li>生成的文件只保存在你的电脑中，不会上传到任何地方。</li>
-</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="01-getting-started.html"><span>上一页</span>快速上手</a><a class="next" href="03-launcher-and-library.html"><span>下一页</span>开始界面与角色库</a></nav><p class="updated">最后更新: 2026-10-12</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#准备">准备</a></li><li><a href="#安装">安装</a></li><li><a href="#导出">导出</a></li><li><a href="#修改角色后">修改角色后</a></li></ul></nav>
+</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="01-getting-started.html"><span>上一页</span>快速上手</a><a class="next" href="03-launcher-and-library.html"><span>下一页</span>开始界面与角色库</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#v200exporter-106-与-vrm-直接导入">v2.0.0：Exporter 1.0.6 与 VRM 直接导入</a></li><li><a href="#准备">准备</a></li><li><a href="#安装">安装</a></li><li><a href="#导出">导出</a></li><li><a href="#修改角色后">修改角色后</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

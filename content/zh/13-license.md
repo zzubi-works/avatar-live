@@ -8,7 +8,8 @@
 | 使用范围 | 个人使用（包括与朋友之间的非公开 Discord 共享） | 直播 · 公开发布视频 · 商业用途 |
 | 角色 · 追踪 · 菜单 · 灯光 · 效果 | ✅ | ✅ |
 | 我的表情 · 自动表情 · 层级 · 形态键 · 照片 | ✅ | ✅ |
-| Spout2 · 虚拟摄像头 · 屏幕共享 | ✅ | ✅ |
+| Spout2 · **NDI** · 虚拟摄像头 · 屏幕共享 | ✅ | ✅ |
+| 多工作室摄像机 · 远程会话 · 每摄像机 Spout2 · 录制 | — | ✅ |
 | 最高输出 | 1080p | 4K |
 | 水印 | 有 | 无 |
 | 摆姿势 · 姿势库 · 物体 · 屏幕共享更多来源 | — | ✅ |
@@ -51,6 +52,16 @@ Avatar Live 和 Avatar Exporter 是由 Curious Bobby Co. 独立开发的软件�
 ## 开源声明
 
 所包含的开源组件遵循各组件的许可证。相关声明随程序和 Exporter 软件包一同提供。Avatar Exporter 的部分代码是基于以 MIT 许可证公开的开源代码编写的。
+
+## 第三方声明：NDI、Spout2 和 VB-CABLE
+
+**NDI® 是 Vizrt NDI AB 的注册商标。** 在 v45 Windows 发行包中实际确认包含 `AvatarLive_Data/Plugins/x86_64/Processing.NDI.Lib.x64.dll`及附带的 `Processing.NDI.Lib.Licenses.txt`，其中记载 NDI 与其他第三方的版权/许可条款。SDK 的使用和再分发必须遵守[NDI SDK 官方许可](https://docs.ndi.video/all/developing-with-ndi/sdk/licensing)与发行包中随附的完整声明。本说明不表示 NDI 官方认可或保证本产品，也不额外授予许可。
+
+**[OBS Spout2 插件](https://github.com/Off-World-Live/obs-spout2-plugin)**、**[DistroAV](https://github.com/DistroAV/DistroAV)**和 **[NDI Tools](https://ndi.video/tools/)**由各自作者独立发布，用户应从官方渠道安装并遵守其单独的使用条件。
+
+**VB-CABLE** 是 [VB-Audio Software](https://vb-audio.com/Cable/)的 Donationware，适用[VB-Audio 官方许可](https://vb-audio.com/Services/licensing.htm)。远程会话即使对角色数据使用加密临时缓存，也不允许违反模型原作者对再分发的限制。
+
+[OBS/NDI 安装及远程数据保护说明](09-output.md)
 
 ## 商标
 

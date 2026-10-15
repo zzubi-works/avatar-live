@@ -11,7 +11,7 @@ Changes in each Avatar Live release, starting with the latest update.
 - Improved free/orbit camera navigation, camera follow/aim settings, scene thumbnails and search.
 - (Pro) Add and control multiple avatars, switch between them or have different rigs mirror the same tracking and expressions.
 - (Pro) Host or join a session from Output → Broadcast. Remote avatars appear in your scene with live pose, fingers and expressions; placement sync and host locks are supported.
-- (Pro) With participant consent, shared avatar files are kept in encrypted temporary session cache and deleted at the end of the session. VRM files flagged against redistribution are not shared.
+- (Pro) With explicit participant consent, remote avatar data is transferred in AES-256-GCM encrypted chunks and may be temporarily cached as ciphertext on the host and receivers. Cache cleanup is attempted at session end; redistribution-prohibited VRM assets are not sent.
 - Added SteamVR headset, controller and tracker input with full-body IK, calibration and controller finger controls. Real-device validation is still pending.
 - Added VRM 0.x/1.0 import, spring bones, expressions, lip sync, gaze, posing, tracking and scene saving. Some VRM 0.x models using unsupported shaders cannot be loaded.
 - Improved iPhone, webcam, OpenSeeFace and VMC tracking transitions and lost-tracking recovery; iPhone calibration now occurs three seconds after the first face frame.
@@ -25,7 +25,7 @@ Changes in each Avatar Live release, starting with the latest update.
 - Avatar Exporter 1.0.6 aligns more PhysBone behavior with VRChat SDK 3.10.5 and fixes certain avatar bone disabling issues.
 - Several features (including camera collisions, screen gaze, Look At IK, multiview, per-camera Spout2, Beautify/HBAO) are experimental or disabled by default.
 - Remote session participants must all use v2.0.0. Firewall/port forwarding may be necessary. Pose and expression messages are not encrypted, and protection from malicious clients is not guaranteed. Verify your avatar sharing rights.
-- Real-device tests for SteamVR, NDI receivers and a two-PC session had not been confirmed when these notes were compiled.
+- A real two-PC remote session connection has been tested. SteamVR devices and different NDI receivers may still require environment-specific verification; see the updated guide for OBS setup, port forwarding and the limits of session-data encryption.
 
 ## 2026/10/12 — v1.1.6
 

@@ -1,5 +1,23 @@
 # 5. Avatar menu
 
+## v2.0.0: what each avatar menu control really changes
+
+![The v45 avatar menu](img/v45-menu.png)
+
+| Control | Effect and how to use it |
+|---|---|
+| **Toggle** | First press enables a parameter, second disables it. Typical outfit and accessory visibility depends on the avatar creator's Animator wiring. |
+| **Button (while pressed)** | Activates only while held and returns after release. This is intentionally different from a toggle. |
+| **Radial** | Adjusts a continuous 0–100% value. It could control expression weight, clothing movement or another parameter defined by the avatar creator; halfway sends an intermediate value. |
+| **Two/Four-Axis Puppet** | Moves two or four parameter directions together. The centre is the neutral value; the extremes and axes depend on the avatar's original configuration. |
+| **Sub Menu** | Opens more controls belonging to the same avatar, not another actor. |
+| **Favorite / Quick Action** | Another way to trigger an existing action without navigating nested menus; it does not create a new parameter. |
+| **Hold / Toggle hotkey** | Hold works only while the key is down; Toggle remains active until the next press. Global hotkeys can work over another app, so avoid game conflicts. |
+
+**Hand gestures** can be different for each hand. Automatic finger input from a webcam, VMC gloves or SteamVR controllers can override a manually selected gesture. If it keeps switching back, check [finger tracking sources](06-devices.md) and [automatic expressions](07-motion.md).
+
+**My Expressions** and **Pose library** are saved per avatar. A static **.anim** applies fixed shape-key values; a multi-frame **.anim** changes them over time according to its animation/loop settings. Saved poses can independently allow or block **Face, Head, Arms, Fingers and Torso** tracking, enabling a fixed body pose with a moving face.
+
 You use your avatar's **Expressions menu** from VRChat just as it is. Outfit and hair toggles, expression buttons, Radials and Puppets all work exactly as they do in VRChat.
 
 ## Expressions menu
@@ -50,7 +68,7 @@ Click headings for Poses, My expressions and Hand gestures to expand their cards
 - Facial, head, arms, fingers and body tracking can be enabled independently. For example, you can hold the head still while tracking facial expressions.
 - The built-in Sitting pose holds the hips and legs while initially allowing all five tracking parts.
 - Right-click tiles for available actions such as hotkeys, duplication or Quick Actions.
-- Create expression and Import .anim are available in both Scene and Avatar Menu. Multi-frame clips follow their original loop setting.
+- Create expression and Import .anim are available in both Studio and Avatar Menu. Multi-frame clips follow their original loop setting.
 
 ## Reset to defaults
 

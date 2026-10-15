@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>动作 — AVATAR LIVE</title>
-<meta name="description" content="设定面部、身体和手的运动方式。设置按角色分别保存。">
+<meta name="description" content="iPhone 显示连接不代表每一帧都有新的人脸追踪数据。如果脸冻结，请检查原始追踪信号、重复数据、AFK 时间和正面校准。保存姿势里的面部、头部、手臂、手指、躯干五项追踪权限独立保存。例如头部关闭、面部开启时，头的方向保持姿势，表情继续实时移动。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/07-motion.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/07-motion.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/07-motion.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/07-motion.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/07-motion.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="动作 — AVATAR LIVE">
-<meta property="og:description" content="设定面部、身体和手的运动方式。设置按角色分别保存。">
+<meta property="og:description" content="iPhone 显示连接不代表每一帧都有新的人脸追踪数据。如果脸冻结，请检查原始追踪信号、重复数据、AFK 时间和正面校准。保存姿势里的面部、头部、手臂、手指、躯干五项追踪权限独立保存。例如头部关闭、面部开启时，头的方向保持姿势，表情继续实时移动。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/07-motion.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,74 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html" aria-current="page">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html" aria-current="page">动作</a></li><li><a href="08-scene.html">工作室：场景、摄像机、灯光和效果</a></li><li><a href="09-output.html">输出：OBS、NDI、屏幕共享与远程会话</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="7-动作">7. 动作<a class="anchor" href="#7-动作" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200动作滑块究竟改变什么">v2.0.0：动作滑块究竟改变什么<a class="anchor" href="#v200动作滑块究竟改变什么" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/zh/v45-motion.webp" srcset="../assets/shots/zh/v45-motion-960.webp 960w, ../assets/shots/zh/v45-motion.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 动作页面" loading="lazy" decoding="async"><figcaption>v45 动作页面</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>减小／关闭</th>
+<th>增大／开启</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>表情敏感度</strong></td>
+<td>细微表情不明显、噪声较少</td>
+<td>小变化也明显，但有时过度夸张</td>
+</tr>
+<tr>
+<td><strong>表情平滑</strong></td>
+<td>眼睛和嘴反应迅速但可能抖动</td>
+<td>动作更柔和，但眨眼和说话可能延迟</td>
+</tr>
+<tr>
+<td><strong>口型强度</strong></td>
+<td>张嘴幅度减小</td>
+<td>张嘴幅度变大，某些模型可能不自然</td>
+</tr>
+<tr>
+<td><strong>眨眼敏感度／自动眨眼</strong></td>
+<td>主要按真实输入</td>
+<td>更容易触发眨眼或在待机时自动眨眼</td>
+</tr>
+<tr>
+<td><strong>摄像头手臂动态／旧版</strong></td>
+<td>旧版保留更接近 1.1.6 的方式</td>
+<td>动态采用新的手臂/距离估算，效果取决于摄像头环境</td>
+</tr>
+<tr>
+<td><strong>手部平滑</strong></td>
+<td>反应快但追踪噪声较大</td>
+<td>减少细小抖动，但快速动作有跟随延迟</td>
+</tr>
+<tr>
+<td><strong>手部深度估算（实验）</strong></td>
+<td>以较稳定的平面动作为主</td>
+<td>估算手向前伸出的距离，但可能扭曲手腕或手臂</td>
+</tr>
+<tr>
+<td><strong>进入 AFK 前等待</strong></td>
+<td>短暂失去追踪也较快待机</td>
+<td>忽略短时丢帧，较久失踪才进入 AFK</td>
+</tr>
+<tr>
+<td><strong>AFK 进入/恢复时长</strong></td>
+<td>更快切换表情与动作</td>
+<td>过渡更柔和，但恢复较慢</td>
+</tr>
+<tr>
+<td><strong>待机呼吸/眨眼</strong></td>
+<td>静态休息</td>
+<td>没有实时输入时也保留小幅自然动作</td>
+</tr>
+</tbody>
+</table></div>
+<figure><img src="../assets/shots/zh/v45-motion-expanded.webp" srcset="../assets/shots/zh/v45-motion-expanded-960.webp 960w, ../assets/shots/zh/v45-motion-expanded.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 动作高级选项" loading="lazy" decoding="async"><figcaption>v45 动作高级选项</figcaption></figure>
+<p>iPhone 显示连接不代表每一帧都有新的人脸追踪数据。如果脸冻结，请检查原始追踪信号、重复数据、AFK 时间和正面校准。保存姿势里的<strong>面部、头部、手臂、手指、躯干</strong>五项追踪权限独立保存。例如<strong>头部关闭、面部开启</strong>时，头的方向保持姿势，表情继续实时移动。</p>
+<p><strong>视线对象</strong>选摄像机、特定人物或关闭，决定眼睛/头部看向哪里。提高视线强度会更积极地跟随目标，降低则保留更多原本追踪动作。实验性的 Look At IK 可能默认关闭；如果头部转动异常，应关闭并重新检查。</p>
 <p>设定面部、身体和手的运动方式。设置按角色分别保存。</p>
 <h2 id="面部追踪">面部追踪<a class="anchor" href="#面部追踪" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
@@ -150,8 +216,8 @@
 </div>
 <blockquote class="callout privacy"><p>键盘输入仅用于驱动角色的手，不会保存或发送输入的文字。</p>
 <p>💡 舌头 · 鼓腮的摄像头检测是实验性功能。</p>
-</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>上一页</span>设备</a><a class="next" href="08-scene.html"><span>下一页</span>场景</a></nav><p class="updated">最后更新: 2026-10-12</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#面部追踪">面部追踪</a></li><li><a href="#表情的驱动方式">表情的驱动方式</a></li><li><a href="#自动面部设置">自动面部设置</a></li><li><a href="#面部调整">面部调整</a></li><li><a href="#眨眼--嘴巴">眨眼 · 嘴巴</a></li><li><a href="#目光与看向镜头">目光与看向镜头</a></li><li><a href="#身体">身体</a></li><li><a href="#afk过渡时间与追踪丢失">AFK过渡时间与追踪丢失</a></li><li><a href="#摄像头手部深度估算实验性">摄像头手部深度估算（实验性）</a></li><li><a href="#手--桌面">手 · 桌面</a></li></ul></nav>
+</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>上一页</span>设备</a><a class="next" href="08-scene.html"><span>下一页</span>工作室：场景、摄像机、灯光和效果</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#v200动作滑块究竟改变什么">v2.0.0：动作滑块究竟改变什么</a></li><li><a href="#面部追踪">面部追踪</a></li><li><a href="#表情的驱动方式">表情的驱动方式</a></li><li><a href="#自动面部设置">自动面部设置</a></li><li><a href="#面部调整">面部调整</a></li><li><a href="#眨眼--嘴巴">眨眼 · 嘴巴</a></li><li><a href="#目光与看向镜头">目光与看向镜头</a></li><li><a href="#身体">身体</a></li><li><a href="#afk过渡时间与追踪丢失">AFK过渡时间与追踪丢失</a></li><li><a href="#摄像头手部深度估算实验性">摄像头手部深度估算（实验性）</a></li><li><a href="#手--桌面">手 · 桌面</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

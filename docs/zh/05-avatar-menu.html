@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>角色菜单 — AVATAR LIVE</title>
-<meta name="description" content="直接使用在 VRChat 中用过的角色 Expression 菜单。服装和发型开关、表情按钮、Radial、Puppet 都与 VRChat 中的运作方式完全相同。">
+<meta name="description" content="手部手势对左右手分开控制。来自摄像头手指、VMC 手套或 SteamVR 手柄的自动输入可能覆盖手动手势。如果手势总是恢复，请检查设备中的手指输入和动作的自动表情。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/05-avatar-menu.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/05-avatar-menu.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/05-avatar-menu.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/05-avatar-menu.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/05-avatar-menu.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="角色菜单 — AVATAR LIVE">
-<meta property="og:description" content="直接使用在 VRChat 中用过的角色 Expression 菜单。服装和发型开关、表情按钮、Radial、Puppet 都与 VRChat 中的运作方式完全相同。">
+<meta property="og:description" content="手部手势对左右手分开控制。来自摄像头手指、VMC 手套或 SteamVR 手柄的自动输入可能覆盖手动手势。如果手势总是恢复，请检查设备中的手指输入和动作的自动表情。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/05-avatar-menu.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,50 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html" aria-current="page">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html" aria-current="page">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室：场景、摄像机、灯光和效果</a></li><li><a href="09-output.html">输出：OBS、NDI、屏幕共享与远程会话</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="5-角色菜单">5. 角色菜单<a class="anchor" href="#5-角色菜单" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200角色菜单的控件具体改变什么">v2.0.0：角色菜单的控件具体改变什么<a class="anchor" href="#v200角色菜单的控件具体改变什么" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/zh/v45-menu.webp" srcset="../assets/shots/zh/v45-menu-960.webp 960w, ../assets/shots/zh/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 角色菜单" loading="lazy" decoding="async"><figcaption>v45 角色菜单</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>控件</th>
+<th>实际效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Toggle</strong></td>
+<td>第一次点击打开，再次关闭。服装或饰品变化取决于模型作者连接的 Animator 参数。</td>
+</tr>
+<tr>
+<td><strong>Button（按住）</strong></td>
+<td>只有按住时有效，松开后恢复，和开关型 Toggle 不同。</td>
+</tr>
+<tr>
+<td><strong>Radial 圆形滑块</strong></td>
+<td>发送 0–100% 的连续数值，例如表情强度或服装变形，具体取决于模型原本的设置。中间位置会发送中间值。</td>
+</tr>
+<tr>
+<td><strong>双轴／四轴 Puppet</strong></td>
+<td>用方向面板同时控制多个参数。中心为默认值，左右/上下分别控制模型作者指定的动作或表情。</td>
+</tr>
+<tr>
+<td><strong>Sub Menu</strong></td>
+<td>打开同一个角色的下一级菜单，不是切换到另一个角色。</td>
+</tr>
+<tr>
+<td><strong>收藏/快捷动作</strong></td>
+<td>让常用操作在工具条中直接使用，不会生成一套额外的独立参数。</td>
+</tr>
+<tr>
+<td><strong>快捷键：按住/切换</strong></td>
+<td>按住模式松开即恢复；切换模式第二次按下才关闭。全局快捷键可能与游戏操作冲突。</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>手部手势</strong>对左右手分开控制。来自摄像头手指、VMC 手套或 SteamVR 手柄的自动输入可能覆盖手动手势。如果手势总是恢复，请检查<a href="06-devices.html">设备中的手指输入</a>和<a href="07-motion.html">动作的自动表情</a>。</p>
+<p><strong>自定义表情/姿势库</strong>按每个角色独立保存。静态 <strong>.anim</strong> 应用固定形态键权重；多帧 <strong>.anim</strong> 随时间改变，循环取决于原片段。保存姿势可以分别允许或禁止<strong>面部、头部、手臂、手指、躯干</strong>追踪，因此可固定身体同时保留实时面部表情。</p>
 <p>直接使用在 VRChat 中用过的角色 <strong>Expression 菜单</strong>。服装和发型开关、表情按钮、Radial、Puppet 都与 VRChat 中的运作方式完全相同。</p>
 <h2 id="expression-菜单">Expression 菜单<a class="anchor" href="#expression-菜单" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
@@ -81,7 +123,7 @@
 <li>面部、头部、手臂、手指、身体五项独立控制。可以固定头部，同时继续使用面部表情。</li>
 <li>内置坐姿固定骨盆与双腿，初始启用五项追踪。</li>
 <li>右键图块可执行快捷键、复制、快捷操作等可用命令。</li>
-<li>场景和角色菜单都提供创建新表情、导入 .anim；多帧动画是否循环取决于原片段设置。</li>
+<li>工作室和角色菜单都提供创建新表情、导入 .anim；多帧动画是否循环取决于原片段设置。</li>
 </ul>
 <h2 id="恢复默认值">恢复默认值<a class="anchor" href="#恢复默认值" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>点击 <strong>角色参数 › 恢复默认值</strong>，菜单的数值会恢复为角色的默认值。服装状态等会被保存的数值，下次运行时也会保留。</p>
@@ -116,8 +158,8 @@
 <td>右键 <strong>⟲</strong>，或 <strong>设置 › 常规</strong></td>
 </tr>
 </tbody>
-</table></div></article><nav class="pager" aria-label="Pager"><a class="prev" href="04-main-window.html"><span>上一页</span>主界面</a><a class="next" href="06-devices.html"><span>下一页</span>设备</a></nav><p class="updated">最后更新: 2026-10-12</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#expression-菜单">Expression 菜单</a></li><li><a href="#右键菜单项">右键菜单项</a></li><li><a href="#手势">手势</a></li><li><a href="#卡片顺序姿势与我的表情">卡片顺序、姿势与我的表情</a></li><li><a href="#恢复默认值">恢复默认值</a></li><li><a href="#快捷操作">快捷操作</a></li><li><a href="#层级--网格--形态键">层级 · 网格 · 形态键</a></li><li><a href="#重置">重置</a></li></ul></nav>
+</table></div></article><nav class="pager" aria-label="Pager"><a class="prev" href="04-main-window.html"><span>上一页</span>主界面</a><a class="next" href="06-devices.html"><span>下一页</span>设备</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#v200角色菜单的控件具体改变什么">v2.0.0：角色菜单的控件具体改变什么</a></li><li><a href="#expression-菜单">Expression 菜单</a></li><li><a href="#右键菜单项">右键菜单项</a></li><li><a href="#手势">手势</a></li><li><a href="#卡片顺序姿势与我的表情">卡片顺序、姿势与我的表情</a></li><li><a href="#恢复默认值">恢复默认值</a></li><li><a href="#快捷操作">快捷操作</a></li><li><a href="#层级--网格--形态键">层级 · 网格 · 形态键</a></li><li><a href="#重置">重置</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

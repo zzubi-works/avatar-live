@@ -42,7 +42,7 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html" aria-current="page">更新记录</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室：场景、摄像机、灯光和效果</a></li><li><a href="09-output.html">输出：OBS、NDI、屏幕共享与远程会话</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html" aria-current="page">更新记录</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="更新记录">更新记录<a class="anchor" href="#更新记录" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>Avatar Live各版本的更新内容，按最新版本优先排列。</p>
 <h2 id="20261015--v200">2026/10/15 — v2.0.0<a class="anchor" href="#20261015--v200" aria-hidden="true" tabindex="-1">#</a></h2>
@@ -54,7 +54,7 @@
 <li>改进自由/环绕摄像机操作、跟随与瞄准、场景缩略图及搜索。</li>
 <li>(Pro) 支持添加并切换控制多个形象，同时共享追踪输入并同步动作及表情。</li>
 <li>(Pro) 可在直播输出中的“会话”主办或加入房间，实时显示其他参与者的姿态、手指和表情，并同步位置或锁定位置。</li>
-<li>(Pro) 经用户同意传输的形象文件存放于加密临时缓存，会话结束后删除；禁止再分发的 VRM 不会发送。</li>
+<li>(Pro) 经明确同意的远程角色数据按 AES-256-GCM 分块加密传输，房主和接收者的 PC 可能在会话中暂存密文缓存；会话结束时尝试清理缓存，禁止再分发的 VRM 不会发送。</li>
 <li>新增 SteamVR 头显、手柄及追踪器输入、全身 IK、校准及手指控制。仍待真实设备验证。</li>
 <li>支持导入 VRM 0.x/1.0，包括弹簧骨骼、表情、口型、视线、动作和场景保存。部分使用不支持着色器的 VRM 0.x 无法导入。</li>
 <li>改进 iPhone、摄像头、OpenSeeFace 与 VMC 的丢失追踪恢复和插值；iPhone 首次面部识别三秒后校准。</li>
@@ -65,7 +65,7 @@
 <li>Avatar Exporter 1.0.6 改进了与 VRChat SDK 3.10.5 一致的物理行为，并修复服装合并时某些骨骼被禁用的问题。</li>
 <li>摄像机碰撞、屏幕注视、Look At IK、多画面预览、Beautify/HBAO 等部分功能默认关闭或仍为实验性质。</li>
 <li>远程会话要求所有参与者使用 v2.0.0，有时需要配置防火墙/端口转发。姿态和表情消息未加密，也不能保证防止恶意客户端提取模型；请确认模型使用许可。</li>
-<li>编写更新说明时尚未确认 SteamVR 实机、NDI 接收端及双电脑会话的最终测试结果。</li>
+<li>已完成两台真实 PC 之间的远程会话连接测试。SteamVR 实机和不同 NDI 接收程序仍需按使用环境验证；OBS 配置、端口转发与数据加密范围请阅读新版指南。</li>
 </ul>
 <h2 id="20261012--v116">2026/10/12 — v1.1.6<a class="anchor" href="#20261012--v116" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>

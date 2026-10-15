@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>设备 — AVATAR LIVE</title>
-<meta name="description" content="摄像头（含全身 · 手指关节）、iPhone、VMC 输入已用实际设备确认。标有 实验性 的功能（Ultraleap、OSC 等）预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。如有问题，请通过 设置 › 诊断 › 发送错误报告 告诉我们。">
+<meta name="description" content="追踪来源可以按身体部位分别选择，例如 iPhone 控制面部、摄像头控制手臂、VMC 接收骨盆和腿部追踪。如果某个部位意外保留了没有信号的 VMC 来源，即使摄像头已连接该部位也可能不动。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/06-devices.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/06-devices.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/06-devices.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/06-devices.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/06-devices.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="设备 — AVATAR LIVE">
-<meta property="og:description" content="摄像头（含全身 · 手指关节）、iPhone、VMC 输入已用实际设备确认。标有 实验性 的功能（Ultraleap、OSC 等）预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。如有问题，请通过 设置 › 诊断 › 发送错误报告 告诉我们。">
+<meta property="og:description" content="追踪来源可以按身体部位分别选择，例如 iPhone 控制面部、摄像头控制手臂、VMC 接收骨盆和腿部追踪。如果某个部位意外保留了没有信号的 VMC 来源，即使摄像头已连接该部位也可能不动。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/06-devices.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,55 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html" aria-current="page">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html" aria-current="page">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室：场景、摄像机、灯光和效果</a></li><li><a href="09-output.html">输出：OBS、NDI、屏幕共享与远程会话</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="6-设备">6. 设备<a class="anchor" href="#6-设备" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200每个设备具体控制哪个部位">v2.0.0：每个设备具体控制哪个部位？<a class="anchor" href="#v200每个设备具体控制哪个部位" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/zh/v45-input.webp" srcset="../assets/shots/zh/v45-input-960.webp 960w, ../assets/shots/zh/v45-input.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 设备界面" loading="lazy" decoding="async"><figcaption>v45 设备界面</figcaption></figure>
+<p>追踪来源可以<strong>按身体部位分别选择</strong>，例如 iPhone 控制面部、摄像头控制手臂、VMC 接收骨盆和腿部追踪。如果某个部位意外保留了没有信号的 VMC 来源，即使摄像头已连接该部位也可能不动。</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>选项</th>
+<th>调整后的实际效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>摄像头质量／平衡／节能</strong></td>
+<td>提高质量可能增加 CPU 占用；节能降低负担但快速手指或身体动作可能不够准确。</td>
+</tr>
+<tr>
+<td><strong>手部防抖/平滑</strong></td>
+<td>提高可减少细小抖动，但手快速移动时跟随更慢；降低则更敏捷但较容易抖。</td>
+</tr>
+<tr>
+<td><strong>摄像头全身追踪</strong></td>
+<td>尝试跟随可见的躯干与腿。桌下看不见的腿可能使用推测或静态姿势。</td>
+</tr>
+<tr>
+<td><strong>手指关节追踪</strong></td>
+<td>跟随每节手指的弯曲与展开；手太小或被遮挡可能导致追踪不稳定。</td>
+</tr>
+<tr>
+<td><strong>iPhone 面部输入</strong></td>
+<td>通过 iFacialMocap/FaceMotion3D 获取表情与头部；第一次有效面部数据约 3 秒后进行初始校准，请短暂正对镜头。</td>
+</tr>
+<tr>
+<td><strong>VMC 各部位</strong></td>
+<td>选择外部追踪器或手套的数据，检查实际动作与 T Pose 对齐，不要只看连接数量。</td>
+</tr>
+<tr>
+<td><strong>SteamVR</strong></td>
+<td>连接头显、手柄与身体追踪器，应先确认 SteamVR 已正确追踪，再进行程序内全身校准。</td>
+</tr>
+<tr>
+<td><strong>话筒噪声门</strong></td>
+<td>提高阈值可减少键盘声导致的口型动作，但太高也可能忽略轻声说话。</td>
+</tr>
+</tbody>
+</table></div>
+<figure><img src="../assets/shots/zh/v45-devices-advanced.webp" srcset="../assets/shots/zh/v45-devices-advanced-960.webp 960w, ../assets/shots/zh/v45-devices-advanced.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 高级追踪设置" loading="lazy" decoding="async"><figcaption>v45 高级追踪设置</figcaption></figure>
+<p>建议按<strong>设备连接 → 各部位来源 → 正面/T-Pose 校准 → 平滑与丢失追踪恢复 → 实际输出检查</strong>的顺序操作。VRM 0.x/1.0 可直接导入，但部分不受支持的 VRM 0.x 着色器无法加载。与他人会话时也必须遵守模型授权。</p>
 <h2 id="摄像头与麦克风">摄像头与麦克风<a class="anchor" href="#摄像头与麦克风" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
 <figure><img src="../assets/shots/zh/devices.webp" width="960" height="900" alt="设备页面" loading="lazy" decoding="async"><figcaption>设备页面</figcaption></figure>
@@ -109,8 +156,8 @@
 </div>
 <blockquote class="callout tip"><p><strong>iPhone地址（可选）</strong> 栏可以留空。仅在 iFacialMocap 应用中不使用 Destination IP address 时才需要填写。</p>
 <p>💡 开启 <strong>断开时由摄像头接替</strong> 后，iPhone 连接断开时，摄像头会暂时代为追踪。</p>
-</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>上一页</span>角色菜单</a><a class="next" href="07-motion.html"><span>下一页</span>动作</a></nav><p class="updated">最后更新: 2026-10-12</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#摄像头与麦克风">摄像头与麦克风</a></li><li><a href="#追踪来源">追踪来源</a></li><li><a href="#全身--手指关节摄像头">全身 · 手指关节（摄像头）</a></li><li><a href="#通过-vmc-接收全身追踪器--手套--其他应用">通过 VMC 接收（全身追踪器 · 手套 · 其他应用）</a></li><li><a href="#iphone镜像与追踪丢失">iPhone镜像与追踪丢失</a></li><li><a href="#实验性的摄像头手部深度估算">实验性的摄像头手部深度估算</a></li><li><a href="#用-iphone-进行面部追踪ifacialmocap--facemotion3d">用 iPhone 进行面部追踪（iFacialMocap · FaceMotion3D）</a></li></ul></nav>
+</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>上一页</span>角色菜单</a><a class="next" href="07-motion.html"><span>下一页</span>动作</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#v200每个设备具体控制哪个部位">v2.0.0：每个设备具体控制哪个部位？</a></li><li><a href="#摄像头与麦克风">摄像头与麦克风</a></li><li><a href="#追踪来源">追踪来源</a></li><li><a href="#全身--手指关节摄像头">全身 · 手指关节（摄像头）</a></li><li><a href="#通过-vmc-接收全身追踪器--手套--其他应用">通过 VMC 接收（全身追踪器 · 手套 · 其他应用）</a></li><li><a href="#iphone镜像与追踪丢失">iPhone镜像与追踪丢失</a></li><li><a href="#实验性的摄像头手部深度估算">实验性的摄像头手部深度估算</a></li><li><a href="#用-iphone-进行面部追踪ifacialmocap--facemotion3d">用 iPhone 进行面部追踪（iFacialMocap · FaceMotion3D）</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

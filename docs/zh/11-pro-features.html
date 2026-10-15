@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>摆姿势 · 物体 · 表情 — AVATAR LIVE</title>
-<meta name="description" content="开启 场景 › 摆姿势 › 摆姿势模式 后，可以直接移动骨骼来摆出姿势。">
+<meta name="description" content="购买 Pro 不代表所有选项默认开启。多画面预览需要单独的开关，摄像机碰撞、Look At IK 等可能属于默认关闭的实验功能。建议逐项开启，在 OBS 中确认结果。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/11-pro-features.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/11-pro-features.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/11-pro-features.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/11-pro-features.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/11-pro-features.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="摆姿势 · 物体 · 表情 — AVATAR LIVE">
-<meta property="og:description" content="开启 场景 › 摆姿势 › 摆姿势模式 后，可以直接移动骨骼来摆出姿势。">
+<meta property="og:description" content="购买 Pro 不代表所有选项默认开启。多画面预览需要单独的开关，摄像机碰撞、Look At IK 等可能属于默认关闭的实验功能。建议逐项开启，在 OBS 中确认结果。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/11-pro-features.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,79 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html" aria-current="page">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室：场景、摄像机、灯光和效果</a></li><li><a href="09-output.html">输出：OBS、NDI、屏幕共享与远程会话</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html" aria-current="page">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="11-摆姿势--物体--表情">11. 摆姿势 · 物体 · 表情<a class="anchor" href="#11-摆姿势--物体--表情" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200basic--pro-功能及实际影响">v2.0.0：Basic / Pro 功能及实际影响<a class="anchor" href="#v200basic--pro-功能及实际影响" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/zh/v45-studio-cameras.webp" srcset="../assets/shots/zh/v45-studio-cameras-960.webp 960w, ../assets/shots/zh/v45-studio-cameras.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 工作室摄像机" loading="lazy" decoding="async"><figcaption>v45 工作室摄像机</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>功能</th>
+<th>Basic</th>
+<th>Pro</th>
+<th>开启会改变什么</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>普通 Spout2 与 <strong>NDI 输出</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>向 OBS 发送角色画面。<strong>NDI 也属于 Basic</strong>，需安装 OBS 接收插件。</td>
+</tr>
+<tr>
+<td>一般灯光与后处理</td>
+<td>✅</td>
+<td>✅</td>
+<td>改变画面的颜色、阴影、辉光和背景。</td>
+</tr>
+<tr>
+<td>姿势编辑/姿势库/道具</td>
+<td>—</td>
+<td>✅</td>
+<td>修改或固定骨骼、将道具绑定在舞台或人物骨骼上。</td>
+</tr>
+<tr>
+<td><strong>多个角色与共同控制</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>在同一场景中控制多个人物或共享追踪输入。</td>
+</tr>
+<tr>
+<td><strong>工作室摄像机/导演/多画面预览</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>输出独立直播镜头，编辑视角不会自动改变观众画面。</td>
+</tr>
+<tr>
+<td><strong>每摄像机独立 Spout2</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>允许向 OBS 添加最多三路额外独立画面。</td>
+</tr>
+<tr>
+<td><strong>远程会话</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>同步其他 PC 的动作、表情、视线与经同意的模型数据。</td>
+</tr>
+<tr>
+<td><strong>体积光/HBAO/Beautify</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>添加可见光束、接触阴影与高级画面效果。</td>
+</tr>
+<tr>
+<td><strong>MP4 录制/额外屏幕共享来源</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>保存直播录像或合成更多游戏窗口/屏幕。</td>
+</tr>
+</tbody>
+</table></div>
+<p>购买 Pro 不代表所有选项默认开启。多画面预览需要单独的开关，摄像机碰撞、Look At IK 等可能属于默认关闭的实验功能。建议逐项开启，在 OBS 中确认结果。</p>
+<p><a href="08-scene.html">摄像机旋转与滑块教程</a> · <a href="09-output.html">OBS、NDI 与远程会话</a></p>
+<p><strong>购买 Pro 不改变第三方角色素材的授权</strong>。传输和临时缓存他人的模型前必须确认原作者条款允许。</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -80,7 +151,7 @@
 </table></div>
 <h2 id="摆姿势">摆姿势<a class="anchor" href="#摆姿势" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/zh/posing.webp" width="960" height="900" alt="摆姿势模式" loading="lazy" decoding="async"><figcaption>摆姿势模式</figcaption></figure>
-<p>开启 <strong>场景 › 摆姿势 › 摆姿势模式</strong> 后，可以直接移动骨骼来摆出姿势。</p>
+<p>开启 <strong>工作室 › 摆姿势 › 摆姿势模式</strong> 后，可以直接移动骨骼来摆出姿势。</p>
 <ul>
 <li>点击骨骼进行选择，拖动圆环即可旋转。旋转控件会按骨骼的大小显示。</li>
 <li>拖动手或脚时，整条手臂 · 腿会随之移动；用 <strong>Alt+拖动</strong> 改变手肘 · 膝盖的朝向。</li>
@@ -95,7 +166,7 @@
 </blockquote>
 <h2 id="每个姿势的五项独立追踪">每个姿势的五项独立追踪<a class="anchor" href="#每个姿势的五项独立追踪" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/zh/menu-poses.webp" width="960" height="900" alt="姿势卡片与追踪控制" loading="lazy" decoding="async"><figcaption>姿势卡片与追踪控制</figcaption></figure>
-<p>点击角色菜单或场景中保存姿势旁的相机图标，可分别控制面部、头部、手臂、手指、身体五项追踪。启用的部位继续跟踪，关闭的部位保持姿势。设置按姿势分别保存。</p>
+<p>点击角色菜单或工作室中保存姿势旁的相机图标，可分别控制面部、头部、手臂、手指、身体五项追踪。启用的部位继续跟踪，关闭的部位保持姿势。设置按姿势分别保存。</p>
 <ul>
 <li>头部OFF、面部ON可固定头部角度，同时保留表情追踪。</li>
 <li>面部OFF时仍可独立使用眼睛看镜头。</li>
@@ -110,7 +181,7 @@
 <li>等待、过渡及恢复时间位于动作 › 身体 › AFK过渡时间。</li>
 </ul>
 <h2 id="姿势库">姿势库<a class="anchor" href="#姿势库" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>在 <strong>场景 › 摆姿势 › 姿势库</strong> 中选择存放 <code>.anim</code> 文件的文件夹后，所有姿势都会以 <strong>当前角色的缩略图</strong> 显示。</p>
+<p>在 <strong>工作室 › 摆姿势 › 姿势库</strong> 中选择存放 <code>.anim</code> 文件的文件夹后，所有姿势都会以 <strong>当前角色的缩略图</strong> 显示。</p>
 <ul>
 <li>会读取到子文件夹，并按姿势 · 手势 · 动作分类显示。可以使用搜索和收藏。</li>
 <li>点击 <strong>应用</strong> 即可立即摆出该姿势，会动的剪辑则作为动画播放。用 <strong>解除</strong> 恢复原状。</li>
@@ -119,7 +190,7 @@
 </ul>
 <h2 id="物体">物体<a class="anchor" href="#物体" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/zh/props.webp" width="960" height="900" alt="物体" loading="lazy" decoding="async"><figcaption>物体</figcaption></figure>
-<p>通过 <strong>场景 › 物体 › + 添加物体</strong> 放置文字、图片、形状和 3D 模型。</p>
+<p>通过 <strong>工作室 › 物体 › + 添加物体</strong> 放置文字、图片、形状和 3D 模型。</p>
 <ul>
 <li>将 <strong>附着位置</strong> 设为头部或手，物体就会随角色一起移动。</li>
 <li>双击文字即可直接编辑。</li>
@@ -138,10 +209,10 @@
 <li>也可以导入在 Unity 中制作的表情动画（<code>.anim</code>，形态键）。会动的剪辑在表情开启期间播放。</li>
 </ul>
 <figure><img src="../assets/shots/zh/menu-myexpr.webp" width="960" height="900" alt="角色菜单中的我的表情卡片" loading="lazy" decoding="async"><figcaption>角色菜单中的我的表情卡片</figcaption></figure>
-<p>创建新表情与导入 .anim 按钮同时显示在场景和角色菜单。可导入静态形态键表情，也能导入多帧的 Unity .anim 表情。动画是否循环由原始片段的设置决定。拖动表情图块可调整排序；右键可添加快捷键或快捷操作。</p>
+<p>创建新表情与导入 .anim 按钮同时显示在工作室和角色菜单。可导入静态形态键表情，也能导入多帧的 Unity .anim 表情。动画是否循环由原始片段的设置决定。拖动表情图块可调整排序；右键可添加快捷键或快捷操作。</p>
 <h2 id="自动表情">自动表情<a class="anchor" href="#自动表情" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>微笑或惊讶时，会自动显示预先设定的表情。在 <strong>动作 › 自动表情</strong> 中开启，并为微笑 · 惊讶 · 眨眼等每种表情关联要显示的表情。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>上一页</span>设置</a><a class="next" href="12-troubleshooting.html"><span>下一页</span>故障排除</a></nav><p class="updated">最后更新: 2026-10-12</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#摆姿势">摆姿势</a></li><li><a href="#每个姿势的五项独立追踪">每个姿势的五项独立追踪</a></li><li><a href="#默认姿势与afk待机姿势">默认姿势与AFK待机姿势</a></li><li><a href="#姿势库">姿势库</a></li><li><a href="#物体">物体</a></li><li><a href="#屏幕共享更多来源">屏幕共享更多来源</a></li><li><a href="#我的表情">我的表情</a></li><li><a href="#自动表情">自动表情</a></li></ul></nav>
+<p>微笑或惊讶时，会自动显示预先设定的表情。在 <strong>动作 › 自动表情</strong> 中开启，并为微笑 · 惊讶 · 眨眼等每种表情关联要显示的表情。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>上一页</span>设置</a><a class="next" href="12-troubleshooting.html"><span>下一页</span>故障排除</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#v200basic--pro-功能及实际影响">v2.0.0：Basic / Pro 功能及实际影响</a></li><li><a href="#摆姿势">摆姿势</a></li><li><a href="#每个姿势的五项独立追踪">每个姿势的五项独立追踪</a></li><li><a href="#默认姿势与afk待机姿势">默认姿势与AFK待机姿势</a></li><li><a href="#姿势库">姿势库</a></li><li><a href="#物体">物体</a></li><li><a href="#屏幕共享更多来源">屏幕共享更多来源</a></li><li><a href="#我的表情">我的表情</a></li><li><a href="#自动表情">自动表情</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

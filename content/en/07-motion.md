@@ -1,5 +1,28 @@
 # 7. Motion
 
+## v2.0.0: fine-tuning motion and understanding the sliders
+
+![v45 Motion page](img/v45-motion.png)
+
+| Control | Lower / Off | Higher / On |
+|---|---|---|
+| **Face sensitivity** | Subtle expressions may barely show; noise is reduced | Small changes become obvious but can be over-exaggerated |
+| **Expression smoothing** | Eyes/mouth respond rapidly, sometimes jittery | Motion blends gently, but quick blinks and syllables may lag |
+| **Lip-sync strength** | Smaller mouth opening | Larger mouth movement, possibly unnatural on some models |
+| **Blink sensitivity / automatic blinking** | Reliance on captured eye input | More response to small closures or idle blinks |
+| **Webcam arms Dynamic / Legacy** | Legacy preserves behavior closer to 1.1.6 | Dynamic adds newer arm/hand distance estimation, with results depending on camera setup |
+| **Arm/hand smoothing** | Immediate gestures but more tracking noise | Less shake, more delay after rapid gestures |
+| **Hand depth estimation (experimental)** | More stable flat/webcam motion | Tries to follow a hand reaching toward the camera but can distort the arm or wrist |
+| **AFK entry wait** | Short loss quickly activates the waiting pose | Ignores brief interruptions and waits longer before entering AFK |
+| **AFK transition / return duration** | Snaps to/from waiting expression and pose | Smooth transitions, but normal tracking takes longer to reappear |
+| **Idle breathing/blink** | Character rests still while idle | Adds small movements without tracking input |
+
+![v45 Motion controls](img/v45-motion-expanded.png)
+
+A connected iPhone does not automatically mean every frame contains fresh face tracking. If the face freezes, inspect actual source tracking, stale/repeated values, AFK timing and front calibration. Pose-specific **Face, Head, Arms, Fingers and Torso** switches are independent: **Head Off + Face On** keeps the head pose but allows facial expressions to animate.
+
+**Gaze target (Camera/Person/None)** controls whom the avatar watches. Raising look strength makes eyes/head pursue the target more strongly, while lowering it lets incoming tracking dominate. Experimental Look At IK may be disabled by default; turn it off if the head turns too far. Saved manual poses may take precedence over automatically selected AFK poses.
+
 Set how the face, body and hands move. Settings are saved separately for each avatar.
 
 ## Face tracking

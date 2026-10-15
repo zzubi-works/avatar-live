@@ -42,7 +42,7 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html" aria-current="page">更新履歴</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">スタジオ：シーン・カメラ・照明・エフェクト</a></li><li><a href="09-output.html">出力：OBS・NDI・画面共有・リモートセッション</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html" aria-current="page">更新履歴</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="更新履歴">更新履歴<a class="anchor" href="#更新履歴" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>Avatar Liveのバージョンごとの変更内容です。最新の更新から確認できます。</p>
 <h2 id="20261015--v200">2026/10/15 — v2.0.0<a class="anchor" href="#20261015--v200" aria-hidden="true" tabindex="-1">#</a></h2>
@@ -54,7 +54,7 @@
 <li>カメラ操作、追従・照準、シーンのサムネイルと検索を改善しました。</li>
 <li>(Pro) 複数アバターの追加・操作切り替え、同じトラッキングによる同時操作、動き・表情の同期に対応しました。</li>
 <li>(Pro) セッションのホスト・参加、相手の姿勢・指・表情のリアルタイム表示、位置同期とホストの位置ロックを追加しました。</li>
-<li>(Pro) 同意のあるセッションで受信したアバターファイルは暗号化された一時キャッシュに保存し、終了時に削除します。再配布禁止 VRM は送信しません。</li>
+<li>(Pro) 同意を得たリモートアバターデータは AES-256-GCM でチャンクごとに暗号化され、ホストと受信 PC にセッション中だけ暗号化キャッシュとして保存される場合があります。終了時にキャッシュ削除を試み、再配布禁止 VRM は送信しません。</li>
 <li>SteamVR の HMD・コントローラー・トラッカー、全身 IK、キャリブレーション、指操作に対応しました。実機検証は未完了です。</li>
 <li>VRM 0.x/1.0、スプリングボーン、表情・リップシンク・視線・ポーズに対応しました。一部の未対応シェーダーの VRM 0.x は読み込めません。</li>
 <li>iPhone・ウェブカメラ・OpenSeeFace・VMC の追跡ロスト復帰と補間を改善しました。iPhone の補正は初回顔検出の 3 秒後に実施します。</li>
@@ -66,7 +66,7 @@
 <li>Avatar Exporter 1.0.6 で VRChat SDK 3.10.5 に合わせた物理挙動と、衣装統合時に骨が無効化される問題を改善しました。</li>
 <li>カメラ衝突、画面注視、Look At IK、マルチビュー、Beautify/HBAO など一部は初期状態 OFF／実験機能です。</li>
 <li>リモートセッションでは全員 v2.0.0 が必要です。ファイアウォール等の設定が必要な場合があります。姿勢・表情のメッセージは暗号化されず、改造クライアントからの保護は保証できません。アバター利用規約をご確認ください。</li>
-<li>SteamVR 実機、NDI 受信側、2 台の PC によるセッションの最終実機検証記録はありません。</li>
+<li>リモートセッションは実際の 2 台の PC 間で接続テスト済みです。SteamVR 機器や NDI 受信アプリは環境別の確認が必要な場合があります。OBS の導入、ポート転送、データ保護範囲は新しいガイドをご覧ください。</li>
 </ul>
 <h2 id="20261012--v116">2026/10/12 — v1.1.6<a class="anchor" href="#20261012--v116" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>

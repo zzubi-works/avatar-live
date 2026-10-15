@@ -42,7 +42,7 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html" aria-current="page">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">スタジオ：シーン・カメラ・照明・エフェクト</a></li><li><a href="09-output.html">出力：OBS・NDI・画面共有・リモートセッション</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html" aria-current="page">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="13-エディションライセンス告知">13. エディション・ライセンス・告知<a class="anchor" href="#13-エディションライセンス告知" aria-hidden="true" tabindex="-1">#</a></h1>
 <h2 id="エディションと価格">エディションと価格<a class="anchor" href="#エディションと価格" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
@@ -75,8 +75,13 @@
 <td>✅</td>
 </tr>
 <tr>
-<td>Spout2・仮想カメラ・画面共有</td>
+<td>Spout2・<strong>NDI</strong>・仮想カメラ・画面共有</td>
 <td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>複数スタジオカメラ・リモートセッション・カメラ別 Spout2・録画</td>
+<td>—</td>
 <td>✅</td>
 </tr>
 <tr>
@@ -128,11 +133,16 @@
 </ul>
 <h2 id="オープンソースに関する告知">オープンソースに関する告知<a class="anchor" href="#オープンソースに関する告知" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>同梱されているオープンソースのコンポーネントは、各コンポーネントのライセンスに従います。告知は、プログラムと Exporter パッケージに同梱されています。Avatar Exporter の一部のコードは、MIT ライセンスで公開されているオープンソースのコードをもとに作成されています。</p>
+<h2 id="第三者の告知ndispout2vb-cable">第三者の告知：NDI、Spout2、VB-CABLE<a class="anchor" href="#第三者の告知ndispout2vb-cable" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>NDI® は Vizrt NDI AB の登録商標</strong>です。v45 Windows 配布物には <code>AvatarLive_Data/Plugins/x86_64/Processing.NDI.Lib.x64.dll</code> と、NDI および第三者の著作権・ライセンスを記した <code>Processing.NDI.Lib.Licenses.txt</code> が<strong>実際に同梱されていることを確認済み</strong>です。SDK の使用・再配布には <a href="https://docs.ndi.video/all/developing-with-ndi/sdk/licensing">NDI SDK 公式ライセンス</a> と同梱の全文が適用されます。本案内は NDI からの承認・保証や新しい権利の付与を意味しません。</p>
+<p><strong><a href="https://github.com/Off-World-Live/obs-spout2-plugin">OBS Spout2 プラグイン</a></strong>、<strong><a href="https://github.com/DistroAV/DistroAV">DistroAV</a></strong>、<strong><a href="https://ndi.video/tools/">NDI Tools</a></strong> はそれぞれの提供元が配布する独立したソフトウェアです。ユーザーが公式配布元から取得し、それぞれの利用条件に従う必要があります。</p>
+<p><strong>VB-CABLE</strong> は <a href="https://vb-audio.com/Cable/">VB-Audio Software</a> の Donationware で、<a href="https://vb-audio.com/Services/licensing.htm">ライセンス条件</a>に従います。セッション中のアバターデータも暗号化されるからといって原作者の再配布禁止条項が無効になるわけではありません。</p>
+<p><a href="09-output.html">OBS/NDI の導入とリモートデータの扱い</a></p>
 <h2 id="商標">商標<a class="anchor" href="#商標" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>VRChat は VRChat Inc. の商標です。そのほかの製品名は各所有者の商標であり、互換性を説明する目的でのみ記載しています。</p>
 <h2 id="関連文書">関連文書<a class="anchor" href="#関連文書" aria-hidden="true" tabindex="-1">#</a></h2>
-<p><a href="legal-terms.html">利用規約</a> · <a href="legal-privacy.html">プライバシーポリシー</a> · <a href="legal-refund.html">返金ポリシー</a> · <a href="legal-seller.html">販売者情報</a></p></article><nav class="pager" aria-label="Pager"><a class="prev" href="12-troubleshooting.html"><span>前へ</span>トラブルシューティング</a><a class="next" href="legal-terms.html"><span>次へ</span>Avatar Live 利用規約</a></nav><p class="updated">最終更新: 2026-10-12</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#エディションと価格">エディションと価格</a></li><li><a href="#アップグレードと体験版">アップグレードと体験版</a></li><li><a href="#ライセンスの利用条件要約">ライセンスの利用条件（要約）</a></li><li><a href="#試験的機能">試験的機能</a></li><li><a href="#自分で作ったファイル">自分で作ったファイル</a></li><li><a href="#独立性に関する告知">独立性に関する告知</a></li><li><a href="#オープンソースに関する告知">オープンソースに関する告知</a></li><li><a href="#商標">商標</a></li><li><a href="#関連文書">関連文書</a></li></ul></nav>
+<p><a href="legal-terms.html">利用規約</a> · <a href="legal-privacy.html">プライバシーポリシー</a> · <a href="legal-refund.html">返金ポリシー</a> · <a href="legal-seller.html">販売者情報</a></p></article><nav class="pager" aria-label="Pager"><a class="prev" href="12-troubleshooting.html"><span>前へ</span>トラブルシューティング</a><a class="next" href="legal-terms.html"><span>次へ</span>Avatar Live 利用規約</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#エディションと価格">エディションと価格</a></li><li><a href="#アップグレードと体験版">アップグレードと体験版</a></li><li><a href="#ライセンスの利用条件要約">ライセンスの利用条件（要約）</a></li><li><a href="#試験的機能">試験的機能</a></li><li><a href="#自分で作ったファイル">自分で作ったファイル</a></li><li><a href="#独立性に関する告知">独立性に関する告知</a></li><li><a href="#オープンソースに関する告知">オープンソースに関する告知</a></li><li><a href="#第三者の告知ndispout2vb-cable">第三者の告知：NDI、Spout2、VB-CABLE</a></li><li><a href="#商標">商標</a></li><li><a href="#関連文書">関連文書</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

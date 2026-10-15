@@ -42,7 +42,7 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html" aria-current="page">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室：场景、摄像机、灯光和效果</a></li><li><a href="09-output.html">输出：OBS、NDI、屏幕共享与远程会话</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html" aria-current="page">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="13-版本--许可证--声明">13. 版本 · 许可证 · 声明<a class="anchor" href="#13-版本--许可证--声明" aria-hidden="true" tabindex="-1">#</a></h1>
 <h2 id="版本与价格">版本与价格<a class="anchor" href="#版本与价格" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
@@ -75,8 +75,13 @@
 <td>✅</td>
 </tr>
 <tr>
-<td>Spout2 · 虚拟摄像头 · 屏幕共享</td>
+<td>Spout2 · <strong>NDI</strong> · 虚拟摄像头 · 屏幕共享</td>
 <td>✅</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>多工作室摄像机 · 远程会话 · 每摄像机 Spout2 · 录制</td>
+<td>—</td>
 <td>✅</td>
 </tr>
 <tr>
@@ -128,11 +133,16 @@
 </ul>
 <h2 id="开源声明">开源声明<a class="anchor" href="#开源声明" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>所包含的开源组件遵循各组件的许可证。相关声明随程序和 Exporter 软件包一同提供。Avatar Exporter 的部分代码是基于以 MIT 许可证公开的开源代码编写的。</p>
+<h2 id="第三方声明ndispout2-和-vb-cable">第三方声明：NDI、Spout2 和 VB-CABLE<a class="anchor" href="#第三方声明ndispout2-和-vb-cable" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>NDI® 是 Vizrt NDI AB 的注册商标。</strong> 在 v45 Windows 发行包中实际确认包含 <code>AvatarLive_Data/Plugins/x86_64/Processing.NDI.Lib.x64.dll</code>及附带的 <code>Processing.NDI.Lib.Licenses.txt</code>，其中记载 NDI 与其他第三方的版权/许可条款。SDK 的使用和再分发必须遵守<a href="https://docs.ndi.video/all/developing-with-ndi/sdk/licensing">NDI SDK 官方许可</a>与发行包中随附的完整声明。本说明不表示 NDI 官方认可或保证本产品，也不额外授予许可。</p>
+<p><strong><a href="https://github.com/Off-World-Live/obs-spout2-plugin">OBS Spout2 插件</a></strong>、<strong><a href="https://github.com/DistroAV/DistroAV">DistroAV</a></strong>和 <strong><a href="https://ndi.video/tools/">NDI Tools</a></strong>由各自作者独立发布，用户应从官方渠道安装并遵守其单独的使用条件。</p>
+<p><strong>VB-CABLE</strong> 是 <a href="https://vb-audio.com/Cable/">VB-Audio Software</a>的 Donationware，适用<a href="https://vb-audio.com/Services/licensing.htm">VB-Audio 官方许可</a>。远程会话即使对角色数据使用加密临时缓存，也不允许违反模型原作者对再分发的限制。</p>
+<p><a href="09-output.html">OBS/NDI 安装及远程数据保护说明</a></p>
 <h2 id="商标">商标<a class="anchor" href="#商标" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>VRChat 是 VRChat Inc. 的商标。其他产品名称为各自所有者的商标，仅为说明兼容性而提及。</p>
 <h2 id="相关文档">相关文档<a class="anchor" href="#相关文档" aria-hidden="true" tabindex="-1">#</a></h2>
-<p><a href="legal-terms.html">使用条款</a> · <a href="legal-privacy.html">隐私政策</a> · <a href="legal-refund.html">退款政策</a> · <a href="legal-seller.html">卖家信息</a></p></article><nav class="pager" aria-label="Pager"><a class="prev" href="12-troubleshooting.html"><span>上一页</span>故障排除</a><a class="next" href="legal-terms.html"><span>下一页</span>Avatar Live 使用条款</a></nav><p class="updated">最后更新: 2026-10-12</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#版本与价格">版本与价格</a></li><li><a href="#升级与试用版">升级与试用版</a></li><li><a href="#许可证使用条件摘要">许可证使用条件（摘要）</a></li><li><a href="#实验性功能">实验性功能</a></li><li><a href="#自己制作的文件">自己制作的文件</a></li><li><a href="#独立性声明">独立性声明</a></li><li><a href="#开源声明">开源声明</a></li><li><a href="#商标">商标</a></li><li><a href="#相关文档">相关文档</a></li></ul></nav>
+<p><a href="legal-terms.html">使用条款</a> · <a href="legal-privacy.html">隐私政策</a> · <a href="legal-refund.html">退款政策</a> · <a href="legal-seller.html">卖家信息</a></p></article><nav class="pager" aria-label="Pager"><a class="prev" href="12-troubleshooting.html"><span>上一页</span>故障排除</a><a class="next" href="legal-terms.html"><span>下一页</span>Avatar Live 使用条款</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#版本与价格">版本与价格</a></li><li><a href="#升级与试用版">升级与试用版</a></li><li><a href="#许可证使用条件摘要">许可证使用条件（摘要）</a></li><li><a href="#实验性功能">实验性功能</a></li><li><a href="#自己制作的文件">自己制作的文件</a></li><li><a href="#独立性声明">独立性声明</a></li><li><a href="#开源声明">开源声明</a></li><li><a href="#第三方声明ndispout2-和-vb-cable">第三方声明：NDI、Spout2 和 VB-CABLE</a></li><li><a href="#商标">商标</a></li><li><a href="#相关文档">相关文档</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

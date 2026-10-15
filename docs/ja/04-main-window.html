@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>メイン画面 — AVATAR LIVE</title>
-<meta name="description" content="パネル右上の ピン を押すと、パネルが固定されます。">
+<meta name="description" content="v2.0.0 のウィンドウは常に編集用のシーンビューです。スタジオカメラを配信中でも、自分のウィンドウではアバターやライト、小物の調整ができます。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ja/04-main-window.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/04-main-window.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/04-main-window.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/04-main-window.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/04-main-window.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="メイン画面 — AVATAR LIVE">
-<meta property="og:description" content="パネル右上の ピン を押すと、パネルが固定されます。">
+<meta property="og:description" content="v2.0.0 のウィンドウは常に編集用のシーンビューです。スタジオカメラを配信中でも、自分のウィンドウではアバターやライト、小物の調整ができます。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ja/04-main-window.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ja.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,156 +42,66 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html" aria-current="page">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html" aria-current="page">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">スタジオ：シーン・カメラ・照明・エフェクト</a></li><li><a href="09-output.html">出力：OBS・NDI・画面共有・リモートセッション</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="4-メイン画面">4. メイン画面<a class="anchor" href="#4-メイン画面" aria-hidden="true" tabindex="-1">#</a></h1>
-<figure><img src="../assets/shots/ja/main.webp" srcset="../assets/shots/ja/main-960.webp 960w, ../assets/shots/ja/main.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="メイン画面" loading="lazy" decoding="async"><figcaption>メイン画面</figcaption></figure>
-<h2 id="左のメニュー">左のメニュー<a class="anchor" href="#左のメニュー" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>v2.0.0 のウィンドウは常に<strong>編集用のシーンビュー</strong>です。スタジオカメラを配信中でも、自分のウィンドウではアバターやライト、小物の調整ができます。</p>
+<figure><img src="../assets/shots/ja/v45-menu.webp" srcset="../assets/shots/ja/v45-menu-960.webp 960w, ../assets/shots/ja/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 メイン画面" loading="lazy" decoding="async"><figcaption>v45 メイン画面</figcaption></figure>
+<h2 id="左側メニューの使い分け">左側メニューの使い分け<a class="anchor" href="#左側メニューの使い分け" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap"><table>
 <thead>
 <tr>
 <th>メニュー</th>
-<th>内容</th>
+<th>変更の影響を受ける部分</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><strong>メニュー</strong></td>
-<td>アバターの Expression メニューとジェスチャー → <a href="05-avatar-menu.html">5章</a></td>
+<td>選択アバターの Expression メニュー、衣装トグル、表情・ジェスチャー。<a href="05-avatar-menu.html">5章</a></td>
 </tr>
 <tr>
 <td><strong>デバイス</strong></td>
-<td>Web カメラ、マイク、トラッキング → <a href="06-devices.html">6章</a></td>
+<td>Web カメラ・マイク・iPhone・トラッカーなどの入力元。<a href="06-devices.html">6章</a></td>
 </tr>
 <tr>
-<td><strong>動き</strong></td>
-<td>顔、体、手 → <a href="07-motion.html">7章</a></td>
+<td><strong>動作</strong></td>
+<td>顔・目・頭・手・全身の動き、AFK とリップシンク。<a href="07-motion.html">7章</a></td>
 </tr>
 <tr>
-<td><strong>シーン</strong></td>
-<td>背景、ライティング、エフェクト → <a href="08-scene.html">8章</a></td>
+<td><strong>スタジオ</strong></td>
+<td>シーン、アバター配置、部屋、照明、カメラ、エフェクト。<a href="08-scene.html">8章</a></td>
 </tr>
 <tr>
 <td><strong>出力</strong></td>
-<td>配信ソフトへの出力、画面共有 → <a href="09-output.html">9章</a></td>
+<td>Spout2・NDI・仮想カメラ・画面共有・リモートセッション。<a href="09-output.html">9章</a></td>
 </tr>
 <tr>
 <td><strong>設定</strong></td>
-<td>ウィンドウ、パフォーマンス、言語、ショートカット → <a href="10-settings.html">10章</a></td>
+<td>FPS・ウィンドウ・ショートカット・言語・ファイル・更新。<a href="10-settings.html">10章</a></td>
 </tr>
 </tbody>
 </table></div>
-<p>パネル右上の <strong>ピン</strong> を押すと、パネルが固定されます。</p>
-<h2 id="上部">上部<a class="anchor" href="#上部" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>項目</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>アバター名</strong></td>
-<td>アバターを切り替えます。</td>
-</tr>
-<tr>
-<td><strong>FPS</strong></td>
-<td>押すとフレームレートを変更できます。</td>
-</tr>
-<tr>
-<td><strong>⟲</strong></td>
-<td>ポーズが固まったり髪が絡まったりしたときに押すと、最初の状態に戻ります。</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="下部のツールバー">下部のツールバー<a class="anchor" href="#下部のツールバー" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>ボタン</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>顔・上半身・全身</strong></td>
-<td>カメラの構図を切り替えます。</td>
-</tr>
-<tr>
-<td><strong>+</strong></td>
-<td>今のカメラ位置を保存します。</td>
-</tr>
-<tr>
-<td><strong>カメラをロック</strong></td>
-<td>マウスでカメラが動かないようにします。</td>
-</tr>
-<tr>
-<td><strong>カメラ</strong></td>
-<td>カメラの設定を開きます。</td>
-</tr>
-</tbody>
-</table></div>
-<div class="shot">
-<figure><img src="../assets/shots/ja/camera-pop.webp" srcset="../assets/shots/ja/camera-pop-960.webp 960w, ../assets/shots/ja/camera-pop.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="カメラの設定" loading="lazy" decoding="async"><figcaption>カメラの設定</figcaption></figure>
+<p>パネルを開いて右上の<strong>ピン</strong>をオンにすると、別の場所を押しても閉じません。パネル<strong>上</strong>でマウスホイールを使うと設定をスクロールし、<strong>外側</strong>ではシーンビューをズームします。意図せずズームしたらカーソルの位置を確認してください。</p>
+<h2 id="編集画面と配信画面を区別する">編集画面と配信画面を区別する<a class="anchor" href="#編集画面と配信画面を区別する" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li><strong>PNG を保存</strong> — メニューなしで、画面を写真として保存します。</li>
-<li><strong>画角</strong> — レンズを広く、または狭くします。</li>
-<li><strong>保存したビュー</strong> — 保存したカメラ位置にすぐ移動します。</li>
-<li><strong>PhysBone をつかむ</strong> — 髪やしっぽを、マウスでつかめるようにします。</li>
+<li>下側ツールバーやマウスで動かすのは<strong>自分のシーンビュー</strong>です。</li>
+<li><strong>スタジオカメラを配信中</strong>なら OBS/NDI にはそのカメラの画面が送られます。編集画面で裏側を見ても視聴者には自動的に映りません。</li>
+<li><strong>シーンビュー自体を送出</strong>している場合は自分が動かした視点も視聴者に映ります。<a href="08-scene.html">スタジオカメラ</a>と<a href="09-output.html">出力</a>で送出対象を確認してください。</li>
 </ul>
-</div>
-<h2 id="マウスとキーボード">マウスとキーボード<a class="anchor" href="#マウスとキーボード" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>操作</th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>右ドラッグ</td>
-<td>カメラを回転</td>
-</tr>
-<tr>
-<td>ホイールドラッグ</td>
-<td>カメラを移動</td>
-</tr>
-<tr>
-<td>ホイール</td>
-<td>拡大・縮小</td>
-</tr>
-<tr>
-<td><strong>F1</strong></td>
-<td>メニューを隠す / 表示する</td>
-</tr>
-<tr>
-<td><strong>Ctrl + 1 / 2 / 3</strong></td>
-<td>顔 / 上半身 / 全身</td>
-</tr>
-<tr>
-<td><strong>Ctrl + Z</strong></td>
-<td>アバターの位置を元に戻す</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="physbone-をつかむ">PhysBone をつかむ<a class="anchor" href="#physbone-をつかむ" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>ビューで髪、耳、しっぽを <strong>左ドラッグ</strong> すると、引っ張ることができます。つかんだまま <strong>右クリック</strong> するとその形のまま固定され、同じ部分をもう一度つかむと解除されます。</p>
-<h2 id="アバターの位置を変える">アバターの位置を変える<a class="anchor" href="#アバターの位置を変える" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>ビュー左側の <strong>移動・回転・大きさ</strong> ツールで、アバターを動かしたり回したりします。<strong>⌂</strong> を押すと中央に戻ります。</p>
-<h2 id="メニューと設定の検索">メニューと設定の検索<a class="anchor" href="#メニューと設定の検索" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ja/settings-search.webp" srcset="../assets/shots/ja/settings-search-960.webp 960w, ../assets/shots/ja/settings-search.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="AFK設定を検索" loading="lazy" decoding="async"><figcaption>AFK設定を検索</figcaption></figure>
-<p>右上の虫眼鏡から AFK、追跡喪失、ミラー、目線、Spout、ブルーム、ショートカットなどを検索できます。結果を選ぶと該当ページへ移動し、閉じた設定も開きます。韓国語・英語の検索語にも対応します。</p>
-<h2 id="カードの開閉並び替え">カードの開閉・並び替え<a class="anchor" href="#カードの開閉並び替え" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="下のカメラとクイックアクション">下のカメラとクイックアクション<a class="anchor" href="#下のカメラとクイックアクション" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li>見出しをクリックして設定を開閉します。</li>
-<li>見出しを別のカードの本文やカード間の余白へドラッグすると順番が変わります。</li>
-<li>ドラッグ中はプレビューと挿入線が表示され、端では自動スクロールします。Escでキャンセルできます。</li>
-<li>カードの順番はページごとに保存されます。ポーズ・表情タイル自体の並び替えは別の操作です。</li>
+<li><strong>顔・上半身・全身</strong>は選択したアバターとの距離を変え、顔は表情確認、上半身はチャット配信、全身はダンス確認に適しています。</li>
+<li><strong>+ ビューを保存</strong>は現在の位置・回転・画角をプリセットとして記録し、あとで戻すためのものです。</li>
+<li><strong>カメラロック</strong>はマウスによる編集中の視点移動を防ぎます。アバターのトラッキングを止めるものではありません。</li>
+<li><strong>固定・自由・軌道</strong>は編集用視点の操作方法です。軌道はキャラクターを中心に回り、自由は視点の向きを自由に動かします。スタジオカメラの追従方式とは別です。</li>
+<li>**FOV（画角）**を下げると人物が大きく背景が狭くなり、上げると広く映ります。<strong>マウス速度</strong>を上げると同じ動作でも視点が素早く移動します。</li>
+<li>ツールバーの<strong>不透明度</strong>は待機時の見た目を変更します（初期状態で約 60%）。ホバーすると濃く表示し、背景を右クリックすると移動・透明度の設定ができます。</li>
+<li><strong>クイックアクション</strong>は表情・ポーズ・スイッチのショートカットです。作用する内容はアバターのメニューによります。</li>
 </ul>
-<h2 id="ウィンドウとトレイ">ウィンドウとトレイ<a class="anchor" href="#ウィンドウとトレイ" aria-hidden="true" tabindex="-1">#</a></h2>
-<p><strong>X</strong> の標準動作は <strong>終了</strong> です。<strong>設定 › ウィンドウ</strong> で <strong>トレイに最小化</strong> にすると、非表示でも追跡と出力を続けられます。配信中は出力維持のためトレイへ移行する場合があります。トレイアイコンをダブルクリックすると復帰し、左下の <strong>電源</strong> ボタンでは終了します。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="03-launcher-and-library.html"><span>前へ</span>スタート画面とアバターライブラリ</a><a class="next" href="05-avatar-menu.html"><span>次へ</span>アバターメニュー</a></nav><p class="updated">最終更新: 2026-10-12</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#左のメニュー">左のメニュー</a></li><li><a href="#上部">上部</a></li><li><a href="#下部のツールバー">下部のツールバー</a></li><li><a href="#マウスとキーボード">マウスとキーボード</a></li><li><a href="#physbone-をつかむ">PhysBone をつかむ</a></li><li><a href="#アバターの位置を変える">アバターの位置を変える</a></li><li><a href="#メニューと設定の検索">メニューと設定の検索</a></li><li><a href="#カードの開閉並び替え">カードの開閉・並び替え</a></li><li><a href="#ウィンドウとトレイ">ウィンドウとトレイ</a></li></ul></nav>
+<h2 id="表示リセット終了">表示・リセット・終了<a class="anchor" href="#表示リセット終了" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>F1</strong>は Avatar Live が前面にあるときアプリの UI を非表示／再表示にします。これは配信画面の透過背景設定とは別です。<strong>リセット</strong>は髪や尻尾の物理状態が乱れた場合の復帰に使います。ウィンドウの <strong>X</strong> は設定によって終了またはトレイへの最小化になります。配信中にトレイへ入っても出力が続く場合があるため、完全停止は<strong>終了</strong>を選んでください。設定の検索から AFK、視線、ショートカット、Spout2 などを直接探せます。</p>
+<p><a href="05-avatar-menu.html">次へ：アバターメニュー →</a></p></article><nav class="pager" aria-label="Pager"><a class="prev" href="03-launcher-and-library.html"><span>前へ</span>スタート画面とアバターライブラリ</a><a class="next" href="05-avatar-menu.html"><span>次へ</span>アバターメニュー</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#左側メニューの使い分け">左側メニューの使い分け</a></li><li><a href="#編集画面と配信画面を区別する">編集画面と配信画面を区別する</a></li><li><a href="#下のカメラとクイックアクション">下のカメラとクイックアクション</a></li><li><a href="#表示リセット終了">表示・リセット・終了</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

@@ -1,5 +1,26 @@
 # 6. Devices
 
+## v2.0.0: which device actually controls each body part?
+
+![v45 Devices](img/v45-input.png)
+
+Tracking sources are chosen **per body part**. For example, iPhone can drive the face, the webcam the arms, and VMC a tracked pelvis and legs. If a part accidentally remains set to VMC without a valid signal, that part may freeze even though the webcam is connected.
+
+| Control | Practical effect |
+|---|---|
+| **Webcam quality / Balanced / Eco** | Higher quality can improve detection at a CPU cost; Eco reduces computation but fast fingers/body motion may be less precise. |
+| **Hand jitter smoothing** | More smoothing reduces small shakes but creates more follow lag; less smoothing feels responsive but noisy. |
+| **Webcam full body** | Enables upper-body/leg estimates when visible. Hidden desk legs may fall back to estimated or posed positions. |
+| **Finger-joint tracking** | Attempts to move each finger joint; small or occluded hands can make results unstable. |
+| **iPhone face input** | iFacialMocap/FaceMotion3D provide ARKit facial channels and head movement. Remain facing forward briefly: first-face calibration starts about 3 seconds after a valid frame. |
+| **VMC per-part source** | Lets external trackers or gloves control selected body parts. Check actual limb movement and T-pose alignment, not just packet counts. |
+| **SteamVR device selection** | Maps headset/controllers/body trackers. Confirm correct SteamVR device tracking before calibrating the Avatar Live body. |
+| **Microphone noise gate** | Higher rejects more background sound but may ignore quiet speech; lower is responsive but might react to keyboard noise. |
+
+![v45 Advanced device controls](img/v45-devices-advanced.png)
+
+Recommended order: confirm device connections → choose each part's source → calibrate front/T-pose → set lost-tracking recovery/smoothing → check motion on the real broadcast camera. If two sources try to move one joint, disable the unintended controller. VRM 0.x/1.0 import is supported, but some unsupported 0.x shaders cannot be loaded. Respect the VRM and accessory creator's terms, especially in sessions.
+
 ## Webcam and microphone
 
 <div class="shot" markdown="1">

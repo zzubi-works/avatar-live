@@ -1,5 +1,25 @@
 # 10. Settings
 
+## v2.0.0 performance, interface and update settings
+
+![v45 Settings](img/v45-settings.png)
+
+| Setting | What it actually changes |
+|---|---|
+| **App FPS cap** | Higher refreshes view/physics more often at a CPU/GPU cost; lower saves power but makes motion less fluid. Broadcast output has its own FPS limit. |
+| **Render quality/resolution** | Higher improves hair and outline detail at a GPU cost. Scene-view window size and broadcast image resolution may be different. |
+| **Shadows/post-effects** | Disabling them reduces rendering load, but depth and film effects become flatter. Studio-owned effects can vary per saved scene. |
+| **Window size / Always on top** | Changes the Windows app window, not the pixel dimensions of the OBS Spout2/NDI sender. |
+| **Close-button behavior** | X can quit or minimise to tray; active output may continue when minimised. |
+| **UI scaling** | Makes labels and controls larger or smaller. At very high scaling, narrow windows need more scrolling. |
+| **Quick-toolbar opacity** | Higher makes idle camera controls easier to see; lower leaves more of the character unobstructed. |
+| **Automatic update downloads** | Downloads available updates for later installation. Even when off, startup can check and notify you of new versions. |
+| **Send diagnostics** | Used after the user chooses to send a report; include the steps leading to the issue rather than assuming all logs are uploaded automatically. |
+
+Hotkeys may work when the program is in the background. Select combinations that do not conflict with game controls. An expression can work **while held** or as **press to toggle**. F13–F24 and modifiers are supported; basic hotkeys can also be triggered by devices such as Stream Deck.
+
+Remember the **scope** of each setting: pose/expressions/saved editor camera views are typically per-avatar; room/studio lights/broadcast studio cameras are saved per studio; a selected hardware microphone or webcam may need updating when Windows devices change.
+
 ## General · Window · Performance
 
 <div class="shot" markdown="1">
@@ -19,7 +39,7 @@
 
 ![Global menu search](img/settings-search.png)
 
-Use the magnifying glass at the top-right to search for AFK, Mirror, Language, Spout2, eye gaze, desk mode or hotkeys. A result opens the matching Menu, Devices, Motion, Scene, Output or Settings page and expands the relevant cards. AFK timing results navigate to Motion › Body rather than its old Settings location.
+Use the magnifying glass at the top-right to search for AFK, Mirror, Language, Spout2, eye gaze, desk mode or hotkeys. A result opens the matching Menu, Devices, Motion, Studio, Output or Settings page and expands the relevant cards. AFK timing results navigate to Motion › Body rather than its old Settings location.
 
 ## Hotkeys
 

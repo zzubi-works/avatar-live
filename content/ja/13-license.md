@@ -8,7 +8,8 @@
 | 利用範囲 | 個人での利用（フレンドとの非公開の Discord 共有を含む） | 配信・動画の公開・商用利用 |
 | アバター・トラッキング・メニュー・ライティング・エフェクト | ✅ | ✅ |
 | マイ表情・自動表情・ヒエラルキー・シェイプキー・写真 | ✅ | ✅ |
-| Spout2・仮想カメラ・画面共有 | ✅ | ✅ |
+| Spout2・**NDI**・仮想カメラ・画面共有 | ✅ | ✅ |
+| 複数スタジオカメラ・リモートセッション・カメラ別 Spout2・録画 | — | ✅ |
 | 最大出力 | 1080p | 4K |
 | ウォーターマーク | あり | なし |
 | ポージング・ポーズライブラリ・オブジェクト・画面共有のほかのソース | — | ✅ |
@@ -51,6 +52,16 @@ Avatar Live と Avatar Exporter は、Curious Bobby Co. が独自に開発した
 ## オープンソースに関する告知
 
 同梱されているオープンソースのコンポーネントは、各コンポーネントのライセンスに従います。告知は、プログラムと Exporter パッケージに同梱されています。Avatar Exporter の一部のコードは、MIT ライセンスで公開されているオープンソースのコードをもとに作成されています。
+
+## 第三者の告知：NDI、Spout2、VB-CABLE
+
+**NDI® は Vizrt NDI AB の登録商標**です。v45 Windows 配布物には `AvatarLive_Data/Plugins/x86_64/Processing.NDI.Lib.x64.dll` と、NDI および第三者の著作権・ライセンスを記した `Processing.NDI.Lib.Licenses.txt` が**実際に同梱されていることを確認済み**です。SDK の使用・再配布には [NDI SDK 公式ライセンス](https://docs.ndi.video/all/developing-with-ndi/sdk/licensing) と同梱の全文が適用されます。本案内は NDI からの承認・保証や新しい権利の付与を意味しません。
+
+**[OBS Spout2 プラグイン](https://github.com/Off-World-Live/obs-spout2-plugin)**、**[DistroAV](https://github.com/DistroAV/DistroAV)**、**[NDI Tools](https://ndi.video/tools/)** はそれぞれの提供元が配布する独立したソフトウェアです。ユーザーが公式配布元から取得し、それぞれの利用条件に従う必要があります。
+
+**VB-CABLE** は [VB-Audio Software](https://vb-audio.com/Cable/) の Donationware で、[ライセンス条件](https://vb-audio.com/Services/licensing.htm)に従います。セッション中のアバターデータも暗号化されるからといって原作者の再配布禁止条項が無効になるわけではありません。
+
+[OBS/NDI の導入とリモートデータの扱い](09-output.md)
 
 ## 商標
 

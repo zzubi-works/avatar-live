@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Posing · Objects · Expressions — AVATAR LIVE</title>
-<meta name="description" content="Turn on Scene › Posing › Posing mode to create a pose by moving the bones directly.">
+<meta name="description" content="Upgrading to Pro does not automatically switch everything on. Multiview is a separate toggle from director mode and starts off; camera collision, gaze…">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/11-pro-features.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/11-pro-features.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/11-pro-features.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/11-pro-features.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/11-pro-features.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="Posing · Objects · Expressions — AVATAR LIVE">
-<meta property="og:description" content="Turn on Scene › Posing › Posing mode to create a pose by moving the bones directly.">
+<meta property="og:description" content="Upgrading to Pro does not automatically switch everything on. Multiview is a separate toggle from director mode and starts off; camera collision, gaze…">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/11-pro-features.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,79 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html" aria-current="page">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio: scenes, cameras, lights and effects</a></li><li><a href="09-output.html">Output: OBS, NDI, screen sharing and remote sessions</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html" aria-current="page">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="11-posing--objects--expressions">11. Posing · Objects · Expressions<a class="anchor" href="#11-posing--objects--expressions" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200-features-editions-and-what-changes">v2.0.0 features: editions and what changes<a class="anchor" href="#v200-features-editions-and-what-changes" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/en/v45-studio-cameras.webp" srcset="../assets/shots/en/v45-studio-cameras-960.webp 960w, ../assets/shots/en/v45-studio-cameras.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 Pro studio cameras" loading="lazy" decoding="async"><figcaption>v45 Pro studio cameras</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Basic</th>
+<th>Pro</th>
+<th>Practical effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard Spout2 and <strong>NDI output</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>Sends the avatar picture to OBS. <strong>NDI is also Basic</strong> and needs its OBS receiver plugin.</td>
+</tr>
+<tr>
+<td>Normal lights and post-processing</td>
+<td>✅</td>
+<td>✅</td>
+<td>Changes colour, shadows, bloom and background.</td>
+</tr>
+<tr>
+<td>Pose editing/library and props</td>
+<td>—</td>
+<td>✅</td>
+<td>Adjusts/locks bones or attaches props to the stage and avatar bones.</td>
+</tr>
+<tr>
+<td><strong>Multiple avatars and shared control</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>Places multiple characters in one scene and shares or switches tracking input.</td>
+</tr>
+<tr>
+<td><strong>Studio cameras / director / multiview</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>Sends a separate on-air camera while your editor remains the scene view.</td>
+</tr>
+<tr>
+<td>Independent <strong>per-camera Spout2</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>Adds separately named sources to OBS, up to three additional senders.</td>
+</tr>
+<tr>
+<td><strong>Remote session</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>Shares live pose/face/gaze and optional consented avatar data with other PCs.</td>
+</tr>
+<tr>
+<td><strong>Volumetric lights / HBAO / Beautify</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>Adds visible light beams, contact shadows and advanced image effects.</td>
+</tr>
+<tr>
+<td><strong>MP4 recording / extra share sources</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>Records video or combines more game/display windows.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Upgrading to Pro <strong>does not automatically switch everything on</strong>. Multiview is a separate toggle from director mode and starts off; camera collision, gaze/Look At IK and some advanced effects remain optional/experimental. Switch on one feature at a time and verify the broadcast receiver.</p>
+<p><a href="08-scene.html">Camera controls and slider explanations</a> · <a href="09-output.html">OBS plugins / NDI / remote sessions</a></p>
+<p><strong>Third-party avatar rights remain unchanged</strong> when purchasing Pro. Confirm that an avatar creator permits any transfer or temporary caching before sharing its data in a session.</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -80,7 +151,7 @@
 </table></div>
 <h2 id="posing">Posing<a class="anchor" href="#posing" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/en/posing.webp" width="960" height="900" alt="Posing mode" loading="lazy" decoding="async"><figcaption>Posing mode</figcaption></figure>
-<p>Turn on <strong>Scene › Posing › Posing mode</strong> to create a pose by moving the bones directly.</p>
+<p>Turn on <strong>Studio › Posing › Posing mode</strong> to create a pose by moving the bones directly.</p>
 <ul>
 <li>Click a bone to select it, and drag a ring to rotate it. The rotation gizmo is sized to fit the bone.</li>
 <li>Drag a hand or foot, and the whole arm or leg follows. Use <strong>Alt+drag</strong> to change which way the elbow or knee points.</li>
@@ -95,7 +166,7 @@
 </blockquote>
 <h2 id="five-tracking-controls-for-each-pose">Five tracking controls for each pose<a class="anchor" href="#five-tracking-controls-for-each-pose" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/en/menu-poses.webp" width="960" height="900" alt="Saved pose and tracking controls" loading="lazy" decoding="async"><figcaption>Saved pose and tracking controls</figcaption></figure>
-<p>Click the camera icon beside a saved pose in the Avatar Menu or Scene to control facial, head, arms, fingers and body independently. Enabled parts follow live tracking; disabled parts remain posed. These five choices are saved for each pose.</p>
+<p>Click the camera icon beside a saved pose in the Avatar Menu or Studio to control facial, head, arms, fingers and body independently. Enabled parts follow live tracking; disabled parts remain posed. These five choices are saved for each pose.</p>
 <ul>
 <li>Head OFF, facial ON holds the head while continuing face expressions.</li>
 <li>Facial OFF can still allow Eyes on the camera independently.</li>
@@ -110,7 +181,7 @@
 <li>Adjust the wait, transition and return durations under Motion › Body › AFK transition timing.</li>
 </ul>
 <h2 id="pose-library">Pose library<a class="anchor" href="#pose-library" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>In <strong>Scene › Posing › Pose library</strong>, choose a folder that holds <code>.anim</code> files, and every pose is shown as a <strong>thumbnail of your current avatar</strong>.</p>
+<p>In <strong>Studio › Posing › Pose library</strong>, choose a folder that holds <code>.anim</code> files, and every pose is shown as a <strong>thumbnail of your current avatar</strong>.</p>
 <ul>
 <li>Subfolders are read too, and clips are sorted into poses, hand shapes and motions. You can use search and favorites.</li>
 <li>Click <strong>Apply</strong>, and the avatar takes that pose right away. Clips that move play as animations. Use <strong>Release</strong> to go back.</li>
@@ -119,7 +190,7 @@
 </ul>
 <h2 id="objects">Objects<a class="anchor" href="#objects" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/en/props.webp" width="960" height="900" alt="Objects" loading="lazy" decoding="async"><figcaption>Objects</figcaption></figure>
-<p>Use <strong>Scene › Objects › + Add object</strong> to place text, images, shapes and 3D models.</p>
+<p>Use <strong>Studio › Objects › + Add object</strong> to place text, images, shapes and 3D models.</p>
 <ul>
 <li>Set <strong>Rides on</strong> to the head or a hand, and the object moves with the avatar.</li>
 <li>Double-click text to edit it right there.</li>
@@ -138,10 +209,10 @@
 <li>You can also load expression animations made in Unity (<code>.anim</code> with shape keys). Clips that move play while the expression is on.</li>
 </ul>
 <figure><img src="../assets/shots/en/menu-myexpr.webp" width="960" height="900" alt="My expressions card" loading="lazy" decoding="async"><figcaption>My expressions card</figcaption></figure>
-<p>Create expression and Import .anim appear side by side in both Scene and the Avatar Menu. You can import a static shape-key expression or a multi-frame Unity .anim expression. Animated clips loop only when the original clip is configured to loop. Drag expression tiles to reorder them or right-click to assign hotkeys and Quick Actions.</p>
+<p>Create expression and Import .anim appear side by side in both Studio and the Avatar Menu. You can import a static shape-key expression or a multi-frame Unity .anim expression. Animated clips loop only when the original clip is configured to loop. Drag expression tiles to reorder them or right-click to assign hotkeys and Quick Actions.</p>
 <h2 id="automatic-expressions">Automatic expressions<a class="anchor" href="#automatic-expressions" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>When you smile or look surprised, an expression you've chosen appears automatically. Turn it on in <strong>Motion › Automatic expressions</strong>, and link an expression to show for each one, such as smile · surprise · wink.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>Previous</span>Settings</a><a class="next" href="12-troubleshooting.html"><span>Next</span>Troubleshooting</a></nav><p class="updated">Last updated: 2026-10-12</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#posing">Posing</a></li><li><a href="#five-tracking-controls-for-each-pose">Five tracking controls for each pose</a></li><li><a href="#default-pose-and-afk-idle-pose">Default pose and AFK idle pose</a></li><li><a href="#pose-library">Pose library</a></li><li><a href="#objects">Objects</a></li><li><a href="#more-screen-share-sources">More screen share sources</a></li><li><a href="#my-expressions">My expressions</a></li><li><a href="#automatic-expressions">Automatic expressions</a></li></ul></nav>
+<p>When you smile or look surprised, an expression you've chosen appears automatically. Turn it on in <strong>Motion › Automatic expressions</strong>, and link an expression to show for each one, such as smile · surprise · wink.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>Previous</span>Settings</a><a class="next" href="12-troubleshooting.html"><span>Next</span>Troubleshooting</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#v200-features-editions-and-what-changes">v2.0.0 features: editions and what changes</a></li><li><a href="#posing">Posing</a></li><li><a href="#five-tracking-controls-for-each-pose">Five tracking controls for each pose</a></li><li><a href="#default-pose-and-afk-idle-pose">Default pose and AFK idle pose</a></li><li><a href="#pose-library">Pose library</a></li><li><a href="#objects">Objects</a></li><li><a href="#more-screen-share-sources">More screen share sources</a></li><li><a href="#my-expressions">My expressions</a></li><li><a href="#automatic-expressions">Automatic expressions</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

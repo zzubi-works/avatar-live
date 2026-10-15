@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>아바타 내보내기 — AVATAR LIVE</title>
-<meta name="description" content="Avatar Live에서 쓸 아바타 파일(.vavatar)은 아바타의 Unity 프로젝트에 Curious Bobby - Avatar Exporter를 설치해서 만듭니다.">
+<meta name="description" content="**Unity 아바타(.vavatar)**와 **VRM(.vrm)**은 가져오는 경로가 다릅니다. Unity 프로젝트에서 만든 VRChat 아바타는 Curious Bobby - Avatar Exporter 1.0.6으로 내보낸 뒤 Avatar Live에서 엽니다. 반면…">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ko/02-avatar-exporter.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/02-avatar-exporter.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/02-avatar-exporter.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/02-avatar-exporter.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/02-avatar-exporter.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="아바타 내보내기 — AVATAR LIVE">
-<meta property="og:description" content="Avatar Live에서 쓸 아바타 파일(.vavatar)은 아바타의 Unity 프로젝트에 Curious Bobby - Avatar Exporter를 설치해서 만듭니다.">
+<meta property="og:description" content="**Unity 아바타(.vavatar)**와 **VRM(.vrm)**은 가져오는 경로가 다릅니다. Unity 프로젝트에서 만든 VRChat 아바타는 Curious Bobby - Avatar Exporter 1.0.6으로 내보낸 뒤 Avatar Live에서 엽니다. 반면…">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ko/02-avatar-exporter.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ko.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,18 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>가이드 목차</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html" aria-current="page">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">씬</a></li><li><a href="09-output.html">출력</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html" aria-current="page">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">스튜디오: 장면 · 카메라 · 조명 · 효과</a></li><li><a href="09-output.html">출력: OBS · NDI · 화면 공유 · 원격 세션</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="2-아바타-내보내기">2. 아바타 내보내기<a class="anchor" href="#2-아바타-내보내기" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200--exporter-106과-vrm-실제-준비-방법">v2.0.0 · Exporter 1.0.6과 VRM: 실제 준비 방법<a class="anchor" href="#v200--exporter-106과-vrm-실제-준비-방법" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>**Unity 아바타(.vavatar)**와 **VRM(.vrm)**은 가져오는 경로가 다릅니다. Unity 프로젝트에서 만든 VRChat 아바타는 <strong>Curious Bobby - Avatar Exporter 1.0.6</strong>으로 내보낸 뒤 Avatar Live에서 엽니다. 반면 <strong>VRM 0.x / 1.0은 지원되는 파일을 앱에서 직접 가져올 수 있으므로</strong> 이를 위해 Exporter를 사용하지 않아도 됩니다.</p>
+<ul>
+<li><strong>Unity 프로젝트</strong>: 기존 제작 프로젝트의 Unity <strong>2022.3.22f1</strong>과 호환되는 VRChat SDK를 확인하고, Exporter가 있는 프로젝트에서 아바타를 선택한 뒤 <strong>.vavatar 내보내기</strong>를 사용합니다. Exporter 1.0.6에서는 VRChat SDK 3.10.5 기준 PhysBone·Collider 처리와 의상 병합으로 머리카락/장식 뼈가 비활성화되던 문제를 개선했습니다.</li>
+<li><strong>이름/표정 클립/저장 폴더</strong>: 표시 이름은 아바타 라이브러리에 보이는 이름, 표정 클립은 내보낸 모델에서 불러올 표정, 저장 폴더는 실제로 결과물이 생성되는 Windows 위치입니다. <strong>결과 파일이 생기는 것</strong>과 <strong>Avatar Live에 이미 등록되는 것</strong>은 별개이므로 내보낸 파일을 앱에서 한 번 불러오세요.</li>
+<li><strong>업데이트할 때</strong>: Unity에서 옷/머리카락/PhysBone을 바꾼 뒤 같은 아바타를 다시 내보내면 새 데이터가 반영됩니다. 모델이 달라지면 기존 포즈·카메라·표정 설정의 적용 위치가 달라질 수 있으니 방송 전에 확인하세요.</li>
+<li><strong>VRM 모델</strong>: 별도 Exporter 없이 가져오지만 일부 VRM 0.x 모델의 미지원 셰이더는 로딩에 실패할 수 있습니다. 이 경우 단순히 이름을 바꾸거나 확장자를 변경하는 것으로 해결되지 않습니다.</li>
+<li><strong>재배포 권한</strong>: .vavatar·.vrm 파일의 생성·보유가 다른 참가자에게 배포할 권리를 뜻하지 않습니다. 원제작자의 모델·의상·텍스처·소품 규약을 확인하고, <a href="09-output.html#원격-세션-pro-서로-다른-컴퓨터에서-합동-방송">원격 세션</a>에서 데이터 전송에 동의하기 전에 허용 여부를 확인하세요.</li>
+</ul>
+<p><strong>내보내기를 성공했지만 화면이 분홍색이거나 특정 파츠가 사라지면:</strong> Unity에서 올바른 재질/셰이더 및 VRChat용 PhysBone·Collider 구성을 확인하고 최신 Exporter로 다시 내보낸 후 앱에서 최신 모델을 다시 불러옵니다.</p>
 <p>Avatar Live에서 쓸 아바타 파일(<code>.vavatar</code>)은 아바타의 Unity 프로젝트에 <strong>Curious Bobby - Avatar Exporter</strong>를 설치해서 만듭니다.</p>
 <h2 id="준비">준비<a class="anchor" href="#준비" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
@@ -92,8 +102,8 @@
 <ul>
 <li>원본 아바타와 씬은 바뀌지 않습니다.</li>
 <li>만든 파일은 내 PC에만 저장되고, 어디에도 업로드되지 않습니다.</li>
-</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="01-getting-started.html"><span>이전</span>시작하기</a><a class="next" href="03-launcher-and-library.html"><span>다음</span>시작 화면과 아바타 라이브러리</a></nav><p class="updated">최종 업데이트: 2026-10-12</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#준비">준비</a></li><li><a href="#설치">설치</a></li><li><a href="#내보내기">내보내기</a></li><li><a href="#아바타를-고쳤을-때">아바타를 고쳤을 때</a></li></ul></nav>
+</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="01-getting-started.html"><span>이전</span>시작하기</a><a class="next" href="03-launcher-and-library.html"><span>다음</span>시작 화면과 아바타 라이브러리</a></nav><p class="updated">최종 업데이트: 2026-10-15</p></main>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#v200--exporter-106과-vrm-실제-준비-방법">v2.0.0 · Exporter 1.0.6과 VRM: 실제 준비 방법</a></li><li><a href="#준비">준비</a></li><li><a href="#설치">설치</a></li><li><a href="#내보내기">내보내기</a></li><li><a href="#아바타를-고쳤을-때">아바타를 고쳤을 때</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

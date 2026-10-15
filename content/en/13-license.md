@@ -8,7 +8,8 @@
 | Scope of use | Personal use (including private Discord sharing with friends) | Streaming · publishing videos · commercial use |
 | Avatar · tracking · menu · lighting · effects | ✅ | ✅ |
 | My expressions · Automatic expressions · Hierarchy · Shape keys · Photo | ✅ | ✅ |
-| Spout2 · Virtual camera · Screen share | ✅ | ✅ |
+| Spout2 · **NDI** · Virtual camera · Screen share | ✅ | ✅ |
+| Multiple studio cameras · Remote sessions · Per-camera Spout2 · Recording | — | ✅ |
 | Maximum output | 1080p | 4K |
 | Watermark | Yes | No |
 | Posing · Pose library · Objects · More screen share sources | — | ✅ |
@@ -51,6 +52,16 @@ Avatar Live and Avatar Exporter are software developed independently by Curious 
 ## Open source notice
 
 The included open source components are subject to their respective licenses. The notices are included with the program and the Exporter package. Part of the code in Avatar Exporter is based on open source code released under the MIT License.
+
+## Third-party notices: NDI, Spout2 and VB-CABLE
+
+**NDI® is a registered trademark of Vizrt NDI AB**, and the respective owners retain their rights in the technology. The v45 Windows distribution has been checked to contain `AvatarLive_Data/Plugins/x86_64/Processing.NDI.Lib.x64.dll` and its accompanying `Processing.NDI.Lib.Licenses.txt` containing NDI and third-party notices. SDK use and redistribution must comply with the [official NDI SDK license](https://docs.ndi.video/all/developing-with-ndi/sdk/licensing) and the accompanying full notice. This page does not independently grant rights or imply official NDI sponsorship, certification or warranty.
+
+The **[OBS Spout2 Capture plugin](https://github.com/Off-World-Live/obs-spout2-plugin)**, **[DistroAV](https://github.com/DistroAV/DistroAV)**, and optionally installed **[NDI Tools](https://ndi.video/tools/)** are separate third-party distributions with their own licensing and responsibilities. Users obtain OBS plugins and tools from their original publishers; Avatar Live does not supply their individual usage licenses.
+
+**VB-CABLE** is donationware from [VB-Audio Software](https://vb-audio.com/Cable/) and is subject to [VB-Audio licensing](https://vb-audio.com/Services/licensing.htm). For session-transferred avatar data, the original creators' asset redistribution terms remain mandatory even though temporary cache data is encrypted.
+
+[NDI/OBS setup and remote data protections](09-output.md)
 
 ## Trademarks
 

@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>動き — AVATAR LIVE</title>
-<meta name="description" content="顔、体、手がどのように動くかを決めます。設定はアバターごとに保存されます。">
+<meta name="description" content="iPhone が接続表示でも、顔の追跡値が古いままなら顔が止まることがあります。元のトラッキング信号、AFK 時間、正面補正を確認してください。保存ポーズの顔・頭・腕・指・胴体５つの追跡スイッチは独立しています。頭 OFF・表情 ONにすると頭の向きを固定したまま表情だけ動かせます。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ja/07-motion.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/07-motion.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/07-motion.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/07-motion.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/07-motion.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="動き — AVATAR LIVE">
-<meta property="og:description" content="顔、体、手がどのように動くかを決めます。設定はアバターごとに保存されます。">
+<meta property="og:description" content="iPhone が接続表示でも、顔の追跡値が古いままなら顔が止まることがあります。元のトラッキング信号、AFK 時間、正面補正を確認してください。保存ポーズの顔・頭・腕・指・胴体５つの追跡スイッチは独立しています。頭 OFF・表情 ONにすると頭の向きを固定したまま表情だけ動かせます。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ja/07-motion.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ja.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,74 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html" aria-current="page">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html" aria-current="page">動き</a></li><li><a href="08-scene.html">スタジオ：シーン・カメラ・照明・エフェクト</a></li><li><a href="09-output.html">出力：OBS・NDI・画面共有・リモートセッション</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="7-動き">7. 動き<a class="anchor" href="#7-動き" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200動作調整のスライダーが変えること">v2.0.0：動作調整のスライダーが変えること<a class="anchor" href="#v200動作調整のスライダーが変えること" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/ja/v45-motion.webp" srcset="../assets/shots/ja/v45-motion-960.webp 960w, ../assets/shots/ja/v45-motion.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 動作画面" loading="lazy" decoding="async"><figcaption>v45 動作画面</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>小さい／オフ</th>
+<th>大きい／オン</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>表情の感度</strong></td>
+<td>小さい表情には反応しにくく雑音が少ない</td>
+<td>小さな変化も大きく見えるが誇張される場合がある</td>
+</tr>
+<tr>
+<td><strong>表情のなめらかさ</strong></td>
+<td>素早く反応するが揺れが目立つ</td>
+<td>柔らかく動くが瞬きや発話が遅れる場合がある</td>
+</tr>
+<tr>
+<td><strong>リップシンク強度</strong></td>
+<td>口の開きが小さい</td>
+<td>話すときの口の開きが大きくなる</td>
+</tr>
+<tr>
+<td><strong>瞬き感度・自動瞬き</strong></td>
+<td>入力信号を優先</td>
+<td>小さなまぶたの動きや待機中の自動瞬きが増える</td>
+</tr>
+<tr>
+<td><strong>腕の動的／以前の方式</strong></td>
+<td>以前の方式は 1.1.6 に近い動作を維持</td>
+<td>動的方式は腕と手の奥行き計算を加えるが、環境によって違いがある</td>
+</tr>
+<tr>
+<td><strong>手のなめらかさ</strong></td>
+<td>すぐ動くが震えやすい</td>
+<td>震えが減るが動きが遅れる</td>
+</tr>
+<tr>
+<td><strong>手の奥行き推定（実験的）</strong></td>
+<td>平面上で比較的安定</td>
+<td>カメラに向かって伸ばす距離を推定するが腕がねじれる場合がある</td>
+</tr>
+<tr>
+<td><strong>AFK に入るまでの待ち</strong></td>
+<td>一時的なロストでもすぐ待機姿勢</td>
+<td>短い途切れは無視し、長いロストだけ待機</td>
+</tr>
+<tr>
+<td><strong>AFK 切り替え・復帰の時間</strong></td>
+<td>すぐ切り替わる</td>
+<td>徐々に動くが復帰が遅い</td>
+</tr>
+<tr>
+<td><strong>待機の呼吸・瞬き</strong></td>
+<td>静止</td>
+<td>追跡していない間も小さく動く</td>
+</tr>
+</tbody>
+</table></div>
+<figure><img src="../assets/shots/ja/v45-motion-expanded.webp" srcset="../assets/shots/ja/v45-motion-expanded-960.webp 960w, ../assets/shots/ja/v45-motion-expanded.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 動作の詳細" loading="lazy" decoding="async"><figcaption>v45 動作の詳細</figcaption></figure>
+<p>iPhone が接続表示でも、顔の追跡値が古いままなら顔が止まることがあります。元のトラッキング信号、AFK 時間、正面補正を確認してください。保存ポーズの<strong>顔・頭・腕・指・胴体</strong>５つの追跡スイッチは独立しています。<strong>頭 OFF・表情 ON</strong>にすると頭の向きを固定したまま表情だけ動かせます。</p>
+<p><strong>視線対象</strong>をカメラ・人物・なしから選ぶと、どこを見るかが変わります。視線の強度を上げると目や頭が目標を強く追い、下げると元のトラッキングを優先します。実験的な Look At IK によって頭が不自然になる場合はオフにしてください。</p>
 <p>顔、体、手がどのように動くかを決めます。設定はアバターごとに保存されます。</p>
 <h2 id="フェイストラッキング">フェイストラッキング<a class="anchor" href="#フェイストラッキング" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
@@ -150,8 +216,8 @@
 </div>
 <blockquote class="callout privacy"><p>キーボード入力はアバターの手を動かすためだけに使われ、入力した文字を保存・送信することはありません。</p>
 <p>💡 舌・頬の膨らみのカメラ検出は、試験的機能です。</p>
-</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>前へ</span>デバイス</a><a class="next" href="08-scene.html"><span>次へ</span>シーン</a></nav><p class="updated">最終更新: 2026-10-12</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#フェイストラッキング">フェイストラッキング</a></li><li><a href="#表情が動くしくみ">表情が動くしくみ</a></li><li><a href="#自動フェイスセットアップ">自動フェイスセットアップ</a></li><li><a href="#顔の調整">顔の調整</a></li><li><a href="#まばたき口">まばたき・口</a></li><li><a href="#目線とカメラを見る機能">目線とカメラを見る機能</a></li><li><a href="#体">体</a></li><li><a href="#afkの切り替え時間と追跡喪失">AFKの切り替え時間と追跡喪失</a></li><li><a href="#webカメラの手の奥行き推定実験的">Webカメラの手の奥行き推定（実験的）</a></li><li><a href="#手デスク">手・デスク</a></li></ul></nav>
+</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>前へ</span>デバイス</a><a class="next" href="08-scene.html"><span>次へ</span>スタジオ：シーン・カメラ・照明・エフェクト</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#v200動作調整のスライダーが変えること">v2.0.0：動作調整のスライダーが変えること</a></li><li><a href="#フェイストラッキング">フェイストラッキング</a></li><li><a href="#表情が動くしくみ">表情が動くしくみ</a></li><li><a href="#自動フェイスセットアップ">自動フェイスセットアップ</a></li><li><a href="#顔の調整">顔の調整</a></li><li><a href="#まばたき口">まばたき・口</a></li><li><a href="#目線とカメラを見る機能">目線とカメラを見る機能</a></li><li><a href="#体">体</a></li><li><a href="#afkの切り替え時間と追跡喪失">AFKの切り替え時間と追跡喪失</a></li><li><a href="#webカメラの手の奥行き推定実験的">Webカメラの手の奥行き推定（実験的）</a></li><li><a href="#手デスク">手・デスク</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Avatar menu — AVATAR LIVE</title>
-<meta name="description" content="You use your avatar&#x27;s Expressions menu from VRChat just as it is. Outfit and hair toggles, expression buttons, Radials and Puppets all work exactly as…">
+<meta name="description" content="Hand gestures can be different for each hand. Automatic finger input from a webcam, VMC gloves or SteamVR controllers can override a manually selected…">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/05-avatar-menu.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/05-avatar-menu.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/05-avatar-menu.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/05-avatar-menu.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/05-avatar-menu.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="Avatar menu — AVATAR LIVE">
-<meta property="og:description" content="You use your avatar&#x27;s Expressions menu from VRChat just as it is. Outfit and hair toggles, expression buttons, Radials and Puppets all work exactly as…">
+<meta property="og:description" content="Hand gestures can be different for each hand. Automatic finger input from a webcam, VMC gloves or SteamVR controllers can override a manually selected…">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/05-avatar-menu.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,50 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html" aria-current="page">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html" aria-current="page">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio: scenes, cameras, lights and effects</a></li><li><a href="09-output.html">Output: OBS, NDI, screen sharing and remote sessions</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="5-avatar-menu">5. Avatar menu<a class="anchor" href="#5-avatar-menu" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200-what-each-avatar-menu-control-really-changes">v2.0.0: what each avatar menu control really changes<a class="anchor" href="#v200-what-each-avatar-menu-control-really-changes" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/en/v45-menu.webp" srcset="../assets/shots/en/v45-menu-960.webp 960w, ../assets/shots/en/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="The v45 avatar menu" loading="lazy" decoding="async"><figcaption>The v45 avatar menu</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Effect and how to use it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Toggle</strong></td>
+<td>First press enables a parameter, second disables it. Typical outfit and accessory visibility depends on the avatar creator's Animator wiring.</td>
+</tr>
+<tr>
+<td><strong>Button (while pressed)</strong></td>
+<td>Activates only while held and returns after release. This is intentionally different from a toggle.</td>
+</tr>
+<tr>
+<td><strong>Radial</strong></td>
+<td>Adjusts a continuous 0–100% value. It could control expression weight, clothing movement or another parameter defined by the avatar creator; halfway sends an intermediate value.</td>
+</tr>
+<tr>
+<td><strong>Two/Four-Axis Puppet</strong></td>
+<td>Moves two or four parameter directions together. The centre is the neutral value; the extremes and axes depend on the avatar's original configuration.</td>
+</tr>
+<tr>
+<td><strong>Sub Menu</strong></td>
+<td>Opens more controls belonging to the same avatar, not another actor.</td>
+</tr>
+<tr>
+<td><strong>Favorite / Quick Action</strong></td>
+<td>Another way to trigger an existing action without navigating nested menus; it does not create a new parameter.</td>
+</tr>
+<tr>
+<td><strong>Hold / Toggle hotkey</strong></td>
+<td>Hold works only while the key is down; Toggle remains active until the next press. Global hotkeys can work over another app, so avoid game conflicts.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Hand gestures</strong> can be different for each hand. Automatic finger input from a webcam, VMC gloves or SteamVR controllers can override a manually selected gesture. If it keeps switching back, check <a href="06-devices.html">finger tracking sources</a> and <a href="07-motion.html">automatic expressions</a>.</p>
+<p><strong>My Expressions</strong> and <strong>Pose library</strong> are saved per avatar. A static <strong>.anim</strong> applies fixed shape-key values; a multi-frame <strong>.anim</strong> changes them over time according to its animation/loop settings. Saved poses can independently allow or block <strong>Face, Head, Arms, Fingers and Torso</strong> tracking, enabling a fixed body pose with a moving face.</p>
 <p>You use your avatar's <strong>Expressions menu</strong> from VRChat just as it is. Outfit and hair toggles, expression buttons, Radials and Puppets all work exactly as they do in VRChat.</p>
 <h2 id="expressions-menu">Expressions menu<a class="anchor" href="#expressions-menu" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
@@ -81,7 +123,7 @@
 <li>Facial, head, arms, fingers and body tracking can be enabled independently. For example, you can hold the head still while tracking facial expressions.</li>
 <li>The built-in Sitting pose holds the hips and legs while initially allowing all five tracking parts.</li>
 <li>Right-click tiles for available actions such as hotkeys, duplication or Quick Actions.</li>
-<li>Create expression and Import .anim are available in both Scene and Avatar Menu. Multi-frame clips follow their original loop setting.</li>
+<li>Create expression and Import .anim are available in both Studio and Avatar Menu. Multi-frame clips follow their original loop setting.</li>
 </ul>
 <h2 id="reset-to-defaults">Reset to defaults<a class="anchor" href="#reset-to-defaults" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>Click <strong>Avatar parameters › Reset to defaults</strong> to return the menu values to the avatar's defaults. Values that are saved, such as outfit state, carry over to the next launch.</p>
@@ -116,8 +158,8 @@
 <td>Right-click <strong>⟲</strong>, or <strong>Settings › General</strong></td>
 </tr>
 </tbody>
-</table></div></article><nav class="pager" aria-label="Pager"><a class="prev" href="04-main-window.html"><span>Previous</span>Main window</a><a class="next" href="06-devices.html"><span>Next</span>Devices</a></nav><p class="updated">Last updated: 2026-10-12</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#expressions-menu">Expressions menu</a></li><li><a href="#right-clicking-an-item">Right-clicking an item</a></li><li><a href="#hand-gestures">Hand gestures</a></li><li><a href="#card-order-saved-poses-and-my-expressions">Card order, saved poses and My expressions</a></li><li><a href="#reset-to-defaults">Reset to defaults</a></li><li><a href="#quick-actions">Quick Actions</a></li><li><a href="#hierarchy--meshes--shape-keys">Hierarchy · Meshes · Shape keys</a></li><li><a href="#reset">Reset</a></li></ul></nav>
+</table></div></article><nav class="pager" aria-label="Pager"><a class="prev" href="04-main-window.html"><span>Previous</span>Main window</a><a class="next" href="06-devices.html"><span>Next</span>Devices</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#v200-what-each-avatar-menu-control-really-changes">v2.0.0: what each avatar menu control really changes</a></li><li><a href="#expressions-menu">Expressions menu</a></li><li><a href="#right-clicking-an-item">Right-clicking an item</a></li><li><a href="#hand-gestures">Hand gestures</a></li><li><a href="#card-order-saved-poses-and-my-expressions">Card order, saved poses and My expressions</a></li><li><a href="#reset-to-defaults">Reset to defaults</a></li><li><a href="#quick-actions">Quick Actions</a></li><li><a href="#hierarchy--meshes--shape-keys">Hierarchy · Meshes · Shape keys</a></li><li><a href="#reset">Reset</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

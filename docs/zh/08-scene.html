@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>场景 — AVATAR LIVE</title>
-<meta name="description" content="选择背景、灯光和效果。">
+<title>工作室：场景、摄像机、灯光和效果 — AVATAR LIVE</title>
+<meta name="description" content="从 v2.0.0 起，原先的“场景”菜单更名为工作室。它统一保存背景、房间、道具、灯光、角色布局及摄像机。归属角色的道具和灯光会跟随角色进入其他场景；归属工作室的内容只存在于当前场景。应用窗口中的场景视图与 OBS 接收的直播摄像机画面可以不同。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/08-scene.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/08-scene.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/08-scene.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/08-scene.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/08-scene.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
-<meta property="og:title" content="场景 — AVATAR LIVE">
-<meta property="og:description" content="选择背景、灯光和效果。">
+<meta property="og:title" content="工作室：场景、摄像机、灯光和效果 — AVATAR LIVE">
+<meta property="og:description" content="从 v2.0.0 起，原先的“场景”菜单更名为工作室。它统一保存背景、房间、道具、灯光、角色布局及摄像机。归属角色的道具和灯光会跟随角色进入其他场景；归属工作室的内容只存在于当前场景。应用窗口中的场景视图与 OBS 接收的直播摄像机画面可以不同。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/08-scene.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,107 +42,257 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html" aria-current="page">场景</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="8-场景">8. 场景<a class="anchor" href="#8-场景" aria-hidden="true" tabindex="-1">#</a></h1>
-<p>选择背景、灯光和效果。</p>
-<h2 id="灯光">灯光<a class="anchor" href="#灯光" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><img src="../assets/shots/zh/scene-light.webp" width="960" height="900" alt="场景页面" loading="lazy" decoding="async"><figcaption>场景页面</figcaption></figure>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html" aria-current="page">工作室：场景、摄像机、灯光和效果</a></li><li><a href="09-output.html">输出：OBS、NDI、屏幕共享与远程会话</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="8-工作室场景摄像机灯光和效果">8. 工作室：场景、摄像机、灯光和效果<a class="anchor" href="#8-工作室场景摄像机灯光和效果" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>从 v2.0.0 起，原先的“场景”菜单更名为<strong>工作室</strong>。它统一保存背景、房间、道具、灯光、角色布局及摄像机。<strong>归属角色</strong>的道具和灯光会跟随角色进入其他场景；<strong>归属工作室</strong>的内容只存在于当前场景。应用窗口中的<strong>场景视图</strong>与 OBS 接收的<strong>直播摄像机画面</strong>可以不同。</p>
+<figure><img src="../assets/shots/zh/v45-scene.webp" srcset="../assets/shots/zh/v45-scene-960.webp 960w, ../assets/shots/zh/v45-scene.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 工作室" loading="lazy" decoding="async"><figcaption>v45 工作室</figcaption></figure>
+<h2 id="场景保存与切换">场景保存与切换<a class="anchor" href="#场景保存与切换" aria-hidden="true" tabindex="-1">#</a></h2>
+<ol>
+<li>打开<strong>工作室 → 场景</strong>，创建新场景或选取已保存的场景，然后安排背景、房间、角色、道具、灯光和镜头。</li>
+<li>保存之后这些配置会记录在场景中。可以按名称搜索或使用缩略图选择。大幅修改之前建议另存一个备份场景。</li>
+<li>服装专用道具、跟随人物的灯光适合设为<strong>归属角色</strong>；舞台背景、布景灯光适合设为<strong>归属工作室</strong>。</li>
+<li>即使正在对外输出固定的工作室摄像机，仍可以在应用窗口中自由旋转场景视图进行编辑；这不会自动移动观众看到的摄像机。应在 OBS 中检查实际输出结果。</li>
+</ol>
+<h2 id="多角色控制-pro">多角色控制 (Pro)<a class="anchor" href="#多角色控制-pro" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/zh/v45-menu.webp" srcset="../assets/shots/zh/v45-menu-960.webp 960w, ../assets/shots/zh/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 角色界面" loading="lazy" decoding="async"><figcaption>v45 角色界面</figcaption></figure>
 <ul>
-<li>在 <strong>预设</strong> 中选择氛围，灯光会一次性切换。</li>
-<li>每盏灯都可以用开关开启或关闭，并更改亮度和颜色。</li>
-<li>用 <strong>添加灯光</strong> 添加面部光、补光、轮廓光、平行光、点光源、聚光灯。</li>
-<li>满意的灯光可以 <strong>保存为预设</strong>，修改后可以 <strong>将更改保存到预设</strong>。</li>
+<li><strong>添加角色</strong>：让多个角色同时出现在同一工作室。先选中角色再修改位置、转向、比例或面部设置，否则可能改到错误的角色。</li>
+<li><strong>切换控制对象</strong>：将摄像头、iPhone、追踪器等输入转交给指定角色，其他角色根据设置保持最后动作或待机动作。</li>
+<li><strong>同步动作/相同动作</strong>：同一套追踪输入驱动多个不同身材的角色。关节角度会按照模型骨架适配，但不同身高的角色在世界空间中的位置不一定完全相同。</li>
+<li><strong>口型同步目标：全部／主角色／关闭</strong>：决定一个音频来源驱动所有角色的口型、仅当前主角色的口型，还是不进行共享口型同步。</li>
+<li><strong>位置 X/Y/Z</strong>改变舞台上的位置，<strong>旋转</strong>改变朝向，<strong>缩放</strong>改变角色相对灯光、道具和摄像机的大小。改变角色尺寸后需要重新检查镜头构图。</li>
 </ul>
-</div>
-<h3 id="灯光详细设置">灯光详细设置<a class="anchor" href="#灯光详细设置" aria-hidden="true" tabindex="-1">#</a></h3>
+<h2 id="工作室摄像机-pro">工作室摄像机 (Pro)<a class="anchor" href="#工作室摄像机-pro" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/zh/v45-studio-cameras.webp" srcset="../assets/shots/zh/v45-studio-cameras-960.webp 960w, ../assets/shots/zh/v45-studio-cameras.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 摄像机设置" loading="lazy" decoding="async"><figcaption>v45 摄像机设置</figcaption></figure>
+<p><strong>场景视图</strong>属于你的编辑操作界面。<strong>工作室摄像机</strong>保存独立的位置、方向、镜头和切换设置，并将画面送往 Spout2、NDI 等输出。切换直播摄像机不应抢走编辑窗口的控制权。</p>
+<ol>
+<li>从**工作室 → 摄像机 → +**添加镜头。新建镜头通常以当前编辑角色为目标，并自动选择跟随和头部构图。</li>
+<li>点击列表中的摄像机编辑<strong>位置方式</strong>、<strong>瞄准方式</strong>、镜头和切换效果；拖动列表行可调整镜头顺序。</li>
+<li>若需要让摄像机显示当前编辑视角，先调整场景视图，再选择**⋯ → 放到当前视图**。直接更换摄像机模式可能恢复该模式保存的旧数值而产生画面跳变。</li>
+<li>把需要的镜头设为<strong>直播输出</strong>，并在 OBS/NDI 接收端检查结果。</li>
+</ol>
+<h3 id="摄像机位置方式实际移动规则">摄像机位置方式：实际移动规则<a class="anchor" href="#摄像机位置方式实际移动规则" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><img src="../assets/shots/zh/v45-studio-cam-added.webp" srcset="../assets/shots/zh/v45-studio-cam-added-960.webp 960w, ../assets/shots/zh/v45-studio-cam-added.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 新建摄像机后的配置" loading="lazy" decoding="async"><figcaption>v45 新建摄像机后的配置</figcaption></figure>
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th>项目</th>
-<th>作用</th>
+<th>方式</th>
+<th>摄像机如何移动</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>颜色</strong></td>
-<td>通过色块、RGB、HEX 输入，或用 <strong>吸管</strong> 吸取画面中的颜色。开启 <strong>使用色温</strong> 后，可以在暖光 · 冷光之间选择。</td>
+<td><strong>原地</strong></td>
+<td>固定在保存的世界位置 X/Y/Z，角色走远后可能离开画面；适合固定机位。</td>
 </tr>
 <tr>
-<td><strong>位置、方向和目标</strong></td>
-<td>设定 <strong>俯仰 · 偏航 · 翻滚</strong> 角度、是否跟随角色移动，以及 <strong>朝向目标</strong>（如面部）。</td>
+<td><strong>锁定目标</strong></td>
+<td>摄像机直接放在指定骨骼或目标点上。若选头部，镜头可能进入头部模型内部，更适合第一人称视角。</td>
 </tr>
 <tr>
-<td><strong>阴影和范围</strong></td>
-<td>设定阴影及其强度、柔和边缘、光照 <strong>范围</strong>，以及聚光灯的 <strong>锥角</strong>。</td>
+<td><strong>保持距离跟随</strong></td>
+<td>始终与目标保持指定的 X/Y/Z 偏移，人物移动时镜头随之移动。</td>
+</tr>
+<tr>
+<td><strong>环绕目标</strong></td>
+<td>在保持距离的基础上按<strong>环绕角度</strong>旋转镜头位置，可方便地切换正面、侧面和斜后方视角。</td>
 </tr>
 </tbody>
 </table></div>
-<p>在视图中选择灯光后会出现手柄。</p>
+<p><strong>距离 X/Y/Z</strong>以米为单位，而不是画面像素。X 调整左右位置，Y 调整高度，Z 调整前后距离；正负方向随旋转绑定方式而变化。如果画面突然偏移，逐个小幅更改数值，或再用“放到当前视图”。</p>
+<p><strong>位置平滑 X/Y/Z</strong>决定镜头跟上目标的延迟：<strong>0 表示立即跟随</strong>，画面反应快但追踪抖动也容易显示；数值越大，移动越柔和但越滞后。只提高 Y 可以平滑坐下或跳跃时的上下变化。<strong>旋转平滑</strong>的 Yaw、Pitch、Roll 分别处理左右、上下和侧倾，只有当前绑定方式使用的轴才有作用。</p>
+<h3 id="锁定目标旋转究竟有什么效果">“锁定目标旋转”究竟有什么效果？<a class="anchor" href="#锁定目标旋转究竟有什么效果" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>假设摄像机在人物<strong>右侧 1 米、后方 2 米</strong>，人物向左转身 90°：</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>旋转绑定模式</th>
+<th>摄像机位置会怎样变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>世界空间</strong></td>
+<td>偏移方向固定在房间的世界坐标。人物转身后，摄像机依然位于房间原来的方向，可能拍到侧脸。</td>
+</tr>
+<tr>
+<td><strong>简单跟随</strong></td>
+<td>大致保持在人物后方跟随，而不会严格保留左右偏移。</td>
+</tr>
+<tr>
+<td><strong>随目标旋转，上方为世界</strong></td>
+<td>随人物的<strong>水平朝向</strong>旋转偏移位置，同时让相机的上方参考世界的竖直方向，减少画面倾斜。</td>
+</tr>
+<tr>
+<td><strong>旋转，无侧倾</strong></td>
+<td>跟随左右及上下朝向变化，但排除人物歪头时的 Roll（侧倾）。</td>
+</tr>
+<tr>
+<td><strong>锁定目标</strong></td>
+<td>使用目标的 <strong>Yaw/Pitch/Roll 三轴完整旋转</strong>计算摄像机的相对位置。人物歪头时，摄像机可能跟着绕头部移动。</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>注意：锁定目标的旋转不等于镜头始终对着目标。<strong>它控制的是</strong>摄像机相对位置使用哪套坐标轴</strong>。如果希望人物的脸一直处于画面中，应再将独立的<strong>瞄准方式</strong>设为“直视目标”或“画面构图”。</p>
+<h3 id="瞄准方式镜头看向哪里">瞄准方式：镜头看向哪里？<a class="anchor" href="#瞄准方式镜头看向哪里" aria-hidden="true" tabindex="-1">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>模式</th>
+<th>实际拍摄效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>原地</strong></td>
+<td>保持保存的旋转角度，不会自动看向移动中的人物。</td>
+</tr>
+<tr>
+<td><strong>与目标同向</strong></td>
+<td>方向与目标面向的方向一致，并不是一直看着目标的脸。</td>
+</tr>
+<tr>
+<td><strong>直视目标</strong></td>
+<td>始终把镜头指向指定的目标点，适合固定位置的人像跟拍。</td>
+</tr>
+<tr>
+<td><strong>第一人称</strong></td>
+<td>根据<strong>水平/垂直初始角度</strong>决定视线，与头部位置绑定搭配可获得主观镜头。</td>
+</tr>
+<tr>
+<td><strong>画面构图</strong></td>
+<td>自动改变方向，使目标落在指定画面位置：X=0.5、Y=0.5 为正中央；X=0.33 约为左三分之一构图。</td>
+</tr>
+</tbody>
+</table></div>
 <ul>
-<li>拖动 <strong>方向手柄</strong> 改变灯光照射的位置，同时会显示向下和旋转的角度。</li>
-<li>点光源 · 聚光灯可以用 <strong>X · Y · Z 箭头</strong> 逐个方向移动，光照范围会显示在视图中。</li>
-<li>平行光用 <strong>X · Y · Z 旋转环</strong> 旋转。平行光与位置无关，只有方向会影响照明。</li>
-<li>按住 <strong>Ctrl</strong> 拖动，会以 15° · 10 cm 为单位移动。</li>
+<li><strong>目标</strong>可以是角色或特定骨骼。选头骨会对点头动作更敏感，选躯干则构图较平稳。</li>
+<li><strong>注视点 X/Y/Z</strong>是目标局部位置上的偏移量（米）。希望镜头对准嘴部而非头骨中心，可以小幅降低 Y。</li>
+<li><strong>瞄准平滑</strong>越大，镜头跟随目标朝向变化越缓慢，可以减少抖动，但人物突然移动时会暂时偏离理想构图。</li>
+<li><strong>画面位置 X/Y（0–1）<strong>改变的是</strong>画面内构图</strong>，不会移动角色在场景中的实际坐标。</li>
 </ul>
-<div class="gallery">
-<figure><img src="../assets/shots/common/light-spot-light.webp" width="1000" height="900" alt="聚光灯" loading="lazy" decoding="async"><figcaption>聚光灯</figcaption></figure>
-<figure><img src="../assets/shots/common/light-studio-soft.webp" width="1000" height="900" alt="柔和影棚" loading="lazy" decoding="async"><figcaption>柔和影棚</figcaption></figure>
-<figure><img src="../assets/shots/common/light-warm.webp" width="1000" height="900" alt="暖色调" loading="lazy" decoding="async"><figcaption>暖色调</figcaption></figure>
-<figure><img src="../assets/shots/common/light-cool.webp" width="1000" height="900" alt="冷色调" loading="lazy" decoding="async"><figcaption>冷色调</figcaption></figure>
-</div>
-<h2 id="灯光分组与卡片排序">灯光分组与卡片排序<a class="anchor" href="#灯光分组与卡片排序" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>灯光页面分别提供添加灯光和添加分组。将灯光拖入分组或调整顺序，可同时控制一组灯光的位置、旋转与亮度。场景中的灯光选择与灯光设置相互联动。</p>
-<h2 id="保存与恢复场景">保存与恢复场景<a class="anchor" href="#保存与恢复场景" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/zh/scene-scenes.webp" width="960" height="900" alt="场景保存卡片" loading="lazy" decoding="async"><figcaption>场景保存卡片</figcaption></figure>
-<p>在场景 › 场景中，可将背景、灯光、物体、姿势、表情、相机作为一个预设保存。通过缩略图切换场景，使用Ctrl+Z撤销改动。若要保留编辑结果，请再次保存。</p>
+<h3 id="镜头手持效果转场">镜头、手持效果、转场<a class="anchor" href="#镜头手持效果转场" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><img src="../assets/shots/zh/v45-studio-cameras-more.webp" srcset="../assets/shots/zh/v45-studio-cameras-more-960.webp 960w, ../assets/shots/zh/v45-studio-cameras-more.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 摄像机详细选项" loading="lazy" decoding="async"><figcaption>v45 摄像机详细选项</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>调整后的变化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>视野角 FOV（1–179°）</strong></td>
+<td>较小的值像长焦：角色放大、背景较少；较大的值像广角：背景更多、边缘可能变形。</td>
+</tr>
+<tr>
+<td><strong>正交摄像机大小</strong></td>
+<td>越大显示的区域越广，人物越小；不使用普通透视缩短效果。</td>
+</tr>
+<tr>
+<td><strong>近/远裁剪距离</strong></td>
+<td>太近或太远的物体会被裁掉。近裁剪值过大可能切掉脸部和眼镜，远裁剪过小可能让背景消失。</td>
+</tr>
+<tr>
+<td><strong>画面宽高比</strong></td>
+<td>16:9 用于横屏直播，9:16 用于竖屏。改变后应重新检查构图。</td>
+</tr>
+<tr>
+<td><strong>手持晃动强度（0–1）</strong></td>
+<td>越接近 0 越像三脚架，越大越有手持摄像机摇晃感。</td>
+</tr>
+<tr>
+<td><strong>晃动速度（0–2）</strong></td>
+<td>越大晃动越频繁；这与晃动幅度是不同参数。</td>
+</tr>
+<tr>
+<td><strong>直接切换／交叉淡入淡出（0–5 秒）</strong></td>
+<td>直接切换立即换镜头；淡入淡出在指定时间内混合两个画面。</td>
+</tr>
+<tr>
+<td><strong>摄像机动画时长（1–15 秒）</strong></td>
+<td>一次摄像机运动的持续时间。循环次数和类型决定是否重播。</td>
+</tr>
+<tr>
+<td><strong>导演动画速度（0–5）</strong></td>
+<td>提高速度可使相同的镜头运动更快完成。</td>
+</tr>
+<tr>
+<td><strong>导演 FOV 偏移（−30°～+30°）</strong></td>
+<td>临时扩大或缩小当前镜头视野，不修改该摄像机保存的原始 FOV。</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>导演模式</strong>决定对外播出的镜头；<strong>多画面预览</strong>在你自己的界面显示多个摄像机画面，必须打开<strong>独立的多画面开关</strong>，开启导演不代表自动显示预览网格。<strong>网格大小 2–4</strong>决定每边有多少个格子；提高<strong>降采样 1–8</strong>可以减轻预览压力，但画面变模糊；降低<strong>更新速率</strong>可减轻负载，但预览动作会变慢。这些预览设置与实际广播分辨率不同。</p>
+<p><strong>自动切换</strong>按标签和权重选择候选摄像机。权重为 0 的候选不会选中，权重越高被选中的相对机会越大。<strong>上直播时重新开始动画</strong>决定镜头切换回来时动画是否重播。**摄像机独立 Spout2（Pro）**最多支持 <strong>3 路</strong>额外的独立来源，具体连接请阅读 <a href="09-output.html">OBS 设置</a>。</p>
+<h2 id="房间物体骨骼绑定">房间、物体、骨骼绑定<a class="anchor" href="#房间物体骨骼绑定" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/zh/v45-studio-rooms.webp" srcset="../assets/shots/zh/v45-studio-rooms-960.webp 960w, ../assets/shots/zh/v45-studio-rooms.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 房间与道具" loading="lazy" decoding="async"><figcaption>v45 房间与道具</figcaption></figure>
+<p><strong>房间位置 X/Y/Z</strong>会平移整套房间，旋转改变方向，缩放改变房间尺寸。<strong>物体位置</strong>改变摆放点，<strong>旋转</strong>改变朝向，解除同比例锁定后可以沿各轴分别缩放，但物体可能被拉长。<strong>固定在世界</strong>时不会跟着人物移动；<strong>归属角色</strong>会跟角色移动；<strong>绑定骨骼</strong>还能跟随手、头的动作和姿态。若道具穿过手掌或脸部，应逐步微调骨骼偏移与旋转。</p>
 <h2 id="背景">背景<a class="anchor" href="#背景" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>纯色</strong>直接设置背景颜色，<strong>绿/蓝幕</strong>可用于 OBS 抠像，但衣服上的同色部分也可能消失。<strong>透明背景</strong>适合 Spout2 和 NDI 的 Alpha 合成。应用编辑窗口看起来是黑色，不一定代表接收端没有透明通道。<strong>背景图片缩放</strong>调整占据区域，X/Y 偏移调整位置，<strong>覆盖/裁剪</strong>控制是否保持图片比例并裁去边缘。</p>
+<h2 id="灯光">灯光<a class="anchor" href="#灯光" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li><strong>强度</strong>越大，照亮的区域越亮，过高会使皮肤高光发白。**色温（约 1500–12000K）**较低偏暖橙色，较高偏冷蓝色。</li>
+<li><strong>方向光</strong>像太阳一样照射整体；<strong>点光源</strong>向周围扩散；<strong>聚光灯</strong>照亮锥形区域。提高<strong>范围</strong>会照得更远，扩大<strong>角度</strong>会让光斑更宽。</li>
+<li><strong>跟随位置</strong>使灯光跟随人物移动，<strong>朝向目标</strong>使灯光旋转并照向人物。固定位置+朝向目标相当于舞台追光灯；同时开启两项就是跟随人物移动的灯。</li>
+<li><strong>位置/角度平滑</strong>增大后灯光运动更柔和但更滞后；<strong>阴影强度</strong>增大后阴影变深，<strong>柔和度</strong>增大后边缘变模糊；<strong>环境光</strong>提亮没有直接受到灯光照射的部位。</li>
+<li>**体积聚光 (Pro)**可在空气中形成可见光束。范围与密度过高会造成朦胧感并增加 GPU 消耗。</li>
+</ul>
+<h2 id="画面效果">画面效果<a class="anchor" href="#画面效果" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>普通后处理在 Basic 和 Pro 均可使用，<strong>Beautify 与 HBAO 是 Pro 功能</strong>。</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th>选项</th>
-<th>适用场景</th>
+<th>效果</th>
+<th>数值调整会改变什么</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>纯色</strong></td>
-<td>任意颜色的背景</td>
+<td><strong>抗锯齿</strong></td>
+<td>平滑边缘。FXAA 开销较低但略显模糊；SMAA 更保留线条；TAA 在快速动作时可能产生拖影。</td>
 </tr>
 <tr>
-<td><strong>绿幕 · 蓝幕</strong></td>
-<td>在直播软件中用色度键抠除时</td>
+<td><strong>Bloom 辉光</strong></td>
+<td>强度控制发光亮度；提高阈值只让更亮的部分发光；增加扩散使光晕范围更广。</td>
 </tr>
 <tr>
-<td><strong>透明</strong></td>
-<td>通过 Spout2 不带背景发送时</td>
+<td><strong>曝光/对比度/饱和度</strong></td>
+<td>分别改变整体亮度、明暗差与色彩鲜艳程度。饱和度降低到很低时近似黑白。</td>
 </tr>
 <tr>
-<td><strong>图片</strong></td>
-<td>用图片作为背景时（可调整缩放及左右 · 上下位置）</td>
+<td><strong>色温/色调</strong></td>
+<td>改变画面冷暖和绿/品红偏移，肤色对此尤其敏感。</td>
+</tr>
+<tr>
+<td><strong>暗角</strong></td>
+<td>使画面边缘变暗；强度决定暗度，柔和度决定过渡宽度。</td>
+</tr>
+<tr>
+<td><strong>胶片颗粒/色差</strong></td>
+<td>分别增加噪点与彩色边缘错位，数值高时旧电影或镜头缺陷感更强。</td>
+</tr>
+<tr>
+<td><strong>景深</strong></td>
+<td>焦点前后变模糊；自动面部对焦跟随人物；<strong>降低光圈 f 值</strong>会让背景更虚。</td>
+</tr>
+<tr>
+<td><strong>动态模糊</strong></td>
+<td>增大快门角度会使运动拖尾更长；提高采样数可能更流畅但占用更多 GPU。</td>
+</tr>
+<tr>
+<td><strong>HBAO (Pro)</strong></td>
+<td>增强眼眶、衣服缝隙和物体接触处的阴影，过高会显脏。</td>
+</tr>
+<tr>
+<td><strong>Beautify (Pro)</strong></td>
+<td>调整肤色及整体观感，与普通 Bloom/调色叠加过多会使画面失真。</td>
 </tr>
 </tbody>
 </table></div>
-<div class="gallery">
-<figure><img src="../assets/shots/common/bg-lilac.webp" width="1000" height="900" alt="图片背景" loading="lazy" decoding="async"><figcaption>图片背景</figcaption></figure>
-<figure><img src="../assets/shots/common/bg-green.webp" width="1000" height="900" alt="绿幕背景" loading="lazy" decoding="async"><figcaption>绿幕背景</figcaption></figure>
-<figure><img src="../assets/shots/common/bg-dark.webp" width="1000" height="900" alt="纯色背景" loading="lazy" decoding="async"><figcaption>纯色背景</figcaption></figure>
-<figure><img src="../assets/shots/common/bg-peach.webp" width="1000" height="900" alt="图片背景 2" loading="lazy" decoding="async"><figcaption>图片背景 2</figcaption></figure>
-</div>
-<h2 id="效果">效果<a class="anchor" href="#效果" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><img src="../assets/shots/zh/scene-fx.webp" width="960" height="900" alt="效果" loading="lazy" decoding="async"><figcaption>效果</figcaption></figure>
-<ul>
-<li><strong>泛光</strong> — 明亮的部分会柔和地晕开。</li>
-<li><strong>调色</strong> — 调整亮度、对比度、饱和度和色温。</li>
-<li><strong>景深</strong> — 虚化背景，让角色更加突出。开启 <strong>自动对焦面部</strong> 后，焦点会跟随面部。</li>
-<li><strong>暗角 · 胶片颗粒</strong> — 为画面边缘和质感增添氛围。</li>
-<li>还可以开启 <strong>色差 · 运动模糊 · 抗锯齿</strong> 等，所有滑块都可以直接输入数值。</li>
-</ul>
-</div>
-<h2 id="着色器">着色器<a class="anchor" href="#着色器" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>直接呈现角色所用的着色器。已在 Poiyomi、lilToon 等主要着色器上确认。不支持 AudioLink 和镜子检测。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="07-motion.html"><span>上一页</span>动作</a><a class="next" href="09-output.html"><span>下一页</span>输出</a></nav><p class="updated">最后更新: 2026-10-12</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#灯光">灯光</a></li><li><a href="#灯光分组与卡片排序">灯光分组与卡片排序</a></li><li><a href="#保存与恢复场景">保存与恢复场景</a></li><li><a href="#背景">背景</a></li><li><a href="#效果">效果</a></li><li><a href="#着色器">着色器</a></li></ul></nav>
+<p>使用透明背景时，一定要在 OBS 最终合成画面中检查边缘辉光、景深与暗角是否自然。</p>
+<p><a href="09-output.html">下一章：输出与远程会话 →</a></p></article><nav class="pager" aria-label="Pager"><a class="prev" href="07-motion.html"><span>上一页</span>动作</a><a class="next" href="09-output.html"><span>下一页</span>输出：OBS、NDI、屏幕共享与远程会话</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#场景保存与切换">场景保存与切换</a></li><li><a href="#多角色控制-pro">多角色控制 (Pro)</a></li><li><a href="#工作室摄像机-pro">工作室摄像机 (Pro)</a></li><li><a href="#房间物体骨骼绑定">房间、物体、骨骼绑定</a></li><li><a href="#背景">背景</a></li><li><a href="#灯光">灯光</a></li><li><a href="#画面效果">画面效果</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

@@ -1,5 +1,17 @@
 # 1. Getting started
 
+## v2.0.0 quick start: from first launch to your first stream
+
+1. **Load an avatar:** Open a **.vavatar** created with Exporter 1.0.6 or a supported **VRM 0.x/1.0** model. Some custom VRM 0.x shaders cannot load.
+2. **Connect input:** Pick webcam, iPhone, mic, VMC or SteamVR per body part in [Devices](06-devices.md). Your face, arms, fingers and body can use different sources.
+3. **Calibrate:** Face forward. With iPhone input, initial correction starts roughly **three seconds** after the first valid tracked face frame.
+4. **Customize motion:** Select expressions and clothing in [Avatar Menu](05-avatar-menu.md), then adjust smoothing, lip sync and AFK behavior under [Motion](07-motion.md).
+5. **Prepare the picture:** Select a background and lights in [Studio](08-scene.md); **Pro** also offers multiple avatars and saved broadcast cameras.
+6. **Connect OBS:** Install the **OBS Spout2 receiver plugin** for same-PC output, or **DistroAV/NDI** for network output. **NDI is available in Basic**, but the third-party OBS plugin is required. Follow the [Output tutorial](09-output.md).
+7. **Check the actual broadcast:** Your editing scene view can differ from the on-air studio camera. Verify the OBS program monitor before going live.
+
+**Basic** is licensed for personal use; public/commercial broadcasts require **Pro**, regardless of which technically available output method is selected. See [Licensing](13-license.md).
+
 ## What you need
 
 | Item | Requirement |
@@ -45,7 +57,7 @@ A license is for one person on one device. You can move it to another PC yoursel
 2. **Open your avatar** — Open the file on the start screen and click **▶ Start Avatar Live**. → [Chapter 3](03-launcher-and-library.md)
 3. **Turn on the webcam and mic** — Turn on the switches on the **Devices** page. → [Chapter 6](06-devices.md)
 4. **Fit your face** — Click **Motion › Automatic face setup** and follow the guide. → [Chapter 7](07-motion.md)
-5. **Choose a background and lighting** — Pick them on the **Scene** page. → [Chapter 8](08-scene.md)
+5. **Choose a background and lighting** — Pick them on the **Studio** page. → [Chapter 8](08-scene.md)
 6. **Send it out** — On the **Output** page, turn on Spout2, the virtual camera or screen share. → [Chapter 9](09-output.md)
 
 </div>

@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>ポージング・オブジェクト・表情 — AVATAR LIVE</title>
-<meta name="description" content="シーン › ポージング › ポージングモード をオンにすると、ボーンを直接動かしてポーズを作れます。">
+<meta name="description" content="Pro にしてもすべての機能が自動でオンになるわけではありません。マルチビューにはディレクターとは別のスイッチが必要で、カメラ衝突・Look At IK 等には初期状態オフの実験機能もあります。項目を一つずつ切り替え、OBS で結果を確認してください。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ja/11-pro-features.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/11-pro-features.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/11-pro-features.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/11-pro-features.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/11-pro-features.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="ポージング・オブジェクト・表情 — AVATAR LIVE">
-<meta property="og:description" content="シーン › ポージング › ポージングモード をオンにすると、ボーンを直接動かしてポーズを作れます。">
+<meta property="og:description" content="Pro にしてもすべての機能が自動でオンになるわけではありません。マルチビューにはディレクターとは別のスイッチが必要で、カメラ衝突・Look At IK 等には初期状態オフの実験機能もあります。項目を一つずつ切り替え、OBS で結果を確認してください。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ja/11-pro-features.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ja.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,79 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">シーン</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html" aria-current="page">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">スタジオ：シーン・カメラ・照明・エフェクト</a></li><li><a href="09-output.html">出力：OBS・NDI・画面共有・リモートセッション</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html" aria-current="page">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="11-ポージングオブジェクト表情">11. ポージング・オブジェクト・表情<a class="anchor" href="#11-ポージングオブジェクト表情" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200エディションによる機能とその影響">v2.0.0：エディションによる機能とその影響<a class="anchor" href="#v200エディションによる機能とその影響" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/ja/v45-studio-cameras.webp" srcset="../assets/shots/ja/v45-studio-cameras-960.webp 960w, ../assets/shots/ja/v45-studio-cameras.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 スタジオカメラ" loading="lazy" decoding="async"><figcaption>v45 スタジオカメラ</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>機能</th>
+<th>Basic</th>
+<th>Pro</th>
+<th>何が変わるか</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spout2・<strong>NDI 出力</strong></td>
+<td>✅</td>
+<td>✅</td>
+<td>OBS へ映像を送ります。<strong>NDI は Basic でも利用可</strong>で、OBS 側プラグインが必要です。</td>
+</tr>
+<tr>
+<td>通常の照明・ポスト処理</td>
+<td>✅</td>
+<td>✅</td>
+<td>色、影、ブルーム、背景などを変更します。</td>
+</tr>
+<tr>
+<td>ポージング・ポーズライブラリ・小物</td>
+<td>—</td>
+<td>✅</td>
+<td>骨を調整・固定し、舞台や骨に小物を付けます。</td>
+</tr>
+<tr>
+<td><strong>複数アバター・同時操作</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>同じシーンに複数配置し、トラッキングを共有・切り替えます。</td>
+</tr>
+<tr>
+<td><strong>スタジオカメラ・ディレクター・マルチビュー</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>編集用シーンビューとは別のカメラ映像を送ります。</td>
+</tr>
+<tr>
+<td>カメラ別 <strong>Spout2</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>OBS に独立した送信元を最大 3 系統追加します。</td>
+</tr>
+<tr>
+<td><strong>リモートセッション</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>他 PC とリアルタイム動作、表情、同意したアバターデータを共有します。</td>
+</tr>
+<tr>
+<td><strong>ボリュームライト／HBAO／Beautify</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>光の筋・接触影・高度な画面効果を追加します。</td>
+</tr>
+<tr>
+<td><strong>MP4 録画／追加画面共有ソース</strong></td>
+<td>—</td>
+<td>✅</td>
+<td>配信録画、複数のゲーム・窓の合成に使います。</td>
+</tr>
+</tbody>
+</table></div>
+<p>Pro にしてもすべての機能が自動でオンになるわけではありません。マルチビューにはディレクターとは別のスイッチが必要で、カメラ衝突・Look At IK 等には初期状態オフの実験機能もあります。項目を一つずつ切り替え、OBS で結果を確認してください。</p>
+<p><a href="08-scene.html">カメラ方式・回転・スライダー</a> · <a href="09-output.html">OBS・NDI・セッション</a></p>
+<p><strong>アバター素材の権利は Pro 購入後も変わりません。</strong> リモートでデータを送る前に各制作者の利用規約を確認してください。</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
@@ -80,7 +151,7 @@
 </table></div>
 <h2 id="ポージング">ポージング<a class="anchor" href="#ポージング" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/ja/posing.webp" width="960" height="900" alt="ポージングモード" loading="lazy" decoding="async"><figcaption>ポージングモード</figcaption></figure>
-<p><strong>シーン › ポージング › ポージングモード</strong> をオンにすると、ボーンを直接動かしてポーズを作れます。</p>
+<p><strong>スタジオ › ポージング › ポージングモード</strong> をオンにすると、ボーンを直接動かしてポーズを作れます。</p>
 <ul>
 <li>ボーンをクリックして選び、リングをドラッグして回します。回転ギズモは、ボーンの大きさに合わせて表示されます。</li>
 <li>手や足をドラッグすると腕・脚全体がついてきて、<strong>Alt+ドラッグ</strong> でひじ・ひざの向きを変えられます。</li>
@@ -95,7 +166,7 @@
 </blockquote>
 <h2 id="ポーズごとの5つの追跡設定">ポーズごとの5つの追跡設定<a class="anchor" href="#ポーズごとの5つの追跡設定" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/ja/menu-poses.webp" width="960" height="900" alt="ポーズと追跡設定" loading="lazy" decoding="async"><figcaption>ポーズと追跡設定</figcaption></figure>
-<p>アバターメニューやシーンで保存したポーズの横のカメラアイコンを押すと、フェイシャル、頭、腕、指、胴体を独立してON/OFFできます。ONの部分は追跡され、OFFの部分はポーズを維持します。5項目はポーズごとに保存されます。</p>
+<p>アバターメニューやスタジオで保存したポーズの横のカメラアイコンを押すと、フェイシャル、頭、腕、指、胴体を独立してON/OFFできます。ONの部分は追跡され、OFFの部分はポーズを維持します。5項目はポーズごとに保存されます。</p>
 <ul>
 <li>頭OFF・フェイシャルONなら頭の角度を固定しながら表情を追跡できます。</li>
 <li>フェイシャルOFFでもカメラ目線は独立して利用できます。</li>
@@ -110,7 +181,7 @@
 <li>待機・切り替え・復帰の時間は動作 › 体 › AFK切り替え時間で設定します。</li>
 </ul>
 <h2 id="ポーズライブラリ">ポーズライブラリ<a class="anchor" href="#ポーズライブラリ" aria-hidden="true" tabindex="-1">#</a></h2>
-<p><strong>シーン › ポージング › ポーズライブラリ</strong> で <code>.anim</code> ファイルが入ったフォルダーを選ぶと、すべてのポーズを <strong>今のアバターのサムネイル</strong> で表示します。</p>
+<p><strong>スタジオ › ポージング › ポーズライブラリ</strong> で <code>.anim</code> ファイルが入ったフォルダーを選ぶと、すべてのポーズを <strong>今のアバターのサムネイル</strong> で表示します。</p>
 <ul>
 <li>サブフォルダーまで読み込み、ポーズ・手の形・モーションに分けて表示します。検索とお気に入りも使えます。</li>
 <li><strong>適用</strong> するとすぐにそのポーズになり、動くクリップはアニメーションとして再生されます。<strong>解除</strong> で元に戻ります。</li>
@@ -119,7 +190,7 @@
 </ul>
 <h2 id="オブジェクト">オブジェクト<a class="anchor" href="#オブジェクト" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><img src="../assets/shots/ja/props.webp" width="960" height="900" alt="オブジェクト" loading="lazy" decoding="async"><figcaption>オブジェクト</figcaption></figure>
-<p><strong>シーン › オブジェクト › + オブジェクトを追加</strong> で、テキスト、画像、図形、3D モデルを置きます。</p>
+<p><strong>スタジオ › オブジェクト › + オブジェクトを追加</strong> で、テキスト、画像、図形、3D モデルを置きます。</p>
 <ul>
 <li><strong>付ける場所</strong> を頭や手にすると、アバターと一緒に動きます。</li>
 <li>テキストはダブルクリックすると、その場で編集できます。</li>
@@ -138,10 +209,10 @@
 <li>Unity で作った表情のアニメーション（<code>.anim</code>、シェイプキー）も読み込めます。動くクリップは、表情をオンにしている間、再生されます。</li>
 </ul>
 <figure><img src="../assets/shots/ja/menu-myexpr.webp" width="960" height="900" alt="アバターメニューのマイ表情カード" loading="lazy" decoding="async"><figcaption>アバターメニューのマイ表情カード</figcaption></figure>
-<p>新しい表情を作成と .anim を読み込むボタンは、シーンとアバターメニューの両方に並んでいます。静止したシェイプキー表情と複数フレームの Unity .anim 表情を取り込めます。アニメーションのループは元のクリップ設定に従います。表情タイルをドラッグして並べ替え、右クリックでショートカットやクイックアクションを登録できます。</p>
+<p>新しい表情を作成と .anim を読み込むボタンは、スタジオとアバターメニューの両方に並んでいます。静止したシェイプキー表情と複数フレームの Unity .anim 表情を取り込めます。アニメーションのループは元のクリップ設定に従います。表情タイルをドラッグして並べ替え、右クリックでショートカットやクイックアクションを登録できます。</p>
 <h2 id="自動表情">自動表情<a class="anchor" href="#自動表情" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>笑ったり驚いたりすると、決めておいた表情が自動で出ます。<strong>動き › 自動表情</strong> でオンにして、笑顔・驚き・ウインクなどの表情ごとに、表示する表情を割り当てます。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>前へ</span>設定</a><a class="next" href="12-troubleshooting.html"><span>次へ</span>トラブルシューティング</a></nav><p class="updated">最終更新: 2026-10-12</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#ポージング">ポージング</a></li><li><a href="#ポーズごとの5つの追跡設定">ポーズごとの5つの追跡設定</a></li><li><a href="#基本ポーズとafk待機ポーズ">基本ポーズとAFK待機ポーズ</a></li><li><a href="#ポーズライブラリ">ポーズライブラリ</a></li><li><a href="#オブジェクト">オブジェクト</a></li><li><a href="#画面共有のほかのソース">画面共有のほかのソース</a></li><li><a href="#マイ表情">マイ表情</a></li><li><a href="#自動表情">自動表情</a></li></ul></nav>
+<p>笑ったり驚いたりすると、決めておいた表情が自動で出ます。<strong>動き › 自動表情</strong> でオンにして、笑顔・驚き・ウインクなどの表情ごとに、表示する表情を割り当てます。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>前へ</span>設定</a><a class="next" href="12-troubleshooting.html"><span>次へ</span>トラブルシューティング</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#v200エディションによる機能とその影響">v2.0.0：エディションによる機能とその影響</a></li><li><a href="#ポージング">ポージング</a></li><li><a href="#ポーズごとの5つの追跡設定">ポーズごとの5つの追跡設定</a></li><li><a href="#基本ポーズとafk待機ポーズ">基本ポーズとAFK待機ポーズ</a></li><li><a href="#ポーズライブラリ">ポーズライブラリ</a></li><li><a href="#オブジェクト">オブジェクト</a></li><li><a href="#画面共有のほかのソース">画面共有のほかのソース</a></li><li><a href="#マイ表情">マイ表情</a></li><li><a href="#自動表情">自動表情</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Scene — AVATAR LIVE</title>
-<meta name="description" content="Choose the background, lighting and effects.">
+<title>Studio: scenes, cameras, lights and effects — AVATAR LIVE</title>
+<meta name="description" content="In v2.0.0, Scene is now Studio. A studio saves its room, scene-owned objects and lights, avatar placement and virtual cameras together. Avatar-owned s…">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/08-scene.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/08-scene.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/08-scene.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/08-scene.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/08-scene.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
-<meta property="og:title" content="Scene — AVATAR LIVE">
-<meta property="og:description" content="Choose the background, lighting and effects.">
+<meta property="og:title" content="Studio: scenes, cameras, lights and effects — AVATAR LIVE">
+<meta property="og:description" content="In v2.0.0, Scene is now Studio. A studio saves its room, scene-owned objects and lights, avatar placement and virtual cameras together. Avatar-owned s…">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/08-scene.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,107 +42,262 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html" aria-current="page">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="8-scene">8. Scene<a class="anchor" href="#8-scene" aria-hidden="true" tabindex="-1">#</a></h1>
-<p>Choose the background, lighting and effects.</p>
-<h2 id="lighting">Lighting<a class="anchor" href="#lighting" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><img src="../assets/shots/en/scene-light.webp" width="960" height="900" alt="Scene page" loading="lazy" decoding="async"><figcaption>Scene page</figcaption></figure>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html" aria-current="page">Studio: scenes, cameras, lights and effects</a></li><li><a href="09-output.html">Output: OBS, NDI, screen sharing and remote sessions</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="8-studio-scenes-cameras-lights-and-effects">8. Studio: scenes, cameras, lights and effects<a class="anchor" href="#8-studio-scenes-cameras-lights-and-effects" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>In v2.0.0, <strong>Scene</strong> is now <strong>Studio</strong>. A studio saves its room, scene-owned objects and lights, avatar placement and virtual cameras together. Avatar-owned settings follow that avatar into other studios; studio-owned settings belong only to the current studio. The <strong>scene view</strong> you edit in the app is not necessarily the <strong>broadcast camera</strong> seen in OBS.</p>
+<figure><img src="../assets/shots/en/v45-scene.webp" srcset="../assets/shots/en/v45-scene-960.webp 960w, ../assets/shots/en/v45-scene.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="The v45 Studio screen" loading="lazy" decoding="async"><figcaption>The v45 Studio screen</figcaption></figure>
+<h2 id="saving-and-switching-studios">Saving and switching studios<a class="anchor" href="#saving-and-switching-studios" aria-hidden="true" tabindex="-1">#</a></h2>
+<ol>
+<li>Go to <strong>Studio → Scenes</strong>. Create or select a scene, then set up its background, room, avatars, lights, props and cameras.</li>
+<li>Save the scene after changing it. When you load another scene, its saved arrangement returns. Search by name or choose its thumbnail.</li>
+<li>Set ownership deliberately: lights or props that belong to an outfit should be <strong>avatar-owned</strong>; a spotlight or decoration unique to one set should be <strong>studio-owned</strong>.</li>
+<li>Before filming, verify what is <strong>on air</strong> in the receiving application. You can rotate the work view while a saved studio camera continues broadcasting without moving.</li>
+</ol>
+<h2 id="avatars-and-multi-avatar-control-pro">Avatars and multi-avatar control (Pro)<a class="anchor" href="#avatars-and-multi-avatar-control-pro" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/en/v45-menu.webp" srcset="../assets/shots/en/v45-menu-960.webp 960w, ../assets/shots/en/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="Avatars in v45" loading="lazy" decoding="async"><figcaption>Avatars in v45</figcaption></figure>
 <ul>
-<li>Choose a mood under <strong>Preset</strong>, and the lighting changes all at once.</li>
-<li>Turn each light on and off with its switch, and change its brightness and color.</li>
-<li>Use <strong>Add a light</strong> to add a face light, fill light, rim light, directional light, point light or spot.</li>
-<li>Save lighting you like with <strong>Save as Preset</strong>, and after you change it, use <strong>Save Changes to Preset</strong>.</li>
+<li><strong>Add avatar</strong> places another avatar in the current studio. Select the avatar's card before editing its position, rotation, size, pose or face settings; edits apply to the currently selected avatar, not automatically to everyone.</li>
+<li><strong>Switch control</strong> moves your tracking input to the chosen avatar. The one you leave can keep its last movement or use a configured rest/idle behavior.</li>
+<li><strong>Copy/same movement</strong> applies one tracking source to multiple avatars. Joint rotation is adapted across different body proportions, so characters follow the same action without necessarily occupying the identical world coordinates.</li>
+<li><strong>Lip-sync target</strong>: <strong>All</strong> moves the mouths of all controlled avatars; <strong>Main</strong> targets the currently primary one; <strong>Off</strong> does not apply shared lip sync. Use Main for a multi-character scene where only one character speaks.</li>
+<li><strong>Move (X/Y/Z)</strong> changes where the actor stands; <strong>rotation</strong> changes its facing; <strong>scale</strong> affects its size relative to all fixed cameras, lights and props. Changing size often requires reframing a close-up.</li>
 </ul>
-</div>
-<h3 id="light-details">Light details<a class="anchor" href="#light-details" aria-hidden="true" tabindex="-1">#</a></h3>
+<h2 id="studio-cameras-pro-position-and-aim-are-independent">Studio cameras (Pro): position and aim are independent<a class="anchor" href="#studio-cameras-pro-position-and-aim-are-independent" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/en/v45-studio-cameras.webp" srcset="../assets/shots/en/v45-studio-cameras-960.webp 960w, ../assets/shots/en/v45-studio-cameras.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 camera controls" loading="lazy" decoding="async"><figcaption>v45 camera controls</figcaption></figure>
+<p>The main window shows the <strong>scene view</strong> you freely manipulate for editing. A <strong>studio camera</strong> stores its own position, direction, lens and transition behavior and sends that picture to Spout2, NDI and other broadcast outputs. Switching on-air cameras does not take control of your editing view.</p>
+<ol>
+<li>In <strong>Studio → Cameras</strong>, press <strong>+</strong> to create a camera. A new camera normally starts by following the edited avatar and framing its head.</li>
+<li>Click a camera row to edit its <strong>position method (Body)</strong> and <strong>aim method (Aim)</strong>. You may reorder camera rows by dragging.</li>
+<li>Set the scene view to the desired picture and use <strong>⋯ → Put on the current view</strong> to match a camera's follow offsets and framing to what you see. Merely changing its Body/Aim mode uses the numbers already saved in the new mode, which may cause a visible jump.</li>
+<li>Select the camera for <strong>On air</strong> and check the result in OBS or your NDI receiver. The app window remains the scene view.</li>
+</ol>
+<h3 id="camera-position-what-actually-moves">Camera position: what actually moves?<a class="anchor" href="#camera-position-what-actually-moves" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><img src="../assets/shots/en/v45-studio-cam-added.webp" srcset="../assets/shots/en/v45-studio-cam-added-960.webp 960w, ../assets/shots/en/v45-studio-cam-added.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 camera immediately after creation" loading="lazy" decoding="async"><figcaption>v45 camera immediately after creation</figcaption></figure>
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th>Item</th>
-<th>What it does</th>
+<th>Method</th>
+<th>Result</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Color</strong></td>
-<td>Pick a color with the color square, RGB, a HEX value, or the <strong>Eyedropper</strong> to grab a color from the screen. Turn on <strong>Color temperature</strong> to choose between warm and cool light.</td>
+<td><strong>In place</strong></td>
+<td>The camera stands still at its stored X/Y/Z position. If the character walks away, it leaves the shot. Best for a locked-off studio camera.</td>
 </tr>
 <tr>
-<td><strong>Position, direction &amp; target</strong></td>
-<td>Set the <strong>Tilt · Turn · Roll</strong> angles, whether the light moves with the avatar, and <strong>Look at target</strong>, such as the face.</td>
+<td><strong>Locked on</strong></td>
+<td>The camera sits exactly at the target point. A head-bone target may put it inside the head, so this is more useful for POV/first-person setups than an ordinary face close-up.</td>
 </tr>
 <tr>
-<td><strong>Shadows &amp; range</strong></td>
-<td>Set shadows and their strength, soft edges, the <strong>Range</strong> the light reaches, and a spot's <strong>Cone angle</strong>.</td>
+<td><strong>Follow at a distance</strong></td>
+<td>The camera stays at a relative X/Y/Z offset from the target, moving with it as it walks, leans or moves.</td>
+</tr>
+<tr>
+<td><strong>Orbit the target</strong></td>
+<td>Like distance follow, but the <strong>ring angle</strong> rotates the camera position around the target. A quarter-turn provides a different side shot without moving the actor.</td>
 </tr>
 </tbody>
 </table></div>
-<p>Select a light in the view, and handles appear.</p>
+<p><strong>Follow distance X/Y/Z</strong> is an offset measured in metres from the target, not a percentage of the screen. Increasing X moves the camera sideways; Y raises its position; Z moves it in front of or behind the subject according to its sign and the binding mode. If the shot suddenly disappears, change the offset in small steps or use <strong>Put on the current view</strong> again.</p>
+<p><strong>Position smoothing (X/Y/Z)</strong> controls how late each axis follows. <strong>Zero follows immediately</strong>, also making small tracking jitter more noticeable. Higher values glide after the target, smoothing movement at the cost of lag. Raising Y only smooths jumping or bending while lateral tracking remains responsive. <strong>Rotation smoothing</strong> shows only the axes supported by the current binding mode: <strong>yaw</strong> (turn left/right), <strong>pitch</strong> (look up/down), and <strong>roll</strong> (side tilt).</p>
+<h3 id="lock-to-the-target-rotation-a-practical-example">“Lock to the target” rotation: a practical example<a class="anchor" href="#lock-to-the-target-rotation-a-practical-example" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>Suppose the camera is placed <strong>one metre to the right and two metres behind</strong> the character. The character then turns left by 90 degrees.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Binding mode</th>
+<th>What happens to the camera's <em>position</em></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>World space</strong></td>
+<td>The offset stays aligned to the room. The character turns within a more-or-less fixed room-relative shot and may present their side to the camera.</td>
+</tr>
+<tr>
+<td><strong>Simple follow</strong></td>
+<td>The camera stays generally behind the target with an easy follow rule; it does not separately maintain the specified sideways offset.</td>
+</tr>
+<tr>
+<td><strong>Turn with target, world up</strong></td>
+<td>The camera position rotates around the target as its <strong>yaw</strong> changes, but the world's vertical axis stays upright. A head roll does not tilt the room's horizon.</td>
+</tr>
+<tr>
+<td><strong>Turn, no roll</strong></td>
+<td>The target's heading and up/down tilt affect the camera's relative position, but sideways roll is excluded.</td>
+</tr>
+<tr>
+<td><strong>Lock to the target</strong></td>
+<td>The camera offset is rotated using the target's <strong>full yaw, pitch and roll</strong>. Rolling or tilting a head can carry the camera around with it.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Important:</strong> Lock to target rotation does <strong>not</strong> mean the lens automatically looks at the target. It changes the <strong>coordinate frame used to position</strong> the camera. For a portrait that always faces the subject, combine the position method with <strong>Straight at the target</strong> or <strong>Framed on screen</strong> in the separate <strong>Aim</strong> controls.</p>
+<h3 id="camera-aim-where-does-it-look">Camera aim: where does it look?<a class="anchor" href="#camera-aim-where-does-it-look" aria-hidden="true" tabindex="-1">#</a></h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Aim method</th>
+<th>Visible result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>In place</strong></td>
+<td>Uses the saved camera rotation. The target can leave the frame as it moves.</td>
+</tr>
+<tr>
+<td><strong>With the target</strong></td>
+<td>Points in the same direction as the target; it does not look <strong>at</strong> that target.</td>
+</tr>
+<tr>
+<td><strong>Straight at the target</strong></td>
+<td>Rotates the lens toward the target point while keeping the camera's position controlled separately. Useful for a fixed-camera interview.</td>
+</tr>
+<tr>
+<td><strong>First person</strong></td>
+<td>Uses horizontal/vertical <strong>start angle</strong> to establish its gaze, often combined with positioning at the actor's head.</td>
+</tr>
+<tr>
+<td><strong>Framed on screen</strong></td>
+<td>Aims at the target while keeping it at the screen-coordinate point you choose. <strong>0.5 / 0.5</strong> places the subject at the centre. Horizontal <strong>0.33</strong> produces a left-third interview layout.</td>
+</tr>
+</tbody>
+</table></div>
 <ul>
-<li>Drag the <strong>direction handle</strong> to change where the light points. Its angles (down · round) are shown as you drag.</li>
-<li>Move a point light or spot one axis at a time with the <strong>X · Y · Z arrows</strong>, and the range the light reaches is drawn in the view.</li>
-<li>Turn a directional light with the <strong>X · Y · Z rotation rings</strong>. Only a directional light's direction affects the lighting, not its position.</li>
-<li>Hold <strong>Ctrl</strong> while you drag to move in steps of 15° · 10 cm.</li>
+<li><strong>Target</strong> can be an actor or a specified bone such as the head. A head target follows nodding; a root target follows the body with less head movement.</li>
+<li><strong>Look-at offset X/Y/Z</strong> changes which point relative to the target you aim at, in metres. For example, lower the Y offset slightly to frame the face or mouth below the head-bone origin.</li>
+<li><strong>Aim smoothing</strong> delays rotation toward a moving target: 0 snaps instantly, higher values soften direction changes but can cause the subject to momentarily move away from its requested location.</li>
+<li><strong>On-screen X/Y (0–1)</strong> changes the target's <strong>composition</strong>, not the avatar's world position. Larger X moves the requested framing point to the right; larger Y moves it down the image.</li>
 </ul>
-<div class="gallery">
-<figure><img src="../assets/shots/common/light-spot-light.webp" width="1000" height="900" alt="Spot Light" loading="lazy" decoding="async"><figcaption>Spot Light</figcaption></figure>
-<figure><img src="../assets/shots/common/light-studio-soft.webp" width="1000" height="900" alt="Studio Soft" loading="lazy" decoding="async"><figcaption>Studio Soft</figcaption></figure>
-<figure><img src="../assets/shots/common/light-warm.webp" width="1000" height="900" alt="Warm Tone" loading="lazy" decoding="async"><figcaption>Warm Tone</figcaption></figure>
-<figure><img src="../assets/shots/common/light-cool.webp" width="1000" height="900" alt="Cool Tone" loading="lazy" decoding="async"><figcaption>Cool Tone</figcaption></figure>
-</div>
-<h2 id="light-groups-and-card-order">Light groups and card order<a class="anchor" href="#light-groups-and-card-order" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>Lighting has separate Add light and Add group controls. Drag lights into a group and rearrange their order. You can move, rotate and adjust group brightness together; selecting a light in Scene also selects its Lighting settings.</p>
-<h2 id="save-and-restore-scenes">Save and restore scenes<a class="anchor" href="#save-and-restore-scenes" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/en/scene-scenes.webp" width="960" height="900" alt="Saved scenes card" loading="lazy" decoding="async"><figcaption>Saved scenes card</figcaption></figure>
-<p>Use Scene › Scenes to save the current background, lights, objects, pose, expression and camera as one preset. Choose scenes by their thumbnails and use Ctrl+Z to undo a change. Save again to preserve subsequent edits.</p>
+<h3 id="lens-shake-transitions-and-animation">Lens, shake, transitions and animation<a class="anchor" href="#lens-shake-transitions-and-animation" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><img src="../assets/shots/en/v45-studio-cameras-more.webp" srcset="../assets/shots/en/v45-studio-cameras-more-960.webp 960w, ../assets/shots/en/v45-studio-cameras-more.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 detailed camera controls" loading="lazy" decoding="async"><figcaption>v45 detailed camera controls</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Lower vs. higher</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Field of view (1–179°)</strong></td>
+<td>Lower: magnified, tighter shot with less background. Higher: wider shot with more surroundings and potentially stretched edges.</td>
+</tr>
+<tr>
+<td><strong>Orthographic size</strong></td>
+<td>Increasing this value shows a larger area and makes the character smaller, without perspective foreshortening.</td>
+</tr>
+<tr>
+<td><strong>Near/far clipping</strong></td>
+<td>Nearby or distant objects outside these limits disappear. Too-large near clipping can cut through a face or prop; too-small far clipping removes distant scenery.</td>
+</tr>
+<tr>
+<td><strong>Aspect ratio</strong></td>
+<td>16:9 suits horizontal streams, 9:16 vertical video. Changing it alters what fits horizontally, so recheck composition.</td>
+</tr>
+<tr>
+<td><strong>Handheld intensity (0–1)</strong></td>
+<td>Low feels tripod-like; high exaggerates handheld position sway.</td>
+</tr>
+<tr>
+<td><strong>Handheld speed (0–2)</strong></td>
+<td>Low wobbles slowly; high vibrates faster. Speed and intensity are separate.</td>
+</tr>
+<tr>
+<td><strong>Cut / Crossfade (0–5 s)</strong></td>
+<td>Cut changes cameras immediately. Crossfade blends their pictures over the selected time; longer feels gradual.</td>
+</tr>
+<tr>
+<td><strong>Camera animation duration (1–15 s)</strong></td>
+<td>Length of one animated motion. Loop type/count affect whether and how long it repeats.</td>
+</tr>
+<tr>
+<td><strong>Director animation speed (0–5)</strong></td>
+<td>Changes the speed at which camera animations progress; faster completes the same path sooner.</td>
+</tr>
+<tr>
+<td><strong>Director FOV offset (−30° to +30°)</strong></td>
+<td>Temporarily narrows/widens the director's lens relative to each camera's stored base FOV; it does not rewrite every camera's original lens.</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Director</strong> controls which studio camera is on air. <strong>Multiview</strong> displays several preview cells in your working interface <strong>only after you enable its separate switch</strong>; turning on the director alone does not open the grid. Grid size <strong>2–4</strong> changes the number of cells per axis. Increasing <strong>downsampling (1–8)</strong> makes preview cells cheaper to render but less sharp; reducing the preview update rate also reduces work but makes movement in the grid less fluid. These preview settings are not a substitute for configuring your broadcast output quality.</p>
+<p><strong>Auto switching</strong> can choose cameras by tag and weight. An entry with weight zero is not chosen; greater positive weights make a camera relatively more likely. An animation may restart each time its camera goes on air, or continue depending on its settings. <strong>Per-camera Spout2 output (Pro)</strong> sends independent streams even when another camera is live, with a maximum of <strong>three additional senders</strong>; see the <a href="09-output.html">OBS setup instructions</a>.</p>
+<h2 id="rooms-props-and-attachment">Rooms, props and attachment<a class="anchor" href="#rooms-props-and-attachment" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/en/v45-studio-rooms.webp" srcset="../assets/shots/en/v45-studio-rooms-960.webp 960w, ../assets/shots/en/v45-studio-rooms.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 Studio objects and rooms" loading="lazy" decoding="async"><figcaption>v45 Studio objects and rooms</figcaption></figure>
+<ul>
+<li><strong>Room</strong> picks a studio environment. Position (X/Y/Z) moves the whole room, rotation turns it and scale changes its dimensions relative to the avatars.</li>
+<li><strong>Prop position</strong> changes where an object stands. Rotation changes its facing; <strong>unlinked X/Y/Z scale</strong> can stretch an object but may distort it.</li>
+<li><strong>World-owned</strong> props stay in the room. <strong>Avatar-owned</strong> props follow an avatar across studios; <strong>bone-attached</strong> props also follow the chosen hand/head bone during gestures and posing. Adjust <strong>bone offsets</strong> if glasses or held objects intersect the model.</li>
+<li>Use per-studio ownership for stage decorations and per-avatar ownership for costume-related accessories.</li>
+</ul>
 <h2 id="background">Background<a class="anchor" href="#background" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>Solid colour</strong> supplies a flat backdrop. <strong>Green/blue</strong> work with OBS chroma key, but the same colour on clothing may become transparent. <strong>Transparent</strong> is the usual choice with Spout2 or NDI alpha; the app's black-looking editing backdrop does not necessarily mean the alpha being sent is opaque. For <strong>images</strong>, zoom changes the covered area, X/Y offsets move the crop, and <strong>cover/crop</strong> fills the frame without stretching the image. After changing output aspect ratio, check the image edges again.</p>
+<h2 id="lighting-and-light-follow-behavior">Lighting and light-follow behavior<a class="anchor" href="#lighting-and-light-follow-behavior" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li><strong>Light intensity</strong> increases brightness; too much clips pale skin and emissive materials. <strong>Colour temperature (approximately 1500–12000 K)</strong> is warm/orange at the low end and cool/blue at the high end.</li>
+<li><strong>Directional lights</strong> illuminate broadly like sunlight; <strong>point lights</strong> radiate in all directions; <strong>spotlights</strong> create a cone. Raising <strong>range</strong> reaches farther surfaces, while raising <strong>spot angle</strong> covers a wider area with less focus.</li>
+<li><strong>Follow position</strong> moves the light with its target. <strong>Aim at target</strong> rotates the light to face the target. These are independent: a stationary spotlight that aims at a moving head acts like a follow-spot, while a light with both on moves with the person.</li>
+<li><strong>Position/rotation smoothing</strong> reduces abrupt light movement; higher values delay reactions. <strong>Shadow strength</strong> increases darkness and <strong>softness</strong> blurs shadow boundaries. <strong>Ambient light</strong> fills unlit areas; <strong>reflection strength</strong> affects glossy highlights.</li>
+<li><strong>Volumetric spotlight (Pro)</strong> makes beams visible in the air. Wider/stronger volumetrics can increase GPU cost and create unwanted haze; raise one parameter at a time.</li>
+</ul>
+<h2 id="effects">Effects<a class="anchor" href="#effects" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Basic and Pro both support standard post-processing; <strong>Beautify/HBAO</strong> and separate advanced effects are <strong>Pro-only</strong>.</p>
 <div class="table-wrap"><table>
 <thead>
 <tr>
-<th>Option</th>
-<th>When to use it</th>
+<th>Effect</th>
+<th>What changing it does</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Color</strong></td>
-<td>A background in the color you want</td>
+<td><strong>Anti-aliasing</strong></td>
+<td>Smooths jagged edges. FXAA is cheap but can soften details; SMAA preserves some edges; TAA can leave motion trails.</td>
 </tr>
 <tr>
-<td><strong>Green · Blue</strong></td>
-<td>When you remove it with a chroma key in your streaming software</td>
+<td><strong>Bloom intensity / threshold / diffusion</strong></td>
+<td>Intensity brightens glow; a higher <strong>threshold</strong> limits it to only the brightest highlights; diffusion spreads the halo over a larger area.</td>
 </tr>
 <tr>
-<td><strong>Transparent</strong></td>
-<td>When you send it over Spout2 without a background</td>
+<td><strong>Exposure, contrast, saturation</strong></td>
+<td>Overall brightness, separation between dark/light and colour vividness respectively. Reducing saturation towards zero produces monochrome.</td>
 </tr>
 <tr>
-<td><strong>Image</strong></td>
-<td>When you use a picture as the background (zoom in and out, and move it left · right · up · down)</td>
+<td><strong>White balance / tint</strong></td>
+<td>Alters the cool-warm balance or green-magenta cast, especially visible in skin tones.</td>
+</tr>
+<tr>
+<td><strong>Vignette</strong></td>
+<td>Darkens frame edges; strength sets darkness and smoothness sets how slowly it fades into the centre.</td>
+</tr>
+<tr>
+<td><strong>Grain / chromatic aberration</strong></td>
+<td>Adds film-like noise or coloured fringing around edges. Higher settings are visibly more stylised.</td>
+</tr>
+<tr>
+<td><strong>Depth of field</strong></td>
+<td>Keeps the focus distance sharp and blurs foreground/background. Auto face focus tracks the avatar; a <strong>lower f-stop number</strong> produces stronger blur.</td>
+</tr>
+<tr>
+<td><strong>Motion blur</strong></td>
+<td>A greater shutter angle makes motion streaks longer; more samples can smooth them at a GPU cost.</td>
+</tr>
+<tr>
+<td><strong>HBAO (Pro)</strong></td>
+<td>Adds contact shadows in creases; too much creates dirty-looking eyes, noses or folds.</td>
+</tr>
+<tr>
+<td><strong>Beautify (Pro)</strong></td>
+<td>Adjusts overall image appearance; avoid stacking too much with the regular bloom and colour effects.</td>
 </tr>
 </tbody>
 </table></div>
-<div class="gallery">
-<figure><img src="../assets/shots/common/bg-lilac.webp" width="1000" height="900" alt="Image background" loading="lazy" decoding="async"><figcaption>Image background</figcaption></figure>
-<figure><img src="../assets/shots/common/bg-green.webp" width="1000" height="900" alt="Green background" loading="lazy" decoding="async"><figcaption>Green background</figcaption></figure>
-<figure><img src="../assets/shots/common/bg-dark.webp" width="1000" height="900" alt="Solid color background" loading="lazy" decoding="async"><figcaption>Solid color background</figcaption></figure>
-<figure><img src="../assets/shots/common/bg-peach.webp" width="1000" height="900" alt="Image background 2" loading="lazy" decoding="async"><figcaption>Image background 2</figcaption></figure>
-</div>
-<h2 id="effects">Effects<a class="anchor" href="#effects" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><img src="../assets/shots/en/scene-fx.webp" width="960" height="900" alt="Effects" loading="lazy" decoding="async"><figcaption>Effects</figcaption></figure>
-<ul>
-<li><strong>Bloom</strong> — Bright areas glow softly.</li>
-<li><strong>Color grading</strong> — Adjust brightness, contrast, saturation and color temperature.</li>
-<li><strong>Depth of field</strong> — Blurs the background so the avatar stands out. Turn on <strong>Focus on the face</strong> to keep the focus on the face as it moves.</li>
-<li><strong>Vignette · Film grain</strong> — Add atmosphere to the edges of the image and to its texture.</li>
-<li>You can also turn on <strong>Chromatic aberration · Motion blur · Anti-aliasing</strong> and more, and you can type a number directly into any slider.</li>
-</ul>
-</div>
-<h2 id="shaders">Shaders<a class="anchor" href="#shaders" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>The shaders on your avatar are shown as they are. We've confirmed this with major shaders such as Poiyomi and lilToon. AudioLink and mirror detection are not supported.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="07-motion.html"><span>Previous</span>Motion</a><a class="next" href="09-output.html"><span>Next</span>Output</a></nav><p class="updated">Last updated: 2026-10-12</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#lighting">Lighting</a></li><li><a href="#light-groups-and-card-order">Light groups and card order</a></li><li><a href="#save-and-restore-scenes">Save and restore scenes</a></li><li><a href="#background">Background</a></li><li><a href="#effects">Effects</a></li><li><a href="#shaders">Shaders</a></li></ul></nav>
+<p>For transparent broadcasts, test bloom, depth of field and vignette in OBS: they may affect the rendered edge when composited against a different background. Restore individual effects with their reset controls if necessary.</p>
+<p><a href="09-output.html">Next: Output and remote sessions →</a></p></article><nav class="pager" aria-label="Pager"><a class="prev" href="07-motion.html"><span>Previous</span>Motion</a><a class="next" href="09-output.html"><span>Next</span>Output: OBS, NDI, screen sharing and remote sessions</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#saving-and-switching-studios">Saving and switching studios</a></li><li><a href="#avatars-and-multi-avatar-control-pro">Avatars and multi-avatar control (Pro)</a></li><li><a href="#studio-cameras-pro-position-and-aim-are-independent">Studio cameras (Pro): position and aim are independent</a></li><li><a href="#rooms-props-and-attachment">Rooms, props and attachment</a></li><li><a href="#background">Background</a></li><li><a href="#lighting-and-light-follow-behavior">Lighting and light-follow behavior</a></li><li><a href="#effects">Effects</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

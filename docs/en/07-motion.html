@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Motion — AVATAR LIVE</title>
-<meta name="description" content="Set how the face, body and hands move. Settings are saved separately for each avatar.">
+<meta name="description" content="A connected iPhone does not automatically mean every frame contains fresh face tracking. If the face freezes, inspect actual source tracking, stale/re…">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/07-motion.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/07-motion.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/07-motion.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/07-motion.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/07-motion.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="Motion — AVATAR LIVE">
-<meta property="og:description" content="Set how the face, body and hands move. Settings are saved separately for each avatar.">
+<meta property="og:description" content="A connected iPhone does not automatically mean every frame contains fresh face tracking. If the face freezes, inspect actual source tracking, stale/re…">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/07-motion.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,8 +42,74 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html" aria-current="page">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html" aria-current="page">Motion</a></li><li><a href="08-scene.html">Studio: scenes, cameras, lights and effects</a></li><li><a href="09-output.html">Output: OBS, NDI, screen sharing and remote sessions</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="7-motion">7. Motion<a class="anchor" href="#7-motion" aria-hidden="true" tabindex="-1">#</a></h1>
+<h2 id="v200-fine-tuning-motion-and-understanding-the-sliders">v2.0.0: fine-tuning motion and understanding the sliders<a class="anchor" href="#v200-fine-tuning-motion-and-understanding-the-sliders" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><img src="../assets/shots/en/v45-motion.webp" srcset="../assets/shots/en/v45-motion-960.webp 960w, ../assets/shots/en/v45-motion.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 Motion page" loading="lazy" decoding="async"><figcaption>v45 Motion page</figcaption></figure>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Lower / Off</th>
+<th>Higher / On</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Face sensitivity</strong></td>
+<td>Subtle expressions may barely show; noise is reduced</td>
+<td>Small changes become obvious but can be over-exaggerated</td>
+</tr>
+<tr>
+<td><strong>Expression smoothing</strong></td>
+<td>Eyes/mouth respond rapidly, sometimes jittery</td>
+<td>Motion blends gently, but quick blinks and syllables may lag</td>
+</tr>
+<tr>
+<td><strong>Lip-sync strength</strong></td>
+<td>Smaller mouth opening</td>
+<td>Larger mouth movement, possibly unnatural on some models</td>
+</tr>
+<tr>
+<td><strong>Blink sensitivity / automatic blinking</strong></td>
+<td>Reliance on captured eye input</td>
+<td>More response to small closures or idle blinks</td>
+</tr>
+<tr>
+<td><strong>Webcam arms Dynamic / Legacy</strong></td>
+<td>Legacy preserves behavior closer to 1.1.6</td>
+<td>Dynamic adds newer arm/hand distance estimation, with results depending on camera setup</td>
+</tr>
+<tr>
+<td><strong>Arm/hand smoothing</strong></td>
+<td>Immediate gestures but more tracking noise</td>
+<td>Less shake, more delay after rapid gestures</td>
+</tr>
+<tr>
+<td><strong>Hand depth estimation (experimental)</strong></td>
+<td>More stable flat/webcam motion</td>
+<td>Tries to follow a hand reaching toward the camera but can distort the arm or wrist</td>
+</tr>
+<tr>
+<td><strong>AFK entry wait</strong></td>
+<td>Short loss quickly activates the waiting pose</td>
+<td>Ignores brief interruptions and waits longer before entering AFK</td>
+</tr>
+<tr>
+<td><strong>AFK transition / return duration</strong></td>
+<td>Snaps to/from waiting expression and pose</td>
+<td>Smooth transitions, but normal tracking takes longer to reappear</td>
+</tr>
+<tr>
+<td><strong>Idle breathing/blink</strong></td>
+<td>Character rests still while idle</td>
+<td>Adds small movements without tracking input</td>
+</tr>
+</tbody>
+</table></div>
+<figure><img src="../assets/shots/en/v45-motion-expanded.webp" srcset="../assets/shots/en/v45-motion-expanded-960.webp 960w, ../assets/shots/en/v45-motion-expanded.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 Motion controls" loading="lazy" decoding="async"><figcaption>v45 Motion controls</figcaption></figure>
+<p>A connected iPhone does not automatically mean every frame contains fresh face tracking. If the face freezes, inspect actual source tracking, stale/repeated values, AFK timing and front calibration. Pose-specific <strong>Face, Head, Arms, Fingers and Torso</strong> switches are independent: <strong>Head Off + Face On</strong> keeps the head pose but allows facial expressions to animate.</p>
+<p><strong>Gaze target (Camera/Person/None)</strong> controls whom the avatar watches. Raising look strength makes eyes/head pursue the target more strongly, while lowering it lets incoming tracking dominate. Experimental Look At IK may be disabled by default; turn it off if the head turns too far. Saved manual poses may take precedence over automatically selected AFK poses.</p>
 <p>Set how the face, body and hands move. Settings are saved separately for each avatar.</p>
 <h2 id="face-tracking">Face tracking<a class="anchor" href="#face-tracking" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
@@ -150,8 +216,8 @@
 </div>
 <blockquote class="callout privacy"><p>Keyboard input is used only to move the avatar's hands. The characters you type are not saved or sent.</p>
 <p>💡 Camera detection of the tongue and cheek puff is an experimental feature.</p>
-</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>Previous</span>Devices</a><a class="next" href="08-scene.html"><span>Next</span>Scene</a></nav><p class="updated">Last updated: 2026-10-12</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#face-tracking">Face tracking</a></li><li><a href="#how-expressions-move">How expressions move</a></li><li><a href="#automatic-face-setup">Automatic face setup</a></li><li><a href="#face-adjustment">Face adjustment</a></li><li><a href="#blink--mouth">Blink · Mouth</a></li><li><a href="#eye-gaze-and-eyes-on-the-camera">Eye gaze and Eyes on the camera</a></li><li><a href="#body">Body</a></li><li><a href="#afk-timing-and-tracking-loss">AFK timing and tracking loss</a></li><li><a href="#webcam-hand-depth-estimation-experimental">Webcam hand-depth estimation (experimental)</a></li><li><a href="#hands--desk">Hands · Desk</a></li></ul></nav>
+</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>Previous</span>Devices</a><a class="next" href="08-scene.html"><span>Next</span>Studio: scenes, cameras, lights and effects</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#v200-fine-tuning-motion-and-understanding-the-sliders">v2.0.0: fine-tuning motion and understanding the sliders</a></li><li><a href="#face-tracking">Face tracking</a></li><li><a href="#how-expressions-move">How expressions move</a></li><li><a href="#automatic-face-setup">Automatic face setup</a></li><li><a href="#face-adjustment">Face adjustment</a></li><li><a href="#blink--mouth">Blink · Mouth</a></li><li><a href="#eye-gaze-and-eyes-on-the-camera">Eye gaze and Eyes on the camera</a></li><li><a href="#body">Body</a></li><li><a href="#afk-timing-and-tracking-loss">AFK timing and tracking loss</a></li><li><a href="#webcam-hand-depth-estimation-experimental">Webcam hand-depth estimation (experimental)</a></li><li><a href="#hands--desk">Hands · Desk</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
