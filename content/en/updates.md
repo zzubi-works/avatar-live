@@ -2,39 +2,28 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
-## 2026/10/15 — v2.0.0 (Update overview)
+## 2026/10/15 — v2.0.0
 
-Avatar Live 2.0.0 expands the studio, avatar collaboration, tracking and output features since 1.1.6. **(Pro)** denotes Pro-only features.
-
-### Studio and cameras
-- The former Scene menu is now **Studio**, bringing scene saves, lighting, objects, rooms, avatars and cameras together.
-- **(Pro)** Save multiple cameras per scene; use cuts, configurable crossfades, director controls, multiview switching and per-camera automatic rules.
-- The app window remains the **scene view**. Broadcast camera output goes to Spout2, NDI, virtual camera, screen sharing and recordings, with an optional small preview.
+- The former Scene menu is now Studio, bringing scene saves, lighting, objects, rooms, avatars and cameras together.
+- (Pro) Save multiple cameras per scene; use cuts, configurable crossfades, director controls, multiview switching and per-camera automatic rules.
+- (Pro) The app window remains the scene view. Broadcast camera output goes to Spout2, NDI, virtual camera, screen sharing and recordings, with an optional small preview.
 - Improved free/orbit camera navigation, camera follow/aim settings, scene thumbnails and search.
-
-### Multiple avatars and remote collaboration (Pro)
-- **(Pro)** Add and control multiple avatars, switch between them or have different rigs mirror the same tracking and expressions.
-- **(Pro)** Host or join a session from Output → Broadcast. Remote avatars appear in your scene with live pose, fingers and expressions; placement sync and host locks are supported.
-- With participant consent, shared avatar files are kept in encrypted temporary session cache and deleted at the end of the session. VRM files flagged against redistribution are not shared.
-
-### SteamVR, VRM and tracking
-- Added SteamVR headset, controller and tracker input with full-body IK, calibration and controller finger controls. **Real-device validation is still pending.**
+- (Pro) Add and control multiple avatars, switch between them or have different rigs mirror the same tracking and expressions.
+- (Pro) Host or join a session from Output → Broadcast. Remote avatars appear in your scene with live pose, fingers and expressions; placement sync and host locks are supported.
+- (Pro) With participant consent, shared avatar files are kept in encrypted temporary session cache and deleted at the end of the session. VRM files flagged against redistribution are not shared.
+- Added SteamVR headset, controller and tracker input with full-body IK, calibration and controller finger controls. Real-device validation is still pending.
 - Added VRM 0.x/1.0 import, spring bones, expressions, lip sync, gaze, posing, tracking and scene saving. Some VRM 0.x models using unsupported shaders cannot be loaded.
 - Improved iPhone, webcam, OpenSeeFace and VMC tracking transitions and lost-tracking recovery; iPhone calibration now occurs three seconds after the first face frame.
-- Webcam arms offer a new **Dynamic** mode and a **Legacy** mode preserving 1.1.6 behavior. Improved finger joints, resting hands, 20 hand poses and pose editing.
+- Webcam arms offer a new Dynamic mode and a Legacy mode preserving 1.1.6 behavior. Improved finger joints, resting hands, 20 hand poses and pose editing.
 - Per-avatar gaze, eye and lip-sync options, idle motions and AFK behavior have been expanded.
-
-### Lighting, effects, output and performance
 - Expanded lighting presets, scene/avatar ownership, bone-attached props, room selection and object editing.
-- **(Pro)** Volumetric spotlights, prop library, Beautify and HBAO effects. Basic retains post-processing.
-- Added **NDI output**. **(Pro)** Added per-camera Spout2, camera overlays, MP4 recording and direct game-plus-avatar recording.
+- (Pro) Volumetric spotlights, prop library, Beautify and HBAO effects. Basic retains post-processing.
+- Added NDI output. (Pro) Added per-camera Spout2, camera overlays, MP4 recording and direct game-plus-avatar recording.
 - Reduced allocations and parallelized PhysBone. In a measured two-avatar 60 fps test, CPU use dropped from ~2.63 to ~1.4 cores (results vary).
-- **Avatar Exporter 1.0.6** aligns more PhysBone behavior with VRChat SDK 3.10.5 and fixes certain avatar bone disabling issues.
-
-### Important notes
+- Avatar Exporter 1.0.6 aligns more PhysBone behavior with VRChat SDK 3.10.5 and fixes certain avatar bone disabling issues.
 - Several features (including camera collisions, screen gaze, Look At IK, multiview, per-camera Spout2, Beautify/HBAO) are experimental or disabled by default.
-- Remote session participants must all use **v2.0.0**. Firewall/port forwarding may be necessary. Pose and expression messages are not encrypted, and protection from malicious clients is not guaranteed. Verify your avatar sharing rights.
-- Real-device tests for SteamVR, NDI receivers and a two-PC session had **not been confirmed** when these notes were compiled.
+- Remote session participants must all use v2.0.0. Firewall/port forwarding may be necessary. Pose and expression messages are not encrypted, and protection from malicious clients is not guaranteed. Verify your avatar sharing rights.
+- Real-device tests for SteamVR, NDI receivers and a two-PC session had not been confirmed when these notes were compiled.
 
 ## 2026/10/12 — v1.1.6
 
