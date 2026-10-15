@@ -30,7 +30,7 @@ def main():
         "vignette": {"Vignette": True, "VignetteIntensity": 0.85, "VignetteSmoothness": 0.65},
         "color": {"ColorGrading": True, "Saturation": -60, "Contrast": 0, "PostExposure": 0, "Temperature": 0, "Tint": 0},
         "pixel": {"Beautify": {"Enabled": True, "Pixelate": True, "PixelateIntensity": 70, "DepthOfField": False, "Blur": False}},
-        "bloom": {"Bloom": True, "BloomIntensity": 2.0, "BloomThreshold": 0.65, "BloomDiffusion": 7},
+        "bloom": {"Bloom": True, "BloomIntensity": 0.5, "BloomThreshold": 0.9, "BloomDiffusion": 5},
         "dof": {"DepthOfField": True, "DofAutoFocus": True, "DofAperture": 2.8, "DofFocalLength": 85},
     }
     records = []
