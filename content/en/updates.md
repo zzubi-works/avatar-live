@@ -2,6 +2,16 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/16 — v2.0.4
+
+- Added passive VMC/ReboCap diagnostics for packet and bone-data stalls, recovery, tracking loss, sudden pose changes and frame delays.
+- Diagnostic details are included in error reports (`Player.log` and `diagnostics.txt`). Tracking motion and IK behavior remain unchanged.
+
+## 2026/10/16 — v2.0.3
+
+- Fixed a VRC Parent Constraint issue where hand-attached props could reuse an old world position after unfreezing while the constraint was inactive and then reactivating it.
+- Individual avatar compatibility still needs to be confirmed; this does not establish that every prop issue is fixed.
+
 ## 2026/10/15 — v2.0.1~v2.0.2
 
 - **v2.0.1:** Fixed mesh visibility synchronization that could incorrectly hide hair and other child meshes on remote avatars.
