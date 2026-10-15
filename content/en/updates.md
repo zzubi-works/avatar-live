@@ -2,6 +2,12 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/15 — v2.0.1
+
+- Fixed an issue where hair and other meshes on remote avatars could disappear during multiplayer sessions.
+- Fixed mesh visibility synchronization incorrectly hiding child objects on other participants' PCs.
+- **Important:** All session participants must update to v2.0.1 or later for this fix to take effect.
+
 ## 2026/10/15 — v2.0.0
 
 - The former Scene menu is now Studio, bringing scene saves, lighting, objects, rooms, avatars and cameras together.
@@ -24,7 +30,7 @@ Changes in each Avatar Live release, starting with the latest update.
 - Reduced allocations and parallelized PhysBone. In a measured two-avatar 60 fps test, CPU use dropped from ~2.63 to ~1.4 cores (results vary).
 - Avatar Exporter 1.0.6 aligns more PhysBone behavior with VRChat SDK 3.10.5 and fixes certain avatar bone disabling issues.
 - Several features (including camera collisions, screen gaze, Look At IK, multiview, per-camera Spout2, Beautify/HBAO) are experimental or disabled by default.
-- Remote session participants must all use v2.0.0. Firewall/port forwarding may be necessary. Pose and expression messages are not encrypted, and protection from malicious clients is not guaranteed. Verify your avatar sharing rights.
+- For the latest multiplayer mesh-visibility fix, all remote session participants should use v2.0.1 or later. Firewall/port forwarding may be necessary. Pose and expression messages are not encrypted, and protection from malicious clients is not guaranteed. Verify your avatar sharing rights.
 - A real two-PC remote session connection has been tested. SteamVR devices and different NDI receivers may still require environment-specific verification; see the updated guide for OBS setup, port forwarding and the limits of session-data encryption.
 
 ## 2026/10/12 — v1.1.6
