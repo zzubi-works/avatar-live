@@ -1,24 +1,24 @@
 # 5. Avatar menu
 
-## v2.0.0: what each avatar menu control really changes
+## what each avatar menu control really changes
 
-![The v45 avatar menu](img/v45-menu.png)
+![The avatar menu](img/v45-menu.png)
 
 | Control | Effect and how to use it |
 |---|---|
-| **Toggle** | First press enables a parameter, second disables it. Typical outfit and accessory visibility depends on the avatar creator's Animator wiring. |
-| **Button (while pressed)** | Activates only while held and returns after release. This is intentionally different from a toggle. |
-| **Radial** | Adjusts a continuous 0–100% value. It could control expression weight, clothing movement or another parameter defined by the avatar creator; halfway sends an intermediate value. |
-| **Two/Four-Axis Puppet** | Moves two or four parameter directions together. The centre is the neutral value; the extremes and axes depend on the avatar's original configuration. |
-| **Sub Menu** | Opens more controls belonging to the same avatar, not another actor. |
-| **Favorite / Quick Action** | Another way to trigger an existing action without navigating nested menus; it does not create a new parameter. |
-| **Hold / Toggle hotkey** | Hold works only while the key is down; Toggle remains active until the next press. Global hotkeys can work over another app, so avoid game conflicts. |
+| Toggle | First press enables a parameter, second disables it. Typical outfit and accessory visibility depends on the avatar creator's Animator wiring. |
+| Button (while pressed) | Activates only while held and returns after release. This is intentionally different from a toggle. |
+| Radial | Adjusts a continuous 0–100% value. It could control expression weight, clothing movement or another parameter defined by the avatar creator; halfway sends an intermediate value. |
+| Two/Four-Axis Puppet | Moves two or four parameter directions together. The centre is the neutral value; the extremes and axes depend on the avatar's original configuration. |
+| Sub Menu | Opens more controls belonging to the same avatar, not another actor. |
+| Favorite / Quick Action | Another way to trigger an existing action without navigating nested menus; it does not create a new parameter. |
+| Hold / Toggle hotkey | Hold works only while the key is down; Toggle remains active until the next press. Global hotkeys can work over another app, so avoid game conflicts. |
 
-**Hand gestures** can be different for each hand. Automatic finger input from a webcam, VMC gloves or SteamVR controllers can override a manually selected gesture. If it keeps switching back, check [finger tracking sources](06-devices.md) and [automatic expressions](07-motion.md).
+Hand gestures can be different for each hand. Automatic finger input from a webcam, VMC gloves or SteamVR controllers can override a manually selected gesture. If it keeps switching back, check [finger tracking sources](06-devices.md) and [automatic expressions](07-motion.md).
 
-**My Expressions** and **Pose library** are saved per avatar. A static **.anim** applies fixed shape-key values; a multi-frame **.anim** changes them over time according to its animation/loop settings. Saved poses can independently allow or block **Face, Head, Arms, Fingers and Torso** tracking, enabling a fixed body pose with a moving face.
+My Expressions and Pose library are saved per avatar. A static .anim applies fixed shape-key values; a multi-frame .anim changes them over time according to its animation/loop settings. Saved poses can independently allow or block Face, Head, Arms, Fingers and Torso tracking, enabling a fixed body pose with a moving face.
 
-You use your avatar's **Expressions menu** from VRChat just as it is. Outfit and hair toggles, expression buttons, Radials and Puppets all work exactly as they do in VRChat.
+You use your avatar's Expressions menu from VRChat just as it is. Outfit and hair toggles, expression buttons, Radials and Puppets all work exactly as they do in VRChat.
 
 ## Expressions menu
 
@@ -26,10 +26,10 @@ You use your avatar's **Expressions menu** from VRChat just as it is. Outfit and
 
 ![Avatar menu](img/menu.png)
 
-- **Toggle** — Switches on and off each time you press it.
-- **Button** — Stays on while you hold it.
-- **Sub Menu** — Opens a submenu. Use **Back** to return.
-- **Radial · Puppet** — Set a value with a slider or a pad.
+- Toggle — Switches on and off each time you press it.
+- Button — Stays on while you hold it.
+- Sub Menu — Opens a submenu. Use Back to return.
+- Radial · Puppet — Set a value with a slider or a pad.
 
 </div>
 
@@ -39,9 +39,9 @@ You use your avatar's **Expressions menu** from VRChat just as it is. Outfit and
 
 ![Item right-click menu](img/menu-ctx.png)
 
-- **Add to Quick Actions** — Places it as a button on the bottom toolbar.
-- **Set hotkey…** — Lets you turn it on with a single key, even while you're in a game.
-- **Favorite** — Use it right away from the top of the menu.
+- Add to Quick Actions — Places it as a button on the bottom toolbar.
+- Set hotkey… — Lets you turn it on with a single key, even while you're in a game.
+- Favorite — Use it right away from the top of the menu.
 
 </div>
 
@@ -52,7 +52,7 @@ You use your avatar's **Expressions menu** from VRChat just as it is. Outfit and
 ![Hand gestures](img/gestures.png)
 
 - Choose left-hand and right-hand gestures to show the avatar's gesture expressions.
-- Turn on **Gestures from the webcam's hands**, and your own hand shapes become the gestures.
+- Turn on Gestures from the webcam's hands, and your own hand shapes become the gestures.
 
 </div>
 
@@ -72,7 +72,7 @@ Click headings for Poses, My expressions and Hand gestures to expand their cards
 
 ## Reset to defaults
 
-Click **Avatar parameters › Reset to defaults** to return the menu values to the avatar's defaults. Values that are saved, such as outfit state, carry over to the next launch.
+Click Avatar parameters › Reset to defaults to return the menu values to the avatar's defaults. Values that are saved, such as outfit state, carry over to the next launch.
 
 ## Quick Actions
 
@@ -82,14 +82,14 @@ Turn actions you use often into buttons or keys. You can add menu items, gesture
 
 View your avatar's objects as a tree, just like in Unity, and change them right there.
 
-- **Hierarchy** — Shows the avatar's objects as a tree. Use the checkboxes to turn them on and off. The eye icon hides an object from view while leaving it on.
-- **Meshes** — Shows every mesh in one list. Use search to find one quickly.
-- Click a mesh to adjust its **shape keys** one by one in the side panel. Values you set yourself take priority over face tracking and avatar animations.
-- **Reset all** at the top returns every mesh to the avatar's original state, and **Collapse all** closes the tree.
+- Hierarchy — Shows the avatar's objects as a tree. Use the checkboxes to turn them on and off. The eye icon hides an object from view while leaving it on.
+- Meshes — Shows every mesh in one list. Use search to find one quickly.
+- Click a mesh to adjust its shape keys one by one in the side panel. Values you set yourself take priority over face tracking and avatar animations.
+- Reset all at the top returns every mesh to the avatar's original state, and Collapse all closes the tree.
 
 ## Reset
 
 | | Reset | Reset everything |
 |---|---|---|
 | What it does | Returns tracking, hand poses and PhysBones to their initial state | All of that, plus outfits · position · camera, back to their initial state |
-| How | **⟲** at the top | Right-click **⟲**, or **Settings › General** |
+| How | ⟲ at the top | Right-click ⟲, or Settings › General |

@@ -9,6 +9,7 @@ shots/common/<name>.png       -> docs/assets/shots/common/<name>[-960].webp
 assets/                       -> docs/assets/ (styles, script, brand, video)
 """
 import html
+import argparse
 import json
 import os
 import re
@@ -33,7 +34,7 @@ LANGS = {
     "zh": {"name": "简体中文", "html": "zh-Hans", "shots": "zh-Hans", "locale": "zh_CN", "preconnect": ["https://fonts.googleapis.com", "https://fonts.gstatic.com"], "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap"},
 }
 GUIDE = ["01-getting-started", "02-avatar-exporter", "03-launcher-and-library", "04-main-window", "05-avatar-menu",
-         "06-devices", "07-motion", "08-scene", "09-output", "10-settings", "11-pro-features", "12-troubleshooting",
+         "06-devices", "07-motion", "08-scene", "08-camera-effects", "09-output", "09-session", "10-settings", "11-pro-features", "12-troubleshooting",
          "13-license"]
 UPDATES = ["updates"]
 UPDATE_LABEL = {"ko": "업데이트 내역", "en": "Updates", "ja": "更新履歴", "zh": "更新记录"}
@@ -90,6 +91,7 @@ def slug(text):
 # ---------------------------------------------------------------- images ----
 
 IMAGES = {}  # "<folder>/<name>" -> (width, height)
+SHOT_PREFIX = ""
 
 
 def build_images():
@@ -105,6 +107,8 @@ def convert(src, folder):
         return
     for f in sorted(os.listdir(src)):
         if not f.endswith(".png"):
+            continue
+        if SHOT_PREFIX and not f.startswith(SHOT_PREFIX):
             continue
         name = f[:-4]
         im = Image.open(os.path.join(src, f)).convert("RGB")
@@ -124,8 +128,8 @@ def img_tag(folder, name, alt, cls="", eager=False, sizes="(max-width: 900px) 10
     srcset = ""
     if w > 1000:
         srcset = ' srcset="../assets/shots/%s/%s-960.webp 960w, %s %dw" sizes="%s"' % (folder, name, src, w, sizes)
-    return '<img%s src="%s"%s width="%d" height="%d" alt="%s" %s decoding="async">' % (
-        ' class="%s"' % cls if cls else "", src, srcset, w, h, esc(alt), 'fetchpriority="high"' if eager else 'loading="lazy"')
+    return '<img%s src="%s"%s width="%d" height="%d" style="--image-width:%dpx" alt="%s" %s decoding="async">' % (
+        ' class="%s"' % cls if cls else "", src, srcset, w, h, w, esc(alt), 'fetchpriority="high"' if eager else 'loading="lazy"')
 
 
 def poster_size(name):
@@ -165,6 +169,9 @@ def nav_title(title):
 
 
 def render_md(lang, text):
+    # Guides use plain button names. Strip obsolete Markdown emphasis even
+    # inside HTML wrappers, where the Markdown parser would leave literal **.
+    text = text.replace("**", "")
     text = re.sub(r"\]\(([\w\-]+)\.md(#[^)]*)?\)", lambda m: "](" + m.group(1) + ".html" + (m.group(2) or "") + ")", text)
     md = markdown.Markdown(extensions=["tables", "fenced_code", "sane_lists", "md_in_html"])
     body = md.convert(text)
@@ -190,18 +197,38 @@ def render_md(lang, text):
         if not mm:
             raise SystemExit("bad image " + src)
         folder = "common" if mm.group(1) else lang
-        return '<figure>%s<figcaption>%s</figcaption></figure>' % (img_tag(folder, mm.group(2), alt), esc(alt))
+        image_path = "../assets/shots/%s/%s.webp" % (folder, mm.group(2))
+        return '<figure><a class="zoomable" href="%s" target="_blank" rel="noopener">%s</a><figcaption>%s</figcaption></figure>' % (image_path, img_tag(folder, mm.group(2), alt), esc(alt))
 
     body = re.sub(r'<p><img alt="([^"]*)" src="([^"]+)" ?/?></p>', figure, body)
-    body = body.replace("<table>", '<div class="table-wrap"><table>').replace("</table>", "</table></div>")
+    def readable_table(match):
+        table = match.group(0)
+        # A long settings name must never be squeezed by a long explanation.
+        # Keep the label intact; allow horizontal scrolling on small screens.
+        two_columns = len(re.findall(r"<th>", table)) == 2
+        edition = "Basic" in table and "Pro" in table and len(re.findall(r"<th>", table)) == 3
+        classes = "table-wrap settings-table" if two_columns else "table-wrap edition-table" if edition else "table-wrap"
+        return '<div class="%s" tabindex="0">' % classes + table + '</div>'
+
+    body = re.sub(r"<table>.*?</table>", readable_table, body, flags=re.S)
     body = re.sub(r"<blockquote>\s*<p>(💡|🔒|⚠️)\s*", lambda m: '<blockquote class="callout %s"><p>' % {"💡": "tip", "🔒": "privacy", "⚠️": "warn"}[m.group(1)], body)
     return body, toc
+
+
+def has_page(lang, page):
+    return page == "index.html" or os.path.isfile(os.path.join(ROOT, "content", lang, page.replace(".html", ".md")))
+
+
+def language_page(lang, page):
+    if has_page(lang, page):
+        return page
+    return {"08-camera-effects.html": "08-scene.html", "09-session.html": "09-output.html"}.get(page, "01-getting-started.html")
 
 
 def head(lang, title, desc, page, og, extra=""):
     L = LANGS[lang]
     pre = "".join('<link rel="preconnect" href="%s" crossorigin>' % u for u in L["preconnect"])
-    alts = "".join('<link rel="alternate" hreflang="%s" href="%s/%s/%s">' % (LANGS[k]["html"], BASE, k, page) for k in LANGS)
+    alts = "".join('<link rel="alternate" hreflang="%s" href="%s/%s/%s">' % (LANGS[k]["html"], BASE, k, page) for k in LANGS if has_page(k, page))
     alts += '<link rel="alternate" hreflang="x-default" href="%s/">' % BASE
     return """<!doctype html>
 <html lang="{lang}">
@@ -241,7 +268,7 @@ def header(lang, page, home, is_home):
     navl = "".join('<a href="%s%s">%s</a>' % (pre, h, esc(t)) for h, t in links)
     navl += '<a href="01-getting-started.html"%s>%s</a>' % (' aria-current="page"' if page[:-5] in GUIDE + LEGAL else "", esc(n["docs"]))
     navl += '<a href="updates.html"%s>%s</a>' % (' aria-current="page"' if page == "updates.html" else "", esc(UPDATE_LABEL[lang]))
-    langs = "".join('<a href="../%s/%s" lang="%s"%s>%s</a>' % (k, page, LANGS[k]["html"], ' aria-current="true"' if k == lang else "", v["name"])
+    langs = "".join('<a href="../%s/%s" lang="%s"%s>%s</a>' % (k, language_page(k, page), LANGS[k]["html"], ' aria-current="true"' if k == lang else "", v["name"])
                     for k, v in LANGS.items())
     return """<a class="skip" href="#main">{skip}</a>
 <header class="site-header" data-header>
@@ -441,6 +468,10 @@ location.replace(t+'/index.html');
 
 
 def main():
+    global SHOT_PREFIX
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--shots-prefix", default="", help="Convert only matching new source screenshots; keep other committed WebP images")
+    SHOT_PREFIX = parser.parse_args().shots_prefix
     IMAGES.clear()
     # The original PNG sources are local-only. Keep the committed WebP shots
     # when rebuilding from a fresh clone, then replace them with any newly

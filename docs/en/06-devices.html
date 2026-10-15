@@ -42,12 +42,12 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html" aria-current="page">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio: scenes, cameras, lights and effects</a></li><li><a href="09-output.html">Output: OBS, NDI, screen sharing and remote sessions</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html" aria-current="page">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="6-devices">6. Devices<a class="anchor" href="#6-devices" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="v200-which-device-actually-controls-each-body-part">v2.0.0: which device actually controls each body part?<a class="anchor" href="#v200-which-device-actually-controls-each-body-part" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/en/v45-input.webp" srcset="../assets/shots/en/v45-input-960.webp 960w, ../assets/shots/en/v45-input.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 Devices" loading="lazy" decoding="async"><figcaption>v45 Devices</figcaption></figure>
-<p>Tracking sources are chosen <strong>per body part</strong>. For example, iPhone can drive the face, the webcam the arms, and VMC a tracked pelvis and legs. If a part accidentally remains set to VMC without a valid signal, that part may freeze even though the webcam is connected.</p>
-<div class="table-wrap"><table>
+<h2 id="which-device-actually-controls-each-body-part">which device actually controls each body part?<a class="anchor" href="#which-device-actually-controls-each-body-part" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/en/v45-input.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/v45-input.webp" srcset="../assets/shots/en/v45-input-960.webp 960w, ../assets/shots/en/v45-input.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="Devices" loading="lazy" decoding="async"></a><figcaption>Devices</figcaption></figure>
+<p>Tracking sources are chosen per body part. For example, iPhone can drive the face, the webcam the arms, and VMC a tracked pelvis and legs. If a part accidentally remains set to VMC without a valid signal, that part may freeze even though the webcam is connected.</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>Control</th>
@@ -56,85 +56,85 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>Webcam quality / Balanced / Eco</strong></td>
+<td>Webcam quality / Balanced / Eco</td>
 <td>Higher quality can improve detection at a CPU cost; Eco reduces computation but fast fingers/body motion may be less precise.</td>
 </tr>
 <tr>
-<td><strong>Hand jitter smoothing</strong></td>
+<td>Hand jitter smoothing</td>
 <td>More smoothing reduces small shakes but creates more follow lag; less smoothing feels responsive but noisy.</td>
 </tr>
 <tr>
-<td><strong>Webcam full body</strong></td>
+<td>Webcam full body</td>
 <td>Enables upper-body/leg estimates when visible. Hidden desk legs may fall back to estimated or posed positions.</td>
 </tr>
 <tr>
-<td><strong>Finger-joint tracking</strong></td>
+<td>Finger-joint tracking</td>
 <td>Attempts to move each finger joint; small or occluded hands can make results unstable.</td>
 </tr>
 <tr>
-<td><strong>iPhone face input</strong></td>
+<td>iPhone face input</td>
 <td>iFacialMocap/FaceMotion3D provide ARKit facial channels and head movement. Remain facing forward briefly: first-face calibration starts about 3 seconds after a valid frame.</td>
 </tr>
 <tr>
-<td><strong>VMC per-part source</strong></td>
+<td>VMC per-part source</td>
 <td>Lets external trackers or gloves control selected body parts. Check actual limb movement and T-pose alignment, not just packet counts.</td>
 </tr>
 <tr>
-<td><strong>SteamVR device selection</strong></td>
+<td>SteamVR device selection</td>
 <td>Maps headset/controllers/body trackers. Confirm correct SteamVR device tracking before calibrating the Avatar Live body.</td>
 </tr>
 <tr>
-<td><strong>Microphone noise gate</strong></td>
+<td>Microphone noise gate</td>
 <td>Higher rejects more background sound but may ignore quiet speech; lower is responsive but might react to keyboard noise.</td>
 </tr>
 </tbody>
 </table></div>
-<figure><img src="../assets/shots/en/v45-devices-advanced.webp" srcset="../assets/shots/en/v45-devices-advanced-960.webp 960w, ../assets/shots/en/v45-devices-advanced.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 Advanced device controls" loading="lazy" decoding="async"><figcaption>v45 Advanced device controls</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/en/v45-devices-advanced.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/v45-devices-advanced.webp" srcset="../assets/shots/en/v45-devices-advanced-960.webp 960w, ../assets/shots/en/v45-devices-advanced.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" style="--image-width:1200px" alt="Advanced device controls" loading="lazy" decoding="async"></a><figcaption>Advanced device controls</figcaption></figure>
 <p>Recommended order: confirm device connections → choose each part's source → calibrate front/T-pose → set lost-tracking recovery/smoothing → check motion on the real broadcast camera. If two sources try to move one joint, disable the unintended controller. VRM 0.x/1.0 import is supported, but some unsupported 0.x shaders cannot be loaded. Respect the VRM and accessory creator's terms, especially in sessions.</p>
 <h2 id="webcam-and-microphone">Webcam and microphone<a class="anchor" href="#webcam-and-microphone" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/en/devices.webp" width="960" height="900" alt="Devices page" loading="lazy" decoding="async"><figcaption>Devices page</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/en/devices.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/devices.webp" width="960" height="900" style="--image-width:960px" alt="Devices page" loading="lazy" decoding="async"></a><figcaption>Devices page</figcaption></figure>
 <ul>
-<li>Turn on the <strong>Webcam</strong> switch to start face and hand tracking.</li>
+<li>Turn on the Webcam switch to start face and hand tracking.</li>
 <li>Choose the webcam to use from the camera list.</li>
-<li><strong>Recenter</strong> — Takes the direction your face is pointing now as straight ahead.</li>
-<li><strong>Tracking quality</strong> — When you use it alongside a game, we recommend <strong>Balanced</strong> or <strong>Eco</strong>.</li>
-<li>Turn on the <strong>Microphone</strong> switch, and the mouth moves when you speak.</li>
-<li><strong>Noise gate</strong> — Keeps the mouth still for noise such as keyboard sounds.</li>
-<li><strong>Detect background noise</strong> — Click the button while you stay quiet, and the noise level is set automatically.</li>
+<li>Recenter — Takes the direction your face is pointing now as straight ahead.</li>
+<li>Tracking quality — When you use it alongside a game, we recommend Balanced or Eco.</li>
+<li>Turn on the Microphone switch, and the mouth moves when you speak.</li>
+<li>Noise gate — Keeps the mouth still for noise such as keyboard sounds.</li>
+<li>Detect background noise — Click the button while you stay quiet, and the noise level is set automatically.</li>
 </ul>
 </div>
 <h2 id="tracking-sources">Tracking sources<a class="anchor" href="#tracking-sources" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/en/sources.webp" width="960" height="900" alt="Tracking sources" loading="lazy" decoding="async"><figcaption>Tracking sources</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/en/sources.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/sources.webp" width="960" height="900" style="--image-width:960px" alt="Tracking sources" loading="lazy" decoding="async"></a><figcaption>Tracking sources</figcaption></figure>
 <ul>
 <li>For each part (face, mouth, head, eyes, arms, hands, fingers, body), choose what moves it.</li>
-<li>You can mix <strong>Webcam</strong>, <strong>iPhone</strong>, <strong>VMC</strong> and <strong>Ultraleap</strong> (hands) part by part. For example, the face can come from your iPhone, the body from full-body trackers and the hands from the webcam.</li>
-<li><strong>Face engine</strong> — Choose a webcam engine or a face app (iPhone · VMC). Each device's settings appear under the parts that use it.</li>
-<li>With <strong>Mouth</strong> set to <strong>Face + mic</strong>, the mouth follows your voice while you speak and your mouth shape the rest of the time.</li>
-<li><strong>Hand steadiness</strong> — Keeps your hands and fingers from jittering while you hold still.</li>
+<li>You can mix Webcam, iPhone, VMC and Ultraleap (hands) part by part. For example, the face can come from your iPhone, the body from full-body trackers and the hands from the webcam.</li>
+<li>Face engine — Choose a webcam engine or a face app (iPhone · VMC). Each device's settings appear under the parts that use it.</li>
+<li>With Mouth set to Face + mic, the mouth follows your voice while you speak and your mouth shape the rest of the time.</li>
+<li>Hand steadiness — Keeps your hands and fingers from jittering while you hold still.</li>
 </ul>
 </div>
 <h2 id="full-body--finger-joints-webcam">Full body · Finger joints (webcam)<a class="anchor" href="#full-body--finger-joints-webcam" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li>Set <strong>Body</strong> to the webcam, and a <strong>Full body</strong> switch appears. Turn it on, and the avatar follows the torso and legs the camera can see, with <strong>Sitting · Standing · Legs tracked · Legs estimated</strong> shown beside it.</li>
+<li>Set Body to the webcam, and a Full body switch appears. Turn it on, and the avatar follows the torso and legs the camera can see, with Sitting · Standing · Legs tracked · Legs estimated shown beside it.</li>
 <li>When your legs aren't visible, such as at a desk, your shoulder movement alone tilts and turns the upper body. Legs that can't be seen stay in the avatar's pose.</li>
-<li>Set <strong>Fingers</strong> to the webcam, and a <strong>Finger joints</strong> switch appears. Turn it on, and the camera follows the bend of each finger joint, the spread of the fingers and the thumb.</li>
+<li>Set Fingers to the webcam, and a Finger joints switch appears. Turn it on, and the camera follows the bend of each finger joint, the spread of the fingers and the thumb.</li>
 </ul>
 <h2 id="receiving-over-vmc-full-body-trackers--gloves--other-apps">Receiving over VMC (full-body trackers · gloves · other apps)<a class="anchor" href="#receiving-over-vmc-full-body-trackers--gloves--other-apps" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="steps">
 <ol>
 <li>In the sending app (a full-body tracker app, a glove app, a motion capture app and so on), turn on VMC sending and send to this PC.</li>
-<li>In <strong>Tracking sources</strong>, set the source to <strong>VMC</strong> for the parts you want to receive over VMC. Other parts can stay on the webcam · iPhone.</li>
-<li>In <strong>VMC settings</strong>, check how many bones are being received and that data is coming in.</li>
-<li>If the pose is off, click <strong>T-pose</strong> or <strong>Align</strong>. Use <strong>Reset</strong> to undo it.</li>
+<li>In Tracking sources, set the source to VMC for the parts you want to receive over VMC. Other parts can stay on the webcam · iPhone.</li>
+<li>In VMC settings, check how many bones are being received and that data is coming in.</li>
+<li>If the pose is off, click T-pose or Align. Use Reset to undo it.</li>
 </ol>
 </div>
 <ul>
 <li>Fingers come through as they are, right down to the rotation of each joint, the spread and the thumb.</li>
 <li>If the input drops while you're receiving arms over VMC, the arms return to the desk (keyboard · mouse) pose.</li>
 </ul>
-<blockquote class="callout tip"><p>We've confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the features marked <strong>experimental</strong> (Ultraleap, OSC and so on) to work properly, but we haven't yet been able to test them with every device and app in the developer's environment. If something goes wrong, please let us know with <strong>Settings › Diagnostics › Send an error report</strong>.</p>
+<blockquote class="callout tip"><p>We've confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the features marked experimental (Ultraleap, OSC and so on) to work properly, but we haven't yet been able to test them with every device and app in the developer's environment. If something goes wrong, please let us know with Settings › Diagnostics › Send an error report.</p>
 </blockquote>
 <h2 id="iphone-mirror-mode-and-tracking-loss">iPhone mirror mode and tracking loss<a class="anchor" href="#iphone-mirror-mode-and-tracking-loss" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
@@ -148,16 +148,16 @@
 <div class="steps">
 <ol>
 <li>Connect your iPhone and PC to the same Wi-Fi.</li>
-<li>In <strong>Face engine</strong>, choose <strong>iFacialMocap</strong> or <strong>FaceMotion3D</strong> as the face app, then <strong>Copy</strong> the address under <strong>This PC's addresses</strong>.</li>
-<li>In the iFacialMocap app on your iPhone, go to the gear › <strong>Destination IP address</strong> and enter that address. In FaceMotion3D, set the app's connection settings to send to this PC's address.</li>
+<li>In Face engine, choose iFacialMocap or FaceMotion3D as the face app, then Copy the address under This PC's addresses.</li>
+<li>In the iFacialMocap app on your iPhone, go to the gear › Destination IP address and enter that address. In FaceMotion3D, set the app's connection settings to send to this PC's address.</li>
 <li>Turn on the switch, and the expressions from your iPhone appear on the avatar. How the expressions show depends on the avatar's own setup (see <a href="07-motion.html#how-expressions-move">How expressions move</a>).</li>
-<li>If it doesn't connect, click <strong>Test connection</strong> to check whether data is coming in.</li>
+<li>If it doesn't connect, click Test connection to check whether data is coming in.</li>
 </ol>
 </div>
-<blockquote class="callout tip"><p>You can leave the <strong>iPhone address (optional)</strong> field empty. Fill it in only if you don't use Destination IP address in the iFacialMocap app.</p>
-<p>💡 Turn on <strong>Webcam takes over if it drops</strong>, and the webcam tracks for you for a while when the iPhone connection drops.</p>
+<blockquote class="callout tip"><p>You can leave the iPhone address (optional) field empty. Fill it in only if you don't use Destination IP address in the iFacialMocap app.</p>
+<p>💡 Turn on Webcam takes over if it drops, and the webcam tracks for you for a while when the iPhone connection drops.</p>
 </blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>Previous</span>Avatar menu</a><a class="next" href="07-motion.html"><span>Next</span>Motion</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#v200-which-device-actually-controls-each-body-part">v2.0.0: which device actually controls each body part?</a></li><li><a href="#webcam-and-microphone">Webcam and microphone</a></li><li><a href="#tracking-sources">Tracking sources</a></li><li><a href="#full-body--finger-joints-webcam">Full body · Finger joints (webcam)</a></li><li><a href="#receiving-over-vmc-full-body-trackers--gloves--other-apps">Receiving over VMC (full-body trackers · gloves · other apps)</a></li><li><a href="#iphone-mirror-mode-and-tracking-loss">iPhone mirror mode and tracking loss</a></li><li><a href="#experimental-webcam-hand-depth-estimation">Experimental webcam hand-depth estimation</a></li><li><a href="#face-tracking-with-an-iphone-ifacialmocap--facemotion3d">Face tracking with an iPhone (iFacialMocap · FaceMotion3D)</a></li></ul></nav>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#which-device-actually-controls-each-body-part">which device actually controls each body part?</a></li><li><a href="#webcam-and-microphone">Webcam and microphone</a></li><li><a href="#tracking-sources">Tracking sources</a></li><li><a href="#full-body--finger-joints-webcam">Full body · Finger joints (webcam)</a></li><li><a href="#receiving-over-vmc-full-body-trackers--gloves--other-apps">Receiving over VMC (full-body trackers · gloves · other apps)</a></li><li><a href="#iphone-mirror-mode-and-tracking-loss">iPhone mirror mode and tracking loss</a></li><li><a href="#experimental-webcam-hand-depth-estimation">Experimental webcam hand-depth estimation</a></li><li><a href="#face-tracking-with-an-iphone-ifacialmocap--facemotion3d">Face tracking with an iPhone (iFacialMocap · FaceMotion3D)</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

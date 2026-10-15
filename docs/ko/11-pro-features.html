@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>포징 · 오브젝트 · 표정 — AVATAR LIVE</title>
-<meta name="description" content="Pro로 전환하는 것이 모든 기능을 동시에 켠다는 뜻은 아닙니다. 예를 들어 멀티뷰는 감독 모드와 별도 스위치이며 기본으로 꺼져 있고, 화면 응시·카메라 충돌·Look At IK 등 일부 기능도 실험적인 설정일 수 있습니다. 사용자에게 나가는 결과를 비교하면서 하나씩 …">
+<title>포징과 표정 — AVATAR LIVE</title>
+<meta name="description" content="저장할 자세를 만들고, 표정을 버튼이나 추적 입력에 연결합니다. 포징·포즈 라이브러리·오브젝트는 Pro, 내 표정·자동 표정은 Basic과 Pro에서 사용할 수 있습니다.">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ko/11-pro-features.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/11-pro-features.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/11-pro-features.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/11-pro-features.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/11-pro-features.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
-<meta property="og:title" content="포징 · 오브젝트 · 표정 — AVATAR LIVE">
-<meta property="og:description" content="Pro로 전환하는 것이 모든 기능을 동시에 켠다는 뜻은 아닙니다. 예를 들어 멀티뷰는 감독 모드와 별도 스위치이며 기본으로 꺼져 있고, 화면 응시·카메라 충돌·Look At IK 등 일부 기능도 실험적인 설정일 수 있습니다. 사용자에게 나가는 결과를 비교하면서 하나씩 …">
+<meta property="og:title" content="포징과 표정 — AVATAR LIVE">
+<meta property="og:description" content="저장할 자세를 만들고, 표정을 버튼이나 추적 입력에 연결합니다. 포징·포즈 라이브러리·오브젝트는 Pro, 내 표정·자동 표정은 Basic과 Pro에서 사용할 수 있습니다.">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ko/11-pro-features.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ko.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,182 +42,130 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>가이드 목차</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">스튜디오: 장면 · 카메라 · 조명 · 효과</a></li><li><a href="09-output.html">출력: OBS · NDI · 화면 공유 · 원격 세션</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html" aria-current="page">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="11-포징--오브젝트--표정">11. 포징 · 오브젝트 · 표정<a class="anchor" href="#11-포징--오브젝트--표정" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="v200-추가-기능-권한과-영향-범위">v2.0.0 추가 기능: 권한과 영향 범위<a class="anchor" href="#v200-추가-기능-권한과-영향-범위" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ko/v45-studio-cameras.webp" srcset="../assets/shots/ko/v45-studio-cameras-960.webp 960w, ../assets/shots/ko/v45-studio-cameras.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 스튜디오 및 Pro 화면" loading="lazy" decoding="async"><figcaption>v45 스튜디오 및 Pro 화면</figcaption></figure>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>기능</th>
-<th>Basic</th>
-<th>Pro</th>
-<th>켜면 바뀌는 것</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>일반 Spout2 출력 · <strong>NDI 출력</strong></td>
-<td>✅</td>
-<td>✅</td>
-<td>OBS에 아바타 화면을 보냅니다. <strong>NDI도 Basic</strong>이고 수신용 OBS 플러그인이 필요합니다.</td>
-</tr>
-<tr>
-<td>일반 포스트 프로세싱·조명</td>
-<td>✅</td>
-<td>✅</td>
-<td>현재 장면의 색·그림자·블룸·배경 등을 바꿉니다.</td>
-</tr>
-<tr>
-<td>포즈 편집·저장 · 소품 제어</td>
-<td>—</td>
-<td>✅</td>
-<td>손·몸의 뼈 위치를 고정하거나 물체를 무대·아바타 뼈에 배치합니다.</td>
-</tr>
-<tr>
-<td><strong>여러 아바타</strong> · 다중 조종</td>
-<td>—</td>
-<td>✅</td>
-<td>같은 장면에 여러 캐릭터를 놓고 특정 아바타를 조종하거나 입력을 공유합니다.</td>
-</tr>
-<tr>
-<td><strong>스튜디오 카메라</strong> · 감독 · 멀티뷰</td>
-<td>—</td>
-<td>✅</td>
-<td>화면 전환을 시청자에게 송출하면서 내 편집용 씬 뷰는 유지합니다.</td>
-</tr>
-<tr>
-<td>카메라별 <strong>별도 Spout2</strong></td>
-<td>—</td>
-<td>✅</td>
-<td>독립된 영상 소스를 OBS에 추가할 수 있습니다(최대 3대 추가).</td>
-</tr>
-<tr>
-<td><strong>원격 세션</strong></td>
-<td>—</td>
-<td>✅</td>
-<td>다른 PC 사용자와 자세·표정·시선 및 동의한 아바타 데이터를 세션 중 공유합니다.</td>
-</tr>
-<tr>
-<td><strong>볼류메트릭 라이트 / HBAO / Beautify</strong></td>
-<td>—</td>
-<td>✅</td>
-<td>빛기둥, 입체 접촉 음영, 고급 화면 효과를 추가합니다.</td>
-</tr>
-<tr>
-<td><strong>MP4 녹화</strong> · 추가 화면 공유 소스</td>
-<td>—</td>
-<td>✅</td>
-<td>방송 영상을 저장하거나 다른 게임 창·디스플레이를 추가 합성합니다.</td>
-</tr>
-</tbody>
-</table></div>
-<p><strong>Pro로 전환하는 것이 모든 기능을 동시에 켠다는 뜻은 아닙니다.</strong> 예를 들어 멀티뷰는 감독 모드와 별도 스위치이며 기본으로 꺼져 있고, 화면 응시·카메라 충돌·Look At IK 등 일부 기능도 실험적인 설정일 수 있습니다. 사용자에게 나가는 결과를 비교하면서 하나씩 켜는 편이 좋습니다.</p>
-<p><a href="08-scene.html">스튜디오 카메라·회전·슬라이더 상세</a> · <a href="09-output.html">Spout2/NDI 공식 플러그인 및 원격 세션 설정</a></p>
-<p><strong>아바타 에셋의 라이선스</strong>는 Pro 구매만으로 바뀌지 않습니다. 유료·재배포 금지 모델을 원격 데이터로 보내기 전, 제작자의 약관에서 전송과 임시 캐싱이 허용되는지 확인해야 합니다.</p>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th>기능</th>
-<th>에디션</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#포징">포징</a></td>
-<td>Pro</td>
-</tr>
-<tr>
-<td><a href="#포즈-라이브러리">포즈 라이브러리</a></td>
-<td>Pro</td>
-</tr>
-<tr>
-<td><a href="#오브젝트">오브젝트</a></td>
-<td>Pro</td>
-</tr>
-<tr>
-<td><a href="#화면-공유-추가-소스">화면 공유 추가 소스</a></td>
-<td>Pro</td>
-</tr>
-<tr>
-<td><a href="#내-표정">내 표정</a></td>
-<td>Basic · Pro</td>
-</tr>
-<tr>
-<td><a href="#자동-표정">자동 표정</a></td>
-<td>Basic · Pro</td>
-</tr>
-</tbody>
-</table></div>
+  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">스튜디오</a></li><li><a href="08-camera-effects.html">카메라 효과</a></li><li><a href="09-output.html">출력</a></li><li><a href="09-session.html">원격 합방</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html" aria-current="page">포징과 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="포징과-표정">포징과 표정<a class="anchor" href="#포징과-표정" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>저장할 자세를 만들고, 표정을 버튼이나 추적 입력에 연결합니다. 포징·포즈 라이브러리·오브젝트는 Pro, 내 표정·자동 표정은 Basic과 Pro에서 사용할 수 있습니다.</p>
 <h2 id="포징">포징<a class="anchor" href="#포징" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ko/posing.webp" width="960" height="900" alt="포징 모드" loading="lazy" decoding="async"><figcaption>포징 모드</figcaption></figure>
-<p><strong>스튜디오 › 포징 › 포징 모드</strong>를 켜면 뼈를 직접 움직여 자세를 만들 수 있습니다.</p>
-<ul>
-<li>뼈를 클릭해서 고르고, 링을 끌어 돌립니다. 회전 기즈모는 뼈 크기에 맞춰 나옵니다.</li>
-<li>손이나 발을 끌면 팔 · 다리 전체가 따라오고, <strong>Alt+드래그</strong>로 팔꿈치 · 무릎 방향을 바꿉니다.</li>
-<li><strong>대칭 편집</strong> — 한쪽을 움직이면 반대쪽도 같이 움직입니다. <strong>좌우</strong>로 뒤집거나 한쪽을 복사합니다.</li>
-<li><strong>카메라 보기</strong> · <strong>바닥에 붙이기</strong> — 얼굴을 카메라로 돌리고, 발을 바닥에 맞춥니다.</li>
-<li><strong>고정</strong> — 고른 뼈는 트래킹과 애니메이션이 움직이지 않습니다.</li>
-<li><strong>완료</strong>로 자세를 저장하고, 아바타 메뉴의 <strong>자세</strong> 카드에서 바로 켭니다. <strong>버리기</strong> 뒤에도 <strong>Ctrl+Z</strong>로 되살릴 수 있습니다.</li>
-<li>기본으로 <strong>서 있는 휴식 자세</strong>와 <strong>앉은 자세</strong>가 들어 있습니다. 앉은 자세는 골반 · 다리만 바꾸고 머리 · 팔은 트래킹을 유지합니다.</li>
-<li>만든 자세를 <strong>책상 자세로 쓰기</strong>(팔 · 손)나 <strong>휴식 자세</strong>(전신)로 지정할 수 있습니다.</li>
-</ul>
-<blockquote class="callout tip"><p>포징 모드를 끄기 전에 자세를 저장해 두세요.</p>
-</blockquote>
-<h2 id="포즈별-다섯-추적-항목">포즈별 다섯 추적 항목<a class="anchor" href="#포즈별-다섯-추적-항목" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ko/menu-poses.webp" width="960" height="900" alt="자세 카드와 추적 설정" loading="lazy" decoding="async"><figcaption>자세 카드와 추적 설정</figcaption></figure>
-<p>아바타 메뉴 또는 스튜디오의 저장된 자세 옆 카메라 아이콘을 눌러 페이셜, 머리, 팔, 손가락, 몸통을 독립적으로 켜거나 끕니다. 켜진 부위는 트래킹을 따라가고, 꺼진 부위는 해당 자세로 고정됩니다. 다섯 값은 자세별로 저장됩니다.</p>
-<ul>
-<li>머리 OFF·페이셜 ON: 머리 방향을 유지하면서 얼굴 표정만 추적합니다.</li>
-<li>페이셜 OFF여도 눈 카메라 보기는 별도로 작동할 수 있습니다.</li>
-<li>기본 앉은 자세는 골반과 다리를 고정하되, 다섯 추적 항목을 기본으로 허용합니다.</li>
-</ul>
-<h2 id="기본-자세와-afk-대기-자세">기본 자세와 AFK 대기 자세<a class="anchor" href="#기본-자세와-afk-대기-자세" aria-hidden="true" tabindex="-1">#</a></h2>
-<ul>
-<li>기본 자세는 아바타가 추적되는 동안의 휴식 자세입니다.</li>
-<li>추적이 끊겼을 때의 자세는 AFK 상태가 됐을 때 사용할 별도의 자세입니다.</li>
-<li>대기 중 표정은 AFK일 때 자동으로 재생할 저장된 내 표정입니다. 대기 자세를 선택하지 않고 표정만 재생할 수도 있습니다.</li>
-<li>사용자가 직접 적용한 자세가 자동 대기 자세보다 우선합니다. 추적이 돌아오면 정상 동작으로 복귀합니다.</li>
-<li>AFK 진입 대기, 자세 전환, 추적 복귀에 걸리는 시간은 동작 › 몸 › AFK 전환 시간에서 조절합니다.</li>
-</ul>
-<h2 id="포즈-라이브러리">포즈 라이브러리<a class="anchor" href="#포즈-라이브러리" aria-hidden="true" tabindex="-1">#</a></h2>
-<p><strong>스튜디오 › 포징 › 포즈 라이브러리</strong>에서 <code>.anim</code> 파일이 들어 있는 폴더를 고르면, 모든 자세를 <strong>지금 아바타의 썸네일</strong>로 보여 줍니다.</p>
-<ul>
-<li>하위 폴더까지 읽고, 자세 · 손 모양 · 모션으로 나눠 보여 줍니다. 검색과 즐겨찾기를 쓸 수 있습니다.</li>
-<li><strong>적용</strong>하면 바로 그 자세가 되고, 움직이는 클립은 애니메이션으로 재생됩니다. <strong>해제</strong>로 돌아옵니다.</li>
-<li><strong>편집</strong>으로 포징 모드에서 고친 뒤 새 자세로 저장합니다.</li>
-<li>Unity에서 만든 휴머노이드 · 본 <code>.anim</code>을 하나씩 불러올 수도 있습니다.</li>
-</ul>
-<h2 id="오브젝트">오브젝트<a class="anchor" href="#오브젝트" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ko/props.webp" width="960" height="900" alt="오브젝트" loading="lazy" decoding="async"><figcaption>오브젝트</figcaption></figure>
-<p><strong>스튜디오 › 오브젝트 › + 오브젝트 추가</strong>로 텍스트, 이미지, 도형, 3D 모델을 놓습니다.</p>
-<ul>
-<li><strong>붙일 곳</strong>을 머리나 손으로 하면 아바타와 함께 움직입니다.</li>
-<li>텍스트는 더블클릭해서 바로 고칩니다.</li>
-<li>3D 모델은 Unity의 <strong>Curious Bobby → Prop Exporter</strong>로 <code>.vprop</code> 파일을 만들어 씁니다.</li>
-</ul>
-<h2 id="화면-공유-추가-소스">화면 공유 추가 소스<a class="anchor" href="#화면-공유-추가-소스" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>화면 공유에 창이나 모니터를 더 겹칠 수 있습니다. 채팅 창이나 음악 플레이어를 함께 보여 줄 때 사용합니다.</p>
-<h2 id="내-표정">내 표정<a class="anchor" href="#내-표정" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>아바타의 쉐이프키로 나만의 표정을 만듭니다.</p>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-posing.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-posing.webp" width="550" height="713" style="--image-width:550px" alt="직접 자세를 만드는 포징 설정" loading="lazy" decoding="async"></a><figcaption>직접 자세를 만드는 포징 설정</figcaption></figure>
 <ol>
-<li><strong>새 표정 만들기</strong>를 누릅니다.</li>
-<li>옆 패널에서 쉐이프키를 녹화하듯 움직여 표정을 만듭니다. <strong>미리보기 강도</strong>로 무표정(0%)부터 표정(100%)까지 훑어보며 확인합니다.</li>
-<li><strong>저장</strong>하면 아바타 메뉴의 <strong>내 표정</strong> 카드에서 눌러서 켤 수 있습니다.</li>
+<li>스튜디오 → 포징에서 포징 모드를 켭니다.</li>
+<li>뼈를 선택해 회전 링을 끌거나 손·발을 옮깁니다.</li>
+<li>완료를 눌러 자세를 저장합니다.</li>
+<li>아바타 메뉴의 자세 카드에서 적용합니다.</li>
 </ol>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>조작·버튼</th>
+<th>결과</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>뼈 선택·회전</td>
+<td>선택한 관절의 방향을 바꿉니다.</td>
+</tr>
+<tr>
+<td>손·발 드래그</td>
+<td>팔이나 다리가 따라오도록 끝점을 옮깁니다.</td>
+</tr>
+<tr>
+<td>Alt+드래그</td>
+<td>팔꿈치·무릎이 향하는 쪽을 바꿉니다.</td>
+</tr>
+<tr>
+<td>대칭 편집</td>
+<td>반대쪽도 함께 바꿉니다.</td>
+</tr>
+<tr>
+<td>좌우 뒤집기</td>
+<td>자세의 좌우를 바꿉니다.</td>
+</tr>
+<tr>
+<td>고정</td>
+<td>선택한 뼈를 추적과 애니메이션이 움직이지 못하게 합니다.</td>
+</tr>
+<tr>
+<td>바닥에 붙이기</td>
+<td>발을 바닥에 맞춥니다.</td>
+</tr>
+<tr>
+<td>완료</td>
+<td>만든 자세를 저장합니다.</td>
+</tr>
+<tr>
+<td>버리기</td>
+<td>편집한 자세를 적용하지 않고 나갑니다.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="자세별-추적">자세별 추적<a class="anchor" href="#자세별-추적" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-menu-poses.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-menu-poses.webp" width="550" height="840" style="--image-width:550px" alt="자세 카드의 부위별 추적 설정" loading="lazy" decoding="async"></a><figcaption>자세 카드의 부위별 추적 설정</figcaption></figure>
+<p>자세 옆 카메라 버튼을 누르면 페이셜·머리·팔·손가락·몸통을 각각 켜고 끕니다.</p>
 <ul>
-<li>Unity에서 만든 표정 애니메이션(<code>.anim</code>, 쉐이프키)도 불러올 수 있습니다. 움직이는 클립은 표정을 켜는 동안 재생됩니다.</li>
+<li>켜진 부위: 내 움직임을 따라갑니다.</li>
+<li>꺼진 부위: 저장한 자세를 유지합니다.</li>
+<li>예: 팔을 끄고 머리·페이셜을 켜면 팔 포즈를 유지하며 고개와 표정은 움직입니다.</li>
 </ul>
-<figure><img src="../assets/shots/ko/menu-myexpr.webp" width="960" height="900" alt="아바타 메뉴의 내 표정 카드" loading="lazy" decoding="async"><figcaption>아바타 메뉴의 내 표정 카드</figcaption></figure>
-<p>내 표정의 새 표정 만들기와 .anim 불러오기 버튼은 스튜디오와 아바타 메뉴에 나란히 있습니다. 단일 프레임의 쉐이프키 표정뿐 아니라 여러 프레임으로 이루어진 Unity .anim 표정도 불러올 수 있습니다. 움직이는 클립이 반복되는지는 원본 클립의 반복 설정을 따릅니다. 표정 타일은 드래그로 순서를 정렬하고, 우클릭으로 단축키와 퀵 액션을 지정할 수 있습니다.</p>
+<h2 id="기본-자세와-대기-자세">기본 자세와 대기 자세<a class="anchor" href="#기본-자세와-대기-자세" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-default-pose.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-default-pose.webp" width="550" height="579" style="--image-width:550px" alt="기본 자세와 AFK 자세 선택" loading="lazy" decoding="async"></a><figcaption>기본 자세와 AFK 자세 선택</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>선택</th>
+<th>사용할 때</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>기본 자세</td>
+<td>평소 추적하지 않는 부분의 기준 자세입니다.</td>
+</tr>
+<tr>
+<td>AFK 대기 자세</td>
+<td>추적을 잃었을 때 사용할 자세입니다.</td>
+</tr>
+<tr>
+<td>대기 표정</td>
+<td>AFK 중 자동으로 적용할 표정입니다.</td>
+</tr>
+<tr>
+<td>책상 자세</td>
+<td>손이 카메라에 안 보일 때 사용할 팔·손 자세입니다.</td>
+</tr>
+</tbody>
+</table></div>
+<p>대기 자세로 넘어가는 시간은 <a href="07-motion.html#추적을-잃었을-때">동작 → 추적을 잃었을 때</a>에서 맞춥니다.</p>
+<h2 id="포즈-라이브러리">포즈 라이브러리<a class="anchor" href="#포즈-라이브러리" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-pose-library.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-pose-library.webp" width="550" height="902" style="--image-width:550px" alt="포즈 파일을 찾아 적용하는 라이브러리" loading="lazy" decoding="async"></a><figcaption>포즈 파일을 찾아 적용하는 라이브러리</figcaption></figure>
+<ol>
+<li>스튜디오 → 포징 → 포즈 라이브러리를 엽니다.</li>
+<li><code>.anim</code> 파일이 있는 폴더를 선택합니다.</li>
+<li>자세 썸네일을 고르고 적용합니다.</li>
+<li>해제를 누르면 돌아옵니다.</li>
+</ol>
+<p>검색·즐겨찾기로 자주 쓰는 포즈를 찾고, 편집으로 포징 모드에서 고쳐 저장할 수 있습니다.</p>
+<h2 id="오브젝트">오브젝트<a class="anchor" href="#오브젝트" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><a href="08-scene.html#방과-소품">스튜디오 → 방과 소품</a>에서 배치 방법을 확인하세요. 텍스트·이미지·도형과 <code>.vprop</code> 3D 모델을 사용할 수 있습니다.</p>
+<h2 id="내-표정">내 표정<a class="anchor" href="#내-표정" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-my-expression.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-my-expression.webp" width="550" height="202" style="--image-width:550px" alt="직접 만든 표정과 표정 추가" loading="lazy" decoding="async"></a><figcaption>직접 만든 표정과 표정 추가</figcaption></figure>
+<ol>
+<li>새 표정 만들기를 누릅니다.</li>
+<li>얼굴의 쉐이프키를 움직여 표정을 만듭니다.</li>
+<li>미리보기 강도로 0% 무표정부터 100% 표정까지 확인합니다.</li>
+<li>저장합니다.</li>
+<li>내 표정 타일을 눌러 적용합니다.</li>
+</ol>
+<p>.anim 불러오기로 Unity 표정 애니메이션을 추가할 수도 있습니다. 움직이는 파일은 시간에 따라 표정이 변하고, 반복 여부는 파일 설정을 따릅니다.</p>
 <h2 id="자동-표정">자동 표정<a class="anchor" href="#자동-표정" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>웃거나 놀라면 정해 둔 표정이 자동으로 나옵니다. <strong>동작 › 자동 표정</strong>에서 켜고, 미소 · 놀람 · 윙크 같은 표정마다 보여 줄 표정을 연결합니다.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>이전</span>설정</a><a class="next" href="12-troubleshooting.html"><span>다음</span>문제 해결</a></nav><p class="updated">최종 업데이트: 2026-10-15</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#v200-추가-기능-권한과-영향-범위">v2.0.0 추가 기능: 권한과 영향 범위</a></li><li><a href="#포징">포징</a></li><li><a href="#포즈별-다섯-추적-항목">포즈별 다섯 추적 항목</a></li><li><a href="#기본-자세와-afk-대기-자세">기본 자세와 AFK 대기 자세</a></li><li><a href="#포즈-라이브러리">포즈 라이브러리</a></li><li><a href="#오브젝트">오브젝트</a></li><li><a href="#화면-공유-추가-소스">화면 공유 추가 소스</a></li><li><a href="#내-표정">내 표정</a></li><li><a href="#자동-표정">자동 표정</a></li></ul></nav>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-auto-expression.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-auto-expression.webp" width="550" height="749" style="--image-width:550px" alt="자동 표정 연결 설정" loading="lazy" decoding="async"></a><figcaption>자동 표정 연결 설정</figcaption></figure>
+<p>동작 → 자동 표정에서 켭니다. 미소·놀람·윙크 등 감지할 표정마다 내 표정에서 저장한 표정을 연결합니다. 그러면 실제로 웃거나 놀랄 때 연결한 표정이 자동으로 나옵니다.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>이전</span>설정</a><a class="next" href="12-troubleshooting.html"><span>다음</span>문제 해결</a></nav><p class="updated">최종 업데이트: 2026-10-15</p></main>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#포징">포징</a></li><li><a href="#자세별-추적">자세별 추적</a></li><li><a href="#기본-자세와-대기-자세">기본 자세와 대기 자세</a></li><li><a href="#포즈-라이브러리">포즈 라이브러리</a></li><li><a href="#오브젝트">오브젝트</a></li><li><a href="#내-표정">내 표정</a></li><li><a href="#자동-표정">자동 표정</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>제품</h2><ul><li><a href="index.html#features">기능</a></li><li><a href="index.html#how">사용 방법</a></li><li><a href="index.html#editions">에디션</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">업데이트 내역</a></li></ul></div><div class="fcol"><h2>가이드</h2><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul></div><div class="fcol"><h2>약관 · 정책</h2><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></div><div class="fcol"><h2>링크</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>제품</h2><ul><li><a href="index.html#features">기능</a></li><li><a href="index.html#how">사용 방법</a></li><li><a href="index.html#editions">에디션</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">업데이트 내역</a></li></ul></div><div class="fcol"><h2>가이드</h2><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul></div><div class="fcol"><h2>약관 · 정책</h2><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></div><div class="fcol"><h2>링크</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE는 VRChat Inc.의 공식 제품이 아니며, VRChat Inc.와 제휴 관계가 없습니다. VRChat은 VRChat Inc.의 상표입니다.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

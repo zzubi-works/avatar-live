@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>아바타 메뉴 — AVATAR LIVE</title>
-<meta name="description" content="손 제스처의 주먹·가위·펼침 등은 왼손/오른손 별도 파라미터를 바꿉니다. 추적 소스를 웹캠 손가락, VMC 장갑, SteamVR 컨트롤러로 바꾼 경우 수동으로 고른 제스처가 장치 입력에 덮어씌워질 수 있습니다. 원하는 표정이 계속 풀리면 장치의 손가락 소스와 동작의 자…">
+<meta name="description" content="의상·머리·표정 등 아바타 제작자가 넣은 기능을 사용합니다. 모델에 따라 메뉴 이름과 항목이 다릅니다.">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ko/05-avatar-menu.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/05-avatar-menu.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/05-avatar-menu.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/05-avatar-menu.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/05-avatar-menu.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="아바타 메뉴 — AVATAR LIVE">
-<meta property="og:description" content="손 제스처의 주먹·가위·펼침 등은 왼손/오른손 별도 파라미터를 바꿉니다. 추적 소스를 웹캠 손가락, VMC 장갑, SteamVR 컨트롤러로 바꾼 경우 수동으로 고른 제스처가 장치 입력에 덮어씌워질 수 있습니다. 원하는 표정이 계속 풀리면 장치의 손가락 소스와 동작의 자…">
+<meta property="og:description" content="의상·머리·표정 등 아바타 제작자가 넣은 기능을 사용합니다. 모델에 따라 메뉴 이름과 항목이 다릅니다.">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ko/05-avatar-menu.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ko.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,129 +42,77 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>가이드 목차</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html" aria-current="page">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">스튜디오: 장면 · 카메라 · 조명 · 효과</a></li><li><a href="09-output.html">출력: OBS · NDI · 화면 공유 · 원격 세션</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="5-아바타-메뉴">5. 아바타 메뉴<a class="anchor" href="#5-아바타-메뉴" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="v200-아바타-메뉴-토글값제스처가-실제로-바꾸는-것">v2.0.0 아바타 메뉴: 토글·값·제스처가 실제로 바꾸는 것<a class="anchor" href="#v200-아바타-메뉴-토글값제스처가-실제로-바꾸는-것" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ko/v45-menu.webp" srcset="../assets/shots/ko/v45-menu-960.webp 960w, ../assets/shots/ko/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 아바타 메뉴" loading="lazy" decoding="async"><figcaption>v45 아바타 메뉴</figcaption></figure>
-<div class="table-wrap"><table>
+  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html" aria-current="page">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">스튜디오</a></li><li><a href="08-camera-effects.html">카메라 효과</a></li><li><a href="09-output.html">출력</a></li><li><a href="09-session.html">원격 합방</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징과 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="아바타-메뉴">아바타 메뉴<a class="anchor" href="#아바타-메뉴" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>의상·머리·표정 등 아바타 제작자가 넣은 기능을 사용합니다. 모델에 따라 메뉴 이름과 항목이 다릅니다.</p>
+<h2 id="의상과-표정-바꾸기">의상과 표정 바꾸기<a class="anchor" href="#의상과-표정-바꾸기" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-avatar-menu.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-avatar-menu.webp" width="550" height="385" style="--image-width:550px" alt="아바타의 의상·표정 메뉴" loading="lazy" decoding="async"></a><figcaption>아바타의 의상·표정 메뉴</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
-<th>메뉴 조작</th>
-<th>결과와 조정 방법</th>
+<th>조작</th>
+<th>작동 방식</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Toggle (켜기/끄기)</strong></td>
-<td>한 번 누르면 설정값이 켜지고 다시 누르면 꺼집니다. 의상 표시, 파츠·액세서리 변경 등에 사용됩니다. 실제 효과는 <strong>아바타 제작자가 연결한 Animator/파라미터</strong>에 따라 달라집니다.</td>
+<td>켜기·끄기</td>
+<td>한 번 누르면 켜지고, 다시 누르면 꺼집니다. 의상이나 장식을 바꿀 때 주로 사용합니다.</td>
 </tr>
 <tr>
-<td><strong>Button (누르고 있는 동안)</strong></td>
-<td>누르는 동안에만 파라미터가 활성화됩니다. 한 번만 눌러 영구적으로 유지하는 토글과 다르므로 놓으면 원래 상태로 돌아오는 것이 정상입니다.</td>
+<td>누르는 버튼</td>
+<td>누르고 있는 동안만 적용됩니다. 놓으면 풀립니다.</td>
 </tr>
 <tr>
-<td><strong>Radial (원형 슬라이더)</strong></td>
-<td>0–100%에 해당하는 연속 값을 변경합니다. 예를 들어 제작자가 머리카락 길이, 의상 변형·표정 강도를 연결했다면 0은 최소, 끝 값은 최대이며 중간값은 비율에 맞춰 반영됩니다.</td>
+<td>원형 슬라이더</td>
+<td>손잡이를 움직여 0~100% 사이 값을 정합니다. 연결된 색·크기·표정 강도 등이 변합니다.</td>
 </tr>
 <tr>
-<td><strong>Two-Axis / Four-Axis Puppet</strong></td>
-<td>2방향 또는 4방향 패드를 움직여 둘 이상의 파라미터를 동시에 조절합니다. 중심은 기본값, 좌우/상하는 제작자가 지정한 표정·눈동자·동작의 비율을 바꿉니다.</td>
+<td>방향 패드</td>
+<td>손잡이를 좌우·위아래로 움직여 여러 표정이나 값을 함께 조절합니다.</td>
 </tr>
 <tr>
-<td><strong>Sub Menu</strong></td>
-<td>같은 아바타의 하위 항목으로 이동합니다. 다른 아바타를 선택하는 동작은 아닙니다.</td>
-</tr>
-<tr>
-<td><strong>즐겨찾기 / 퀵액션</strong></td>
-<td>메뉴까지 여러 번 들어가지 않고 현재 아바타의 같은 동작을 바로 실행하는 단축 통로입니다. 새로 별도의 제어 값이 생기지는 않습니다.</td>
-</tr>
-<tr>
-<td><strong>단축키: 누르는 동안 / 토글</strong></td>
-<td>누르는 동안은 손을 뗄 때 효과가 해제되고, 토글은 두 번째 입력까지 유지됩니다. 전역 단축키는 게임이 앞에 있어도 동작할 수 있으므로 다른 프로그램 키와 겹치지 않게 지정하세요.</td>
+<td>폴더</td>
+<td>하위 메뉴를 엽니다. 뒤로를 누르면 상위 메뉴로 돌아갑니다.</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>손 제스처</strong>의 주먹·가위·펼침 등은 왼손/오른손 별도 파라미터를 바꿉니다. 추적 소스를 웹캠 손가락, VMC 장갑, SteamVR 컨트롤러로 바꾼 경우 수동으로 고른 제스처가 장치 입력에 덮어씌워질 수 있습니다. 원하는 표정이 계속 풀리면 <a href="06-devices.html">장치의 손가락 소스</a>와 <a href="07-motion.html">동작의 자동 표정</a>을 함께 확인하세요.</p>
-<p><strong>내 표정/포즈 라이브러리</strong>는 각 아바타별로 관리합니다. 정적 <strong>.anim</strong> 표정은 특정 쉐이프키 가중치를 적용하고, 여러 프레임의 <strong>.anim</strong>은 시간에 따라 값이 바뀝니다. 반복 여부는 애니메이션 클립 설정을 따릅니다. 저장된 포즈에서는 <strong>페이셜·머리·팔·손가락·몸통</strong> 추적 허용을 독립적으로 켜고 끌 수 있어, 포즈가 유지되면서도 특정 부위만 움직이도록 할 수 있습니다.</p>
-<p>VRChat에서 쓰던 아바타의 <strong>Expression 메뉴</strong>를 그대로 씁니다. 옷과 헤어 토글, 표정 버튼, Radial, Puppet이 VRChat과 똑같이 동작합니다.</p>
-<h2 id="expression-메뉴">Expression 메뉴<a class="anchor" href="#expression-메뉴" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><img src="../assets/shots/ko/menu.webp" width="960" height="900" alt="아바타 메뉴" loading="lazy" decoding="async"><figcaption>아바타 메뉴</figcaption></figure>
+<h2 id="자주-쓰는-항목-바로-꺼내기">자주 쓰는 항목 바로 꺼내기<a class="anchor" href="#자주-쓰는-항목-바로-꺼내기" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-menu-context.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-menu-context.webp" width="752" height="735" style="--image-width:752px" alt="메뉴 항목을 우클릭했을 때의 설정" loading="lazy" decoding="async"></a><figcaption>메뉴 항목을 우클릭했을 때의 설정</figcaption></figure>
 <ul>
-<li><strong>Toggle</strong> — 누를 때마다 켜고 끕니다.</li>
-<li><strong>Button</strong> — 누르고 있는 동안 켜집니다.</li>
-<li><strong>Sub Menu</strong> — 하위 메뉴를 엽니다. <strong>뒤로</strong>로 돌아갑니다.</li>
-<li><strong>Radial · Puppet</strong> — 슬라이더나 패드로 값을 정합니다.</li>
+<li>즐겨찾기: 메뉴 위쪽에서 빠르게 찾습니다.</li>
+<li>퀵 액션에 추가: 하단 도구막대에 실행 버튼을 만듭니다.</li>
+<li>단축키 지정: 키보드로 해당 항목을 실행합니다.</li>
 </ul>
-</div>
-<h2 id="항목-우클릭">항목 우클릭<a class="anchor" href="#항목-우클릭" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><img src="../assets/shots/ko/menu-ctx.webp" srcset="../assets/shots/ko/menu-ctx-960.webp 960w, ../assets/shots/ko/menu-ctx.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="항목 우클릭 메뉴" loading="lazy" decoding="async"><figcaption>항목 우클릭 메뉴</figcaption></figure>
-<ul>
-<li><strong>퀵 액션에 추가</strong> — 아래 툴바에 버튼으로 둡니다.</li>
-<li><strong>단축키 지정…</strong> — 게임 중에도 키 하나로 켤 수 있습니다.</li>
-<li><strong>즐겨찾기</strong> — 메뉴 맨 위에서 바로 씁니다.</li>
-</ul>
-</div>
+<p>단축키에서 누르는 동안은 키를 놓으면 풀리고, 토글은 다시 누를 때까지 유지됩니다.</p>
+<h2 id="자세와-추적">자세와 추적<a class="anchor" href="#자세와-추적" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-menu-poses.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-menu-poses.webp" width="550" height="840" style="--image-width:550px" alt="저장된 자세와 내 표정" loading="lazy" decoding="async"></a><figcaption>저장된 자세와 내 표정</figcaption></figure>
+<ol>
+<li>자세 타일을 눌러 적용합니다.</li>
+<li>자세 옆 카메라 아이콘으로 추적 설정을 펼칩니다.</li>
+<li>페이셜·머리·팔·손가락·몸통을 각각 켜거나 끕니다.</li>
+</ol>
+<p>켜진 부위는 내 움직임을 따르고, 꺼진 부위는 저장한 자세를 유지합니다. 예를 들어 머리를 끄고 페이셜을 켜면 고개는 고정한 채 표정만 움직입니다.</p>
 <h2 id="손-제스처">손 제스처<a class="anchor" href="#손-제스처" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><img src="../assets/shots/ko/gestures.webp" width="960" height="900" alt="손 제스처" loading="lazy" decoding="async"><figcaption>손 제스처</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-gestures.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-gestures.webp" width="550" height="396" style="--image-width:550px" alt="왼손과 오른손 제스처 설정" loading="lazy" decoding="async"></a><figcaption>왼손과 오른손 제스처 설정</figcaption></figure>
+<p>왼손과 오른손의 주먹·가위·펼침 등을 고릅니다. 아바타에 손 모양별 표정이 연결되어 있으면 표정도 함께 바뀝니다. 웹캠 손 모양으로 제스처를 켜면 실제 손 모양을 사용합니다.</p>
+<h2 id="내-표정">내 표정<a class="anchor" href="#내-표정" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>새 표정 만들기로 얼굴 모양을 조절해 저장하거나, <code>.anim</code> 표정 파일을 불러옵니다. 만든 표정은 타일로 적용하고 우클릭으로 퀵 액션이나 단축키에 연결합니다. <a href="11-pro-features.html#내-표정">표정 만들기</a>에서 순서를 확인하세요.</p>
+<h2 id="계층-구조와-쉐이프키">계층 구조와 쉐이프키<a class="anchor" href="#계층-구조와-쉐이프키" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li>왼손 · 오른손 제스처를 골라 아바타의 제스처 표정을 냅니다.</li>
-<li><strong>웹캠 손 모양으로 제스처</strong>를 켜면 내 손 모양이 그대로 제스처가 됩니다.</li>
+<li>계층 구조: 아바타의 부품을 트리로 보여 줍니다. 체크로 부품을 켜고 끕니다.</li>
+<li>눈 아이콘: 부품의 작동은 유지하면서 화면에서만 숨깁니다.</li>
+<li>메시: 외형을 그리는 부품을 검색합니다.</li>
+<li>쉐이프키: 얼굴이나 몸의 변형량을 직접 조절합니다. 직접 고정한 값은 추적보다 우선할 수 있습니다.</li>
 </ul>
-</div>
-<h2 id="카드-순서--자세--내-표정">카드 순서 · 자세 · 내 표정<a class="anchor" href="#카드-순서--자세--내-표정" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ko/menu-poses.webp" width="960" height="900" alt="아바타 메뉴의 저장된 자세" loading="lazy" decoding="async"><figcaption>아바타 메뉴의 저장된 자세</figcaption></figure>
-<p>자세, 내 표정, 손 제스처 등 카드 제목을 눌러 열거나 접습니다. 카드 제목을 끌어 카드끼리 순서를 바꿀 수 있으며, 저장한 자세와 표정의 개별 타일도 드래그로 정렬할 수 있습니다.</p>
-<figure><img src="../assets/shots/ko/menu-myexpr.webp" width="960" height="900" alt="아바타 메뉴의 내 표정" loading="lazy" decoding="async"><figcaption>아바타 메뉴의 내 표정</figcaption></figure>
-<ul>
-<li>자세를 눌러 적용·해제합니다. 옆의 카메라 버튼을 누르면 해당 자세의 추적 설정을 펼칩니다.</li>
-<li>추적은 페이셜, 머리, 팔, 손가락, 몸통 다섯 부분을 독립적으로 ON/OFF 할 수 있습니다. 머리를 고정하면서 표정만 움직일 수도 있습니다.</li>
-<li>기본 앉은 자세는 골반과 다리를 고정하되 다섯 추적 항목이 기본적으로 켜집니다.</li>
-<li>타일을 우클릭해 제공되는 단축키, 복제, 퀵 액션 등의 명령을 사용합니다.</li>
-<li>스튜디오와 메뉴의 내 표정 모두 새 표정 만들기와 .anim 불러오기 버튼을 제공합니다. 다중 프레임 애니메이션의 반복 재생 여부는 원본 클립을 따릅니다.</li>
-</ul>
-<h2 id="기본값으로-되돌리기">기본값으로 되돌리기<a class="anchor" href="#기본값으로-되돌리기" aria-hidden="true" tabindex="-1">#</a></h2>
-<p><strong>아바타 파라미터 › 기본값으로 되돌리기</strong>를 누르면 메뉴 값이 아바타 기본값으로 돌아갑니다. 옷 상태처럼 저장되는 값은 다음 실행에도 이어집니다.</p>
-<h2 id="퀵-액션">퀵 액션<a class="anchor" href="#퀵-액션" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>자주 쓰는 동작을 버튼이나 키로 만들어 둡니다. 메뉴 항목, 제스처, 카메라 뷰, 조명 프리셋 등을 넣을 수 있고, 버튼을 우클릭하면 이름과 위치를 바꿀 수 있습니다.</p>
-<h2 id="계층-구조--메시--쉐이프키">계층 구조 · 메시 · 쉐이프키<a class="anchor" href="#계층-구조--메시--쉐이프키" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>아바타의 오브젝트를 Unity처럼 트리로 보고 바로 고칩니다.</p>
-<ul>
-<li><strong>계층 구조</strong> — 아바타의 오브젝트를 트리로 봅니다. 체크로 켜고 끄며, 눈 아이콘은 오브젝트를 켠 채 화면에서만 숨깁니다.</li>
-<li><strong>메시</strong> — 모든 메시를 한 목록으로 봅니다. 검색으로 빠르게 찾을 수 있습니다.</li>
-<li>메시를 누르면 옆 패널에서 <strong>쉐이프키</strong>를 하나씩 조절합니다. 직접 정한 값은 얼굴 트래킹과 아바타 애니메이션보다 우선합니다.</li>
-<li>맨 위 <strong>모두 초기화</strong>로 모든 메시를 아바타 원래 상태로 되돌리고, <strong>모두 접기</strong>로 트리를 닫습니다.</li>
-</ul>
-<h2 id="초기화">초기화<a class="anchor" href="#초기화" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th></th>
-<th>초기화</th>
-<th>모두 초기화</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>하는 일</td>
-<td>트래킹, 손 자세, PhysBone을 처음 상태로</td>
-<td>위의 것과 함께 옷 · 위치 · 카메라까지 처음 상태로</td>
-</tr>
-<tr>
-<td>실행</td>
-<td>위쪽 <strong>⟲</strong></td>
-<td><strong>⟲</strong> 우클릭, 또는 <strong>설정 › 일반</strong></td>
-</tr>
-</tbody>
-</table></div></article><nav class="pager" aria-label="Pager"><a class="prev" href="04-main-window.html"><span>이전</span>메인 화면</a><a class="next" href="06-devices.html"><span>다음</span>장치</a></nav><p class="updated">최종 업데이트: 2026-10-15</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#v200-아바타-메뉴-토글값제스처가-실제로-바꾸는-것">v2.0.0 아바타 메뉴: 토글·값·제스처가 실제로 바꾸는 것</a></li><li><a href="#expression-메뉴">Expression 메뉴</a></li><li><a href="#항목-우클릭">항목 우클릭</a></li><li><a href="#손-제스처">손 제스처</a></li><li><a href="#카드-순서--자세--내-표정">카드 순서 · 자세 · 내 표정</a></li><li><a href="#기본값으로-되돌리기">기본값으로 되돌리기</a></li><li><a href="#퀵-액션">퀵 액션</a></li><li><a href="#계층-구조--메시--쉐이프키">계층 구조 · 메시 · 쉐이프키</a></li><li><a href="#초기화">초기화</a></li></ul></nav>
+<h2 id="되돌리기">되돌리기<a class="anchor" href="#되돌리기" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>아바타 파라미터 → 기본값으로 되돌리기를 누르면 의상·표정 등의 메뉴 값이 아바타의 기본값으로 돌아갑니다.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="04-main-window.html"><span>이전</span>메인 화면</a><a class="next" href="06-devices.html"><span>다음</span>장치</a></nav><p class="updated">최종 업데이트: 2026-10-15</p></main>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#의상과-표정-바꾸기">의상과 표정 바꾸기</a></li><li><a href="#자주-쓰는-항목-바로-꺼내기">자주 쓰는 항목 바로 꺼내기</a></li><li><a href="#자세와-추적">자세와 추적</a></li><li><a href="#손-제스처">손 제스처</a></li><li><a href="#내-표정">내 표정</a></li><li><a href="#계층-구조와-쉐이프키">계층 구조와 쉐이프키</a></li><li><a href="#되돌리기">되돌리기</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>제품</h2><ul><li><a href="index.html#features">기능</a></li><li><a href="index.html#how">사용 방법</a></li><li><a href="index.html#editions">에디션</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">업데이트 내역</a></li></ul></div><div class="fcol"><h2>가이드</h2><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul></div><div class="fcol"><h2>약관 · 정책</h2><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></div><div class="fcol"><h2>링크</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>제품</h2><ul><li><a href="index.html#features">기능</a></li><li><a href="index.html#how">사용 방법</a></li><li><a href="index.html#editions">에디션</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">업데이트 내역</a></li></ul></div><div class="fcol"><h2>가이드</h2><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul></div><div class="fcol"><h2>약관 · 정책</h2><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></div><div class="fcol"><h2>링크</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE는 VRChat Inc.의 공식 제품이 아니며, VRChat Inc.와 제휴 관계가 없습니다. VRChat은 VRChat Inc.의 상표입니다.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

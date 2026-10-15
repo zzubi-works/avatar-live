@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>시작하기 — AVATAR LIVE</title>
-<meta name="description" content="Basic은 개인적 이용, Pro는 방송/상업적 이용이라는 라이선스 구분이 있으니 기술적으로 NDI를 사용할 수 있다는 사실과 사용 권한을 혼동하지 마세요. 에디션 조건을 확인하세요.">
+<meta name="description" content="아바타를 불러오고, 내 움직임을 연결하고, 방송 화면을 내보내는 순서로 시작합니다.">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ko/01-getting-started.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/01-getting-started.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/01-getting-started.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/01-getting-started.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/01-getting-started.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="시작하기 — AVATAR LIVE">
-<meta property="og:description" content="Basic은 개인적 이용, Pro는 방송/상업적 이용이라는 라이선스 구분이 있으니 기술적으로 NDI를 사용할 수 있다는 사실과 사용 권한을 혼동하지 마세요. 에디션 조건을 확인하세요.">
+<meta property="og:description" content="아바타를 불러오고, 내 움직임을 연결하고, 방송 화면을 내보내는 순서로 시작합니다.">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ko/01-getting-started.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ko.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,120 +42,105 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>가이드 목차</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html" aria-current="page">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">스튜디오: 장면 · 카메라 · 조명 · 효과</a></li><li><a href="09-output.html">출력: OBS · NDI · 화면 공유 · 원격 세션</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="1-시작하기">1. 시작하기<a class="anchor" href="#1-시작하기" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="v200-빠른-시작-처음-실행해서-방송까지">v2.0.0 빠른 시작: 처음 실행해서 방송까지<a class="anchor" href="#v200-빠른-시작-처음-실행해서-방송까지" aria-hidden="true" tabindex="-1">#</a></h2>
+  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html" aria-current="page">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">스튜디오</a></li><li><a href="08-camera-effects.html">카메라 효과</a></li><li><a href="09-output.html">출력</a></li><li><a href="09-session.html">원격 합방</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징과 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="시작하기">시작하기<a class="anchor" href="#시작하기" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>아바타를 불러오고, 내 움직임을 연결하고, 방송 화면을 내보내는 순서로 시작합니다.</p>
+<h2 id="설치하고-실행하기">설치하고 실행하기<a class="anchor" href="#설치하고-실행하기" aria-hidden="true" tabindex="-1">#</a></h2>
 <ol>
-<li><strong>아바타 선택</strong>: Unity에서 Exporter 1.0.6으로 만든 <strong>.vavatar</strong>를 가져오거나, 지원되는 <strong>VRM 0.x/1.0</strong> 모델을 아바타 라이브러리에서 불러옵니다. 일부 VRM 0.x의 특수 셰이더는 지원되지 않을 수 있습니다.</li>
-<li><strong>입력 연결</strong>: <a href="06-devices.html">장치</a>에서 웹캠·iPhone·마이크·VMC·SteamVR 중 사용하는 소스를 고릅니다. 얼굴, 몸, 팔, 손가락마다 입력원을 별도로 선택할 수 있습니다.</li>
-<li><strong>정면 보정</strong>: 얼굴을 정면에 두고 보정합니다. iPhone은 첫 유효 얼굴 입력 이후 약 <strong>3초 뒤</strong> 초기 보정이 진행될 수 있습니다.</li>
-<li><strong>외형·움직임</strong>: <a href="05-avatar-menu.html">아바타 메뉴</a>에서 의상과 표정을, <a href="07-motion.html">동작</a>에서 팔/손 부드러움·AFK·립싱크를 조절합니다.</li>
-<li><strong>촬영 화면</strong>: <a href="08-scene.html">스튜디오</a>에서 배경과 조명을 정합니다. <strong>Pro</strong>는 카메라 여러 대와 멀티 아바타를 사용할 수 있습니다.</li>
-<li><strong>OBS 연동</strong>: 같은 PC는 <strong>Spout2 수신 플러그인</strong>, 다른 PC는 <strong>NDI/DistroAV 플러그인</strong>을 먼저 OBS에 설치합니다. <strong>NDI는 Basic에서도 사용 가능</strong>합니다. 정확한 설치 링크와 순서는 <a href="09-output.html">출력 가이드</a>를 따르세요.</li>
-<li><strong>최종 확인</strong>: Avatar Live의 작업용 씬 뷰와 OBS에서 내보낼 영상은 서로 다를 수 있습니다. OBS의 실제 화면을 확인하고 방송하세요.</li>
+<li>BOOTH 구매 내역에서 Avatar Live ZIP 파일을 받습니다.</li>
+<li>원하는 폴더에 압축을 모두 풉니다.</li>
+<li>폴더 안의 <code>AvatarLive.exe</code>를 실행합니다.</li>
+<li>제품 활성화 화면에 구매할 때 안내받은 정보를 입력하고 활성화를 누릅니다.</li>
 </ol>
-<p><strong>Basic은 개인적 이용, Pro는 방송/상업적 이용</strong>이라는 라이선스 구분이 있으니 기술적으로 NDI를 사용할 수 있다는 사실과 사용 권한을 혼동하지 마세요. <a href="13-license.html">에디션 조건</a>을 확인하세요.</p>
-<h2 id="준비물">준비물<a class="anchor" href="#준비물" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
+<p>Windows 10 / 11 64비트와 DirectX 11 지원 그래픽 카드가 필요합니다. 얼굴과 손을 따라 움직이려면 웹캠을, 목소리로 입을 움직이려면 마이크를 준비하세요.</p>
+<h2 id="1-아바타-열기">1. 아바타 열기<a class="anchor" href="#1-아바타-열기" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-launcher.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-launcher.webp" srcset="../assets/shots/ko/guide-launcher-960.webp 960w, ../assets/shots/ko/guide-launcher.webp 1920w" sizes="(max-width: 900px) 100vw, 860px" width="1920" height="1080" style="--image-width:1920px" alt="아바타와 시작할 장치를 고르는 시작 화면" loading="lazy" decoding="async"></a><figcaption>아바타와 시작할 장치를 고르는 시작 화면</figcaption></figure>
+<ol>
+<li>아바타 열기를 누르거나 파일을 창에 끌어 놓습니다.</li>
+<li>아바타 목록에서 사용할 캐릭터를 고릅니다.</li>
+<li>Avatar Live 시작을 누릅니다. 장면 목록이 나오면 사용할 장면을 고릅니다.</li>
+</ol>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
-<th>항목</th>
-<th>필요 사항</th>
+<th>가진 파일</th>
+<th>할 일</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>운영체제</td>
-<td>Windows 10 / 11 (64비트)</td>
+<td><code>.vavatar</code></td>
+<td>그대로 불러옵니다.</td>
 </tr>
 <tr>
-<td>그래픽</td>
-<td>DirectX 11 지원 GPU</td>
+<td><code>.vrm</code></td>
+<td>그대로 불러옵니다. VRM 0.x와 1.0을 지원합니다.</td>
 </tr>
 <tr>
-<td>웹캠</td>
-<td>일반 컬러 웹캠</td>
-</tr>
-<tr>
-<td>마이크</td>
-<td>립싱크용 (선택)</td>
-</tr>
-<tr>
-<td>인터넷</td>
-<td>활성화와 라이선스 확인에 필요</td>
-</tr>
-<tr>
-<td>아바타</td>
-<td>VRChat 아바타의 Unity 프로젝트 (Unity 2022.3.22f1)</td>
+<td>Unity 아바타 프로젝트</td>
+<td><a href="02-avatar-exporter.html">아바타 내보내기</a>로 <code>.vavatar</code>를 만든 뒤 불러옵니다.</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="에디션">에디션<a class="anchor" href="#에디션" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
-<thead>
-<tr>
-<th></th>
-<th>Basic</th>
-<th>Pro</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>이용 범위</td>
-<td>개인 사용 (친구와의 비공개 Discord 공유 포함)</td>
-<td>방송 · 영상 공개 · 상업적 이용</td>
-</tr>
-<tr>
-<td>출력</td>
-<td>최대 1080p · 워터마크</td>
-<td>최대 4K · 워터마크 없음</td>
-</tr>
-<tr>
-<td>포징 · 오브젝트 · 화면 공유 추가 소스</td>
-<td>—</td>
-<td>✅</td>
-</tr>
-</tbody>
-</table></div>
-<p>방송이나 영상 공개처럼 다른 사람에게 보여 주는 용도라면 <strong>Pro</strong>를 선택해 주세요. 자세한 내용은 <a href="13-license.html">13장</a>에 있습니다.</p>
-<h2 id="설치">설치<a class="anchor" href="#설치" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="2-내-움직임-연결하기">2. 내 움직임 연결하기<a class="anchor" href="#2-내-움직임-연결하기" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-devices.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-devices.webp" width="550" height="888" style="--image-width:550px" alt="웹캠과 마이크를 켜는 장치 설정" loading="lazy" decoding="async"></a><figcaption>웹캠과 마이크를 켜는 장치 설정</figcaption></figure>
 <ol>
-<li>BOOTH 구매 내역에서 ZIP 파일을 내려받습니다.</li>
-<li>원하는 폴더에 압축을 풉니다.</li>
-<li><code>AvatarLive.exe</code>를 실행합니다.</li>
+<li>왼쪽 장치를 누릅니다.</li>
+<li>웹캠 목록에서 사용할 카메라를 고르고 제목 오른쪽 스위치를 켭니다.</li>
+<li>화면을 정면으로 보며 정면 보정을 누릅니다.</li>
+<li>목소리로 입을 움직이려면 마이크도 고른 뒤 스위치를 켭니다.</li>
 </ol>
-<blockquote class="callout tip"><p>"Windows의 PC 보호" 창이 보이면 <strong>추가 정보 → 실행</strong>을 눌러 주세요.</p>
-<p>💡 설치 폴더의 파일은 그대로 두는 것을 권장합니다. 파일이 바뀌면 Avatar Live가 시작되지 않을 수 있는데, 이때는 원본으로 다시 설치하면 됩니다. 아바타와 설정은 그대로 남습니다.</p>
-</blockquote>
-<h2 id="활성화">활성화<a class="anchor" href="#활성화" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>처음 실행하면 <strong>제품 활성화</strong> 화면이 나옵니다. 구매할 때 안내받은 정보를 입력하고 <strong>활성화</strong>를 누르면 끝입니다.</p>
-<p>라이선스는 1인 1기기입니다. 다른 PC로 옮기는 것은 본인이 직접 1회 할 수 있고, 그 뒤에는 부득이한 경우 문의를 통해 도와드리고 있지만 쉽지 않을 수 있습니다. <strong>처음 활성화할 PC를 신중하게 정해 주세요.</strong></p>
-<h2 id="첫-방송까지">첫 방송까지<a class="anchor" href="#첫-방송까지" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="steps">
-<ol>
-<li><strong>아바타 내보내기</strong> — Unity에서 <code>.vavatar</code> 파일을 만듭니다. → <a href="02-avatar-exporter.html">2장</a></li>
-<li><strong>아바타 열기</strong> — 시작 화면에서 파일을 열고 <strong>▶ Avatar Live 시작</strong>을 누릅니다. → <a href="03-launcher-and-library.html">3장</a></li>
-<li><strong>웹캠 · 마이크 켜기</strong> — <strong>장치</strong> 페이지의 스위치를 켭니다. → <a href="06-devices.html">6장</a></li>
-<li><strong>얼굴 맞추기</strong> — <strong>동작 › 자동 얼굴 설정</strong>을 눌러 안내를 따라 합니다. → <a href="07-motion.html">7장</a></li>
-<li><strong>배경 · 조명 고르기</strong> — <strong>스튜디오</strong> 페이지에서 고릅니다. → <a href="08-scene.html">8장</a></li>
-<li><strong>내보내기</strong> — <strong>출력</strong> 페이지에서 Spout2, 가상 카메라, 화면 공유 중 하나를 켭니다. → <a href="09-output.html">9장</a></li>
-</ol>
-</div>
-<p><strong>F1</strong>을 누르면 메뉴가 사라지고 아바타만 보입니다.</p>
-<h2 id="115에서-달라진-주요-위치">1.1.5에서 달라진 주요 위치<a class="anchor" href="#115에서-달라진-주요-위치" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>iPhone이나 외부 트래커를 쓰면 <a href="06-devices.html">장치</a>에서 연결 방법을 확인하세요.</p>
+<h2 id="3-배경과-구도-정하기">3. 배경과 구도 정하기<a class="anchor" href="#3-배경과-구도-정하기" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-main.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-main.webp" srcset="../assets/shots/ko/guide-main-960.webp 960w, ../assets/shots/ko/guide-main.webp 1420w" sizes="(max-width: 900px) 100vw, 860px" width="1420" height="1080" style="--image-width:1420px" alt="메뉴와 아바타가 함께 보이는 메인 화면" loading="lazy" decoding="async"></a><figcaption>메뉴와 아바타가 함께 보이는 메인 화면</figcaption></figure>
 <ul>
-<li>상단 돋보기에서 AFK, 미러, Spout2 등 메뉴·설정을 찾아 바로 이동할 수 있습니다.</li>
-<li>일반 자세와 추적을 잃었을 때의 AFK 대기 자세는 따로 설정합니다. AFK 전환 시간은 설정이 아닌 동작 › 몸에서 조절합니다.</li>
-<li>카드 제목을 클릭해 접거나 펼치고, 드래그로 순서를 변경합니다. 자세의 페이셜·머리·팔·손가락·몸통 추적도 각각 조절할 수 있습니다.</li>
+<li>의상·표정: 왼쪽 메뉴에서 고릅니다.</li>
+<li>얼굴·손 움직임: 동작에서 조절합니다.</li>
+<li>배경·조명: 스튜디오에서 고릅니다.</li>
+<li>구도: 하단 카메라 도구막대에서 얼굴·상반신·전신을 고릅니다.</li>
 </ul>
-<h2 id="종료">종료<a class="anchor" href="#종료" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>기본적으로 창의 <strong>X</strong>를 누르면 프로그램이 종료됩니다. <strong>설정 › 창</strong>에서 <strong>트레이로 최소화</strong>하도록 변경할 수 있습니다. 방송 출력 중에는 영상이 끊기지 않도록 트레이로 이동할 수 있습니다. 왼쪽 아래 <strong>전원</strong> 버튼은 프로그램을 완전히 종료합니다.</p></article><nav class="pager" aria-label="Pager"><span></span><a class="next" href="02-avatar-exporter.html"><span>다음</span>아바타 내보내기</a></nav><p class="updated">최종 업데이트: 2026-10-15</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#v200-빠른-시작-처음-실행해서-방송까지">v2.0.0 빠른 시작: 처음 실행해서 방송까지</a></li><li><a href="#준비물">준비물</a></li><li><a href="#에디션">에디션</a></li><li><a href="#설치">설치</a></li><li><a href="#활성화">활성화</a></li><li><a href="#첫-방송까지">첫 방송까지</a></li><li><a href="#115에서-달라진-주요-위치">1.1.5에서 달라진 주요 위치</a></li><li><a href="#종료">종료</a></li></ul></nav>
+<p>F1을 누르면 메뉴를 숨기고 아바타만 봅니다. 다시 누르면 메뉴가 돌아옵니다.</p>
+<h2 id="4-방송-프로그램에-연결하기">4. 방송 프로그램에 연결하기<a class="anchor" href="#4-방송-프로그램에-연결하기" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>사용 목적</th>
+<th>열 곳</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>이 PC의 OBS에 아바타 넣기</td>
+<td><a href="09-output.html#spout2">Spout2 연결</a></td>
+</tr>
+<tr>
+<td>다른 PC의 OBS로 영상 보내기</td>
+<td><a href="09-output.html#ndi">NDI 연결</a></td>
+</tr>
+<tr>
+<td>Discord·Zoom 카메라로 사용</td>
+<td><a href="09-output.html#가상-카메라">가상 카메라</a></td>
+</tr>
+<tr>
+<td>게임과 아바타를 함께 공유</td>
+<td><a href="09-output.html#화면-공유">화면 공유</a></td>
+</tr>
+<tr>
+<td>친구의 아바타와 합동 방송</td>
+<td><a href="09-session.html">원격 합방</a></td>
+</tr>
+</tbody>
+</table></div>
+<p>방송을 시작하기 전에는 OBS나 공유받는 쪽의 실제 영상을 확인하세요. 내 작업 화면과 송출 카메라의 구도가 다를 수 있습니다.</p>
+<h2 id="에디션과-종료">에디션과 종료<a class="anchor" href="#에디션과-종료" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Basic은 개인적·비공개 사용, Pro는 방송·영상 공개·상업적 이용에 사용합니다. <a href="13-license.html">에디션별 기능</a>에서 필요한 기능을 확인하세요.</p>
+<p>왼쪽 아래 전원 버튼으로 프로그램을 종료합니다. 창의 X 버튼이 트레이로 숨기도록 설정되어 있으면 송출은 계속됩니다. X 버튼 동작은 설정 → 창에서 바꿉니다.</p></article><nav class="pager" aria-label="Pager"><span></span><a class="next" href="02-avatar-exporter.html"><span>다음</span>아바타 내보내기</a></nav><p class="updated">최종 업데이트: 2026-10-15</p></main>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#설치하고-실행하기">설치하고 실행하기</a></li><li><a href="#1-아바타-열기">1. 아바타 열기</a></li><li><a href="#2-내-움직임-연결하기">2. 내 움직임 연결하기</a></li><li><a href="#3-배경과-구도-정하기">3. 배경과 구도 정하기</a></li><li><a href="#4-방송-프로그램에-연결하기">4. 방송 프로그램에 연결하기</a></li><li><a href="#에디션과-종료">에디션과 종료</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>제품</h2><ul><li><a href="index.html#features">기능</a></li><li><a href="index.html#how">사용 방법</a></li><li><a href="index.html#editions">에디션</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">업데이트 내역</a></li></ul></div><div class="fcol"><h2>가이드</h2><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul></div><div class="fcol"><h2>약관 · 정책</h2><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></div><div class="fcol"><h2>링크</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>제품</h2><ul><li><a href="index.html#features">기능</a></li><li><a href="index.html#how">사용 방법</a></li><li><a href="index.html#editions">에디션</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">업데이트 내역</a></li></ul></div><div class="fcol"><h2>가이드</h2><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul></div><div class="fcol"><h2>약관 · 정책</h2><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></div><div class="fcol"><h2>링크</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE는 VRChat Inc.의 공식 제품이 아니며, VRChat Inc.와 제휴 관계가 없습니다. VRChat은 VRChat Inc.의 상표입니다.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

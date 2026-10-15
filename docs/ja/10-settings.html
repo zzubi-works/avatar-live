@@ -42,11 +42,11 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">スタジオ：シーン・カメラ・照明・エフェクト</a></li><li><a href="09-output.html">出力：OBS・NDI・画面共有・リモートセッション</a></li><li><a href="10-settings.html" aria-current="page">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">スタジオ</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html" aria-current="page">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="10-設定">10. 設定<a class="anchor" href="#10-設定" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="v200性能と設定が変えるもの">v2.0.0：性能と設定が変えるもの<a class="anchor" href="#v200性能と設定が変えるもの" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ja/v45-settings.webp" srcset="../assets/shots/ja/v45-settings-960.webp 960w, ../assets/shots/ja/v45-settings.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 設定" loading="lazy" decoding="async"><figcaption>v45 設定</figcaption></figure>
-<div class="table-wrap"><table>
+<h2 id="性能と設定が変えるもの">性能と設定が変えるもの<a class="anchor" href="#性能と設定が変えるもの" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ja/v45-settings.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-settings.webp" srcset="../assets/shots/ja/v45-settings-960.webp 960w, ../assets/shots/ja/v45-settings.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="設定" loading="lazy" decoding="async"></a><figcaption>設定</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>設定</th>
@@ -55,73 +55,77 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>アプリ FPS</strong></td>
+<td>アプリ FPS</td>
 <td>上げると動きが滑らかですが CPU/GPU 負荷が増え、下げると省電力になります。送出 FPS は別に確認します。</td>
 </tr>
 <tr>
-<td><strong>描画品質・解像度</strong></td>
+<td>描画品質・解像度</td>
 <td>高いほど髪や輪郭が鮮明ですが GPU 負荷が増えます。アプリの窓と OBS 出力解像度は別です。</td>
 </tr>
 <tr>
-<td><strong>影・ポストエフェクト</strong></td>
+<td>影・ポストエフェクト</td>
 <td>オフで軽くなりますが立体感や光学効果が減ります。スタジオごとのエフェクトも確認してください。</td>
 </tr>
 <tr>
-<td><strong>ウィンドウサイズ・常に手前</strong></td>
+<td>ウィンドウサイズ・常に手前</td>
 <td>Windows の表示方法だけを変え、Spout2/NDI への送信解像度は変えません。</td>
 </tr>
 <tr>
-<td><strong>X ボタン</strong></td>
+<td>X ボタン</td>
 <td>終了またはトレイ移動。配信中はトレイから送出が続く場合があります。</td>
 </tr>
 <tr>
-<td><strong>UI 拡大率</strong></td>
+<td>UI 拡大率</td>
 <td>文字とボタンの大きさが変わり、小さい画面ではスクロールが増えます。</td>
 </tr>
 <tr>
-<td><strong>クイックツールバーの不透明度</strong></td>
+<td>クイックツールバーの不透明度</td>
 <td>高いほどボタンが目立ち、低いほどキャラクターを隠しません。</td>
 </tr>
 <tr>
-<td><strong>アップデート自動ダウンロード</strong></td>
+<td>アップデート自動ダウンロード</td>
 <td>有効で新バージョンを事前取得。オフでも起動時の確認と通知は行われます。</td>
 </tr>
 <tr>
-<td><strong>診断レポート送信</strong></td>
+<td>診断レポート送信</td>
 <td>ユーザーが送信を選んだときにログや再現状況を送ります。</td>
 </tr>
 </tbody>
 </table></div>
-<p><strong>ショートカット</strong>は背面でも動作することがあるためゲームとの競合を避けます。表情は<strong>押している間だけ</strong>か<strong>切り替え式</strong>を選べます。F13–F24 と組み合わせキーが使え、Stream Deck の通常ホットキーからも起動可能です。</p>
-<p>保存先に注意：<strong>アバター別設定</strong>は表情・ポーズ・保存ビュー、<strong>スタジオ別設定</strong>は部屋・舞台ライト・配信カメラ、<strong>Windows の機器</strong>はカメラ・マイクの選択です。環境を変えるとデバイスを選び直す場合があります。</p>
+<p>ショートカットは背面でも動作することがあるためゲームとの競合を避けます。表情は押している間だけか切り替え式を選べます。F13–F24 と組み合わせキーが使え、Stream Deck の通常ホットキーからも起動可能です。</p>
+<p>保存先に注意：アバター別設定は表情・ポーズ・保存ビュー、スタジオ別設定は部屋・舞台ライト・配信カメラ、Windows の機器はカメラ・マイクの選択です。環境を変えるとデバイスを選び直す場合があります。</p>
 <h2 id="一般ウィンドウパフォーマンス">一般・ウィンドウ・パフォーマンス<a class="anchor" href="#一般ウィンドウパフォーマンス" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/ja/settings.webp" width="960" height="900" alt="設定ページ" loading="lazy" decoding="async"><figcaption>設定ページ</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/ja/settings.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/settings.webp" width="960" height="900" style="--image-width:960px" alt="設定ページ" loading="lazy" decoding="async"></a><figcaption>設定ページ</figcaption></figure>
 <ul>
-<li><strong>起動時にメニューを開く</strong> — オフにすると、メニューなしで起動します。</li>
-<li><strong>ウィンドウ</strong> — ウィンドウのサイズ、全画面、常に最前面、X ボタンの動作を決めます。</li>
-<li><strong>パフォーマンス</strong> — フレームレートと画質を決めます。下げると PC の負担が軽くなります。</li>
-<li><strong>影</strong> — 髪やあごが、首や胸に落とす影です。オフにすると GPU の負担が軽くなります。</li>
-<li><strong>言語</strong> — 한국어・English・日本語・简体中文</li>
-<li><strong>UI</strong> — テーマ、パネルの位置、文字の大きさを変えます。</li>
+<li>起動時にメニューを開く — オフにすると、メニューなしで起動します。</li>
+<li>ウィンドウ — ウィンドウのサイズ、全画面、常に最前面、X ボタンの動作を決めます。</li>
+<li>パフォーマンス — フレームレートと画質を決めます。下げると PC の負担が軽くなります。</li>
+<li>影 — 髪やあごが、首や胸に落とす影です。オフにすると GPU の負担が軽くなります。</li>
+<li>言語 — 한국어・English・日本語・简体中文</li>
+<li>UI — テーマ、パネルの位置、文字の大きさを変えます。</li>
 </ul>
 </div>
 <h2 id="メニューと設定の検索">メニューと設定の検索<a class="anchor" href="#メニューと設定の検索" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ja/settings-search.webp" srcset="../assets/shots/ja/settings-search-960.webp 960w, ../assets/shots/ja/settings-search.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="全体メニュー検索" loading="lazy" decoding="async"><figcaption>全体メニュー検索</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/ja/settings-search.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/settings-search.webp" srcset="../assets/shots/ja/settings-search-960.webp 960w, ../assets/shots/ja/settings-search.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" style="--image-width:1600px" alt="全体メニュー検索" loading="lazy" decoding="async"></a><figcaption>全体メニュー検索</figcaption></figure>
 <p>右上の虫眼鏡でAFK、ミラー、言語、Spout2、目線、デスクモード、ショートカットなどを検索します。結果を選ぶとメニュー、デバイス、動作、スタジオ、出力、設定の該当ページへ移動し、設定カードも開きます。AFK時間の検索先は以前の設定ではなく動作 › 体です。</p>
 <h2 id="ショートカット">ショートカット<a class="anchor" href="#ショートカット" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/ja/hotkeys.webp" width="960" height="900" alt="ショートカット" loading="lazy" decoding="async"><figcaption>ショートカット</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/ja/hotkeys.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/hotkeys.webp" width="960" height="900" style="--image-width:960px" alt="ショートカット" loading="lazy" decoding="async"></a><figcaption>ショートカット</figcaption></figure>
 <ul>
-<li><strong>+ ショートカットを追加</strong> を押して、動作とキーを選びます。</li>
+<li>
+<ul>
+<li>ショートカットを追加 を押して、動作とキーを選びます。</li>
+</ul>
+</li>
 <li>ゲーム中や、Avatar Live が背面にあるときでも動作します。</li>
 <li>ほかのソフトへのキー入力は、そのまま届きます。</li>
-<li>メニューのボタンとジェスチャーは、<strong>押している間</strong> か <strong>押して切り替え</strong> を選べます。</li>
+<li>メニューのボタンとジェスチャーは、押している間 か 押して切り替え を選べます。</li>
 </ul>
 </div>
 <h2 id="ライセンス">ライセンス<a class="anchor" href="#ライセンス" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>現在のエディションを確認できます。</p>
-<div class="table-wrap"><table>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>ボタン</th>
@@ -130,21 +134,21 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>別のコードを入力</strong></td>
+<td>別のコードを入力</td>
 <td>別のライセンスに切り替えます。</td>
 </tr>
 <tr>
-<td><strong>Proにアップグレード</strong></td>
+<td>Proにアップグレード</td>
 <td>BOOTH で購入したアップグレードを入力して、Pro にします。</td>
 </tr>
 <tr>
-<td><strong>今すぐ確認</strong></td>
+<td>今すぐ確認</td>
 <td>ライセンスを再確認します。</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="診断情報アップデート">診断・情報・アップデート<a class="anchor" href="#診断情報アップデート" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>項目</th>
@@ -153,46 +157,46 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>診断 › エラーレポートを送る</strong></td>
+<td>診断 › エラーレポートを送る</td>
 <td>問題が起きたときに、説明とログを送ります。押したときだけ送信されます。</td>
 </tr>
 <tr>
-<td><strong>情報 › 改善の提案を送る</strong></td>
+<td>情報 › 改善の提案を送る</td>
 <td>欲しい機能や、直してほしい点を送ります。</td>
 </tr>
 <tr>
-<td><strong>お知らせ</strong></td>
+<td>お知らせ</td>
 <td>新しいお知らせは起動時に一度だけ表示し、過去のお知らせは設定からもう一度見られます。</td>
 </tr>
 <tr>
-<td><strong>ログフォルダーを開く</strong></td>
+<td>ログフォルダーを開く</td>
 <td>ログファイルを確認します。</td>
 </tr>
 <tr>
-<td><strong>今すぐ確認・ダウンロード</strong></td>
+<td>今すぐ確認・ダウンロード</td>
 <td>新しいバージョンを確認して、ダウンロードします。</td>
 </tr>
 <tr>
-<td><strong>再起動してインストール</strong></td>
+<td>再起動してインストール</td>
 <td>すぐにアップデートします。アバターと設定はそのままです。</td>
 </tr>
 </tbody>
 </table></div>
 <blockquote>
-<p>Avatar Liveは起動するたびに更新を一度確認し、新しいバージョンがあれば緑色の通知を表示します。<strong>設定 › アップデート › アップデートを自動ダウンロード</strong> をオンにすると自動でダウンロードします。インストールは別の <strong>終了時にインストール</strong> 設定または <strong>再起動してインストール</strong> ボタンに従います。BOOTHから再ダウンロードしてもアバターと設定は維持されます。</p>
+<p>Avatar Liveは起動するたびに更新を一度確認し、新しいバージョンがあれば緑色の通知を表示します。設定 › アップデート › アップデートを自動ダウンロード をオンにすると自動でダウンロードします。インストールは別の 終了時にインストール 設定または 再起動してインストール ボタンに従います。BOOTHから再ダウンロードしてもアバターと設定は維持されます。</p>
 </blockquote>
 <h2 id="起動時の更新確認とダウンロード">起動時の更新確認とダウンロード<a class="anchor" href="#起動時の更新確認とダウンロード" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ja/settings-updates.webp" width="960" height="900" alt="アップデートの設定" loading="lazy" decoding="async"><figcaption>アップデートの設定</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/ja/settings-updates.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/settings-updates.webp" width="960" height="900" style="--image-width:960px" alt="アップデートの設定" loading="lazy" decoding="async"></a><figcaption>アップデートの設定</figcaption></figure>
 <p>Avatar Liveは起動するたびに新しいバージョンを一度確認します。自動ダウンロードをOFFにしても更新確認と通知は続きます。アップデート設定から手動で確認・ダウンロードし、再起動後または終了時にインストールできます。アバターと設定は保持されます。</p>
 <h2 id="エラーレポートの送信">エラーレポートの送信<a class="anchor" href="#エラーレポートの送信" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ja/settings-diagnostics.webp" width="960" height="900" alt="診断とエラーレポート" loading="lazy" decoding="async"><figcaption>診断とエラーレポート</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/ja/settings-diagnostics.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/settings-diagnostics.webp" width="960" height="900" style="--image-width:960px" alt="診断とエラーレポート" loading="lazy" decoding="async"></a><figcaption>診断とエラーレポート</figcaption></figure>
 <p>不具合があったら設定 › 診断 › エラーレポートを送るから、発生した操作を添えて送信してください。状況の説明だけより診断データと再現手順が原因調査に役立ちます。</p>
 <h2 id="問題要望を送る">問題・要望を送る<a class="anchor" href="#問題要望を送る" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li>使っていて <strong>バグや問題</strong> があれば、<strong>設定 › 診断 › エラーレポートを送る</strong> からお知らせください。どんな状況だったかを一、二行書いていただけると、原因を探す大きな手がかりになります。</li>
-<li><strong>欲しい機能や改善点</strong> があれば、<strong>設定 › 情報 › 改善の提案を送る</strong> から送ってください。いただいたご意見は、アップデートの計画に反映します。</li>
-</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-output.html"><span>前へ</span>出力：OBS・NDI・画面共有・リモートセッション</a><a class="next" href="11-pro-features.html"><span>次へ</span>ポージング・オブジェクト・表情</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#v200性能と設定が変えるもの">v2.0.0：性能と設定が変えるもの</a></li><li><a href="#一般ウィンドウパフォーマンス">一般・ウィンドウ・パフォーマンス</a></li><li><a href="#メニューと設定の検索">メニューと設定の検索</a></li><li><a href="#ショートカット">ショートカット</a></li><li><a href="#ライセンス">ライセンス</a></li><li><a href="#診断情報アップデート">診断・情報・アップデート</a></li><li><a href="#起動時の更新確認とダウンロード">起動時の更新確認とダウンロード</a></li><li><a href="#エラーレポートの送信">エラーレポートの送信</a></li><li><a href="#問題要望を送る">問題・要望を送る</a></li></ul></nav>
+<li>使っていて バグや問題 があれば、設定 › 診断 › エラーレポートを送る からお知らせください。どんな状況だったかを一、二行書いていただけると、原因を探す大きな手がかりになります。</li>
+<li>欲しい機能や改善点 があれば、設定 › 情報 › 改善の提案を送る から送ってください。いただいたご意見は、アップデートの計画に反映します。</li>
+</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-output.html"><span>前へ</span>出力</a><a class="next" href="11-pro-features.html"><span>次へ</span>ポージング・オブジェクト・表情</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#性能と設定が変えるもの">性能と設定が変えるもの</a></li><li><a href="#一般ウィンドウパフォーマンス">一般・ウィンドウ・パフォーマンス</a></li><li><a href="#メニューと設定の検索">メニューと設定の検索</a></li><li><a href="#ショートカット">ショートカット</a></li><li><a href="#ライセンス">ライセンス</a></li><li><a href="#診断情報アップデート">診断・情報・アップデート</a></li><li><a href="#起動時の更新確認とダウンロード">起動時の更新確認とダウンロード</a></li><li><a href="#エラーレポートの送信">エラーレポートの送信</a></li><li><a href="#問題要望を送る">問題・要望を送る</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

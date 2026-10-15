@@ -1,6 +1,6 @@
 # Privacy Policy
 
-**Effective date: October 9, 2026**
+Effective date: October 9, 2026
 
 In providing Avatar Live and Curious Bobby - Avatar Exporter (the "Software"), Curious Bobby Co. (the "Company") processes only the minimum information necessary.
 
@@ -20,7 +20,7 @@ These inputs are used only within the user's PC to move the avatar. Avatar Expor
 |---|---|---|
 | License | License information, device and installation identifiers, app version, IP address and time of access | License verification, management of the one-person-one-device rule, prevention of unauthorized use |
 | Updates | License information, app version | Providing new versions |
-| Error reports | What the user writes, contact details (optional), diagnostic information (excluding file paths and account names), app logs | Analyzing errors and responding — **only when the user clicks "Send"** |
+| Error reports | What the user writes, contact details (optional), diagnostic information (excluding file paths and account names), app logs | Analyzing errors and responding — only when the user clicks "Send" |
 | Purchases | Buyer and payment information | Processed by BOOTH (pixiv Inc.); the Company does not receive payment information |
 
 The Company does not use this information for any purpose other than those stated above, and does not track users for advertising or marketing purposes.

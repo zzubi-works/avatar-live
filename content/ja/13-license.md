@@ -2,13 +2,13 @@
 
 ## エディションと価格
 
-| | **Basic** | **Pro** |
+| | Basic | Pro |
 |---|---|---|
 | 価格（BOOTH） | 1,990円 | 3,980円 |
 | 利用範囲 | 個人での利用（フレンドとの非公開の Discord 共有を含む） | 配信・動画の公開・商用利用 |
 | アバター・トラッキング・メニュー・ライティング・エフェクト | ✅ | ✅ |
 | マイ表情・自動表情・ヒエラルキー・シェイプキー・写真 | ✅ | ✅ |
-| Spout2・**NDI**・仮想カメラ・画面共有 | ✅ | ✅ |
+| Spout2・NDI・仮想カメラ・画面共有 | ✅ | ✅ |
 | 複数スタジオカメラ・リモートセッション・カメラ別 Spout2・録画 | — | ✅ |
 | 最大出力 | 1080p | 4K |
 | ウォーターマーク | あり | なし |
@@ -18,14 +18,14 @@
 
 ## アップグレードと体験版
 
-- **Basic → Pro**：BOOTH で **アップグレード（1,990円）** を購入し、Basic を使っている PC の **設定 › ライセンス › Proにアップグレード** に入力すると、Pro になります。アップグレードの購入は、そのライセンスにまとめられます。
-- **体験中に購入した場合は**、**設定 › ライセンス › 購入したコードを入力** に入力してください。
-- **体験版が終了すると**、入力画面が表示されます。購入したライセンスを入力すると、引き続き使えます。
+- Basic → Pro：BOOTH で アップグレード（1,990円） を購入し、Basic を使っている PC の 設定 › ライセンス › Proにアップグレード に入力すると、Pro になります。アップグレードの購入は、そのライセンスにまとめられます。
+- 体験中に購入した場合は、設定 › ライセンス › 購入したコードを入力 に入力してください。
+- 体験版が終了すると、入力画面が表示されます。購入したライセンスを入力すると、引き続き使えます。
 
 ## ライセンスの利用条件（要約）
 
 - 1人1台です。
-- 別の PC への移行は、ご自身で **1回** 行えます。それ以降は、やむを得ない場合にお問い合わせを通じてお手伝いしていますが、難しい場合もありますので、**最初にアクティベートする PC は、慎重に決めてください。**
+- 別の PC への移行は、ご自身で 1回 行えます。それ以降は、やむを得ない場合にお問い合わせを通じてお手伝いしていますが、難しい場合もありますので、最初にアクティベートする PC は、慎重に決めてください。
 - アクティベーションとライセンス確認には、インターネット接続が必要です。
 - プログラムとライセンスは、ご購入いただいた方だけがお使いください。再配布、販売、貸与、共有、改変、リバースエンジニアリング、ライセンス確認の回避は認められていません。
 
@@ -33,7 +33,7 @@
 
 ## 試験的機能
 
-Ultraleap、OSC、VMC 出力、舌・頬のカメラ検出のように、アプリで **試験的** と表示されている機能は、正常に動作する見込みですが、まだ開発者の環境ですべてのデバイスとアプリでテストできてはいません。Web カメラ（全身・指の関節を含む）、iPhone、VMC の入力は、実際の機器で確認済みです。
+Ultraleap、OSC、VMC 出力、舌・頬のカメラ検出のように、アプリで 試験的 と表示されている機能は、正常に動作する見込みですが、まだ開発者の環境ですべてのデバイスとアプリでテストできてはいません。Web カメラ（全身・指の関節を含む）、iPhone、VMC の入力は、実際の機器で確認済みです。
 
 ## 自分で作ったファイル
 
@@ -53,16 +53,27 @@ Avatar Live と Avatar Exporter は、Curious Bobby Co. が独自に開発した
 
 同梱されているオープンソースのコンポーネントは、各コンポーネントのライセンスに従います。告知は、プログラムと Exporter パッケージに同梱されています。Avatar Exporter の一部のコードは、MIT ライセンスで公開されているオープンソースのコードをもとに作成されています。
 
-## 第三者の告知：NDI、Spout2、VB-CABLE
+## NDI
 
-**NDI® は Vizrt NDI AB の登録商標**です。v45 Windows 配布物には `AvatarLive_Data/Plugins/x86_64/Processing.NDI.Lib.x64.dll` と、NDI および第三者の著作権・ライセンスを記した `Processing.NDI.Lib.Licenses.txt` が**実際に同梱されていることを確認済み**です。SDK の使用・再配布には [NDI SDK 公式ライセンス](https://docs.ndi.video/all/developing-with-ndi/sdk/licensing) と同梱の全文が適用されます。本案内は NDI からの承認・保証や新しい権利の付与を意味しません。
+NDI® は Vizrt NDI AB の登録商標です。[NDI 公式サイト](https://ndi.video/)。
 
-**[OBS Spout2 プラグイン](https://github.com/Off-World-Live/obs-spout2-plugin)**、**[DistroAV](https://github.com/DistroAV/DistroAV)**、**[NDI Tools](https://ndi.video/tools/)** はそれぞれの提供元が配布する独立したソフトウェアです。ユーザーが公式配布元から取得し、それぞれの利用条件に従う必要があります。
+同梱の NDI Runtime には NDI SDK のライセンスが適用されます。全文は `AvatarLive_Data/Plugins/x86_64/Processing.NDI.Lib.Licenses.txt` にあります。[SDK 利用条件](https://docs.ndi.video/all/developing-with-ndi/sdk/licensing)。
 
-**VB-CABLE** は [VB-Audio Software](https://vb-audio.com/Cable/) の Donationware で、[ライセンス条件](https://vb-audio.com/Services/licensing.htm)に従います。セッション中のアバターデータも暗号化されるからといって原作者の再配布禁止条項が無効になるわけではありません。
+[NDI Tools](https://ndi.video/tools/) と OBS 用の [DistroAV](https://github.com/DistroAV/DistroAV) は別途入手する製品で、それぞれの規約に従います。
 
-[OBS/NDI の導入とリモートデータの扱い](09-output.md)
+## Spout2
 
+Avatar Live の [KlakSpout](https://github.com/keijiro/KlakSpout) には Unlicense が適用されます。同梱の告知をご確認ください。別途インストールする [OBS Spout2 プラグイン](https://github.com/Off-World-Live/obs-spout2-plugin) は同プロジェクトの GPL v2 に従います。
+
+## VB-CABLE
+
+[VB-CABLE](https://vb-audio.com/Cable/) は VB-Audio Software が提供する独立した Donationware の仮想オーディオドライバーです。利用・配布・必要なライセンスは [VB-Audio の条件](https://vb-audio.com/Services/licensing.htm)に従います。Avatar Live の購入や Pro への変更は、VB-CABLE の別個の利用許諾を代わりに与えるものではありません。
+
+## アバターと小物
+
+アバター・衣装・テクスチャ・シェーダー・ポーズ・小物の権利は各原作者にあります。配信・商用利用・改変・遠隔転送・一時保存・再配布の許諾確認はユーザーの責任です。
+
+Avatar Live は第三者コンテンツの利用許諾を代行しません。ユーザーが権限なく利用・転送・配布したコンテンツと、それによる権利上の紛争について、当社は責任を負いません。ファイルの書き出し、Pro の購入、暗号化転送は原作者の許諾を代替しません。
 ## 商標
 
 VRChat は VRChat Inc. の商標です。そのほかの製品名は各所有者の商標であり、互換性を説明する目的でのみ記載しています。

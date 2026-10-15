@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>장치 — AVATAR LIVE</title>
-<meta name="description" content="트래킹 소스는 부위별로 따로 정합니다. 예를 들어 얼굴은 iPhone, 팔은 웹캠, 골반·다리는 VMC를 선택할 수 있습니다. 다른 소스를 사용하지 않을 부위에 VMC가 남아 있으면 영상은 정상이어도 그 부위가 멈춰 보일 수 있습니다.">
+<meta name="description" content="웹캠·마이크·트래커를 연결하고 얼굴·몸·손에 사용할 입력을 고릅니다.">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ko/06-devices.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/06-devices.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/06-devices.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/06-devices.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/06-devices.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="장치 — AVATAR LIVE">
-<meta property="og:description" content="트래킹 소스는 부위별로 따로 정합니다. 예를 들어 얼굴은 iPhone, 팔은 웹캠, 골반·다리는 VMC를 선택할 수 있습니다. 다른 소스를 사용하지 않을 부위에 VMC가 남아 있으면 영상은 정상이어도 그 부위가 멈춰 보일 수 있습니다.">
+<meta property="og:description" content="웹캠·마이크·트래커를 연결하고 얼굴·몸·손에 사용할 입력을 고릅니다.">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ko/06-devices.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ko.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,128 +42,152 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>가이드 목차</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">시작 화면과 아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html" aria-current="page">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">스튜디오: 장면 · 카메라 · 조명 · 효과</a></li><li><a href="09-output.html">출력: OBS · NDI · 화면 공유 · 원격 세션</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징 · 오브젝트 · 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="6-장치">6. 장치<a class="anchor" href="#6-장치" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="v200-장치-연결과-값-조절-안내">v2.0.0 장치 연결과 값 조절 안내<a class="anchor" href="#v200-장치-연결과-값-조절-안내" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ko/v45-input.webp" srcset="../assets/shots/ko/v45-input-960.webp 960w, ../assets/shots/ko/v45-input.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 장치 화면" loading="lazy" decoding="async"><figcaption>v45 장치 화면</figcaption></figure>
-<p><strong>트래킹 소스는 부위별로 따로 정합니다.</strong> 예를 들어 얼굴은 iPhone, 팔은 웹캠, 골반·다리는 VMC를 선택할 수 있습니다. 다른 소스를 사용하지 않을 부위에 VMC가 남아 있으면 영상은 정상이어도 그 부위가 멈춰 보일 수 있습니다.</p>
-<div class="table-wrap"><table>
+  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html" aria-current="page">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">스튜디오</a></li><li><a href="08-camera-effects.html">카메라 효과</a></li><li><a href="09-output.html">출력</a></li><li><a href="09-session.html">원격 합방</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징과 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="장치">장치<a class="anchor" href="#장치" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>웹캠·마이크·트래커를 연결하고 얼굴·몸·손에 사용할 입력을 고릅니다.</p>
+<h2 id="웹캠과-마이크">웹캠과 마이크<a class="anchor" href="#웹캠과-마이크" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-devices.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-devices.webp" width="550" height="888" style="--image-width:550px" alt="웹캠과 마이크 설정" loading="lazy" decoding="async"></a><figcaption>웹캠과 마이크 설정</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
-<th>입력 설정</th>
-<th>값을 바꾸면 달라지는 점</th>
+<th>버튼·항목</th>
+<th>작동 방식</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>웹캠 품질 / 균형·절약</strong></td>
-<td>품질을 높이면 트래킹 계산 부담이 커질 수 있고, 낮추면 CPU 부담은 줄지만 빠른 손가락·몸 동작의 정밀도가 낮아질 수 있습니다.</td>
+<td>웹캠 스위치</td>
+<td>선택한 카메라로 추적을 시작하거나 멈춥니다.</td>
 </tr>
 <tr>
-<td><strong>손 떨림 보정 / 스무딩</strong></td>
-<td>높이면 정지한 손의 미세 떨림이 줄지만 빠른 동작 뒤 손이 늦게 따라옵니다. 낮추면 즉각 반응하지만 작은 검출 오차가 그대로 보입니다.</td>
+<td>카메라 목록</td>
+<td>사용할 웹캠을 고릅니다.</td>
 </tr>
 <tr>
-<td><strong>웹캠 전신 켬/끔</strong></td>
-<td>켜면 화면에 잡히는 어깨·몸통·다리까지 추정합니다. 책상 아래 다리가 보이지 않으면 완전 추적이 아니라 추정/기본 자세와 혼합될 수 있습니다.</td>
+<td>정면 보정</td>
+<td>지금 바라보는 방향을 아바타의 정면으로 맞춥니다.</td>
 </tr>
 <tr>
-<td><strong>손가락 관절 켬/끔</strong></td>
-<td>켜면 손을 펴고 굽힐 때 각 마디가 변합니다. 손이 작게 보이거나 가려지면 손가락이 불안정해질 수 있습니다.</td>
+<td>트래킹 품질</td>
+<td>부드럽게는 움직임을 자주 계산합니다. 균형·절약은 PC 부담을 줄입니다.</td>
 </tr>
 <tr>
-<td><strong>iPhone 얼굴 입력</strong></td>
-<td>iFacialMocap 또는 FaceMotion3D의 얼굴 데이터로 표정·머리를 조종합니다. 첫 유효 얼굴 입력에서 약 3초 뒤에 시작 보정이 진행되므로 처음에는 정면에서 잠깐 기다리세요.</td>
+<td>마이크 스위치</td>
+<td>선택한 마이크로 입 움직임을 시작하거나 멈춥니다.</td>
 </tr>
 <tr>
-<td><strong>VMC 부위 선택</strong></td>
-<td>외부 전신 트래커·장갑 앱의 모션을 받습니다. 연결 상태의 숫자만 보지 말고 실제로 해당 부위가 움직이는지, T포즈 정렬이 맞는지 확인하세요.</td>
+<td>입력 막대</td>
+<td>목소리가 들어오는 크기를 보여 줍니다. 말할 때 움직이는지 확인하세요.</td>
 </tr>
 <tr>
-<td><strong>SteamVR</strong></td>
-<td>HMD·컨트롤러·전신 트래커를 각 신체 부위에 연결합니다. 먼저 SteamVR에서 장치 인식/기준 위치가 정상인지 확인한 후 Avatar Live에서 몸 보정을 수행하세요.</td>
+<td>노이즈 게이트</td>
+<td>작은 소리에는 입이 열리지 않게 합니다.</td>
 </tr>
 <tr>
-<td><strong>마이크 노이즈 게이트</strong></td>
-<td>높일수록 작은 환경 소리에는 입이 열리지 않지만 작은 목소리도 무시될 수 있습니다. 너무 낮으면 키보드 소리에 입이 움직입니다.</td>
+<td>배경 소음 측정</td>
+<td>말하지 않는 동안의 소리를 측정해 잡음 기준을 맞춥니다.</td>
 </tr>
 </tbody>
 </table></div>
-<figure><img src="../assets/shots/ko/v45-devices-advanced.webp" srcset="../assets/shots/ko/v45-devices-advanced-960.webp 960w, ../assets/shots/ko/v45-devices-advanced.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" alt="v45 세부 트래킹 항목" loading="lazy" decoding="async"><figcaption>v45 세부 트래킹 항목</figcaption></figure>
-<p><strong>권장 연결 순서:</strong> 장치별 연결 확인 → 각 신체 부위의 소스 선택 → 정면/T포즈 보정 → 손 떨림과 트래킹 복귀 조절 → 실제 방송 카메라로 확인. 얼굴과 몸이 동시에 움직여 이상해 보인다면 서로 다른 소스가 같은 관절을 중복으로 제어하는지 점검하세요.</p>
-<p><strong>VRM 0.x·1.0</strong>은 내보내기 없이 불러올 수 있지만 일부 VRM 0.x의 지원되지 않는 셰이더는 로딩되지 않을 수 있습니다. 파일과 표정 표준이 맞지 않을 때는 원본 모델을 확인하세요. 세션에서 다른 사람의 VRM은 반드시 본인의 라이선스가 허용하는 방식으로 사용해야 합니다.</p>
-<h2 id="웹캠과-마이크">웹캠과 마이크<a class="anchor" href="#웹캠과-마이크" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><img src="../assets/shots/ko/devices.webp" width="960" height="900" alt="장치 페이지" loading="lazy" decoding="async"><figcaption>장치 페이지</figcaption></figure>
-<ul>
-<li><strong>웹캠</strong> 스위치를 켜면 얼굴과 손 트래킹이 시작됩니다.</li>
-<li>카메라 목록에서 사용할 웹캠을 고릅니다.</li>
-<li><strong>정면 보정</strong> — 지금 얼굴 방향을 정면으로 맞춥니다.</li>
-<li><strong>트래킹 품질</strong> — 게임과 함께 쓸 때는 <strong>균형</strong>이나 <strong>절약</strong>을 권장합니다.</li>
-<li><strong>마이크</strong> 스위치를 켜면 말할 때 입이 움직입니다.</li>
-<li><strong>노이즈 게이트</strong> — 키보드 소리 같은 잡음에는 입이 움직이지 않게 합니다.</li>
-<li><strong>배경 소음 측정</strong> — 조용히 있는 동안 버튼을 누르면 잡음 기준을 자동으로 맞춥니다.</li>
-</ul>
-</div>
+<p>노이즈 게이트 기준을 높이면 키보드 소리에 덜 반응하지만 작은 목소리도 무시할 수 있습니다. 입이 잘 안 움직이면 기준을 낮춰 보세요.</p>
 <h2 id="트래킹-소스">트래킹 소스<a class="anchor" href="#트래킹-소스" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><img src="../assets/shots/ko/sources.webp" width="960" height="900" alt="트래킹 소스" loading="lazy" decoding="async"><figcaption>트래킹 소스</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-tracking-sources.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-tracking-sources.webp" width="550" height="780" style="--image-width:550px" alt="신체 부위마다 입력을 고르는 트래킹 소스" loading="lazy" decoding="async"></a><figcaption>신체 부위마다 입력을 고르는 트래킹 소스</figcaption></figure>
+<p>얼굴·입·머리·눈·팔·손·손가락·몸을 각각 무엇으로 움직일지 고릅니다.</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>선택</th>
+<th>사용할 때</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>웹캠</td>
+<td>카메라에 보이는 내 얼굴·몸·손을 따라 움직입니다.</td>
+</tr>
+<tr>
+<td>iPhone</td>
+<td>iPhone 얼굴 앱으로 표정과 머리를 움직입니다.</td>
+</tr>
+<tr>
+<td>VMC</td>
+<td>다른 모션 캡처 앱이나 트래커 앱의 동작을 받습니다.</td>
+</tr>
+<tr>
+<td>Ultraleap</td>
+<td>전용 손 트래커로 손을 움직입니다.</td>
+</tr>
+<tr>
+<td>SteamVR</td>
+<td>HMD·컨트롤러·트래커를 신체 부위에 연결합니다.</td>
+</tr>
+<tr>
+<td>끔</td>
+<td>그 부위에 해당 추적 입력을 사용하지 않습니다.</td>
+</tr>
+</tbody>
+</table></div>
+<p>예: 얼굴은 iPhone, 팔과 손은 웹캠으로 둘 수 있습니다. 장치가 연결되어 있어도 부위의 소스가 다른 입력을 가리키면 움직이지 않습니다.</p>
+<h2 id="웹캠-전신과-손가락">웹캠 전신과 손가락<a class="anchor" href="#웹캠-전신과-손가락" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li>얼굴, 입, 머리, 눈, 팔, 손, 손가락, 몸을 무엇으로 움직일지 부위마다 고릅니다.</li>
-<li>부위마다 <strong>웹캠</strong>, <strong>iPhone</strong>, <strong>VMC</strong>, <strong>Ultraleap</strong>(손)을 섞어 쓸 수 있습니다. 예를 들어 얼굴은 iPhone, 몸은 전신 트래커, 손은 웹캠으로 둘 수 있습니다.</li>
-<li><strong>얼굴 엔진</strong> — 웹캠 엔진이나 얼굴 앱(iPhone · VMC)을 고릅니다. 각 장치의 설정은 그 장치를 쓰는 부위 아래에 나옵니다.</li>
-<li><strong>입</strong>을 <strong>얼굴 + 마이크</strong>로 두면 말할 때는 목소리, 아닐 때는 입 모양을 따라갑니다.</li>
-<li><strong>손 떨림 보정</strong> — 가만히 있을 때 손과 손가락이 떨리지 않게 합니다.</li>
+<li>전신: 카메라에 보이는 몸통과 다리를 추적합니다. 책상에 가려진 다리는 실제로 보이는 것처럼 추적되지 않습니다.</li>
+<li>손가락 관절 추적: 손가락 마디의 굽힘과 벌림을 따라갑니다.</li>
+<li>손 떨림 보정: 높이면 미세한 떨림이 줄고, 빠른 동작은 조금 늦게 따라옵니다.</li>
 </ul>
-</div>
-<h2 id="전신--손가락-관절-웹캠">전신 · 손가락 관절 (웹캠)<a class="anchor" href="#전신--손가락-관절-웹캠" aria-hidden="true" tabindex="-1">#</a></h2>
-<ul>
-<li><strong>몸</strong>을 웹캠으로 두면 <strong>전신</strong> 스위치가 나옵니다. 켜면 카메라에 보이는 몸통과 다리를 따라가고, 옆에 <strong>앉음 · 서 있음 · 다리 추적 · 다리 추정</strong>이 표시됩니다.</li>
-<li>책상 앞처럼 다리가 보이지 않을 때는 어깨 움직임만으로 상체가 기울고 돌아갑니다. 보이지 않는 다리는 아바타 자세로 둡니다.</li>
-<li><strong>손가락</strong>을 웹캠으로 두면 <strong>손가락 관절 추적</strong> 스위치가 나옵니다. 켜면 손가락 마디마다의 굽힘, 벌림, 엄지를 카메라로 따라갑니다.</li>
-</ul>
-<h2 id="vmc로-받기-전신-트래커--장갑--다른-앱">VMC로 받기 (전신 트래커 · 장갑 · 다른 앱)<a class="anchor" href="#vmc로-받기-전신-트래커--장갑--다른-앱" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="steps">
-<ol>
-<li>보내는 앱(전신 트래커 앱, 장갑 앱, 모션 캡처 앱 등)에서 VMC 송신을 켜고 이 PC로 보냅니다.</li>
-<li><strong>트래킹 소스</strong>에서 VMC로 받을 부위의 소스를 <strong>VMC</strong>로 고릅니다. 다른 부위는 웹캠 · iPhone 그대로 둘 수 있습니다.</li>
-<li><strong>VMC 설정</strong>에서 받는 본 개수와 데이터가 들어오는지 확인합니다.</li>
-<li>자세가 어긋나면 <strong>T자세</strong> 또는 <strong>정렬</strong>을 누릅니다. <strong>초기화</strong>로 되돌립니다.</li>
-</ol>
-</div>
-<ul>
-<li>손가락은 마디마다의 회전, 벌림, 엄지까지 그대로 반영합니다.</li>
-<li>팔을 VMC로 받는 중에 입력이 끊기면 팔이 책상(키보드 · 마우스) 자세로 돌아갑니다.</li>
-</ul>
-<blockquote class="callout tip"><p>웹캠(전신 · 손가락 관절 포함), iPhone, VMC 입력은 실제 장비로 확인했습니다. <strong>실험적</strong>으로 표시된 기능(Ultraleap, OSC 등)은 정상적으로 동작할 것으로 예상하지만, 아직 개발자 환경에서 모든 장치와 앱으로 테스트하지는 못했습니다. 문제가 있으면 <strong>설정 › 진단 › 오류 리포트 보내기</strong>로 알려 주세요.</p>
-</blockquote>
-<h2 id="iphone-미러-모드와-추적-상실">iPhone 미러 모드와 추적 상실<a class="anchor" href="#iphone-미러-모드와-추적-상실" aria-hidden="true" tabindex="-1">#</a></h2>
-<ul>
-<li>iFacialMocap 미러 모드는 눈 깜빡임 등 왼쪽·오른쪽 표정 채널도 올바르게 반전합니다. 좌우 눈이 반대로 감기면 미러 설정을 확인하세요.</li>
-<li>iPhone이 trackingStatus를 통해 얼굴 추적 상실을 알리면 지정한 AFK 자세로 전환할 수 있습니다. 복귀 시간은 동작 › 몸에서 조절합니다.</li>
-<li>iPhone의 얼굴 추적만으로 전신 추적이 제공되지는 않습니다. 다만 웹캠 전신 입력이 없어도 책상모드의 팔 복귀는 사용할 수 있습니다. 전신 움직임이 필요하면 웹캠 또는 VMC를 사용하세요.</li>
-</ul>
-<h2 id="실험적-웹캠-손-깊이-추정">실험적 웹캠 손 깊이 추정<a class="anchor" href="#실험적-웹캠-손-깊이-추정" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>동작 › 손의 웹캠 손 뻗기 항목에 있는 손 깊이 추정은 아직 실험적입니다. 손을 앞으로 뻗을 때 팔·손목이 뒤틀리거나 떨릴 수 있으므로 일반 사용자는 OFF를 권장합니다. <a href="07-motion.html">동작 설명</a>을 참고하세요.</p>
-<h2 id="iphone으로-얼굴-트래킹-ifacialmocap--facemotion3d">iPhone으로 얼굴 트래킹 (iFacialMocap · FaceMotion3D)<a class="anchor" href="#iphone으로-얼굴-트래킹-ifacialmocap--facemotion3d" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="steps">
+<h2 id="iphone-연결">iPhone 연결<a class="anchor" href="#iphone-연결" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-phone.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-phone.webp" width="550" height="811" style="--image-width:550px" alt="외부 얼굴 추적 연결 설정" loading="lazy" decoding="async"></a><figcaption>외부 얼굴 추적 연결 설정</figcaption></figure>
 <ol>
 <li>iPhone과 PC를 같은 Wi-Fi에 연결합니다.</li>
-<li><strong>얼굴 엔진</strong>에서 얼굴 앱으로 <strong>iFacialMocap</strong> 또는 <strong>FaceMotion3D</strong>를 고르고, <strong>이 PC의 주소</strong>를 <strong>복사</strong>합니다.</li>
-<li>iPhone의 iFacialMocap 앱에서는 톱니바퀴 › <strong>Destination IP address</strong>에 그 주소를 입력합니다. FaceMotion3D는 앱의 연결 설정에서 이 PC 주소로 보내도록 합니다.</li>
-<li>스위치를 켜면 iPhone의 표정이 아바타에 반영됩니다. 표정이 어떻게 나오는지는 아바타 설정을 따릅니다 (<a href="07-motion.html#표정이-움직이는-방식">표정이 움직이는 방식</a> 참고).</li>
-<li>연결이 안 되면 <strong>연결 테스트</strong>를 눌러 데이터가 들어오는지 확인합니다.</li>
+<li>얼굴 엔진에서 iFacialMocap 또는 FaceMotion3D를 고릅니다.</li>
+<li>이 PC의 주소를 복사해 휴대폰 앱의 송신 대상 주소에 넣습니다.</li>
+<li>입력 스위치를 켜고 정면을 잠깐 바라봅니다. 첫 얼굴 입력 뒤 약 3초 후 시작 보정이 진행됩니다.</li>
+<li>연결 테스트에서 데이터가 들어오는지 확인합니다.</li>
 </ol>
-</div>
-<blockquote class="callout tip"><p><strong>iPhone 주소 (선택)</strong> 칸은 비워 두어도 됩니다. iFacialMocap 앱에서 Destination IP address를 쓰지 않을 때만 입력하세요.</p>
-<p>💡 <strong>끊기면 웹캠으로 대체</strong>를 켜 두면 iPhone 연결이 끊겼을 때 웹캠이 잠시 대신 추적합니다.</p>
-</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>이전</span>아바타 메뉴</a><a class="next" href="07-motion.html"><span>다음</span>동작</a></nav><p class="updated">최종 업데이트: 2026-10-15</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#v200-장치-연결과-값-조절-안내">v2.0.0 장치 연결과 값 조절 안내</a></li><li><a href="#웹캠과-마이크">웹캠과 마이크</a></li><li><a href="#트래킹-소스">트래킹 소스</a></li><li><a href="#전신--손가락-관절-웹캠">전신 · 손가락 관절 (웹캠)</a></li><li><a href="#vmc로-받기-전신-트래커--장갑--다른-앱">VMC로 받기 (전신 트래커 · 장갑 · 다른 앱)</a></li><li><a href="#iphone-미러-모드와-추적-상실">iPhone 미러 모드와 추적 상실</a></li><li><a href="#실험적-웹캠-손-깊이-추정">실험적 웹캠 손 깊이 추정</a></li><li><a href="#iphone으로-얼굴-트래킹-ifacialmocap--facemotion3d">iPhone으로 얼굴 트래킹 (iFacialMocap · FaceMotion3D)</a></li></ul></nav>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>켜거나 바꾸면</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>미러</td>
+<td>좌우 움직임을 거울처럼 반영합니다.</td>
+</tr>
+<tr>
+<td>끊기면 웹캠으로 대체</td>
+<td>휴대폰 연결이 끊긴 동안 웹캠으로 전환합니다.</td>
+</tr>
+<tr>
+<td>iPhone 주소</td>
+<td>휴대폰 앱에 PC 주소를 넣지 않는 방식에서 사용합니다. 일반 연결에서는 비워 둘 수 있습니다.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="vmc-연결">VMC 연결<a class="anchor" href="#vmc-연결" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-vmc.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-vmc.webp" width="550" height="983" style="--image-width:550px" alt="VMC 입력과 연결 상태" loading="lazy" decoding="async"></a><figcaption>VMC 입력과 연결 상태</figcaption></figure>
+<ol>
+<li>보내는 앱에서 VMC 송신을 켜고 이 PC의 수신 주소·포트로 보냅니다.</li>
+<li>트래킹 소스에서 받을 부위를 VMC로 고릅니다.</li>
+<li>VMC 설정에 받은 본 개수와 입력 상태가 나타나는지 확인합니다.</li>
+<li>몸 방향이나 팔이 어긋나면 T자세 또는 정렬로 맞춥니다.</li>
+</ol>
+<h2 id="steamvr-연결">SteamVR 연결<a class="anchor" href="#steamvr-연결" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-steamvr.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-steamvr.webp" width="550" height="526" style="--image-width:550px" alt="SteamVR 장치 설정" loading="lazy" decoding="async"></a><figcaption>SteamVR 장치 설정</figcaption></figure>
+<ol>
+<li>SteamVR에서 HMD·컨트롤러·트래커가 인식되는지 확인합니다.</li>
+<li>장치 → SteamVR을 켭니다.</li>
+<li>장치를 머리·손·몸 등 해당 부위에 연결합니다.</li>
+<li>보정을 실행해 아바타와 내 장치 위치를 맞춥니다.</li>
+</ol>
+<p>실험적으로 표시된 장치는 환경에 따라 동작이 다를 수 있습니다. 장치 연결은 정상인데 움직임이 이상하다면 <a href="07-motion.html">동작</a>에서 부드러움·보정·추적 복귀 설정을 확인하세요.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>이전</span>아바타 메뉴</a><a class="next" href="07-motion.html"><span>다음</span>동작</a></nav><p class="updated">최종 업데이트: 2026-10-15</p></main>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#웹캠과-마이크">웹캠과 마이크</a></li><li><a href="#트래킹-소스">트래킹 소스</a></li><li><a href="#웹캠-전신과-손가락">웹캠 전신과 손가락</a></li><li><a href="#iphone-연결">iPhone 연결</a></li><li><a href="#vmc-연결">VMC 연결</a></li><li><a href="#steamvr-연결">SteamVR 연결</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>제품</h2><ul><li><a href="index.html#features">기능</a></li><li><a href="index.html#how">사용 방법</a></li><li><a href="index.html#editions">에디션</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">업데이트 내역</a></li></ul></div><div class="fcol"><h2>가이드</h2><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션 · 라이선스 · 고지</a></li></ul></div><div class="fcol"><h2>약관 · 정책</h2><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></div><div class="fcol"><h2>링크</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>제품</h2><ul><li><a href="index.html#features">기능</a></li><li><a href="index.html#how">사용 방법</a></li><li><a href="index.html#editions">에디션</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">업데이트 내역</a></li></ul></div><div class="fcol"><h2>가이드</h2><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul></div><div class="fcol"><h2>약관 · 정책</h2><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></div><div class="fcol"><h2>링크</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE는 VRChat Inc.의 공식 제품이 아니며, VRChat Inc.와 제휴 관계가 없습니다. VRChat은 VRChat Inc.의 상표입니다.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

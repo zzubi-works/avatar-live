@@ -42,22 +42,22 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html" aria-current="page">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">スタジオ：シーン・カメラ・照明・エフェクト</a></li><li><a href="09-output.html">出力：OBS・NDI・画面共有・リモートセッション</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html" aria-current="page">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">スタジオ</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="3-スタート画面とアバターライブラリ">3. スタート画面とアバターライブラリ<a class="anchor" href="#3-スタート画面とアバターライブラリ" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="v200ライブラリの選択が変えること">v2.0.0：ライブラリの選択が変えること<a class="anchor" href="#v200ライブラリの選択が変えること" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ja/v45-menu.webp" srcset="../assets/shots/ja/v45-menu-960.webp 960w, ../assets/shots/ja/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 アバター読み込み後" loading="lazy" decoding="async"><figcaption>v45 アバター読み込み後</figcaption></figure>
+<h2 id="ライブラリの選択が変えること">ライブラリの選択が変えること<a class="anchor" href="#ライブラリの選択が変えること" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ja/v45-menu.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-menu.webp" srcset="../assets/shots/ja/v45-menu-960.webp 960w, ../assets/shots/ja/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="アバター読み込み後" loading="lazy" decoding="async"></a><figcaption>アバター読み込み後</figcaption></figure>
 <ul>
-<li><strong>.vavatar を読み込む</strong>：Exporter 1.0.6 で作ったファイルを登録します。Unity プロジェクトそのものを直接開くわけではありません。<strong>.vrm を読み込む</strong>：対応する VRM 0.x / 1.0 を読み込みますが、一部の未対応シェーダーは表示できません。</li>
-<li><strong>最近使った／フォルダー／取り込み済み</strong>はライブラリの表示カテゴリだけを変えます。トラッキングやカメラの動作を変えるものではありません。</li>
-<li><strong>既定／前回／毎回選ぶ</strong>は起動時にどのアバターを表示するかを決めます。配信ごとにモデルを変えるなら毎回選ぶと取り違えを減らせます。</li>
-<li><strong>起動時にカメラ・マイクをオン</strong>にすると Windows のデバイスをすぐ使用します。他の通話アプリと競合する場合はオフにし、必要な時だけ手動でオンにします。</li>
+<li>.vavatar を読み込む：Exporter 1.0.6 で作ったファイルを登録します。Unity プロジェクトそのものを直接開くわけではありません。.vrm を読み込む：対応する VRM 0.x / 1.0 を読み込みますが、一部の未対応シェーダーは表示できません。</li>
+<li>最近使った／フォルダー／取り込み済みはライブラリの表示カテゴリだけを変えます。トラッキングやカメラの動作を変えるものではありません。</li>
+<li>既定／前回／毎回選ぶは起動時にどのアバターを表示するかを決めます。配信ごとにモデルを変えるなら毎回選ぶと取り違えを減らせます。</li>
+<li>起動時にカメラ・マイクをオンにすると Windows のデバイスをすぐ使用します。他の通話アプリと競合する場合はオフにし、必要な時だけ手動でオンにします。</li>
 <li>アバターを切り替えるとそのアバター自身の表情、ポーズ、保存したビューが戻ります。前のモデルの全設定を次のモデルへ勝手にコピーするものではありません。</li>
-<li>**複数アバター (Pro)**はシーンで複数のモデルを同時に使う機能で、完全な置き換えとは別です。編集するモデルを選んでください。</li>
+<li>複数アバター (Pro)はシーンで複数のモデルを同時に使う機能で、完全な置き換えとは別です。編集するモデルを選んでください。</li>
 </ul>
-<p><strong>セッションとの違い：</strong> ライブラリの原本は自分の PC にあります。<a href="09-output.html">リモートセッション</a>の<strong>自分のアバターデータを送る</strong>は別途同意が必要で、受信側ではセッション限定の暗号化一時キャッシュを使用します。相手の原本が自分のライブラリへ恒久的に登録されるわけではありません。</p>
+<p>セッションとの違い： ライブラリの原本は自分の PC にあります。<a href="09-output.html">リモートセッション</a>の自分のアバターデータを送るは別途同意が必要で、受信側ではセッション限定の暗号化一時キャッシュを使用します。相手の原本が自分のライブラリへ恒久的に登録されるわけではありません。</p>
 <h2 id="スタート画面">スタート画面<a class="anchor" href="#スタート画面" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/ja/launcher.webp" srcset="../assets/shots/ja/launcher-960.webp 960w, ../assets/shots/ja/launcher.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="スタート画面" loading="lazy" decoding="async"><figcaption>スタート画面</figcaption></figure>
-<div class="table-wrap"><table>
+<figure><a class="zoomable" href="../assets/shots/ja/launcher.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/launcher.webp" srcset="../assets/shots/ja/launcher-960.webp 960w, ../assets/shots/ja/launcher.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" style="--image-width:1600px" alt="スタート画面" loading="lazy" decoding="async"></a><figcaption>スタート画面</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>項目</th>
@@ -66,52 +66,52 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>アバターを開く…</strong></td>
+<td>アバターを開く…</td>
 <td><code>.vavatar</code> ファイルを開きます。ウィンドウにドラッグ＆ドロップしても開けます。</td>
 </tr>
 <tr>
-<td><strong>最近・フォルダー・読み込み済み</strong></td>
+<td>最近・フォルダー・読み込み済み</td>
 <td>最近開いたアバター、アバターフォルダーのアバター、読み込んだアバターを表示します。</td>
 </tr>
 <tr>
-<td><strong>既定に設定</strong></td>
+<td>既定に設定</td>
 <td>このアバターですぐに開始するようにします。</td>
 </tr>
 <tr>
-<td><strong>カメラ・マイク</strong></td>
+<td>カメラ・マイク</td>
 <td>開始時に一緒にオンにするデバイスを選びます。</td>
 </tr>
 <tr>
-<td><strong>顔・手</strong></td>
+<td>顔・手</td>
 <td>トラッキングの方式を選びます。</td>
 </tr>
 <tr>
-<td><strong>起動設定</strong></td>
+<td>起動設定</td>
 <td>毎回確認・前回のアバター・既定のアバターから選びます。</td>
 </tr>
 <tr>
-<td><strong>▶ Avatar Live を開始</strong></td>
+<td>▶ Avatar Live を開始</td>
 <td>選んだアバターで開始します。</td>
 </tr>
 </tbody>
 </table></div>
-<blockquote class="callout tip"><p><strong>Shift</strong> を押したまま起動すると、Web カメラ・マイクを使わずに安全に開始します。デバイスの問題でうまく起動できないときに試してみてください。</p>
+<blockquote class="callout tip"><p>Shift を押したまま起動すると、Web カメラ・マイクを使わずに安全に開始します。デバイスの問題でうまく起動できないときに試してみてください。</p>
 </blockquote>
 <h2 id="起動中にアバターを切り替える">起動中にアバターを切り替える<a class="anchor" href="#起動中にアバターを切り替える" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="shot">
-<figure><img src="../assets/shots/ja/avatar-pop.webp" srcset="../assets/shots/ja/avatar-pop-960.webp 960w, ../assets/shots/ja/avatar-pop.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" alt="アバターライブラリ" loading="lazy" decoding="async"><figcaption>アバターライブラリ</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/ja/avatar-pop.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/avatar-pop.webp" srcset="../assets/shots/ja/avatar-pop-960.webp 960w, ../assets/shots/ja/avatar-pop.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" style="--image-width:1600px" alt="アバターライブラリ" loading="lazy" decoding="async"></a><figcaption>アバターライブラリ</figcaption></figure>
 <ul>
-<li>左上の <strong>アバター名</strong> を押すと、ライブラリが開きます。</li>
+<li>左上の アバター名 を押すと、ライブラリが開きます。</li>
 <li>一覧のアバターを押すと、そのアバターに切り替わります。</li>
-<li><strong>アバターファイルを追加…</strong> で、新しいアバターを読み込みます。</li>
+<li>アバターファイルを追加… で、新しいアバターを読み込みます。</li>
 <li>オンにしていた Web カメラとマイクは、切り替えたあともそのままオンになります。</li>
 </ul>
 </div>
 <h2 id="メニューを初めて開くとき">メニューを初めて開くとき<a class="anchor" href="#メニューを初めて開くとき" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>アバターのロード中にメニューのレイアウトも準備するため、各メニューの初回表示が速くなりました。初期ロードは少し長くなる場合があります。左上のロゴから再起動せずにアバター選択へ戻れます。</p>
 <h2 id="スタート画面に戻る">スタート画面に戻る<a class="anchor" href="#スタート画面に戻る" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>左上の <strong>ロゴ</strong> を押して、<strong>再起動</strong> を選びます。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="02-avatar-exporter.html"><span>前へ</span>アバターの書き出し</a><a class="next" href="04-main-window.html"><span>次へ</span>メイン画面</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#v200ライブラリの選択が変えること">v2.0.0：ライブラリの選択が変えること</a></li><li><a href="#スタート画面">スタート画面</a></li><li><a href="#起動中にアバターを切り替える">起動中にアバターを切り替える</a></li><li><a href="#メニューを初めて開くとき">メニューを初めて開くとき</a></li><li><a href="#スタート画面に戻る">スタート画面に戻る</a></li></ul></nav>
+<p>左上の ロゴ を押して、再起動 を選びます。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="02-avatar-exporter.html"><span>前へ</span>アバターの書き出し</a><a class="next" href="04-main-window.html"><span>次へ</span>メイン画面</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#ライブラリの選択が変えること">ライブラリの選択が変えること</a></li><li><a href="#スタート画面">スタート画面</a></li><li><a href="#起動中にアバターを切り替える">起動中にアバターを切り替える</a></li><li><a href="#メニューを初めて開くとき">メニューを初めて開くとき</a></li><li><a href="#スタート画面に戻る">スタート画面に戻る</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

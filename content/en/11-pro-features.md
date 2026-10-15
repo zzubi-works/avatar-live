@@ -1,26 +1,26 @@
 # 11. Posing · Objects · Expressions
 
-## v2.0.0 features: editions and what changes
+## features: editions and what changes
 
-![v45 Pro studio cameras](img/v45-studio-cameras.png)
+![Pro studio cameras](img/v45-studio-cameras.png)
 
 | Feature | Basic | Pro | Practical effect |
 |---|---|---|---|
-| Standard Spout2 and **NDI output** | ✅ | ✅ | Sends the avatar picture to OBS. **NDI is also Basic** and needs its OBS receiver plugin. |
+| Standard Spout2 and NDI output | ✅ | ✅ | Sends the avatar picture to OBS. NDI is also Basic and needs its OBS receiver plugin. |
 | Normal lights and post-processing | ✅ | ✅ | Changes colour, shadows, bloom and background. |
 | Pose editing/library and props | — | ✅ | Adjusts/locks bones or attaches props to the stage and avatar bones. |
-| **Multiple avatars and shared control** | — | ✅ | Places multiple characters in one scene and shares or switches tracking input. |
-| **Studio cameras / director / multiview** | — | ✅ | Sends a separate on-air camera while your editor remains the scene view. |
-| Independent **per-camera Spout2** | — | ✅ | Adds separately named sources to OBS, up to three additional senders. |
-| **Remote session** | — | ✅ | Shares live pose/face/gaze and optional consented avatar data with other PCs. |
-| **Volumetric lights / HBAO / Beautify** | — | ✅ | Adds visible light beams, contact shadows and advanced image effects. |
-| **MP4 recording / extra share sources** | — | ✅ | Records video or combines more game/display windows. |
+| Multiple avatars and shared control | — | ✅ | Places multiple characters in one scene and shares or switches tracking input. |
+| Studio cameras / director / multiview | — | ✅ | Sends a separate on-air camera while your editor remains the scene view. |
+| Independent per-camera Spout2 | — | ✅ | Adds separately named sources to OBS, up to three additional senders. |
+| Remote session | — | ✅ | Shares live pose/face/gaze and optional consented avatar data with other PCs. |
+| Volumetric lights / HBAO / Beautify | — | ✅ | Adds visible light beams, contact shadows and advanced image effects. |
+| MP4 recording / extra share sources | — | ✅ | Records video or combines more game/display windows. |
 
-Upgrading to Pro **does not automatically switch everything on**. Multiview is a separate toggle from director mode and starts off; camera collision, gaze/Look At IK and some advanced effects remain optional/experimental. Switch on one feature at a time and verify the broadcast receiver.
+Upgrading to Pro does not automatically switch everything on. Multiview is a separate toggle from director mode and starts off; camera collision, gaze/Look At IK and some advanced effects remain optional/experimental. Switch on one feature at a time and verify the broadcast receiver.
 
 [Camera controls and slider explanations](08-scene.md) · [OBS plugins / NDI / remote sessions](09-output.md)
 
-**Third-party avatar rights remain unchanged** when purchasing Pro. Confirm that an avatar creator permits any transfer or temporary caching before sharing its data in a session.
+Third-party avatar rights remain unchanged when purchasing Pro. Confirm that an avatar creator permits any transfer or temporary caching before sharing its data in a session.
 
 | Feature | Edition |
 |---|---|
@@ -35,16 +35,16 @@ Upgrading to Pro **does not automatically switch everything on**. Multiview is a
 
 ![Posing mode](img/posing.png)
 
-Turn on **Studio › Posing › Posing mode** to create a pose by moving the bones directly.
+Turn on Studio › Posing › Posing mode to create a pose by moving the bones directly.
 
 - Click a bone to select it, and drag a ring to rotate it. The rotation gizmo is sized to fit the bone.
-- Drag a hand or foot, and the whole arm or leg follows. Use **Alt+drag** to change which way the elbow or knee points.
-- **Symmetry** — Move one side, and the other side moves with it. Use **Left / right** to flip the pose or copy one side to the other.
-- **Face camera** · **Feet on floor** — Turn the face toward the camera, and line the feet up with the floor.
-- **Lock** — Tracking and animations don't move the bones you lock.
-- Save the pose with **Done**, and turn it on right away from the **Poses** card in the avatar menu. Even after **Discard**, you can bring it back with **Ctrl+Z**.
-- **Standing rest** and **Sitting** poses are included from the start. The sitting pose changes only the hips and legs, and the head and arms keep tracking.
-- You can set a pose you made as **Use as the desk pose (arms and hands)** or **Rest pose (whole body)**.
+- Drag a hand or foot, and the whole arm or leg follows. Use Alt+drag to change which way the elbow or knee points.
+- Symmetry — Move one side, and the other side moves with it. Use Left / right to flip the pose or copy one side to the other.
+- Face camera · Feet on floor — Turn the face toward the camera, and line the feet up with the floor.
+- Lock — Tracking and animations don't move the bones you lock.
+- Save the pose with Done, and turn it on right away from the Poses card in the avatar menu. Even after Discard, you can bring it back with Ctrl+Z.
+- Standing rest and Sitting poses are included from the start. The sitting pose changes only the hips and legs, and the head and arms keep tracking.
+- You can set a pose you made as Use as the desk pose (arms and hands) or Rest pose (whole body).
 
 > 💡 Please save your pose before you turn off posing mode.
 
@@ -68,22 +68,22 @@ Click the camera icon beside a saved pose in the Avatar Menu or Studio to contro
 
 ## Pose library
 
-In **Studio › Posing › Pose library**, choose a folder that holds `.anim` files, and every pose is shown as a **thumbnail of your current avatar**.
+In Studio › Posing › Pose library, choose a folder that holds `.anim` files, and every pose is shown as a thumbnail of your current avatar.
 
 - Subfolders are read too, and clips are sorted into poses, hand shapes and motions. You can use search and favorites.
-- Click **Apply**, and the avatar takes that pose right away. Clips that move play as animations. Use **Release** to go back.
-- Use **Edit** to fix it up in posing mode, then save it as a new pose.
+- Click Apply, and the avatar takes that pose right away. Clips that move play as animations. Use Release to go back.
+- Use Edit to fix it up in posing mode, then save it as a new pose.
 - You can also load humanoid · bone `.anim` files made in Unity one at a time.
 
 ## Objects
 
 ![Objects](img/props.png)
 
-Use **Studio › Objects › + Add object** to place text, images, shapes and 3D models.
+Use Studio › Objects › + Add object to place text, images, shapes and 3D models.
 
-- Set **Rides on** to the head or a hand, and the object moves with the avatar.
+- Set Rides on to the head or a hand, and the object moves with the avatar.
 - Double-click text to edit it right there.
-- For 3D models, create a `.vprop` file with **Curious Bobby → Prop Exporter** in Unity.
+- For 3D models, create a `.vprop` file with Curious Bobby → Prop Exporter in Unity.
 
 ## More screen share sources
 
@@ -93,9 +93,9 @@ You can layer more windows or monitors onto your screen share. Use this when you
 
 Create your own expressions from the avatar's shape keys.
 
-1. Click **New expression**.
-2. In the side panel, move the shape keys as if you were recording them to build the expression. Use **Preview** to sweep from a neutral face (0%) to the full expression (100%) and check it.
-3. Click **Save**, and you can turn the expression on from the **My expressions** card in the avatar menu.
+1. Click New expression.
+2. In the side panel, move the shape keys as if you were recording them to build the expression. Use Preview to sweep from a neutral face (0%) to the full expression (100%) and check it.
+3. Click Save, and you can turn the expression on from the My expressions card in the avatar menu.
 
 - You can also load expression animations made in Unity (`.anim` with shape keys). Clips that move play while the expression is on.
 
@@ -105,4 +105,4 @@ Create expression and Import .anim appear side by side in both Studio and the Av
 
 ## Automatic expressions
 
-When you smile or look surprised, an expression you've chosen appears automatically. Turn it on in **Motion › Automatic expressions**, and link an expression to show for each one, such as smile · surprise · wink.
+When you smile or look surprised, an expression you've chosen appears automatically. Turn it on in Motion › Automatic expressions, and link an expression to show for each one, such as smile · surprise · wink.

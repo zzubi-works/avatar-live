@@ -42,21 +42,21 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html" aria-current="page">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">スタジオ：シーン・カメラ・照明・エフェクト</a></li><li><a href="09-output.html">出力：OBS・NDI・画面共有・リモートセッション</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html" aria-current="page">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">スタジオ</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="1-はじめに">1. はじめに<a class="anchor" href="#1-はじめに" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="v200初回起動から配信まで">v2.0.0：初回起動から配信まで<a class="anchor" href="#v200初回起動から配信まで" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="初回起動から配信まで">初回起動から配信まで<a class="anchor" href="#初回起動から配信まで" aria-hidden="true" tabindex="-1">#</a></h2>
 <ol>
-<li><strong>アバターを読み込む</strong>：Exporter 1.0.6 の <strong>.vavatar</strong>か、対応する <strong>VRM 0.x／1.0</strong> を選びます。一部の特殊な VRM 0.x シェーダーは非対応です。</li>
-<li><strong>入力を選ぶ</strong>：<a href="06-devices.html">デバイス</a>で Web カメラ、iPhone、マイク、VMC、SteamVR を顔・腕・指・体ごとに割り当てられます。</li>
-<li><strong>正面補正</strong>：顔を正面に向けます。iPhone は初回の有効な顔フレームから約 <strong>3秒後</strong>に初期補正されます。</li>
-<li><strong>動作を調整</strong>：<a href="05-avatar-menu.html">メニュー</a>で衣装・表情を、<a href="07-motion.html">動作</a>でスムージング・口・AFK を設定します。</li>
-<li><strong>構図を準備</strong>：<a href="08-scene.html">スタジオ</a>で背景・ライトを整えます。<strong>Pro</strong> では複数アバター・複数配信カメラが使えます。</li>
-<li><strong>OBS の設定</strong>：同じ PC は <strong>OBS Spout2 受信プラグイン</strong>、別 PC は <strong>DistroAV/NDI</strong> が必要です。<strong>NDI は Basic でも使用可</strong>。<a href="09-output.html">出力ガイド</a>の公式リンクから導入します。</li>
-<li><strong>確認</strong>：自分の編集用シーンビューと視聴者向けカメラは別の場合があります。OBS の最終映像を見てください。</li>
+<li>アバターを読み込む：Exporter 1.0.6 の .vavatarか、対応する VRM 0.x／1.0 を選びます。一部の特殊な VRM 0.x シェーダーは非対応です。</li>
+<li>入力を選ぶ：<a href="06-devices.html">デバイス</a>で Web カメラ、iPhone、マイク、VMC、SteamVR を顔・腕・指・体ごとに割り当てられます。</li>
+<li>正面補正：顔を正面に向けます。iPhone は初回の有効な顔フレームから約 3秒後に初期補正されます。</li>
+<li>動作を調整：<a href="05-avatar-menu.html">メニュー</a>で衣装・表情を、<a href="07-motion.html">動作</a>でスムージング・口・AFK を設定します。</li>
+<li>構図を準備：<a href="08-scene.html">スタジオ</a>で背景・ライトを整えます。Pro では複数アバター・複数配信カメラが使えます。</li>
+<li>OBS の設定：同じ PC は OBS Spout2 受信プラグイン、別 PC は DistroAV/NDI が必要です。NDI は Basic でも使用可。<a href="09-output.html">出力ガイド</a>の公式リンクから導入します。</li>
+<li>確認：自分の編集用シーンビューと視聴者向けカメラは別の場合があります。OBS の最終映像を見てください。</li>
 </ol>
 <p>技術的に NDI が利用できることと商用配信の利用権は別です。個人利用の Basic、公開・商用配信の Pro の条件は<a href="13-license.html">ライセンス</a>を確認してください。</p>
 <h2 id="必要なもの">必要なもの<a class="anchor" href="#必要なもの" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>項目</th>
@@ -91,7 +91,7 @@
 </tbody>
 </table></div>
 <h2 id="エディション">エディション<a class="anchor" href="#エディション" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
+<div class="table-wrap edition-table" tabindex="0"><table>
 <thead>
 <tr>
 <th></th>
@@ -117,31 +117,31 @@
 </tr>
 </tbody>
 </table></div>
-<p>配信や動画の公開など、ほかの人に見せる用途には <strong>Pro</strong> を選んでください。詳しくは<a href="13-license.html">13章</a>をご覧ください。</p>
+<p>配信や動画の公開など、ほかの人に見せる用途には Pro を選んでください。詳しくは<a href="13-license.html">13章</a>をご覧ください。</p>
 <h2 id="インストール">インストール<a class="anchor" href="#インストール" aria-hidden="true" tabindex="-1">#</a></h2>
 <ol>
 <li>BOOTH の購入履歴から ZIP ファイルをダウンロードします。</li>
 <li>好きなフォルダーに展開します。</li>
 <li><code>AvatarLive.exe</code> を実行します。</li>
 </ol>
-<blockquote class="callout tip"><p>「Windows によって PC が保護されました」という画面が表示されたら、<strong>詳細情報 → 実行</strong> を押してください。</p>
+<blockquote class="callout tip"><p>「Windows によって PC が保護されました」という画面が表示されたら、詳細情報 → 実行 を押してください。</p>
 <p>💡 インストールフォルダーのファイルは、そのままにしておくことをおすすめします。ファイルが変わると Avatar Live が起動しないことがありますが、その場合は元のファイルで再インストールすれば大丈夫です。アバターと設定はそのまま残ります。</p>
 </blockquote>
 <h2 id="アクティベーション">アクティベーション<a class="anchor" href="#アクティベーション" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>初めて起動すると、<strong>製品のアクティベーション</strong> 画面が表示されます。購入時に案内された情報を入力して <strong>アクティベート</strong> を押せば完了です。</p>
-<p>ライセンスは1人1台です。別の PC への移行は、ご自身で1回行えます。それ以降は、やむを得ない場合にお問い合わせを通じてお手伝いしていますが、難しい場合もあります。<strong>最初にアクティベートする PC は、慎重に決めてください。</strong></p>
+<p>初めて起動すると、製品のアクティベーション 画面が表示されます。購入時に案内された情報を入力して アクティベート を押せば完了です。</p>
+<p>ライセンスは1人1台です。別の PC への移行は、ご自身で1回行えます。それ以降は、やむを得ない場合にお問い合わせを通じてお手伝いしていますが、難しい場合もあります。最初にアクティベートする PC は、慎重に決めてください。</p>
 <h2 id="初めての配信まで">初めての配信まで<a class="anchor" href="#初めての配信まで" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="steps">
 <ol>
-<li><strong>アバターを書き出す</strong> — Unity で <code>.vavatar</code> ファイルを作ります。→ <a href="02-avatar-exporter.html">2章</a></li>
-<li><strong>アバターを開く</strong> — スタート画面でファイルを開き、<strong>▶ Avatar Live を開始</strong> を押します。→ <a href="03-launcher-and-library.html">3章</a></li>
-<li><strong>Web カメラ・マイクをオンにする</strong> — <strong>デバイス</strong> ページのスイッチをオンにします。→ <a href="06-devices.html">6章</a></li>
-<li><strong>自分の顔に合わせる</strong> — <strong>動き › 自動フェイスセットアップ</strong> を押して、案内に従います。→ <a href="07-motion.html">7章</a></li>
-<li><strong>背景・ライティングを選ぶ</strong> — <strong>スタジオ</strong> ページで選びます。→ <a href="08-scene.html">8章</a></li>
-<li><strong>出力する</strong> — <strong>出力</strong> ページで、Spout2、仮想カメラ、画面共有のどれかをオンにします。→ <a href="09-output.html">9章</a></li>
+<li>アバターを書き出す — Unity で <code>.vavatar</code> ファイルを作ります。→ <a href="02-avatar-exporter.html">2章</a></li>
+<li>アバターを開く — スタート画面でファイルを開き、▶ Avatar Live を開始 を押します。→ <a href="03-launcher-and-library.html">3章</a></li>
+<li>Web カメラ・マイクをオンにする — デバイス ページのスイッチをオンにします。→ <a href="06-devices.html">6章</a></li>
+<li>自分の顔に合わせる — 動き › 自動フェイスセットアップ を押して、案内に従います。→ <a href="07-motion.html">7章</a></li>
+<li>背景・ライティングを選ぶ — スタジオ ページで選びます。→ <a href="08-scene.html">8章</a></li>
+<li>出力する — 出力 ページで、Spout2、仮想カメラ、画面共有のどれかをオンにします。→ <a href="09-output.html">9章</a></li>
 </ol>
 </div>
-<p><strong>F1</strong> を押すと、メニューが消えてアバターだけが表示されます。</p>
+<p>F1 を押すと、メニューが消えてアバターだけが表示されます。</p>
 <h2 id="v115-で変更された主な場所">v1.1.5 で変更された主な場所<a class="anchor" href="#v115-で変更された主な場所" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>右上の虫眼鏡からAFK、ミラー、Spout2などを検索できます。</li>
@@ -149,8 +149,8 @@
 <li>カードの見出しで開閉・ドラッグで並び替えできます。ポーズのフェイシャル、頭、腕、指、胴体の追跡は独立して切り替えられます。</li>
 </ul>
 <h2 id="終了">終了<a class="anchor" href="#終了" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>通常、ウィンドウの <strong>X</strong> はプログラムを終了します。<strong>設定 › ウィンドウ</strong> で <strong>トレイに最小化</strong> に変更できます。配信出力中は出力を維持するためトレイに入る場合があります。左下の <strong>電源</strong> ボタンで完全に終了できます。</p></article><nav class="pager" aria-label="Pager"><span></span><a class="next" href="02-avatar-exporter.html"><span>次へ</span>アバターの書き出し</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#v200初回起動から配信まで">v2.0.0：初回起動から配信まで</a></li><li><a href="#必要なもの">必要なもの</a></li><li><a href="#エディション">エディション</a></li><li><a href="#インストール">インストール</a></li><li><a href="#アクティベーション">アクティベーション</a></li><li><a href="#初めての配信まで">初めての配信まで</a></li><li><a href="#v115-で変更された主な場所">v1.1.5 で変更された主な場所</a></li><li><a href="#終了">終了</a></li></ul></nav>
+<p>通常、ウィンドウの X はプログラムを終了します。設定 › ウィンドウ で トレイに最小化 に変更できます。配信出力中は出力を維持するためトレイに入る場合があります。左下の 電源 ボタンで完全に終了できます。</p></article><nav class="pager" aria-label="Pager"><span></span><a class="next" href="02-avatar-exporter.html"><span>次へ</span>アバターの書き出し</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#初回起動から配信まで">初回起動から配信まで</a></li><li><a href="#必要なもの">必要なもの</a></li><li><a href="#エディション">エディション</a></li><li><a href="#インストール">インストール</a></li><li><a href="#アクティベーション">アクティベーション</a></li><li><a href="#初めての配信まで">初めての配信まで</a></li><li><a href="#v115-で変更された主な場所">v1.1.5 で変更された主な場所</a></li><li><a href="#終了">終了</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

@@ -2,13 +2,13 @@
 
 ## 版本与价格
 
-| | **Basic** | **Pro** |
+| | Basic | Pro |
 |---|---|---|
 | 价格（BOOTH） | 1,990 日元 | 3,980 日元 |
 | 使用范围 | 个人使用（包括与朋友之间的非公开 Discord 共享） | 直播 · 公开发布视频 · 商业用途 |
 | 角色 · 追踪 · 菜单 · 灯光 · 效果 | ✅ | ✅ |
 | 我的表情 · 自动表情 · 层级 · 形态键 · 照片 | ✅ | ✅ |
-| Spout2 · **NDI** · 虚拟摄像头 · 屏幕共享 | ✅ | ✅ |
+| Spout2 · NDI · 虚拟摄像头 · 屏幕共享 | ✅ | ✅ |
 | 多工作室摄像机 · 远程会话 · 每摄像机 Spout2 · 录制 | — | ✅ |
 | 最高输出 | 1080p | 4K |
 | 水印 | 有 | 无 |
@@ -18,14 +18,14 @@
 
 ## 升级与试用版
 
-- **Basic → Pro**：在 BOOTH 购买 **升级（1,990 日元）**，并在使用 Basic 的电脑上于 **设置 › 许可证 › 升级到 Pro** 中输入，即可升级为 Pro。用于升级的购买会与该许可证绑定在一起。
-- **如果在试用期间购买了**，请在 **设置 › 许可证 › 输入购买的代码** 中输入。
-- **试用期结束后**，会显示输入界面。输入购买的许可证即可继续使用。
+- Basic → Pro：在 BOOTH 购买 升级（1,990 日元），并在使用 Basic 的电脑上于 设置 › 许可证 › 升级到 Pro 中输入，即可升级为 Pro。用于升级的购买会与该许可证绑定在一起。
+- 如果在试用期间购买了，请在 设置 › 许可证 › 输入购买的代码 中输入。
+- 试用期结束后，会显示输入界面。输入购买的许可证即可继续使用。
 
 ## 许可证使用条件（摘要）
 
 - 一人一台设备。
-- 你可以自行将许可证转移到其他电脑 **一次**。之后如遇不得已的情况，可以通过咨询由我们协助，但可能不太容易，因此 **请慎重选择首次激活的电脑。**
+- 你可以自行将许可证转移到其他电脑 一次。之后如遇不得已的情况，可以通过咨询由我们协助，但可能不太容易，因此 请慎重选择首次激活的电脑。
 - 激活和许可证确认需要连接互联网。
 - 程序和许可证仅限购买者本人使用。不允许再分发、销售、出租、共享、修改、逆向工程或规避许可证确认。
 
@@ -33,7 +33,7 @@
 
 ## 实验性功能
 
-Ultraleap、OSC、VMC 输出、舌头 · 脸颊的摄像头检测等在应用中标为 **实验性** 的功能，预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。摄像头（含全身 · 手指关节）、iPhone、VMC 输入已用实际设备确认。
+Ultraleap、OSC、VMC 输出、舌头 · 脸颊的摄像头检测等在应用中标为 实验性 的功能，预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。摄像头（含全身 · 手指关节）、iPhone、VMC 输入已用实际设备确认。
 
 ## 自己制作的文件
 
@@ -53,16 +53,27 @@ Avatar Live 和 Avatar Exporter 是由 Curious Bobby Co. 独立开发的软件�
 
 所包含的开源组件遵循各组件的许可证。相关声明随程序和 Exporter 软件包一同提供。Avatar Exporter 的部分代码是基于以 MIT 许可证公开的开源代码编写的。
 
-## 第三方声明：NDI、Spout2 和 VB-CABLE
+## NDI
 
-**NDI® 是 Vizrt NDI AB 的注册商标。** 在 v45 Windows 发行包中实际确认包含 `AvatarLive_Data/Plugins/x86_64/Processing.NDI.Lib.x64.dll`及附带的 `Processing.NDI.Lib.Licenses.txt`，其中记载 NDI 与其他第三方的版权/许可条款。SDK 的使用和再分发必须遵守[NDI SDK 官方许可](https://docs.ndi.video/all/developing-with-ndi/sdk/licensing)与发行包中随附的完整声明。本说明不表示 NDI 官方认可或保证本产品，也不额外授予许可。
+NDI® 是 Vizrt NDI AB 的注册商标。[NDI 官方网站](https://ndi.video/)。
 
-**[OBS Spout2 插件](https://github.com/Off-World-Live/obs-spout2-plugin)**、**[DistroAV](https://github.com/DistroAV/DistroAV)**和 **[NDI Tools](https://ndi.video/tools/)**由各自作者独立发布，用户应从官方渠道安装并遵守其单独的使用条件。
+随附的 NDI Runtime 适用 NDI SDK 许可，完整声明位于 `AvatarLive_Data/Plugins/x86_64/Processing.NDI.Lib.Licenses.txt`。[SDK 许可条件](https://docs.ndi.video/all/developing-with-ndi/sdk/licensing)。
 
-**VB-CABLE** 是 [VB-Audio Software](https://vb-audio.com/Cable/)的 Donationware，适用[VB-Audio 官方许可](https://vb-audio.com/Services/licensing.htm)。远程会话即使对角色数据使用加密临时缓存，也不允许违反模型原作者对再分发的限制。
+[NDI Tools](https://ndi.video/tools/) 和 OBS 接收插件 [DistroAV](https://github.com/DistroAV/DistroAV) 需要单独获取，并遵守各自的条款。
 
-[OBS/NDI 安装及远程数据保护说明](09-output.md)
+## Spout2
 
+Avatar Live 使用的 [KlakSpout](https://github.com/keijiro/KlakSpout) 适用 Unlicense，请参阅随附声明。单独安装的 [OBS Spout2 插件](https://github.com/Off-World-Live/obs-spout2-plugin) 遵守其项目的 GPL v2 许可。
+
+## VB-CABLE
+
+[VB-CABLE](https://vb-audio.com/Cable/) 是 VB-Audio Software 提供的独立 Donationware 虚拟音频驱动。使用、分发及所需许可应遵守 [VB-Audio 的条款](https://vb-audio.com/Services/licensing.htm)。购买 Avatar Live 或升级 Pro 并不会代为授予 VB-CABLE 的独立许可。
+
+## 角色和道具
+
+角色、服装、纹理、着色器、姿势和道具的权利归各原作者所有。用户负责确认直播、商业使用、修改、远程传输、临时存储和再分发是否获准。
+
+Avatar Live 不会代为授予第三方内容的使用权。对于用户未经授权使用、传输或分发的内容及由此产生的权利争议，公司不承担责任。导出文件、购买 Pro 或加密传输均不能替代原作者的许可。
 ## 商标
 
 VRChat 是 VRChat Inc. 的商标。其他产品名称为各自所有者的商标，仅为说明兼容性而提及。

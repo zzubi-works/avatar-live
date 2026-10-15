@@ -1,23 +1,23 @@
 # 6. Devices
 
-## v2.0.0: which device actually controls each body part?
+## which device actually controls each body part?
 
-![v45 Devices](img/v45-input.png)
+![Devices](img/v45-input.png)
 
-Tracking sources are chosen **per body part**. For example, iPhone can drive the face, the webcam the arms, and VMC a tracked pelvis and legs. If a part accidentally remains set to VMC without a valid signal, that part may freeze even though the webcam is connected.
+Tracking sources are chosen per body part. For example, iPhone can drive the face, the webcam the arms, and VMC a tracked pelvis and legs. If a part accidentally remains set to VMC without a valid signal, that part may freeze even though the webcam is connected.
 
 | Control | Practical effect |
 |---|---|
-| **Webcam quality / Balanced / Eco** | Higher quality can improve detection at a CPU cost; Eco reduces computation but fast fingers/body motion may be less precise. |
-| **Hand jitter smoothing** | More smoothing reduces small shakes but creates more follow lag; less smoothing feels responsive but noisy. |
-| **Webcam full body** | Enables upper-body/leg estimates when visible. Hidden desk legs may fall back to estimated or posed positions. |
-| **Finger-joint tracking** | Attempts to move each finger joint; small or occluded hands can make results unstable. |
-| **iPhone face input** | iFacialMocap/FaceMotion3D provide ARKit facial channels and head movement. Remain facing forward briefly: first-face calibration starts about 3 seconds after a valid frame. |
-| **VMC per-part source** | Lets external trackers or gloves control selected body parts. Check actual limb movement and T-pose alignment, not just packet counts. |
-| **SteamVR device selection** | Maps headset/controllers/body trackers. Confirm correct SteamVR device tracking before calibrating the Avatar Live body. |
-| **Microphone noise gate** | Higher rejects more background sound but may ignore quiet speech; lower is responsive but might react to keyboard noise. |
+| Webcam quality / Balanced / Eco | Higher quality can improve detection at a CPU cost; Eco reduces computation but fast fingers/body motion may be less precise. |
+| Hand jitter smoothing | More smoothing reduces small shakes but creates more follow lag; less smoothing feels responsive but noisy. |
+| Webcam full body | Enables upper-body/leg estimates when visible. Hidden desk legs may fall back to estimated or posed positions. |
+| Finger-joint tracking | Attempts to move each finger joint; small or occluded hands can make results unstable. |
+| iPhone face input | iFacialMocap/FaceMotion3D provide ARKit facial channels and head movement. Remain facing forward briefly: first-face calibration starts about 3 seconds after a valid frame. |
+| VMC per-part source | Lets external trackers or gloves control selected body parts. Check actual limb movement and T-pose alignment, not just packet counts. |
+| SteamVR device selection | Maps headset/controllers/body trackers. Confirm correct SteamVR device tracking before calibrating the Avatar Live body. |
+| Microphone noise gate | Higher rejects more background sound but may ignore quiet speech; lower is responsive but might react to keyboard noise. |
 
-![v45 Advanced device controls](img/v45-devices-advanced.png)
+![Advanced device controls](img/v45-devices-advanced.png)
 
 Recommended order: confirm device connections → choose each part's source → calibrate front/T-pose → set lost-tracking recovery/smoothing → check motion on the real broadcast camera. If two sources try to move one joint, disable the unintended controller. VRM 0.x/1.0 import is supported, but some unsupported 0.x shaders cannot be loaded. Respect the VRM and accessory creator's terms, especially in sessions.
 
@@ -27,13 +27,13 @@ Recommended order: confirm device connections → choose each part's source → 
 
 ![Devices page](img/devices.png)
 
-- Turn on the **Webcam** switch to start face and hand tracking.
+- Turn on the Webcam switch to start face and hand tracking.
 - Choose the webcam to use from the camera list.
-- **Recenter** — Takes the direction your face is pointing now as straight ahead.
-- **Tracking quality** — When you use it alongside a game, we recommend **Balanced** or **Eco**.
-- Turn on the **Microphone** switch, and the mouth moves when you speak.
-- **Noise gate** — Keeps the mouth still for noise such as keyboard sounds.
-- **Detect background noise** — Click the button while you stay quiet, and the noise level is set automatically.
+- Recenter — Takes the direction your face is pointing now as straight ahead.
+- Tracking quality — When you use it alongside a game, we recommend Balanced or Eco.
+- Turn on the Microphone switch, and the mouth moves when you speak.
+- Noise gate — Keeps the mouth still for noise such as keyboard sounds.
+- Detect background noise — Click the button while you stay quiet, and the noise level is set automatically.
 
 </div>
 
@@ -44,34 +44,34 @@ Recommended order: confirm device connections → choose each part's source → 
 ![Tracking sources](img/sources.png)
 
 - For each part (face, mouth, head, eyes, arms, hands, fingers, body), choose what moves it.
-- You can mix **Webcam**, **iPhone**, **VMC** and **Ultraleap** (hands) part by part. For example, the face can come from your iPhone, the body from full-body trackers and the hands from the webcam.
-- **Face engine** — Choose a webcam engine or a face app (iPhone · VMC). Each device's settings appear under the parts that use it.
-- With **Mouth** set to **Face + mic**, the mouth follows your voice while you speak and your mouth shape the rest of the time.
-- **Hand steadiness** — Keeps your hands and fingers from jittering while you hold still.
+- You can mix Webcam, iPhone, VMC and Ultraleap (hands) part by part. For example, the face can come from your iPhone, the body from full-body trackers and the hands from the webcam.
+- Face engine — Choose a webcam engine or a face app (iPhone · VMC). Each device's settings appear under the parts that use it.
+- With Mouth set to Face + mic, the mouth follows your voice while you speak and your mouth shape the rest of the time.
+- Hand steadiness — Keeps your hands and fingers from jittering while you hold still.
 
 </div>
 
 ## Full body · Finger joints (webcam)
 
-- Set **Body** to the webcam, and a **Full body** switch appears. Turn it on, and the avatar follows the torso and legs the camera can see, with **Sitting · Standing · Legs tracked · Legs estimated** shown beside it.
+- Set Body to the webcam, and a Full body switch appears. Turn it on, and the avatar follows the torso and legs the camera can see, with Sitting · Standing · Legs tracked · Legs estimated shown beside it.
 - When your legs aren't visible, such as at a desk, your shoulder movement alone tilts and turns the upper body. Legs that can't be seen stay in the avatar's pose.
-- Set **Fingers** to the webcam, and a **Finger joints** switch appears. Turn it on, and the camera follows the bend of each finger joint, the spread of the fingers and the thumb.
+- Set Fingers to the webcam, and a Finger joints switch appears. Turn it on, and the camera follows the bend of each finger joint, the spread of the fingers and the thumb.
 
 ## Receiving over VMC (full-body trackers · gloves · other apps)
 
 <div class="steps" markdown="1">
 
 1. In the sending app (a full-body tracker app, a glove app, a motion capture app and so on), turn on VMC sending and send to this PC.
-2. In **Tracking sources**, set the source to **VMC** for the parts you want to receive over VMC. Other parts can stay on the webcam · iPhone.
-3. In **VMC settings**, check how many bones are being received and that data is coming in.
-4. If the pose is off, click **T-pose** or **Align**. Use **Reset** to undo it.
+2. In Tracking sources, set the source to VMC for the parts you want to receive over VMC. Other parts can stay on the webcam · iPhone.
+3. In VMC settings, check how many bones are being received and that data is coming in.
+4. If the pose is off, click T-pose or Align. Use Reset to undo it.
 
 </div>
 
 - Fingers come through as they are, right down to the rotation of each joint, the spread and the thumb.
 - If the input drops while you're receiving arms over VMC, the arms return to the desk (keyboard · mouse) pose.
 
-> 💡 We've confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the features marked **experimental** (Ultraleap, OSC and so on) to work properly, but we haven't yet been able to test them with every device and app in the developer's environment. If something goes wrong, please let us know with **Settings › Diagnostics › Send an error report**.
+> 💡 We've confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the features marked experimental (Ultraleap, OSC and so on) to work properly, but we haven't yet been able to test them with every device and app in the developer's environment. If something goes wrong, please let us know with Settings › Diagnostics › Send an error report.
 
 ## iPhone mirror mode and tracking loss
 
@@ -88,13 +88,13 @@ Motion › Hands › Webcam hand reach includes experimental depth estimation. I
 <div class="steps" markdown="1">
 
 1. Connect your iPhone and PC to the same Wi-Fi.
-2. In **Face engine**, choose **iFacialMocap** or **FaceMotion3D** as the face app, then **Copy** the address under **This PC's addresses**.
-3. In the iFacialMocap app on your iPhone, go to the gear › **Destination IP address** and enter that address. In FaceMotion3D, set the app's connection settings to send to this PC's address.
+2. In Face engine, choose iFacialMocap or FaceMotion3D as the face app, then Copy the address under This PC's addresses.
+3. In the iFacialMocap app on your iPhone, go to the gear › Destination IP address and enter that address. In FaceMotion3D, set the app's connection settings to send to this PC's address.
 4. Turn on the switch, and the expressions from your iPhone appear on the avatar. How the expressions show depends on the avatar's own setup (see [How expressions move](07-motion.md#how-expressions-move)).
-5. If it doesn't connect, click **Test connection** to check whether data is coming in.
+5. If it doesn't connect, click Test connection to check whether data is coming in.
 
 </div>
 
-> 💡 You can leave the **iPhone address (optional)** field empty. Fill it in only if you don't use Destination IP address in the iFacialMocap app.
+> 💡 You can leave the iPhone address (optional) field empty. Fill it in only if you don't use Destination IP address in the iFacialMocap app.
 
-> 💡 Turn on **Webcam takes over if it drops**, and the webcam tracks for you for a while when the iPhone connection drops.
+> 💡 Turn on Webcam takes over if it drops, and the webcam tracks for you for a while when the iPhone connection drops.

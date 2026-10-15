@@ -42,11 +42,11 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio: scenes, cameras, lights and effects</a></li><li><a href="09-output.html">Output: OBS, NDI, screen sharing and remote sessions</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html" aria-current="page">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html" aria-current="page">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="12-troubleshooting">12. Troubleshooting<a class="anchor" href="#12-troubleshooting" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="v200-diagnosis-by-symptom">v2.0.0 diagnosis by symptom<a class="anchor" href="#v200-diagnosis-by-symptom" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><img src="../assets/shots/en/v45-settings.webp" srcset="../assets/shots/en/v45-settings-960.webp 960w, ../assets/shots/en/v45-settings.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" alt="v45 Settings / diagnostics" loading="lazy" decoding="async"><figcaption>v45 Settings / diagnostics</figcaption></figure>
-<div class="table-wrap"><table>
+<h2 id="diagnosis-by-symptom">diagnosis by symptom<a class="anchor" href="#diagnosis-by-symptom" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/en/v45-settings.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/v45-settings.webp" srcset="../assets/shots/en/v45-settings-960.webp 960w, ../assets/shots/en/v45-settings.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="Settings / diagnostics" loading="lazy" decoding="async"></a><figcaption>Settings / diagnostics</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>Symptom</th>
@@ -55,60 +55,60 @@
 </thead>
 <tbody>
 <tr>
-<td><strong>OBS has no Spout2 Capture</strong></td>
+<td>OBS has no Spout2 Capture</td>
 <td>Close OBS, install the <a href="https://github.com/Off-World-Live/obs-spout2-plugin/releases">official OBS Spout2 plugin</a>, restart OBS, then add Spout2 Capture. Re-select a sender if its name changed.</td>
 </tr>
 <tr>
-<td><strong>OBS has no NDI Source</strong></td>
-<td>Install <a href="https://github.com/DistroAV/DistroAV/releases">DistroAV</a> and the required NDI Runtime; restart OBS and remove conflicts with older OBS-NDI. <strong>NDI is available in Basic.</strong></td>
+<td>OBS has no NDI Source</td>
+<td>Install <a href="https://github.com/DistroAV/DistroAV/releases">DistroAV</a> and the required NDI Runtime; restart OBS and remove conflicts with older OBS-NDI. NDI is available in Basic.</td>
 </tr>
 <tr>
-<td><strong>NDI feed is missing or black</strong></td>
+<td>NDI feed is missing or black</td>
 <td>Check Avatar Live NDI on → connection between PCs → firewall → NDI Tools Studio Monitor → source name and alpha handling. Guest Wi-Fi client isolation can block discovery.</td>
 </tr>
 <tr>
-<td><strong>Black backdrop in Spout2</strong></td>
-<td>Use <strong>Transparent</strong> studio background and enable alpha output/compositing (<strong>Composite with alpha</strong>) in OBS's receiver plugin. Ordinary window capture is different.</td>
+<td>Black backdrop in Spout2</td>
+<td>Use Transparent studio background and enable alpha output/compositing (Composite with alpha) in OBS's receiver plugin. Ordinary window capture is different.</td>
 </tr>
 <tr>
-<td><strong>Virtual camera Install does nothing</strong></td>
-<td>Registration may need Windows admin rights. Restart the app, inspect <strong>VirtualCamera/Install.bat</strong>, then restart Discord/Zoom and select <strong>Avatar Live Camera</strong>.</td>
+<td>Virtual camera Install does nothing</td>
+<td>Registration may need Windows admin rights. Restart the app, inspect VirtualCamera/Install.bat, then restart Discord/Zoom and select Avatar Live Camera.</td>
 </tr>
 <tr>
-<td><strong>Remote session only works on local network</strong></td>
-<td>Verify server on, v2.0.0 compatibility, default <strong>47700</strong>, router forwarding for <strong>both TCP and UDP</strong>, Windows firewall, actual public WAN IP rather than CGNAT, and test from another network.</td>
+<td>Remote session only works on local network</td>
+<td>Verify server on, compatibility, default 47700, router forwarding for both TCP and UDP, Windows firewall, actual public WAN IP rather than CGNAT, and test from another network.</td>
 </tr>
 <tr>
-<td><strong>Friend appears as a stand-in avatar</strong></td>
-<td>Verify <strong>Send my avatar data</strong> consent and the asset's permission for temporary transfer, or install an owned legal VRM in the local Vrm folder and use <strong>Find again</strong>. Do not extract another person's files.</td>
+<td>Friend appears as a stand-in avatar</td>
+<td>Verify Send my avatar data consent and the asset's permission for temporary transfer, or install an owned legal VRM in the local Vrm folder and use Find again. Do not extract another person's files.</td>
 </tr>
 <tr>
-<td><strong>Studio camera orbits unexpectedly</strong></td>
-<td>See <a href="08-scene.html">target rotation vs aim</a>. Position binding <strong>Lock to target</strong> does not aim the lens at the face. Combine with <strong>Straight at target</strong> or <strong>Framed on screen</strong>.</td>
+<td>Studio camera orbits unexpectedly</td>
+<td>See <a href="08-scene.html">target rotation vs aim</a>. Position binding Lock to target does not aim the lens at the face. Combine with Straight at target or Framed on screen.</td>
 </tr>
 <tr>
-<td><strong>iPhone connected but face frozen</strong></td>
+<td>iPhone connected but face frozen</td>
 <td>Wait about 3 seconds after first valid face detection for calibration, check fresh tracking values, AFK settings and source reconnection. A connection alone is not fresh motion.</td>
 </tr>
 <tr>
-<td><strong>Webcam arms twist</strong></td>
-<td>Compare <strong>Legacy</strong> versus Dynamic arm mode, turn off experimental hand-depth estimation, and review excess smoothing.</td>
+<td>Webcam arms twist</td>
+<td>Compare Legacy versus Dynamic arm mode, turn off experimental hand-depth estimation, and review excess smoothing.</td>
 </tr>
 <tr>
-<td><strong>SteamVR tracking is displaced</strong></td>
+<td>SteamVR tracking is displaced</td>
 <td>Verify tracking and calibration within SteamVR first; then reassign Avatar Live's trackers/body parts and calibrate again.</td>
 </tr>
 <tr>
-<td><strong>Recording/multiview is slow</strong></td>
+<td>Recording/multiview is slow</td>
 <td>Reduce independent Spout2 senders, multiview grid/update cost, volumetric/HBAO, output resolution and FPS one by one while watching OBS.</td>
 </tr>
 </tbody>
 </table></div>
-<p>If unresolved, send a report from <strong>Settings → Diagnostics → Send error report</strong>, including exact reproduction steps, tracking devices, avatar type, version (v2.0.0/v45) and the last setting changed. Sending is user initiated, not automatic. See the <a href="09-output.html">Output and remote session guide</a>.</p>
-<blockquote class="callout tip"><p>For bugs or problems that aren't solved, please let us know with <strong>Settings › Diagnostics › Send an error report</strong>, and for features or improvements you need, with <strong>Settings › About › Send a suggestion</strong>.</p>
+<p>If unresolved, send a report from Settings → Diagnostics → Send error report, including exact reproduction steps, tracking devices, avatar type, version (/) and the last setting changed. Sending is user initiated, not automatic. See the <a href="09-output.html">Output and remote session guide</a>.</p>
+<blockquote class="callout tip"><p>For bugs or problems that aren't solved, please let us know with Settings › Diagnostics › Send an error report, and for features or improvements you need, with Settings › About › Send a suggestion.</p>
 </blockquote>
 <h2 id="start-up--installation">Start-up · Installation<a class="anchor" href="#start-up--installation" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>Symptom</th>
@@ -118,7 +118,7 @@
 <tbody>
 <tr>
 <td>"Windows protected your PC" window</td>
-<td><strong>More info → Run anyway</strong></td>
+<td>More info → Run anyway</td>
 </tr>
 <tr>
 <td>"Avatar Live's files have been changed"</td>
@@ -126,12 +126,12 @@
 </tr>
 <tr>
 <td>It doesn't start smoothly</td>
-<td>Launch while holding <strong>Shift</strong> for a safe start</td>
+<td>Launch while holding Shift for a safe start</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="avatar">Avatar<a class="anchor" href="#avatar" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>Symptom</th>
@@ -149,7 +149,7 @@
 </tr>
 <tr>
 <td>The pose is stuck or the hair is tangled</td>
-<td><strong>⟲</strong> at the top</td>
+<td>⟲ at the top</td>
 </tr>
 <tr>
 <td>Avatar sound effects aren't heard</td>
@@ -158,7 +158,7 @@
 </tbody>
 </table></div>
 <h2 id="webcam--face">Webcam · Face<a class="anchor" href="#webcam--face" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>Symptom</th>
@@ -172,36 +172,36 @@
 </tr>
 <tr>
 <td>Expressions come out too small or too large</td>
-<td>Run <strong>Automatic face setup</strong> again, or use <strong>Face adjustment</strong></td>
+<td>Run Automatic face setup again, or use Face adjustment</td>
 </tr>
 <tr>
 <td>The avatar looks to the side</td>
-<td><strong>Recenter</strong></td>
+<td>Recenter</td>
 </tr>
 <tr>
 <td>Winks don't work</td>
-<td>Set the blink mode to <strong>Independent</strong></td>
+<td>Set the blink mode to Independent</td>
 </tr>
 <tr>
 <td>The PC feels slow</td>
-<td>Set the tracking quality to <strong>Balanced</strong> or <strong>Eco</strong></td>
+<td>Set the tracking quality to Balanced or Eco</td>
 </tr>
 <tr>
 <td>Hands · fingers jitter</td>
-<td>Raise <strong>Devices › Tracking sources › Hand steadiness</strong></td>
+<td>Raise Devices › Tracking sources › Hand steadiness</td>
 </tr>
 <tr>
 <td>The avatar doesn't move</td>
-<td>In <strong>Devices › Tracking sources</strong>, check that no part's source is set to a device you aren't using (such as VMC)</td>
+<td>In Devices › Tracking sources, check that no part's source is set to a device you aren't using (such as VMC)</td>
 </tr>
 <tr>
 <td>The pose received over VMC is off</td>
-<td><strong>T-pose</strong> or <strong>Align</strong> in <strong>VMC settings</strong></td>
+<td>T-pose or Align in VMC settings</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="microphone">Microphone<a class="anchor" href="#microphone" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>Symptom</th>
@@ -215,16 +215,16 @@
 </tr>
 <tr>
 <td>Noise moves the mouth</td>
-<td><strong>Detect background noise</strong></td>
+<td>Detect background noise</td>
 </tr>
 <tr>
 <td>The mouth moves too little</td>
-<td><strong>Voice calibration</strong></td>
+<td>Voice calibration</td>
 </tr>
 </tbody>
 </table></div>
 <h2 id="output--screen-share">Output · Screen share<a class="anchor" href="#output--screen-share" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>Symptom</th>
@@ -238,11 +238,11 @@
 </tr>
 <tr>
 <td>The background looks black in OBS</td>
-<td>Set the background to <strong>Transparent</strong> and choose <strong>Composite with alpha</strong> in OBS</td>
+<td>Set the background to Transparent and choose Composite with alpha in OBS</td>
 </tr>
 <tr>
 <td>Not in the Discord list</td>
-<td>Turn on <strong>Screen share</strong>, then check the <strong>Applications</strong> tab</td>
+<td>Turn on Screen share, then check the Applications tab</td>
 </tr>
 <tr>
 <td>The game shows up black</td>
@@ -255,7 +255,7 @@
 </tbody>
 </table></div>
 <h2 id="common-issues-after-115">Common issues after 1.1.5<a class="anchor" href="#common-issues-after-115" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>Symptom</th>
@@ -290,7 +290,7 @@
 </tbody>
 </table></div>
 <h2 id="supported-features">Supported features<a class="anchor" href="#supported-features" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap"><table>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th></th>
@@ -328,7 +328,7 @@
 </tr>
 </tbody>
 </table></div>
-<p>We've confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the experimental features to work properly, but we haven't yet been able to test them with every device and app in the developer's environment, so they're marked <strong>experimental</strong> in the app. If you try them and something goes wrong, please let us know with <strong>Send an error report</strong>.</p>
+<p>We've confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the experimental features to work properly, but we haven't yet been able to test them with every device and app in the developer's environment, so they're marked experimental in the app. If you try them and something goes wrong, please let us know with Send an error report.</p>
 <h2 id="planned-support">Planned support<a class="anchor" href="#planned-support" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>Loading VRM models (.vrm, VRM 0.x / 1.0) and playing .vrma animations</li>
@@ -338,15 +338,15 @@
 </ul>
 <p>※ Planned features and their timing may change.</p>
 <h2 id="frequently-asked-questions">Frequently asked questions<a class="anchor" href="#frequently-asked-questions" aria-hidden="true" tabindex="-1">#</a></h2>
-<p><strong>Do I need a VRChat account?</strong>
+<p>Do I need a VRChat account?
 No, you don't. Avatar Live does not communicate with VRChat.</p>
-<p><strong>Can I use it for streaming?</strong>
-For streaming, publishing videos and commercial use, please use <strong>Pro</strong>. Private Discord sharing with friends is fine with Basic, too.</p>
-<p><strong>Is my keyboard input recorded?</strong>
+<p>Can I use it for streaming?
+For streaming, publishing videos and commercial use, please use Pro. Private Discord sharing with friends is fine with Basic, too.</p>
+<p>Is my keyboard input recorded?
 No, it isn't. Desk hand motion does not save or send the characters you type.</p>
-<p><strong>Can I give my avatar file to other people?</strong>
+<p>Can I give my avatar file to other people?
 Please follow the terms of use of the avatar and outfit creators.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="11-pro-features.html"><span>Previous</span>Posing · Objects · Expressions</a><a class="next" href="13-license.html"><span>Next</span>Editions · License · Notices</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#v200-diagnosis-by-symptom">v2.0.0 diagnosis by symptom</a></li><li><a href="#start-up--installation">Start-up · Installation</a></li><li><a href="#avatar">Avatar</a></li><li><a href="#webcam--face">Webcam · Face</a></li><li><a href="#microphone">Microphone</a></li><li><a href="#output--screen-share">Output · Screen share</a></li><li><a href="#common-issues-after-115">Common issues after 1.1.5</a></li><li><a href="#supported-features">Supported features</a></li><li><a href="#planned-support">Planned support</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ul></nav>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#diagnosis-by-symptom">diagnosis by symptom</a></li><li><a href="#start-up--installation">Start-up · Installation</a></li><li><a href="#avatar">Avatar</a></li><li><a href="#webcam--face">Webcam · Face</a></li><li><a href="#microphone">Microphone</a></li><li><a href="#output--screen-share">Output · Screen share</a></li><li><a href="#common-issues-after-115">Common issues after 1.1.5</a></li><li><a href="#supported-features">Supported features</a></li><li><a href="#planned-support">Planned support</a></li><li><a href="#frequently-asked-questions">Frequently asked questions</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

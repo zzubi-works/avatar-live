@@ -1,6 +1,6 @@
 # Avatar Live Terms of Use
 
-**Effective date: October 9, 2026**
+Effective date: October 9, 2026
 
 These Terms set out the conditions for using Avatar Live and Curious Bobby - Avatar Exporter (together, the "Software") provided by Curious Bobby Co. (the "Company"). By installing, activating or using the Software, you are deemed to have agreed to these Terms.
 
@@ -14,13 +14,13 @@ These Terms set out the conditions for using Avatar Live and Curious Bobby - Ava
 
 1. The Company grants the Purchaser a non-transferable, non-exclusive License.
 2. One License may be used by one person on one PC.
-3. The **Basic** edition is intended for personal and private use (including private Discord sharing with friends).
-4. For public or commercial use, such as streaming (live streaming), publishing or uploading videos, commissioned work or revenue-generating activities, please use the **Pro** edition.
+3. The Basic edition is intended for personal and private use (including private Discord sharing with friends).
+4. For public or commercial use, such as streaming (live streaming), publishing or uploading videos, commissioned work or revenue-generating activities, please use the Pro edition.
 5. Trial and promotional codes may be used within the period and under the conditions specified by the Company.
 
 ## Article 3 (Moving to Another PC)
 
-1. The Purchaser may move the License to another PC by themselves **once**.
+1. The Purchaser may move the License to another PC by themselves once.
 2. After the move, the License can no longer be used on the previous PC.
 3. Any further move will be considered through an inquiry only where there are unavoidable circumstances, and may be difficult depending on the situation. Please choose carefully the PC on which you first activate the License.
 
