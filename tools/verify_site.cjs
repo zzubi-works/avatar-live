@@ -7,6 +7,7 @@ const { chromium } = require('playwright');
 async function main() {
   const root = path.resolve(__dirname, '..', 'docs');
   const out = path.resolve(process.argv[2] || '.local/site-review');
+  const only = process.argv[3] ? process.argv[3].split(',') : null;
   fs.mkdirSync(out, { recursive: true });
   const failures = [], records = [];
   const server = http.createServer((req, res) => {
@@ -23,14 +24,16 @@ async function main() {
   const browser = await chromium.launch({ headless: true, channel: 'msedge' });
   try {
     const page = await browser.newPage();
-    const names = fs.readdirSync(path.join(root, 'ko')).filter(n => n.endsWith('.html'));
+    const languages = ['ko', 'en', 'ja', 'zh'];
+    for (const lang of languages) {
+    const names = fs.readdirSync(path.join(root, lang)).filter(n => n.endsWith('.html') && (!only || only.includes(n)));
     for (const width of [1440, 900, 390]) {
       await page.setViewportSize({ width, height: 1000 });
       for (const name of names) {
         const errors = [];
         const onError = e => errors.push(e.message);
         page.on('pageerror', onError);
-        await page.goto(base + '/ko/' + name, { waitUntil: 'load' });
+        await page.goto(base + '/' + lang + '/' + name, { waitUntil: 'load' });
         const result = await page.evaluate(async () => {
           const main = document.querySelector('main');
           const missing = [], images = [];
@@ -50,25 +53,28 @@ async function main() {
             rawMarkdown:!!main && main.innerText.includes('**'), missing, brokenLinks, clippedLabels, images};
         });
         page.off('pageerror', onError);
-        const record = {width, page:name, ...result, errors};
+        const record = {lang, width, page:name, ...result, errors};
         records.push(record);
         if (result.overflow || result.rawMarkdown || result.missing.length || result.brokenLinks.length || result.clippedLabels.length || errors.length) failures.push(record);
         if (['01-getting-started.html','08-scene.html','08-camera-effects.html','09-session.html','13-license.html'].includes(name)) {
-          await page.screenshot({path:path.join(out, width+'-'+name.replace('.html','.png'))});
+          await page.screenshot({path:path.join(out, lang+'-'+width+'-'+name.replace('.html','.png'))});
         }
         if (name === '08-camera-effects.html') {
-          const anchor = page.locator('#안티에일리어싱');
+          const anchor = page.locator('article img[src$="/guide-post-aa.webp"]').first();
           await anchor.scrollIntoViewIfNeeded();
-          await page.screenshot({path:path.join(out,width+'-antialiasing.png')});
+          await page.screenshot({path:path.join(out,lang+'-'+width+'-antialiasing.png')});
           const rects = await page.locator('td').filter({hasText:/^안티에일리어싱$/}).count();
           if (rects) throw new Error('Expected effect-specific explanations, not the obsolete crowded table');
         }
       }
     }
+    console.log('Checked ' + lang + ': ' + names.length + ' pages at 3 widths');
+    }
     fs.writeFileSync(path.join(out,'layout-results.json'),JSON.stringify({failures, records},null,2));
-    console.log(JSON.stringify({pages:names.length,viewports:3,checks:records.length,failures:failures.map(f=>({page:f.page,width:f.width,missing:f.missing,brokenLinks:f.brokenLinks,overflow:f.overflow,clippedLabels:f.clippedLabels,errors:f.errors}))},null,2));
+    console.log(JSON.stringify({languages:languages.length,pages:records.length/3,viewports:3,checks:records.length,failures:failures.map(f=>({lang:f.lang,page:f.page,width:f.width,missing:f.missing,brokenLinks:f.brokenLinks,overflow:f.overflow,clippedLabels:f.clippedLabels,errors:f.errors}))},null,2));
     if (failures.length) process.exitCode=1;
   } finally {
+    server.closeAllConnections();
     await browser.close();
     await new Promise(resolve=>server.close(resolve));
   }

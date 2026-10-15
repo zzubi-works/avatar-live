@@ -27,6 +27,10 @@ def command(port, text):
 def capture(port, path, crop=None):
     path = Path(path).resolve()
     path.parent.mkdir(parents=True, exist_ok=True)
+    command(port, "notices read-all")
+    time.sleep(0.2)
+    # The player writes asynchronously; an older image must not pass as the new capture.
+    path.unlink(missing_ok=True)
     command(port, "screenshot " + str(path))
     for _ in range(120):
         try:
@@ -49,6 +53,9 @@ def run_plan(port, plan_path, out):
     plan = json.loads(Path(plan_path).read_text(encoding="utf-8-sig"))
     records = []
     for shot in plan:
+        command(port, "panel menu close")
+        command(port, "panel show")
+        command(port, "panel open")
         if shot.get("page"):
             command(port, "panel " + shot["page"])
         command(port, "panel popover none")

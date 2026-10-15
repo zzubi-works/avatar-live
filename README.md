@@ -19,8 +19,9 @@ uv run --no-project --with markdown --with pillow python build.py
 - `content/<lang>/*.md` → `docs/<lang>/*.html` (guide and legal pages)
 - `assets/` → `docs/assets/` (styles, script, brand images, videos)
 - `python check_links.py <lang>` checks the guide's links and anchors.
-- `python check_site_images.py` verifies that all translated pages use the same
-  current Korean screenshots and that the referenced image files exist.
+- `python check_site_images.py` verifies matching screenshot coverage, each
+  language's own UI photos, and referenced image files. It rejects Korean UI
+  copied into a translated guide.
 - `python check_guide_parity.py` verifies that all 15 English, Japanese and
   Simplified Chinese guide chapters match the **Korean canonical guide** in
   heading structure, tables, screenshots and navigational links. It also checks
@@ -30,10 +31,10 @@ uv run --no-project --with markdown --with pillow python build.py
 
 GitHub Pages serves `main:/docs`.
 
-The Korean screenshots are the canonical images for all four languages, on
-both the homepage and guide pages. Older localized images remain archived,
-but the builder does not display them until they have been recaptured and
-explicitly approved for the current app version.
+Homepage and guide UI screenshots use the corresponding app language and are
+served from `docs/assets/shots/<lang>/`. All languages use the reviewed Main
+avatar/studio and ordinary standing poses. Text-free renders, including the ten
+effect comparisons, can be shared; UI photos must be captured in each language.
 
 When refreshing screenshots from a working directory with older local PNGs,
 use `python build.py --shots-prefix guide-` to convert only the new guide
@@ -47,7 +48,12 @@ captures and preserve the other committed WebP images.
   chosen avatar/studio profile. PNG sources stay in the ignored `shots/` folder.
 - `tools/capture_effect_examples.py --studio-file <isolated.studio.json>`:
   renders effect comparisons and restores the serialized effect settings.
-- `tools/verify_site.cjs <output-directory>`: checks generated Korean pages
+- `tools/capture_localized_guides.py --profile <capture-profile> --worktree
+  <runtime-worktree> --player <frozen-development-player.exe>`: photographs
+  English, Japanese and Chinese menus in minimized players, using isolated
+  profile copies. It disables automatic download and installation on quit.
+  Use a frozen development-player copy so the source build stays intact.
+- `tools/verify_site.cjs <output-directory>`: checks all four languages
   at desktop, tablet and mobile sizes in headless Edge. It requires Playwright
   and writes its screenshots and JSON results outside the published site.
 

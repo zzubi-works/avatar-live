@@ -43,7 +43,7 @@
       {
         "title": "No VRM conversion",
         "body": "Export once from your avatar project and you're done. If you change the avatar, just export it again.",
-        "media": "img:launcher",
+        "media": "img:guide-launcher",
         "size": "wide"
       },
       {
@@ -65,7 +65,7 @@
       {
         "title": "Keyboard · mouse hand motion",
         "body": "Even when your hands are out of view, the avatar's hands move with your typing and mouse. The characters you type are not recorded.",
-        "media": "img:motion-desk"
+        "media": "img:guide-motion-hands"
       },
       {
         "title": "Streaming and screen sharing",
@@ -108,7 +108,7 @@
           "Open by drag and drop",
           "Settings saved per avatar"
         ],
-        "media": "img:avatar-pop",
+        "media": "img:guide-avatar-library",
         "page": "03-launcher-and-library"
       },
       {
@@ -130,7 +130,7 @@
           "Blinking · gaze",
           "Mic lip sync"
         ],
-        "media": "img:facecal",
+        "media": "img:guide-face-calibration",
         "page": "07-motion"
       },
       {
@@ -141,7 +141,7 @@
           "Pose it in place",
           "Marshmallow PB support"
         ],
-        "media": "common:grab",
+        "media": "img:guide-camera-toolbar",
         "page": "04-main-window"
       },
       {
@@ -163,7 +163,7 @@
           "Send only the game audio",
           "Position · size as you like"
         ],
-        "media": "img:share",
+        "media": "img:guide-share",
         "page": "09-output"
       },
       {

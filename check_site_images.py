@@ -1,12 +1,11 @@
-"""Check that every localized page uses the current Korean guide screenshots.
+"""Check matching guide coverage with each language's actual UI photos.
 
 Run after building the website: python check_site_images.py
 
-The English, Japanese, and Chinese text is translated independently, but until
-new localized captures are approved, all languages must show the same Korean
-screenshots rather than older locale-specific UI screenshots.
+Only common renders and the text-free effect comparisons may be shared.
 """
 from pathlib import Path
+import hashlib
 import re
 import sys
 
@@ -33,17 +32,24 @@ def main():
                 continue
 
             actual = image_refs(page)
-            if actual != expected:
-                print(f"{lang}/{name}: screenshots differ from Korean canonical page")
+            localized = [(lang if folder == "ko" else folder, filename) for folder, filename in expected]
+            if actual != localized:
+                print(f"{lang}/{name}: wrong screenshot coverage or language folder")
                 errors += 1
 
             for folder, filename in set(actual):
-                if folder not in ("ko", "common"):
-                    print(f"{lang}/{name}: outdated locale image {folder}/{filename}")
+                if folder not in (lang, "common"):
+                    print(f"{lang}/{name}: wrong UI language {folder}/{filename}")
                     errors += 1
                 elif not (ROOT / "assets" / "shots" / folder / filename).is_file():
                     print(f"{lang}/{name}: missing image {folder}/{filename}")
                     errors += 1
+                elif folder == lang and filename.startswith("guide-") and not filename.startswith("guide-example-"):
+                    native = ROOT / "assets" / "shots" / folder / filename
+                    korean = ROOT / "assets" / "shots" / "ko" / filename
+                    if korean.is_file() and hashlib.sha256(native.read_bytes()).digest() == hashlib.sha256(korean.read_bytes()).digest():
+                        print(f"{lang}/{name}: Korean UI was copied instead of captured: {filename}")
+                        errors += 1
 
     print(f"Checked {len(canonical_pages)} pages x {len(LANGUAGES)} languages; {errors} screenshot problems.")
     return int(bool(errors))

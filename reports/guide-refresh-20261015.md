@@ -96,3 +96,40 @@ Primary third-party references checked on 2026-10-15:
   headless layout/image checks (21 Korean pages at 1440/900/390 px) pass;
   Korean link/anchor checking reports zero problems. Local evidence is in
   `.local/verify/guide-clarity-20261015/site-review-retake` in the runtime workspace.
+
+## Native-language screenshot refresh
+
+- Synced the user's published multilingual pages through `04aadc6` before
+  applying the photo changes. Preserved the consolidated 2.0.1/2.0.2 hotfix
+  notes. The 2.0.0 entry now uses a date/version heading and a flat change list
+  in all four languages, without removing the newer hotfix information.
+- Photographed 74 real UI views in each of English, Japanese and Simplified
+  Chinese: 222 native-language UI photos. The ten effect comparison renders
+  contain no UI/text and are reused in each language's asset folder.
+- Kept Main avatar/Main studio, neutral lighting, ordinary expression menus,
+  complete right-click controls and the three reviewed standing motions.
+  Localized example camera/light/pose names only in the isolated profiles.
+- Reframed face-calibration dialogs around their real window bounds so that
+  instructions and buttons stay readable. Used the library's actual fold bounds
+  to show its complete search controls and ordinary-motion thumbnails.
+- Removed forced Korean image routing from both guide figures and homepage
+  images. Homepage captures now use the current guide photos in their own
+  language, including the actual PhysBone mouse-control menu rather than the
+  old shared picture with Korean navigation.
+- Updated `check_site_images.py` to require the corresponding language folder,
+  preserve matching screenshot coverage, and reject Korean UI copies. Expanded
+  the headless layout checker to all languages and optional page subsets.
+- Capture automation uses native player screenshots while minimized, with
+  automatic download/installation disabled. During the initial pass, an inherited
+  automatic-update setting replaced v45 when quitting. Restored all 748 replaced
+  files from the updater backup and verified their hashes; quarantined the five
+  update-only files. The source build is restored. Remaining captures used a
+  frozen v47 development-player copy; no source binary was modified for capture.
+  Recovery evidence: `.local/verify/guide-clarity-20261015/capture-update-recovery.json`.
+- All four languages have the same 84 guide image examples. Each translated UI
+  PNG differs from its Korean counterpart; only text-free comparisons are shared.
+- Native-photo build: 84 pages, 551 image entries. All four Markdown link checks,
+  15-chapter guide parity and the locale-image check pass. Headless Edge checks
+  all 84 pages at 1440/900/390 px: 252 checks with zero failures. Source screenshots
+  and layout evidence are under `.local/verify/guide-clarity-20261015/localized`
+  and `site-review-native-language-photos` in the runtime workspace.

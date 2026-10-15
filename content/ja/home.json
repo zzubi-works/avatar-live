@@ -43,7 +43,7 @@
       {
         "title": "VRM変換なしで",
         "body": "アバタープロジェクトから一度書き出せば完了。アバターを改変しても、書き出し直すだけです。",
-        "media": "img:launcher",
+        "media": "img:guide-launcher",
         "size": "wide"
       },
       {
@@ -65,7 +65,7 @@
       {
         "title": "キーボード・マウスに合わせた手の動き",
         "body": "手が画面に映っていないときも、タイピングやマウスに合わせて手が動きます。入力した文字は記録しません。",
-        "media": "img:motion-desk"
+        "media": "img:guide-motion-hands"
       },
       {
         "title": "配信と画面共有",
@@ -108,7 +108,7 @@
           "ドラッグ＆ドロップで開く",
           "アバターごとの設定を保存"
         ],
-        "media": "img:avatar-pop",
+        "media": "img:guide-avatar-library",
         "page": "03-launcher-and-library"
       },
       {
@@ -130,7 +130,7 @@
           "まばたき・視線",
           "マイクでリップシンク"
         ],
-        "media": "img:facecal",
+        "media": "img:guide-face-calibration",
         "page": "07-motion"
       },
       {
@@ -141,7 +141,7 @@
           "その場でポーズを固定",
           "マシュマロPB対応"
         ],
-        "media": "common:grab",
+        "media": "img:guide-camera-toolbar",
         "page": "04-main-window"
       },
       {
@@ -163,7 +163,7 @@
           "ゲーム音だけを送る",
           "位置・サイズは自由に"
         ],
-        "media": "img:share",
+        "media": "img:guide-share",
         "page": "09-output"
       },
       {

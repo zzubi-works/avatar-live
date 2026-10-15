@@ -45,6 +45,7 @@ def main():
                     command(args.port, "studio post " + json.dumps(change))
                 time.sleep(1.5)
                 path = out / ("guide-example-" + name + "-" + state + ".png")
+                path.unlink(missing_ok=True)
                 command(args.port, "studio-camera save-window " + str(path))
                 for _ in range(80):
                     try:

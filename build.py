@@ -140,9 +140,7 @@ def poster_size(name):
 def media(spec, lang, alt="", eager=False, sizes="(max-width: 900px) 100vw, 640px"):
     kind, _, value = spec.partition(":")
     if kind == "img":
-        # Korean screenshots are canonical until new locale captures are reviewed.
-        # Older locale-specific homepage screenshots show a different app version.
-        return img_tag("ko", value, alt, eager=eager, sizes=sizes)
+        return img_tag(lang, value, alt, eager=eager, sizes=sizes)
     if kind == "common":
         return img_tag("common", value, alt, eager=eager, sizes=sizes)
     if kind == "video":
@@ -198,8 +196,7 @@ def render_md(lang, text):
         mm = re.match(r"img/(common/)?([\w\-]+)\.png$", src)
         if not mm:
             raise SystemExit("bad image " + src)
-        # All translated guides share the same current Korean screenshots.
-        folder = "common" if mm.group(1) else "ko"
+        folder = "common" if mm.group(1) else lang
         image_path = "../assets/shots/%s/%s.webp" % (folder, mm.group(2))
         return '<figure><a class="zoomable" href="%s" target="_blank" rel="noopener">%s</a><figcaption>%s</figcaption></figure>' % (image_path, img_tag(folder, mm.group(2), alt), esc(alt))
 

@@ -53,28 +53,23 @@
 </ul>
 <h2 id="20261015--v200">2026/10/15 — v2.0.0<a class="anchor" href="#20261015--v200" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li>The former Scene menu is now Studio, bringing scene saves, lighting, objects, rooms, avatars and cameras together.</li>
-<li>(Pro) Save multiple cameras per scene; use cuts, configurable crossfades, director controls, multiview switching and per-camera automatic rules.</li>
-<li>The app window remains the scene view, with output through Spout2, NDI, virtual camera and screen sharing. NDI output is available in Basic.</li>
-<li>(Pro) Switch between multiple studio cameras for broadcast and show an optional small broadcast-camera preview at the bottom right.</li>
-<li>Improved free/orbit camera navigation, camera follow/aim settings, scene thumbnails and search.</li>
-<li>(Pro) Add and control multiple avatars, switch between them or have different rigs mirror the same tracking and expressions.</li>
-<li>(Pro) Host or join a session from Output → Broadcast. Remote avatars appear in your scene with live pose, fingers and expressions; placement sync and host locks are supported.</li>
-<li>(Pro) With explicit participant consent, remote avatar data is transferred in AES-256-GCM encrypted chunks and may be temporarily cached as ciphertext on the host and receivers. Cache cleanup is attempted at session end; redistribution-prohibited VRM assets are not sent.</li>
-<li>Added SteamVR headset, controller and tracker input with full-body IK, calibration and controller finger controls. Real-device validation is still pending.</li>
-<li>Added VRM 0.x/1.0 import, spring bones, expressions, lip sync, gaze, posing, tracking and scene saving. Some VRM 0.x models using unsupported shaders cannot be loaded.</li>
-<li>Improved iPhone, webcam, OpenSeeFace and VMC tracking transitions and lost-tracking recovery; iPhone calibration now occurs three seconds after the first face frame.</li>
-<li>Webcam arms offer a new Dynamic mode and a Legacy mode preserving 1.1.6 behavior. Improved finger joints, resting hands, 20 hand poses and pose editing.</li>
-<li>Per-avatar gaze, eye and lip-sync options, idle motions and AFK behavior have been expanded.</li>
-<li>Expanded lighting presets, scene/avatar ownership, bone-attached props, room selection and object editing.</li>
-<li>(Pro) Volumetric spotlights, prop library, Beautify and HBAO effects. Basic retains post-processing.</li>
-<li>Added NDI output, available in Basic as well as Pro.</li>
-<li>(Pro) Added per-camera Spout2 output, camera overlays, MP4 recording and direct game-plus-avatar recording.</li>
-<li>Reduced allocations and parallelized PhysBone. In a measured two-avatar 60 fps test, CPU use dropped from ~2.63 to ~1.4 cores (results vary).</li>
-<li>Avatar Exporter 1.0.6 aligns more PhysBone behavior with VRChat SDK 3.10.5 and fixes certain avatar bone disabling issues.</li>
-<li>Several features (including camera collisions, screen gaze, Look At IK, multiview, per-camera Spout2, Beautify/HBAO) are experimental or disabled by default.</li>
-<li>For the latest session mesh and menu-toggle fixes, all remote session participants should use v2.0.2 or later. Firewall/port forwarding may be necessary. Pose and expression messages are not encrypted, and protection from malicious clients is not guaranteed. Verify your avatar sharing rights.</li>
-<li>A real two-PC remote session connection has been tested. SteamVR devices and different NDI receivers may still require environment-specific verification; see the updated guide for OBS setup, port forwarding and the limits of session-data encryption.</li>
+<li>Studio brings scenes, avatars, cameras, backgrounds, lights and props together.</li>
+<li>Pro can place multiple avatars, switch the controlled avatar and drive them with shared movement.</li>
+<li>Pro can create multiple cameras, switch with cuts/crossfades and compare shots in multiview.</li>
+<li>Expanded room presets, the prop library, bone-attached props and lighting settings.</li>
+<li>Added additional post effects and ambient occlusion to Pro.</li>
+<li>Effects such as bloom, color, lenses, focus and pixelation can be enabled and adjusted individually.</li>
+<li>Existing post-processing remains available in Basic and Pro.</li>
+<li>Added NDI® output to Basic and Pro for sending video to OBS on another PC.</li>
+<li>Pro supports per-camera Spout2 output and MP4 recording.</li>
+<li>Pro remote sessions bring friends' avatars from different PCs into one scene.</li>
+<li>Improved photo crop, aspect ratio, resolution and screen-sharing audio.</li>
+<li>VRM 0.x and 1.0 avatars can be opened directly. Some custom shaders are unsupported.</li>
+<li>Added SteamVR device input and full-body calibration; experimental support needs checks for each device.</li>
+<li>Improved face/head movement, lost-tracking recovery, VMC input and arm/hand motion.</li>
+<li>Expanded hand poses, AFK poses, gaze and lip-sync settings.</li>
+<li>Improved CPU use and menu operation with multiple avatars.</li>
+<li>Improved Avatar Exporter physics and fixed some disappearing hair/accessory parts.</li>
 </ul>
 <h2 id="20261012--v116">2026/10/12 — v1.1.6<a class="anchor" href="#20261012--v116" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>

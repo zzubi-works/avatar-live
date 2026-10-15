@@ -1,0 +1,803 @@
+[
+  {
+    "name": "guide-gestures",
+    "page": "AvatarMenu",
+    "open": [
+      "menu.gestures"
+    ],
+    "focus": "menu.gestures",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-default-pose",
+    "page": "AvatarMenu",
+    "open": [
+      "menu.afk"
+    ],
+    "focus": "menu.afk",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-my-expression",
+    "page": "AvatarMenu",
+    "open": [
+      "menu.myexpr"
+    ],
+    "focus": "menu.myexpr",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-devices",
+    "page": "Input",
+    "open": [
+      "tracking.quality"
+    ],
+    "panel": true,
+    "bottom": 950,
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-tracking-sources",
+    "page": "Input",
+    "open": [
+      "tracking.sources"
+    ],
+    "focus": "tracking.sources",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-steamvr",
+    "page": "Input",
+    "open": [
+      "tracking.steamvr"
+    ],
+    "focus": "tracking.steamvr",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-phone",
+    "page": "Input",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}",
+      "connect set {\"FaceInput\":\"iFacialMocap\",\"FaceInputOn\":false,\"PhoneApp\":\"iFacialMocap\"}"
+    ],
+    "open": [
+      "tracking.sources"
+    ],
+    "focus": "tracking.sources"
+  },
+  {
+    "name": "guide-vmc",
+    "page": "Input",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}",
+      "source Body VMC"
+    ],
+    "open": [
+      "tracking.sources",
+      "vmc.settings"
+    ],
+    "focus": "vmc.settings",
+    "panel": true
+  },
+  {
+    "name": "guide-motion-face",
+    "page": "Motion",
+    "open": [
+      "motion.tracking",
+      "face.cameratune"
+    ],
+    "scroll": 0,
+    "panel": true,
+    "bottom": 1000,
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-face-adjust",
+    "page": "Motion",
+    "open": [
+      "face.adjust"
+    ],
+    "focus": "face.adjust",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-motion-eyes",
+    "page": "Motion",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}",
+      "facecal cancel"
+    ],
+    "open": [
+      "face.blink",
+      "face.eyetune",
+      "face.gazetarget"
+    ],
+    "focus": "face.blink",
+    "panel": true
+  },
+  {
+    "name": "guide-motion-mouth",
+    "page": "Motion",
+    "open": [
+      "face.mouth"
+    ],
+    "focus": "face.mouth",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-motion-body",
+    "page": "Body",
+    "open": [
+      "motion.head",
+      "motion.follow",
+      "motion.sway",
+      "motion.breathing"
+    ],
+    "scroll": 550,
+    "panel": true,
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-motion-afk",
+    "page": "AvatarMenu",
+    "open": [
+      "menu.afk"
+    ],
+    "focus": "menu.afk",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-motion-hands",
+    "page": "Hands",
+    "open": [
+      "hands.desk",
+      "hands.lost",
+      "desk.keyboard",
+      "desk.mouse"
+    ],
+    "scroll": 1000,
+    "panel": true,
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-auto-expression",
+    "page": "Motion",
+    "open": [
+      "face.autoexpr"
+    ],
+    "focus": "face.autoexpr",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-scenes",
+    "page": "Scene",
+    "open": [
+      "scene.scenes"
+    ],
+    "focus": "scene.scenes",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-studio-avatar",
+    "page": "Scene",
+    "open": [
+      "scene.avatar"
+    ],
+    "focus": "scene.avatar",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-background",
+    "page": "Scene",
+    "open": [
+      "scene.bg",
+      "rec.card"
+    ],
+    "focus": "scene.bg",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-lighting",
+    "page": "Scene",
+    "open": [
+      "scene.lighting",
+      "lighting.lights"
+    ],
+    "focus": "scene.lighting",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-room",
+    "page": "Scene",
+    "open": [
+      "scene.room"
+    ],
+    "focus": "scene.room",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-props",
+    "page": "Scene",
+    "open": [
+      "scene.props",
+      "props.library"
+    ],
+    "focus": "scene.props",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-posing",
+    "page": "Scene",
+    "open": [
+      "scene.posing"
+    ],
+    "focus": "scene.posing",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-output-image",
+    "page": "Stream",
+    "open": [
+      "out.image"
+    ],
+    "focus": "out.image",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-spout",
+    "page": "Stream",
+    "open": [
+      "out.spout"
+    ],
+    "crop": [
+      98,
+      205,
+      648,
+      475
+    ],
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-virtual-camera",
+    "page": "Stream",
+    "open": [
+      "out.vcam"
+    ],
+    "crop": [
+      98,
+      300,
+      648,
+      665
+    ],
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-photo-record",
+    "page": "Stream",
+    "open": [
+      "out.photo"
+    ],
+    "focus": "out.photo",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-share",
+    "page": "Share",
+    "open": [
+      "share.state",
+      "share.target",
+      "share.audio",
+      "share.overlay"
+    ],
+    "panel": true,
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-session",
+    "page": "Stream",
+    "open": [
+      "session",
+      "session.join",
+      "session.host"
+    ],
+    "focus": "session",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-session-options",
+    "page": "Stream",
+    "open": [
+      "session",
+      "session.people"
+    ],
+    "focus": "session",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-settings-window",
+    "page": "Settings",
+    "open": [
+      "settings.window"
+    ],
+    "focus": "settings.window",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-settings-performance",
+    "page": "Settings",
+    "open": [
+      "settings.performance"
+    ],
+    "focus": "settings.performance",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-settings-ui",
+    "page": "Settings",
+    "open": [
+      "settings.language",
+      "settings.ui"
+    ],
+    "focus": "settings.ui",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-hotkeys",
+    "page": "Settings",
+    "open": [
+      "settings.hotkeys",
+      "settings.hotkeys.global"
+    ],
+    "focus": "settings.hotkeys",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-settings-updates",
+    "page": "Settings",
+    "open": [
+      "settings.updates"
+    ],
+    "focus": "settings.updates",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-settings-diagnostics",
+    "page": "Settings",
+    "open": [
+      "settings.diagnostics",
+      "settings.license"
+    ],
+    "focus": "settings.diagnostics",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-effects",
+    "page": "Scene",
+    "open": [
+      "scene.effects"
+    ],
+    "focus": "scene.effects",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}",
+      "studio post {\"Enabled\": true, \"Beautify\": {\"Enabled\": true}, \"Hbao\": {\"Enabled\": true}}"
+    ]
+  },
+  {
+    "name": "guide-post-aa",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.main"
+    ],
+    "focus": "post.main",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-post-bloom",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.main",
+      "post.bloom"
+    ],
+    "focus": "post.bloom",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-post-color",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.main",
+      "post.grading"
+    ],
+    "focus": "post.grading",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-post-vignette",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.main",
+      "post.vignette"
+    ],
+    "focus": "post.vignette",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-post-grain",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.main",
+      "post.grain"
+    ],
+    "focus": "post.grain",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-post-chromatic",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.main",
+      "post.chromatic"
+    ],
+    "focus": "post.chromatic",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-post-dof",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.main",
+      "post.dof"
+    ],
+    "focus": "post.dof",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-post-motion",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.main",
+      "post.motion"
+    ],
+    "focus": "post.motion",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-fx-color",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.beautify",
+      "post.beautify.color"
+    ],
+    "focus": "post.beautify.color",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-fx-sharpen",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.beautify",
+      "post.beautify.sharpen"
+    ],
+    "focus": "post.beautify.sharpen",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-fx-bloom",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.beautify",
+      "post.beautify.bloom"
+    ],
+    "focus": "post.beautify.bloom",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-fx-flares",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.beautify",
+      "post.beautify.flares"
+    ],
+    "focus": "post.beautify.flares",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-fx-dof",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.beautify",
+      "post.beautify.dof"
+    ],
+    "focus": "post.beautify.dof",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-fx-chromatic",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.beautify",
+      "post.beautify.chromatic"
+    ],
+    "focus": "post.beautify.chromatic",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-fx-dirt",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.beautify",
+      "post.beautify.dirt"
+    ],
+    "focus": "post.beautify.dirt",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}",
+      "studio post {\"Beautify\":{\"LensDirt\":\"dirt-1\"}}"
+    ]
+  },
+  {
+    "name": "guide-fx-vignette",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.beautify",
+      "post.beautify.vignette"
+    ],
+    "focus": "post.beautify.vignette",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-fx-night",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.beautify",
+      "post.beautify.night"
+    ],
+    "focus": "post.beautify.night",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-fx-blur",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.beautify",
+      "post.beautify.blur"
+    ],
+    "focus": "post.beautify.blur",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-fx-pixelate",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.beautify",
+      "post.beautify.pixelate"
+    ],
+    "focus": "post.beautify.pixelate",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-fx-hbao",
+    "page": "Scene",
+    "open": [
+      "scene.effects",
+      "post.hbao"
+    ],
+    "focus": "post.hbao",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-studio-camera",
+    "page": "Scene",
+    "open": [
+      "scene.cameras",
+      "cam.list",
+      "cam.edit.camera-c7f58a2a6bbc"
+    ],
+    "focus": "scene.cameras",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-camera-position",
+    "page": "Scene",
+    "open": [
+      "scene.cameras",
+      "cam.list",
+      "cam.edit.camera-c7f58a2a6bbc"
+    ],
+    "focus": "cam.list",
+    "after": [
+      "panel listbox scroll cameras -10000",
+      "panel listbox scroll cameras 120"
+    ],
+    "panel": true,
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}",
+      "studio-camera body camera-c7f58a2a6bbc transposer"
+    ]
+  },
+  {
+    "name": "guide-camera-aim",
+    "page": "Scene",
+    "open": [
+      "scene.cameras",
+      "cam.list",
+      "cam.edit.camera-c7f58a2a6bbc"
+    ],
+    "focus": "cam.list",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}",
+      "studio-camera aim camera-c7f58a2a6bbc composer"
+    ],
+    "after": [
+      "panel scroll 1600"
+    ],
+    "panel": true
+  },
+  {
+    "name": "guide-camera-multiview",
+    "page": "Scene",
+    "open": [
+      "scene.cameras",
+      "cam.multiview"
+    ],
+    "focus": "scene.cameras",
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-ndi",
+    "page": "Stream",
+    "open": [],
+    "crop": [
+      98,
+      220,
+      648,
+      515
+    ],
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  },
+  {
+    "name": "guide-light-detail",
+    "page": "Scene",
+    "open": [
+      "scene.lighting",
+      "lighting.lights",
+      "light.1cc26a770902",
+      "light.more.1cc26a770902",
+      "light.shadow.1cc26a770902"
+    ],
+    "focus": "light.more.1cc26a770902",
+    "panel": true,
+    "commands": [
+      "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
+    ]
+  }
+]
