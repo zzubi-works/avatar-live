@@ -77,7 +77,7 @@
   },
   "how": {
     "kicker": "使用方法",
-    "title": "只需三个步骤。",
+    "title": "VRChat 角色三步导出，VRM 直接导入。",
     "steps": [
       {
         "title": "打开 Unity 项目",
@@ -92,7 +92,7 @@
         "body": "打开文件并开启摄像头，角色就会立刻动起来。之后不再需要 Unity。"
       }
     ],
-    "note": "仅有 VRM · .vrca 文件无法使用，需要角色的 Unity 项目。",
+    "note": "VRM 0.x 和 1.0 文件无需 Unity，可直接导入 Avatar Live。只有将 VRChat 角色导出为 .vavatar 时才需要 Unity 项目；.vrca 文件无法直接打开。",
     "link": "查看导出指南"
   },
   "showcase": {
@@ -261,11 +261,11 @@
       },
       {
         "q": "需要 Unity 项目吗？",
-        "a": "制作角色文件时需要一次（Unity 2022.3.22f1）。制作完成后，无需 Unity 即可使用。"
+        "a": "直接导入 VRM 0.x 和 1.0 文件不需要 Unity。只有将 VRChat 角色导出为 .vavatar 时，才需要 Unity 项目（2022.3.22f1）；导出后使用 Avatar Live 不再需要 Unity。"
       },
       {
         "q": "只有 VRM 文件可以使用吗？",
-        "a": "目前不支持。计划今后支持加载 VRM。"
+        "a": "可以。Avatar Live 已支持直接导入 VRM 0.x 和 1.0 文件。少数 VRM 0.x 模型可能因使用不受支持的特殊着色器而无法加载。"
       },
       {
         "q": "支持哪些着色器？",

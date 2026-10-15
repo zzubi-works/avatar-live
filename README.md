@@ -23,8 +23,9 @@ uv run --no-project --with markdown --with pillow python build.py
   current Korean screenshots and that the referenced image files exist.
 - `python check_guide_parity.py` verifies that all 15 English, Japanese and
   Simplified Chinese guide chapters match the **Korean canonical guide** in
-  heading structure, tables, screenshots and navigational links. Run it after
-  changing any Korean guide chapter, then update all three translations.
+  heading structure, tables, screenshots and navigational links. It also checks
+  all four homepages for VRM import support, Unity requirements and .vrca
+  incompatibility. Run it whenever guides or supported features change.
 - `make_og.py` redraws the share images (`assets/brand/og-<lang>.jpg`).
 
 GitHub Pages serves `main:/docs`.

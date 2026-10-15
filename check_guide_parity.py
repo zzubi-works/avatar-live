@@ -1,9 +1,10 @@
-"""Check that every localized Avatar Live guide has the Korean source structure.
+"""Check guide structure and the homepage's currently supported avatar formats.
 
 Run: python check_guide_parity.py
 The Korean Markdown under content/ko is the canonical guide.
 """
 from pathlib import Path
+import json
 import re
 import sys
 
@@ -26,6 +27,24 @@ def structure(value):
     }
 def main():
     total=0
+    # 홈페이지 FAQ는 가이드 본문과 별도 JSON이라 문서 구조 검사만으로는
+    # VRM 지원 여부가 예전 문구로 되돌아가는 실수를 발견할 수 없다.
+    for language in ('ko', *LANGS):
+        home=json.loads((ROOT/language/'home.json').read_text(encoding='utf-8'))
+        note=home['how']['note']
+        items=home['faq']['items']
+        vrm_answer=next((item['a'] for item in items if 'VRM' in item['q']), '')
+        unity_answer=next((item['a'] for item in items if 'Unity' in item['q']), '')
+        direct={'ko':'직접', 'en':'directly', 'ja':'直接', 'zh':'直接'}[language]
+        expectations={
+          'VRM FAQ':(vrm_answer, ('VRM', '0.x', '1.0', direct)),
+          'Unity FAQ':(unity_answer, ('VRM', '.vavatar', 'Unity')),
+          'setup note':(note, ('VRM', '0.x', '1.0', '.vavatar', '.vrca', 'Unity')),
+        }
+        for section,(text,required) in expectations.items():
+            if not all(term in text for term in required):
+                print(f'{language}/home.json {section}: stale or incomplete avatar-format information')
+                total+=1
     for language in LANGS:
         all_pages=sorted(p.name for p in (ROOT/language).glob('[0-9][0-9]-*.md'))
         if all_pages!=DOCS:
@@ -40,6 +59,6 @@ def main():
                 if value!=local[key]:
                     print(f'{language}/{name} {key} mismatch: KO={str(value)[:160]} target={str(local[key])[:160]}')
                     total+=1
-    print(f'Checked {len(DOCS)} canonical guide pages x {len(LANGS)} languages; {total} parity mismatches.')
+    print(f'Checked {len(DOCS)} canonical guide pages x {len(LANGS)} languages and four homepages; {total} mismatches.')
     return int(bool(total))
 if __name__=='__main__':sys.exit(main())

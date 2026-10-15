@@ -77,7 +77,7 @@
   },
   "how": {
     "kicker": "How it works",
-    "title": "Three steps are all it takes.",
+    "title": "Three steps for VRChat avatars. Direct import for VRM.",
     "steps": [
       {
         "title": "Open your Unity project",
@@ -92,7 +92,7 @@
         "body": "Open the file and turn on your webcam, and your avatar moves right away. From then on, you don't need Unity."
       }
     ],
-    "note": "VRM or .vrca files alone can't be used. You need the avatar's Unity project.",
+    "note": "VRM 0.x and 1.0 files can be opened directly without Unity. A Unity project is needed to export a VRChat avatar as .vavatar, but .vrca files cannot be opened directly.",
     "link": "See the export guide"
   },
   "showcase": {
@@ -261,11 +261,11 @@
       },
       {
         "q": "Do I need a Unity project?",
-        "a": "You need it once, to create the avatar file (Unity 2022.3.22f1). After that, you use Avatar Live without Unity."
+        "a": "You can load VRM 0.x and 1.0 files directly without Unity. To export a VRChat avatar as .vavatar, you need its Unity project (2022.3.22f1), but you won't need Unity to use the exported file."
       },
       {
         "q": "Can I use just a VRM file?",
-        "a": "Not at the moment. Support for loading VRM files is planned."
+        "a": "Yes. Avatar Live directly imports VRM 0.x and 1.0 files. Some VRM 0.x models that use unsupported shaders may not load."
       },
       {
         "q": "Which shaders are supported?",
