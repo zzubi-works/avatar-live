@@ -45,6 +45,43 @@
   <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Scene</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html" aria-current="page">Updates</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="update-history">Update History<a class="anchor" href="#update-history" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>Changes in each Avatar Live release, starting with the latest update.</p>
+<h2 id="20261015--v200-update-overview">2026/10/15 — v2.0.0 (Update overview)<a class="anchor" href="#20261015--v200-update-overview" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Avatar Live 2.0.0 expands the studio, avatar collaboration, tracking and output features since 1.1.6. <strong>(Pro)</strong> denotes Pro-only features.</p>
+<h3 id="studio-and-cameras">Studio and cameras<a class="anchor" href="#studio-and-cameras" aria-hidden="true" tabindex="-1">#</a></h3>
+<ul>
+<li>The former Scene menu is now <strong>Studio</strong>, bringing scene saves, lighting, objects, rooms, avatars and cameras together.</li>
+<li><strong>(Pro)</strong> Save multiple cameras per scene; use cuts, configurable crossfades, director controls, multiview switching and per-camera automatic rules.</li>
+<li>The app window remains the <strong>scene view</strong>. Broadcast camera output goes to Spout2, NDI, virtual camera, screen sharing and recordings, with an optional small preview.</li>
+<li>Improved free/orbit camera navigation, camera follow/aim settings, scene thumbnails and search.</li>
+</ul>
+<h3 id="multiple-avatars-and-remote-collaboration-pro">Multiple avatars and remote collaboration (Pro)<a class="anchor" href="#multiple-avatars-and-remote-collaboration-pro" aria-hidden="true" tabindex="-1">#</a></h3>
+<ul>
+<li><strong>(Pro)</strong> Add and control multiple avatars, switch between them or have different rigs mirror the same tracking and expressions.</li>
+<li><strong>(Pro)</strong> Host or join a session from Output → Broadcast. Remote avatars appear in your scene with live pose, fingers and expressions; placement sync and host locks are supported.</li>
+<li>With participant consent, shared avatar files are kept in encrypted temporary session cache and deleted at the end of the session. VRM files flagged against redistribution are not shared.</li>
+</ul>
+<h3 id="steamvr-vrm-and-tracking">SteamVR, VRM and tracking<a class="anchor" href="#steamvr-vrm-and-tracking" aria-hidden="true" tabindex="-1">#</a></h3>
+<ul>
+<li>Added SteamVR headset, controller and tracker input with full-body IK, calibration and controller finger controls. <strong>Real-device validation is still pending.</strong></li>
+<li>Added VRM 0.x/1.0 import, spring bones, expressions, lip sync, gaze, posing, tracking and scene saving. Some VRM 0.x models using unsupported shaders cannot be loaded.</li>
+<li>Improved iPhone, webcam, OpenSeeFace and VMC tracking transitions and lost-tracking recovery; iPhone calibration now occurs three seconds after the first face frame.</li>
+<li>Webcam arms offer a new <strong>Dynamic</strong> mode and a <strong>Legacy</strong> mode preserving 1.1.6 behavior. Improved finger joints, resting hands, 20 hand poses and pose editing.</li>
+<li>Per-avatar gaze, eye and lip-sync options, idle motions and AFK behavior have been expanded.</li>
+</ul>
+<h3 id="lighting-effects-output-and-performance">Lighting, effects, output and performance<a class="anchor" href="#lighting-effects-output-and-performance" aria-hidden="true" tabindex="-1">#</a></h3>
+<ul>
+<li>Expanded lighting presets, scene/avatar ownership, bone-attached props, room selection and object editing.</li>
+<li><strong>(Pro)</strong> Volumetric spotlights, prop library, Beautify and HBAO effects. Basic retains post-processing.</li>
+<li>Added <strong>NDI output</strong>. <strong>(Pro)</strong> Added per-camera Spout2, camera overlays, MP4 recording and direct game-plus-avatar recording.</li>
+<li>Reduced allocations and parallelized PhysBone. In a measured two-avatar 60 fps test, CPU use dropped from ~2.63 to ~1.4 cores (results vary).</li>
+<li><strong>Avatar Exporter 1.0.6</strong> aligns more PhysBone behavior with VRChat SDK 3.10.5 and fixes certain avatar bone disabling issues.</li>
+</ul>
+<h3 id="important-notes">Important notes<a class="anchor" href="#important-notes" aria-hidden="true" tabindex="-1">#</a></h3>
+<ul>
+<li>Several features (including camera collisions, screen gaze, Look At IK, multiview, per-camera Spout2, Beautify/HBAO) are experimental or disabled by default.</li>
+<li>Remote session participants must all use <strong>v2.0.0</strong>. Firewall/port forwarding may be necessary. Pose and expression messages are not encrypted, and protection from malicious clients is not guaranteed. Verify your avatar sharing rights.</li>
+<li>Real-device tests for SteamVR, NDI receivers and a two-PC session had <strong>not been confirmed</strong> when these notes were compiled.</li>
+</ul>
 <h2 id="20261012--v116">2026/10/12 — v1.1.6<a class="anchor" href="#20261012--v116" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>Completely revised PhysBone and physics calculations.</li>
@@ -204,8 +241,8 @@
 <li>Fixed tracking behavior in Eco mode.</li>
 <li>Improved PhysBone pose retention.</li>
 <li>Updated the wording of the Upgrade product.</li>
-</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="legal-seller.html"><span>Previous</span>Seller Information</a><span></span></nav><p class="updated">Last updated: 2026-10-12</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#20261012--v116">2026/10/12 — v1.1.6</a></li><li><a href="#20261012--v115">2026/10/12 — v1.1.5</a></li><li><a href="#20261012--v114">2026/10/12 — v1.1.4</a></li><li><a href="#20261012--v113">2026/10/12 — v1.1.3</a></li><li><a href="#20261011--v112">2026/10/11 — v1.1.2</a></li><li><a href="#20261011--v111">2026/10/11 — v1.1.1</a></li><li><a href="#20261011--v110">2026/10/11 — v1.1.0</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
+</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="legal-seller.html"><span>Previous</span>Seller Information</a><span></span></nav><p class="updated">Last updated: 2026-10-15</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#20261015--v200-update-overview">2026/10/15 — v2.0.0 (Update overview)</a></li><li><a href="#20261012--v116">2026/10/12 — v1.1.6</a></li><li><a href="#20261012--v115">2026/10/12 — v1.1.5</a></li><li><a href="#20261012--v114">2026/10/12 — v1.1.4</a></li><li><a href="#20261012--v113">2026/10/12 — v1.1.3</a></li><li><a href="#20261011--v112">2026/10/11 — v1.1.2</a></li><li><a href="#20261011--v111">2026/10/11 — v1.1.1</a></li><li><a href="#20261011--v110">2026/10/11 — v1.1.0</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
