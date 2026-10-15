@@ -57,7 +57,11 @@ release notes link to those instructions instead of duplicating them.
 - Desktop/mobile screenshots visually reviewed, including antialiasing,
   remote-session instructions and edition comparisons.
 - Effect comparison captures verified to contain changed rendered pixels.
-- Production publication is verified after pushing the committed site.
+- Published website commit: `3c7ca20`. GitHub Pages reports `built` for that
+  commit. Live Getting Started, Studio, Camera Effects, Remote Collaboration
+  and Licensing pages returned HTTP 200 with the revised content. Five
+  representative screenshot URLs also returned HTTP 200.
+- Site-wide local page and asset references: 5,067 checked, none missing.
 
 Primary third-party references checked on 2026-10-15:
 
