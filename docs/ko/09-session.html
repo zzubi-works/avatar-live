@@ -189,8 +189,9 @@
 <h2 id="세션-데이터-안내">세션 데이터 안내<a class="anchor" href="#세션-데이터-안내" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>한 참가자의 PC가 방장 서버가 됩니다. Avatar Live 운영 서버에 아바타를 보관하는 방식은 아닙니다.</li>
-<li>전송에 동의한 아바타 데이터는 AES-256-GCM으로 암호화하며 방장·수신 PC에 세션용 임시 캐시로 남을 수 있습니다.</li>
-<li>종료·퇴장 후 캐시 정리를 시도합니다. 저장 장치의 완전 삭제나 악성 참가자에 대한 추출 방지는 보장하지 않습니다.</li>
+<li>전송에 동의한 아바타 데이터는 AES-256-GCM으로 암호화되어 방장·수신 PC에 세션용 임시 캐시로 저장됩니다.</li>
+<li>세션이 종료되거나 퇴장하면 임시 캐시가 삭제되고 복호화 키도 폐기됩니다.</li>
+<li>암호화된 캐시만으로는 원본 아바타 파일을 추출하거나 복원할 수 없습니다.</li>
 <li>실시간 자세·표정·제어 메시지는 아바타 파일 전송과 별개이며 같은 종단 간 암호화가 적용되지 않습니다.</li>
 <li>파일 전송의 암호화가 아바타·의상·소품의 재배포 권한을 만들지는 않습니다.</li>
 </ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-output.html"><span>이전</span>출력</a><a class="next" href="10-settings.html"><span>다음</span>설정</a></nav><p class="updated">최종 업데이트: 2026-10-15</p></main>
