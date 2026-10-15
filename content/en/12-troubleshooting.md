@@ -1,120 +1,82 @@
-# 12. Troubleshooting
+# Troubleshooting
 
-## diagnosis by symptom
+Check the items that match your symptoms first. If it's hard to find a setting, you can search by name using the magnifying glass at the top.
 
-![Settings / diagnostics](img/v45-settings.png)
+## Startup and Avatar
 
-| Symptom | Steps to check |
+| Symptom | First Things to Try |
 |---|---|
-| OBS has no Spout2 Capture | Close OBS, install the [official OBS Spout2 plugin](https://github.com/Off-World-Live/obs-spout2-plugin/releases), restart OBS, then add Spout2 Capture. Re-select a sender if its name changed. |
-| OBS has no NDI Source | Install [DistroAV](https://github.com/DistroAV/DistroAV/releases) and the required NDI Runtime; restart OBS and remove conflicts with older OBS-NDI. NDI is available in Basic. |
-| NDI feed is missing or black | Check Avatar Live NDI on → connection between PCs → firewall → NDI Tools Studio Monitor → source name and alpha handling. Guest Wi-Fi client isolation can block discovery. |
-| Black backdrop in Spout2 | Use Transparent studio background and enable alpha output/compositing (Composite with alpha) in OBS's receiver plugin. Ordinary window capture is different. |
-| Virtual camera Install does nothing | Registration may need Windows admin rights. Restart the app, inspect VirtualCamera/Install.bat, then restart Discord/Zoom and select Avatar Live Camera. |
-| Remote session only works on local network | Verify server on, compatibility, default 47700, router forwarding for both TCP and UDP, Windows firewall, actual public WAN IP rather than CGNAT, and test from another network. |
-| Friend appears as a stand-in avatar | Verify Send my avatar data consent and the asset's permission for temporary transfer, or install an owned legal VRM in the local Vrm folder and use Find again. Do not extract another person's files. |
-| Studio camera orbits unexpectedly | See [target rotation vs aim](08-scene.md). Position binding Lock to target does not aim the lens at the face. Combine with Straight at target or Framed on screen. |
-| iPhone connected but face frozen | Wait about 3 seconds after first valid face detection for calibration, check fresh tracking values, AFK settings and source reconnection. A connection alone is not fresh motion. |
-| Webcam arms twist | Compare Legacy versus Dynamic arm mode, turn off experimental hand-depth estimation, and review excess smoothing. |
-| SteamVR tracking is displaced | Verify tracking and calibration within SteamVR first; then reassign Avatar Live's trackers/body parts and calibrate again. |
-| Recording/multiview is slow | Reduce independent Spout2 senders, multiview grid/update cost, volumetric/HBAO, output resolution and FPS one by one while watching OBS. |
+| Startup does not work well | Hold Shift while running to use Safe Start without webcam or microphone. |
+| It says the file has changed | Extract the original ZIP received from the seller into a new folder and run it. |
+| Avatar is not visible | Re-adjust for face, upper body, or full body layout. |
+| Some parts are pink | Check the materials and shaders in the original Unity project, then re-export. |
+| Hair is tangled | Click the top Reset button. |
 
-If unresolved, send a report from Settings → Diagnostics → Send error report, including exact reproduction steps, tracking devices, avatar type, version (/) and the last setting changed. Sending is user initiated, not automatic. See the [Output and remote session guide](09-output.md).
+## Face and Hands
 
-> 💡 For bugs or problems that aren't solved, please let us know with Settings › Diagnostics › Send an error report, and for features or improvements you need, with Settings › About › Send a suggestion.
-
-## Start-up · Installation
-
-| Symptom | Solution |
+| Symptom | First Things to Try |
 |---|---|
-| "Windows protected your PC" window | More info → Run anyway |
-| "Avatar Live's files have been changed" | Please reinstall from the original you downloaded from BOOTH. Your avatars and settings are kept. |
-| It doesn't start smoothly | Launch while holding Shift for a safe start |
+| Webcam does not turn on | Check if another app is using the camera. |
+| Avatar does not move | In Device → Tracking Source, check whether each part is using the device you actually connected. |
+| Face direction is off | Look straight ahead and click Front Calibration. |
+| Wink does not work | Change the blinking method separately. |
+| Expression is too big or too small | Use Auto Face Setting or adjust the sensitivity in Face Adjustment. |
+| Fingers are shaking | Increase Hand Shake Correction slightly. |
+| If you reach out, your arm twists | Turn off experimental hand depth estimation and compare with the previous arm method. |
+| Does not switch to idle pose | Specify the idle pose and check the waiting time for default/AFK pose in the menu. |
+| No response after connecting iPhone | Make sure the phone app is sending to the PC address and wait for front-facing calibration to start. |
+| VMC pose is misaligned | Check input status and adjust to T-pose/alignment. |
 
-## Avatar
+## OBS and Video Output
 
-| Symptom | Solution |
+| Symptom | What to try first |
 |---|---|
-| Some parts look pink | Check that the avatar uploads to VRChat normally, then export it again |
-| The avatar isn't visible | Double-click an empty spot in the view |
-| The pose is stuck or the hair is tangled | ⟲ at the top |
-| Avatar sound effects aren't heard | Avatar sound effects are not played. |
+| Spout2 Capture is missing | Install the Spout2 plugin for OBS and then restart OBS. |
+| NDI Source is missing | Install DistroAV and the NDI Runtime required for that version. |
+| Background appears black | Set Avatar Live background to transparent and adjust OBS source for alpha compositing. |
+| Does not appear after changing transmission name | Re-select the new name in OBS source. |
+| Virtual camera does not appear in the list | Register the device and completely restart the receiving app. |
+| My screen and broadcast composition are different | Check whether the streaming target is the scene view or the studio camera. |
 
-## Webcam · Face
+For detailed installation steps, see [Output](09-output.md).
 
-| Symptom | Solution |
-|---|---|
-| The camera doesn't turn on | Check whether another app is using the camera |
-| Expressions come out too small or too large | Run Automatic face setup again, or use Face adjustment |
-| The avatar looks to the side | Recenter |
-| Winks don't work | Set the blink mode to Independent |
-| The PC feels slow | Set the tracking quality to Balanced or Eco |
-| Hands · fingers jitter | Raise Devices › Tracking sources › Hand steadiness |
-| The avatar doesn't move | In Devices › Tracking sources, check that no part's source is set to a device you aren't using (such as VMC) |
-| The pose received over VMC is off | T-pose or Align in VMC settings |
+## Screen Sharing
 
-## Microphone
+- Not in Discord list: Turn on screen sharing and look for Avatar Live Share Output in the application tab.
+- The game screen is black: Try changing the game to borderless window mode.
+- No sound is shared: Check the audio target and app volume. If there is guidance on virtual audio devices, see [VB-CABLE guide](13-license.md#vb-cable).
+- Call sound heard again: Check if Discord is included in the app you want to share.
 
-| Symptom | Solution |
-|---|---|
-| "No signal" | Allow desktop apps in Windows Settings › Privacy › Microphone |
-| Noise moves the mouth | Detect background noise |
-| The mouth moves too little | Voice calibration |
+## Remote Collaboration
 
-## Output · Screen share
+First, check whether the host has started the server and whether the participant address, port, and password are correct. If an external friend cannot connect, open the port forwarding and firewall guide in [When connection does not work](09-session.md#troubleshooting-connections).
 
-| Symptom | Solution |
-|---|---|
-| No Spout2 source in OBS | Install the Spout2 plugin in OBS |
-| The background looks black in OBS | Set the background to Transparent and choose Composite with alpha in OBS |
-| Not in the Discord list | Turn on Screen share, then check the Applications tab |
-| The game shows up black | Switch the game to windowed mode |
-| "Avatar Live Basic" text | This is the Basic watermark. It isn't shown in Pro. |
+If the other party appears as a substitute avatar, check the avatar view and data transfer consent. Use a substitute avatar for models that do not allow transfer.
 
-## Common issues after 1.1.5
+## When the screen is slow or blurry
 
-| Symptom | Fix |
-|---|---|
-| Tracking loss never activates the AFK pose | Check the wait/transition values in Motion › Body and whether an [idle pose](11-pro-features.md) is assigned |
-| Winks are mirrored incorrectly on iPhone | Update to at least 1.1.4 and check Mirror |
-| Arms do not fall back to the desk with iPhone only | Check Motion › Hands · Desk and arm tracking sources; full-body input requires webcam or VMC |
-| Arms jitter when reaching forward | Turn OFF experimental hand-depth estimation and check webcam calibration |
-| A setting is hard to find | Search AFK, Mirror, Spout2 or Language using the upper-right magnifying glass |
-| A bug is difficult to explain | Use Settings › Diagnostics › Send error report with reproduction steps and logs |
+1. Try lowering the output resolution and FPS.
+2. Reduce the refresh rate and the number of grids in the multi-view.
+3. Turn off the Spout2 output for cameras that are not in use.
+4. Try turning off effects one by one, such as environmental light occlusion, depth of field, and volumetric lighting.
+5. If the whole image is hazy, check the bloom intensity, threshold, and blur.
 
-## Supported features
+## If not resolved
 
-| | Details |
-|---|---|
-| ✅ VRChat avatars | Expressions menu, animators, PhysBones, Contacts, Constraints, Eye Look, LipSync |
-| ✅ Creation tools | Avatars that use NDMF · Modular Avatar · VRCFury |
-| ✅ Shaders | Poiyomi, lilToon and others |
-| ✅ Face | Follows the avatar's setup: VRCFaceTracking, 52 ARKit shape keys (Perfect Sync), MMD eye morphs |
-| ✅ Tracking | Webcam (face · arms · hands · fingers), iPhone (iFacialMocap · FaceMotion3D), VMC (per part: arms · hands · fingers · body · head · eyes) |
-| 🧪 Experimental features | Ultraleap, OSC, VMC output, camera detection of the tongue and cheeks |
-| ⚠️ Not supported | Avatar sound effects, AudioLink, mirror detection, VRM files, Live2D, macOS · Linux |
+In Settings → Diagnostics → Send Error Report, write down the following:
 
-We've confirmed webcam (including full body and finger joints), iPhone and VMC input with real equipment. We expect the experimental features to work properly, but we haven't yet been able to test them with every device and app in the developer's environment, so they're marked experimental in the app. If you try them and something goes wrong, please let us know with Send an error report.
+- Which button you pressed or settings you changed
+- What looked strange
+- The device and type of avatar you are using
+- The sequence of steps that reproduce the same problem
 
-## Planned support
+The actual transmission is performed when the user chooses to send it.
 
-- Loading VRM models (.vrm, VRM 0.x / 1.0) and playing .vrma animations
-- Stronger Perfect Sync: mapping that links shape keys directly, face calibration for each webcam · iPhone, and a tool to check the 52 expressions one by one
-- More phone face apps: VTube Studio (iPhone), MeowFace (Android)
-- Conveniences: automatic refresh when you export the avatar again, lower FPS when there's nothing to do
+## Supported Scope
 
-※ Planned features and their timing may change.
+- `.vavatar` and VRM 0.x·1.0 avatars
+- Supported features such as the avatar's expression menu, animator, PhysBone, etc.
+- Facial tracking settings and expressions included in the avatar
+- Webcam, microphone, iPhone, VMC inputs
 
-## Frequently asked questions
-
-Do I need a VRChat account?
-No, you don't. Avatar Live does not communicate with VRChat.
-
-Can I use it for streaming?
-For streaming, publishing videos and commercial use, please use Pro. Private Discord sharing with friends is fine with Basic, too.
-
-Is my keyboard input recorded?
-No, it isn't. Desk hand motion does not save or send the characters you type.
-
-Can I give my avatar file to other people?
-Please follow the terms of use of the avatar and outfit creators.
+Some special shaders in VRM 0.x may not be supported. Features shown experimentally in the app may produce different results depending on the device and environment.

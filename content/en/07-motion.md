@@ -1,145 +1,109 @@
-# 7. Motion
+# Action
 
-## fine-tuning motion and understanding the sliders
+It determines how much and how smoothly my facial expressions and movements are reflected in the avatar. The settings are saved for each avatar.
 
-![Motion page](img/v45-motion.png)
+## Face
 
-| Control | Lower / Off | Higher / On |
-|---|---|---|
-| Face sensitivity | Subtle expressions may barely show; noise is reduced | Small changes become obvious but can be over-exaggerated |
-| Expression smoothing | Eyes/mouth respond rapidly, sometimes jittery | Motion blends gently, but quick blinks and syllables may lag |
-| Lip-sync strength | Smaller mouth opening | Larger mouth movement, possibly unnatural on some models |
-| Blink sensitivity / automatic blinking | Reliance on captured eye input | More response to small closures or idle blinks |
-| Webcam arms Dynamic / Legacy | Legacy preserves behavior closer to 1.1.6 | Dynamic adds newer arm/hand distance estimation, with results depending on camera setup |
-| Arm/hand smoothing | Immediate gestures but more tracking noise | Less shake, more delay after rapid gestures |
-| Hand depth estimation (experimental) | More stable flat/webcam motion | Tries to follow a hand reaching toward the camera but can distort the arm or wrist |
-| AFK entry wait | Short loss quickly activates the waiting pose | Ignores brief interruptions and waits longer before entering AFK |
-| AFK transition / return duration | Snaps to/from waiting expression and pose | Smooth transitions, but normal tracking takes longer to reappear |
-| Idle breathing/blink | Character rests still while idle | Adds small movements without tracking input |
+![Face Tracking and Expression Control](img/guide-motion-face.png)
 
-![Motion controls](img/v45-motion-expanded.png)
-
-A connected iPhone does not automatically mean every frame contains fresh face tracking. If the face freezes, inspect actual source tracking, stale/repeated values, AFK timing and front calibration. Pose-specific Face, Head, Arms, Fingers and Torso switches are independent: Head Off + Face On keeps the head pose but allows facial expressions to animate.
-
-Gaze target (Camera/Person/None) controls whom the avatar watches. Raising look strength makes eyes/head pursue the target more strongly, while lowering it lets incoming tracking dominate. Experimental Look At IK may be disabled by default; turn it off if the head turns too far. Saved manual poses may take precedence over automatically selected AFK poses.
-
-Set how the face, body and hands move. Settings are saved separately for each avatar.
-
-## Face tracking
-
-<div class="shot" markdown="1">
-
-![Motion page](img/motion-face.png)
-
-- Mirror — Moves to the same side as you, like a mirror.
-- Arms · Hands · Fingers — Moves each part with the webcam.
-- Gestures → expressions — The avatar's expression changes to match your hand shape.
-- Face tracking — Turns facial expression tracking on and off.
-
-</div>
-
-## How expressions move
-
-Facial expressions follow the setup already in your avatar. Avatar Live does not create or convert the avatar's expressions.
-
-| Avatar setup | How it moves |
+| Item | If adjusted |
 |---|---|
-| Has VRCFaceTracking (VRCFT) parameters | Moves through the avatar's VRCFT setup. |
-| Has the 52 ARKit shape keys (Perfect Sync) | Drives those shape keys directly. |
-| Neither | Mostly the avatar's basic expressions such as blinking and lip sync; finer expressions may not show. |
+| Face Tracking | When turned on, it reflects my facial expressions. When turned off, facial input is not used. |
+| Mirror | Reflects left and right movement like a mirror. |
+| Gesture → Facial Expression | Uses avatar expressions linked to hand shapes. |
+| Expression Sensitivity | Increasing it makes even small expressions look bigger, lowering it makes them look calmer. |
+| Softness | Increasing it reduces vibration, and lowering it makes it respond faster. |
 
-- Even though the webcam or iPhone reads expressions as 52 values, an expression shows only when the avatar has the matching parameter or shape key.
-- If the avatar has only some of the shape keys, only those move.
+### Automatic Face Settings
 
-> 💡 We plan to improve this so that all 52 expressions are recognised and connected to your avatar, and so that avatars without these setups can be bound to the face directly. Timing may change.
+![Automatic Face Setup Guide](img/guide-face-calibration.png)
 
-## Automatic face setup
+1. Press Automatic Face Setup.
+2. Follow the instructions to look straight ahead or make a facial expression.
+3. Press Measure and proceed to the next step.
+4. Finally, press Apply.
 
-![Automatic face setup](img/facecal.png)
+### Face Adjustment
 
-Click the Automatic face setup button to start calibration. Make each expression as the on-screen guide shows, then click Capture. At the end, click Apply, and the expressions are adjusted to fit your face.
+![Adjusting the face by separately matching the eyes, eyebrows, and mouth](img/guide-face-adjust.png)
 
-> 💡 Where you look during the first step becomes the avatar's straight-ahead gaze. Please look at the screen the way you do while streaming.
+- Eyes, eyebrows, mouth, cheeks: Adjust the movement size of each expression separately.
+- Edit left and right together: If turned on, it changes both sides to the same value.
+- Smoothing: Reduces small facial tremors. If set too high, the response is slow.
 
-## Face adjustment
+## Eyes and Gaze
 
-<div class="shot" markdown="1">
+![Blinking and Gaze Settings](img/guide-motion-eyes.png)
 
-![Face adjustment](img/face-adjust.png)
+| Item | Result |
+|---|---|
+| Separate Blinking | Closes the left and right eyes separately. Used for winking. |
+| Blink Synchronization | Close both eyes together. |
+| Automatic Blinking | Blinks at a regular interval even without input. |
+| Eye Gaze Tracking | Reflects the direction of my eyeballs. |
+| Camera view | Make the avatar's pupils face the camera. |
+| Gaze Target | Choose the object to look at, such as a camera or a specific avatar. |
 
-- Adjust, one by one, how strongly the eye, brow, mouth and cheek expressions show.
-- Drag a slider to the right, and that expression shows more strongly.
-- Turn on Edit left and right together to change both sides at once.
-- Turn on Smoothing to reduce jitter in the expressions.
+Head tracking and facial tracking, as well as camera view, are set separately. Even in a fixed head pose, you can make only the eyes look at the camera.
 
-</div>
+## Mouth and Lip Sync
 
-## Blink · Mouth
+![Mic Lip Sync and Mouth Settings](img/guide-motion-mouth.png)
 
-<div class="shot" markdown="1">
-
-![Blink and mouth](img/motion-mouth.png)
-
-- Blink › Mode — Independent works well for winks, and with Synchronized both eyes close together.
-- Eye gaze tracking — The avatar's eyes follow your gaze.
-- Auto level — Automatically matches how wide the mouth opens to how loud your voice is.
-- Voice calibration — Click a vowel button and say the vowel, and it adapts to your voice.
-- Tongue · cheek puff — Stick out the tongue or puff the cheeks with a button or a hotkey.
-
-</div>
-
-## Eye gaze and Eyes on the camera
-
-![Eye gaze controls](img/motion-gaze.png)
-
-Adjust gaze tracking under Motion › Face. Enable Eyes on the camera to have the avatar look toward the camera. This works independently even when facial tracking is OFF for a pose. Head tracking also has its own switch; camera gaze does not restore unrelated facial expressions.
+- Lip-sync intensity: Increasing it opens the mouth wider.
+- Auto Level: Adjusts mouth movements to match the volume of the voice.
+- Voice correction: Pronounce the guided vowels to match your voice.
+- Tongue and cheek puffing: Apply the expression using a button or shortcut key. It will be visible only if the model has the required expression.
 
 ## Body
 
-<div class="shot" markdown="1">
+![Head and Body Movement Settings](img/guide-motion-body.png)
 
-![Body motion](img/motion-body.png)
+| Item | If adjusted |
+|---|---|
+| Head Movement | Choose the size of movement: small, natural, or large. |
+| Follow Body | The body turns along when the head turns. |
+| Natural Movement | Even when still, small idle movements are added. |
+| Breathing | Small body movements as if breathing are added. |
+| Upper Body/Full Body | Reflects the body movements received from the device. |
 
-- Head motion — Choose from Subtle · Natural · Expressive.
-- Body follow — When you turn your head, the body follows naturally.
-- Natural body motion · Breathing — The avatar moves as if it were alive, even while you keep still.
-- Upper body — With webcam full body on, your shoulder movement tilts and turns the upper body. This works even at a desk where your legs can't be seen.
-- Full body — Follows the torso, legs, sitting and standing with the webcam or VMC. Please see [Devices › Full body · Finger joints](06-devices.md#full-body--finger-joints-webcam).
+## When Tracking is Lost
 
-</div>
+![Tracking Loss and AFK Transition Time](img/guide-motion-afk.png)
 
-## AFK timing and tracking loss
+AFK is the idle state used when both face and body tracking are lost. The time is set in Menu → Default·AFK Pose.
 
-![AFK transition timing under Motion](img/motion-afk.png)
+| Time | Effect of Longer Setting |
+|---|---|
+| Waiting Time | Maintains the pose even if input briefly stops and waits longer. |
+| Transition Time | Slowly transitions to the idle pose. |
+| Return Time | Slowly returns to normal operation after input resumes. |
 
-AFK timing has moved out of Settings to Motion › Body. Adjust these three values for each avatar with sliders or direct numeric entry:
+The pose and expression to use while idle are selected in [Default Pose and Idle Pose](11-pro-features.md#basic-stance-and-ready-position).
 
-- Tracking-loss wait: how long tracking must be lost before entering AFK.
-- Transition into AFK: how long the pose blends toward the idle pose.
-- Return after tracking resumes: how long it takes to return to normal motion.
+## Arms and Hands
 
-Existing per-avatar values are preserved. The default pose, tracking-loss idle pose and idle expression are configured separately; see [Posing](11-pro-features.md).
+![Arm/Hand Tracking and Desk Movements](img/guide-motion-hands.png)
 
-## Webcam hand-depth estimation (experimental)
+| Item | Effect When Adjusted |
+|---|---|
+| Arm/Hand Smoothness | Increasing it reduces shaking, and fast hand gestures follow more slowly. |
+| Dynamic Method | Uses an arm method that reflects changes in reaching distance. |
+| Previous Method | Can be compared with the existing arm movement method. |
+| Hand Depth Estimation | Estimates forward and backward distance with a webcam. Experimental, turn off if the arm twists. |
+| Hand Release Return | Changes the speed at which the hands return to the default pose when not visible. |
 
-![Experimental webcam hand-reach controls](img/motion-hand-depth.png)
+### Desk Movements
 
-This estimates how far a hand reaches toward the webcam. Depending on the camera, it may cause the arms or wrists to twist or jitter. Keep it OFF for ordinary use, and review hand jitter reduction if tracking becomes unstable.
+When the hands are not visible to the camera, the avatar hands move according to keyboard and mouse use.
 
-## Hands · Desk
+- Default Hand Pose: Adjust the desk height, hand spacing, and wrist angle.
+- Keyboard Response: The movement size of fingers and hands when typing.
+- Mouse Response: The size of hand movement following the mouse.
+- When the hands are back in view of the camera, it returns to tracking.
 
-<div class="shot" markdown="1">
+Keyboard input is only used to create hand movements; typed characters are not saved or transmitted.
 
-![Hands and desk](img/motion-desk.png)
+## When Expressions Don't Appear
 
-- Desk Interaction — When your hands aren't visible to the camera, the avatar's hands move along with your keyboard and mouse.
-- Hand default pose — Adjust the desk height, hand spacing and wrist angle.
-- Keyboard · Mouse input reaction — Set how large the typing and mouse movements are.
-- Lower your hands, and the arms go straight to the desk pose. Raise them again, and they return smoothly to tracking. The elbows follow naturally even when your body sways a lot or you're sitting.
-- You can set an arm · hand pose made in Posing with Use as the desk pose (arms and hands) (Pro).
-
-</div>
-
-> 🔒 Keyboard input is used only to move the avatar's hands. The characters you type are not saved or sent.
-
-> 💡 Camera detection of the tongue and cheek puff is an experimental feature.
+You can only move the expressions that exist on the avatar. If there is a VRCFaceTracking setting, that setting will be used, and if there are ARKit shape keys, those facial shapes will be used. Expressions that do not exist will not be created even if sensitivity is increased.

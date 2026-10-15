@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>出力 — AVATAR LIVE</title>
-<meta name="description" content="スタジオカメラが送出中でも Avatar Live のウィンドウは編集用シーンビューのままです。OBS に送られるのは選んだ配信用カメラの映像で、アプリの設定パネルではありません。透明背景の配信にはウィンドウキャプチャより Spout2 または NDIを推奨します。">
+<meta name="description" content="完成したアバター画面をOBS・Discord・Zoomに送るか、写真・動画として保存します。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ja/09-output.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/09-output.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/09-output.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/09-output.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/09-output.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="出力 — AVATAR LIVE">
-<meta property="og:description" content="スタジオカメラが送出中でも Avatar Live のウィンドウは編集用シーンビューのままです。OBS に送られるのは選んだ配信用カメラの映像で、アプリの設定パネルではありません。透明背景の配信にはウィンドウキャプチャより Spout2 または NDIを推奨します。">
+<meta property="og:description" content="完成したアバター画面をOBS・Discord・Zoomに送るか、写真・動画として保存します。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ja/09-output.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ja.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,166 +42,190 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">スタジオ</a></li><li><a href="09-output.html" aria-current="page">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターをエクスポート</a></li><li><a href="03-launcher-and-library.html">アバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動作</a></li><li><a href="08-scene.html">スタジオ</a></li><li><a href="08-camera-effects.html">カメラエフェクト</a></li><li><a href="09-output.html" aria-current="page">出力</a></li><li><a href="09-session.html">リモートコラボ配信</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージングと表情</a></li><li><a href="12-troubleshooting.html">問題解決</a></li><li><a href="13-license.html">エディションとライセンス</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="出力">出力<a class="anchor" href="#出力" aria-hidden="true" tabindex="-1">#</a></h1>
-<p>スタジオカメラが送出中でも Avatar Live のウィンドウは編集用シーンビューのままです。OBS に送られるのは選んだ配信用カメラの映像で、アプリの設定パネルではありません。透明背景の配信にはウィンドウキャプチャより Spout2 または NDIを推奨します。</p>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-output.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-output.webp" srcset="../assets/shots/ja/v45-output-960.webp 960w, ../assets/shots/ja/v45-output.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="出力画面" loading="lazy" decoding="async"></a><figcaption>出力画面</figcaption></figure>
-<div class="table-wrap edition-table" tabindex="0"><table>
+<p>完成したアバター画面をOBS・Discord・Zoomに送るか、写真・動画として保存します。</p>
+<h2 id="どの方法を使えばいいですか">どの方法を使えばいいですか？<a class="anchor" href="#どの方法を使えばいいですか" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
-<th>目的</th>
-<th>方法</th>
-<th>エディション</th>
+<th>欲しいもの</th>
+<th>使用する機能</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>同じ Windows PC の OBS へ透明アバターを送る</td>
+<td>このPCのOBSに透明アバターを入れる</td>
 <td>Spout2</td>
-<td>Basic / Pro</td>
 </tr>
 <tr>
-<td>ネットワーク上の別 PC へ送る</td>
+<td>他のPCに映像を送る</td>
 <td>NDI®</td>
-<td>Basic / Pro</td>
 </tr>
 <tr>
-<td>Discord・Zoom のカメラ一覧に出す</td>
+<td>ビデオ通話のカメラで表示</td>
 <td>仮想カメラ</td>
-<td>Basic / Pro</td>
 </tr>
 <tr>
-<td>ゲームとアバターを重ねて Discord で共有</td>
+<td>ゲームとアバターを一緒に共有する</td>
 <td>画面共有</td>
-<td>Basic、一部の追加ソースは Pro</td>
 </tr>
 <tr>
-<td>複数のカメラを独立した OBS ソースとして送る</td>
-<td>カメラ別 Spout2</td>
-<td>Pro、独立送信は最大 3 台</td>
+<td>友達のアバターと一緒に配信する</td>
+<td><a href="09-session.html">リモート合流</a></td>
 </tr>
 <tr>
-<td>別 PC の参加者とアバター・動作を同期</td>
-<td>リモートセッション</td>
-<td>Pro</td>
-</tr>
-<tr>
-<td>配信映像を MP4 で保存</td>
-<td>録画</td>
-<td>Pro</td>
+<td>写真・動画ファイル作成</td>
+<td>写真・録画</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="出力画質解像度fps">出力画質・解像度・FPS<a class="anchor" href="#出力画質解像度fps" aria-hidden="true" tabindex="-1">#</a></h2>
-<ul>
-<li>解像度は OBS・NDI・Spout2 が受ける画面の画素数です。720p は軽量ですが輪郭が荒く、1080p は一般的な配信に適し、1440p/4K は細部が鮮明になる代わりに GPU・ネットワーク負荷が上がります。Basic は最大 1920×1080、Pro は最大 3840×2160。</li>
-<li>フレームレート（FPS）は１秒間に送る映像の枚数です。30 は負荷が軽く、60 は指・表情・カメラ移動が滑らかです。上限 60fps で、実際のアプリ FPS が足りなければ配信も遅くなります。</li>
-<li>送出対象をシーンビューにすると自分がマウスで動かす視点も配信に反映されます。スタジオカメラ (Pro)を送出すれば編集中の視点とは独立して構図を維持できます。</li>
-<li>透過背景を使う場合はスタジオの背景を透明にし、受信側のアルファ合成を有効にします。仮想カメラや普通のウィンドウキャプチャは同じ方法でアルファを送信しません。</li>
-</ul>
-<h2 id="spout2--同じ-pc-の-obs">Spout2 → 同じ PC の OBS<a class="anchor" href="#spout2--同じ-pc-の-obs" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-broadcast-output.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-broadcast-output.webp" srcset="../assets/shots/ja/v45-broadcast-output-960.webp 960w, ../assets/shots/ja/v45-broadcast-output.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" style="--image-width:1200px" alt="Spout2 設定" loading="lazy" decoding="async"></a><figcaption>Spout2 設定</figcaption></figure>
-<p>Avatar Live は Spout2 を送信しますが、OBS 側には別途 Spout2 受信プラグインが必要です。</p>
+<p>NDI®はVizrt NDI ABの登録商標です。 <a href="https://ndi.video/">NDI公式案内</a></p>
+<h2 id="出力画像">出力画像<a class="anchor" href="#出力画像" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-output-image.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-output-image.webp" width="550" height="450" style="--image-width:550px" alt="出力サイズとフレーム設定" loading="lazy" decoding="async"></a><figcaption>出力サイズとフレーム設定</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>変えると</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>解像度</td>
+<td>上げるとより鮮明になりますが、PCへの負担が大きくなります。</td>
+</tr>
+<tr>
+<td>FPS</td>
+<td>上げると動きがより滑らかになり、PCやネットワークの負担が大きくなります。</td>
+</tr>
+<tr>
+<td>画面比率</td>
+<td>横・縦など送出画面の形を変えます。</td>
+</tr>
+<tr>
+<td>配信対象</td>
+<td>作業用シーンビューまたは選択したスタジオカメラの映像を送信します。</td>
+</tr>
+</tbody>
+</table></div>
+<p>Basicは最大1080pとウォーターマーク、Proは最大4Kでウォーターマークなしの出力をサポートします。</p>
+<h2 id="spout2">Spout2<a class="anchor" href="#spout2" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>同じWindows PCでAvatar Liveの映像をOBSに送ります。</p>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-spout.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-spout.webp" width="550" height="270" style="--image-width:550px" alt="Spout2 配信設定" loading="lazy" decoding="async"></a><figcaption>Spout2 配信設定</figcaption></figure>
 <ol>
-<li>OBS を終了し、<a href="https://github.com/Off-World-Live/obs-spout2-plugin/releases">Off World Live 公式 Spout2 プラグインのリリース</a>から Windows インストーラーをダウンロードします。<a href="https://github.com/Off-World-Live/obs-spout2-plugin#installation">プロジェクトのインストール手順</a>に従い、対象 OBS の場所を確認します。</li>
-<li>OBS を起動し、ソース → + → Spout2 Captureが表示されるか確かめます。見つからない場合は OBS バージョン・インストール先を確認して OBS を再起動します。</li>
-<li>Avatar Live の出力 → 送出 → Spout2をオンにします。送信名の初期値は Avatar Live。変更したら適用します。</li>
-<li>OBS の Spout2 Capture で送信元 Avatar Live（または変更後の名前）を選び、OBS のシーン内で位置・大きさを調整します。</li>
-<li>背景を透明にするには Avatar Live のスタジオ → 背景 → 透明と OBS 側の Composite with alpha などアルファ合成設定を確認します。編集画面が黒いだけであれば OBS で透明に表示されるか確かめてください。</li>
+<li>OBSを終了して、<a href="https://github.com/Off-World-Live/obs-spout2-plugin/releases">OBS Spout2プラグイン</a>をインストールします。</li>
+<li>OBSを再実行します。</li>
+<li>Avatar Liveの出力 → 配信 → Spout2をオンにします。</li>
+<li>OBSのソース → + → Spout2 CaptureでAvatar Liveを選択します。</li>
+<li>透明な背景を使うには、スタジオ → 背景 → 透明を選び、OBSでComposite with alphaをオンにします。</li>
 </ol>
-<p>送信名を変更した後は OBS 側でも新しい名前を選び直します。アルファ送信はアバターのみを重ねたい場合オンにしてください。Spout2 は基本的に同じ PC 内の送信方式です。別 PC の OBS で使う場合は下記 NDI を選びます。映像が重ければ FPS と解像度、不要な独立カメラを減らします。</p>
-<p>カメラ別 Spout2 (Pro)はメイン配信とは別に最大 3 系統の独立映像を送ります。配信していないカメラの画面も OBS に追加できますが、映像ごとに描画コストが増えます。</p>
-<p>第三者ソフトウェアのお知らせ： OBS Spout2 プラグインは Off World Live が配布する独立したソフトウェアで、Avatar Live には同梱されません。<a href="https://github.com/Off-World-Live/obs-spout2-plugin">GPL v2 等の配布条件</a>は提供元のものが適用されます。</p>
-<h2 id="ndi--obs別-pcbasic-対応">NDI® → OBS・別 PC（Basic 対応）<a class="anchor" href="#ndi--obs別-pcbasic-対応" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-stream-bottom.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-stream-bottom.webp" srcset="../assets/shots/ja/v45-stream-bottom-960.webp 960w, ../assets/shots/ja/v45-stream-bottom.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" style="--image-width:1200px" alt="NDI 出力画面" loading="lazy" decoding="async"></a><figcaption>NDI 出力画面</figcaption></figure>
-<p>NDI® 出力は Basic と Pro の両方で利用できます。 ネットワーク上の別 PC へ映像を送れるので、同じ PC 内で使う Spout2 と用途が異なります。ゲスト Wi-Fi の端末分離などがあると送信元を発見できないことがあります。</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>すること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spout2 スイッチ</td>
+<td>映像を送信したり停止したりします。</td>
+</tr>
+<tr>
+<td>送信名</td>
+<td>OBSソースリストに表示される名前です。</td>
+</tr>
+<tr>
+<td>適用</td>
+<td>変更した送信名を確定します。OBSでも新しい名前を再度選択してください。</td>
+</tr>
+<tr>
+<td>アルファ送信</td>
+<td>背景の透明度も一緒に送信します。</td>
+</tr>
+</tbody>
+</table></div>
+<p>Spout2とOBS受信プラグインの利用条件は<a href="13-license.html#spout2">Spout2告知</a>に従います。</p>
+<h2 id="ndi">NDI<a class="anchor" href="#ndi" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>ネットワークで他のPCのOBSなどに映像を送ります。BasicとProの両方をサポートします。</p>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-ndi.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-ndi.webp" width="550" height="295" style="--image-width:550px" alt="NDI 送信設定" loading="lazy" decoding="async"></a><figcaption>NDI 送信設定</figcaption></figure>
 <ol>
-<li>Avatar Live で 出力 → 送出 → NDI®をオンにします。送信名は Avatar Liveで、映像のサイズと FPS は出力画像の設定を使います。</li>
-<li>OBS を終了し、<a href="https://github.com/DistroAV/DistroAV/releases">DistroAV（旧 OBS-NDI）公式リリース</a>から OBS 用プラグインを入れます。指示がある場合は別途 NDI Runtime もインストールします。旧 OBS-NDI が残って競合する場合は案内に従って整理してください。</li>
-<li>OBS でソース → + → NDI Sourceを選び、送信元 Avatar Liveを選択します。プラグインのバージョンにより表示名が異なる場合があります。</li>
-<li>送信元が出なければ両 PC のネットワーク接続、Windows ファイアウォール、NDI スイッチ、OBS プラグイン・Runtime を確認します。透過映像を使うには受信側のアルファ対応も必要です。</li>
-<li>OBS 以外で確認するには <a href="https://ndi.video/tools/">NDI Tools 公式サイト</a>から Studio Monitor 等を自分でインストールします。NDI Tools は Avatar Live に同梱されません。</li>
+<li>受信PCのOBSを終了します。</li>
+<li><a href="https://github.com/DistroAV/DistroAV/releases">DistroAV</a>と、そのバージョンで必要なNDIランタイムをインストールします。</li>
+<li>Avatar Liveで出力 → 配信 → NDIをオンにします。</li>
+<li>受信側のOBSのソース → + → NDI SourceでAvatar Liveを選択します。</li>
 </ol>
-<h3 id="ndi-のライセンス商標再配布に関する表示">NDI のライセンス・商標・再配布に関する表示<a class="anchor" href="#ndi-のライセンス商標再配布に関する表示" aria-hidden="true" tabindex="-1">#</a></h3>
-<ul>
-<li>NDI® は Vizrt NDI AB の登録商標です。 公式案内は <a href="https://ndi.video/">ndi.video</a> をご確認ください。Avatar Live は NDI の公式製品や保証製品ではありません。</li>
-<li>Avatar Live は NDI SDK 6.3.2 の再配布ランタイムと Processing.NDI.Lib.Licenses.txt をアプリに同梱する設計です。SDK の使用・再配布は <a href="https://docs.ndi.video/all/developing-with-ndi/sdk/licensing">NDI SDK 公式ライセンス</a>およびアプリと共に提供されるライセンス全文に従います。</li>
-<li>NDI SDK・NDI Tools・DistroAV はそれぞれ別の配布物です。SDK のランタイムを同梱できる条件が NDI Tools の再配布を許可することにはなりません。受信アプリはそれぞれの配布元から取得してください。</li>
-<li>NDI の映像送信自体が後述のリモートセッションの暗号化を提供するわけではありません。信頼できるネットワークで使用してください。</li>
-</ul>
-<h2 id="仮想カメラ写真">仮想カメラ・写真<a class="anchor" href="#仮想カメラ写真" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>仮想カメラのインストールで Windows に Avatar Live Camera が登録され、Discord・Zoom・OBS のカメラ選択から選べます。管理者権限が必要になる場合があります。ボタンが動かないときはアプリの再起動や、インストールフォルダーの VirtualCamera/Install.bat を確認してください。登録後は仮想カメラをオンにします。Discord 等が新しいカメラを検出しない場合は完全終了して再起動します。</p>
-<p>仮想カメラは最大 1920×1080／30fpsで、アルファ透過は送れません。写真は PNG で保存され、クロップ・縦横比・解像度の指定が保存範囲と画素数に影響します。透過背景の PNG にはアルファを保存できます。</p>
-<h2 id="discord-画面共有vb-cable">Discord 画面共有・VB-CABLE<a class="anchor" href="#discord-画面共有vb-cable" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-share.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-share.webp" srcset="../assets/shots/ja/v45-share-960.webp 960w, ../assets/shots/ja/v45-share.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="画面共有" loading="lazy" decoding="async"></a><figcaption>画面共有</figcaption></figure>
+<p>OBSなしで確認するには、<a href="https://ndi.video/tools/">NDI ToolsのStudio Monitor</a>を使用できます。送信PCと受信PCは互いに通信できるネットワークである必要があります。</p>
+<p>NDI Runtime・NDI Tools・DistroAVの利用条件は、それぞれ<a href="13-license.html#ndi">NDI通知</a>でご確認ください。</p>
+<h2 id="仮想カメラ">仮想カメラ<a class="anchor" href="#仮想カメラ" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Discord・Zoomなどのカメラ一覧からアバターを選ぶ方式です。</p>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-virtual-camera.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-virtual-camera.webp" width="550" height="365" style="--image-width:550px" alt="バーチャルカメラのインストールと配信設定" loading="lazy" decoding="async"></a><figcaption>バーチャルカメラのインストールと配信設定</figcaption></figure>
 <ol>
-<li>出力 → 画面共有でゲームまたはディスプレイを選びます。ゲームは起動中のウィンドウを選択します。</li>
-<li>アバターの位置と大きさを調整し、共有をオンにします。</li>
-<li>Discord の画面共有 → アプリケーションで Avatar Live Share Output を選びます。必要なら音声共有もオンにします。普通の Avatar Live ウィンドウそのものではありません。</li>
-<li>画面が真っ黒ならゲームをボーダーレスウィンドウにしてください。ゲームのキャプチャが失敗してディスプレイキャプチャへ代替される場合は、そのモニター上の他のウィンドウも映る可能性があります。</li>
+<li>仮想カメラをインストールしてデバイスを登録します。Windowsの管理者の承認が必要です。</li>
+<li>仮想カメラスイッチをオンにします。</li>
+<li>使用するアプリのカメラ一覧から Avatar Live Camera を選びます。</li>
 </ol>
-<p>追加ソース (Pro)は別の窓やモニターを重ねられます。音声はゲーム音声・デスクトップ・指定アプリのみ・なしから選びます。各アプリの音量 0–200%は共有する音声ミックスだけの値です。0 で無音、100% で元のレベル、200% で音割れの可能性があります。Windows の通常音量には影響しません。</p>
-<p>別の仮想オーディオ出力がない場合は、ユーザーの同意と Windows 管理者承認で VB-Audio VB-CABLEをインストールする案内が出ます。製品：<a href="https://vb-audio.com/Cable/">VB-Audio 公式</a>。導入後もヘッドホンが通常の既定再生機器であることを確認してください。</p>
-<p>VB-CABLE ライセンス表示： VB-CABLE は VB-Audio Software の Donationware です。使用が役立つ場合は寄付・条件に応じたライセンス料のお支払いをご検討ください。<a href="https://vb-audio.com/Services/licensing.htm">配布・ライセンス条件</a>は VB-Audio のものが適用されます。Avatar Live が第三者のライセンスを付与するものではありません。</p>
-<h2 id="リモートセッション-pro別の-pc-と一緒に配信">リモートセッション (Pro)：別の PC と一緒に配信<a class="anchor" href="#リモートセッション-pro別の-pc-と一緒に配信" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-session-join-host.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-session-join-host.webp" srcset="../assets/shots/ja/v45-session-join-host-960.webp 960w, ../assets/shots/ja/v45-session-join-host.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" style="--image-width:1200px" alt="セッションの参加・ホスト" loading="lazy" decoding="async"></a><figcaption>セッションの参加・ホスト</figcaption></figure>
-<p>セッションは参加者の一人の PC がアプリ内サーバーを開く方式です。Avatar Live が管理する中央クラウドへデータを永続保存する方式ではありません。画面そのものではなく、姿勢・表情・指・視線・参加者状態と、別途同意したアバターデータを届け、各 PC でモデルを描画します。</p>
-<h3 id="ホストとして部屋を開く">ホストとして部屋を開く<a class="anchor" href="#ホストとして部屋を開く" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>最大1920×1080、30fpsで、透過背景は送信されません。新しいデバイスがリストにない場合は、受信アプリを再起動してください。</p>
+<h2 id="画面共有">画面共有<a class="anchor" href="#画面共有" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>ゲームやプログラムの上にアバターを重ねて、Discordなどに送ります。</p>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-share.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-share.webp" width="550" height="983" style="--image-width:550px" alt="画面共有の対象・オーディオ・アバター配置" loading="lazy" decoding="async"></a><figcaption>画面共有の対象・オーディオ・アバター配置</figcaption></figure>
 <ol>
-<li>ホスト側は 出力 → 送出 → セッション → サーバーを開く を開きます。</li>
-<li>ポートは初期値 47700、最大人数はホストを含め初期値 4 人（2–16 人に設定可能）です。パスワードの設定を推奨します。</li>
-<li>サーバースイッチをオンにするとその PC がサーバーを開き、自分も参加します。アプリに表示される 同じルーターの IP（例 192.168.0.25:47700）を相手に伝えます。これは例の値なので自分の住所を使用します。</li>
-<li>相手は 出力 → 送出 → セッション → 参加 にアドレス・自分の名前・パスワードを入力し 接続をオンにします。</li>
-<li>退出は接続をオフ、全員の部屋を閉じるときはホストがサーバーをオフにします。</li>
+<li>出力 → 画面共有を開きます。</li>
+<li>ゲームまたはディスプレイを選んで、共有する相手を選びます。</li>
+<li>アバターの位置と大きさを合わせた後、画面共有をオンにします。</li>
+<li>Discordの画面共有 → アプリケーションでAvatar Live Share Outputを選択します。</li>
 </ol>
-<h3 id="配置参加者アバターデータ共有">配置、参加者、アバターデータ共有<a class="anchor" href="#配置参加者アバターデータ共有" aria-hidden="true" tabindex="-1">#</a></h3>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-session-people.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-session-people.webp" srcset="../assets/shots/ja/v45-session-people-960.webp 960w, ../assets/shots/ja/v45-session-people.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" style="--image-width:1200px" alt="セッション参加者" loading="lazy" decoding="async"></a><figcaption>セッション参加者</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>調整</th>
+<th>変わるもの</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>アバターの位置・サイズ</td>
+<td>ゲーム上に置かれるアバターの位置とサイズを変えます。</td>
+</tr>
+<tr>
+<td>オーディオ対象</td>
+<td>ゲーム・デスクトップ・選択したアプリの中から共有する音を選びます。</td>
+</tr>
+<tr>
+<td>アプリ音量</td>
+<td>共有される側の音量を変更します。0%はミュート、100%は元の音量です。</td>
+</tr>
+<tr>
+<td>追加ソース (Pro)</td>
+<td>他のウィンドウやモニターをさらに重ねます。リストの上にあるソースが前面に表示されます。</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="共有音が出ないとき">共有音が出ないとき<a class="anchor" href="#共有音が出ないとき" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>仮想オーディオデバイスがないという案内が表示された場合、仮想オーディオドライバのインストールを使うことができます。このボタンは VB-Audio の VB-CABLE をインストールするための経路です。インストール後、Windows の既定の再生デバイスが普段使っているヘッドホンまたはスピーカーか確認してください。</p>
+<p>VB-CABLE は別の製作者の Donationware です。使用条件や寄付・ライセンスに関する案内は <a href="13-license.html#vb-cable">VB-CABLE 通知</a> で確認してください。</p>
+<h2 id="写真と録画">写真と録画<a class="anchor" href="#写真と録画" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-photo-record.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-photo-record.webp" width="550" height="420" style="--image-width:550px" alt="写真保存と録画設定" loading="lazy" decoding="async"></a><figcaption>写真保存と録画設定</figcaption></figure>
 <ul>
-<li>相手のアバターを表示：自分の PC で相手のモデルを表示します。同じモデルがない、送信に同意していない場合は代替アバターを選べます。姿勢情報は表示可能なモデルに反映されます。</li>
-<li>自分のアバターデータを送るは初期状態オフです。転送と一時保存への同意、衣装・モデル・小物などの利用規約で許可されていることを確認してからオンにしてください。再配布禁止の VRM は送信しません。</li>
-<li>配置の同期（初期状態オン）はホストが決めた配置＋参加者自身の調整分を適用します。オフなら自分の画面に保存した配置を使います。相手のモデルを自分で移動・回転・拡大しても、必ずしも相手の PC の表示は変わりません。</li>
-<li>位置のロック（ホスト）は参加者が自分の位置・向き・大きさを変えるのを制限します。集合写真の整列に適しています。</li>
-<li>参加者を見る／カメラを見るは対象名の意図を伝え、受信側の PC がその画面での参加者の顔、またはその PC 自身のカメラを見つけて視線を計算します。</li>
-<li>同じライセンスで保有している VRM はライブラリの Vrm フォルダーへ配置し もう一度探すで使用できます。権利がないモデルは使用せず、許可された代替モデルを選びます。</li>
+<li>写真: 現在の出力画面を PNG として保存します。</li>
+<li>クロップ: 写真に含める領域を切り取ります。</li>
+<li>比率: 横・縦・正方形など写真の形を選びます。</li>
+<li>解像度: 保存ファイルのピクセル数を決めます。</li>
+<li>録画 (Pro): 映像を MP4 として保存します。開始後、停止を押してファイルを完了させます。</li>
 </ul>
-<h3 id="データ保護暗号化利用規約">データ保護・暗号化・利用規約<a class="anchor" href="#データ保護暗号化利用規約" aria-hidden="true" tabindex="-1">#</a></h3>
-<p>中央の Avatar Live サーバーにアバターを永続保存しません。ただしホスト PC と受信 PC にはセッション中、一時的な暗号化キャッシュが存在する場合があります。ホストが受信者へ転送するためにキャッシュを使用することもあります。</p>
+<h2 id="問題があるとき">問題があるとき<a class="anchor" href="#問題があるとき" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li>利用者が同意したアバターデータは AES-256-GCM によりチャンク単位で暗号化して転送し、受信側では暗号文と認証タグをセッション専用キャッシュに置きます。通常の「元モデルをエクスポートする」機能ではありません。</li>
-<li>退出・共有停止・終了時に鍵を破棄してキャッシュ削除を試み、異常終了した後の残留フォルダーは次回起動時などに再整理する設計です。ディスクの物理的な完全消去や、OS 管理権限の利用者による暗号化バイトのコピー自体を絶対に防ぐ保証ではありません。</li>
-<li>リアルタイムの姿勢・表情・制御メッセージは別の TCP/UDP 経路を使います。の実装でアバターデータ用と同じ AES-GCM の全メッセージ終端間暗号化は確認されていません。セッションのすべてが暗号化されていると解釈しないでください。</li>
-<li>パスワードは HMAC-SHA256 チャレンジ応答で確認し、平文のパスワードそのものを送る方式ではありません。ただし認証だけで全通信が暗号化されるわけではありません。</li>
-<li>モデル・衣装・テクスチャ・小物の利用条件は原作者の規約が優先します。一時転送・暗号化・終了時削除を理由に再配布禁止を無視してはいけません。他人の原本データを抽出・再配布しないでください。</li>
-<li>実際に２台の PC 間でセッション接続が確認されています。インターネット回線、CGNAT、Windows 設定、モデルの有無によって利用環境の差が生じる可能性があります。</li>
-</ul>
-<h2 id="うまくいかない場合">うまくいかない場合<a class="anchor" href="#うまくいかない場合" aria-hidden="true" tabindex="-1">#</a></h2>
-<ul>
-<li>OBS に Spout2 Capture がない：OBS 向けプラグインの導入、バージョンと再起動を確認。</li>
-<li>OBS に NDI Source がない：DistroAV、必要な NDI Runtime、古い OBS-NDI の重複を確認。</li>
-<li>NDI 送信元がない：送信スイッチ、同じネットワーク、ファイアウォール、NDI Studio Monitor を確認。</li>
-<li>LAN ではセッションが動くが外では動かない：TCP/UDP 両方の転送、内部 IP の変化、WAN/CGNAT を確認。</li>
-<li>他の人が代替モデルで表示される：送受信の同意、VRM の再配布規約、受信側のローカルアバターを確認。</li>
-<li>映像が重い：FPS と解像度、カメラ別 Spout2 の数、照明・ポスト処理、ネットワーク帯域を減らす。</li>
-</ul>
-<p><a href="08-scene.html">前へ：スタジオ</a> · <a href="10-settings.html">次へ：設定</a></p>
-<details>
-<summary>接続できないとき：ポート転送とファイアウォール</summary>
-<ol>
-<li>ホスト PC の Windows ネットワーク設定で内部 IPv4（例 192.168.0.25）を調べます。変わる場合はルーターの DHCP アドレス予約で固定すると設定を維持できます。</li>
-<li>ルーター管理画面の ポート転送／仮想サーバーを開き、外部 TCP 47700 と UDP 47700 → ホスト PC の内部 IPv4、内部 47700 に設定します。TCP と UDP を分けて追加するルーターもあります。アプリで別のポートを選んだ場合は同じ番号に置き換えます。</li>
-<li>Windows セキュリティのファイアウォールでアプリを許可で Avatar Live を許可します。必要ならホスト PC の TCP/UDP 47700 の受信規則だけを追加してください。ファイアウォール全体を無効にしないでください。</li>
-<li>ルーターの WAN 側 IP を確認します。10.x、172.16–31.x、192.168.x、100.64–127.xならさらに上流にルーターや CGNAT があり、手元のルーターだけのポート転送では外から接続できない場合があります。ISP のグローバル IP 提供や上流ルーター設定が必要です。</li>
-<li>相手に実際のグローバルIP:47700を伝えます。203.0.113.10:47700 は説明専用の架空例です。同じ Wi-Fi で自分のグローバル IP に接続する試験は NAT ループバック非対応で失敗するため、必ず別のネットワークから確認してください。</li>
-<li>配信が終わったらサーバーと不要になったポート転送をオフにします。パスワードを SNS 等へ公開しないでください。</li>
-</ol>
-<p>接続できないとき： サーバーオン → 双方 → アドレス・パスワード → 同じ LAN なら接続できるか → Windows ファイアウォール → TCP/UDP 両方の転送 → 公開 WAN IP/CGNAT → 別回線で試験、の順で確認します。</p>
-</details></article><nav class="pager" aria-label="Pager"><a class="prev" href="08-scene.html"><span>前へ</span>スタジオ</a><a class="next" href="10-settings.html"><span>次へ</span>設定</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#出力画質解像度fps">出力画質・解像度・FPS</a></li><li><a href="#spout2--同じ-pc-の-obs">Spout2 → 同じ PC の OBS</a></li><li><a href="#ndi--obs別-pcbasic-対応">NDI® → OBS・別 PC（Basic 対応）</a></li><li><a href="#仮想カメラ写真">仮想カメラ・写真</a></li><li><a href="#discord-画面共有vb-cable">Discord 画面共有・VB-CABLE</a></li><li><a href="#リモートセッション-pro別の-pc-と一緒に配信">リモートセッション (Pro)：別の PC と一緒に配信</a></li><li><a href="#うまくいかない場合">うまくいかない場合</a></li></ul></nav>
+<li><a href="12-troubleshooting.html#obsと映像出力">OBS にソースがない、または映像が黒くなる</a></li>
+<li><a href="12-troubleshooting.html#画面共有">ゲーム共有が黒くなる、または音が出ない</a></li>
+<li><a href="09-session.html#接続できない場合">リモート合流に接続できない</a></li>
+</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="08-camera-effects.html"><span>前へ</span>カメラエフェクト</a><a class="next" href="09-session.html"><span>次へ</span>リモートコラボ配信</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#どの方法を使えばいいですか">どの方法を使えばいいですか？</a></li><li><a href="#出力画像">出力画像</a></li><li><a href="#spout2">Spout2</a></li><li><a href="#ndi">NDI</a></li><li><a href="#仮想カメラ">仮想カメラ</a></li><li><a href="#画面共有">画面共有</a></li><li><a href="#写真と録画">写真と録画</a></li><li><a href="#問題があるとき">問題があるとき</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>製品</h2><ul><li><a href="index.html#features">機能</a></li><li><a href="index.html#how">使い方</a></li><li><a href="index.html#editions">エディション</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新履歴</a></li></ul></div><div class="fcol"><h2>ガイド</h2><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul></div><div class="fcol"><h2>規約・ポリシー</h2><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></div><div class="fcol"><h2>リンク</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>製品</h2><ul><li><a href="index.html#features">機能</a></li><li><a href="index.html#how">使い方</a></li><li><a href="index.html#editions">エディション</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新履歴</a></li></ul></div><div class="fcol"><h2>ガイド</h2><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターをエクスポート</a></li><li><a href="12-troubleshooting.html">問題解決</a></li><li><a href="13-license.html">エディションとライセンス</a></li></ul></div><div class="fcol"><h2>規約・ポリシー</h2><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></div><div class="fcol"><h2>リンク</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE は VRChat Inc. の公式製品ではなく、VRChat Inc. とは提携していません。VRChat は VRChat Inc. の商標です。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

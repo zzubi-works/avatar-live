@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Exporting your avatar — AVATAR LIVE</title>
-<meta name="description" content="The steps differ for Unity avatars (.vavatar) and VRM models (.vrm). Export an avatar from its Unity/VRChat project using Curious Bobby - Avatar Expor…">
+<title>Export avatar — AVATAR LIVE</title>
+<meta name="description" content="Opening an avatar in a Unity project in Avatar Live.vavatarCreate it as a file. already.vavatarme.vrmIf there is a fileOpen AvatarPlease skip to .">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/02-avatar-exporter.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/02-avatar-exporter.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/02-avatar-exporter.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/02-avatar-exporter.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/02-avatar-exporter.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
-<meta property="og:title" content="Exporting your avatar — AVATAR LIVE">
-<meta property="og:description" content="The steps differ for Unity avatars (.vavatar) and VRM models (.vrm). Export an avatar from its Unity/VRChat project using Curious Bobby - Avatar Expor…">
+<meta property="og:title" content="Export avatar — AVATAR LIVE">
+<meta property="og:description" content="Opening an avatar in a Unity project in Avatar Live.vavatarCreate it as a file. already.vavatarme.vrmIf there is a fileOpen AvatarPlease skip to .">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/02-avatar-exporter.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,73 +42,76 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html" aria-current="page">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="2-exporting-your-avatar">2. Exporting your avatar<a class="anchor" href="#2-exporting-your-avatar" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="exporter-106-versus-direct-vrm-import">Exporter 1.0.6 versus direct VRM import<a class="anchor" href="#exporter-106-versus-direct-vrm-import" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>The steps differ for Unity avatars (.vavatar) and VRM models (.vrm). Export an avatar from its Unity/VRChat project using Curious Bobby - Avatar Exporter 1.0.6; supported VRM 0.x and 1.0 files can instead be opened directly in Avatar Live.</p>
-<ul>
-<li>Unity setup: Start from the avatar's Unity 2022.3.22f1 project with a compatible VRChat SDK. Select the model and choose Export .vavatar. Exporter 1.0.6 improves PhysBone/collider handling with VRChat SDK 3.10.5 and addresses some hair/accessory bones disabled by outfit merges.</li>
-<li>Display name / expression clips / destination: Name controls what appears in the app library, clips supply optional facial animations, and destination is where Windows writes the result. Exporting a file is not the same as registering it: open the new file in the app.</li>
-<li>Re-exporting a model: Changes to clothes, bones or materials require another export. The new geometry may affect previously saved pose, camera or expression positioning; verify it before broadcasting.</li>
-<li>VRM models: Direct import does not require the exporter. Some VRM 0.x models with unsupported shaders cannot load; renaming a file extension will not convert shaders.</li>
-<li>Permission: Making or possessing an avatar file never automatically grants distribution rights. Check every avatar, outfit, texture and prop license before enabling <a href="09-output.html">remote avatar-data transfer</a>.</li>
-</ul>
-<p>If a body part is pink or disappears, inspect the shader/material and PhysBone/collider state in the Unity project, export again and explicitly reload the updated avatar file.</p>
-<p>You make avatar files for Avatar Live (<code>.vavatar</code>) by installing Curious Bobby - Avatar Exporter in your avatar's Unity project.</p>
-<h2 id="before-you-start">Before you start<a class="anchor" href="#before-you-start" aria-hidden="true" tabindex="-1">#</a></h2>
-<ul>
-<li>A Unity 2022.3.22f1 avatar project</li>
-<li>An avatar that uploads to VRChat normally</li>
-<li>Avatars that use NDMF, Modular Avatar, VRCFury and similar tools can be exported as they are, too.</li>
-</ul>
-<h2 id="installation">Installation<a class="anchor" href="#installation" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>Add the repository to VCC / ALCOM, then add Curious Bobby - Avatar Exporter to your avatar project.</p>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html" aria-current="page">Export avatar</a></li><li><a href="03-launcher-and-library.html">Avatar Library</a></li><li><a href="04-main-window.html">main screen</a></li><li><a href="05-avatar-menu.html">Avatar Menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Action</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="08-camera-effects.html">Camera effects</a></li><li><a href="09-output.html">Output</a></li><li><a href="09-session.html">Remote collaboration</a></li><li><a href="10-settings.html">setting</a></li><li><a href="11-pro-features.html">Posing and Facial Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="export-avatar">Export avatar<a class="anchor" href="#export-avatar" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>Opening an avatar in a Unity project in Avatar Live<code>.vavatar</code>Create it as a file. already<code>.vavatar</code>me<code>.vrm</code>If there is a file<a href="03-launcher-and-library.html">Open Avatar</a>Please skip to .</p>
+<h2 id="install-exporter">Install Exporter<a class="anchor" href="#install-exporter" aria-hidden="true" tabindex="-1">#</a></h2>
+<ol>
+<li>Add the below repositories to VCC or ALCOM.</li>
+<li>Add Curious Bobby - Avatar Exporter to your avatar project.</li>
+<li>Open the project in Unity.</li>
+</ol>
 <pre><code class="language-text">https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json
 </code></pre>
-<p>If you downloaded the <code>.unitypackage</code>, import it in Unity with Assets → Import Package → Custom Package….</p>
-<h2 id="exporting">Exporting<a class="anchor" href="#exporting" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><code>.unitypackage</code>If you received it as Unity’s Assets → Import Package → Custom Package… Taken from</p>
+<h2 id="create-an-avatar-file">Create an avatar file<a class="anchor" href="#create-an-avatar-file" aria-hidden="true" tabindex="-1">#</a></h2>
 <ol>
-<li>In the Unity menu, open Curious Bobby → Avatar Exporter.</li>
-<li>Put the avatar you want to export in the Avatar field.</li>
+<li>Open Curious Bobby → Avatar Exporter at the top of Unity.</li>
+<li>Drag the Hierarchy's avatar into the avatar box.</li>
+<li>Set a display name and save folder.</li>
 <li>Click Export .vavatar.</li>
-<li>When it's done, click Show file to see the file that was created.</li>
+<li>Once complete, click View File to view the resulting file.</li>
+<li>Load that file in Open Avatar in Avatar Live.</li>
 </ol>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
-<th>Item</th>
-<th>What it does</th>
+<th>item</th>
+<th>What happens if I change it?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Name in Avatar Live</td>
-<td>The name shown in Avatar Live</td>
+<td>avatar</td>
+<td>Select the character you want to export.</td>
 </tr>
 <tr>
-<td>Expression clips (optional)</td>
-<td>Adds extra expression animations for use in <a href="11-pro-features.html#automatic-expressions">Automatic expressions</a></td>
+<td>name to display</td>
+<td>This will be the name you see in the list in Avatar Live.</td>
 </tr>
 <tr>
-<td>Output folder</td>
-<td>Where the file is saved</td>
+<td>facial expression clip</td>
+<td>Includes the selected facial expression animation. You can export it even if you don't have it.</td>
+</tr>
+<tr>
+<td>storage folder</td>
+<td>completed<code>.vavatar</code>The folder in which to place the files.</td>
+</tr>
+<tr>
+<td>Export .vavatar</td>
+<td>Create a file with the avatar of your choice.</td>
+</tr>
+<tr>
+<td>View files</td>
+<td>Open the folder containing the completed file.</td>
 </tr>
 </tbody>
 </table></div>
-<blockquote class="callout tip"><p>If exporting doesn't go well, please first check that the avatar uploads to VRChat normally.</p>
-</blockquote>
-<h2 id="when-you-change-your-avatar">When you change your avatar<a class="anchor" href="#when-you-change-your-avatar" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>After making changes in Unity, just export it again. Per-avatar settings such as lighting, camera, face adjustment and outfit state carry over.</p>
+<h2 id="when-modifying-the-avatar">When modifying the avatar<a class="anchor" href="#when-modifying-the-avatar" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>In Unity, modify the clothing, hair, etc. and then export the same avatar again. Any changes to appearance will be reflected when you load a new file in Avatar Live.</p>
+<h2 id="when-export-does-not-work">When export does not work<a class="anchor" href="#when-export-does-not-work" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li>Your original avatar and scene are not changed.</li>
-<li>The files you create are saved only on your PC and are not uploaded anywhere.</li>
-</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="01-getting-started.html"><span>Previous</span>Getting started</a><a class="next" href="03-launcher-and-library.html"><span>Next</span>Start screen and avatar library</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#exporter-106-versus-direct-vrm-import">Exporter 1.0.6 versus direct VRM import</a></li><li><a href="#before-you-start">Before you start</a></li><li><a href="#installation">Installation</a></li><li><a href="#exporting">Exporting</a></li><li><a href="#when-you-change-your-avatar">When you change your avatar</a></li></ul></nav>
+<li>Unity checks that there are no errors in the avatar itself.</li>
+<li>Check which authoring tool and exporter you are using and try exporting again.</li>
+<li>If the file exists, but some parts are pink or disappeared, check the material/shader of the original project and the on status of the corresponding parts.</li>
+</ul>
+<p>The permitted scope for broadcasting and sharing of avatars, costumes, and props follows the terms and conditions of each producer.<a href="13-license.html#avatars-and-props">Content Terms of Use</a>Check out .</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="01-getting-started.html"><span>Previous</span>Getting Started</a><a class="next" href="03-launcher-and-library.html"><span>Next</span>Avatar Library</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#install-exporter">Install Exporter</a></li><li><a href="#create-an-avatar-file">Create an avatar file</a></li><li><a href="#when-modifying-the-avatar">When modifying the avatar</a></li><li><a href="#when-export-does-not-work">When export does not work</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

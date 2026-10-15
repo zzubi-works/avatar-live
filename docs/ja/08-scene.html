@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>スタジオ — AVATAR LIVE</title>
-<meta name="description" content="左メニューのスタジオで場面を編集します。背景、部屋、照明、小物、アバターの配置、カメラをまとめて保存します。スタジオ所属の項目はそのシーンだけで表示され、アバター所属の項目はアバターを別のスタジオへ移しても付いてきます。">
+<meta name="description" content="背景・照明・小道具を配置し、撮影するカメラとシーンを保存します。画面の色合いやレンズ効果については、カメラ効果で別途説明します。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ja/08-scene.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/08-scene.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/08-scene.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/08-scene.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/08-scene.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="スタジオ — AVATAR LIVE">
-<meta property="og:description" content="左メニューのスタジオで場面を編集します。背景、部屋、照明、小物、アバターの配置、カメラをまとめて保存します。スタジオ所属の項目はそのシーンだけで表示され、アバター所属の項目はアバターを別のスタジオへ移しても付いてきます。">
+<meta property="og:description" content="背景・照明・小道具を配置し、撮影するカメラとシーンを保存します。画面の色合いやレンズ効果については、カメラ効果で別途説明します。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ja/08-scene.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ja.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,262 +42,366 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html" aria-current="page">スタジオ</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターをエクスポート</a></li><li><a href="03-launcher-and-library.html">アバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動作</a></li><li><a href="08-scene.html" aria-current="page">スタジオ</a></li><li><a href="08-camera-effects.html">カメラエフェクト</a></li><li><a href="09-output.html">出力</a></li><li><a href="09-session.html">リモートコラボ配信</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージングと表情</a></li><li><a href="12-troubleshooting.html">問題解決</a></li><li><a href="13-license.html">エディションとライセンス</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="スタジオ">スタジオ<a class="anchor" href="#スタジオ" aria-hidden="true" tabindex="-1">#</a></h1>
-<p>左メニューのスタジオで場面を編集します。背景、部屋、照明、小物、アバターの配置、カメラをまとめて保存します。スタジオ所属の項目はそのシーンだけで表示され、アバター所属の項目はアバターを別のスタジオへ移しても付いてきます。</p>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-scene.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-scene.webp" srcset="../assets/shots/ja/v45-scene-960.webp 960w, ../assets/shots/ja/v45-scene.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="スタジオ画面" loading="lazy" decoding="async"></a><figcaption>スタジオ画面</figcaption></figure>
-<h2 id="シーンの保存と切り替え">シーンの保存と切り替え<a class="anchor" href="#シーンの保存と切り替え" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>背景・照明・小道具を配置し、撮影するカメラとシーンを保存します。画面の色合いやレンズ効果については、<a href="08-camera-effects.html">カメラ効果</a>で別途説明します。</p>
+<h2 id="シーンを保存">シーンを保存<a class="anchor" href="#シーンを保存" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-scenes.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-scenes.webp" width="550" height="312" style="--image-width:550px" alt="シーン一覧と保存ボタン" loading="lazy" decoding="async"></a><figcaption>シーン一覧と保存ボタン</figcaption></figure>
 <ol>
-<li>スタジオ → シーンで新しいシーンを作るか、保存済みのシーンを選びます。背景・部屋・アバター・小物・照明・カメラを調整します。</li>
-<li>保存するとその構成が記録されます。シーン名を検索したり、サムネイルで選んだりできます。大きな修正の前には別名で保存しておくと安全です。</li>
-<li>衣装と一緒に別のシーンへ持っていきたい小物・ライトはアバター所属、舞台固有の装飾や照明はスタジオ所属にします。</li>
-<li>作業用シーンビューと配信用カメラは別です。配信カメラを送出したまま、アプリの画面で別の方向を向いて小物を編集できます。OBS に出る画面を必ず確認してください。</li>
+<li>背景・照明・アバター・カメラを希望する状態に合わせます。</li>
+<li>シーンカードに保存します。</li>
+<li>次にサムネイルを選択すると、そのシーンの構成が呼び出されます。</li>
 </ol>
-<h2 id="複数アバター-pro">複数アバター (Pro)<a class="anchor" href="#複数アバター-pro" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-menu.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-menu.webp" srcset="../assets/shots/ja/v45-menu-960.webp 960w, ../assets/shots/ja/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="アバターメニュー" loading="lazy" decoding="async"></a><figcaption>アバターメニュー</figcaption></figure>
-<ul>
-<li>アバター追加で同じスタジオに複数のモデルを置けます。操作対象を選んでから位置・回転・大きさ・表情を変更してください。選択していないアバターに自動的に変更が反映されるわけではありません。</li>
-<li>操作対象の切り替えではカメラや iPhone 等のトラッキング入力を受けるアバターを変えます。元のアバターは最後の姿勢や指定された待機動作を保ちます。</li>
-<li>同じ動きを使うと体格の異なる複数モデルにも共通の関節動作を適用できます。身長が異なるため位置まで完全一致するとは限りません。</li>
-<li>リップシンク対象：全員／メイン／オフは、声に合わせて全員の口を動かすか、現在のメインだけか、誰にも適用しないかを選びます。</li>
-<li>位置 X/Y/Zは舞台上の場所、回転は向き、スケールは見た目の身長を変えます。大きさを変えた場合はカメラとの相対的な距離感も変わるため、構図を再確認してください。</li>
-</ul>
-<h2 id="スタジオカメラ-pro">スタジオカメラ (Pro)<a class="anchor" href="#スタジオカメラ-pro" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-studio-cameras.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-studio-cameras.webp" srcset="../assets/shots/ja/v45-studio-cameras-960.webp 960w, ../assets/shots/ja/v45-studio-cameras.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" style="--image-width:1200px" alt="カメラ設定" loading="lazy" decoding="async"></a><figcaption>カメラ設定</figcaption></figure>
-<p>アプリの シーンビューは操作・編集用です。一方、スタジオカメラは配信映像の位置・向き・レンズを保存し、Spout2・NDI 等の出力先に送ります。カメラを切り替えてもアプリ本体の編集視点は奪われません。</p>
-<ol>
-<li>スタジオ → カメラ → +でカメラを追加します。新しいカメラは通常、編集中のアバターを追い、頭を画面に収める設定で始まります。</li>
-<li>カメラの行を選ぶと位置方法・向き・レンズ・遷移を設定できます。行をドラッグすると並び順が変わります。</li>
-<li>今の作業画面と同じ構図にしたい場合、シーンビューを合わせてから ⋯ → 現在のビューに合わせる を使用します。モード変更だけではモードごとの以前の数値が復元され、カメラが飛んで見える場合があります。</li>
-<li>カメラを 送出中 に切り替え、OBS など受信アプリで実際の画面を確認します。</li>
-</ol>
-<h3 id="カメラの位置方式">カメラの位置方式<a class="anchor" href="#カメラの位置方式" aria-hidden="true" tabindex="-1">#</a></h3>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-studio-cam-added.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-studio-cam-added.webp" srcset="../assets/shots/ja/v45-studio-cam-added-960.webp 960w, ../assets/shots/ja/v45-studio-cam-added.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" style="--image-width:1200px" alt="追加したカメラの設定画面" loading="lazy" decoding="async"></a><figcaption>追加したカメラの設定画面</figcaption></figure>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th>方式</th>
-<th>動作と適した使い方</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>その場</td>
-<td>保存された X/Y/Z 座標から動きません。アバターが離れるとフレームから出ます。固定スタジオ向けです。</td>
-</tr>
-<tr>
-<td>対象に固定</td>
-<td>対象の骨やポイントと同じ位置に直接移動します。頭を対象にすると頭の内部に入ることもあるため、一人称などに適しています。</td>
-</tr>
-<tr>
-<td>距離を置いて追従</td>
-<td>対象から指定した X/Y/Z メートル離れた場所を保ち、一緒に移動します。歩くキャラクターの全身・バストアップ撮影に向きます。</td>
-</tr>
-<tr>
-<td>対象を周回</td>
-<td>距離を置いて追従しながらリング角度の分だけ対象の周囲を回ります。正面・横・斜めのカットを作れます。</td>
-</tr>
-</tbody>
-</table></div>
-<p>距離 X/Y/Zは画面のピクセルではなく対象からの相対位置（メートル）です。X を増やすと左右、Y を増やすと高さ、Z は前後の位置が変わります。符号によって前後が逆になる場合があるので小さい変化で確認してください。</p>
-<p>位置のなめらかさ X/Y/Zは追従の遅れです。0 ならすぐ追従するため細かなトラッキングの震えも映り、数値を増やすと滑らかになりますが急な動きで後れを取ります。Y のみ上げると座る・跳ぶ時の高さ変化だけ穏やかになります。回転のなめらかさでは横回転（Yaw）・上下（Pitch）・傾き（Roll）のうち、選んだ方式が使用する軸を調整します。</p>
-<h3 id="対象に固定の回転は何をするのですか">「対象に固定」の回転は何をするのですか？<a class="anchor" href="#対象に固定の回転は何をするのですか" aria-hidden="true" tabindex="-1">#</a></h3>
-<p>カメラを人物の右 1 m・後ろ 2 mに置き、人物が左へ 90°向きを変えた場合を考えます。</p>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th>対象の回転を距離に反映する方法</th>
-<th>カメラ位置の変化</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>ワールド空間</td>
-<td>部屋を基準に距離を維持します。人物が回ってもカメラは部屋の同じ方向から撮影するため、顔が横向きになることがあります。</td>
-</tr>
-<tr>
-<td>シンプル追従</td>
-<td>おおむね対象の後ろを保って追います。左右オフセットを独立して厳密に保持する方法ではありません。</td>
-</tr>
-<tr>
-<td>対象に追従、上はワールド</td>
-<td>人物の水平方向の回転に応じてカメラの相対位置も回りますが、画面の上は世界の上に固定されます。</td>
-</tr>
-<tr>
-<td>回転、ロールなし</td>
-<td>横を向く動きや上下の視線に反応しますが、首を横に倒すロールを追いません。</td>
-</tr>
-<tr>
-<td>対象に固定</td>
-<td>Yaw・Pitch・Roll の全回転をカメラの相対位置に適用します。頭を傾けるとカメラもその周りを動き、ダイナミックな視点になります。</td>
-</tr>
-</tbody>
-</table></div>
-<p>ここでいう 「対象に固定」はレンズを自動的に顔へ向けるという意味ではありません。対象に合わせてカメラの置き場所を計算する座標系を回す機能です。顔を常に撮りたい場合は、別の「向き」設定で対象を直視または画面構図を選びます。</p>
-<h3 id="カメラの向き狙う場所">カメラの向き・狙う場所<a class="anchor" href="#カメラの向き狙う場所" aria-hidden="true" tabindex="-1">#</a></h3>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th>方式</th>
-<th>実際の撮影結果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>そのまま</td>
-<td>保存された回転角を固定します。人物が動けば画面外へ出る可能性があります。</td>
-</tr>
-<tr>
-<td>対象と同じ向き</td>
-<td>対象が向く方向と同じ方向を向きます。対象自身を見続けるわけではありません。</td>
-</tr>
-<tr>
-<td>対象を直視</td>
-<td>指定した場所へ常にレンズを向けます。固定の位置で動く人を撮るのに適しています。</td>
-</tr>
-<tr>
-<td>一人称</td>
-<td>初期角度（横・縦）から向きを決めます。頭の位置への固定と組み合わせて POV 撮影に使えます。</td>
-</tr>
-<tr>
-<td>画面構図</td>
-<td>対象を指定した画面位置に保ちます。X=0.5 / Y=0.5 は中央、X=0.33 は画面左約 1/3 のインタビュー構図です。</td>
-</tr>
-</tbody>
-</table></div>
-<ul>
-<li>対象としてアバター全体または頭・体の骨を選べます。頭を選ぶと頷きもカメラの狙いに反映されます。</li>
-<li>注視点 X/Y/Zは対象の基準点から狙う場所を何メートルずらすかを決めます。頭の中心より口元を撮りたいなら Y を少し下げます。</li>
-<li>向きのなめらかさを大きくするとレンズの方向転換が遅くなり、細かい震えが減る代わりに急な動きへの反応が遅れます。</li>
-<li>画面位置 X/Y（0–1）は対象の画面内の位置を変えます。アバター自体のシーン座標を動かすわけではありません。</li>
-</ul>
-<h3 id="レンズ揺れ切り替え">レンズ、揺れ、切り替え<a class="anchor" href="#レンズ揺れ切り替え" aria-hidden="true" tabindex="-1">#</a></h3>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-studio-cameras-more.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-studio-cameras-more.webp" srcset="../assets/shots/ja/v45-studio-cameras-more-960.webp 960w, ../assets/shots/ja/v45-studio-cameras-more.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" style="--image-width:1200px" alt="カメラの詳細設定" loading="lazy" decoding="async"></a><figcaption>カメラの詳細設定</figcaption></figure>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th>設定</th>
-<th>小さく／大きくすると</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>画角 FOV（1–179°）</td>
-<td>小さいほど望遠・被写体が大きく、広げるほど背景が多く入り周辺が広角に見えます。</td>
-</tr>
-<tr>
-<td>正投影サイズ</td>
-<td>大きくすると遠近感のない画面でより広く映り、人物は小さくなります。</td>
-</tr>
-<tr>
-<td>ニア／ファークリップ</td>
-<td>近すぎる物体や遠すぎる背景を表示しない境界です。ニアを大きくしすぎると顔や眼鏡が欠けます。</td>
-</tr>
-<tr>
-<td>縦横比</td>
-<td>16:9 と 9:16 では同じ視点でも映る範囲が異なります。変更後は構図を調整します。</td>
-</tr>
-<tr>
-<td>手持ち揺れの強さ（0–1）</td>
-<td>0 は三脚のように安定。大きいほど手持ちカメラ風の揺れが目立ちます。</td>
-</tr>
-<tr>
-<td>揺れの速度（0–2）</td>
-<td>小さいほどゆっくり、大きいほど素早く揺れます。強さとは別の設定です。</td>
-</tr>
-<tr>
-<td>カット／クロスフェード（0–5 秒）</td>
-<td>カットは即座に変わり、フェードは設定秒数をかけて２画面が重なりながら切り替わります。</td>
-</tr>
-<tr>
-<td>アニメーション時間（1–15 秒）</td>
-<td>一回のカメラ動作の長さ。ループ方法と回数で繰り返しを調整できます。</td>
-</tr>
-<tr>
-<td>ディレクターの速度（0–5）</td>
-<td>カメラアニメーション全体の進み方を変えます。</td>
-</tr>
-<tr>
-<td>画角補正（−30°～+30°）</td>
-<td>保存したカメラの元の画角を変えず、一時的にディレクター側で画角を補正します。</td>
-</tr>
-</tbody>
-</table></div>
-<p>ディレクターモードはどのカメラを配信するかを制御します。マルチビューは自分の作業画面に複数のプレビューを並べる機能で、別のスイッチをオンにした場合のみ表示されます。格子サイズ 2–4は１辺のセル数、ダウンサンプリング 1–8を上げるとプレビューが軽くなる代わりに画質が粗くなり、更新頻度を下げると負荷が減る代わりに動きが滑らかでなくなります。これらは配信出力画質の設定とは別です。</p>
-<p>自動切り替えではタグと重みにより候補カメラを選びます。重み 0 の候補は選ばれず、他より重みが高い候補は選ばれやすくなります。配信開始時アニメーションを再スタートするか継続するかも選べます。カメラごとの Spout2（Pro）は同時に最大 3 つの独立した送信元を OBS へ出せます。<a href="09-output.html">OBS との接続方法</a>を確認してください。</p>
-<h2 id="部屋小物ボーンへの取り付け">部屋・小物・ボーンへの取り付け<a class="anchor" href="#部屋小物ボーンへの取り付け" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-studio-rooms.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-studio-rooms.webp" srcset="../assets/shots/ja/v45-studio-rooms-960.webp 960w, ../assets/shots/ja/v45-studio-rooms.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" style="--image-width:1200px" alt="部屋と小物" loading="lazy" decoding="async"></a><figcaption>部屋と小物</figcaption></figure>
-<p>部屋の X/Y/Z は部屋全体の位置、回転は向き、スケールは広さに影響します。小物の X/Y/Z は置く場所、回転は向き、連動を外した軸別スケールは縦だけ伸ばすなどの変更に使います（形が変形する場合があります）。ワールド固定ならその場に残り、アバターに付けると移動に追従し、ボーンに付けると手・頭のジェスチャーやポーズにも追従します。小物がモデルにめり込む場合はボーン基準の位置・回転オフセットを少しずつ調整してください。</p>
-<h2 id="背景">背景<a class="anchor" href="#背景" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>単色は直接色を変え、緑／青は OBS クロマキーに使えますが衣装の同色部分も消える恐れがあります。透明は Spout2/NDI のアルファ合成に適します。アプリの作業背景が黒く見えても受信側のアルファが正しく届いている場合があります。背景画像はズームで拡大縮小、X/Y で位置、カバー／クロップで比率を保って画面を埋めるかを選びます。</p>
-<h2 id="照明">照明<a class="anchor" href="#照明" aria-hidden="true" tabindex="-1">#</a></h2>
-<ul>
-<li>明るさを上げると照らす面が明るくなり、上げすぎると肌の白い部分が飛びます。色温度（約 1500–12000 K）は小さいとオレンジ寄り、大きいと青寄りです。</li>
-<li>方向ライトは太陽光風、ポイントライトは周囲へ、スポットライトは円錐状に照らします。範囲を上げると遠くまで届き、角度を広げると照射範囲が増えます。</li>
-<li>位置追従はライトを人物と一緒に移動させ、対象を見るはライトの向きを人物へ回します。固定位置で対象を見るライトは舞台の追尾スポットになり、両方オンなら人物と共に動く照明になります。</li>
-<li>位置／回転のなめらかさを上げると急な方向転換が滑らかになる一方で遅れます。影の濃さを上げると暗い影ができ、影の柔らかさを上げると境界がぼけます。環境光は影側を全体的に明るくします。</li>
-<li>ボリュームスポット（Pro）は空気中の光の筋を見せます。広がりや強さを上げすぎると霞みや GPU 負荷が増えます。</li>
-</ul>
-<h2 id="エフェクト">エフェクト<a class="anchor" href="#エフェクト" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>通常のポストプロセッシングは Basic でも使用できます。Beautify・HBAO は Pro です。</p>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>項目</th>
-<th>数値の影響</th>
+<th>すること</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>アンチエイリアシング</td>
-<td>ギザギザを軽減。FXAA は軽いが細部がややぼけ、SMAA は輪郭を残しやすく、TAA は動くものに残像が出る場合があります。</td>
+<td>新しいシーン</td>
+<td>新しい場面の構成を作ります。</td>
 </tr>
 <tr>
-<td>ブルーム</td>
-<td>強さは光のにじみ、閾値を高くすると明るい部分だけが光り、拡散を上げると広がりが増えます。</td>
+<td>保存</td>
+<td>現在の配置と設定を記録します。</td>
 </tr>
 <tr>
-<td>露出・コントラスト・彩度</td>
-<td>全体の明るさ、明暗差、色の鮮やかさをそれぞれ変えます。彩度を下げると白黒に近づきます。</td>
+<td>サムネイル</td>
+<td>保存したシーンを呼び出します。</td>
 </tr>
 <tr>
-<td>色温度・ティント</td>
-<td>青／暖色、緑／マゼンタのバランス。肌色の違和感に関係します。</td>
+<td>検索</td>
+<td>名前でシーンを探します。</td>
 </tr>
 <tr>
-<td>ビネット</td>
-<td>画面の周りを暗くします。強さは暗さ、柔らかさは境界の幅です。</td>
-</tr>
-<tr>
-<td>粒子・色収差</td>
-<td>フィルム粒子や RGB のずれを加えます。大きいと古いレンズ風になります。</td>
-</tr>
-<tr>
-<td>被写界深度</td>
-<td>ピントの前後をぼかします。顔自動フォーカスは人物を追い、F 値を下げると背景ぼけが強くなります。</td>
-</tr>
-<tr>
-<td>モーションブラー</td>
-<td>シャッター角度を上げると移動の残像が長くなり、サンプル数を増やすと滑らかですが処理が重くなります。</td>
-</tr>
-<tr>
-<td>HBAO (Pro)</td>
-<td>物の接触部分や顔の凹凸に影を加えます。強すぎると目・鼻の周囲が汚れて見えます。</td>
-</tr>
-<tr>
-<td>Beautify (Pro)</td>
-<td>肌や画像全体の補正。既存の色補正・ブルームと重ねすぎないようにしてください。</td>
+<td>⋯ メニュー</td>
+<td>名前の変更・複製など、該当シーンのコマンドを開きます。</td>
 </tr>
 </tbody>
 </table></div>
-<p>透過背景で配信する場合、エフェクトが透明境界にも影響することがあるため OBS の最終合成で確認してください。</p>
-<p><a href="09-output.html">次へ：出力・リモートセッション →</a></p></article><nav class="pager" aria-label="Pager"><a class="prev" href="07-motion.html"><span>前へ</span>動き</a><a class="next" href="09-output.html"><span>次へ</span>出力</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#シーンの保存と切り替え">シーンの保存と切り替え</a></li><li><a href="#複数アバター-pro">複数アバター (Pro)</a></li><li><a href="#スタジオカメラ-pro">スタジオカメラ (Pro)</a></li><li><a href="#部屋小物ボーンへの取り付け">部屋・小物・ボーンへの取り付け</a></li><li><a href="#背景">背景</a></li><li><a href="#照明">照明</a></li><li><a href="#エフェクト">エフェクト</a></li></ul></nav>
+<h2 id="アバター配置">アバター配置<a class="anchor" href="#アバター配置" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-studio-avatar.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-studio-avatar.webp" width="550" height="241" style="--image-width:550px" alt="アバターの位置・回転・サイズ設定" loading="lazy" decoding="async"></a><figcaption>アバターの位置・回転・サイズ設定</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>調整</th>
+<th>変わるもの</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>位置 X</td>
+<td>左右に移動します。</td>
+</tr>
+<tr>
+<td>位置Y</td>
+<td>上下に移動します。</td>
+</tr>
+<tr>
+<td>位置 Z</td>
+<td>前後に移動します。</td>
+</tr>
+<tr>
+<td>回転</td>
+<td>アバターが向いている方向を変えます。</td>
+</tr>
+<tr>
+<td>サイズ</td>
+<td>シーン内のアバターを大きくしたり小さくしたりします。</td>
+</tr>
+<tr>
+<td>明るさ</td>
+<td>アバターに適用される明るさを調整します。</td>
+</tr>
+<tr>
+<td>中央に</td>
+<td>アバターを基準位置に戻します。</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="複数アバター-pro">複数アバター (Pro)<a class="anchor" href="#複数アバター-pro" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>アバターを追加して、同じシーンにキャラクターをさらに置きます。アバターを選択した後、操作対象を変更すると、私のトラッキング入力を受けるキャラクターが変わります。</p>
+<ul>
+<li>同じ動作: 複数のアバターが同じトラッキング入力で一緒に動きます。</li>
+<li>リップシンク全員: 複数のアバターの口を一緒に動かします。</li>
+<li>リップシンクメイン: メイン操作アバターのみ口を動かします。</li>
+<li>リップシンクオフ: 共有リップシンクを使用しません。</li>
+</ul>
+<h2 id="カメラ-pro">カメラ (Pro)<a class="anchor" href="#カメラ-pro" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-studio-camera.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-studio-camera.webp" width="550" height="789" style="--image-width:550px" alt="カメラ一覧と選択したカメラの設定" loading="lazy" decoding="async"></a><figcaption>カメラ一覧と選択したカメラの設定</figcaption></figure>
+<ol>
+<li>カメラ → スタジオカメラの+を押してカメラを作成します。</li>
+<li>カメラ名を押して詳細設定を開きます。</li>
+<li>対象・位置・視線・レンズを調整します。</li>
+<li>そのカメラを配信対象として選択します。</li>
+</ol>
+<p>現在の作業構図をそのまま使いたい場合は、カメラの⋯ → 現在ビューに合わせるを使用します。</p>
+<h3 id="位置方式">位置方式<a class="anchor" href="#位置方式" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-camera-position.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-camera-position.webp" width="550" height="983" style="--image-width:550px" alt="カメラ位置方式と追従対象" loading="lazy" decoding="async"></a><figcaption>カメラ位置方式と追従対象</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>選択</th>
+<th>カメラの動き方</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>定位置</td>
+<td>決めた位置に留まります。アバターが移動しても追従しません。</td>
+</tr>
+<tr>
+<td>対象固定</td>
+<td>選択した骨やポイントに付着します。頭を選ぶと頭の内部に入ることがあります。</td>
+</tr>
+<tr>
+<td>距離を置いて追従</td>
+<td>対象からX・Y・Zだけ離れた位置を維持しながら追従します。</td>
+</tr>
+<tr>
+<td>対象を回る</td>
+<td>決めた距離で対象の周りを回ります。リング角度で前・横の構図を変えます。</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>対象: 追従するアバターの頭や体などの基準点を選びます。</li>
+<li>距離 X・Y・Z: 対象からカメラを左右・高さ・前後にどのくらい離すかを決めます。</li>
+<li>滑らかさ: 高くするとゆっくり追従して揺れが減り、低くするとすぐに反応します。</li>
+</ul>
+<h3 id="回転基準">回転基準<a class="anchor" href="#回転基準" aria-hidden="true" tabindex="-1">#</a></h3>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>選択</th>
+<th>アバターが回ったとき</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>世界座標</td>
+<td>カメラの相対方向はシーン基準で維持されます。</td>
+</tr>
+<tr>
+<td>単純追従</td>
+<td>対象の後ろを追って移動します。</td>
+</tr>
+<tr>
+<td>対象に合わせて回転、上は世界</td>
+<td>左右の回転に合わせますが、画面上は立てたままにします。</td>
+</tr>
+<tr>
+<td>回転、ロールなし</td>
+<td>左右・上下の回転に合わせますが、頭の傾きは追従しません。</td>
+</tr>
+<tr>
+<td>対象に固定</td>
+<td>頭の傾きを含む全回転に合わせてカメラの位置も回転します。</td>
+</tr>
+</tbody>
+</table></div>
+<p>この設定はカメラが置かれる基準です。顔を常に画面に収めたい場合は、下の視線方式も選んでください。</p>
+<h3 id="視線方式">視線方式<a class="anchor" href="#視線方式" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-camera-aim.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-camera-aim.webp" width="550" height="980" style="--image-width:550px" alt="カメラ視線とレンズ設定" loading="lazy" decoding="async"></a><figcaption>カメラ視線とレンズ設定</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>選択</th>
+<th>レンズが見る場所</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>定位置</td>
+<td>指定した方向をずっと見続けます。</td>
+</tr>
+<tr>
+<td>対象と一緒に</td>
+<td>対象が振り向く方向に一緒に回ります。</td>
+</tr>
+<tr>
+<td>対象凝視</td>
+<td>選んだ顔やポイントをずっと見続けます。</td>
+</tr>
+<tr>
+<td>一人称</td>
+<td>開始角度を基準に人物視点のように見ます。</td>
+</tr>
+<tr>
+<td>画面構図</td>
+<td>対象を画面上の決めた位置に収めるように方向を合わせます。</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>目標地点: 対象で焦点を置く位置をX・Y・Zに移します。</li>
+<li>画面位置: 横・縦0.5は中央です。値を変えるとアバターを画面の別の位置に収めます。</li>
+<li>視線の滑らかさ: 高くするとレンズ方向がゆっくり変わり、低くするとすぐに追従します。</li>
+</ul>
+<h3 id="レンズと切り替え">レンズと切り替え<a class="anchor" href="#レンズと切り替え" aria-hidden="true" tabindex="-1">#</a></h3>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>値を変えると</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>画角</td>
+<td>下げると望遠のように大きく、上げると広角のように広く収めます。</td>
+</tr>
+<tr>
+<td>直交サイズ</td>
+<td>高くすると広く収めてアバターが小さくなります。</td>
+</tr>
+<tr>
+<td>前クリッピング距離</td>
+<td>この距離より近い物体は描画しません。高くすると顔や小道具が切れることがあります。</td>
+</tr>
+<tr>
+<td>後クリッピング距離</td>
+<td>この距離より遠い物体は描画しません。</td>
+</tr>
+<tr>
+<td>画面比率</td>
+<td>横放送・縦映像など画面の形を変えます。</td>
+</tr>
+<tr>
+<td>揺れ強度</td>
+<td>高くすると手持ち撮影のような揺れが強くなります。0は揺れません。</td>
+</tr>
+<tr>
+<td>揺れ速度</td>
+<td>高くするとより速く揺れます。</td>
+</tr>
+<tr>
+<td>カット</td>
+<td>他のカメラに即座に切り替わります。</td>
+</tr>
+<tr>
+<td>クロスフェード</td>
+<td>2台のカメラの画面が切り替わる間に重なって変わります。</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="監督とマルチビュー">監督とマルチビュー<a class="anchor" href="#監督とマルチビュー" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-camera-multiview.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-camera-multiview.webp" width="550" height="789" style="--image-width:550px" alt="監督モードとマルチビュー設定" loading="lazy" decoding="async"></a><figcaption>監督モードとマルチビュー設定</figcaption></figure>
+<ul>
+<li>監督モード: カメラを切り替えて放送画面を構成します。</li>
+<li>マルチビュー: 複数のカメラのプレビューを一か所で見ます。別のスイッチでオンにします。</li>
+<li>グリッド: 増やすと一度に見るカメラの数が増え、各マスは小さくなります。</li>
+<li>ダウンサンプリング: 上げるとプレビュー画質とPCの負担が一緒に減ります。</li>
+<li>リフレッシュ率：下げるとプレビューが滑らかでなくなり、PCの負担が減ります。</li>
+<li>自動切り替え: タグと重みで次のカメラを選びます。重みが0のカメラは自動選択されません。</li>
+<li>カメラ別 Spout2: 選択したカメラ映像を別の名前でOBSに送ります。最大3つまで追加出力できます。</li>
+</ul>
+<h2 id="背景">背景<a class="anchor" href="#背景" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-background.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-background.webp" width="550" height="477" style="--image-width:550px" alt="背景の種類と撮影画面の設定" loading="lazy" decoding="async"></a><figcaption>背景の種類と撮影画面の設定</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>選択</th>
+<th>表示される結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>単色</td>
+<td>均一な色で背景を塗りつぶします。</td>
+</tr>
+<tr>
+<td>緑・青</td>
+<td>OBSでクロマキーで消せる背景です。衣装とは異なる色を選んでください。</td>
+</tr>
+<tr>
+<td>透明</td>
+<td>Spout2·NDIで背景なしで合成します。受け取る側もアルファ合成に対応している必要があります。</td>
+</tr>
+<tr>
+<td>画像</td>
+<td>PNG・JPGの画像を背景として使用します。</td>
+</tr>
+</tbody>
+</table></div>
+<p>画像の拡大・縮小は絵のサイズを、左右・上下の位置は絵が置かれる場所を変えます。塗りつぶしをオンにすると比率を維持しながら端を切り取って塗りつぶします。</p>
+<p>撮影画面の表示は、携帯電話やビデオカメラのように見える画面装飾をオンにします。比率は画面の形、形は装飾スタイル、写真・録画は実際に撮影を開始するボタンです。</p>
+<h2 id="照明">照明<a class="anchor" href="#照明" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-lighting.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-lighting.webp" width="550" height="592" style="--image-width:550px" alt="照明プリセットと個別ライト設定" loading="lazy" decoding="async"></a><figcaption>照明プリセットと個別ライト設定</figcaption></figure>
+<p>プリセットで全体の雰囲気を選び、個別ライトを押して詳細を調整します。</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>変えると</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>強さ</td>
+<td>高くすると明るくなります。あまり高くすると肌や髪が白飛びします。</td>
+</tr>
+<tr>
+<td>色</td>
+<td>アバターを照らす光の色を変えます。</td>
+</tr>
+<tr>
+<td>色温度</td>
+<td>低いとオレンジ色、 高いと青に近くなります。</td>
+</tr>
+<tr>
+<td>範囲</td>
+<td>点光・スポットの光がより遠くまで届きます。</td>
+</tr>
+<tr>
+<td>スポット角度</td>
+<td>狭めると一部分を、広げると周囲まで照らします。</td>
+</tr>
+<tr>
+<td>影の強さ</td>
+<td>高くすると影が濃くなります。</td>
+</tr>
+<tr>
+<td>影のぼかし</td>
+<td>高くすると影の境界がぼやけます。</td>
+</tr>
+<tr>
+<td>環境光</td>
+<td>ライトが直接届かない部分を明るくします。</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="位置と対象">位置と対象<a class="anchor" href="#位置と対象" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-light-detail.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-light-detail.webp" width="550" height="983" style="--image-width:550px" alt="ライトの位置・方向・対象設定" loading="lazy" decoding="async"></a><figcaption>ライトの位置・方向・対象設定</figcaption></figure>
+<ul>
+<li>位置追従: アバターや骨が移動するとライトも追従します。</li>
+<li>対象を見る: ライトを対象の方向に向けます。</li>
+<li>滑らかさ: 上げると対象の小さな揺れを追従しにくくなります。</li>
+<li>ライトグループ: 複数のライトをまとめて位置・回転・明るさを一緒に変更します。</li>
+<li>ボリュメトリックスポット (Pro): 空気中に光の柱を作ります。密度を上げると光の筋が濃くなります。</li>
+</ul>
+<h2 id="部屋と小道具">部屋と小道具<a class="anchor" href="#部屋と小道具" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-room.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-room.webp" width="550" height="444" style="--image-width:550px" alt="部屋プリセットと配置設定" loading="lazy" decoding="async"></a><figcaption>部屋プリセットと配置設定</figcaption></figure>
+<p>部屋プリセットを選んで背景空間を置きます。位置・回転・サイズでステージとアバターの位置を合わせます。</p>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-props.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-props.webp" width="550" height="832" style="--image-width:550px" alt="オブジェクトと小道具ライブラリ" loading="lazy" decoding="async"></a><figcaption>オブジェクトと小道具ライブラリ</figcaption></figure>
+<ul>
+<li>オブジェクト追加: テキスト・画像・図形・3D小道具を置きます。</li>
+<li>ワールド固定: アバターが動いても物体はその場に残ります。</li>
+<li>アバター・ボーンに付ける: 体や手・頭に合わせて動きます。</li>
+<li>オフセット: 付けた位置から少し動かしたり回転させたりします。手に持つ物の位置を合わせるときに使います。</li>
+<li>アバター所属: 他のシーンに移してもそのアバターに従います。</li>
+<li>スタジオ所属: 現在のシーンに残ります。</li>
+</ul>
+<p>小道具とアバターの利用権はそれぞれ原作者の利用規約に従います。詳しくは <a href="13-license.html#アバターと小道具">アバターと小道具</a> を確認してください。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="07-motion.html"><span>前へ</span>動作</a><a class="next" href="08-camera-effects.html"><span>次へ</span>カメラエフェクト</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#シーンを保存">シーンを保存</a></li><li><a href="#アバター配置">アバター配置</a></li><li><a href="#カメラ-pro">カメラ (Pro)</a></li><li><a href="#背景">背景</a></li><li><a href="#照明">照明</a></li><li><a href="#部屋と小道具">部屋と小道具</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>製品</h2><ul><li><a href="index.html#features">機能</a></li><li><a href="index.html#how">使い方</a></li><li><a href="index.html#editions">エディション</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新履歴</a></li></ul></div><div class="fcol"><h2>ガイド</h2><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul></div><div class="fcol"><h2>規約・ポリシー</h2><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></div><div class="fcol"><h2>リンク</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>製品</h2><ul><li><a href="index.html#features">機能</a></li><li><a href="index.html#how">使い方</a></li><li><a href="index.html#editions">エディション</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新履歴</a></li></ul></div><div class="fcol"><h2>ガイド</h2><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターをエクスポート</a></li><li><a href="12-troubleshooting.html">問題解決</a></li><li><a href="13-license.html">エディションとライセンス</a></li></ul></div><div class="fcol"><h2>規約・ポリシー</h2><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></div><div class="fcol"><h2>リンク</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE は VRChat Inc. の公式製品ではなく、VRChat Inc. とは提携していません。VRChat は VRChat Inc. の商標です。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

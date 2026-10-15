@@ -15,8 +15,8 @@ Effective date: October 9, 2026
 - Do you have a .vavatar or supported VRM file? A Unity avatar project can be exported with Avatar Exporter. .vrca files cannot be opened directly.
 - Do you have a regular color webcam?
 - Can you connect to the internet for activation and license checks?
-- Have you checked the [supported features](12-troubleshooting.md#supported-features)?
-- If you will stream or use it commercially, did you choose Pro? ([Editions](13-license.md#editions-and-prices))
+- Have you checked the [supported features](12-troubleshooting.md#supported-scope)?
+- If you will stream or use it commercially, did you choose Pro? ([Editions](13-license.md#editions))
 
 ## Payment and refund inquiries
 

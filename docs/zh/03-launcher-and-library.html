@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>开始界面与角色库 — AVATAR LIVE</title>
-<meta name="description" content="与会话不同： 角色库原始文件保留在你自己的电脑中。远程会话的发送我的角色数据需要单独同意，在参与者电脑上使用会话专用的加密临时缓存，不会把别人原始资产永久加入你的角色库。">
+<title>角色库 — AVATAR LIVE</title>
+<meta name="description" content="注册角色文件，选择要使用的角色和起始场景。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/03-launcher-and-library.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/03-launcher-and-library.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/03-launcher-and-library.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/03-launcher-and-library.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/03-launcher-and-library.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
-<meta property="og:title" content="开始界面与角色库 — AVATAR LIVE">
-<meta property="og:description" content="与会话不同： 角色库原始文件保留在你自己的电脑中。远程会话的发送我的角色数据需要单独同意，在参与者电脑上使用会话专用的加密临时缓存，不会把别人原始资产永久加入你的角色库。">
+<meta property="og:title" content="角色库 — AVATAR LIVE">
+<meta property="og:description" content="注册角色文件，选择要使用的角色和起始场景。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/03-launcher-and-library.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,81 +42,103 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html" aria-current="page">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="3-开始界面与角色库">3. 开始界面与角色库<a class="anchor" href="#3-开始界面与角色库" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="角色库的每项选择会改变什么">角色库的每项选择会改变什么<a class="anchor" href="#角色库的每项选择会改变什么" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/zh/v45-menu.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/v45-menu.webp" srcset="../assets/shots/zh/v45-menu-960.webp 960w, ../assets/shots/zh/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="角色加载后" loading="lazy" decoding="async"></a><figcaption>角色加载后</figcaption></figure>
-<ul>
-<li>导入 .vavatar会注册由 Exporter 1.0.6 生成的文件，不是直接打开 Unity 项目。导入 .vrm支持 VRM 0.x / 1.0，但部分模型使用不受支持的着色器可能无法显示。</li>
-<li>最近使用／文件夹／已导入只改变角色库列表的筛选范围，不会自动改变追踪设备或广播摄像机。</li>
-<li>默认／上一次／每次询问决定启动时自动加载哪个角色。每次直播使用不同模型时建议开启“每次询问”。</li>
-<li>启动时自动开启摄像头与麦克风可能让其他视频会议应用无法使用设备。存在冲突时先关闭自动启动，进入应用后再手动开启。</li>
-<li>切换角色后使用的是该角色自己保存的表情、姿势与编辑视角，不会把前一个模型的所有设置无条件复制过来。</li>
-<li>多个角色 (Pro)是让同一工作室同时存在多个模型，不等于只切换唯一角色。修改之前请先选中正确的模型。</li>
-</ul>
-<p>与会话不同： 角色库原始文件保留在你自己的电脑中。<a href="09-output.html">远程会话</a>的发送我的角色数据需要单独同意，在参与者电脑上使用会话专用的加密临时缓存，不会把别人原始资产永久加入你的角色库。</p>
-<h2 id="开始界面">开始界面<a class="anchor" href="#开始界面" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/zh/launcher.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/launcher.webp" srcset="../assets/shots/zh/launcher-960.webp 960w, ../assets/shots/zh/launcher.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" style="--image-width:1600px" alt="开始界面" loading="lazy" decoding="async"></a><figcaption>开始界面</figcaption></figure>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html" aria-current="page">角色库</a></li><li><a href="04-main-window.html">主屏幕</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室</a></li><li><a href="08-camera-effects.html">摄像机效果</a></li><li><a href="09-output.html">输出</a></li><li><a href="09-session.html">远程联播</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">姿势与表情</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="角色库">角色库<a class="anchor" href="#角色库" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>注册角色文件，选择要使用的角色和起始场景。</p>
+<h2 id="开始屏幕">开始屏幕<a class="anchor" href="#开始屏幕" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-launcher.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-launcher.webp" srcset="../assets/shots/ko/guide-launcher-960.webp 960w, ../assets/shots/ko/guide-launcher.webp 1920w" sizes="(max-width: 900px) 100vw, 860px" width="1920" height="1080" style="--image-width:1920px" alt="角色列表和启动设置" loading="lazy" decoding="async"></a><figcaption>角色列表和启动设置</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
-<th>项目</th>
-<th>作用</th>
+<th>按钮·项目</th>
+<th>点击后会怎么样？</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>打开角色…</td>
-<td>打开 <code>.vavatar</code> 文件。也可以拖放到窗口中。</td>
+<td>打开角色</td>
+<td>将 <code>.vavatar</code> 或 <code>.vrm</code> 文件添加到列表中。也可以将文件拖放到窗口中。</td>
 </tr>
 <tr>
-<td>最近 · 文件夹 · 已导入</td>
-<td>显示最近打开的角色、角色文件夹中的角色和已导入的角色。</td>
+<td>最近</td>
+<td>显示最近使用的角色。</td>
 </tr>
 <tr>
-<td>设为默认</td>
-<td>让程序直接以此角色启动。</td>
+<td>文件夹</td>
+<td>显示指定角色文件夹的文件。</td>
 </tr>
 <tr>
-<td>摄像头 · 麦克风</td>
-<td>选择启动时一并开启的设备。</td>
+<td>导入的</td>
+<td>显示通过导入的库导入的角色。</td>
 </tr>
 <tr>
-<td>面部 · 手部</td>
-<td>选择追踪方式。</td>
+<td>角色缩略图</td>
+<td>选择要开始的角色。</td>
 </tr>
 <tr>
-<td>启动设置</td>
-<td>从每次询问 · 上次使用 · 默认角色中选择。</td>
+<td>默认指定</td>
+<td>设置在以默认角色开始时使用的角色。</td>
 </tr>
 <tr>
-<td>▶ 启动 Avatar Live</td>
-<td>以所选角色启动。</td>
+<td>预览</td>
+<td>查看所选角色的外观。</td>
+</tr>
+<tr>
+<td>场景列表</td>
+<td>选择要开始的舞台构成。</td>
+</tr>
+<tr>
+<td>开始 Avatar Live</td>
+<td>使用所选角色和场景打开主屏幕。</td>
 </tr>
 </tbody>
 </table></div>
-<blockquote class="callout tip"><p>按住 Shift 运行，即可不使用摄像头 · 麦克风安全启动。因设备问题无法正常启动时，请试试这个方法。</p>
-</blockquote>
-<h2 id="运行中切换角色">运行中切换角色<a class="anchor" href="#运行中切换角色" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/zh/avatar-pop.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/avatar-pop.webp" srcset="../assets/shots/zh/avatar-pop-960.webp 960w, ../assets/shots/zh/avatar-pop.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" style="--image-width:1600px" alt="角色库" loading="lazy" decoding="async"></a><figcaption>角色库</figcaption></figure>
+<h2 id="选择要开始的设备">选择要开始的设备<a class="anchor" href="#选择要开始的设备" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-launcher-start.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-launcher-start.webp" width="735" height="970" style="--image-width:735px" alt="要启动的摄像头·麦克风和开始按钮" loading="lazy" decoding="async"></a><figcaption>要启动的摄像头·麦克风和开始按钮</figcaption></figure>
 <ul>
-<li>点击左上角的 角色名称，即可打开角色库。</li>
-<li>在列表中点击角色，即可切换到该角色。</li>
-<li>用 添加角色文件… 导入新角色。</li>
-<li>已开启的摄像头和麦克风，切换后也会照常开启。</li>
+<li>摄像头：打开右侧开关时，将使用启动时选择的网络摄像头。</li>
+<li>麦克风：开启后将使用启动时选择的麦克风进行对嘴型同步。</li>
+<li>脸·手：选择跟踪各部位的方式。执行后也可以在设备上更改。</li>
 </ul>
-</div>
-<h2 id="首次打开菜单">首次打开菜单<a class="anchor" href="#首次打开菜单" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>加载角色时会提前准备菜单布局，减少首次打开各菜单的卡顿。初次加载角色可能稍久一些。点击左上角的图标即可返回角色选择，而无须重启程序。</p>
-<h2 id="返回开始界面">返回开始界面<a class="anchor" href="#返回开始界面" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>点击左上角的 标志，然后选择 重新启动。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="02-avatar-exporter.html"><span>上一页</span>导出角色</a><a class="next" href="04-main-window.html"><span>下一页</span>主界面</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#角色库的每项选择会改变什么">角色库的每项选择会改变什么</a></li><li><a href="#开始界面">开始界面</a></li><li><a href="#运行中切换角色">运行中切换角色</a></li><li><a href="#首次打开菜单">首次打开菜单</a></li><li><a href="#返回开始界面">返回开始界面</a></li></ul></nav>
+<h2 id="用于下一次运行的角色">用于下一次运行的角色<a class="anchor" href="#用于下一次运行的角色" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>启动设置</th>
+<th>下一次运行时</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>每次询问</td>
+<td>在启动画面直接选择角色。</td>
+</tr>
+<tr>
+<td>上次角色</td>
+<td>使用上次使用的角色启动。</td>
+</tr>
+<tr>
+<td>默认角色</td>
+<td>使用设定的默认角色启动。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="运行中更换">运行中更换<a class="anchor" href="#运行中更换" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-avatar-library.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-avatar-library.webp" width="895" height="800" style="--image-width:895px" alt="主界面打开的角色库" loading="lazy" decoding="async"></a><figcaption>主界面打开的角色库</figcaption></figure>
+<ol>
+<li>点击左上角的角色名称。</li>
+<li>在列表中选择要更换的角色。</li>
+<li>新文件通过“添加角色文件”导入。</li>
+</ol>
+<p>要替换现有角色，请使用此列表。在同一场景中放置更多角色的角色添加是<a href="08-scene.html#多个角色-pro">工作室</a>的单独功能。</p>
+<h2 id="启动不顺时">启动不顺时<a class="anchor" href="#启动不顺时" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>按住 Shift 启动程序，可以使用不启用摄像头和麦克风的安全启动。确认设备问题后，再逐一在设备上开启。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="02-avatar-exporter.html"><span>上一页</span>导出角色</a><a class="next" href="04-main-window.html"><span>下一页</span>主屏幕</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#开始屏幕">开始屏幕</a></li><li><a href="#选择要开始的设备">选择要开始的设备</a></li><li><a href="#用于下一次运行的角色">用于下一次运行的角色</a></li><li><a href="#运行中更换">运行中更换</a></li><li><a href="#启动不顺时">启动不顺时</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>产品</h2><ul><li><a href="index.html#features">功能</a></li><li><a href="index.html#how">使用方法</a></li><li><a href="index.html#editions">版本</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新记录</a></li></ul></div><div class="fcol"><h2>指南</h2><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul></div><div class="fcol"><h2>条款与政策</h2><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></div><div class="fcol"><h2>链接</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>产品</h2><ul><li><a href="index.html#features">功能</a></li><li><a href="index.html#how">使用方法</a></li><li><a href="index.html#editions">版本</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新记录</a></li></ul></div><div class="fcol"><h2>指南</h2><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul></div><div class="fcol"><h2>条款与政策</h2><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></div><div class="fcol"><h2>链接</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE 不是 VRChat Inc. 的官方产品，与 VRChat Inc. 无关联。VRChat 是 VRChat Inc. 的商标。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

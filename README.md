@@ -19,9 +19,17 @@ uv run --no-project --with markdown --with pillow python build.py
 - `content/<lang>/*.md` → `docs/<lang>/*.html` (guide and legal pages)
 - `assets/` → `docs/assets/` (styles, script, brand images, videos)
 - `python check_links.py <lang>` checks the guide's links and anchors.
+- `python check_guide_parity.py` verifies that all 15 English, Japanese and
+  Simplified Chinese guide chapters match the **Korean canonical guide** in
+  heading structure, tables, screenshots and navigational links. Run it after
+  changing any Korean guide chapter, then update all three translations.
 - `make_og.py` redraws the share images (`assets/brand/og-<lang>.jpg`).
 
 GitHub Pages serves `main:/docs`.
+
+When a newly added guide screenshot has no language-specific capture yet, the
+website builder uses the corresponding Korean screenshot, rather than showing
+a missing image in the translated guide.
 
 When refreshing screenshots from a working directory with older local PNGs,
 use `python build.py --shots-prefix guide-` to convert only the new guide

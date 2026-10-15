@@ -1,44 +1,60 @@
-# 4. Main window
+# main screen
 
-The app window remains the editable scene view. Even when a studio camera is on air, you can use this window to inspect and adjust avatars, lighting and props.
+Select settings on the left and adjust them while viewing the avatar in the center.
 
-![The main interface](img/v45-menu.png)
+![main screen](img/guide-main.png)
 
-## Finding each setting
+## left menu
 
-| Left menu | What its controls actually affect |
+|menu|What you can do here|
 |---|---|
-| Menu | Expression menu, avatar toggles, saved faces and gestures of the selected character. [Chapter 5](05-avatar-menu.md) |
-| Input / Devices | Which camera, mic, phone or tracker supplies data to each body part. [Chapter 6](06-devices.md) |
-| Motion | Face, eyes, arms, fingers, body, AFK, smoothing and lip-sync behavior. [Chapter 7](07-motion.md) |
-| Studio | Scenes, avatar placement, props, room, lighting, cameras and effects. [Chapter 8](08-scene.md) |
-| Output | Spout2, NDI, virtual camera, screen sharing, recording and remote session. [Chapter 9](09-output.md) |
-| Settings | Performance, window, hotkeys, language, files, updates and diagnostics. [Chapter 10](10-settings.md) |
+|menu|Apply clothing, facial expressions, hand gestures and saved postures.|
+|device|Connect the webcam, microphone, iPhone, and tracker.|
+|movement|Controls the size and smoothness of movement of the face, body, and hands.|
+|studio|Place background, lighting, props, avatar, and filming camera.|
+|output of power|Connect to OBS, virtual camera, screen sharing, and remote Hapbang.|
+|setting|Change windows, performance, language, shortcuts, and updates.|
 
-Pin a drawer with the pin icon to stop it closing when clicking elsewhere. The mouse wheel scrolls settings over the drawer, but zooms the scene view outside it. If the camera moves unexpectedly, first check where your cursor was.
+## Using the Settings panel
 
-## Scene view versus the on-air picture
+- Card title: Tap to expand or collapse detailed settings.
+- Switch: Turn the function on or off. This is separate from expanding the title.
+- Pin: Prevents the settings panel from collapsing when you press outside the panel.
+- Number: Enter it directly or use the slider next to it.
+- Drag card title: Move frequently used cards up.
+- Magnifying glass at top: Search for the setting name and tap the result to jump to it.
 
-- Moving the bottom-toolbar camera changes your editing point of view.
-- When a studio camera is on air, OBS/NDI receives that saved camera picture instead. You can move behind the character to adjust lights without automatically broadcasting that backstage view.
-- If Scene view itself is on air, your camera edits also change what viewers see. Verify the active source in [Studio cameras](08-scene.md) and [Output](09-output.md).
-- Always verify the receiving application's program monitor, particularly after changing camera, aspect ratio, background transparency or effects.
+## camera toolbar
 
-## Bottom toolbar: what the controls change
+![Bottom camera toolbar and composition settings](img/guide-camera-toolbar.png)
 
-- Face / Upper body / Full body quickly adjust framing distance and angle relative to the selected avatar. Face is useful for lip sync; upper body for chat streams; full body for poses.
-- + Save view stores your current camera position, direction and lens as an avatar-specific preset. Selecting it later restores that composition.
-- Camera lock prevents accidental scene-view mouse movement; it does not freeze your avatar's tracking or a separate studio broadcast camera.
-- None / Free / Orbit changes how your mouse moves the scene view. Free moves your look direction; Orbit circles the selected avatar. These are different from the Studio Camera's independent position/aim methods.
-- Field of View (FOV): decreasing it magnifies the subject and shows less background; increasing it shows more scene. Mouse movement speed adjusts how far/faster the view travels for the same physical mouse movement.
-- Toolbar opacity changes how faint idle controls look (around 60% by default); hovering reveals them more strongly. Right-click empty toolbar space for opacity and placement settings.
-- Quick Actions let you pin frequently used avatar toggles, poses and expressions to the toolbar. Which parameter they affect depends on the currently selected avatar's menu.
+|item|What changes|
+|---|---|
+|Face, upper body, whole body|The selected avatar is displayed on the screen at the appropriate size.|
+|saved view|Return to the saved location and direction.|
+|Save view|Save the composition you are currently viewing.|
+|camera lock|Lock the composition so that it does not change with the mouse. The avatar keeps moving.|
+|viewing angle|Lowering it makes the avatar appear larger, and raising it makes the surroundings appear wider.|
+|Fixed/Free/Orbit|Change the way you move the mouse around the work screen.|
 
-## Clean view, reset and exit
+Turn the wheel on the settings panel to scroll through the settings. The camera distance changes as you rotate the avatar in the visible area.
 
-- F1 hides or restores the app's interface when Avatar Live is the focused window. It is not a substitute for transparent-background Spout2/NDI.
-- Reset can restore avatar physical state after hair or tails become stuck; it is not an asset re-export function.
-- The window X may quit or minimise to tray depending on Settings. While output is running, the program can keep streaming from the tray; choose Quit explicitly to stop it completely.
-- Use the search icon in Settings to jump directly to AFK, gaze, hotkeys, Spout2 and other controls without expanding every drawer.
+## Work screen and transmission screen
 
-[Next: Avatar Menu →](05-avatar-menu.md)
+|screen|viewer|If you move|
+|---|---|---|
+|scene view|The work screen I edit|The timing of my work changes. If a scene view is being broadcast, the broadcast will also change accordingly.|
+|studio camera|Viewer screen for selected shooting camera|The composition changes depending on the settings of the camera.|
+
+To edit lighting or props while maintaining the broadcast composition[studio camera](08-scene.md#camera-pro)Select as the transmission target.
+
+## Frequently used operations
+
+|operation|result|
+|---|---|
+| F1 |Hide the menu. Press again to display.|
+| Ctrl+Z |Reverses supported edit operations one step.|
+|Reset top|Restore tracking, hand posture, and physical movements.|
+|bottom left power|Exit the program.|
+
+Reset All, which changes clothing or even location, has a larger scope of application. If your hair is only briefly tangled, use a regular reset first.

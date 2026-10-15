@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Start screen and avatar library — AVATAR LIVE</title>
-<meta name="description" content="Important session distinction: Your library&#x27;s source avatars stay on your PC. The remote session&#x27;s Send my avatar data switch requires separate consen…">
+<title>Avatar Library — AVATAR LIVE</title>
+<meta name="description" content="Register your avatar file, select the character you want to use and the starting scene.">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/03-launcher-and-library.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/03-launcher-and-library.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/03-launcher-and-library.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/03-launcher-and-library.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/03-launcher-and-library.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
-<meta property="og:title" content="Start screen and avatar library — AVATAR LIVE">
-<meta property="og:description" content="Important session distinction: Your library&#x27;s source avatars stay on your PC. The remote session&#x27;s Send my avatar data switch requires separate consen…">
+<meta property="og:title" content="Avatar Library — AVATAR LIVE">
+<meta property="og:description" content="Register your avatar file, select the character you want to use and the starting scene.">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/03-launcher-and-library.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,81 +42,103 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html" aria-current="page">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="3-start-screen-and-avatar-library">3. Start screen and avatar library<a class="anchor" href="#3-start-screen-and-avatar-library" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="avatar-library-what-selecting-each-option-changes">avatar library: what selecting each option changes<a class="anchor" href="#avatar-library-what-selecting-each-option-changes" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/en/v45-menu.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/v45-menu.webp" srcset="../assets/shots/en/v45-menu-960.webp 960w, ../assets/shots/en/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="avatar interface after loading" loading="lazy" decoding="async"></a><figcaption>avatar interface after loading</figcaption></figure>
-<ul>
-<li>Import .vavatar registers a file exported using Exporter 1.0.6; it does not read your Unity project directly. Import .vrm opens supported VRM 0.x/1.0 files, although some unsupported shaders will not render.</li>
-<li>Recent / Folder / Imported change which library group is shown. They do not activate a camera or change tracking.</li>
-<li>Default / Last used / Ask every time decide which avatar loads automatically at startup. Ask every time is useful if different streams use different characters.</li>
-<li>Start webcam/microphone automatically can occupy devices immediately. If another app needs the camera, turn this startup behavior off and enable the device only when needed.</li>
-<li>Switching avatars restores that avatar's saved faces, poses and editor-camera presets; it does not silently copy every previous avatar profile to the new one.</li>
-<li>Multi avatar (Pro) adds multiple characters in the same studio rather than replacing the only character. Select the actor you intend to edit or drive.</li>
-</ul>
-<p>Important session distinction: Your library's source avatars stay on your PC. The <a href="09-output.html">remote session's</a> Send my avatar data switch requires separate consent and uses session-only encrypted temporary caching on participating PCs. It does not automatically install the other participant's original model into your permanent library.</p>
-<h2 id="start-screen">Start screen<a class="anchor" href="#start-screen" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/en/launcher.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/launcher.webp" srcset="../assets/shots/en/launcher-960.webp 960w, ../assets/shots/en/launcher.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" style="--image-width:1600px" alt="Start screen" loading="lazy" decoding="async"></a><figcaption>Start screen</figcaption></figure>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="03-launcher-and-library.html" aria-current="page">Avatar Library</a></li><li><a href="04-main-window.html">main screen</a></li><li><a href="05-avatar-menu.html">Avatar Menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Action</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="08-camera-effects.html">Camera effects</a></li><li><a href="09-output.html">Output</a></li><li><a href="09-session.html">Remote collaboration</a></li><li><a href="10-settings.html">setting</a></li><li><a href="11-pro-features.html">Posing and Facial Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="avatar-library">Avatar Library<a class="anchor" href="#avatar-library" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>Register your avatar file, select the character you want to use and the starting scene.</p>
+<h2 id="splash-screen">splash screen<a class="anchor" href="#splash-screen" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-launcher.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-launcher.webp" srcset="../assets/shots/ko/guide-launcher-960.webp 960w, ../assets/shots/ko/guide-launcher.webp 1920w" sizes="(max-width: 900px) 100vw, 860px" width="1920" height="1080" style="--image-width:1920px" alt="Avatar list and startup settings" loading="lazy" decoding="async"></a><figcaption>Avatar list and startup settings</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
-<th>Item</th>
-<th>What it does</th>
+<th>Button/Item</th>
+<th>What happens when I press it?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Open Avatar…</td>
-<td>Opens a <code>.vavatar</code> file. You can also drag and drop it onto the window.</td>
+<td>Open Avatar</td>
+<td><code>.vavatar</code>or<code>.vrm</code>Add files to the list. You can also drag and drop files into the window.</td>
 </tr>
 <tr>
-<td>Recent · Folder · Imported</td>
-<td>Shows avatars you opened recently, avatars in your avatar folder, and avatars you've imported.</td>
+<td>recent</td>
+<td>Shows recently used avatars.</td>
 </tr>
 <tr>
-<td>Set as default</td>
-<td>Makes Avatar Live start right away with this avatar.</td>
+<td>folder</td>
+<td>Shows files in the specified avatar folder.</td>
 </tr>
 <tr>
-<td>Camera · Microphone</td>
-<td>Choose the devices to turn on at start.</td>
+<td>brought</td>
+<td>Shows avatars imported into the library.</td>
 </tr>
 <tr>
-<td>Face · Hands</td>
-<td>Choose how tracking works.</td>
+<td>Avatar Thumbnail</td>
+<td>Choose a character to start with.</td>
 </tr>
 <tr>
-<td>Startup</td>
-<td>Choose from Ask every time · Last used · Default avatar.</td>
+<td>set as default</td>
+<td>Choose the character you will use when starting as the default avatar.</td>
 </tr>
 <tr>
-<td>▶ Start Avatar Live</td>
-<td>Starts with the avatar you chose.</td>
+<td>Preview</td>
+<td>Check the appearance of the selected character.</td>
+</tr>
+<tr>
+<td>scene list</td>
+<td>Choose a stage setup to start with.</td>
+</tr>
+<tr>
+<td>Start Avatar Live</td>
+<td>Opens the main screen with the selected avatar and scene.</td>
 </tr>
 </tbody>
 </table></div>
-<blockquote class="callout tip"><p>Hold Shift while launching to start safely without the webcam and microphone. Try this when a device problem keeps Avatar Live from starting smoothly.</p>
-</blockquote>
-<h2 id="switching-avatars-while-running">Switching avatars while running<a class="anchor" href="#switching-avatars-while-running" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/en/avatar-pop.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/avatar-pop.webp" srcset="../assets/shots/en/avatar-pop-960.webp 960w, ../assets/shots/en/avatar-pop.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" style="--image-width:1600px" alt="Avatar library" loading="lazy" decoding="async"></a><figcaption>Avatar library</figcaption></figure>
+<h2 id="choose-a-device-to-start-with">Choose a device to start with<a class="anchor" href="#choose-a-device-to-start-with" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-launcher-start.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-launcher-start.webp" width="735" height="970" style="--image-width:735px" alt="Camera, microphone and start button to start" loading="lazy" decoding="async"></a><figcaption>Camera, microphone and start button to start</figcaption></figure>
 <ul>
-<li>Click the avatar name at the top left to open the library.</li>
-<li>Click an avatar in the list to switch to it.</li>
-<li>Use Add an avatar file… to bring in a new avatar.</li>
-<li>A webcam and microphone you had turned on stay on after you switch.</li>
+<li>Camera: Turn on the switch on the right to use the webcam selected at startup.</li>
+<li>Microphone: When on, lip sync to the selected microphone at startup.</li>
+<li>Face/Hands: Choose how you want to track each part. After running it, you can change it on your device as well.</li>
 </ul>
-</div>
-<h2 id="opening-a-menu-for-the-first-time">Opening a menu for the first time<a class="anchor" href="#opening-a-menu-for-the-first-time" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>Menus are prepared while the avatar loads, reducing the delay when opening each menu for the first time. Initial loading may take a little longer. The top-left logo returns to avatar selection without restarting the program.</p>
-<h2 id="returning-to-the-start-screen">Returning to the start screen<a class="anchor" href="#returning-to-the-start-screen" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>Click the logo at the top left and choose Restart.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="02-avatar-exporter.html"><span>Previous</span>Exporting your avatar</a><a class="next" href="04-main-window.html"><span>Next</span>Main window</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#avatar-library-what-selecting-each-option-changes">avatar library: what selecting each option changes</a></li><li><a href="#start-screen">Start screen</a></li><li><a href="#switching-avatars-while-running">Switching avatars while running</a></li><li><a href="#opening-a-menu-for-the-first-time">Opening a menu for the first time</a></li><li><a href="#returning-to-the-start-screen">Returning to the start screen</a></li></ul></nav>
+<h2 id="avatar-to-use-for-next-launch">Avatar to use for next launch<a class="anchor" href="#avatar-to-use-for-next-launch" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Startup Settings</th>
+<th>Next time you run</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ask every time</td>
+<td>Choose your avatar directly from the start screen.</td>
+</tr>
+<tr>
+<td>last avatar</td>
+<td>You start with the avatar you used just before.</td>
+</tr>
+<tr>
+<td>default avatar</td>
+<td>Start with the default avatar.</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="change-while-running">Change while running<a class="anchor" href="#change-while-running" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-avatar-library.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-avatar-library.webp" width="895" height="800" style="--image-width:895px" alt="Avatar library opened from the main screen" loading="lazy" decoding="async"></a><figcaption>Avatar library opened from the main screen</figcaption></figure>
+<ol>
+<li>Tap your avatar name in the upper left.</li>
+<li>Select the avatar you want to replace from the list.</li>
+<li>New files are imported as additional avatar files.</li>
+</ol>
+<p>Use this list to replace an existing avatar. Adding an avatar to place more characters in a scene is<a href="08-scene.html#multiple-avatars-pro">studio</a>It is a separate feature of .</p>
+<h2 id="when-things-dont-start-well">When things don't start well<a class="anchor" href="#when-things-dont-start-well" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>If you run the program while holding down Shift, you can use Safe Startup, which does not turn on the webcam and microphone. After checking the device issue, try turning it on on your devices one by one.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="02-avatar-exporter.html"><span>Previous</span>Export avatar</a><a class="next" href="04-main-window.html"><span>Next</span>main screen</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#splash-screen">splash screen</a></li><li><a href="#choose-a-device-to-start-with">Choose a device to start with</a></li><li><a href="#avatar-to-use-for-next-launch">Avatar to use for next launch</a></li><li><a href="#change-while-running">Change while running</a></li><li><a href="#when-things-dont-start-well">When things don&#x27;t start well</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

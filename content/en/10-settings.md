@@ -1,95 +1,70 @@
-# 10. Settings
+# setting
 
-## performance, interface and update settings
+Set window, performance, language, shortcut keys, and program management.
 
-![Settings](img/v45-settings.png)
+## window
 
-| Setting | What it actually changes |
+![Window size and close button behavior](img/guide-settings-window.png)
+
+|item|What changes|
 |---|---|
-| App FPS cap | Higher refreshes view/physics more often at a CPU/GPU cost; lower saves power but makes motion less fluid. Broadcast output has its own FPS limit. |
-| Render quality/resolution | Higher improves hair and outline detail at a GPU cost. Scene-view window size and broadcast image resolution may be different. |
-| Shadows/post-effects | Disabling them reduces rendering load, but depth and film effects become flatter. Studio-owned effects can vary per saved scene. |
-| Window size / Always on top | Changes the Windows app window, not the pixel dimensions of the OBS Spout2/NDI sender. |
-| Close-button behavior | X can quit or minimise to tray; active output may continue when minimised. |
-| UI scaling | Makes labels and controls larger or smaller. At very high scaling, narrow windows need more scrolling. |
-| Quick-toolbar opacity | Higher makes idle camera controls easier to see; lower leaves more of the character unobstructed. |
-| Automatic update downloads | Downloads available updates for later installation. Even when off, startup can check and notify you of new versions. |
-| Send diagnostics | Used after the user chooses to send a report; include the steps leading to the issue rather than assuming all logs are uploaded automatically. |
+|window size|This is the size the program takes up on my monitor.|
+|full screen|The program fills the screen.|
+|always on top|It displays above other programs.|
+|Close window|Decide whether to quit or hide in the tray when you press X.|
 
-Hotkeys may work when the program is in the background. Select combinations that do not conflict with game controls. An expression can work while held or as press to toggle. F13–F24 and modifiers are supported; basic hotkeys can also be triggered by devices such as Stream Deck.
+The output resolution is[output image](09-output.md#output-image)It is determined separately.
 
-Remember the scope of each setting: pose/expressions/saved editor camera views are typically per-avatar; room/studio lights/broadcast studio cameras are saved per studio; a selected hardware microphone or webcam may need updating when Windows devices change.
+## performance
 
-## General · Window · Performance
+![Frame rate and picture quality settings](img/guide-settings-performance.png)
 
-<div class="shot" markdown="1">
+- FPS Limit: Increasing it will increase the smoothness and strain on your PC. Lowering it reduces power usage.
+- Image Quality: Higher increases the details and increases the strain on your graphics card.
+- Shadows: If you turn it off, it becomes lighter, but shadows in the hair, under the chin, etc. are reduced.
+- Post-processing: heavy effects[camera effects](08-camera-effects.md)Let's reduce them one by one.
 
-![Settings page](img/settings.png)
+## Language and screen size
 
-- Open the menu at start — Turn it off to start without the menu.
-- Window — Set the window size, full screen, always on top, and what the X button does.
-- Performance — Set the frame rate and image quality. Lowering them puts less load on your PC.
-- Shadows — The shadows that the hair and chin cast on the neck and chest. Turning them off puts less load on the GPU.
-- Language — 한국어 · English · 日本語 · 简体中文
-- UI — Change the theme, panel position and text size.
+![Language and UI display settings](img/guide-settings-ui.png)
 
-</div>
+Select Korean·English·日本語·简体中文 in Language. Change the theme, panel position, and font size in the UI. If the text is small, increase the UI scale.
 
-## Search menus and settings
+## shortcut key
 
-![Global menu search](img/settings-search.png)
+![Set shortcut keys to link actions and keys](img/guide-hotkeys.png)
 
-Use the magnifying glass at the top-right to search for AFK, Mirror, Language, Spout2, eye gaze, desk mode or hotkeys. A result opens the matching Menu, Devices, Motion, Studio, Output or Settings page and expands the relevant cards. AFK timing results navigate to Motion › Body rather than its old Settings location.
+1. Tap Add Shortcut.
+2. Choose the action you want to perform.
+3. Specifies the key combination to use.
+4. Choose whether to apply the expression/toggle while pressing it or keep it until you press it again.
 
-## Hotkeys
+Global shortcuts work even if the game is in front of you. Choose a key that does not overlap with keys frequently used in other apps.
 
-<div class="shot" markdown="1">
+## Settings Search
 
-![Hotkeys](img/hotkeys.png)
+In the magnifying glass at the top, enter the name of the setting you are looking for, such as AFK, Mirror, Spout2, or Language. Clicking on a result will take you to that menu and unfold the card.
 
-- Click + Add a hotkey, then choose an action and a key.
-- Hotkeys work even while you're in a game or Avatar Live is in the background.
-- Your key presses still reach other programs as usual.
-- For menu buttons and gestures, you can choose While held or Press to switch.
+## update
 
-</div>
+![Check for new version and install settings](img/guide-settings-updates.png)
 
-## License
-
-Check your current edition.
-
-| Button | What it does |
+|Button/Item|What to do|
 |---|---|
-| Enter another code | Switches to another license. |
-| Upgrade to Pro | Enter the upgrade you bought on BOOTH to switch to Pro. |
-| Check now | Checks the license again. |
+|check now|Check if there is a new version.|
+|Download|Receive the update file.|
+|automatic download|When turned on, you'll receive new updates early.|
+|Restart and install|Restart the program to apply the update.|
+|Install on exit|Apply updates received when you turn off the program.|
 
-## Diagnostics · About · Updates
+It checks once for new versions on startup. Even if you turn off automatic downloads, you may still see update notifications.
 
-| Item | What it does |
-|---|---|
-| Diagnostics › Send an error report | When something goes wrong, sends a description and the logs. It is sent only when you click it. |
-| About › Send a suggestion | Sends a feature you'd like to have or something you'd like us to fix. |
-| Notices | New notices are shown once at start-up, and you can look at past notices again in Settings. |
-| Open log folder | Lets you look at the log files. |
-| Check now · Download | Checks for a new version and downloads it. |
-| Restart to install | Updates right away. Your avatars and settings stay as they are. |
+## Licenses and Diagnostics
 
-> Avatar Live checks for updates once at every launch and shows a green indicator when a newer version is available. Turn on Settings › Updates › Auto-download updates to download automatically. Installation follows the separate Install when quitting option or Restart to install button. You can also get the new version from BOOTH; existing avatars and settings are preserved.
+![License Management and Diagnosis](img/guide-settings-diagnostics.png)
 
-## Automatic update checks and downloading
-
-![Update settings](img/settings-updates.png)
-
-Avatar Live checks for a newer release once whenever the app starts. Disabling automatic downloading does not disable the version check or update notification. From the Update settings, you can check or download manually and install after restarting or when quitting. Existing avatars and saved settings are preserved.
-
-## Send an error report
-
-![Diagnostics and error report](img/settings-diagnostics.png)
-
-If you experience a bug, open Settings › Diagnostics › Send error report. Include what you were doing when the problem occurred; the diagnostic data and reproduction steps are much more useful than a general message.
-
-## Sending problems and suggestions
-
-- If you run into a bug or problem while using Avatar Live, please let us know with Settings › Diagnostics › Send an error report. A line or two about what was happening helps us a great deal in finding the cause.
-- If there's a feature or improvement you need, please send it with Settings › About › Send a suggestion. We take your feedback into account when planning updates.
+- Upgrade to Pro: Enter the upgrade code you purchased.
+- Enter a different code: Change the license you want to use.
+- Send error report: Send a problem description and diagnostic data. The actual transfer takes place when the user chooses.
+- Send us improvements: Send us your desired features or complaints.
+- Open log folder: Opens the folder containing diagnostic logs.

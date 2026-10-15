@@ -1,95 +1,56 @@
-# 5. Avatar menu
+# Avatar Menu
 
-## what each avatar menu control really changes
+It uses features added by the avatar creator, such as clothing, hair, and facial expressions. Menu names and items vary depending on the model.
 
-![The avatar menu](img/v45-menu.png)
+## Change clothes and expressions
 
-| Control | Effect and how to use it |
+![Submenu with normal facial expression buttons](img/guide-avatar-menu.png)
+
+|operation|How it works|
 |---|---|
-| Toggle | First press enables a parameter, second disables it. Typical outfit and accessory visibility depends on the avatar creator's Animator wiring. |
-| Button (while pressed) | Activates only while held and returns after release. This is intentionally different from a toggle. |
-| Radial | Adjusts a continuous 0–100% value. It could control expression weight, clothing movement or another parameter defined by the avatar creator; halfway sends an intermediate value. |
-| Two/Four-Axis Puppet | Moves two or four parameter directions together. The centre is the neutral value; the extremes and axes depend on the avatar's original configuration. |
-| Sub Menu | Opens more controls belonging to the same avatar, not another actor. |
-| Favorite / Quick Action | Another way to trigger an existing action without navigating nested menus; it does not create a new parameter. |
-| Hold / Toggle hotkey | Hold works only while the key is down; Toggle remains active until the next press. Global hotkeys can work over another app, so avoid game conflicts. |
+|On/Off|Press once to turn on, press again to turn off. It is mainly used when changing clothes or decorations.|
+|button to press|Applies only while pressed. If you let go, it will come loose.|
+|circular slider|Move the knob to set a value between 0 and 100%. The color, size, and intensity of expression that are connected change.|
+|directional pad|Move the handle left, right, up and down to adjust various expressions or values.|
+|folder|Opens a submenu. Press Back to return to the parent menu.|
 
-Hand gestures can be different for each hand. Automatic finger input from a webcam, VMC gloves or SteamVR controllers can override a manually selected gesture. If it keeps switching back, check [finger tracking sources](06-devices.md) and [automatic expressions](07-motion.md).
+## Immediately retrieve frequently used items
 
-My Expressions and Pose library are saved per avatar. A static .anim applies fixed shape-key values; a multi-frame .anim changes them over time according to its animation/loop settings. Saved poses can independently allow or block Face, Head, Arms, Fingers and Torso tracking, enabling a fixed body pose with a moving face.
+![Quick action/shortcut/favorites menu opened by right-clicking the expression button](img/guide-menu-context.png)
 
-You use your avatar's Expressions menu from VRChat just as it is. Outfit and hair toggles, expression buttons, Radials and Puppets all work exactly as they do in VRChat.
+- Favorites: Find them quickly at the top of the menu.
+- Add to Quick Action: Creates an action button in the bottom toolbar.
+- Assign a shortcut: Execute the item using the keyboard.
 
-## Expressions menu
+As long as you press the shortcut key, it will be released when you release the key, and the toggle will remain until you press it again.
 
-<div class="shot" markdown="1">
+## Posture and Tracking
 
-![Avatar menu](img/menu.png)
+![Saved posture and my facial expression](img/guide-menu-poses.png)
 
-- Toggle — Switches on and off each time you press it.
-- Button — Stays on while you hold it.
-- Sub Menu — Opens a submenu. Use Back to return.
-- Radial · Puppet — Set a value with a slider or a pad.
+1. Tap the posture tile to apply it.
+2. Expand tracking settings with the camera icon next to Posture.
+3. Turn facial, head, arms, fingers, and torso on or off respectively.
 
-</div>
+The area that is turned on follows your movements, and the area that is turned off maintains the saved posture. For example, if you turn off the head and turn on the facial, only the facial expression moves while the head stays still.
 
-## Right-clicking an item
+## hand gestures
 
-<div class="shot" markdown="1">
+![Left and right hand gesture settings](img/guide-gestures.png)
 
-![Item right-click menu](img/menu-ctx.png)
+Choose between left and right hand fist, scissors, open fist, etc. If an expression for each hand shape is linked to the avatar, the expression changes as well. When you turn on gestures with webcam hand shapes, they use real hand shapes.
 
-- Add to Quick Actions — Places it as a button on the bottom toolbar.
-- Set hotkey… — Lets you turn it on with a single key, even while you're in a game.
-- Favorite — Use it right away from the top of the menu.
+## my expression
 
-</div>
+You can adjust and save the face shape by creating a new expression, or`.anim`Load the facial expression file. Apply the created facial expression as a tile and right-click to connect it to a quick action or shortcut key.[Making facial expressions](11-pro-features.md#my-expressions)Check the order.
 
-## Hand gestures
+## Hierarchy and ShapeKeys
 
-<div class="shot" markdown="1">
+- Hierarchy: Shows the avatar's parts as a tree. Turn parts on and off with checks.
+- Eye Icon: Hide the part from the screen while keeping it functional.
+- Mesh: Search for parts that draw outlines.
+- Shape Key: Directly adjust the amount of deformation of the face or body. Manually fixed values ​​may override tracking.
 
-![Hand gestures](img/gestures.png)
+## revert
 
-- Choose left-hand and right-hand gestures to show the avatar's gesture expressions.
-- Turn on Gestures from the webcam's hands, and your own hand shapes become the gestures.
-
-</div>
-
-## Card order, saved poses and My expressions
-
-![Saved poses in the Avatar Menu](img/menu-poses.png)
-
-Click headings for Poses, My expressions and Hand gestures to expand their cards. Drag card headings to reorder the cards, and drag individual saved pose or expression tiles to rearrange them.
-
-![My expressions in the Avatar Menu](img/menu-myexpr.png)
-
-- Click a pose to apply or remove it. The camera icon beside it expands its per-pose tracking switches.
-- Facial, head, arms, fingers and body tracking can be enabled independently. For example, you can hold the head still while tracking facial expressions.
-- The built-in Sitting pose holds the hips and legs while initially allowing all five tracking parts.
-- Right-click tiles for available actions such as hotkeys, duplication or Quick Actions.
-- Create expression and Import .anim are available in both Studio and Avatar Menu. Multi-frame clips follow their original loop setting.
-
-## Reset to defaults
-
-Click Avatar parameters › Reset to defaults to return the menu values to the avatar's defaults. Values that are saved, such as outfit state, carry over to the next launch.
-
-## Quick Actions
-
-Turn actions you use often into buttons or keys. You can add menu items, gestures, camera views, lighting presets and more, and right-click a button to change its name and position.
-
-## Hierarchy · Meshes · Shape keys
-
-View your avatar's objects as a tree, just like in Unity, and change them right there.
-
-- Hierarchy — Shows the avatar's objects as a tree. Use the checkboxes to turn them on and off. The eye icon hides an object from view while leaving it on.
-- Meshes — Shows every mesh in one list. Use search to find one quickly.
-- Click a mesh to adjust its shape keys one by one in the side panel. Values you set yourself take priority over face tracking and avatar animations.
-- Reset all at the top returns every mesh to the avatar's original state, and Collapse all closes the tree.
-
-## Reset
-
-| | Reset | Reset everything |
-|---|---|---|
-| What it does | Returns tracking, hand poses and PhysBones to their initial state | All of that, plus outfits · position · camera, back to their initial state |
-| How | ⟲ at the top | Right-click ⟲, or Settings › General |
+If you press Avatar Parameters → Revert to Default, menu values ​​such as clothing and facial expressions will return to the avatar's default values.

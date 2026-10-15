@@ -64,7 +64,7 @@ Features marked "experimental" are features that are expected to work properly b
 ## Article 10 (Warranty)
 
 1. The Software is provided "as is." The Company does not warrant that the Software will work on every PC, avatar, shader or third-party program.
-2. Before purchasing, please check the requirements in [Getting started](01-getting-started.md) and the [supported features](12-troubleshooting.md#supported-features).
+2. Before purchasing, please check the requirements in [Getting started](01-getting-started.md) and the [supported features](12-troubleshooting.md#supported-scope).
 
 ## Article 11 (Scope of Liability)
 

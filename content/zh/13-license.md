@@ -1,82 +1,97 @@
-# 13. 版本 · 许可证 · 声明
+# 版本与许可
 
-## 版本与价格
+Avatar Live 的使用权、外部程序的使用权、角色·道具的使用权各不相同。
 
-| | Basic | Pro |
+## 版本
+
+| 项目 | Basic | Pro |
 |---|---|---|
-| 价格（BOOTH） | 1,990 日元 | 3,980 日元 |
-| 使用范围 | 个人使用（包括与朋友之间的非公开 Discord 共享） | 直播 · 公开发布视频 · 商业用途 |
-| 角色 · 追踪 · 菜单 · 灯光 · 效果 | ✅ | ✅ |
-| 我的表情 · 自动表情 · 层级 · 形态键 · 照片 | ✅ | ✅ |
-| Spout2 · NDI · 虚拟摄像头 · 屏幕共享 | ✅ | ✅ |
-| 多工作室摄像机 · 远程会话 · 每摄像机 Spout2 · 录制 | — | ✅ |
-| 最高输出 | 1080p | 4K |
+| 使用范围 | 个人·非公开使用 | 直播·视频公开·商业使用 |
+| 价格 | 1,990日元 | 3,980日元 |
+| 追踪·角色菜单 | 支持 | 支持 |
+| OBS·相机输出 | 支持 | 支持 |
+| 基本画面效果 | 支持 | 支持 |
+| 照片保存 | 支持 | 支持 |
+| 最大输出 | 1080p | 4K |
 | 水印 | 有 | 无 |
-| 摆姿势 · 姿势库 · 物体 · 屏幕共享更多来源 | — | ✅ |
+| 姿势·动作 | — | 支持 |
+| 道具·额外共享素材 | — | 支持 |
+| 多角色·多相机 | — | 支持 |
+| 远程会话·MP4录制 | — | 支持 |
+| 额外画面效果 | — | 支持 |
 
-价格以 BOOTH 商品页面上的标示为准。
+价格和销售条件以 BOOTH 商品页面的显示为准。
 
-## 升级与试用版
+OBS·相机输出包含 Spout2·NDI·虚拟摄像头。基本画面效果为后期处理，额外画面效果包括后处理效果和环境光遮蔽。
 
-- Basic → Pro：在 BOOTH 购买 升级（1,990 日元），并在使用 Basic 的电脑上于 设置 › 许可证 › 升级到 Pro 中输入，即可升级为 Pro。用于升级的购买会与该许可证绑定在一起。
-- 如果在试用期间购买了，请在 设置 › 许可证 › 输入购买的代码 中输入。
-- 试用期结束后，会显示输入界面。输入购买的许可证即可继续使用。
+## 激活与升级
 
-## 许可证使用条件（摘要）
+- 一个许可供 1 人在 1 台电脑上使用。
+- 激活和许可确认需要网络连接。
+- 可以直接迁移到另一台电脑一次，之后的迁移请通过咨询处理。
+- Basic → Pro：购买升级后，进入设置 → 许可证 → 输入以升级到 Pro。
+- 体验中购买：在购买的代码中输入许可证。
 
-- 一人一台设备。
-- 你可以自行将许可证转移到其他电脑 一次。之后如遇不得已的情况，可以通过咨询由我们协助，但可能不太容易，因此 请慎重选择首次激活的电脑。
-- 激活和许可证确认需要连接互联网。
-- 程序和许可证仅限购买者本人使用。不允许再分发、销售、出租、共享、修改、逆向工程或规避许可证确认。
-
-详细条件以 [使用条款](legal-terms.md) 为准。
-
-## 实验性功能
-
-Ultraleap、OSC、VMC 输出、舌头 · 脸颊的摄像头检测等在应用中标为 实验性 的功能，预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试。摄像头（含全身 · 手指关节）、iPhone、VMC 输入已用实际设备确认。
-
-## 自己制作的文件
-
-- 用 Exporter 制作的 `.vavatar` · `.vprop` 文件归用户所有。
-- 文件中角色、服装、着色器的权利归各自的制作者所有。共享或用于直播时，请确认原制作者的条款。
-
-## 独立性声明
-
-Avatar Live 和 Avatar Exporter 是由 Curious Bobby Co. 独立开发的软件。
-
-- 不使用或包含 VRChat SDK 的代码，也不分发 VRChat SDK。
-- 不包含或分发 NDMF、Modular Avatar、VRCFury 等角色制作工具。这些工具是用户自行安装到自己的项目中，并在用户环境中运行的。
-- 不与 VRChat 服务器或账号通信。
-- 并非与 VRChat Inc. 或各工具开发者合作或经其认可的产品。
-
-## 开源声明
-
-所包含的开源组件遵循各组件的许可证。相关声明随程序和 Exporter 软件包一同提供。Avatar Exporter 的部分代码是基于以 MIT 许可证公开的开源代码编写的。
+不允许重新分发、出租、共享、修改程序或许可代码，或绕过保护措施。详细内容请遵循[使用条款](legal-terms.md)。
 
 ## NDI
 
-NDI® 是 Vizrt NDI AB 的注册商标。[NDI 官方网站](https://ndi.video/)。
+NDI®是Vizrt NDI AB的注册商标。[NDI 官方网站](https://ndi.video/)
 
-随附的 NDI Runtime 适用 NDI SDK 许可，完整声明位于 `AvatarLive_Data/Plugins/x86_64/Processing.NDI.Lib.Licenses.txt`。[SDK 许可条件](https://docs.ndi.video/all/developing-with-ndi/sdk/licensing)。
+用于网络视频传输的外部技术。
 
-[NDI Tools](https://ndi.video/tools/) 和 OBS 接收插件 [DistroAV](https://github.com/DistroAV/DistroAV) 需要单独获取，并遵守各自的条款。
+- Avatar Live中包含的NDI Runtime遵循NDI SDK许可证。
+- 许可证全文位于程序的 `AvatarLive_Data/Plugins/x86_64/Processing.NDI.Lib.Licenses.txt` 中。
+- [NDI 工具](https://ndi.video/tools/)是需要单独下载的程序，不包含在 Avatar Live 中。
+- 在 OBS 接收的 [DistroAV](https://github.com/DistroAV/DistroAV) 是独立的项目，并遵循该项目的许可证。
+
+[NDI SDK 使用条件](https://docs.ndi.video/all/developing-with-ndi/sdk/licensing) · [NDI 连接方法](09-output.md#ndi)
 
 ## Spout2
 
-Avatar Live 使用的 [KlakSpout](https://github.com/keijiro/KlakSpout) 适用 Unlicense，请参阅随附声明。单独安装的 [OBS Spout2 插件](https://github.com/Off-World-Live/obs-spout2-plugin) 遵守其项目的 GPL v2 许可。
+在同一台 Windows PC 上用于程序之间传输视频的外部技术。
+
+- Avatar Live 与 Spout2 集成使用的 [KlakSpout](https://github.com/keijiro/KlakSpout) 遵循 Unlicense。可以在发布版的第三方声明中查看全文。
+- [OBS Spout2 Capture 插件](https://github.com/Off-World-Live/obs-spout2-plugin) 是单独的安装程序，并遵循该项目的 GPL v2 条件。
+- 购买 Avatar Live 并不转让 OBS 插件的版权或其他权利。
+
+[Spout2 连接方法](09-output.md#spout2)
 
 ## VB-CABLE
 
-[VB-CABLE](https://vb-audio.com/Cable/) 是 VB-Audio Software 提供的独立 Donationware 虚拟音频驱动。使用、分发及所需许可应遵守 [VB-Audio 的条款](https://vb-audio.com/Services/licensing.htm)。购买 Avatar Live 或升级 Pro 并不会代为授予 VB-CABLE 的独立许可。
+由 [VB-Audio Software](https://vb-audio.com/Cable/) 制作的独立虚拟音频驱动程序。
 
-## 角色和道具
+- VB-CABLE 是捐赠软件，其使用、分发和许可条件由 VB-Audio 决定。
+- 安装按钮是安装 VB-Audio 原始驱动程序的路径。这不是 Avatar Live 开发的驱动程序。
+- 所需的许可证和赞助请查看 [VB-Audio 官方许可证指南](https://vb-audio.com/Services/licensing.htm)。
+- Avatar Live 的购买或 Pro 升级并不替代授予 VB-CABLE 的单独许可。
 
-角色、服装、纹理、着色器、姿势和道具的权利归各原作者所有。用户负责确认直播、商业使用、修改、远程传输、临时存储和再分发是否获准。
+## 角色与道具
 
-Avatar Live 不会代为授予第三方内容的使用权。对于用户未经授权使用、传输或分发的内容及由此产生的权利争议，公司不承担责任。导出文件、购买 Pro 或加密传输均不能替代原作者的许可。
-## 商标
+角色、服装、纹理、着色器、姿势、3D道具等内容的权利归各原作者所有。
 
-VRChat 是 VRChat Inc. 的商标。其他产品名称为各自所有者的商标，仅为说明兼容性而提及。
+在用于广播时，请确认以下事项以及各原制作人的使用规定后再使用。
+
+| 考虑事项 | 需确认的协议 |
+|---|---|
+| 直播·视频公开 | 请确认原作者是否允许用于直播或商业用途。 |
+| 文件修改·转换 | 请确认原作者的改造·转换条件。 |
+| 远程会话传输 | 确认是否允许将数据传输到其他电脑并进行临时保存。 |
+| 提供给他人 | 确认是否允许再分发或提供给第三方。 |
+
+在使用角色和道具之前，请确认各原作者的权利和使用规定。获得必要的使用许可并遵守规定的责任由使用者承担。
+
+购买或使用 Avatar Live 的功能并不代表获取内容的使用许可。Avatar Live 及其开发者不对用户使用、修改、传输或分发内容所引发的权利侵害或争议承担责任。
+
+## 开源与独立性
+
+所包含的开源组件遵循各自的许可证。请查看附带程序和导出器的说明。
+
+Avatar Live 和 Avatar Exporter 是 Curious Bobby Co. 的独立产品。不会分发 VRChat SDK、NDMF、Modular Avatar 或 VRCFury，也不是各开发公司的官方产品或获授权产品。不访问 VRChat 账户和服务器。
+
+## 实验性功能
+
+应用中实验性显示的功能可能因设备和环境不同而表现不同。购买前请确认所需设备及[支持范围](12-troubleshooting.md#支持范围)。
 
 ## 相关文档
 

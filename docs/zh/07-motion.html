@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>动作 — AVATAR LIVE</title>
-<meta name="description" content="iPhone 显示连接不代表每一帧都有新的人脸追踪数据。如果脸冻结，请检查原始追踪信号、重复数据、AFK 时间和正面校准。保存姿势里的面部、头部、手臂、手指、躯干五项追踪权限独立保存。例如头部关闭、面部开启时，头的方向保持姿势，表情继续实时移动。">
+<meta name="description" content="决定我的表情和动作在角色上反映得有多大、多流畅。设置会按每个角色保存。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/07-motion.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/07-motion.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/07-motion.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/07-motion.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/07-motion.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="动作 — AVATAR LIVE">
-<meta property="og:description" content="iPhone 显示连接不代表每一帧都有新的人脸追踪数据。如果脸冻结，请检查原始追踪信号、重复数据、AFK 时间和正面校准。保存姿势里的面部、头部、手臂、手指、躯干五项追踪权限独立保存。例如头部关闭、面部开启时，头的方向保持姿势，表情继续实时移动。">
+<meta property="og:description" content="决定我的表情和动作在角色上反映得有多大、多流畅。设置会按每个角色保存。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/07-motion.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,187 +42,208 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html" aria-current="page">动作</a></li><li><a href="08-scene.html">工作室</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="7-动作">7. 动作<a class="anchor" href="#7-动作" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="动作滑块究竟改变什么">动作滑块究竟改变什么<a class="anchor" href="#动作滑块究竟改变什么" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/zh/v45-motion.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/v45-motion.webp" srcset="../assets/shots/zh/v45-motion-960.webp 960w, ../assets/shots/zh/v45-motion.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="动作页面" loading="lazy" decoding="async"></a><figcaption>动作页面</figcaption></figure>
-<div class="table-wrap" tabindex="0"><table>
-<thead>
-<tr>
-<th>选项</th>
-<th>减小／关闭</th>
-<th>增大／开启</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>表情敏感度</td>
-<td>细微表情不明显、噪声较少</td>
-<td>小变化也明显，但有时过度夸张</td>
-</tr>
-<tr>
-<td>表情平滑</td>
-<td>眼睛和嘴反应迅速但可能抖动</td>
-<td>动作更柔和，但眨眼和说话可能延迟</td>
-</tr>
-<tr>
-<td>口型强度</td>
-<td>张嘴幅度减小</td>
-<td>张嘴幅度变大，某些模型可能不自然</td>
-</tr>
-<tr>
-<td>眨眼敏感度／自动眨眼</td>
-<td>主要按真实输入</td>
-<td>更容易触发眨眼或在待机时自动眨眼</td>
-</tr>
-<tr>
-<td>摄像头手臂动态／旧版</td>
-<td>旧版保留更接近 1.1.6 的方式</td>
-<td>动态采用新的手臂/距离估算，效果取决于摄像头环境</td>
-</tr>
-<tr>
-<td>手部平滑</td>
-<td>反应快但追踪噪声较大</td>
-<td>减少细小抖动，但快速动作有跟随延迟</td>
-</tr>
-<tr>
-<td>手部深度估算（实验）</td>
-<td>以较稳定的平面动作为主</td>
-<td>估算手向前伸出的距离，但可能扭曲手腕或手臂</td>
-</tr>
-<tr>
-<td>进入 AFK 前等待</td>
-<td>短暂失去追踪也较快待机</td>
-<td>忽略短时丢帧，较久失踪才进入 AFK</td>
-</tr>
-<tr>
-<td>AFK 进入/恢复时长</td>
-<td>更快切换表情与动作</td>
-<td>过渡更柔和，但恢复较慢</td>
-</tr>
-<tr>
-<td>待机呼吸/眨眼</td>
-<td>静态休息</td>
-<td>没有实时输入时也保留小幅自然动作</td>
-</tr>
-</tbody>
-</table></div>
-<figure><a class="zoomable" href="../assets/shots/zh/v45-motion-expanded.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/v45-motion-expanded.webp" srcset="../assets/shots/zh/v45-motion-expanded-960.webp 960w, ../assets/shots/zh/v45-motion-expanded.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" style="--image-width:1200px" alt="动作高级选项" loading="lazy" decoding="async"></a><figcaption>动作高级选项</figcaption></figure>
-<p>iPhone 显示连接不代表每一帧都有新的人脸追踪数据。如果脸冻结，请检查原始追踪信号、重复数据、AFK 时间和正面校准。保存姿势里的面部、头部、手臂、手指、躯干五项追踪权限独立保存。例如头部关闭、面部开启时，头的方向保持姿势，表情继续实时移动。</p>
-<p>视线对象选摄像机、特定人物或关闭，决定眼睛/头部看向哪里。提高视线强度会更积极地跟随目标，降低则保留更多原本追踪动作。实验性的 Look At IK 可能默认关闭；如果头部转动异常，应关闭并重新检查。</p>
-<p>设定面部、身体和手的运动方式。设置按角色分别保存。</p>
-<h2 id="面部追踪">面部追踪<a class="anchor" href="#面部追踪" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/zh/motion-face.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/motion-face.webp" width="960" height="900" style="--image-width:960px" alt="动作页面" loading="lazy" decoding="async"></a><figcaption>动作页面</figcaption></figure>
-<ul>
-<li>镜像 — 像照镜子一样朝同一侧移动。</li>
-<li>手臂 · 手部 · 手指 — 用摄像头驱动各个部位。</li>
-<li>手势 → 表情 — 角色的表情会随手形变化。</li>
-<li>面部追踪 — 开启或关闭面部表情追踪。</li>
-</ul>
-</div>
-<h2 id="表情的驱动方式">表情的驱动方式<a class="anchor" href="#表情的驱动方式" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>面部表情 完全按照角色中已有的设置来驱动。 Avatar Live 不会为角色新建或转换表情。</p>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">角色库</a></li><li><a href="04-main-window.html">主屏幕</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html" aria-current="page">动作</a></li><li><a href="08-scene.html">工作室</a></li><li><a href="08-camera-effects.html">摄像机效果</a></li><li><a href="09-output.html">输出</a></li><li><a href="09-session.html">远程联播</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">姿势与表情</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="动作">动作<a class="anchor" href="#动作" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>决定我的表情和动作在角色上反映得有多大、多流畅。设置会按每个角色保存。</p>
+<h2 id="脸">脸<a class="anchor" href="#脸" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-motion-face.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-face.webp" width="550" height="938" style="--image-width:550px" alt="面部追踪与表情调节" loading="lazy" decoding="async"></a><figcaption>面部追踪与表情调节</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
-<th>角色设置</th>
-<th>驱动方式</th>
+<th>项目</th>
+<th>调整时</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>有 VRCFaceTracking（VRCFT） 参数</td>
-<td>通过角色的 VRCFT 设置驱动。</td>
+<td>面部追踪</td>
+<td>开启后会反映我的表情。关闭后不使用面部输入。</td>
 </tr>
 <tr>
-<td>有 52 个 ARKit 形态键（Perfect Sync）</td>
-<td>直接驱动这些形态键。</td>
+<td>镜子</td>
+<td>像镜子一样反映左右移动。</td>
 </tr>
 <tr>
-<td>两者都没有</td>
-<td>以眨眼、口型同步等角色自带的基本表情为主，细腻的表情可能无法呈现。</td>
+<td>手势 → 表情</td>
+<td>使用与手势相连的角色表情。</td>
+</tr>
+<tr>
+<td>表情敏感度</td>
+<td>提高会把小表情也表现得很大，降低则显得平静。</td>
+</tr>
+<tr>
+<td>柔软度</td>
+<td>提高会减少抖动，降低会快速响应。</td>
 </tr>
 </tbody>
 </table></div>
+<h3 id="自动面部设置">自动面部设置<a class="anchor" href="#自动面部设置" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-face-calibration.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-face-calibration.webp" srcset="../assets/shots/ko/guide-face-calibration-960.webp 960w, ../assets/shots/ko/guide-face-calibration.webp 1420w" sizes="(max-width: 900px) 100vw, 860px" width="1420" height="1080" style="--image-width:1420px" alt="自动面部设置指南" loading="lazy" decoding="async"></a><figcaption>自动面部设置指南</figcaption></figure>
+<ol>
+<li>点击自动人脸设置。</li>
+<li>按照指引看向正面或做表情。</li>
+<li>按下测量并进入下一步。</li>
+<li>最后点击应用。</li>
+</ol>
+<h3 id="面部调整">面部调整<a class="anchor" href="#面部调整" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-face-adjust.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-face-adjust.webp" width="550" height="759" style="--image-width:550px" alt="单独调整眼睛·眉毛·嘴巴的面部调节" loading="lazy" decoding="async"></a><figcaption>单独调整眼睛·眉毛·嘴巴的面部调节</figcaption></figure>
 <ul>
-<li>即使摄像头或 iPhone 以 52 个表情为单位读取，角色中没有对应参数或形态键的表情也不会显示。</li>
-<li>如果角色只有部分形态键，则只驱动已有的部分。</li>
+<li>眼睛·眉毛·嘴巴·脸颊：分别调整每个表情的移动幅度。</li>
+<li>左右一起编辑：打开后会把两边改为相同的值。</li>
+<li>平滑：减少小的表情抖动。太高的话反应会变慢。</li>
 </ul>
-<blockquote class="callout tip"><p>今后计划改进为：识别全部 52 个表情并对应到角色上，或者让没有这些设置的角色也能直接绑定到面部。时间可能会有变动。</p>
-</blockquote>
-<h2 id="自动面部设置">自动面部设置<a class="anchor" href="#自动面部设置" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/zh/facecal.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/facecal.webp" srcset="../assets/shots/zh/facecal-960.webp 960w, ../assets/shots/zh/facecal.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" style="--image-width:1600px" alt="自动面部设置" loading="lazy" decoding="async"></a><figcaption>自动面部设置</figcaption></figure>
-<p>点击 自动面部设置 按钮即开始校准。请按照画面引导做出表情，然后点击 测量。最后点击 应用，表情就会按照你的面部进行调整。</p>
-<blockquote class="callout tip"><p>第一步中注视的位置会成为角色的正面视线。请像直播时一样看着屏幕。</p>
-</blockquote>
-<h2 id="面部调整">面部调整<a class="anchor" href="#面部调整" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/zh/face-adjust.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/face-adjust.webp" width="960" height="900" style="--image-width:960px" alt="面部调整" loading="lazy" decoding="async"></a><figcaption>面部调整</figcaption></figure>
+<h2 id="眼睛与视线">眼睛与视线<a class="anchor" href="#眼睛与视线" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-motion-eyes.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-eyes.webp" width="550" height="983" style="--image-width:550px" alt="眨眼与视线设置" loading="lazy" decoding="async"></a><figcaption>眨眼与视线设置</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单独眨眼</td>
+<td>左眼和右眼分别闭合。用于眨眼或眨一只眼。</td>
+</tr>
+<tr>
+<td>眨眼同步</td>
+<td>双眼同时闭合。</td>
+</tr>
+<tr>
+<td>自动眨眼</td>
+<td>即使没有输入，也会定期眨眼。</td>
+</tr>
+<tr>
+<td>眼睛视线追踪</td>
+<td>反映我眼球的方向。</td>
+</tr>
+<tr>
+<td>镜头视角</td>
+<td>使虚拟人物的眼球朝向摄像机。</td>
+</tr>
+<tr>
+<td>视线目标</td>
+<td>选择要看的对象，如摄像机、特定虚拟人物等。</td>
+</tr>
+</tbody>
+</table></div>
+<p>头部追踪、面部追踪和镜头视角可分别设置。即使头部固定，眼球也可以看向摄像机。</p>
+<h2 id="嘴巴与口型同步">嘴巴与口型同步<a class="anchor" href="#嘴巴与口型同步" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-motion-mouth.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-mouth.webp" width="550" height="786" style="--image-width:550px" alt="麦克风口型同步与嘴巴设置" loading="lazy" decoding="async"></a><figcaption>麦克风口型同步与嘴巴设置</figcaption></figure>
 <ul>
-<li>逐项调整眼睛、眉毛、嘴、脸颊表情的幅度。</li>
-<li>将滑块向右拖动，该表情的幅度就会更大。</li>
-<li>开启 左右一起编辑 后，两侧会一起变化。</li>
-<li>开启 平滑 后，可减少表情抖动。</li>
+<li>口型同步强度：调高会张大嘴巴。</li>
+<li>自动音量：根据声音大小调整嘴巴动作。</li>
+<li>声音矫正：发指示的元音以匹配我的声音。</li>
+<li>舌头与脸颊鼓起：通过按钮或快捷键应用该表情。模型需要有对应表情才能显示。</li>
 </ul>
-</div>
-<h2 id="眨眼--嘴巴">眨眼 · 嘴巴<a class="anchor" href="#眨眼--嘴巴" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/zh/motion-mouth.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/motion-mouth.webp" width="960" height="900" style="--image-width:960px" alt="眨眼与嘴巴" loading="lazy" decoding="async"></a><figcaption>眨眼与嘴巴</figcaption></figure>
-<ul>
-<li>眨眼模式 — 独立 便于眨单眼，同步 则让双眼一起闭合。</li>
-<li>眼睛视线追踪 — 眼球会跟随你的视线。</li>
-<li>自动电平 — 根据声音大小自动调整嘴巴张合的幅度。</li>
-<li>语音校准 — 点击元音按钮并发音，即可匹配你的声音。</li>
-<li>舌头 · 鼓腮 — 用按钮或快捷键伸出舌头或鼓起脸颊。</li>
-</ul>
-</div>
-<h2 id="目光与看向镜头">目光与看向镜头<a class="anchor" href="#目光与看向镜头" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/zh/motion-gaze.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/motion-gaze.webp" width="960" height="900" style="--image-width:960px" alt="目光追踪选项" loading="lazy" decoding="async"></a><figcaption>目光追踪选项</figcaption></figure>
-<p>在动作 › 面部中调整视线追踪。启用眼睛看镜头后，角色会看向镜头。即使某个姿势的面部追踪为OFF，此功能也可以独立生效。头部追踪另有独立开关；看向镜头不会自动恢复其他面部表情。</p>
 <h2 id="身体">身体<a class="anchor" href="#身体" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/zh/motion-body.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/motion-body.webp" width="960" height="900" style="--image-width:960px" alt="身体动作" loading="lazy" decoding="async"></a><figcaption>身体动作</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-motion-body.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-body.webp" width="550" height="983" style="--image-width:550px" alt="头部与身体动作设置" loading="lazy" decoding="async"></a><figcaption>头部与身体动作设置</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>调整后效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>头部动作</td>
+<td>选择小·自然·大中动作的大小。</td>
+</tr>
+<tr>
+<td>身体跟随</td>
+<td>转头时身体也会跟着转。</td>
+</tr>
+<tr>
+<td>自然动作</td>
+<td>即使静止，也会增加小的待机动作。</td>
+</tr>
+<tr>
+<td>呼吸</td>
+<td>增加像呼吸一样的小身体动作。</td>
+</tr>
+<tr>
+<td>上身·全身</td>
+<td>反映设备接收到的身体动作。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="追踪丢失时">追踪丢失时<a class="anchor" href="#追踪丢失时" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-motion-afk.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-afk.webp" width="550" height="579" style="--image-width:550px" alt="追踪丢失与AFK切换时间" loading="lazy" decoding="async"></a><figcaption>追踪丢失与AFK切换时间</figcaption></figure>
+<p>AFK是在脸部和身体追踪都丢失时使用的待机状态。在菜单 → 基本·AFK姿势中设置时间。</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>延长会怎么样</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>等待时间</td>
+<td>即使输入暂时中断，也会保持姿势并多等待。</td>
+</tr>
+<tr>
+<td>切换时间</td>
+<td>缓慢过渡到待机姿势。</td>
+</tr>
+<tr>
+<td>恢复时间</td>
+<td>输入恢复后缓慢恢复正常动作。</td>
+</tr>
+</tbody>
+</table></div>
+<p>待机时使用的姿势和表情可在<a href="11-pro-features.html#基本姿势和待机姿势">基本姿势与待机姿势</a>中选择。</p>
+<h2 id="手臂与手">手臂与手<a class="anchor" href="#手臂与手" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-motion-hands.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-hands.webp" width="550" height="983" style="--image-width:550px" alt="手臂·手追踪及桌面动作" loading="lazy" decoding="async"></a><figcaption>手臂·手追踪及桌面动作</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>调节效果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>手臂·手柔和度</td>
+<td>提高后抖动减少，快速手势会延迟跟随。</td>
+</tr>
+<tr>
+<td>动态方式</td>
+<td>使用能够反映手伸展距离变化的手臂方式。</td>
+</tr>
+<tr>
+<td>以前方式</td>
+<td>可以与现有手臂动作方式进行比较。</td>
+</tr>
+<tr>
+<td>手部深度估计</td>
+<td>用摄像头估计前后距离。属于实验性功能，如果手臂扭曲，请关闭。</td>
+</tr>
+<tr>
+<td>手部丢失返回</td>
+<td>当手不在视线中时，调整回到默认姿势的速度。</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="桌面动作">桌面动作<a class="anchor" href="#桌面动作" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>当手不在摄像头视野中时，按照键盘或鼠标的使用来移动虚拟角色的手。</p>
 <ul>
-<li>头部动作 — 从 轻微 · 自然 · 夸张 中选择。</li>
-<li>身体跟随 — 转动头部时，身体也会自然地跟随。</li>
-<li>自然的身体动作 · 呼吸 — 即使静止不动，也会像活着一样动起来。</li>
-<li>上半身 — 开启摄像头全身后，会根据肩部动作让上半身倾斜和转动。在看不到腿部的桌前也可以使用。</li>
-<li>全身 — 用摄像头或 VMC 跟随躯干、腿部以及坐下 · 站立。请参考 <a href="06-devices.html#全身--手指关节摄像头">设备 › 全身 · 手指关节</a>。</li>
+<li>手部默认姿势：调整桌面高度、手间距和手腕角度。</li>
+<li>键盘反应：打字时手指和手的移动幅度。</li>
+<li>鼠标反应：移动鼠标时手跟随的幅度。</li>
+<li>当手重新出现在摄像头前时，返回追踪状态。</li>
 </ul>
-</div>
-<h2 id="afk过渡时间与追踪丢失">AFK过渡时间与追踪丢失<a class="anchor" href="#afk过渡时间与追踪丢失" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/zh/motion-afk.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/motion-afk.webp" width="960" height="900" style="--image-width:960px" alt="动作页面的AFK过渡时间" loading="lazy" decoding="async"></a><figcaption>动作页面的AFK过渡时间</figcaption></figure>
-<p>AFK时间已从设置页面移至动作 › 身体。每个角色均可通过滑块或直接输入数字分别设置：</p>
-<ul>
-<li>追踪丢失等待：追踪暂时中断后，进入AFK前等待的时间</li>
-<li>进入AFK过渡：平滑切换到待机姿势的时间</li>
-<li>追踪恢复：重新收到追踪信号后恢复正常动作的时间</li>
-</ul>
-<p>原有的角色独立数值会保留。默认姿势、追踪丢失时的待机姿势和待机表情分别设置，参见 <a href="11-pro-features.html">姿势编辑</a>。</p>
-<h2 id="摄像头手部深度估算实验性">摄像头手部深度估算（实验性）<a class="anchor" href="#摄像头手部深度估算实验性" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/zh/motion-hand-depth.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/motion-hand-depth.webp" width="960" height="900" style="--image-width:960px" alt="实验性的摄像头伸手选项" loading="lazy" decoding="async"></a><figcaption>实验性的摄像头伸手选项</figcaption></figure>
-<p>该功能尝试估算双手向摄像头伸出的距离。根据摄像头环境，手臂或手腕可能扭曲、抖动。普通使用建议保持OFF；追踪不稳定时请先关闭此选项，并检查手部防抖设置。</p>
-<h2 id="手--桌面">手 · 桌面<a class="anchor" href="#手--桌面" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/zh/motion-desk.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/motion-desk.webp" width="960" height="900" style="--image-width:960px" alt="手与桌面" loading="lazy" decoding="async"></a><figcaption>手与桌面</figcaption></figure>
-<ul>
-<li>桌面互动 — 摄像头看不到手时，角色的手会配合键盘和鼠标操作而动。</li>
-<li>手部默认姿势 — 调整桌面高度、双手间距和手腕角度。</li>
-<li>键盘 · 鼠标输入反应 — 设定打字和鼠标动作的幅度。</li>
-<li>放下手后会立即进入桌面姿势，再次抬起时会平滑地回到追踪。即使身体大幅摇晃或处于坐姿，手肘也会自然地跟随。</li>
-<li>在摆姿势中制作的手臂 · 手部姿势，可以通过 设为桌面姿势 来使用（Pro）。</li>
-</ul>
-</div>
-<blockquote class="callout privacy"><p>键盘输入仅用于驱动角色的手，不会保存或发送输入的文字。</p>
-<p>💡 舌头 · 鼓腮的摄像头检测是实验性功能。</p>
-</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>上一页</span>设备</a><a class="next" href="08-scene.html"><span>下一页</span>工作室</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#动作滑块究竟改变什么">动作滑块究竟改变什么</a></li><li><a href="#面部追踪">面部追踪</a></li><li><a href="#表情的驱动方式">表情的驱动方式</a></li><li><a href="#自动面部设置">自动面部设置</a></li><li><a href="#面部调整">面部调整</a></li><li><a href="#眨眼--嘴巴">眨眼 · 嘴巴</a></li><li><a href="#目光与看向镜头">目光与看向镜头</a></li><li><a href="#身体">身体</a></li><li><a href="#afk过渡时间与追踪丢失">AFK过渡时间与追踪丢失</a></li><li><a href="#摄像头手部深度估算实验性">摄像头手部深度估算（实验性）</a></li><li><a href="#手--桌面">手 · 桌面</a></li></ul></nav>
+<p>键盘输入仅用于生成手部动作，不会保存或发送输入的文字。</p>
+<h2 id="表情无法显示时">表情无法显示时<a class="anchor" href="#表情无法显示时" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>只能移动虚拟角色已有的表情。如果有 VRCFaceTracking 设置，则使用该设置；如果有 ARKit 形状键，则使用该面部形状。不存在的表情，即使提高灵敏度也不会新增。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>上一页</span>设备</a><a class="next" href="08-scene.html"><span>下一页</span>工作室</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#脸">脸</a></li><li><a href="#眼睛与视线">眼睛与视线</a></li><li><a href="#嘴巴与口型同步">嘴巴与口型同步</a></li><li><a href="#身体">身体</a></li><li><a href="#追踪丢失时">追踪丢失时</a></li><li><a href="#手臂与手">手臂与手</a></li><li><a href="#表情无法显示时">表情无法显示时</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>产品</h2><ul><li><a href="index.html#features">功能</a></li><li><a href="index.html#how">使用方法</a></li><li><a href="index.html#editions">版本</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新记录</a></li></ul></div><div class="fcol"><h2>指南</h2><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul></div><div class="fcol"><h2>条款与政策</h2><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></div><div class="fcol"><h2>链接</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>产品</h2><ul><li><a href="index.html#features">功能</a></li><li><a href="index.html#how">使用方法</a></li><li><a href="index.html#editions">版本</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新记录</a></li></ul></div><div class="fcol"><h2>指南</h2><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul></div><div class="fcol"><h2>条款与政策</h2><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></div><div class="fcol"><h2>链接</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE 不是 VRChat Inc. 的官方产品，与 VRChat Inc. 无关联。VRChat 是 VRChat Inc. 的商标。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

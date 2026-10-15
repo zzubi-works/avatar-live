@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Posing · Objects · Expressions — AVATAR LIVE</title>
-<meta name="description" content="Upgrading to Pro does not automatically switch everything on. Multiview is a separate toggle from director mode and starts off; camera collision, gaze…">
+<title>Posing and Facial Expressions — AVATAR LIVE</title>
+<meta name="description" content="Create the posture to save, and connect the expressions to buttons or tracking input. Posing, pose libraries, and objects are available in Pro, while …">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/11-pro-features.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/11-pro-features.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/11-pro-features.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/11-pro-features.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/11-pro-features.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
-<meta property="og:title" content="Posing · Objects · Expressions — AVATAR LIVE">
-<meta property="og:description" content="Upgrading to Pro does not automatically switch everything on. Multiview is a separate toggle from director mode and starts off; camera collision, gaze…">
+<meta property="og:title" content="Posing and Facial Expressions — AVATAR LIVE">
+<meta property="og:description" content="Create the posture to save, and connect the expressions to buttons or tracking input. Posing, pose libraries, and objects are available in Pro, while …">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/11-pro-features.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,182 +42,130 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="03-launcher-and-library.html">Start screen and avatar library</a></li><li><a href="04-main-window.html">Main window</a></li><li><a href="05-avatar-menu.html">Avatar menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="09-output.html">Output</a></li><li><a href="10-settings.html">Settings</a></li><li><a href="11-pro-features.html" aria-current="page">Posing · Objects · Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="11-posing--objects--expressions">11. Posing · Objects · Expressions<a class="anchor" href="#11-posing--objects--expressions" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="features-editions-and-what-changes">features: editions and what changes<a class="anchor" href="#features-editions-and-what-changes" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/en/v45-studio-cameras.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/v45-studio-cameras.webp" srcset="../assets/shots/en/v45-studio-cameras-960.webp 960w, ../assets/shots/en/v45-studio-cameras.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" style="--image-width:1200px" alt="Pro studio cameras" loading="lazy" decoding="async"></a><figcaption>Pro studio cameras</figcaption></figure>
-<div class="table-wrap" tabindex="0"><table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Basic</th>
-<th>Pro</th>
-<th>Practical effect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Standard Spout2 and NDI output</td>
-<td>✅</td>
-<td>✅</td>
-<td>Sends the avatar picture to OBS. NDI is also Basic and needs its OBS receiver plugin.</td>
-</tr>
-<tr>
-<td>Normal lights and post-processing</td>
-<td>✅</td>
-<td>✅</td>
-<td>Changes colour, shadows, bloom and background.</td>
-</tr>
-<tr>
-<td>Pose editing/library and props</td>
-<td>—</td>
-<td>✅</td>
-<td>Adjusts/locks bones or attaches props to the stage and avatar bones.</td>
-</tr>
-<tr>
-<td>Multiple avatars and shared control</td>
-<td>—</td>
-<td>✅</td>
-<td>Places multiple characters in one scene and shares or switches tracking input.</td>
-</tr>
-<tr>
-<td>Studio cameras / director / multiview</td>
-<td>—</td>
-<td>✅</td>
-<td>Sends a separate on-air camera while your editor remains the scene view.</td>
-</tr>
-<tr>
-<td>Independent per-camera Spout2</td>
-<td>—</td>
-<td>✅</td>
-<td>Adds separately named sources to OBS, up to three additional senders.</td>
-</tr>
-<tr>
-<td>Remote session</td>
-<td>—</td>
-<td>✅</td>
-<td>Shares live pose/face/gaze and optional consented avatar data with other PCs.</td>
-</tr>
-<tr>
-<td>Volumetric lights / HBAO / Beautify</td>
-<td>—</td>
-<td>✅</td>
-<td>Adds visible light beams, contact shadows and advanced image effects.</td>
-</tr>
-<tr>
-<td>MP4 recording / extra share sources</td>
-<td>—</td>
-<td>✅</td>
-<td>Records video or combines more game/display windows.</td>
-</tr>
-</tbody>
-</table></div>
-<p>Upgrading to Pro does not automatically switch everything on. Multiview is a separate toggle from director mode and starts off; camera collision, gaze/Look At IK and some advanced effects remain optional/experimental. Switch on one feature at a time and verify the broadcast receiver.</p>
-<p><a href="08-scene.html">Camera controls and slider explanations</a> · <a href="09-output.html">OBS plugins / NDI / remote sessions</a></p>
-<p>Third-party avatar rights remain unchanged when purchasing Pro. Confirm that an avatar creator permits any transfer or temporary caching before sharing its data in a session.</p>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="03-launcher-and-library.html">Avatar Library</a></li><li><a href="04-main-window.html">main screen</a></li><li><a href="05-avatar-menu.html">Avatar Menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Action</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="08-camera-effects.html">Camera effects</a></li><li><a href="09-output.html">Output</a></li><li><a href="09-session.html">Remote collaboration</a></li><li><a href="10-settings.html">setting</a></li><li><a href="11-pro-features.html" aria-current="page">Posing and Facial Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="posing-and-facial-expressions">Posing and Facial Expressions<a class="anchor" href="#posing-and-facial-expressions" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>Create the posture to save, and connect the expressions to buttons or tracking input. Posing, pose libraries, and objects are available in Pro, while My Expressions and Auto Expressions can be used in both Basic and Pro.</p>
+<h2 id="posing">Posing<a class="anchor" href="#posing" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-posing.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-posing.webp" width="550" height="713" style="--image-width:550px" alt="Posing settings to create your own posture" loading="lazy" decoding="async"></a><figcaption>Posing settings to create your own posture</figcaption></figure>
+<ol>
+<li>In the Studio → Pose, turn on Pose Mode.</li>
+<li>Select a bone and drag the rotation ring or move the hands and feet.</li>
+<li>Press Complete to save the posture.</li>
+<li>Apply it in the detail card of the avatar menu.</li>
+</ol>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
-<th>Feature</th>
-<th>Edition</th>
+<th>Operation·Button</th>
+<th>Result</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="#posing">Posing</a></td>
-<td>Pro</td>
+<td>Bone Selection·Rotation</td>
+<td>Changes the direction of the selected joint.</td>
 </tr>
 <tr>
-<td><a href="#pose-library">Pose library</a></td>
-<td>Pro</td>
+<td>Hand and foot drag</td>
+<td>Move the end point so that the arms or legs follow.</td>
 </tr>
 <tr>
-<td><a href="#objects">Objects</a></td>
-<td>Pro</td>
+<td>Alt+Drag</td>
+<td>Changes the direction the elbows and knees are facing.</td>
 </tr>
 <tr>
-<td><a href="#more-screen-share-sources">More screen share sources</a></td>
-<td>Pro</td>
+<td>Symmetric Editing</td>
+<td>Changes the other side as well.</td>
 </tr>
 <tr>
-<td><a href="#my-expressions">My expressions</a></td>
-<td>Basic · Pro</td>
+<td>Flip Left/Right</td>
+<td>Changes the left and right sides of the pose.</td>
 </tr>
 <tr>
-<td><a href="#automatic-expressions">Automatic expressions</a></td>
-<td>Basic · Pro</td>
+<td>Fixed</td>
+<td>Prevents the selected bone from moving during tracking and animation.</td>
+</tr>
+<tr>
+<td>Stick to the floor</td>
+<td>Place your feet on the floor.</td>
+</tr>
+<tr>
+<td>Complete</td>
+<td>Save the created pose.</td>
+</tr>
+<tr>
+<td>Discard</td>
+<td>Exit without applying the edited posture.</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="posing">Posing<a class="anchor" href="#posing" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/en/posing.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/posing.webp" width="960" height="900" style="--image-width:960px" alt="Posing mode" loading="lazy" decoding="async"></a><figcaption>Posing mode</figcaption></figure>
-<p>Turn on Studio › Posing › Posing mode to create a pose by moving the bones directly.</p>
+<h2 id="tracking-by-posture">Tracking by Posture<a class="anchor" href="#tracking-by-posture" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-pose-tracking.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-pose-tracking.webp" width="550" height="600" style="--image-width:550px" alt="Pose Card Body Part Tracking Settings" loading="lazy" decoding="async"></a><figcaption>Pose Card Body Part Tracking Settings</figcaption></figure>
+<p>Press the side posture camera button to turn on and off the face, head, arms, fingers, and torso individually.</p>
 <ul>
-<li>Click a bone to select it, and drag a ring to rotate it. The rotation gizmo is sized to fit the bone.</li>
-<li>Drag a hand or foot, and the whole arm or leg follows. Use Alt+drag to change which way the elbow or knee points.</li>
-<li>Symmetry — Move one side, and the other side moves with it. Use Left / right to flip the pose or copy one side to the other.</li>
-<li>Face camera · Feet on floor — Turn the face toward the camera, and line the feet up with the floor.</li>
-<li>Lock — Tracking and animations don't move the bones you lock.</li>
-<li>Save the pose with Done, and turn it on right away from the Poses card in the avatar menu. Even after Discard, you can bring it back with Ctrl+Z.</li>
-<li>Standing rest and Sitting poses are included from the start. The sitting pose changes only the hips and legs, and the head and arms keep tracking.</li>
-<li>You can set a pose you made as Use as the desk pose (arms and hands) or Rest pose (whole body).</li>
+<li>Lit area: Follows my movement.</li>
+<li>Extinguished area: Maintain the stored position.</li>
+<li>Example: Turn off your arms and turn on your hair or facial; maintain your arm pose while moving your head and expression.</li>
 </ul>
-<blockquote class="callout tip"><p>Please save your pose before you turn off posing mode.</p>
-</blockquote>
-<h2 id="five-tracking-controls-for-each-pose">Five tracking controls for each pose<a class="anchor" href="#five-tracking-controls-for-each-pose" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/en/menu-poses.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/menu-poses.webp" width="960" height="900" style="--image-width:960px" alt="Saved pose and tracking controls" loading="lazy" decoding="async"></a><figcaption>Saved pose and tracking controls</figcaption></figure>
-<p>Click the camera icon beside a saved pose in the Avatar Menu or Studio to control facial, head, arms, fingers and body independently. Enabled parts follow live tracking; disabled parts remain posed. These five choices are saved for each pose.</p>
-<ul>
-<li>Head OFF, facial ON holds the head while continuing face expressions.</li>
-<li>Facial OFF can still allow Eyes on the camera independently.</li>
-<li>The built-in Sitting pose holds hips and legs but initially permits all five tracking parts.</li>
-</ul>
-<h2 id="default-pose-and-afk-idle-pose">Default pose and AFK idle pose<a class="anchor" href="#default-pose-and-afk-idle-pose" aria-hidden="true" tabindex="-1">#</a></h2>
-<ul>
-<li>Default pose is the resting pose while the avatar is being tracked.</li>
-<li>Tracking-loss pose is a separate pose for the AFK state.</li>
-<li>Idle expression is a saved My expression automatically played during AFK. It can also be used without an idle pose.</li>
-<li>A manually applied pose takes priority over the automatic idle pose. Regular tracking resumes when input returns.</li>
-<li>Adjust the wait, transition and return durations under Motion › Body › AFK transition timing.</li>
-</ul>
-<h2 id="pose-library">Pose library<a class="anchor" href="#pose-library" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>In Studio › Posing › Pose library, choose a folder that holds <code>.anim</code> files, and every pose is shown as a thumbnail of your current avatar.</p>
-<ul>
-<li>Subfolders are read too, and clips are sorted into poses, hand shapes and motions. You can use search and favorites.</li>
-<li>Click Apply, and the avatar takes that pose right away. Clips that move play as animations. Use Release to go back.</li>
-<li>Use Edit to fix it up in posing mode, then save it as a new pose.</li>
-<li>You can also load humanoid · bone <code>.anim</code> files made in Unity one at a time.</li>
-</ul>
-<h2 id="objects">Objects<a class="anchor" href="#objects" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/en/props.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/props.webp" width="960" height="900" style="--image-width:960px" alt="Objects" loading="lazy" decoding="async"></a><figcaption>Objects</figcaption></figure>
-<p>Use Studio › Objects › + Add object to place text, images, shapes and 3D models.</p>
-<ul>
-<li>Set Rides on to the head or a hand, and the object moves with the avatar.</li>
-<li>Double-click text to edit it right there.</li>
-<li>For 3D models, create a <code>.vprop</code> file with Curious Bobby → Prop Exporter in Unity.</li>
-</ul>
-<h2 id="more-screen-share-sources">More screen share sources<a class="anchor" href="#more-screen-share-sources" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>You can layer more windows or monitors onto your screen share. Use this when you'd like to show a chat window or a music player as well.</p>
-<h2 id="my-expressions">My expressions<a class="anchor" href="#my-expressions" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>Create your own expressions from the avatar's shape keys.</p>
+<h2 id="basic-stance-and-ready-position">Basic Stance and Ready Position<a class="anchor" href="#basic-stance-and-ready-position" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-default-pose.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-default-pose.webp" width="550" height="579" style="--image-width:550px" alt="Select Default Pose and AFK Pose" loading="lazy" decoding="async"></a><figcaption>Select Default Pose and AFK Pose</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Select</th>
+<th>When using</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic Posture</td>
+<td>This is the standard posture for areas that are not usually tracked.</td>
+</tr>
+<tr>
+<td>AFK Waiting Stance</td>
+<td>This is the stance to use when you lose the trail.</td>
+</tr>
+<tr>
+<td>Idle Expression</td>
+<td>The expression that will be automatically applied while AFK.</td>
+</tr>
+<tr>
+<td>Desk posture</td>
+<td>This is the arm and hand posture to use when your hands are not visible on the camera.</td>
+</tr>
+</tbody>
+</table></div>
+<p>The time to transition to the idle position is adjusted in <a href="07-motion.html#when-tracking-is-lost">Action → When Tracking is Lost</a>.</p>
+<h2 id="pose-library">Pose Library<a class="anchor" href="#pose-library" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-pose-library.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-pose-library.webp" width="550" height="902" style="--image-width:550px" alt="A library for finding and applying pose files" loading="lazy" decoding="async"></a><figcaption>A library for finding and applying pose files</figcaption></figure>
 <ol>
-<li>Click New expression.</li>
-<li>In the side panel, move the shape keys as if you were recording them to build the expression. Use Preview to sweep from a neutral face (0%) to the full expression (100%) and check it.</li>
-<li>Click Save, and you can turn the expression on from the My expressions card in the avatar menu.</li>
+<li>Studio → Posing → Open the Pose Library.</li>
+<li>Select the folder that contains the <code>.anim</code> file.</li>
+<li>Select a pose thumbnail and apply it.</li>
+<li>Press Cancel to go back.</li>
 </ol>
-<ul>
-<li>You can also load expression animations made in Unity (<code>.anim</code> with shape keys). Clips that move play while the expression is on.</li>
-</ul>
-<figure><a class="zoomable" href="../assets/shots/en/menu-myexpr.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/menu-myexpr.webp" width="960" height="900" style="--image-width:960px" alt="My expressions card" loading="lazy" decoding="async"></a><figcaption>My expressions card</figcaption></figure>
-<p>Create expression and Import .anim appear side by side in both Studio and the Avatar Menu. You can import a static shape-key expression or a multi-frame Unity .anim expression. Animated clips loop only when the original clip is configured to loop. Drag expression tiles to reorder them or right-click to assign hotkeys and Quick Actions.</p>
-<h2 id="automatic-expressions">Automatic expressions<a class="anchor" href="#automatic-expressions" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>When you smile or look surprised, an expression you've chosen appears automatically. Turn it on in Motion › Automatic expressions, and link an expression to show for each one, such as smile · surprise · wink.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>Previous</span>Settings</a><a class="next" href="12-troubleshooting.html"><span>Next</span>Troubleshooting</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#features-editions-and-what-changes">features: editions and what changes</a></li><li><a href="#posing">Posing</a></li><li><a href="#five-tracking-controls-for-each-pose">Five tracking controls for each pose</a></li><li><a href="#default-pose-and-afk-idle-pose">Default pose and AFK idle pose</a></li><li><a href="#pose-library">Pose library</a></li><li><a href="#objects">Objects</a></li><li><a href="#more-screen-share-sources">More screen share sources</a></li><li><a href="#my-expressions">My expressions</a></li><li><a href="#automatic-expressions">Automatic expressions</a></li></ul></nav>
+<p>You can find frequently used poses through search and favorites, and correct and save them in posing mode through editing.</p>
+<h2 id="object">Object<a class="anchor" href="#object" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><a href="08-scene.html#rooms-and-props">Studio → Room and Props</a> to check the placement method. You can use text, images, shapes, and <code>.vprop</code> 3D models.</p>
+<h2 id="my-expressions">My Expressions<a class="anchor" href="#my-expressions" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-my-expression.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-my-expression.webp" width="550" height="202" style="--image-width:550px" alt="Custom Expressions and Adding Expressions" loading="lazy" decoding="async"></a><figcaption>Custom Expressions and Adding Expressions</figcaption></figure>
+<ol>
+<li>Click 'Create New Expression.'</li>
+<li>Move the face's shape keys to create an expression.</li>
+<li>Check from 0% neutral to 100% expression with the preview intensity.</li>
+<li>Save it.</li>
+<li>Click your expression tile to apply it.</li>
+</ol>
+<p>You can also add Unity expression animations by importing <code>.anim</code> files. The moving file changes expressions over time, and whether it loops depends on the file settings.</p>
+<h2 id="auto-expressions">Auto Expressions<a class="anchor" href="#auto-expressions" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-auto-expression.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-auto-expression.webp" width="550" height="749" style="--image-width:550px" alt="Auto Expression Connection Settings" loading="lazy" decoding="async"></a><figcaption>Auto Expression Connection Settings</figcaption></figure>
+<p>Turn it on in Actions → Auto Expressions. Connect the expressions saved in My Expressions to each detectable expression such as smile, surprise, or wink. Then, when you actually smile or are surprised, the connected expression will automatically appear.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="10-settings.html"><span>Previous</span>setting</a><a class="next" href="12-troubleshooting.html"><span>Next</span>Troubleshooting</a></nav><p class="updated">Last updated: 2026-10-15</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#posing">Posing</a></li><li><a href="#tracking-by-posture">Tracking by Posture</a></li><li><a href="#basic-stance-and-ready-position">Basic Stance and Ready Position</a></li><li><a href="#pose-library">Pose Library</a></li><li><a href="#object">Object</a></li><li><a href="#my-expressions">My Expressions</a></li><li><a href="#auto-expressions">Auto Expressions</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting started</a></li><li><a href="02-avatar-exporter.html">Exporting your avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions · License · Notices</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

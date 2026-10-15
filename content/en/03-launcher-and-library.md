@@ -1,51 +1,49 @@
-# 3. Start screen and avatar library
+# Avatar Library
 
-## avatar library: what selecting each option changes
+Register your avatar file, select the character you want to use and the starting scene.
 
-![avatar interface after loading](img/v45-menu.png)
+## splash screen
 
-- Import .vavatar registers a file exported using Exporter 1.0.6; it does not read your Unity project directly. Import .vrm opens supported VRM 0.x/1.0 files, although some unsupported shaders will not render.
-- Recent / Folder / Imported change which library group is shown. They do not activate a camera or change tracking.
-- Default / Last used / Ask every time decide which avatar loads automatically at startup. Ask every time is useful if different streams use different characters.
-- Start webcam/microphone automatically can occupy devices immediately. If another app needs the camera, turn this startup behavior off and enable the device only when needed.
-- Switching avatars restores that avatar's saved faces, poses and editor-camera presets; it does not silently copy every previous avatar profile to the new one.
-- Multi avatar (Pro) adds multiple characters in the same studio rather than replacing the only character. Select the actor you intend to edit or drive.
+![Avatar list and startup settings](img/guide-launcher.png)
 
-Important session distinction: Your library's source avatars stay on your PC. The [remote session's](09-output.md) Send my avatar data switch requires separate consent and uses session-only encrypted temporary caching on participating PCs. It does not automatically install the other participant's original model into your permanent library.
-
-## Start screen
-
-![Start screen](img/launcher.png)
-
-| Item | What it does |
+|Button/Item|What happens when I press it?|
 |---|---|
-| Open Avatar… | Opens a `.vavatar` file. You can also drag and drop it onto the window. |
-| Recent · Folder · Imported | Shows avatars you opened recently, avatars in your avatar folder, and avatars you've imported. |
-| Set as default | Makes Avatar Live start right away with this avatar. |
-| Camera · Microphone | Choose the devices to turn on at start. |
-| Face · Hands | Choose how tracking works. |
-| Startup | Choose from Ask every time · Last used · Default avatar. |
-| ▶ Start Avatar Live | Starts with the avatar you chose. |
+|Open Avatar| `.vavatar`or`.vrm`Add files to the list. You can also drag and drop files into the window.|
+|recent|Shows recently used avatars.|
+|folder|Shows files in the specified avatar folder.|
+|brought|Shows avatars imported into the library.|
+|Avatar Thumbnail|Choose a character to start with.|
+|set as default|Choose the character you will use when starting as the default avatar.|
+|Preview|Check the appearance of the selected character.|
+|scene list|Choose a stage setup to start with.|
+|Start Avatar Live|Opens the main screen with the selected avatar and scene.|
 
-> 💡 Hold Shift while launching to start safely without the webcam and microphone. Try this when a device problem keeps Avatar Live from starting smoothly.
+## Choose a device to start with
 
-## Switching avatars while running
+![Camera, microphone and start button to start](img/guide-launcher-start.png)
 
-<div class="shot" markdown="1">
+- Camera: Turn on the switch on the right to use the webcam selected at startup.
+- Microphone: When on, lip sync to the selected microphone at startup.
+- Face/Hands: Choose how you want to track each part. After running it, you can change it on your device as well.
 
-![Avatar library](img/avatar-pop.png)
+## Avatar to use for next launch
 
-- Click the avatar name at the top left to open the library.
-- Click an avatar in the list to switch to it.
-- Use Add an avatar file… to bring in a new avatar.
-- A webcam and microphone you had turned on stay on after you switch.
+|Startup Settings|Next time you run|
+|---|---|
+|Ask every time|Choose your avatar directly from the start screen.|
+|last avatar|You start with the avatar you used just before.|
+|default avatar|Start with the default avatar.|
 
-</div>
+## Change while running
 
-## Opening a menu for the first time
+![Avatar library opened from the main screen](img/guide-avatar-library.png)
 
-Menus are prepared while the avatar loads, reducing the delay when opening each menu for the first time. Initial loading may take a little longer. The top-left logo returns to avatar selection without restarting the program.
+1. Tap your avatar name in the upper left.
+2. Select the avatar you want to replace from the list.
+3. New files are imported as additional avatar files.
 
-## Returning to the start screen
+Use this list to replace an existing avatar. Adding an avatar to place more characters in a scene is[studio](08-scene.md#multiple-avatars-pro)It is a separate feature of .
 
-Click the logo at the top left and choose Restart.
+## When things don't start well
+
+If you run the program while holding down Shift, you can use Safe Startup, which does not turn on the webcam and microphone. After checking the device issue, try turning it on on your devices one by one.

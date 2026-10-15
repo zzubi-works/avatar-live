@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>故障排除 — AVATAR LIVE</title>
-<meta name="description" content="仍不能解决时，在设置 → 诊断 → 发送错误报告填写复现步骤、设备、角色类型、程序版本（/）和最近调整的设置。更多连接说明在输出与远程会话。">
+<title>问题解决 — AVATAR LIVE</title>
+<meta name="description" content="请先确认与症状相符的项目。如果难以找到设置，可以在顶部的放大镜里搜索名称。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/12-troubleshooting.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/12-troubleshooting.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/12-troubleshooting.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
-<meta property="og:title" content="故障排除 — AVATAR LIVE">
-<meta property="og:description" content="仍不能解决时，在设置 → 诊断 → 发送错误报告填写复现步骤、设备、角色类型、程序版本（/）和最近调整的设置。更多连接说明在输出与远程会话。">
+<meta property="og:title" content="问题解决 — AVATAR LIVE">
+<meta property="og:description" content="请先确认与症状相符的项目。如果难以找到设置，可以在顶部的放大镜里搜索名称。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/12-troubleshooting.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,316 +42,168 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">开始界面与角色库</a></li><li><a href="04-main-window.html">主界面</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室</a></li><li><a href="09-output.html">输出</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">摆姿势 · 物体 · 表情</a></li><li><a href="12-troubleshooting.html" aria-current="page">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="12-故障排除">12. 故障排除<a class="anchor" href="#12-故障排除" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="按现象逐步排查">按现象逐步排查<a class="anchor" href="#按现象逐步排查" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/zh/v45-settings.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/v45-settings.webp" srcset="../assets/shots/zh/v45-settings-960.webp 960w, ../assets/shots/zh/v45-settings.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="设置与诊断" loading="lazy" decoding="async"></a><figcaption>设置与诊断</figcaption></figure>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th>现象</th>
-<th>排查步骤</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>OBS 中没有 Spout2 Capture</td>
-<td>关闭 OBS → 安装<a href="https://github.com/Off-World-Live/obs-spout2-plugin/releases">官方 Spout2 插件</a> → 重启 OBS → 添加 Spout2 Capture；更改过发送名称时重新选择。</td>
-</tr>
-<tr>
-<td>OBS 中没有 NDI Source</td>
-<td>安装 <a href="https://github.com/DistroAV/DistroAV/releases">DistroAV</a>及需要的 NDI Runtime，重启 OBS，检查旧 OBS-NDI 是否冲突。NDI 支持 Basic。</td>
-</tr>
-<tr>
-<td>NDI 黑屏或找不到来源</td>
-<td>检查 NDI 输出开关、两台 PC 网络、防火墙、NDI Tools Studio Monitor、源名称和 Alpha 设置；访客 Wi-Fi 设备隔离可能造成无法发现。</td>
-</tr>
-<tr>
-<td>Spout2 背景黑色</td>
-<td>工作室选择透明，检查应用 Alpha 输出以及 OBS 接收端 Composite with alpha 等选项。</td>
-</tr>
-<tr>
-<td>虚拟摄像机安装没反应</td>
-<td>可能需要管理员权限。重启应用，检查 VirtualCamera/Install.bat，重新打开 Discord/Zoom 并选 Avatar Live Camera。</td>
-</tr>
-<tr>
-<td>会话只能在同一局域网使用</td>
-<td>检查房主服务器已开 → 版本 → 默认 47700 → 路由器同时转发 TCP 和 UDP → Windows 防火墙 → 是否有公网 WAN 地址/CGNAT → 从不同网络测试。</td>
-</tr>
-<tr>
-<td>远程角色被替代模型代替</td>
-<td>检查发送者是否同意分享角色数据，模型使用条款是否允许；合法拥有相同 VRM 时可放入本地 Vrm 文件夹后重新查找。不要提取别人原始文件。</td>
-</tr>
-<tr>
-<td>摄像机围绕角色意外旋转</td>
-<td>阅读<a href="08-scene.html">摄像机目标旋转与瞄准区别</a>；锁定目标的位置旋转规则不是“始终看脸”，还需配置直视目标/画面构图。</td>
-</tr>
-<tr>
-<td>iPhone 已连接但面部不动</td>
-<td>第一次有效面部数据约 3 秒后校准；检查真实追踪数据、AFK、断线恢复和来源重连。</td>
-</tr>
-<tr>
-<td>摄像头手臂扭曲</td>
-<td>比较旧版与动态方式，关闭实验性手部深度，重新调整过高的平滑。</td>
-</tr>
-<tr>
-<td>SteamVR 追踪器不对位</td>
-<td>先确认 SteamVR 自身追踪，再重新绑定各身体部位并校准。</td>
-</tr>
-<tr>
-<td>录制或多画面太卡</td>
-<td>减少独立 Spout2、预览格子与刷新、体积光/HBAO、输出分辨率和 FPS，逐项比较。</td>
-</tr>
-</tbody>
-</table></div>
-<p>仍不能解决时，在设置 → 诊断 → 发送错误报告填写复现步骤、设备、角色类型、程序版本（/）和最近调整的设置。更多连接说明在<a href="09-output.html">输出与远程会话</a>。</p>
-<blockquote class="callout tip"><p>无法解决的错误或问题，请通过 设置 › 诊断 › 发送错误报告 告诉我们；需要的功能或改进建议，请通过 设置 › 关于 › 发送改进建议 告诉我们。</p>
-</blockquote>
-<h2 id="启动--安装">启动 · 安装<a class="anchor" href="#启动--安装" aria-hidden="true" tabindex="-1">#</a></h2>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">角色库</a></li><li><a href="04-main-window.html">主屏幕</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室</a></li><li><a href="08-camera-effects.html">摄像机效果</a></li><li><a href="09-output.html">输出</a></li><li><a href="09-session.html">远程联播</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">姿势与表情</a></li><li><a href="12-troubleshooting.html" aria-current="page">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="问题解决">问题解决<a class="anchor" href="#问题解决" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>请先确认与症状相符的项目。如果难以找到设置，可以在顶部的放大镜里搜索名称。</p>
+<h2 id="启动与角色">启动与角色<a class="anchor" href="#启动与角色" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>症状</th>
-<th>解决方法</th>
+<th>首先尝试的方法</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>“Windows 已保护你的电脑”窗口</td>
-<td>更多信息 → 仍要运行</td>
+<td>启动不顺利</td>
+<td>按住 Shift 启动，以使用无摄像头、无麦克风的安全模式。</td>
 </tr>
 <tr>
-<td>“Avatar Live 的文件已被更改”</td>
-<td>请使用从 BOOTH 下载的原始文件重新安装。角色和设置会保留。</td>
+<td>文件显示已更改</td>
+<td>将购买时收到的原始 ZIP 文件解压到新文件夹中并运行。</td>
 </tr>
 <tr>
-<td>无法正常启动</td>
-<td>按住 Shift 运行，进行安全启动</td>
+<td>角色不可见</td>
+<td>按脸部、上半身、全身的构图重新调整。</td>
+</tr>
+<tr>
+<td>部分呈现粉色</td>
+<td>检查原始 Unity 项目的材质和着色器后再导出。</td>
+</tr>
+<tr>
+<td>头发纠结</td>
+<td>点击顶部的初始化按钮。</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="角色">角色<a class="anchor" href="#角色" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="脸部与手部">脸部与手部<a class="anchor" href="#脸部与手部" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>症状</th>
-<th>解决方法</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>部分显示为粉色</td>
-<td>确认能否正常上传到 VRChat 后重新导出</td>
-</tr>
-<tr>
-<td>看不到角色</td>
-<td>双击视图中的空白处</td>
-</tr>
-<tr>
-<td>姿势僵住或头发缠在一起</td>
-<td>顶部的 ⟲</td>
-</tr>
-<tr>
-<td>听不到角色音效</td>
-<td>不会播放角色音效。</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="摄像头--面部">摄像头 · 面部<a class="anchor" href="#摄像头--面部" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th>症状</th>
-<th>解决方法</th>
+<th>首先尝试的方法</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>摄像头无法开启</td>
-<td>确认是否有其他应用正在使用摄像头</td>
-</tr>
-<tr>
-<td>表情过小或过大</td>
-<td>重新进行 自动面部设置，或使用 面部调整</td>
-</tr>
-<tr>
-<td>角色看向侧面</td>
-<td>正面校准</td>
-</tr>
-<tr>
-<td>无法眨单眼</td>
-<td>将眨眼模式设为 独立</td>
-</tr>
-<tr>
-<td>电脑负担重</td>
-<td>将追踪质量设为 均衡 或 节能</td>
-</tr>
-<tr>
-<td>手 · 手指抖动</td>
-<td>调高 设备 › 追踪来源 › 手部防抖</td>
+<td>检查是否有其他应用在使用摄像头。</td>
 </tr>
 <tr>
 <td>角色不动</td>
-<td>在 设备 › 追踪来源 中确认部位的来源没有设为未使用的设备（如 VMC）</td>
+<td>在“设备 → 追踪源”中确认各部位是否使用实际连接的设备。</td>
 </tr>
 <tr>
-<td>通过 VMC 接收的姿势有偏差</td>
-<td>在 VMC 设置 中点击 T 姿势 或 对齐</td>
+<td>脸部方向偏斜</td>
+<td>面向正前方，点击正面校正。</td>
+</tr>
+<tr>
+<td>眨眼无效</td>
+<td>单独更改眨眼方式。</td>
+</tr>
+<tr>
+<td>表情过大或过小</td>
+<td>进行自动脸部设置或调整脸部敏感度。</td>
+</tr>
+<tr>
+<td>手指抖动</td>
+<td>适当提高手部抖动校正。</td>
+</tr>
+<tr>
+<td>伸手时手臂会扭曲</td>
+<td>关闭实验性的手部深度估计，并与之前的手臂方式进行比较。</td>
+</tr>
+<tr>
+<td>不会变为空闲姿势</td>
+<td>指定空闲姿势，并在菜单 → 基本·AFK 姿势中确认等待时间。</td>
+</tr>
+<tr>
+<td>连接 iPhone 后没有反应</td>
+<td>确认手机应用是否发送到 PC 地址，并从正面开始校准。</td>
+</tr>
+<tr>
+<td>VMC 姿势错位</td>
+<td>检查输入状态，并调整到 T 姿势·对齐。</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="麦克风">麦克风<a class="anchor" href="#麦克风" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="obs-与视频输出">OBS 与视频输出<a class="anchor" href="#obs-与视频输出" aria-hidden="true" tabindex="-1">#</a></h2>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>症状</th>
-<th>解决方法</th>
+<th>先尝试的操作</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>“无信号”</td>
-<td>在 Windows 设置 › 隐私 › 麦克风 中允许桌面应用访问</td>
+<td>没有 Spout2 Capture</td>
+<td>安装 OBS 用的 Spout2 插件后重新启动 OBS。</td>
 </tr>
 <tr>
-<td>杂音让嘴巴动起来</td>
-<td>检测背景噪声</td>
+<td>没有 NDI Source</td>
+<td>安装 DistroAV 和该版本要求的 NDI Runtime。</td>
 </tr>
 <tr>
-<td>嘴巴动得不够</td>
-<td>语音校准</td>
+<td>背景显示为黑色</td>
+<td>将 Avatar Live 背景设为透明，OBS 源使用 Alpha 合成。</td>
+</tr>
+<tr>
+<td>更改传输名称后没有显示</td>
+<td>在 OBS 源中重新选择新名称。</td>
+</tr>
+<tr>
+<td>虚拟摄像头不在列表中</td>
+<td>注册设备后，完全重新启动接收应用。</td>
+</tr>
+<tr>
+<td>我的屏幕与广播构图不同</td>
+<td>确认传输目标是场景视图还是工作室摄像头。</td>
 </tr>
 </tbody>
 </table></div>
-<h2 id="输出--屏幕共享">输出 · 屏幕共享<a class="anchor" href="#输出--屏幕共享" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th>症状</th>
-<th>解决方法</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>OBS 中没有 Spout2 来源</td>
-<td>在 OBS 中安装 Spout2 插件</td>
-</tr>
-<tr>
-<td>OBS 中背景显示为黑色</td>
-<td>将背景设为 透明，并在 OBS 中选择 Composite with alpha</td>
-</tr>
-<tr>
-<td>Discord 列表中没有</td>
-<td>开启 屏幕共享 后，查看 应用程序 标签页</td>
-</tr>
-<tr>
-<td>游戏显示为黑色</td>
-<td>将游戏设为窗口模式</td>
-</tr>
-<tr>
-<td>出现“Avatar Live Basic”字样</td>
-<td>这是 Basic 的水印。Pro 中不会显示。</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="v115-常见问题">v1.1.5 常见问题<a class="anchor" href="#v115-常见问题" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th>现象</th>
-<th>处理方式</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>追踪中断后没有进入AFK姿势</td>
-<td>检查动作 › 身体的等待和过渡时间，并确认已指定<a href="11-pro-features.html">待机姿势</a></td>
-</tr>
-<tr>
-<td>iPhone镜像模式下眨眼左右相反</td>
-<td>更新至v1.1.4及以上并检查镜像</td>
-</tr>
-<tr>
-<td>仅用iPhone时手臂不能回到桌面</td>
-<td>检查动作 › 手·桌面与手臂追踪来源；全身追踪需摄像头或VMC</td>
-</tr>
-<tr>
-<td>向前伸手时手臂抖动</td>
-<td>关闭实验性的手部深度估算，检查摄像头校准</td>
-</tr>
-<tr>
-<td>找不到某项设置</td>
-<td>点击右上角放大镜搜索AFK、镜像、Spout2或语言</td>
-</tr>
-<tr>
-<td>难以说明故障原因</td>
-<td>使用设置 › 诊断 › 发送错误报告并附上复现步骤和日志</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="支持范围">支持范围<a class="anchor" href="#支持范围" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th></th>
-<th>内容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>✅ VRChat 角色</td>
-<td>Expression 菜单、动画器、PhysBone、Contact、Constraint、Eye Look、LipSync</td>
-</tr>
-<tr>
-<td>✅ 制作工具</td>
-<td>使用 NDMF · Modular Avatar · VRCFury 的角色</td>
-</tr>
-<tr>
-<td>✅ 着色器</td>
-<td>Poiyomi、lilToon 等</td>
-</tr>
-<tr>
-<td>✅ 面部</td>
-<td>遵循角色设置：VRCFaceTracking、52 个 ARKit 形态键（Perfect Sync）、MMD 眼部变形</td>
-</tr>
-<tr>
-<td>✅ 追踪</td>
-<td>摄像头（面部 · 手臂 · 手 · 手指）、iPhone（iFacialMocap · FaceMotion3D）、VMC（按部位：手臂 · 手 · 手指 · 身体 · 头部 · 眼睛）</td>
-</tr>
-<tr>
-<td>🧪 实验性功能</td>
-<td>Ultraleap、OSC、VMC 输出、舌头 · 脸颊的摄像头检测</td>
-</tr>
-<tr>
-<td>⚠️ 不支持</td>
-<td>角色音效、AudioLink、镜子检测、VRM 文件、Live2D、macOS · Linux</td>
-</tr>
-</tbody>
-</table></div>
-<p>摄像头（含全身 · 手指关节）、iPhone、VMC 输入已用实际设备确认。实验性功能预计可以正常运行，但尚未在开发者环境中使用所有设备和应用进行测试，因此在应用中标为 实验性。试用后如有问题，请通过 发送错误报告 告诉我们。</p>
-<h2 id="计划支持">计划支持<a class="anchor" href="#计划支持" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>详细安装顺序请查看 <a href="09-output.html">输出</a>。</p>
+<h2 id="屏幕共享">屏幕共享<a class="anchor" href="#屏幕共享" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li>加载 VRM 模型（.vrm，VRM 0.x / 1.0）并播放 .vrma 动画</li>
-<li>强化 Perfect Sync：直接连接形态键的映射、按摄像头 · iPhone 分别进行的面部校准、逐一确认 52 种表情的工具</li>
-<li>新增手机面部应用：VTube Studio（iPhone）、MeowFace（Android）</li>
-<li>便利功能：重新导出角色后自动刷新、空闲时节省 FPS</li>
+<li>在 Discord 列表中找不到：打开屏幕共享，在应用程序选项卡中查找 Avatar Live Share Output。</li>
+<li>游戏画面变黑：尝试将游戏切换为无边框窗口模式。</li>
+<li>共享无声音：请检查音频目标和应用音量。如有虚拟音频设备提示，请参考 <a href="13-license.html#vb-cable">VB-CABLE 指南</a>。</li>
+<li>通话声音又能听到：请确认要分享的应用中是否包含 Discord。</li>
 </ul>
-<p>※ 计划的功能和时间可能会有变更。</p>
-<h2 id="常见问题">常见问题<a class="anchor" href="#常见问题" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>需要 VRChat 账号吗？
-不需要。Avatar Live 不与 VRChat 通信。</p>
-<p>可以用于直播吗？
-直播、公开发布视频和商业用途请使用 Pro。与朋友之间的非公开 Discord 共享，使用 Basic 也可以。</p>
-<p>键盘输入会被记录吗？
-不会。桌面手部动作不会保存或发送输入的文字。</p>
-<p>可以把角色文件给别人吗？
-请遵守角色和服装制作者的使用条款。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="11-pro-features.html"><span>上一页</span>摆姿势 · 物体 · 表情</a><a class="next" href="13-license.html"><span>下一页</span>版本 · 许可证 · 声明</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#按现象逐步排查">按现象逐步排查</a></li><li><a href="#启动--安装">启动 · 安装</a></li><li><a href="#角色">角色</a></li><li><a href="#摄像头--面部">摄像头 · 面部</a></li><li><a href="#麦克风">麦克风</a></li><li><a href="#输出--屏幕共享">输出 · 屏幕共享</a></li><li><a href="#v115-常见问题">v1.1.5 常见问题</a></li><li><a href="#支持范围">支持范围</a></li><li><a href="#计划支持">计划支持</a></li><li><a href="#常见问题">常见问题</a></li></ul></nav>
+<h2 id="远程联播">远程联播<a class="anchor" href="#远程联播" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>首先确认房主是否开启了服务器，以及参加的地址、端口、密码是否正确。如果外部的朋友无法连接，请展开查看<a href="09-session.html#连接故障排查">连接不上时</a>的端口转发和防火墙指南。</p>
+<p>如果对方看起来像替代化身，请确认查看化身和数据传输同意。无法传输的模型请作为替代化身使用。</p>
+<h2 id="当屏幕变慢或模糊时">当屏幕变慢或模糊时<a class="anchor" href="#当屏幕变慢或模糊时" aria-hidden="true" tabindex="-1">#</a></h2>
+<ol>
+<li>尝试降低输出分辨率和FPS。</li>
+<li>减少多视图的刷新率和格数。</li>
+<li>关闭未使用的摄像头的 Spout2 输出。</li>
+<li>一一尝试关闭环境光遮蔽、景深、体积光等效果。</li>
+<li>如果整体模糊，请检查 Bloom 强度·阈值和模糊。</li>
+</ol>
+<h2 id="如果无法解决">如果无法解决<a class="anchor" href="#如果无法解决" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>在 设置 → 诊断 → 发送错误报告 中填写以下内容。</p>
+<ul>
+<li>按了哪个按钮或更改了哪些设置</li>
+<li>出现了什么异常情况</li>
+<li>使用的设备和角色类型</li>
+<li>再次出现相同问题的顺序</li>
+</ul>
+<p>实际发送将在用户选择时进行。</p>
+<h2 id="支持范围">支持范围<a class="anchor" href="#支持范围" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li><code>.vavatar</code> 和 VRM 0.x·1.0 角色</li>
+<li>角色的表情菜单、动画器、PhysBone 等支持的功能</li>
+<li>包含在角色中的面部追踪设置和表情</li>
+<li>摄像头、麦克风、iPhone、VMC 输入</li>
+</ul>
+<p>某些 VRM 0.x 的特殊着色器可能不受支持。应用中实验性显示的功能可能因设备和环境不同而产生不同的结果。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="11-pro-features.html"><span>上一页</span>姿势与表情</a><a class="next" href="13-license.html"><span>下一页</span>版本与许可</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#启动与角色">启动与角色</a></li><li><a href="#脸部与手部">脸部与手部</a></li><li><a href="#obs-与视频输出">OBS 与视频输出</a></li><li><a href="#屏幕共享">屏幕共享</a></li><li><a href="#远程联播">远程联播</a></li><li><a href="#当屏幕变慢或模糊时">当屏幕变慢或模糊时</a></li><li><a href="#如果无法解决">如果无法解决</a></li><li><a href="#支持范围">支持范围</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>产品</h2><ul><li><a href="index.html#features">功能</a></li><li><a href="index.html#how">使用方法</a></li><li><a href="index.html#editions">版本</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新记录</a></li></ul></div><div class="fcol"><h2>指南</h2><ul><li><a href="01-getting-started.html">快速上手</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="12-troubleshooting.html">故障排除</a></li><li><a href="13-license.html">版本 · 许可证 · 声明</a></li></ul></div><div class="fcol"><h2>条款与政策</h2><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></div><div class="fcol"><h2>链接</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>产品</h2><ul><li><a href="index.html#features">功能</a></li><li><a href="index.html#how">使用方法</a></li><li><a href="index.html#editions">版本</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新记录</a></li></ul></div><div class="fcol"><h2>指南</h2><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul></div><div class="fcol"><h2>条款与政策</h2><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></div><div class="fcol"><h2>链接</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE 不是 VRChat Inc. 的官方产品，与 VRChat Inc. 无关联。VRChat 是 VRChat Inc. 的商标。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

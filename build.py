@@ -197,6 +197,10 @@ def render_md(lang, text):
         if not mm:
             raise SystemExit("bad image " + src)
         folder = "common" if mm.group(1) else lang
+        # Share the current Korean guide screenshots when a localized capture
+        # has not yet been produced for this language.
+        if not mm.group(1) and folder + "/" + mm.group(2) not in IMAGES:
+            folder = "ko"
         image_path = "../assets/shots/%s/%s.webp" % (folder, mm.group(2))
         return '<figure><a class="zoomable" href="%s" target="_blank" rel="noopener">%s</a><figcaption>%s</figcaption></figure>' % (image_path, img_tag(folder, mm.group(2), alt), esc(alt))
 

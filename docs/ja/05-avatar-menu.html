@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>アバターメニュー — AVATAR LIVE</title>
-<meta name="description" content="手のジェスチャーは左右別に働きます。Web カメラの指関節、VMC グローブ、SteamVR コントローラーの自動入力が手動のジェスチャーを上書きする場合があります。意図せず戻るときは指の入力元と自動表情を確認します。">
+<meta name="description" content="衣装・髪型・表情など、アバター作成者が設定した機能を使用します。モデルによってメニュー名や項目が異なります。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ja/05-avatar-menu.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/05-avatar-menu.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/05-avatar-menu.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/05-avatar-menu.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/05-avatar-menu.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
 <meta property="og:title" content="アバターメニュー — AVATAR LIVE">
-<meta property="og:description" content="手のジェスチャーは左右別に働きます。Web カメラの指関節、VMC グローブ、SteamVR コントローラーの自動入力が手動のジェスチャーを上書きする場合があります。意図せず戻るときは指の入力元と自動表情を確認します。">
+<meta property="og:description" content="衣装・髪型・表情など、アバター作成者が設定した機能を使用します。モデルによってメニュー名や項目が異なります。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ja/05-avatar-menu.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ja.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,129 +42,77 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html" aria-current="page">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動き</a></li><li><a href="08-scene.html">スタジオ</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="5-アバターメニュー">5. アバターメニュー<a class="anchor" href="#5-アバターメニュー" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="アバターメニューの各操作が変えるもの">アバターメニューの各操作が変えるもの<a class="anchor" href="#アバターメニューの各操作が変えるもの" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-menu.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-menu.webp" srcset="../assets/shots/ja/v45-menu-960.webp 960w, ../assets/shots/ja/v45-menu.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="アバターメニュー" loading="lazy" decoding="async"></a><figcaption>アバターメニュー</figcaption></figure>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターをエクスポート</a></li><li><a href="03-launcher-and-library.html">アバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html" aria-current="page">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動作</a></li><li><a href="08-scene.html">スタジオ</a></li><li><a href="08-camera-effects.html">カメラエフェクト</a></li><li><a href="09-output.html">出力</a></li><li><a href="09-session.html">リモートコラボ配信</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージングと表情</a></li><li><a href="12-troubleshooting.html">問題解決</a></li><li><a href="13-license.html">エディションとライセンス</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="アバターメニュー">アバターメニュー<a class="anchor" href="#アバターメニュー" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>衣装・髪型・表情など、アバター作成者が設定した機能を使用します。モデルによってメニュー名や項目が異なります。</p>
+<h2 id="衣装と表情を変える">衣装と表情を変える<a class="anchor" href="#衣装と表情を変える" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-avatar-menu.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-avatar-menu.webp" width="550" height="435" style="--image-width:550px" alt="一般の表情ボタンがあるサブメニュー" loading="lazy" decoding="async"></a><figcaption>一般の表情ボタンがあるサブメニュー</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
 <th>操作</th>
-<th>実際の動作</th>
+<th>動作方式</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Toggle</td>
-<td>一度押すとオン、もう一度押すとオフ。衣装やアクセサリーなどの変化は元のアバターの Animator 設定によります。</td>
+<td>オン・オフ</td>
+<td>一度押すとオンになり、もう一度押すとオフになります。衣装や装飾を変更する際に主に使用します。</td>
 </tr>
 <tr>
-<td>Button</td>
-<td>押している間だけ有効で、離すと元に戻ります。切り替え式とは別です。</td>
+<td>押すボタン</td>
+<td>押している間のみ適用されます。離すと解除されます。</td>
 </tr>
 <tr>
-<td>Radial</td>
-<td>0–100% の連続値。表情の強さや衣装の変形など、制作者が設定したパラメータに中間値を送ります。</td>
+<td>円形スライダー</td>
+<td>ハンドルを動かして0〜100％の間で値を設定します。関連する色・サイズ・表情の強さなどが変わります。</td>
 </tr>
 <tr>
-<td>2軸／4軸 Puppet</td>
-<td>複数パラメータをパッドの左右・上下へ同時に変更。中央は初期状態で、方向の意味は元のアバター設定によります。</td>
+<td>方向パッド</td>
+<td>ハンドルを左右・上下に動かして、さまざまな表情や値を一緒に調整します。</td>
 </tr>
 <tr>
-<td>Sub Menu</td>
-<td>同じアバターの下位メニューを開きます。他人のアバターに切り替わるものではありません。</td>
-</tr>
-<tr>
-<td>お気に入り・クイックアクション</td>
-<td>既存の操作を深いメニューを開かず実行できるショートカットです。</td>
-</tr>
-<tr>
-<td>ショートカット：ホールド／トグル</td>
-<td>ホールドは押す間のみ、トグルは次に押すまで維持。ゲームと競合するキーを避けてください。</td>
+<td>フォルダ</td>
+<td>サブメニューを開きます。戻るを押すと、上位メニューに戻ります。</td>
 </tr>
 </tbody>
 </table></div>
-<p>手のジェスチャーは左右別に働きます。Web カメラの指関節、VMC グローブ、SteamVR コントローラーの自動入力が手動のジェスチャーを上書きする場合があります。意図せず戻るときは<a href="06-devices.html">指の入力元</a>と<a href="07-motion.html">自動表情</a>を確認します。</p>
-<p>マイ表情とポーズライブラリはアバター別です。静止 .anim は一定のシェイプキーを使い、複数フレームの .anim は時間とともに変化します。ポーズの顔・頭・腕・指・胴体の追跡許可を別々に切り替えれば、体を固定したまま顔だけ動かせます。</p>
-<p>VRChat で使っていたアバターの Expression メニュー を、そのまま使えます。衣装やヘアのトグル、表情ボタン、Radial、Puppet が VRChat と同じように動作します。</p>
-<h2 id="expression-メニュー">Expression メニュー<a class="anchor" href="#expression-メニュー" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/ja/menu.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/menu.webp" width="960" height="900" style="--image-width:960px" alt="アバターメニュー" loading="lazy" decoding="async"></a><figcaption>アバターメニュー</figcaption></figure>
+<h2 id="よく使う項目をすぐ取り出す">よく使う項目をすぐ取り出す<a class="anchor" href="#よく使う項目をすぐ取り出す" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-menu-context.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-menu-context.webp" width="650" height="520" style="--image-width:650px" alt="表情ボタンを右クリックして開くクイックアクション・ショートカット・お気に入りメニュー" loading="lazy" decoding="async"></a><figcaption>表情ボタンを右クリックして開くクイックアクション・ショートカット・お気に入りメニュー</figcaption></figure>
 <ul>
-<li>Toggle — 押すたびにオン / オフが切り替わります。</li>
-<li>Button — 押している間だけオンになります。</li>
-<li>Sub Menu — サブメニューを開きます。戻る で戻ります。</li>
-<li>Radial・Puppet — スライダーやパッドで値を決めます。</li>
+<li>お気に入り: メニューの上の方で素早く見つけます。</li>
+<li>クイックアクションに追加: 下部ツールバーに実行ボタンを作ります。</li>
+<li>ショートカットキーの指定：キーボードで該当項目を実行します。</li>
 </ul>
-</div>
-<h2 id="項目を右クリック">項目を右クリック<a class="anchor" href="#項目を右クリック" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/ja/menu-ctx.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/menu-ctx.webp" srcset="../assets/shots/ja/menu-ctx-960.webp 960w, ../assets/shots/ja/menu-ctx.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" style="--image-width:1600px" alt="項目の右クリックメニュー" loading="lazy" decoding="async"></a><figcaption>項目の右クリックメニュー</figcaption></figure>
+<p>ショートカットキーでは押している間はキーを離すと解除され、トグルは再度押すまで維持されます。</p>
+<h2 id="姿勢と追跡">姿勢と追跡<a class="anchor" href="#姿勢と追跡" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-menu-poses.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-menu-poses.webp" width="550" height="477" style="--image-width:550px" alt="保存されたポーズと私の表情" loading="lazy" decoding="async"></a><figcaption>保存されたポーズと私の表情</figcaption></figure>
+<ol>
+<li>ポーズタイルをタップして適用します。</li>
+<li>ポーズ横のカメラアイコンでトラッキング設定を展開します。</li>
+<li>フェイシャル・頭・腕・指・胴体をそれぞれオンまたはオフにします。</li>
+</ol>
+<p>オンになっている部位は自分の動きを追従し、オフになっている部位は保存したポーズを維持します。例えば頭をオフにしてフェイシャルをオンにすると、首は固定したまま表情だけが動きます。</p>
+<h2 id="手のジェスチャー">手のジェスチャー<a class="anchor" href="#手のジェスチャー" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-gestures.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-gestures.webp" width="550" height="396" style="--image-width:550px" alt="左手と右手のジェスチャー設定" loading="lazy" decoding="async"></a><figcaption>左手と右手のジェスチャー設定</figcaption></figure>
+<p>左手と右手のグー・チョキ・パーなどを選びます。アバターに手の形ごとの表情が紐づいている場合、表情も一緒に変わります。ウェブカムの手の形でジェスチャーをオンにすると、実際の手の形を使用します。</p>
+<h2 id="私の表情">私の表情<a class="anchor" href="#私の表情" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>新しい表情を作成して顔の形を調整して保存するか、<code>.anim</code> 表情ファイルを読み込みます。作成した表情はタイルで適用し、右クリックでクイックアクションやショートカットに接続します。<a href="11-pro-features.html#自分の表情">表情作成</a>で手順を確認してください。</p>
+<h2 id="階層構造とシェイプキー">階層構造とシェイプキー<a class="anchor" href="#階層構造とシェイプキー" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
-<li>クイックアクションに追加 — 下のツールバーに、ボタンとして置きます。</li>
-<li>ショートカットを設定… — ゲーム中でも、キーひとつでオンにできます。</li>
-<li>お気に入り — メニューの一番上から、すぐに使えます。</li>
+<li>階層構造: アバターの部品をツリーで表示します。チェックで部品をオン・オフにします。</li>
+<li>目のアイコン: 部品の動作は維持しながら画面上だけ非表示にします。</li>
+<li>メッシュ: 見た目を描く部品を検索します。</li>
+<li>シェイプキー: 顔や体の変形量を直接調整します。直接固定した値はトラッキングより優先される場合があります。</li>
 </ul>
-</div>
-<h2 id="ハンドジェスチャー">ハンドジェスチャー<a class="anchor" href="#ハンドジェスチャー" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/ja/gestures.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/gestures.webp" width="960" height="900" style="--image-width:960px" alt="ハンドジェスチャー" loading="lazy" decoding="async"></a><figcaption>ハンドジェスチャー</figcaption></figure>
-<ul>
-<li>左手・右手のジェスチャーを選んで、アバターのジェスチャー表情を出します。</li>
-<li>Web カメラの手の形でジェスチャー をオンにすると、自分の手の形がそのままジェスチャーになります。</li>
-</ul>
-</div>
-<h2 id="カードの並び順ポーズマイ表情">カードの並び順・ポーズ・マイ表情<a class="anchor" href="#カードの並び順ポーズマイ表情" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/menu-poses.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/menu-poses.webp" width="960" height="900" style="--image-width:960px" alt="アバターメニューの保存ポーズ" loading="lazy" decoding="async"></a><figcaption>アバターメニューの保存ポーズ</figcaption></figure>
-<p>ポーズ、マイ表情、ハンドジェスチャーの見出しから開閉できます。見出しをドラッグしてカードを、個別のポーズ・表情タイルをドラッグして項目を並べ替えられます。</p>
-<figure><a class="zoomable" href="../assets/shots/ja/menu-myexpr.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/menu-myexpr.webp" width="960" height="900" style="--image-width:960px" alt="アバターメニューのマイ表情" loading="lazy" decoding="async"></a><figcaption>アバターメニューのマイ表情</figcaption></figure>
-<ul>
-<li>ポーズを押して適用・解除します。横のカメラアイコンからそのポーズの追跡設定を開きます。</li>
-<li>フェイシャル、頭、腕、指、胴体の5項目を独立してON/OFFできます。頭を固定して表情だけ動かすことも可能です。</li>
-<li>標準の座りポーズは骨盤と脚を固定し、5項目の追跡を初期状態で許可します。</li>
-<li>タイルの右クリックでショートカット、複製、クイックアクションなど使用可能な操作を選べます。</li>
-<li>スタジオとメニューのマイ表情には、新しい表情を作成と .anim を読み込むボタンがあります。複数フレームの再生・ループは元のクリップ設定に従います。</li>
-</ul>
-<h2 id="デフォルトに戻す">デフォルトに戻す<a class="anchor" href="#デフォルトに戻す" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>アバターのパラメーター › デフォルトに戻す を押すと、メニューの値がアバターの初期値に戻ります。衣装の状態のように保存される値は、次回の起動時にも引き継がれます。</p>
-<h2 id="クイックアクション">クイックアクション<a class="anchor" href="#クイックアクション" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>よく使う操作を、ボタンやキーにしておけます。メニュー項目、ジェスチャー、カメラビュー、ライティングプリセットなどを登録でき、ボタンを右クリックすると名前や位置を変更できます。</p>
-<h2 id="ヒエラルキーメッシュシェイプキー">ヒエラルキー・メッシュ・シェイプキー<a class="anchor" href="#ヒエラルキーメッシュシェイプキー" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>アバターのオブジェクトを、Unity のようにツリーで見て、その場で直せます。</p>
-<ul>
-<li>ヒエラルキー — アバターのオブジェクトをツリーで表示します。チェックでオン / オフし、目のアイコンはオブジェクトをオンにしたまま、画面からだけ隠します。</li>
-<li>メッシュ — すべてのメッシュを、ひとつの一覧で表示します。検索で、すばやく見つけられます。</li>
-<li>メッシュを押すと、横のパネルで シェイプキー をひとつずつ調整できます。自分で決めた値は、フェイストラッキングやアバターのアニメーションより優先されます。</li>
-<li>一番上の すべてリセット ですべてのメッシュをアバターの元の状態に戻し、すべて折りたたむ でツリーを閉じます。</li>
-</ul>
-<h2 id="リセット">リセット<a class="anchor" href="#リセット" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="table-wrap" tabindex="0"><table>
-<thead>
-<tr>
-<th></th>
-<th>リセット</th>
-<th>すべてリセット</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>内容</td>
-<td>トラッキング、手のポーズ、PhysBone を最初の状態に</td>
-<td>上記に加えて、衣装・位置・カメラまで最初の状態に</td>
-</tr>
-<tr>
-<td>実行</td>
-<td>上部の ⟲</td>
-<td>⟲ を右クリック、または 設定 › 一般</td>
-</tr>
-</tbody>
-</table></div></article><nav class="pager" aria-label="Pager"><a class="prev" href="04-main-window.html"><span>前へ</span>メイン画面</a><a class="next" href="06-devices.html"><span>次へ</span>デバイス</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#アバターメニューの各操作が変えるもの">アバターメニューの各操作が変えるもの</a></li><li><a href="#expression-メニュー">Expression メニュー</a></li><li><a href="#項目を右クリック">項目を右クリック</a></li><li><a href="#ハンドジェスチャー">ハンドジェスチャー</a></li><li><a href="#カードの並び順ポーズマイ表情">カードの並び順・ポーズ・マイ表情</a></li><li><a href="#デフォルトに戻す">デフォルトに戻す</a></li><li><a href="#クイックアクション">クイックアクション</a></li><li><a href="#ヒエラルキーメッシュシェイプキー">ヒエラルキー・メッシュ・シェイプキー</a></li><li><a href="#リセット">リセット</a></li></ul></nav>
+<h2 id="元に戻す">元に戻す<a class="anchor" href="#元に戻す" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>アバターパラメーター → デフォルトに戻すを押すと、衣装・表情などのメニュー値がアバターのデフォルト値に戻ります。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="04-main-window.html"><span>前へ</span>メイン画面</a><a class="next" href="06-devices.html"><span>次へ</span>デバイス</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#衣装と表情を変える">衣装と表情を変える</a></li><li><a href="#よく使う項目をすぐ取り出す">よく使う項目をすぐ取り出す</a></li><li><a href="#姿勢と追跡">姿勢と追跡</a></li><li><a href="#手のジェスチャー">手のジェスチャー</a></li><li><a href="#私の表情">私の表情</a></li><li><a href="#階層構造とシェイプキー">階層構造とシェイプキー</a></li><li><a href="#元に戻す">元に戻す</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>製品</h2><ul><li><a href="index.html#features">機能</a></li><li><a href="index.html#how">使い方</a></li><li><a href="index.html#editions">エディション</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新履歴</a></li></ul></div><div class="fcol"><h2>ガイド</h2><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul></div><div class="fcol"><h2>規約・ポリシー</h2><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></div><div class="fcol"><h2>リンク</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>製品</h2><ul><li><a href="index.html#features">機能</a></li><li><a href="index.html#how">使い方</a></li><li><a href="index.html#editions">エディション</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新履歴</a></li></ul></div><div class="fcol"><h2>ガイド</h2><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターをエクスポート</a></li><li><a href="12-troubleshooting.html">問題解決</a></li><li><a href="13-license.html">エディションとライセンス</a></li></ul></div><div class="fcol"><h2>規約・ポリシー</h2><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></div><div class="fcol"><h2>リンク</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE は VRChat Inc. の公式製品ではなく、VRChat Inc. とは提携していません。VRChat は VRChat Inc. の商標です。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

@@ -1,75 +1,66 @@
-# 1. Getting started
+# Getting Started
 
-## quick start: from first launch to your first stream
+Start by loading an avatar, connecting your tracking devices, then setting up your broadcast video output.
 
-1. Load an avatar: Open a .vavatar created with Exporter 1.0.6 or a supported VRM 0.x/1.0 model. Some custom VRM 0.x shaders cannot load.
-2. Connect input: Pick webcam, iPhone, mic, VMC or SteamVR per body part in [Devices](06-devices.md). Your face, arms, fingers and body can use different sources.
-3. Calibrate: Face forward. With iPhone input, initial correction starts roughly three seconds after the first valid tracked face frame.
-4. Customize motion: Select expressions and clothing in [Avatar Menu](05-avatar-menu.md), then adjust smoothing, lip sync and AFK behavior under [Motion](07-motion.md).
-5. Prepare the picture: Select a background and lights in [Studio](08-scene.md); Pro also offers multiple avatars and saved broadcast cameras.
-6. Connect OBS: Install the OBS Spout2 receiver plugin for same-PC output, or DistroAV/NDI for network output. NDI is available in Basic, but the third-party OBS plugin is required. Follow the [Output tutorial](09-output.md).
-7. Check the actual broadcast: Your editing scene view can differ from the on-air studio camera. Verify the OBS program monitor before going live.
+## Installing and Running
 
-Basic is licensed for personal use; public/commercial broadcasts require Pro, regardless of which technically available output method is selected. See [Licensing](13-license.md).
+1. Receive the Avatar Live ZIP file from your BOOTH purchase history.
+2. Extract all files to the desired folder.
+3. Run `AvatarLive.exe` inside the folder.
+4. On the product activation screen, enter the information provided when you made the purchase and press Activate.
 
-## What you need
+Windows 10 / 11 64-bit and a graphics card that supports DirectX 11 are required. Prepare a webcam to track face and hand movements, and a microphone to move the mouth with your voice.
 
-| Item | Requirement |
+## 1. Open Avatar
+
+![Start screen for choosing the device to start with your avatar](img/guide-launcher.png)
+
+1. Click 'Open Avatar' or drag the file into the window.
+2. Select the character to use from the avatar list.
+3. Click **Start** in Avatar Live. When the scene list appears, select the scene you want to use.
+
+| File type | How to use it |
 |---|---|
-| Operating system | Windows 10 / 11 (64-bit) |
-| Graphics | GPU with DirectX 11 support |
-| Webcam | A regular color webcam |
-| Microphone | For lip sync (optional) |
-| Internet | Needed for activation and license checks |
-| Avatar | The Unity project of your VRChat avatar (Unity 2022.3.22f1) |
+| `.vavatar` | Open the file directly. |
+| `.vrm` | Loads as is. Supports VRM 0.x and 1.0. |
+| Unity Avatar Project | After creating a `.vavatar` with [Avatar Exporter](02-avatar-exporter.md), import it. |
 
-## Editions
+## 2. Connecting My Movements
 
-| | Basic | Pro |
-|---|---|---|
-| Scope of use | Personal use (including private Discord sharing with friends) | Streaming · publishing videos · commercial use |
-| Output | Up to 1080p · watermark | Up to 4K · no watermark |
-| Posing · Objects · More screen share sources | — | ✅ |
+![Setting up devices for webcam and microphone](img/guide-devices.png)
 
-If you'll be showing it to other people, such as on a stream or in a published video, please choose Pro. You'll find the details in [Chapter 13](13-license.md).
+1. Press the device on the left.
+2. Select the camera you want to use from the webcam list and turn on the switch to the right of the title.
+3. Face the screen straight on and press front calibration.
+4. To move your mouth with your voice, also select a microphone and turn on the switch.
 
-## Installation
+If you are using an iPhone or an external tracker, check [Devices](06-devices.md) for connection methods.
 
-1. Download the ZIP file from your BOOTH purchase history.
-2. Extract it to any folder you like.
-3. Run `AvatarLive.exe`.
+## 3. Setting Background and Composition
 
-> 💡 If a "Windows protected your PC" window appears, click More info → Run anyway.
+![Main screen showing menu and avatar together](img/guide-main.png)
 
-> 💡 We recommend leaving the files in the installation folder as they are. If the files change, Avatar Live may not start; in that case, simply reinstall from the original. Your avatars and settings are kept.
+- Outfit & expression: Choose from the left menu.
+- Face & hand movements: Adjust in Motion.
+- Background & lighting: Choose in Studio.
+- Composition: Select face, upper body, or full body from the camera toolbar at the bottom.
 
-## Activation
+Press F1 to hide the menu and view only the avatar. Press again to bring the menu back.
 
-The first time you run it, the Product activation screen appears. Enter the information you received with your purchase and click Activate, and you're all set.
+## 4. Connecting to Broadcasting Software
 
-A license is for one person on one device. You can move it to another PC yourself once. After that, we're happy to help through an inquiry when it can't be avoided, but it may not always be easy. Please choose the PC you activate first carefully.
+| Purpose | Where to Open |
+|---|---|
+| Insert avatar into OBS on this PC | [Spout2 Connection](09-output.md#spout2) |
+| Send video to OBS on another PC | [NDI Connection](09-output.md#ndi) |
+| Use as camera on Discord or Zoom | [Virtual Camera](09-output.md#virtual-camera) |
+| Share games and avatars together | [Screen Sharing](09-output.md#screen-share) |
+| Broadcast together with a friend's avatar | [Remote Collaboration](09-session.md) |
 
-## Getting to your first stream
+Before starting a broadcast, check the actual video on OBS or the side receiving the shared screen. The layout of your work screen and the broadcast camera may differ.
 
-<div class="steps" markdown="1">
+## Editions and Exit
 
-1. Export your avatar — Create a `.vavatar` file in Unity. → [Chapter 2](02-avatar-exporter.md)
-2. Open your avatar — Open the file on the start screen and click ▶ Start Avatar Live. → [Chapter 3](03-launcher-and-library.md)
-3. Turn on the webcam and mic — Turn on the switches on the Devices page. → [Chapter 6](06-devices.md)
-4. Fit your face — Click Motion › Automatic face setup and follow the guide. → [Chapter 7](07-motion.md)
-5. Choose a background and lighting — Pick them on the Studio page. → [Chapter 8](08-scene.md)
-6. Send it out — On the Output page, turn on Spout2, the virtual camera or screen share. → [Chapter 9](09-output.md)
+Basic is for personal/private use, Pro is for broadcasting, video sharing, and commercial use. Check the [features by edition](13-license.md) for the functions you need.
 
-</div>
-
-Press F1 to hide the menus so that only the avatar is shown.
-
-## Important locations in 1.1.5
-
-- Use the top magnifying glass to search for AFK, Mirror, Spout2 and other settings.
-- Configure the default pose and tracking-loss idle pose separately. AFK timing is now under Motion › Body, not Settings.
-- Click a section heading to fold it and drag headings to reorder cards. Each pose has independent facial, head, arms, fingers and body tracking switches.
-
-## Quitting
-
-By default, clicking the window's X quits Avatar Live. You can select Minimize to tray under Settings › Window. While streaming, closing the window may keep output running in the tray. The power button at the lower-left quits the program completely.
+Close the program with the power button at the bottom left. If the window's X button is set to hide to the tray, the broadcast will continue. You can change the X button behavior in Settings → Window.

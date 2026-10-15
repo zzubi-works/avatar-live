@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>動き — AVATAR LIVE</title>
-<meta name="description" content="iPhone が接続表示でも、顔の追跡値が古いままなら顔が止まることがあります。元のトラッキング信号、AFK 時間、正面補正を確認してください。保存ポーズの顔・頭・腕・指・胴体５つの追跡スイッチは独立しています。頭 OFF・表情 ONにすると頭の向きを固定したまま表情だけ動かせます。">
+<title>動作 — AVATAR LIVE</title>
+<meta name="description" content="自分の表情や動きがアバターにどれだけ大きく、どれだけ滑らかに反映されるかを決めます。設定はアバターごとに保存されます。">
 <link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ja/07-motion.html">
 <link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/07-motion.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/07-motion.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/07-motion.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/07-motion.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AVATAR LIVE">
-<meta property="og:title" content="動き — AVATAR LIVE">
-<meta property="og:description" content="iPhone が接続表示でも、顔の追跡値が古いままなら顔が止まることがあります。元のトラッキング信号、AFK 時間、正面補正を確認してください。保存ポーズの顔・頭・腕・指・胴体５つの追跡スイッチは独立しています。頭 OFF・表情 ONにすると頭の向きを固定したまま表情だけ動かせます。">
+<meta property="og:title" content="動作 — AVATAR LIVE">
+<meta property="og:description" content="自分の表情や動きがアバターにどれだけ大きく、どれだけ滑らかに反映されるかを決めます。設定はアバターごとに保存されます。">
 <meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ja/07-motion.html">
 <meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ja.jpg">
 <meta property="og:image:width" content="1200">
@@ -42,187 +42,208 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="03-launcher-and-library.html">スタート画面とアバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html" aria-current="page">動き</a></li><li><a href="08-scene.html">スタジオ</a></li><li><a href="09-output.html">出力</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージング・オブジェクト・表情</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
-  <main id="main" class="docs-main"><article class="prose"><h1 id="7-動き">7. 動き<a class="anchor" href="#7-動き" aria-hidden="true" tabindex="-1">#</a></h1>
-<h2 id="動作調整のスライダーが変えること">動作調整のスライダーが変えること<a class="anchor" href="#動作調整のスライダーが変えること" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-motion.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-motion.webp" srcset="../assets/shots/ja/v45-motion-960.webp 960w, ../assets/shots/ja/v45-motion.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="750" style="--image-width:1200px" alt="動作画面" loading="lazy" decoding="async"></a><figcaption>動作画面</figcaption></figure>
-<div class="table-wrap" tabindex="0"><table>
-<thead>
-<tr>
-<th>項目</th>
-<th>小さい／オフ</th>
-<th>大きい／オン</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>表情の感度</td>
-<td>小さい表情には反応しにくく雑音が少ない</td>
-<td>小さな変化も大きく見えるが誇張される場合がある</td>
-</tr>
-<tr>
-<td>表情のなめらかさ</td>
-<td>素早く反応するが揺れが目立つ</td>
-<td>柔らかく動くが瞬きや発話が遅れる場合がある</td>
-</tr>
-<tr>
-<td>リップシンク強度</td>
-<td>口の開きが小さい</td>
-<td>話すときの口の開きが大きくなる</td>
-</tr>
-<tr>
-<td>瞬き感度・自動瞬き</td>
-<td>入力信号を優先</td>
-<td>小さなまぶたの動きや待機中の自動瞬きが増える</td>
-</tr>
-<tr>
-<td>腕の動的／以前の方式</td>
-<td>以前の方式は 1.1.6 に近い動作を維持</td>
-<td>動的方式は腕と手の奥行き計算を加えるが、環境によって違いがある</td>
-</tr>
-<tr>
-<td>手のなめらかさ</td>
-<td>すぐ動くが震えやすい</td>
-<td>震えが減るが動きが遅れる</td>
-</tr>
-<tr>
-<td>手の奥行き推定（実験的）</td>
-<td>平面上で比較的安定</td>
-<td>カメラに向かって伸ばす距離を推定するが腕がねじれる場合がある</td>
-</tr>
-<tr>
-<td>AFK に入るまでの待ち</td>
-<td>一時的なロストでもすぐ待機姿勢</td>
-<td>短い途切れは無視し、長いロストだけ待機</td>
-</tr>
-<tr>
-<td>AFK 切り替え・復帰の時間</td>
-<td>すぐ切り替わる</td>
-<td>徐々に動くが復帰が遅い</td>
-</tr>
-<tr>
-<td>待機の呼吸・瞬き</td>
-<td>静止</td>
-<td>追跡していない間も小さく動く</td>
-</tr>
-</tbody>
-</table></div>
-<figure><a class="zoomable" href="../assets/shots/ja/v45-motion-expanded.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/v45-motion-expanded.webp" srcset="../assets/shots/ja/v45-motion-expanded-960.webp 960w, ../assets/shots/ja/v45-motion-expanded.webp 1200w" sizes="(max-width: 900px) 100vw, 860px" width="1200" height="760" style="--image-width:1200px" alt="動作の詳細" loading="lazy" decoding="async"></a><figcaption>動作の詳細</figcaption></figure>
-<p>iPhone が接続表示でも、顔の追跡値が古いままなら顔が止まることがあります。元のトラッキング信号、AFK 時間、正面補正を確認してください。保存ポーズの顔・頭・腕・指・胴体５つの追跡スイッチは独立しています。頭 OFF・表情 ONにすると頭の向きを固定したまま表情だけ動かせます。</p>
-<p>視線対象をカメラ・人物・なしから選ぶと、どこを見るかが変わります。視線の強度を上げると目や頭が目標を強く追い、下げると元のトラッキングを優先します。実験的な Look At IK によって頭が不自然になる場合はオフにしてください。</p>
-<p>顔、体、手がどのように動くかを決めます。設定はアバターごとに保存されます。</p>
-<h2 id="フェイストラッキング">フェイストラッキング<a class="anchor" href="#フェイストラッキング" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/ja/motion-face.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/motion-face.webp" width="960" height="900" style="--image-width:960px" alt="動きページ" loading="lazy" decoding="async"></a><figcaption>動きページ</figcaption></figure>
-<ul>
-<li>ミラー — 鏡のように、同じ側に動きます。</li>
-<li>腕・手・指 — Web カメラで各部位を動かします。</li>
-<li>ジェスチャー → 表情 — 手の形に合わせて、アバターの表情が変わります。</li>
-<li>顔トラッキング — 表情のトラッキングをオン / オフします。</li>
-</ul>
-</div>
-<h2 id="表情が動くしくみ">表情が動くしくみ<a class="anchor" href="#表情が動くしくみ" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>顔の表情は アバターに入っている設定にそのまま従います。 Avatar Live がアバターの表情を新しく作ったり、変換したりすることはありません。</p>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターをエクスポート</a></li><li><a href="03-launcher-and-library.html">アバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html" aria-current="page">動作</a></li><li><a href="08-scene.html">スタジオ</a></li><li><a href="08-camera-effects.html">カメラエフェクト</a></li><li><a href="09-output.html">出力</a></li><li><a href="09-session.html">リモートコラボ配信</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージングと表情</a></li><li><a href="12-troubleshooting.html">問題解決</a></li><li><a href="13-license.html">エディションとライセンス</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="動作">動作<a class="anchor" href="#動作" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>自分の表情や動きがアバターにどれだけ大きく、どれだけ滑らかに反映されるかを決めます。設定はアバターごとに保存されます。</p>
+<h2 id="顔">顔<a class="anchor" href="#顔" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-motion-face.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-face.webp" width="550" height="938" style="--image-width:550px" alt="顔の追跡と表情の調整" loading="lazy" decoding="async"></a><figcaption>顔の追跡と表情の調整</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
-<th>アバターの設定</th>
-<th>動き方</th>
+<th>項目</th>
+<th>調整すると</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>VRCFaceTracking（VRCFT） のパラメーターがある</td>
-<td>アバターの VRCFT 設定で動きます。</td>
+<td>顔追跡</td>
+<td>オンにすると自分の表情が反映されます。オフにすると顔入力は使用されません。</td>
 </tr>
 <tr>
-<td>ARKit の 52 個のシェイプキー（パーフェクトシンク）がある</td>
-<td>そのシェイプキーを直接動かします。</td>
+<td>ミラー</td>
+<td>鏡のように左右の動きを反映します。</td>
 </tr>
 <tr>
-<td>どちらもない</td>
-<td>まばたき・リップシンクなど、アバターが持つ基本の表情が中心になり、細かい表情は出ない場合があります。</td>
+<td>ジェスチャー → 表情</td>
+<td>手の形に関連するアバターの表情を使用します。</td>
+</tr>
+<tr>
+<td>表情感度</td>
+<td>高くすると小さな表情でも大きく、低くすると落ち着いて表示されます。</td>
+</tr>
+<tr>
+<td>柔らかさ</td>
+<td>上げると揺れが減り、下げると素早く反応します。</td>
 </tr>
 </tbody>
 </table></div>
+<h3 id="自動顔設定">自動顔設定<a class="anchor" href="#自動顔設定" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-face-calibration.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-face-calibration.webp" srcset="../assets/shots/ko/guide-face-calibration-960.webp 960w, ../assets/shots/ko/guide-face-calibration.webp 1420w" sizes="(max-width: 900px) 100vw, 860px" width="1420" height="1080" style="--image-width:1420px" alt="自動顔設定ガイド" loading="lazy" decoding="async"></a><figcaption>自動顔設定ガイド</figcaption></figure>
+<ol>
+<li>自動顔設定を押します。</li>
+<li>案内に従って正面を向くか、表情を作ります。</li>
+<li>測定を押して、次のステップに進みます。</li>
+<li>最後に「適用」を押します。</li>
+</ol>
+<h3 id="顔の調整">顔の調整<a class="anchor" href="#顔の調整" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-face-adjust.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-face-adjust.webp" width="550" height="759" style="--image-width:550px" alt="目・眉・口を別々に調整する顔の調整" loading="lazy" decoding="async"></a><figcaption>目・眉・口を別々に調整する顔の調整</figcaption></figure>
 <ul>
-<li>Webカメラや iPhone が表情を 52 個の単位で読み取っても、アバターに対応するパラメーターやシェイプキーがない表情は出ません。</li>
-<li>シェイプキーが一部だけある場合は、あるものだけが動きます。</li>
+<li>目・眉・口・頬：それぞれの表情が動く大きさを個別に調整します。</li>
+<li>左右両方を同時に編集: オンにすると両側を同じ値にします。</li>
+<li>スムージング: 小さな表情の揺れを減らします。高すぎると反応が遅くなります。</li>
 </ul>
-<blockquote class="callout tip"><p>今後、52 個の表情をすべて認識してアバターに合わせて接続したり、設定のないアバターでも顔に直接バインドしたりできるよう改善する予定です。時期は変わる場合があります。</p>
-</blockquote>
-<h2 id="自動フェイスセットアップ">自動フェイスセットアップ<a class="anchor" href="#自動フェイスセットアップ" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/facecal.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/facecal.webp" srcset="../assets/shots/ja/facecal-960.webp 960w, ../assets/shots/ja/facecal.webp 1600w" sizes="(max-width: 900px) 100vw, 860px" width="1600" height="900" style="--image-width:1600px" alt="自動フェイスセットアップ" loading="lazy" decoding="async"></a><figcaption>自動フェイスセットアップ</figcaption></figure>
-<p>自動フェイスセットアップ ボタンを押すと、キャリブレーションが始まります。画面の案内に従って表情を作り、測定 を押してください。最後に 適用 を押すと、自分の顔に合わせて表情が調整されます。</p>
-<blockquote class="callout tip"><p>最初のステップで見ている場所が、アバターの正面の視線になります。配信するときと同じように、画面を見てください。</p>
-</blockquote>
-<h2 id="顔の調整">顔の調整<a class="anchor" href="#顔の調整" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/ja/face-adjust.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/face-adjust.webp" width="960" height="900" style="--image-width:960px" alt="顔の調整" loading="lazy" decoding="async"></a><figcaption>顔の調整</figcaption></figure>
+<h2 id="目と視線">目と視線<a class="anchor" href="#目と視線" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-motion-eyes.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-eyes.webp" width="550" height="983" style="--image-width:550px" alt="まばたきと視線の設定" loading="lazy" decoding="async"></a><figcaption>まばたきと視線の設定</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>結果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>点滅別</td>
+<td>左目と右目を別々に閉じます。ウィンクに使います。</td>
+</tr>
+<tr>
+<td>点滅同期</td>
+<td>両目を一緒に閉じます。</td>
+</tr>
+<tr>
+<td>自動まばたき</td>
+<td>入力がなくても一定間隔でまばたきをします。</td>
+</tr>
+<tr>
+<td>目の視線追跡</td>
+<td>私の瞳の方向を反映します。</td>
+</tr>
+<tr>
+<td>カメラビュー</td>
+<td>アバターの瞳をカメラの方に向けます。</td>
+</tr>
+<tr>
+<td>注視対象</td>
+<td>カメラ・特定のアバターなど、見る対象を選びます。</td>
+</tr>
+</tbody>
+</table></div>
+<p>頭の追跡と顔の追跡、カメラの視点はそれぞれ別々に設定します。頭を固定した姿勢でも、瞳だけをカメラに向けさせることができます。</p>
+<h2 id="口とリップシンク">口とリップシンク<a class="anchor" href="#口とリップシンク" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-motion-mouth.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-mouth.webp" width="550" height="786" style="--image-width:550px" alt="マイクリップシンクと口の設定" loading="lazy" decoding="async"></a><figcaption>マイクリップシンクと口の設定</figcaption></figure>
 <ul>
-<li>目、眉、口、頬の表情をどのくらい大きく出すか、ひとつずつ調整します。</li>
-<li>スライダーを右に動かすと、その表情がより大きく出ます。</li>
-<li>左右を一緒に編集 をオンにすると、両側が一緒に変わります。</li>
-<li>スムージング をオンにすると、表情のブレが減ります。</li>
+<li>リップシンクの強さ：上げると口をより大きく開きます。</li>
+<li>自動レベル: 声の大きさに合わせて口の動きを調整します。</li>
+<li>音声補正: 指示された母音を発音して自分の声に合わせます。</li>
+<li>舌・頬の膨らみ: ボタンやショートカットキーでその表情を適用します。モデルに必要な表情がある場合に表示されます。</li>
 </ul>
-</div>
-<h2 id="まばたき口">まばたき・口<a class="anchor" href="#まばたき口" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/ja/motion-mouth.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/motion-mouth.webp" width="960" height="900" style="--image-width:960px" alt="まばたきと口" loading="lazy" decoding="async"></a><figcaption>まばたきと口</figcaption></figure>
-<ul>
-<li>まばたきの方式 — 独立 はウインクがしやすく、同期 は両目が一緒に閉じます。</li>
-<li>目の視線トラッキング — 瞳が自分の視線に合わせて動きます。</li>
-<li>自動レベル — 声の大きさに合わせて、口の大きさを自動で調整します。</li>
-<li>音声キャリブレーション — 母音のボタンを押して発音すると、自分の声に合わせて調整されます。</li>
-<li>舌・頬の膨らみ — ボタンやショートカットで、舌を出したり頬を膨らませたりします。</li>
-</ul>
-</div>
-<h2 id="目線とカメラを見る機能">目線とカメラを見る機能<a class="anchor" href="#目線とカメラを見る機能" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/motion-gaze.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/motion-gaze.webp" width="960" height="900" style="--image-width:960px" alt="目線の設定" loading="lazy" decoding="async"></a><figcaption>目線の設定</figcaption></figure>
-<p>動作 › 顔で目線を調整します。カメラを見る機能をONにすると目線がカメラに向きます。ポーズのフェイシャル追跡がOFFでも独立して動作し、頭の追跡も別のスイッチで管理します。カメラ目線だけでほかの顔の表情がONになるわけではありません。</p>
 <h2 id="体">体<a class="anchor" href="#体" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/ja/motion-body.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/motion-body.webp" width="960" height="900" style="--image-width:960px" alt="体の動き" loading="lazy" decoding="async"></a><figcaption>体の動き</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-motion-body.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-body.webp" width="550" height="983" style="--image-width:550px" alt="頭と体の動きの設定" loading="lazy" decoding="async"></a><figcaption>頭と体の動きの設定</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>調整すると</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>頭の動き</td>
+<td>小さく・自然に・大きく の中で動きの大きさを選びます。</td>
+</tr>
+<tr>
+<td>体の追従</td>
+<td>頭を回すと体も一緒に回ります。</td>
+</tr>
+<tr>
+<td>自然な動き</td>
+<td>じっとしていても小さな待機動作を加えます。</td>
+</tr>
+<tr>
+<td>呼吸</td>
+<td>呼吸しているような小さな体の動きを加えます。</td>
+</tr>
+<tr>
+<td>上半身・全身</td>
+<td>デバイスから受け取った体の動きを反映します。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="トラッキングを失った場合">トラッキングを失った場合<a class="anchor" href="#トラッキングを失った場合" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-motion-afk.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-afk.webp" width="550" height="579" style="--image-width:550px" alt="トラッキング喪失とAFK切替時間" loading="lazy" decoding="async"></a><figcaption>トラッキング喪失とAFK切替時間</figcaption></figure>
+<p>AFKは顔と体のトラッキングを両方失ったときに使用する待機状態です。メニュー → 基本・AFKポーズで時間を設定します。</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>時間</th>
+<th>長くすると</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>待機時間</td>
+<td>少し入力が途切れても姿勢を維持してさらに待ちます。</td>
+</tr>
+<tr>
+<td>切替時間</td>
+<td>待機ポーズにゆっくり移行します。</td>
+</tr>
+<tr>
+<td>復帰時間</td>
+<td>入力が戻った後、正常な動作にゆっくり戻ります。</td>
+</tr>
+</tbody>
+</table></div>
+<p>待機中に使用するポーズと表情は <a href="11-pro-features.html#基本姿勢と待機姿勢">基本ポーズと待機ポーズ</a> で選びます。</p>
+<h2 id="腕と手">腕と手<a class="anchor" href="#腕と手" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-motion-hands.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-hands.webp" width="550" height="983" style="--image-width:550px" alt="腕・手のトラッキングと机上動作" loading="lazy" decoding="async"></a><figcaption>腕・手のトラッキングと机上動作</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>項目</th>
+<th>調整すると</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>腕・手の滑らかさ</td>
+<td>上げると手の震えが減り、速い手振りは遅れて追従します。</td>
+</tr>
+<tr>
+<td>動的方式</td>
+<td>手を伸ばす距離の変化を反映する腕の方式を使用します。</td>
+</tr>
+<tr>
+<td>以前の方式</td>
+<td>既存の腕の動き方式と比較できます。</td>
+</tr>
+<tr>
+<td>手の深さ推定</td>
+<td>ウェブカメラで前後の距離を推定します。実験的で、腕がねじれる場合はオフにしてください。</td>
+</tr>
+<tr>
+<td>手を見失った時の復帰</td>
+<td>手が見えないときに基本姿勢に戻る速さを変えます。</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="デスク動作">デスク動作<a class="anchor" href="#デスク動作" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>手がカメラに映らないとき、キーボードやマウスの使用に合わせてアバターの手を動かします。</p>
 <ul>
-<li>頭の動き — 控えめ・自然・大きめ から選びます。</li>
-<li>体の追従 — 頭の向きを変えると、体も自然についてきます。</li>
-<li>自然な体の動き・呼吸 — じっとしていても、生きているように動きます。</li>
-<li>上半身 — Web カメラの全身をオンにすると、肩の動きで上半身が傾いたり回ったりします。脚が映らないデスクの前でも動きます。</li>
-<li>全身 — 胴体、脚、座る・立つを、Web カメラや VMC で追います。詳しくは<a href="06-devices.html#全身指の関節web-カメラ">デバイス › 全身・指の関節</a>をご覧ください。</li>
+<li>手の基本姿勢: デスクの高さ・手の間隔・手首の角度を合わせます。</li>
+<li>キーボード反応: タイピング時に指と手が動く大きさです。</li>
+<li>マウス反応: マウスを動かすときに手が追従する大きさです。</li>
+<li>手を再びカメラに戻すとトラッキングに戻ります。</li>
 </ul>
-</div>
-<h2 id="afkの切り替え時間と追跡喪失">AFKの切り替え時間と追跡喪失<a class="anchor" href="#afkの切り替え時間と追跡喪失" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/motion-afk.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/motion-afk.webp" width="960" height="900" style="--image-width:960px" alt="動作のAFK切り替え時間" loading="lazy" decoding="async"></a><figcaption>動作のAFK切り替え時間</figcaption></figure>
-<p>AFKの時間は設定から動作 › 体に移動しました。アバターごとに次の3項目をスライダーまたは数値入力で調整できます。</p>
-<ul>
-<li>追跡喪失の待機: 一時的に追跡が切れてからAFKへ入るまで待つ時間</li>
-<li>AFKへ移行: 待機ポーズへなめらかに切り替える時間</li>
-<li>追跡復帰: 追跡信号が戻ってから元の動作に戻る時間</li>
-</ul>
-<p>以前の保存値は保持されます。基本ポーズ、追跡喪失時の待機ポーズ、待機中の表情は <a href="11-pro-features.html">ポージング</a> で別々に設定します。</p>
-<h2 id="webカメラの手の奥行き推定実験的">Webカメラの手の奥行き推定（実験的）<a class="anchor" href="#webカメラの手の奥行き推定実験的" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ja/motion-hand-depth.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/motion-hand-depth.webp" width="960" height="900" style="--image-width:960px" alt="Webカメラの手を伸ばす実験的設定" loading="lazy" decoding="async"></a><figcaption>Webカメラの手を伸ばす実験的設定</figcaption></figure>
-<p>Webカメラに向かって手を伸ばす距離を推定します。カメラによっては腕や手首がねじれたり揺れたりするため、通常はOFFを推奨します。不安定ならまずこの機能をOFFにし、手の揺れ補正を確認してください。</p>
-<h2 id="手デスク">手・デスク<a class="anchor" href="#手デスク" aria-hidden="true" tabindex="-1">#</a></h2>
-<div class="shot">
-<figure><a class="zoomable" href="../assets/shots/ja/motion-desk.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/motion-desk.webp" width="960" height="900" style="--image-width:960px" alt="手とデスク" loading="lazy" decoding="async"></a><figcaption>手とデスク</figcaption></figure>
-<ul>
-<li>デスク操作 — 手がカメラに映っていないとき、キーボードとマウスに合わせてアバターの手が動きます。</li>
-<li>手の基本姿勢 — 机の高さ、手の間隔、手首の角度を合わせます。</li>
-<li>キーボード・マウス入力への反応 — タイピングやマウスの動きの大きさを決めます。</li>
-<li>手を下ろすとすぐにデスクのポーズになり、また上げると、なめらかにトラッキングに戻ります。体が大きく揺れても、座っていても、ひじが自然についてきます。</li>
-<li>ポージングで作った腕・手のポーズを、机のポーズにする でデスクのポーズにできます（Pro）。</li>
-</ul>
-</div>
-<blockquote class="callout privacy"><p>キーボード入力はアバターの手を動かすためだけに使われ、入力した文字を保存・送信することはありません。</p>
-<p>💡 舌・頬の膨らみのカメラ検出は、試験的機能です。</p>
-</blockquote></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>前へ</span>デバイス</a><a class="next" href="08-scene.html"><span>次へ</span>スタジオ</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#動作調整のスライダーが変えること">動作調整のスライダーが変えること</a></li><li><a href="#フェイストラッキング">フェイストラッキング</a></li><li><a href="#表情が動くしくみ">表情が動くしくみ</a></li><li><a href="#自動フェイスセットアップ">自動フェイスセットアップ</a></li><li><a href="#顔の調整">顔の調整</a></li><li><a href="#まばたき口">まばたき・口</a></li><li><a href="#目線とカメラを見る機能">目線とカメラを見る機能</a></li><li><a href="#体">体</a></li><li><a href="#afkの切り替え時間と追跡喪失">AFKの切り替え時間と追跡喪失</a></li><li><a href="#webカメラの手の奥行き推定実験的">Webカメラの手の奥行き推定（実験的）</a></li><li><a href="#手デスク">手・デスク</a></li></ul></nav>
+<p>キーボード入力は手の動作を作るためだけに使用し、入力した文字は保存や送信を行いません。</p>
+<h2 id="表情が出ないとき">表情が出ないとき<a class="anchor" href="#表情が出ないとき" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>アバターにある表情だけが動かせます。VRCFaceTracking設定があればその設定を、ARKitシェイプキーがあればその顔の形を使用します。ない表情は感度を上げても新たに出現しません。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>前へ</span>デバイス</a><a class="next" href="08-scene.html"><span>次へ</span>スタジオ</a></nav><p class="updated">最終更新: 2026-10-15</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#顔">顔</a></li><li><a href="#目と視線">目と視線</a></li><li><a href="#口とリップシンク">口とリップシンク</a></li><li><a href="#体">体</a></li><li><a href="#トラッキングを失った場合">トラッキングを失った場合</a></li><li><a href="#腕と手">腕と手</a></li><li><a href="#表情が出ないとき">表情が出ないとき</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>製品</h2><ul><li><a href="index.html#features">機能</a></li><li><a href="index.html#how">使い方</a></li><li><a href="index.html#editions">エディション</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新履歴</a></li></ul></div><div class="fcol"><h2>ガイド</h2><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターの書き出し</a></li><li><a href="12-troubleshooting.html">トラブルシューティング</a></li><li><a href="13-license.html">エディション・ライセンス・告知</a></li></ul></div><div class="fcol"><h2>規約・ポリシー</h2><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></div><div class="fcol"><h2>リンク</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>製品</h2><ul><li><a href="index.html#features">機能</a></li><li><a href="index.html#how">使い方</a></li><li><a href="index.html#editions">エディション</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新履歴</a></li></ul></div><div class="fcol"><h2>ガイド</h2><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターをエクスポート</a></li><li><a href="12-troubleshooting.html">問題解決</a></li><li><a href="13-license.html">エディションとライセンス</a></li></ul></div><div class="fcol"><h2>規約・ポリシー</h2><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></div><div class="fcol"><h2>リンク</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE は VRChat Inc. の公式製品ではなく、VRChat Inc. とは提携していません。VRChat は VRChat Inc. の商標です。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

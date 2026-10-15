@@ -1,108 +1,80 @@
-# 11. Posing · Objects · Expressions
+# Posing and Facial Expressions
 
-## features: editions and what changes
-
-![Pro studio cameras](img/v45-studio-cameras.png)
-
-| Feature | Basic | Pro | Practical effect |
-|---|---|---|---|
-| Standard Spout2 and NDI output | ✅ | ✅ | Sends the avatar picture to OBS. NDI is also Basic and needs its OBS receiver plugin. |
-| Normal lights and post-processing | ✅ | ✅ | Changes colour, shadows, bloom and background. |
-| Pose editing/library and props | — | ✅ | Adjusts/locks bones or attaches props to the stage and avatar bones. |
-| Multiple avatars and shared control | — | ✅ | Places multiple characters in one scene and shares or switches tracking input. |
-| Studio cameras / director / multiview | — | ✅ | Sends a separate on-air camera while your editor remains the scene view. |
-| Independent per-camera Spout2 | — | ✅ | Adds separately named sources to OBS, up to three additional senders. |
-| Remote session | — | ✅ | Shares live pose/face/gaze and optional consented avatar data with other PCs. |
-| Volumetric lights / HBAO / Beautify | — | ✅ | Adds visible light beams, contact shadows and advanced image effects. |
-| MP4 recording / extra share sources | — | ✅ | Records video or combines more game/display windows. |
-
-Upgrading to Pro does not automatically switch everything on. Multiview is a separate toggle from director mode and starts off; camera collision, gaze/Look At IK and some advanced effects remain optional/experimental. Switch on one feature at a time and verify the broadcast receiver.
-
-[Camera controls and slider explanations](08-scene.md) · [OBS plugins / NDI / remote sessions](09-output.md)
-
-Third-party avatar rights remain unchanged when purchasing Pro. Confirm that an avatar creator permits any transfer or temporary caching before sharing its data in a session.
-
-| Feature | Edition |
-|---|---|
-| [Posing](#posing) | Pro |
-| [Pose library](#pose-library) | Pro |
-| [Objects](#objects) | Pro |
-| [More screen share sources](#more-screen-share-sources) | Pro |
-| [My expressions](#my-expressions) | Basic · Pro |
-| [Automatic expressions](#automatic-expressions) | Basic · Pro |
+Create the posture to save, and connect the expressions to buttons or tracking input. Posing, pose libraries, and objects are available in Pro, while My Expressions and Auto Expressions can be used in both Basic and Pro.
 
 ## Posing
 
-![Posing mode](img/posing.png)
+![Posing settings to create your own posture](img/guide-posing.png)
 
-Turn on Studio › Posing › Posing mode to create a pose by moving the bones directly.
+1. In the Studio → Pose, turn on Pose Mode.
+2. Select a bone and drag the rotation ring or move the hands and feet.
+3. Press Complete to save the posture.
+4. Apply it in the detail card of the avatar menu.
 
-- Click a bone to select it, and drag a ring to rotate it. The rotation gizmo is sized to fit the bone.
-- Drag a hand or foot, and the whole arm or leg follows. Use Alt+drag to change which way the elbow or knee points.
-- Symmetry — Move one side, and the other side moves with it. Use Left / right to flip the pose or copy one side to the other.
-- Face camera · Feet on floor — Turn the face toward the camera, and line the feet up with the floor.
-- Lock — Tracking and animations don't move the bones you lock.
-- Save the pose with Done, and turn it on right away from the Poses card in the avatar menu. Even after Discard, you can bring it back with Ctrl+Z.
-- Standing rest and Sitting poses are included from the start. The sitting pose changes only the hips and legs, and the head and arms keep tracking.
-- You can set a pose you made as Use as the desk pose (arms and hands) or Rest pose (whole body).
+| Operation·Button | Result |
+|---|---|
+| Bone Selection·Rotation | Changes the direction of the selected joint. |
+|Hand and foot drag|Move the end point so that the arms or legs follow.|
+| Alt+Drag | Changes the direction the elbows and knees are facing. |
+| Symmetric Editing | Changes the other side as well. |
+| Flip Left/Right | Changes the left and right sides of the pose. |
+| Fixed | Prevents the selected bone from moving during tracking and animation. |
+| Stick to the floor | Place your feet on the floor. |
+| Complete | Save the created pose. |
+| Discard | Exit without applying the edited posture. |
 
-> 💡 Please save your pose before you turn off posing mode.
+## Tracking by Posture
 
-## Five tracking controls for each pose
+![Pose Card Body Part Tracking Settings](img/guide-pose-tracking.png)
 
-![Saved pose and tracking controls](img/menu-poses.png)
+Press the side posture camera button to turn on and off the face, head, arms, fingers, and torso individually.
 
-Click the camera icon beside a saved pose in the Avatar Menu or Studio to control facial, head, arms, fingers and body independently. Enabled parts follow live tracking; disabled parts remain posed. These five choices are saved for each pose.
+- Lit area: Follows my movement.
+- Extinguished area: Maintain the stored position.
+- Example: Turn off your arms and turn on your hair or facial; maintain your arm pose while moving your head and expression.
 
-- Head OFF, facial ON holds the head while continuing face expressions.
-- Facial OFF can still allow Eyes on the camera independently.
-- The built-in Sitting pose holds hips and legs but initially permits all five tracking parts.
+## Basic Stance and Ready Position
 
-## Default pose and AFK idle pose
+![Select Default Pose and AFK Pose](img/guide-default-pose.png)
 
-- Default pose is the resting pose while the avatar is being tracked.
-- Tracking-loss pose is a separate pose for the AFK state.
-- Idle expression is a saved My expression automatically played during AFK. It can also be used without an idle pose.
-- A manually applied pose takes priority over the automatic idle pose. Regular tracking resumes when input returns.
-- Adjust the wait, transition and return durations under Motion › Body › AFK transition timing.
+| Select | When using |
+|---|---|
+| Basic Posture | This is the standard posture for areas that are not usually tracked. |
+| AFK Waiting Stance | This is the stance to use when you lose the trail. |
+| Idle Expression | The expression that will be automatically applied while AFK. |
+| Desk posture | This is the arm and hand posture to use when your hands are not visible on the camera. |
 
-## Pose library
+The time to transition to the idle position is adjusted in [Action → When Tracking is Lost](07-motion.md#when-tracking-is-lost).
 
-In Studio › Posing › Pose library, choose a folder that holds `.anim` files, and every pose is shown as a thumbnail of your current avatar.
+## Pose Library
 
-- Subfolders are read too, and clips are sorted into poses, hand shapes and motions. You can use search and favorites.
-- Click Apply, and the avatar takes that pose right away. Clips that move play as animations. Use Release to go back.
-- Use Edit to fix it up in posing mode, then save it as a new pose.
-- You can also load humanoid · bone `.anim` files made in Unity one at a time.
+![A library for finding and applying pose files](img/guide-pose-library.png)
 
-## Objects
+1. Studio → Posing → Open the Pose Library.
+2. Select the folder that contains the `.anim` file.
+3. Select a pose thumbnail and apply it.
+4. Press Cancel to go back.
 
-![Objects](img/props.png)
+You can find frequently used poses through search and favorites, and correct and save them in posing mode through editing.
 
-Use Studio › Objects › + Add object to place text, images, shapes and 3D models.
+## Object
 
-- Set Rides on to the head or a hand, and the object moves with the avatar.
-- Double-click text to edit it right there.
-- For 3D models, create a `.vprop` file with Curious Bobby → Prop Exporter in Unity.
+[Studio → Room and Props](08-scene.md#rooms-and-props) to check the placement method. You can use text, images, shapes, and `.vprop` 3D models.
 
-## More screen share sources
+## My Expressions
 
-You can layer more windows or monitors onto your screen share. Use this when you'd like to show a chat window or a music player as well.
+![Custom Expressions and Adding Expressions](img/guide-my-expression.png)
 
-## My expressions
+1. Click 'Create New Expression.'
+2. Move the face's shape keys to create an expression.
+3. Check from 0% neutral to 100% expression with the preview intensity.
+4. Save it.
+5. Click your expression tile to apply it.
 
-Create your own expressions from the avatar's shape keys.
+You can also add Unity expression animations by importing `.anim` files. The moving file changes expressions over time, and whether it loops depends on the file settings.
 
-1. Click New expression.
-2. In the side panel, move the shape keys as if you were recording them to build the expression. Use Preview to sweep from a neutral face (0%) to the full expression (100%) and check it.
-3. Click Save, and you can turn the expression on from the My expressions card in the avatar menu.
+## Auto Expressions
 
-- You can also load expression animations made in Unity (`.anim` with shape keys). Clips that move play while the expression is on.
+![Auto Expression Connection Settings](img/guide-auto-expression.png)
 
-![My expressions card](img/menu-myexpr.png)
-
-Create expression and Import .anim appear side by side in both Studio and the Avatar Menu. You can import a static shape-key expression or a multi-frame Unity .anim expression. Animated clips loop only when the original clip is configured to loop. Drag expression tiles to reorder them or right-click to assign hotkeys and Quick Actions.
-
-## Automatic expressions
-
-When you smile or look surprised, an expression you've chosen appears automatically. Turn it on in Motion › Automatic expressions, and link an expression to show for each one, such as smile · surprise · wink.
+Turn it on in Actions → Auto Expressions. Connect the expressions saved in My Expressions to each detectable expression such as smile, surprise, or wink. Then, when you actually smile or are surprised, the connected expression will automatically appear.
