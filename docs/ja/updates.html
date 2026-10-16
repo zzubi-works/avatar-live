@@ -45,6 +45,22 @@
   <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターをエクスポート</a></li><li><a href="03-launcher-and-library.html">アバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動作</a></li><li><a href="08-scene.html">スタジオ</a></li><li><a href="08-camera-effects.html">カメラエフェクト</a></li><li><a href="09-output.html">出力</a></li><li><a href="09-session.html">リモートコラボ配信</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージングと表情</a></li><li><a href="12-troubleshooting.html">問題解決</a></li><li><a href="13-license.html">エディションとライセンス</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html" aria-current="page">更新履歴</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="更新履歴">更新履歴<a class="anchor" href="#更新履歴" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>Avatar Liveのバージョンごとの変更内容です。最新の更新から確認できます。</p>
+<h2 id="20261016--v206">2026/10/16 — v2.0.6<a class="anchor" href="#20261016--v206" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>リモートセッションのスタジオ同期： ホストの部屋・背景・床・小物・照明・環境・ポストプロセス設定を参加者と同期します。初期設定はONで、参加者ごとにOFFにできます。個人のカメラ・ディレクター・アバターのトグルや保存済みシーンファイルは変更されません。</li>
+<li>外部素材の共有： セッション内で同意した場合、背景画像・小物ファイル・共有が許可されたコンテンツパックを転送できます。受信した素材はセッション用の一時フォルダーで使用します。</li>
+<li>カメラのショートカット： カメラ作成時に数字キーを自動割り当てしなくなりました。カメラ行を右クリックしてショートカットや下部ツールバーへの登録が可能です。並び替えてもカメラIDに紐づく設定は維持されます。</li>
+<li>Stream Deck連携： 通常のショートカット設定画面からStream Deckボタンを登録できます。</li>
+<li>シーンの保存： シーンの自動上書きを廃止しました。終了時には保存／保存しない／キャンセルを選べます。明示的に上書きすると<code>.bak</code>バックアップを作成します。デバイスなど一般設定の自動保存は維持します。</li>
+<li>編集できるポーズ： ポーズをUnityの<code>.anim</code>ファイルに保存し、実際の保存フォルダーを開けます。読み込んだ<code>.anim</code>を編集して新しいポーズとして保存することもできます。</li>
+<li>アバター読み込みの復旧： 名前が空のAnimatorパラメーターは警告を出してスキップし、初期化に失敗した場合も読み込み状態を解除して再試行できるようにしました。</li>
+<li>日本語UIの改善： Noto Sans JPを明示的に使用し、長いボタン名を短縮して表示の途切れを改善しました。</li>
+</ul>
+<h2 id="20261016--v205">2026/10/16 — v2.0.5<a class="anchor" href="#20261016--v205" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>「デバイス」メニューで不正なWindowsの<code>PATH</code>やSteamのパスが繰り返し例外を引き起こす問題を修正しました。Ultraleapのライブラリ検索では無効な候補を除外します。</li>
+<li>デバイスのライブラリ検索をバックグラウンドで実行し、メニューが検索完了を待たないようにしました。実機環境によっては追加の確認が必要です。</li>
+</ul>
 <h2 id="20261016--v204">2026/10/16 — v2.0.4<a class="anchor" href="#20261016--v204" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>VMC/ReboCapのパケットやボーンデータの受信停止・再開、追跡の喪失、急激なポーズ変化、フレーム遅延を調べる診断ログを追加しました。</li>
@@ -241,7 +257,7 @@
 <li>PhysBoneのポーズ保持処理を改善しました。</li>
 <li>アップグレード商品の表記を変更しました。</li>
 </ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="legal-seller.html"><span>前へ</span>販売者情報</a><span></span></nav><p class="updated">最終更新: 2026-10-15</p></main>
-  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#20261016--v204">2026/10/16 — v2.0.4</a></li><li><a href="#20261016--v203">2026/10/16 — v2.0.3</a></li><li><a href="#20261015--v201v202">2026/10/15 — v2.0.1~v2.0.2</a></li><li><a href="#20261015--v200">2026/10/15 — v2.0.0</a></li><li><a href="#20261012--v116">2026/10/12 — v1.1.6</a></li><li><a href="#20261012--v115">2026/10/12 — v1.1.5</a></li><li><a href="#20261012--v114">2026/10/12 — v1.1.4</a></li><li><a href="#20261012--v113">2026/10/12 — v1.1.3</a></li><li><a href="#20261011--v112">2026/10/11 — v1.1.2</a></li><li><a href="#20261011--v111">2026/10/11 — v1.1.1</a></li><li><a href="#20261011--v110">2026/10/11 — v1.1.0</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#20261016--v206">2026/10/16 — v2.0.6</a></li><li><a href="#20261016--v205">2026/10/16 — v2.0.5</a></li><li><a href="#20261016--v204">2026/10/16 — v2.0.4</a></li><li><a href="#20261016--v203">2026/10/16 — v2.0.3</a></li><li><a href="#20261015--v201v202">2026/10/15 — v2.0.1~v2.0.2</a></li><li><a href="#20261015--v200">2026/10/15 — v2.0.0</a></li><li><a href="#20261012--v116">2026/10/12 — v1.1.6</a></li><li><a href="#20261012--v115">2026/10/12 — v1.1.5</a></li><li><a href="#20261012--v114">2026/10/12 — v1.1.4</a></li><li><a href="#20261012--v113">2026/10/12 — v1.1.3</a></li><li><a href="#20261011--v112">2026/10/11 — v1.1.2</a></li><li><a href="#20261011--v111">2026/10/11 — v1.1.1</a></li><li><a href="#20261011--v110">2026/10/11 — v1.1.0</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

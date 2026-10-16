@@ -2,6 +2,22 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/16 — v2.0.6
+
+- **Shared studio in remote sessions:** Guests can follow the host's room, background, floor, props, lighting, environment and post-processing. This is enabled by default but each guest can turn it off. Personal cameras, director controls, avatar toggles and saved scene files are preserved.
+- **External asset sharing:** With session consent, background images, prop files and content packs explicitly permitted for sharing can be transferred. Received assets stay in a temporary session folder.
+- **Camera shortcuts:** New cameras no longer receive number keys automatically. Right-click a camera row to assign a shortcut or add it to the bottom toolbar. Assignments remain tied to camera IDs when cameras are reordered.
+- **Stream Deck:** Connect Stream Deck buttons through the same shortcut assignment dialog.
+- **Scene saving:** Scenes are no longer overwritten automatically. On exit, choose Save, Don't Save or Cancel. Explicitly overwriting a scene creates a `.bak` backup; automatic saving of general settings, including devices, is unchanged.
+- **Editable poses:** Save poses as Unity `.anim` files and open the actual save folder. Imported `.anim` poses can be edited and saved as new poses.
+- **Avatar load recovery:** Unnamed Animator parameters are skipped with a warning, and failed initialization releases the loading state so you can retry.
+- **Japanese UI:** Explicit Noto Sans JP font selection and shorter button labels improve Japanese text rendering.
+
+## 2026/10/16 — v2.0.5
+
+- Fixed repeated errors in the Devices menu caused by invalid Windows `PATH` or Steam paths. Ultraleap library discovery now skips invalid candidates.
+- Moved device-library discovery to a background task so the menu does not wait for the scan. Some hardware configurations still require individual verification.
+
 ## 2026/10/16 — v2.0.4
 
 - Added passive VMC/ReboCap diagnostics for packet and bone-data stalls, recovery, tracking loss, sudden pose changes and frame delays.
