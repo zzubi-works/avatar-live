@@ -2,6 +2,17 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/18 — v2.0.12
+
+- **Screen sharing and display resolution:** In Output > Screen Share, enter a width and height or use the shared source's resolution. The display window also supports the current monitor's size and custom dimensions, including 21:9 and other aspect ratios. Your licence's output limits still apply.
+- **Desktop avatar:** Show your avatar in a transparent window over your own desktop, with clicks passing through to the app underneath. Turn it on or off in Output > Screen Share, or turn it off with `Ctrl+Alt+F12`. Requires Windows 10 version 2004 or later and a compatible graphics device.
+- **Leap Motion mounting:** Choose desk, neck/chest or monitor-top placement to set both the sensor's base orientation and tracking mode. Check the position and angle, then recalibrate your hands after changing the mount. Ultraleap software must support the selected mode; an explanation appears if it cannot be applied.
+- **Sequencer correction layers:** Fixed copy/paste overwriting separate correction layers on the same bone. Rotation and IK drags preserve the existing influence, with fixes for writing the IK result back into rotation keys and for rotations flipping at low influence.
+- **Keyframes and editing layout:** Scale the timing of selected position, scale, expression and rotation keys together; conflicting edits leave the data unchanged. Improved key navigation, sequence duration updates, toolbar layout in narrow windows and expression searches inside collapsed meshes.
+- **Ambient occlusion (AO):** Fixed hidden objects' outlines showing through foreground surfaces when AO was enabled. Checked that visible surfaces still receive occlusion and that transparent objects remain correctly occluded.
+- **Memory and resources:** Compressed undo history and limited how much is retained. Improved resource cleanup when motion sources are removed, effects are toggled or output resolution changes, and reduced temporary allocations during curve evaluation.
+- **ふんわり影 1.61:** To use this shader version, re-export existing `.vavatar` files with Avatar Exporter from a Unity project that contains it. The lighting changes in 2.0.11 do not replace shaders embedded in existing files. Not every avatar or custom shader configuration has been verified.
+
 ## 2026/10/18 — v2.0.11
 
 - **iPhone face tracking:** Improved reception of fractional expression values, face-only frames, and TCP frame delimiters used by iFacialMocap and FaceMotion3D compatibility modes. Invalid numbers can no longer overwrite the last valid face frame.
