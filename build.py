@@ -26,7 +26,7 @@ BASE = "https://zzubi-works.github.io/avatar-live"
 BOOTH = "https://curiousbobby.booth.pm/items/8953441"
 X_URL = "https://x.com/User_Not_Online"
 UPDATED = "2026-10-15"
-UPDATES_UPDATED = "2026-10-17"  # Release notes updated independently from the unchanged guides.
+UPDATES_UPDATED = "2026-10-18"  # Release notes updated independently from the unchanged guides.
 
 LANGS = {
     "ko": {"name": "한국어", "html": "ko", "shots": "ko", "locale": "ko_KR", "preconnect": ["https://cdn.jsdelivr.net"], "font": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"},

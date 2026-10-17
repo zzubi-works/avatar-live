@@ -2,6 +2,15 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/18 — v2.0.11
+
+- **iPhone face tracking:** Improved reception of fractional expression values, face-only frames, and TCP frame delimiters used by iFacialMocap and FaceMotion3D compatibility modes. Invalid numbers can no longer overwrite the last valid face frame.
+- **Repeated pairing:** Streaming requests are no longer repeated while a TCP connection or incoming traffic is active. Retries back off when the phone is silent. Diagnostics now distinguish the connection, incoming traffic and decoding failures.
+- **Perfect Sync recognition:** Added support for ARKit BlendShape names ending in `.L` and `.R`. Reports include unrecognized names and scanned mesh/shape counts, and clarify when an avatar only provides MMD blink morphs.
+- **Attached lights and shadows:** Fixed imported avatars losing the target layers of their attached lights or cameras. Shadow distance now covers all active avatars, including when the controlled avatar changes or another avatar is farther away.
+- **Spine posing:** In pose editing and the motion sequencer, move Spine to lean the upper body while maintaining the leg pose. Rotation editing, global/timed corrections, save/load and undo remain available.
+- **Scope:** Perfect Sync requires compatible expression shapes in the avatar. The lighting fix improves the runtime path used by attached-light effects such as “ふんわり影”; it does not certify every custom shader configuration.
+
 ## 2026/10/17 — v2.0.10
 
 - **Motion sequencer editing:** Improved marquee and multi-key selection, Select All, copy/paste/cut/duplicate/delete, undo/redo, and clearly highlighted selected keys. The Summary row now selects and moves keys at the same time together.
