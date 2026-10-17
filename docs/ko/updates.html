@@ -45,6 +45,32 @@
   <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">스튜디오</a></li><li><a href="08-camera-effects.html">카메라 효과</a></li><li><a href="09-output.html">출력</a></li><li><a href="09-session.html">원격 합방</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징과 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html" aria-current="page">업데이트 내역</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="업데이트-내역">업데이트 내역<a class="anchor" href="#업데이트-내역" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>Avatar Live의 버전별 변경 사항입니다. 최신 업데이트부터 확인할 수 있습니다.</p>
+<h2 id="20261017--v209">2026/10/17 — v2.0.9 (업데이트 준비 중)<a class="anchor" href="#20261017--v209" aria-hidden="true" tabindex="-1">#</a></h2>
+<p><strong>안내:</strong> v2.0.9는 현재 준비 중입니다. 아래 내용은 개발 브랜치에 반영된 수정 사항이며, 실제 배포 전 변경될 수 있습니다.</p>
+<ul>
+<li>모션 시퀀서에서 클립을 처음 선택한 직후 이동하거나 양끝을 드래그해 길이를 조절할 때 첫 드래그가 무시되던 문제를 수정했습니다.</li>
+<li>얼굴 메시의 블렌드셰이프가 많은 아바타를 녹화할 때 표정 곡선을 매 프레임 모두 그리느라 녹화 속도가 급격히 떨어지던 문제를 개선했습니다. 녹화 중인 테이크는 목록 갱신을 미루고, 다른 테이크의 표정 목록도 표시 개수를 제한합니다.</li>
+<li>시퀀서의 이동·트림·저장 등 조작과 본 크기 애니메이션에 대한 회귀 테스트를 보강했습니다.</li>
+</ul>
+<h2 id="20261017--v208">2026/10/17 — v2.0.8<a class="anchor" href="#20261017--v208" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>모션 시퀀서의 편집 화면을 개편했습니다. 아웃라이너, 속성 패널, 도프 시트·그래프 편집기에서 아바타별 트랙과 클립, 키프레임을 관리할 수 있습니다.</li>
+<li>선택(Q)·이동(W)·회전(E)·크기(R) 도구를 추가하고, 위치·회전·크기 값을 축별로 조절할 수 있도록 했습니다. 손·발·골반 등의 IK 조작과 일반 본의 회전 편집도 개선했습니다.</li>
+<li>실행 취소·다시 실행, 원본 비교, 간단/고급 편집 보기와 패널 접기, 키프레임 추가·복사·이동 등 편집 단축키를 정리했습니다.</li>
+<li>모션 라이브러리에서 폴더·검색·즐겨찾기·썸네일과 미리 재생을 지원하며, 저장된 모션을 시퀀서에서 다시 편집할 수 있습니다.</li>
+<li>트래킹 입력으로 모션을 녹화하는 화면을 개편했습니다. 녹화 부위 선택, 입력 상태 확인, 실시간 미리보기와 부위별 테이크·표정 곡선 편집을 개선했습니다.</li>
+<li>소품과 아바타의 접촉 타이밍 편집, 모션 베이크 및 여러 아바타의 시선·사진 촬영 우선순위 처리를 보강했습니다.</li>
+</ul>
+<h2 id="20261017--v207">2026/10/17 — v2.0.7<a class="anchor" href="#20261017--v207" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>업데이트 파일의 경로가 길어 백업이나 교체에 실패할 수 있던 문제를 수정하고, 업데이트 실패 시 이전 파일로 복구하는 절차를 보강했습니다.</li>
+<li>스튜디오에서 여러 아바타의 조종 대상을 바꿀 때 지정한 자세·고정 상태와 자세별 추적 허용 설정이 어긋나던 문제를 개선했습니다.</li>
+<li>VMC/ReboCap 데이터의 프레임 상태와 추적 복귀 처리를 정리하고, VMC 입력 소스를 전환할 때 이전 연결의 자세 데이터가 남지 않도록 수정했습니다.</li>
+<li>카메라 보기에서 눈동자도 목표 방향을 향하도록 시선 계산을 개선하고, VRM·멀티 아바타·사진 촬영·원격 세션에서의 시선 적용 경로를 보강했습니다.</li>
+<li>원격 합방에서 소품이나 배경 리소스를 요청하고 임시 파일을 참조하는 처리를 수정했습니다. 씬에서 소품을 제거하더라도 다른 저장된 씬에서 쓰는 원본 파일을 즉시 삭제하지 않도록 했습니다.</li>
+<li>마이크 캡처와 iPhone 얼굴 추적을 중지·재시작할 때 이전 실행의 스레드나 데이터가 영향을 주지 않도록 수명 주기를 개선했습니다.</li>
+<li>OSC 상반신 트래킹의 골반 회전에 3축 입력을 반영하도록 개선했습니다.</li>
+</ul>
 <h2 id="20261016--v206">2026/10/16 — v2.0.6<a class="anchor" href="#20261016--v206" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>원격 합방 스튜디오 동기화: 방장의 방·배경·바닥·소품·조명·환경과 포스트 프로세싱 설정을 참가자에게 동기화합니다. 기본으로 켜져 있으며 참가자가 끌 수 있습니다. 개인 카메라·감독·아바타 토글과 저장된 씬 파일은 유지됩니다.</li>
