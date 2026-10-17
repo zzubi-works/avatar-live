@@ -11,7 +11,7 @@ Changes in each Avatar Live release, starting with the latest update.
 - **Keyframes and editing layout:** Scale the timing of selected position, scale, expression and rotation keys together; conflicting edits leave the data unchanged. Improved key navigation, sequence duration updates, toolbar layout in narrow windows and expression searches inside collapsed meshes.
 - **Ambient occlusion (AO):** Fixed hidden objects' outlines showing through foreground surfaces when AO was enabled. Checked that visible surfaces still receive occlusion and that transparent objects remain correctly occluded.
 - **Memory and resources:** Compressed undo history and limited how much is retained. Improved resource cleanup when motion sources are removed, effects are toggled or output resolution changes, and reduced temporary allocations during curve evaluation.
-- **ふんわり影 1.61:** To use this shader version, re-export existing `.vavatar` files with Avatar Exporter from a Unity project that contains it. The lighting changes in 2.0.11 do not replace shaders embedded in existing files. Not every avatar or custom shader configuration has been verified.
+
 
 ## 2026/10/18 — v2.0.11
 
