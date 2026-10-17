@@ -2,6 +2,18 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/17 — v2.0.10
+
+- **Motion sequencer editing:** Improved marquee and multi-key selection, Select All, copy/paste/cut/duplicate/delete, undo/redo, and clearly highlighted selected keys. The Summary row now selects and moves keys at the same time together.
+- **Timeline navigation:** Resize the visible time range by dragging the ends of the bottom navigator, pan by dragging its center, and frame selected keys.
+- **Whole-avatar transforms:** Animate both the entire avatar's position and rotation with sequence keys. Use `G` for root movement and `Shift+G` for root rotation.
+- **Global and local corrections:** Apply IK position, bone rotation, and scale corrections to the entire sequence or to a selected time span on separate layers. Stack global and local corrections; adjust the time range and fade-in/out with timeline handles.
+- **Smoother correction authoring:** New edits no longer insert automatic zero-correction boundary keys. A configurable nearby-key radius helps spread an edit across neighboring keys; existing saved sequences are preserved.
+- **Expressions by mesh:** Fold and expand individual meshes, search all BlendShapes in a vertically scrollable, resizable list, and edit values and keys directly.
+- **Multi-avatar sequencer:** Add avatars, select their tracks, link their timeline timing, copy motion clips between avatars, and operate each avatar's outfit/item menu. Multi-avatar availability still follows the product edition.
+- **Pose-attached particles:** Improved spawn positions for bone-attached ParticleSystem effects and linked subemitters when a pose changes.
+- **Limitations:** Time synchronization and clip copying do not live-link corrections between avatars; avatar menu toggles are not yet recorded as animation keys. Some avatar and effect setups need further confirmation.
+
 ## 2026/10/16 — v2.0.6
 
 - **Shared studio in remote sessions:** Guests can follow the host's room, background, floor, props, lighting, environment and post-processing. This is enabled by default but each guest can turn it off. Personal cameras, director controls, avatar toggles and saved scene files are preserved.

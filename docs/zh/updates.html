@@ -45,6 +45,18 @@
   <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">角色库</a></li><li><a href="04-main-window.html">主屏幕</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室</a></li><li><a href="08-camera-effects.html">摄像机效果</a></li><li><a href="09-output.html">输出</a></li><li><a href="09-session.html">远程联播</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">姿势与表情</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html" aria-current="page">更新记录</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="更新记录">更新记录<a class="anchor" href="#更新记录" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>Avatar Live各版本的更新内容，按最新版本优先排列。</p>
+<h2 id="20261017--v2010">2026/10/17 — v2.0.10<a class="anchor" href="#20261017--v2010" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>动作序列编辑： 改进框选、多选、全选、复制／粘贴／剪切／复制副本／删除、撤销／重做和选中关键帧高亮。可在汇总行一并选择、移动同一时间的关键帧。</li>
+<li>时间轴缩放和移动： 拖动底部导航条的两端调整显示范围，拖动中间区域平移，并可将视图对齐选中关键帧。</li>
+<li>角色整体位移和旋转： 可通过关键帧保存并播放角色整体的位置与旋转。<code>G</code>编辑整体位移，<code>Shift+G</code>编辑整体旋转。</li>
+<li>全局与局部修正： 可将 IK 位置、骨骼旋转和缩放修正分别应用到整段动画或指定时间区间；两种修正可在独立图层中叠加，通过时间轴手柄和淡入淡出调整范围。</li>
+<li>改善修正中断： 新增修正时不再自动生成不必要的零值边界关键帧，并可设置影响相邻关键帧的时间半径。旧序列保持兼容。</li>
+<li>按网格编辑表情： 各网格可折叠；支持搜索全部 BlendShape、独立纵向滚动、拖动调整列表高度，并直接编辑数值与关键帧。</li>
+<li>多角色序列： 在序列编辑器中添加角色、选择轨道、同步时间、复制动作片段，并操作各角色的服装／道具菜单。多角色功能仍受当前版本授权范围限制。</li>
+<li>随姿势移动的粒子： 改善附着于骨骼的 ParticleSystem 及其子发射器在姿势变化后的生成位置。</li>
+<li>说明： 时间同步和复制片段并不意味着角色之间实时共享修正；菜单开关尚不能自动录制为动作关键帧。部分角色和特效配置仍需额外验证。</li>
+</ul>
 <h2 id="20261016--v206">2026/10/16 — v2.0.6<a class="anchor" href="#20261016--v206" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>远程会话的演播室同步： 参与者可以同步主持人的房间、背景、地面、道具、灯光、环境和后期处理设置。默认开启，参与者可自行关闭。个人相机、导演控制、角色开关及已保存的场景文件不受影响。</li>
@@ -305,8 +317,8 @@
 <li>修复 Eco 模式的追踪行为。</li>
 <li>改善 PhysBone 姿势保持处理。</li>
 <li>更新升级商品的表述。</li>
-</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="legal-seller.html"><span>上一页</span>卖家信息</a><span></span></nav><p class="updated">最后更新: 2026-10-15</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#20261016--v206">2026/10/16 — v2.0.6</a></li><li><a href="#20261016--v205">2026/10/16 — v2.0.5</a></li><li><a href="#20261016--v204">2026/10/16 — v2.0.4</a></li><li><a href="#20261016--v203">2026/10/16 — v2.0.3</a></li><li><a href="#20261015--v201v202">2026/10/15 — v2.0.1~v2.0.2</a></li><li><a href="#20261015--v200">2026/10/15 — v2.0.0</a></li><li><a href="#20261012--v116">2026/10/12 — v1.1.6</a></li><li><a href="#20261012--v115">2026/10/12 — v1.1.5</a></li><li><a href="#20261012--v114">2026/10/12 — v1.1.4</a></li><li><a href="#20261012--v113">2026/10/12 — v1.1.3</a></li><li><a href="#20261011--v112">2026/10/11 — v1.1.2</a></li><li><a href="#20261011--v111">2026/10/11 — v1.1.1</a></li><li><a href="#20261011--v110">2026/10/11 — v1.1.0</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
+</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="legal-seller.html"><span>上一页</span>卖家信息</a><span></span></nav><p class="updated">最后更新: 2026-10-17</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#20261017--v2010">2026/10/17 — v2.0.10</a></li><li><a href="#20261016--v206">2026/10/16 — v2.0.6</a></li><li><a href="#20261016--v205">2026/10/16 — v2.0.5</a></li><li><a href="#20261016--v204">2026/10/16 — v2.0.4</a></li><li><a href="#20261016--v203">2026/10/16 — v2.0.3</a></li><li><a href="#20261015--v201v202">2026/10/15 — v2.0.1~v2.0.2</a></li><li><a href="#20261015--v200">2026/10/15 — v2.0.0</a></li><li><a href="#20261012--v116">2026/10/12 — v1.1.6</a></li><li><a href="#20261012--v115">2026/10/12 — v1.1.5</a></li><li><a href="#20261012--v114">2026/10/12 — v1.1.4</a></li><li><a href="#20261012--v113">2026/10/12 — v1.1.3</a></li><li><a href="#20261011--v112">2026/10/11 — v1.1.2</a></li><li><a href="#20261011--v111">2026/10/11 — v1.1.1</a></li><li><a href="#20261011--v110">2026/10/11 — v1.1.0</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
