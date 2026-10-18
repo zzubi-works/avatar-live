@@ -67,6 +67,8 @@ Example: You can set the face to iPhone and arms and hands to webcam. Even if a 
 3. Check whether the number of units received in the VMC settings and the input status are displayed.
 4. If your body direction or arms are misaligned, adjust them to a T position or alignment.
 
+**VMC tracking tested with:** ReboCap, HTC VIVE Tracker, and Tundra Tracker.
+
 ## SteamVR Connection
 
 ![SteamVR Device Setup](img/guide-steamvr.png)
@@ -76,4 +78,4 @@ Example: You can set the face to iPhone and arms and hands to webcam. Even if a 
 3. Connect the device to the corresponding part such as the head, hand, or body.
 4. Run the calibration to align the avatar with the position of my device.
 
-Devices displayed experimentally may operate differently depending on the environment. If the device is connected normally but the movement is unusual, check the smoothness, calibration, and tracking return settings in [Operation](07-motion.md).
+If the device is connected normally but the movement is unusual, check the smoothness, calibration, and tracking return settings in [Operation](07-motion.md).
