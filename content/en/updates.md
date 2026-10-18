@@ -2,6 +2,16 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/18 — v2.0.13
+
+- **VMC tracking stability:** Fixed mixing of bone and hip pose data from multiple programs sending to the same VMC input. Old tracking and facial data are also cleared more reliably on disconnect or reconnect.
+- **Independent pose and facial senders:** Devices > VMC Input now lets you choose pose and expression senders separately, including automatic selection. If the sender's port changes after restarting its app, select it again.
+- **VMC feedback-loop protection:** Temporarily suspends VMC output when its destination would feed directly back into Avatar Live's own input.
+- **iPhone facial tracking:** Improved sender validation for iFacialMocap and FaceMotion3D, facial rotation inversion and neutral-angle handling when changing avatars.
+- **Ultraleap and SteamVR:** Reapplies desk, chest or monitor-top hand-tracking modes after reconnecting, improves tracking freshness and repeated-frame handling, and prevents calibration with untracked SteamVR devices.
+- **OpenSeeFace and VRCFT:** Improved face-tracker process and receiver restart safety, stale frame rejection, and consistent application of external OSC expression bundles.
+- **Verification:** Multi-sender VMC playback tests passed on a real Windows player, alongside related Unity tests. This does not constitute testing all ReboCap, HTC/Tundra, iPhone or Leap Motion hardware setups. Avatar-loading frame stalls remain a separate issue.
+
 ## 2026/10/18 — v2.0.12
 
 - **Screen sharing and display resolution:** In Output > Screen Share, enter a width and height or use the shared source's resolution. The display window also supports the current monitor's size and custom dimensions, including 21:9 and other aspect ratios. Your licence's output limits still apply.
