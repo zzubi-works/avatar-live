@@ -2,6 +2,13 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/19 — v2.0.14
+
+- **Choose where settings are stored:** Settings > Settings files > Storage location > Change location copies your settings, avatar library, poses, scenes and more to the folder you pick, and Avatar Live uses it from the next start. Use default location moves back. The old folder is not deleted and the licence is not moved. If the chosen place (such as an external drive) is missing, Avatar Live starts from the default location and says so.
+- **Settings file management:** Settings > Settings files now offers Back up now, Import from another folder, and a backup list with Restore and Delete. You can also back up automatically at start and choose how many backups to keep (3, 5, 10 or 20). Restores and imports apply the next time Avatar Live starts, and the settings in place just before are backed up first.
+- **Tidier resolution fields:** Under the resolution of the output image, screen share, window and photo, "Custom size" now folds open its width and height fields in the same way everywhere. "Use source resolution" and "Use this monitor's size" sit inside that fold, and Enter applies a typed size.
+- **Stream Deck:** The "Install plugin" button under Settings > Hotkeys · Quick Actions > Stream Deck now lines up with the other buttons.
+
 ## 2026/10/18 — v2.0.13
 
 - **VMC tracking stability:** Fixed mixing of bone and hip pose data from multiple programs sending to the same VMC input. Old tracking and facial data are also cleared more reliably on disconnect or reconnect.
