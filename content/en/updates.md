@@ -10,7 +10,6 @@ Changes in each Avatar Live release, starting with the latest update.
 - **iPhone facial tracking:** Improved sender validation for iFacialMocap and FaceMotion3D, facial rotation inversion and neutral-angle handling when changing avatars.
 - **Ultraleap and SteamVR:** Reapplies desk, chest or monitor-top hand-tracking modes after reconnecting, improves tracking freshness and repeated-frame handling, and prevents calibration with untracked SteamVR devices.
 - **OpenSeeFace and VRCFT:** Improved face-tracker process and receiver restart safety, stale frame rejection, and consistent application of external OSC expression bundles.
-- **Verification:** Multi-sender VMC playback tests passed on a real Windows player, alongside related Unity tests. This does not constitute testing all ReboCap, HTC/Tundra, iPhone or Leap Motion hardware setups. Avatar-loading frame stalls remain a separate issue.
 
 ## 2026/10/18 — v2.0.12
 
@@ -19,7 +18,7 @@ Changes in each Avatar Live release, starting with the latest update.
 - **Leap Motion mounting:** Choose desk, neck/chest or monitor-top placement to set both the sensor's base orientation and tracking mode. Check the position and angle, then recalibrate your hands after changing the mount. Ultraleap software must support the selected mode; an explanation appears if it cannot be applied.
 - **Sequencer correction layers:** Fixed copy/paste overwriting separate correction layers on the same bone. Rotation and IK drags preserve the existing influence, with fixes for writing the IK result back into rotation keys and for rotations flipping at low influence.
 - **Keyframes and editing layout:** Scale the timing of selected position, scale, expression and rotation keys together; conflicting edits leave the data unchanged. Improved key navigation, sequence duration updates, toolbar layout in narrow windows and expression searches inside collapsed meshes.
-- **Ambient occlusion (AO):** Fixed hidden objects' outlines showing through foreground surfaces when AO was enabled. Checked that visible surfaces still receive occlusion and that transparent objects remain correctly occluded.
+- **Ambient occlusion (AO):** Fixed hidden objects' outlines showing through foreground surfaces when AO was enabled.
 - **Memory and resources:** Compressed undo history and limited how much is retained. Improved resource cleanup when motion sources are removed, effects are toggled or output resolution changes, and reduced temporary allocations during curve evaluation.
 
 
@@ -27,10 +26,9 @@ Changes in each Avatar Live release, starting with the latest update.
 
 - **iPhone face tracking:** Improved reception of fractional expression values, face-only frames, and TCP frame delimiters used by iFacialMocap and FaceMotion3D compatibility modes. Invalid numbers can no longer overwrite the last valid face frame.
 - **Repeated pairing:** Streaming requests are no longer repeated while a TCP connection or incoming traffic is active. Retries back off when the phone is silent. Diagnostics now distinguish the connection, incoming traffic and decoding failures.
-- **Perfect Sync recognition:** Added support for ARKit BlendShape names ending in `.L` and `.R`. Reports include unrecognized names and scanned mesh/shape counts, and clarify when an avatar only provides MMD blink morphs.
+- **Perfect Sync recognition:** Added support for ARKit BlendShape names ending in `.L` and `.R`. Reports include unrecognized names and scanned mesh/shape counts, and clarify when an avatar only provides MMD blink morphs. Perfect Sync requires compatible avatar expression shapes.
 - **Attached lights and shadows:** Fixed imported avatars losing the target layers of their attached lights or cameras. Shadow distance now covers all active avatars, including when the controlled avatar changes or another avatar is farther away.
 - **Spine posing:** In pose editing and the motion sequencer, move Spine to lean the upper body while maintaining the leg pose. Rotation editing, global/timed corrections, save/load and undo remain available.
-- **Scope:** Perfect Sync requires compatible expression shapes in the avatar. The lighting fix improves the runtime path used by attached-light effects such as “ふんわり影”; it does not certify every custom shader configuration.
 
 ## 2026/10/17 — v2.0.10
 
@@ -42,7 +40,7 @@ Changes in each Avatar Live release, starting with the latest update.
 - **Expressions by mesh:** Fold and expand individual meshes, search all BlendShapes in a vertically scrollable, resizable list, and edit values and keys directly.
 - **Multi-avatar sequencer:** Add avatars, select their tracks, link their timeline timing, copy motion clips between avatars, and operate each avatar's outfit/item menu. Multi-avatar availability still follows the product edition.
 - **Pose-attached particles:** Improved spawn positions for bone-attached ParticleSystem effects and linked subemitters when a pose changes.
-- **Limitations:** Time synchronization and clip copying do not live-link corrections between avatars; avatar menu toggles are not yet recorded as animation keys. Some avatar and effect setups need further confirmation.
+- **Limitations:** Time synchronization and clip copying do not live-link corrections between avatars; avatar menu toggles are not yet recorded as animation keys.
 
 ## 2026/10/16 — v2.0.6
 
@@ -58,7 +56,7 @@ Changes in each Avatar Live release, starting with the latest update.
 ## 2026/10/16 — v2.0.5
 
 - Fixed repeated errors in the Devices menu caused by invalid Windows `PATH` or Steam paths. Ultraleap library discovery now skips invalid candidates.
-- Moved device-library discovery to a background task so the menu does not wait for the scan. Some hardware configurations still require individual verification.
+- Moved device-library discovery to a background task so the menu does not wait for the scan.
 
 ## 2026/10/16 — v2.0.4
 
@@ -68,7 +66,6 @@ Changes in each Avatar Live release, starting with the latest update.
 ## 2026/10/16 — v2.0.3
 
 - Fixed a VRC Parent Constraint issue where hand-attached props could reuse an old world position after unfreezing while the constraint was inactive and then reactivating it.
-- Individual avatar compatibility still needs to be confirmed; this does not establish that every prop issue is fixed.
 
 ## 2026/10/15 — v2.0.1~v2.0.2
 
