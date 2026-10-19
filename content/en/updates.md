@@ -2,6 +2,11 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/19 — v2.0.15
+
+- **Eye rendering fix for some avatars:** Fixed pupils disappearing or eye areas appearing hollow on avatars such as Hanka whose eye bones have a rotated forward reference. Gaze now applies only the change from each avatar's own reference pose. Existing .vavatar files work without re-exporting.
+- **Restore eye pose when control ends:** Turning off eye control or switching avatars now restores eye bones to their animated pose regardless of eyelid mesh settings.
+
 ## 2026/10/19 — v2.0.14
 
 - **Choose where settings are stored:** Settings > Settings files > Storage location > Change location copies your settings, avatar library, poses, scenes and more to the folder you pick, and Avatar Live uses it from the next start. Use default location moves back. The old folder is not deleted and the licence is not moved. If the chosen place (such as an external drive) is missing, Avatar Live starts from the default location and says so.
