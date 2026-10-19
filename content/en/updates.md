@@ -4,7 +4,7 @@ Changes in each Avatar Live release, starting with the latest update.
 
 ## 2026/10/19 — v2.0.15
 
-- **Eye rendering fix for some avatars:** Fixed pupils disappearing or eye areas appearing hollow on avatars such as Hanka whose eye bones have a rotated forward reference. Gaze now applies only the change from each avatar's own reference pose. Existing .vavatar files work without re-exporting.
+- **Eye rendering fix for some avatars:** Fixed pupils disappearing or eye areas appearing hollow on avatars whose eye bones have a rotated forward reference. Gaze now applies only the change from each avatar's own reference pose. Existing .vavatar files work without re-exporting.
 - **Restore eye pose when control ends:** Turning off eye control or switching avatars now restores eye bones to their animated pose regardless of eyelid mesh settings.
 
 ## 2026/10/19 — v2.0.14
