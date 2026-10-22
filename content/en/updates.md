@@ -120,11 +120,14 @@ Changes in each Avatar Live release, starting with the latest update.
 
 - Fixed a VRC Parent Constraint issue where hand-attached props could reuse an old world position after unfreezing while the constraint was inactive and then reactivating it.
 
-## 2026/10/15 — v2.0.1~v2.0.2
+## 2026/10/15 — v2.0.2
 
-- **v2.0.1:** Fixed mesh visibility synchronization that could incorrectly hide hair and other child meshes on remote avatars.
-- **v2.0.2:** Fixed avatar menu toggles for hair and props not syncing to session peers when restored from saved settings or reset to their defaults.
-- **Important:** All session participants must update to v2.0.2 or later for both fixes to take effect.
+- Fixed avatar menu toggles for hair and props not syncing to session peers when restored from saved settings or reset to their defaults.
+- **Important:** All session participants must update to v2.0.2 or later for this fix and the v2.0.1 fix to take effect.
+
+## 2026/10/15 — v2.0.1
+
+- Fixed mesh visibility synchronization that could incorrectly hide hair and other child meshes on remote avatars.
 
 ## 2026/10/15 — v2.0.0
 
