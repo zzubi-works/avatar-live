@@ -113,7 +113,7 @@ Changes in each Avatar Live release, starting with the latest update.
 
 ## 2026/10/16 — v2.0.4
 
-- Added passive VMC/ReboCap diagnostics for packet and bone-data stalls, recovery, tracking loss, sudden pose changes and frame delays.
+- Added passive VMC diagnostics for packet and bone-data stalls, recovery, tracking loss, sudden pose changes and frame delays.
 - Diagnostic details are included in error reports (`Player.log` and `diagnostics.txt`). Tracking motion and IK behavior remain unchanged.
 
 ## 2026/10/16 — v2.0.3
