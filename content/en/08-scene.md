@@ -52,7 +52,7 @@ Add additional avatars to place more characters in the same scene. After selecti
 3. Adjust the target, position, gaze, and lens.
 4. Select the camera as the broadcast target.
 
-Grab and Put on the current view are in the first line of each camera's settings and in the camera's ⋯ menu. To keep the current working composition, use Put on the current view.
+Turn on Grab to see the camera in the scene view and move or turn it like a prop. Grab and Put on the current view are in the first line of each camera's settings and in the camera's ⋯ menu. To keep the current working composition, use Put on the current view.
 
 ### Position Mode
 
