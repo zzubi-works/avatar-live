@@ -10,6 +10,8 @@ Arrange the background, lighting, and props, and save the camera and scene to be
 2. Save it on the scene card.
 3. Next, selecting a thumbnail will load the composition of that scene.
 
+A scene also remembers the avatar's position and pose, and opening it brings them back. Switching to another avatar inside a scene makes that avatar the scene's avatar. Going back to the avatar list with unsaved changes asks whether to save them.
+
 | Item | What it does |
 |---|---|
 | New Scene | Create a new scene composition. |
@@ -50,7 +52,7 @@ Add additional avatars to place more characters in the same scene. After selecti
 3. Adjust the target, position, gaze, and lens.
 4. Select the camera as the broadcast target.
 
-To keep the current working composition, use Camera ⋯ → Match to Current View.
+Grab and Put on the current view are in the first line of each camera's settings and in the camera's ⋯ menu. To keep the current working composition, use Put on the current view.
 
 ### Position Mode
 
@@ -128,9 +130,10 @@ These settings determine the camera positioning. To keep the face on screen, als
 | Select | Visible Result |
 |---|---|
 | Solid Color | Fills the background with a uniform color. |
-| Green·Blue | This is a background that can be removed with chroma key in OBS. Choose a color different from your outfit. |
+| Green | This is a background that can be removed with chroma key in OBS. Choose a color different from your outfit. |
 | Transparent | Composites without a background in Spout2·NDI. The receiving side must also support alpha compositing. |
 | Image | Use PNG·JPG pictures as the background. |
+| Sky | Uses a sky scene as the background. |
 
 Zooming in or out of the image changes the size of the picture, while moving it left/right or up/down changes its position. Turning on Fill crops and fills the edges while maintaining the ratio.
 
@@ -140,7 +143,7 @@ The shooting screen display turns on screen decorations that look like a phone o
 
 ![Lighting presets and individual light settings](img/guide-lighting.png)
 
-Choose the overall mood with a preset, and press individual lights for detailed adjustments.
+Choose the overall mood with a preset, and press individual lights for detailed adjustments. Preset lists are folded by kind, with your own saved presets at the top.
 
 | Item | Effect when changed |
 |---|---|

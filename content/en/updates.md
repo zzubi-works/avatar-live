@@ -2,6 +2,39 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/22 — v2.1.0
+
+**New**
+
+- **More lighting:** Added photo light placements and approximate soft lights such as softboxes, beam quality, gobos (cookies), volumetric light and local fog, decorative and ambient lights such as neon, RGB, LED strips, candles, monitors, the sun and the moon, plus moving heads and lasers. Lights can also pulse, flicker, cycle colours, pan and tilt, or react to sound.
+- **Add-light picker and lighting presets:** A new add-light picker with search, favourites and recent items, and 18 lighting presets.
+- **Photosensitivity protection:** Fast-flashing lights are limited to 3 flashes per second across the whole screen, counting all effects together. The limit is lifted only after you confirm it on this PC.
+- **Light timeline:** Key each light in the sequencer to animate your lighting. Light keys can be imported from VMD files, and keys can be copied and pasted, with editable influence curves.
+- **Game light sync:** The colour and brightness of the game you share are reflected in the avatar's lighting in real time. Off by default.
+- **Ambient projection:** A soft, blurred glow of the game screen falls gently on the avatar so it blends into the scene's mood. Only the avatar receives it, and transparent backgrounds stay transparent. Off by default.
+- **Sky, fog and light:** Added 4 sky backgrounds, fog, light that bounces off walls, and softer shadows.
+- **Room editing:** Hide, move or reset a room's walls, floors, doors, windows and furniture piece by piece. Switch whole kinds on or off at once, bring hidden pieces back, control the room's lamps and their brightness, and choose where the avatar stands. Only your changes are saved in the scene. Walls, what hangs on them and props that block the camera on air drop out of the picture only, keeping their shadows and light.
+- **New interiors:** Added 4 rooms and a whole house, including the view outside the windows. Choosing a room also applies its own mood (bounced light, corner shading, reflections). The existing interiors can now be used as a whole building too.
+- **Sequencer:** Blender-like editing with keys, a dope sheet, graphs, pose copy, pins, clip mixing and baking. Import .vrma, .bvh and .vmd motions; the arm angle and movement scale are remembered per file.
+- **Free posing:** Dragging a hand, foot or the hips now moves the whole body naturally. Lowering the hips keeps the feet on the floor.
+- **Breathing in held poses:** Breathing continues while a pose is held, so the avatar no longer looks frozen.
+- **Start screen:** Reorganised so your avatar, devices and lists are easy to take in at a glance.
+
+
+**Fixes and improvements**
+
+- Fixed hair or clothing on some avatars sticking up and staying there.
+- Fixed particle effects coming from the body appearing where the avatar had been standing after changing pose, such as sitting or lying down.
+- Fixed see-through hair appearing to show the background where it overlapped screen effects.
+- Soft shadow settings are now shared in remote sessions.
+- **Better scene saving:** Each scene now keeps the avatar's own position and pose, and opening the scene brings them back. Switching to another avatar in a scene saves that avatar with the scene. Going back to the avatar list with unsaved changes asks whether to save them.
+- Fixed the whole room moving along when the avatar was moved up or down.
+- Lighting, effect and ambient presets are folded by kind, with your own saved presets at the top.
+- Background choices are now Color, Green, Transparent, Image and Sky. An existing blue background stays as a Color background of the same blue.
+- The studio camera list has fewer buttons so camera names are easier to read. Grab and Put on the current view are in each camera's settings.
+- The add-light picker always opens below its button.
+- Existing .vavatar files work without re-exporting.
+
 ## 2026/10/19 — v2.0.15
 
 - **Eye rendering fix for some avatars:** Fixed pupils disappearing or eye areas appearing hollow on avatars whose eye bones have a rotated forward reference. Gaze now applies only the change from each avatar's own reference pose. Existing .vavatar files work without re-exporting.
