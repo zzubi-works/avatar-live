@@ -2,6 +2,10 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/23 — v2.1.2
+
+- Fixed a one-frame flash in the Orbit camera mode: right after switching views or moving the camera, the avatar was shown from the wrong place for a single frame.
+
 ## 2026/10/22 — v2.1.1
 
 - **Grab a studio camera:** Turning on Grab for a studio camera shows the camera and what it frames in the scene view, and you can move and turn it with arrows and rings, just like a prop. While you hold it, that camera's picture shows small in a corner. The camera's outline never appears on air, in recordings or in photos; press Esc to let go.
