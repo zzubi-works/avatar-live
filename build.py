@@ -376,12 +376,12 @@ def home_page(lang, h, titles):
     <figure class="product">
       <div class="frame">
         <div class="frame-bar"><span></span><span></span><span></span><em>AVATAR LIVE</em></div>
-        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="../assets/video/hero.jpg" width="1280" height="720" aria-label="{caption}"{labels}><source src="../assets/video/hero.mp4" type="video/mp4"></video>
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="../assets/video/hero.jpg?v={hero_jpg_v}" width="1920" height="1080" aria-label="{caption}"{labels}><source src="../assets/video/hero.mp4?v={hero_v}" type="video/mp4"></video>
       </div>
       <figcaption>{caption}</figcaption>
     </figure>
   </div>
-</section>""".format(eyebrow=esc(hero["eyebrow"]), t1=esc(hero["title"][0]), t2=esc(hero["title"][1]), sub=sub, booth=BOOTH,
+</section>""".format(hero_v=asset_version("video/hero.mp4"), hero_jpg_v=asset_version("video/hero.jpg"), eyebrow=esc(hero["eyebrow"]), t1=esc(hero["title"][0]), t2=esc(hero["title"][1]), sub=sub, booth=BOOTH,
                      primary=esc(hero["primary"]), arrow=ICON["arrow"], secondary=esc(hero["secondary"]), meta=esc(hero["meta"]),
                      caption=esc(hero["caption"]), labels=video_labels(lang),
                      visual=img_tag("common", "keyvisual", hero["visual"], cls="kv-img", eager=True, sizes="(max-width: 899px) 178vw, 120vw")))

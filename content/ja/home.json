@@ -44,7 +44,7 @@
       {
         "title": "VRM変換なしで",
         "body": "アバタープロジェクトから一度書き出せば完了。アバターを改変しても、書き出し直すだけです。",
-        "media": "img:launcher",
+        "media": "img:guide-launcher",
         "size": "wide"
       },
       {
@@ -131,7 +131,7 @@
           "まばたき・視線",
           "マイクでリップシンク"
         ],
-        "media": "img:facecal",
+        "media": "video:home-face-close",
         "page": "07-motion"
       },
       {
@@ -142,7 +142,7 @@
           "その場でポーズを固定",
           "マシュマロPB対応"
         ],
-        "media": "common:grab",
+        "media": "video:physbone",
         "page": "04-main-window"
       },
       {
@@ -164,7 +164,7 @@
           "ゲーム音だけを送る",
           "位置・サイズは自由に"
         ],
-        "media": "img:share",
+        "media": "video:home-cyberpunk",
         "page": "09-output"
       },
       {
@@ -175,7 +175,7 @@
           "ビューで角度・範囲を調整",
           "背景・クロマキー・エフェクト"
         ],
-        "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
+        "media": "video:home-light-side",
         "page": "08-scene"
       },
       {

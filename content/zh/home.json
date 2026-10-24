@@ -44,7 +44,7 @@
       {
         "title": "无需 VRM 转换",
         "body": "在角色项目中导出一次即可。修改角色后，也只需重新导出。",
-        "media": "img:launcher",
+        "media": "img:guide-launcher",
         "size": "wide"
       },
       {
@@ -131,7 +131,7 @@
           "眨眼 · 视线",
           "麦克风口型同步"
         ],
-        "media": "img:facecal",
+        "media": "video:home-face-close",
         "page": "07-motion"
       },
       {
@@ -142,7 +142,7 @@
           "就地固定姿势",
           "支持 MarshmallowPB"
         ],
-        "media": "common:grab",
+        "media": "video:physbone",
         "page": "04-main-window"
       },
       {
@@ -164,7 +164,7 @@
           "只发送游戏声音",
           "自由调整位置 · 大小"
         ],
-        "media": "img:share",
+        "media": "video:home-cyberpunk",
         "page": "09-output"
       },
       {
@@ -175,7 +175,7 @@
           "在视图中调整角度 · 范围",
           "背景 · 色度键 · 效果"
         ],
-        "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
+        "media": "video:home-light-side",
         "page": "08-scene"
       },
       {

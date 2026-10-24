@@ -44,7 +44,7 @@
       {
         "title": "No VRM conversion",
         "body": "Export once from your avatar project and you're done. If you change the avatar, just export it again.",
-        "media": "img:launcher",
+        "media": "img:guide-launcher",
         "size": "wide"
       },
       {
@@ -131,7 +131,7 @@
           "Blinking · gaze",
           "Mic lip sync"
         ],
-        "media": "img:facecal",
+        "media": "video:home-face-close",
         "page": "07-motion"
       },
       {
@@ -142,7 +142,7 @@
           "Pose it in place",
           "Marshmallow PB support"
         ],
-        "media": "common:grab",
+        "media": "video:physbone",
         "page": "04-main-window"
       },
       {
@@ -164,7 +164,7 @@
           "Send only the game audio",
           "Position · size as you like"
         ],
-        "media": "img:share",
+        "media": "video:home-cyberpunk",
         "page": "09-output"
       },
       {
@@ -175,7 +175,7 @@
           "Angle · range in the view",
           "Backgrounds · chroma key · effects"
         ],
-        "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
+        "media": "video:home-light-side",
         "page": "08-scene"
       },
       {

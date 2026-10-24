@@ -44,7 +44,7 @@
       {
         "title": "VRM 변환 없이",
         "body": "아바타 프로젝트에서 한 번 내보내면 끝. 아바타를 고쳐도 다시 내보내기만 하면 됩니다.",
-        "media": "img:launcher",
+        "media": "img:guide-launcher",
         "size": "wide"
       },
       {
@@ -131,7 +131,7 @@
           "깜빡임 · 시선",
           "마이크 립싱크"
         ],
-        "media": "img:facecal",
+        "media": "video:home-face-close",
         "page": "07-motion"
       },
       {
@@ -142,7 +142,7 @@
           "그 자리에 포즈 고정",
           "마시멜로PB 지원"
         ],
-        "media": "common:grab",
+        "media": "video:physbone",
         "page": "04-main-window"
       },
       {
@@ -164,7 +164,7 @@
           "게임 소리만 보내기",
           "위치 · 크기 자유롭게"
         ],
-        "media": "img:share",
+        "media": "video:home-cyberpunk",
         "page": "09-output"
       },
       {
@@ -175,7 +175,7 @@
           "뷰에서 각도 · 범위 조정",
           "배경 · 크로마키 · 효과"
         ],
-        "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
+        "media": "video:home-light-side",
         "page": "08-scene"
       },
       {
