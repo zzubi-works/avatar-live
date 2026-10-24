@@ -4,8 +4,14 @@
   doc.classList.add("js");
   var reduce = window.matchMedia && matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // Light or dark follows the system setting (site.css); there is no switch of our own.
-  try { localStorage.removeItem("al-theme"); } catch (e) {}
+  // Theme: the system's appearance until someone picks one with the header switch; the choice is kept per browser.
+  var themeBtn = document.querySelector("[data-theme-toggle]");
+  if (themeBtn) themeBtn.addEventListener("click", function () {
+    var now = doc.dataset.theme || (window.matchMedia && matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+    var next = now === "light" ? "dark" : "light";
+    doc.dataset.theme = next;
+    try { localStorage.setItem("al-theme", next); } catch (e) {}
+  });
 
   // Header: a backdrop once the page has scrolled.
   var header = document.querySelector("[data-header]");

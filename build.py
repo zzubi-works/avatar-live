@@ -68,6 +68,8 @@ CHROME = {
 }
 
 ICON = {
+    "sun": '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
+    "moon": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg>',
     "globe": '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>',
     "menu": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>',
     "close": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
@@ -273,6 +275,7 @@ def head(lang, title, desc, page, og, extra=""):
 {pre}
 <link rel="stylesheet" href="{font}">
 <link rel="stylesheet" href="../assets/site.css">
+<script>try{{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}}catch(e){{}}</script>
 <script src="../assets/site.js" defer></script>{extra}
 </head>""".format(lang=L["html"], title=esc(title), desc=esc(desc), base=BASE, code=lang, page=page, alts=alts,
                   og=og, font=L["font"], locale=L["locale"], pre=pre, extra=extra)
@@ -295,13 +298,14 @@ def header(lang, page, home, is_home):
     <nav class="primary" aria-label="Primary">{nav}</nav>
     <div class="tools">
       <details class="lang"><summary aria-label="{language}">{globe}<span>{langname}</span></summary><div class="lang-menu" role="menu">{langs}</div></details>
+      <button class="icon-btn theme-toggle" type="button" aria-label="{theme}" data-theme-toggle>{sun}{moon}</button>
       <a class="btn btn-tinted btn-sm get" href="{booth}">{get}</a>
       <button class="icon-btn menu-toggle" type="button" aria-label="{menu}" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle>{menuicon}{close}</button>
     </div>
   </div>
   <div class="mobile-nav" id="mobile-nav" hidden>{nav}<a class="btn btn-primary" href="{booth}">{get}</a></div>
 </header>""".format(skip=esc(C["skip"]), nav=navl, language=esc(n["language"]), globe=ICON["globe"], langname=LANGS[lang]["name"],
-                    langs=langs, booth=BOOTH, get=esc(n["get"]),
+                    langs=langs, theme=esc(n["theme"]), sun=ICON["sun"], moon=ICON["moon"], booth=BOOTH, get=esc(n["get"]),
                     menu=esc(n["menu"]), menuicon=ICON["menu"], close=ICON["close"])
 
 
