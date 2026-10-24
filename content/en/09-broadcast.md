@@ -30,7 +30,7 @@ The Broadcast page has two tabs.
 
 Turn the switch off to stop receiving events. Your saved login and rules are not deleted. Turn on **Debug log** to record the received events in detail in the diagnostic log.
 
-> 🔒 The Twitch, CHZZK and SOOP login connects through the Avatar Live server (`stream-auth.erp.pictures`). Your login information is saved only on your own PC; nothing is kept on the server.
+> 🔒 The Twitch, CHZZK and SOOP login connects through the Avatar Live server. Your login information is saved only on your own PC; nothing is kept on the server.
 
 ## Connecting Discord
 
@@ -80,7 +80,7 @@ When the Discord client language is Korean, Japanese or Chinese, Discord shows t
 
 Set the point games' rules and point values in **Point games** on the Discord card. Points are saved on this PC for each channel.
 
-> 🔒 The developer's server (`discord-check.erp.pictures`) relays between Discord and the app. Your friends' Discord names and profile pictures are passed to your app and used for display and stickers. The app never posts to Discord on its own; it only answers your friends' commands.
+> 🔒 The developer's server relays between Discord and the app. Your friends' Discord names and profile pictures are passed to your app and used for display and stickers. The app never posts to Discord on its own; it only answers your friends' commands.
 
 ## WebSocket
 

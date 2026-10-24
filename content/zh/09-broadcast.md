@@ -30,7 +30,7 @@
 
 关闭开关后不再接收事件。已保存的登录信息和规则不会被删除。开启调试日志后，收到的事件会详细记录在诊断日志中。
 
-> 🔒 Twitch·CHZZK·SOOP 登录会经由 Avatar Live 服务器（`stream-auth.erp.pictures`）完成连接。登录信息只保存在你自己的电脑上，服务器不会保留。
+> 🔒 Twitch·CHZZK·SOOP 登录会经由 Avatar Live 服务器完成连接。登录信息只保存在你自己的电脑上，服务器不会保留。
 
 ## 连接 Discord
 
@@ -80,7 +80,7 @@ Discord 客户端语言为英语时，命令也会显示为 `/link`、`/unlink`�
 
 积分游戏的规则和积分数值在 Discord 卡片的积分游戏中设置。积分按频道保存在这台电脑上。
 
-> 🔒 Discord 与应用之间由开发者服务器（`discord-check.erp.pictures`）转发。朋友的 Discord 名称和头像会传到我的应用，用于显示和贴纸。应用不会自行在 Discord 上发帖，只回应朋友的命令。
+> 🔒 Discord 与应用之间由开发者服务器转发。朋友的 Discord 名称和头像会传到我的应用，用于显示和贴纸。应用不会自行在 Discord 上发帖，只回应朋友的命令。
 
 ## WebSocket
 

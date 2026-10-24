@@ -4,9 +4,13 @@ UnityプロジェクトにあるアバターをAvatar Liveで開くための`.va
 
 ## Exporter のインストール
 
-1. VCC または ALCOM に以下のリポジトリを追加します。
+1. 下のボタンを押して、VCC または ALCOM にリポジトリを追加します。開いた画面で追加を確定します。
 2. アバタープロジェクトに Curious Bobby - Avatar Exporter を追加します。
 3. Unityで該当のプロジェクトを開きます。
+
+<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">VCC・ALCOM に追加</a></p>
+
+ボタンで開かない場合は、下のアドレスをコピーして Settings → Packages → Add Repository に貼り付けます。
 
 ```text
 https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json

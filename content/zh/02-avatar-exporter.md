@@ -4,9 +4,13 @@
 
 ## 安装 Exporter
 
-1. 将以下存储库添加到 VCC 或 ALCOM。
+1. 点击下方按钮，将存储库添加到 VCC 或 ALCOM。在打开的窗口中确认添加。
 2. 在角色项目中添加 Curious Bobby - Avatar Exporter。
 3. 在 Unity 中打开该项目。
+
+<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">添加到 VCC · ALCOM</a></p>
+
+如果按钮无法打开，请复制下方地址，粘贴到 Settings → Packages → Add Repository。
 
 ```text
 https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json

@@ -4,15 +4,19 @@ Opening an avatar in a Unity project in Avatar Live`.vavatar`Create it as a file
 
 ## Install Exporter
 
-1. Add the below repositories to VCC or ALCOM.
+1. Press the button below to add the repository to VCC or ALCOM. Confirm the add in the window that opens.
 2. Add Curious Bobby - Avatar Exporter to your avatar project.
 3. Open the project in Unity.
+
+<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">Add to VCC · ALCOM</a></p>
+
+If the button doesn't open VCC, copy the address below and paste it in Settings → Packages → Add Repository.
 
 ```text
 https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json
 ```
 
-`.unitypackage`If you received it as Unity’s Assets → Import Package → Custom Package… Taken from
+If you received a `.unitypackage`, import it in Unity with Assets → Import Package → Custom Package….
 
 ## Create an avatar file
 

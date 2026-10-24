@@ -22,7 +22,7 @@
 <link rel="icon" href="../assets/brand/favicon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard-jp/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=101e59483f">
+<link rel="stylesheet" href="../assets/site.css?v=f2963e806b">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 <script src="../assets/site.js?v=7bd73318e6" defer></script>
 </head>
@@ -48,10 +48,13 @@
 <p>UnityプロジェクトにあるアバターをAvatar Liveで開くための<code>.vavatar</code>ファイルにします。すでに<code>.vavatar</code>や<code>.vrm</code>ファイルがある場合は、<a href="03-launcher-and-library.html">アバターを開く</a>に進んでください。</p>
 <h2 id="exporter-のインストール">Exporter のインストール<a class="anchor" href="#exporter-のインストール" aria-hidden="true" tabindex="-1">#</a></h2>
 <ol>
-<li>VCC または ALCOM に以下のリポジトリを追加します。</li>
+<li>下のボタンを押して、VCC または ALCOM にリポジトリを追加します。開いた画面で追加を確定します。</li>
 <li>アバタープロジェクトに Curious Bobby - Avatar Exporter を追加します。</li>
 <li>Unityで該当のプロジェクトを開きます。</li>
 </ol>
+<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">VCC・ALCOM に追加</a></p>
+
+<p>ボタンで開かない場合は、下のアドレスをコピーして Settings → Packages → Add Repository に貼り付けます。</p>
 <pre><code class="language-text">https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json
 </code></pre>
 <p><code>.unitypackage</code>で受け取った場合は、UnityのAssets → Import Package → Custom Package…から取り込みます。</p>

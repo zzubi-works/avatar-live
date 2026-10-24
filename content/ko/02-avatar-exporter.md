@@ -4,9 +4,13 @@ Unity 프로젝트에 있는 아바타를 Avatar Live에서 여는 `.vavatar` �
 
 ## Exporter 설치
 
-1. VCC 또는 ALCOM에 아래 저장소를 추가합니다.
+1. 아래 버튼을 눌러 VCC 또는 ALCOM에 저장소를 추가합니다. 창이 열리면 추가를 확인합니다.
 2. 아바타 프로젝트에 Curious Bobby - Avatar Exporter를 추가합니다.
 3. Unity에서 해당 프로젝트를 엽니다.
+
+<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">VCC · ALCOM에 저장소 추가</a></p>
+
+버튼으로 열리지 않으면 아래 주소를 복사해 Settings → Packages → Add Repository에 붙여 넣습니다.
 
 ```text
 https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json
