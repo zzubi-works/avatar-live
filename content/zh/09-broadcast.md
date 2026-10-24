@@ -30,7 +30,7 @@
 
 关闭开关后不再接收事件。已保存的登录信息和规则不会被删除。开启调试日志后，收到的事件会详细记录在诊断日志中。
 
-> 🔒 Twitch·CHZZK·SOOP 登录过程中的令牌交换会经过开发者服务器（`stream-auth.erp.pictures`）。平台的密钥只存放在该服务器上，获得的登录信息保存在这台电脑上。
+> 🔒 Twitch·CHZZK·SOOP 登录会经由 Avatar Live 服务器（`stream-auth.erp.pictures`）完成连接。登录信息只保存在你自己的电脑上，服务器不会保留。
 
 ## 连接 Discord
 

@@ -30,7 +30,7 @@ The Broadcast page has two tabs.
 
 Turn the switch off to stop receiving events. Your saved login and rules are not deleted. Turn on **Debug log** to record the received events in detail in the diagnostic log.
 
-> 🔒 The token exchange in the Twitch, CHZZK and SOOP login goes through the developer's server (`stream-auth.erp.pictures`). The platforms' secret keys are only on this server, and the login information you receive is saved on this PC.
+> 🔒 The Twitch, CHZZK and SOOP login connects through the Avatar Live server (`stream-auth.erp.pictures`). Your login information is saved only on your own PC; nothing is kept on the server.
 
 ## Connecting Discord
 
