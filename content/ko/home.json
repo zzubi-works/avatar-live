@@ -44,34 +44,34 @@
       {
         "title": "VRM 변환 없이",
         "body": "아바타 프로젝트에서 한 번 내보내면 끝. 아바타를 고쳐도 다시 내보내기만 하면 됩니다.",
-        "media": "img:guide-launcher",
+        "media": "video:home-no-vrm",
         "size": "wide"
       },
       {
         "title": "원래 셰이더 그대로",
         "body": "Poiyomi, lilToon 등 아바타에 쓴 셰이더를 그대로 보여 줍니다.",
-        "media": "common:shader-side",
+        "media": "video:home-shader",
         "size": "tall"
       },
       {
         "title": "PhysBone과 메뉴 그대로",
         "body": "머리카락의 흔들림, 옷 토글, 표정 버튼까지 VRChat과 같은 설정으로 움직입니다.",
-        "media": "video:physbone"
+        "media": "video:home-physbone"
       },
       {
         "title": "얼굴부터 전신까지",
         "body": "웹캠 하나로 표정과 시선, 손가락 관절, 전신까지. iPhone과 VMC(전신 트래커 · 장갑)도 부위별로 섞어 씁니다.",
-        "media": "img:guide-face-calibration"
+        "media": "video:home-fullbody"
       },
       {
         "title": "키보드 · 마우스 손 동작",
         "body": "손이 화면에 없을 때도 타이핑과 마우스에 맞춰 손이 움직입니다. 입력한 글자는 기록하지 않습니다.",
-        "media": "img:guide-motion-hands"
+        "media": "video:home-typing"
       },
       {
         "title": "방송과 화면 공유",
         "body": "OBS에는 투명 배경으로, Discord에는 게임과 아바타를 한 화면으로 보냅니다.",
-        "media": "img:guide-main",
+        "media": "video:home-share",
         "size": "wide"
       }
     ]
@@ -120,7 +120,7 @@
           "단축키와 퀵 액션",
           "즐겨찾기"
         ],
-        "media": "img:guide-avatar-menu",
+        "media": "video:home-expression",
         "page": "05-avatar-menu"
       },
       {
@@ -131,7 +131,7 @@
           "깜빡임 · 시선",
           "마이크 립싱크"
         ],
-        "media": "img:guide-face-calibration",
+        "media": "video:home-face-setup",
         "page": "07-motion"
       },
       {
@@ -142,7 +142,7 @@
           "그 자리에 포즈 고정",
           "마시멜로PB 지원"
         ],
-        "media": "img:guide-camera-toolbar",
+        "media": "video:home-grab",
         "page": "04-main-window"
       },
       {
@@ -153,7 +153,7 @@
           "가상 카메라",
           "PNG 사진 저장"
         ],
-        "media": "video:background",
+        "media": "video:home-obs",
         "page": "09-output"
       },
       {
@@ -164,7 +164,7 @@
           "게임 소리만 보내기",
           "위치 · 크기 자유롭게"
         ],
-        "media": "img:guide-share",
+        "media": "video:home-discord-share",
         "page": "09-output"
       },
       {
@@ -175,7 +175,7 @@
           "뷰에서 각도 · 범위 조정",
           "배경 · 크로마키 · 효과"
         ],
-        "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
+        "media": "video:home-lighting",
         "page": "08-scene"
       },
       {

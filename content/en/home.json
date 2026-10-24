@@ -44,34 +44,34 @@
       {
         "title": "No VRM conversion",
         "body": "Export once from your avatar project and you're done. If you change the avatar, just export it again.",
-        "media": "img:guide-launcher",
+        "media": "video:home-no-vrm",
         "size": "wide"
       },
       {
         "title": "Your original shaders",
         "body": "Shows the shaders on your avatar, such as Poiyomi and lilToon, just as they are.",
-        "media": "common:shader-side",
+        "media": "video:home-shader",
         "size": "tall"
       },
       {
         "title": "PhysBones and menus as they are",
         "body": "Swaying hair, outfit toggles, even expression buttons move with the same settings as in VRChat.",
-        "media": "video:physbone"
+        "media": "video:home-physbone"
       },
       {
         "title": "From face to full body",
         "body": "Expressions, gaze, finger joints and even full body with a single webcam. Mix in an iPhone and VMC (full-body trackers · gloves) part by part.",
-        "media": "img:guide-face-calibration"
+        "media": "video:home-fullbody"
       },
       {
         "title": "Keyboard · mouse hand motion",
         "body": "Even when your hands are out of view, the avatar's hands move with your typing and mouse. The characters you type are not recorded.",
-        "media": "img:guide-motion-hands"
+        "media": "video:home-typing"
       },
       {
         "title": "Streaming and screen sharing",
         "body": "Send a transparent background to OBS, and the game and your avatar on one screen to Discord.",
-        "media": "img:guide-main",
+        "media": "video:home-share",
         "size": "wide"
       }
     ]
@@ -120,7 +120,7 @@
           "Hotkeys and Quick Actions",
           "Favorites"
         ],
-        "media": "img:guide-avatar-menu",
+        "media": "video:home-expression",
         "page": "05-avatar-menu"
       },
       {
@@ -131,7 +131,7 @@
           "Blinking · gaze",
           "Mic lip sync"
         ],
-        "media": "img:guide-face-calibration",
+        "media": "video:home-face-setup",
         "page": "07-motion"
       },
       {
@@ -142,7 +142,7 @@
           "Pose it in place",
           "Marshmallow PB support"
         ],
-        "media": "img:guide-camera-toolbar",
+        "media": "video:home-grab",
         "page": "04-main-window"
       },
       {
@@ -153,7 +153,7 @@
           "Virtual camera",
           "Save photos as PNG"
         ],
-        "media": "video:background",
+        "media": "video:home-obs",
         "page": "09-output"
       },
       {
@@ -164,7 +164,7 @@
           "Send only the game audio",
           "Position · size as you like"
         ],
-        "media": "img:guide-share",
+        "media": "video:home-discord-share",
         "page": "09-output"
       },
       {
@@ -175,7 +175,7 @@
           "Angle · range in the view",
           "Backgrounds · chroma key · effects"
         ],
-        "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
+        "media": "video:home-lighting",
         "page": "08-scene"
       },
       {
