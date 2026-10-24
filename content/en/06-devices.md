@@ -2,7 +2,7 @@
 
 Connect your webcam, microphone, and trackers, and choose the input to use for your face, body, and hands.
 
-## Webcam and Microphone
+## Camera · microphone
 
 ![Webcam and Microphone Settings](img/guide-devices.png)
 
@@ -19,7 +19,9 @@ Connect your webcam, microphone, and trackers, and choose the input to use for y
 
 Raising the noise gate threshold makes it less sensitive to keyboard sounds but may ignore small voices. If the mouth does not move well, try lowering the threshold.
 
-## Tracking Sources
+## Tracking
+
+### Tracking Sources
 
 ![Choosing input for each body part](img/guide-tracking-sources.png)
 
@@ -36,13 +38,22 @@ Choose what to use to move each of the face, mouth, head, eyes, arms, hands, fin
 
 Example: You can set the face to iPhone and arms and hands to webcam. Even if a device is connected, the body part will not move if its source points to a different input.
 
-## Full Body and Fingers with Webcam
+#### Full Body and Fingers with Webcam
 
 - Full body: Tracks the torso and legs visible in the camera. Legs hidden by a desk are not tracked as if they were visible.
 - Finger joint tracking: Follows the bending and spreading of finger joints.
 - Hand tremor correction: Increasing this reduces minor tremors, but fast movements will follow slightly delayed.
 
-## iPhone Connection
+### SteamVR Connection
+
+![SteamVR Device Setup](img/guide-steamvr.png)
+
+1. Check if the HMD, controllers, and trackers are recognized in SteamVR.
+2. Device → Turn on SteamVR.
+3. Connect the device to the corresponding part such as the head, hand, or body.
+4. Run the calibration to align the avatar with the position of my device.
+
+### iPhone Connection
 
 ![External face tracking connection setup](img/guide-phone.png)
 
@@ -58,7 +69,7 @@ Example: You can set the face to iPhone and arms and hands to webcam. Even if a 
 | Switch to webcam if disconnected | Switch to the webcam while the phone connection is disconnected. |
 | iPhone Address | Used in a method where the PC address is not entered in the mobile app. In a normal connection, it can be left empty. |
 
-## VMC Connection
+### VMC Connection
 
 ![VMC Input and Connection Status](img/guide-vmc.png)
 
@@ -69,13 +80,4 @@ Example: You can set the face to iPhone and arms and hands to webcam. Even if a 
 
 **VMC tracking tested with:** ReboCap, HTC VIVE Tracker, and Tundra Tracker.
 
-## SteamVR Connection
-
-![SteamVR Device Setup](img/guide-steamvr.png)
-
-1. Check if the HMD, controllers, and trackers are recognized in SteamVR.
-2. Device → Turn on SteamVR.
-3. Connect the device to the corresponding part such as the head, hand, or body.
-4. Run the calibration to align the avatar with the position of my device.
-
-If the device is connected normally but the movement is unusual, check the smoothness, calibration, and tracking return settings in [Operation](07-motion.md).
+If the device is connected normally but the movement is unusual, check the smoothness, calibration, and tracking return settings in [Motion](07-motion.md).

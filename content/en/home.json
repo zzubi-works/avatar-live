@@ -94,7 +94,8 @@
       }
     ],
     "note": "VRM 0.x and 1.0 files can be opened directly without Unity. A Unity project is needed to export a VRChat avatar as .vavatar, but .vrca files cannot be opened directly.",
-    "link": "See the export guide"
+    "link": "See the export guide",
+    "page": "01-getting-started#export-avatar"
   },
   "showcase": {
     "kicker": "Take a look",
@@ -110,7 +111,7 @@
           "Settings saved per avatar"
         ],
         "media": "img:avatar-pop",
-        "page": "03-launcher-and-library"
+        "page": "01-getting-started#avatar-library"
       },
       {
         "title": "Your Expressions menu as it is",
@@ -143,7 +144,7 @@
           "Marshmallow PB support"
         ],
         "media": "video:physbone",
-        "page": "04-main-window"
+        "page": "01-getting-started#main-screen"
       },
       {
         "title": "To OBS and call apps",
@@ -154,7 +155,7 @@
           "Save photos as PNG"
         ],
         "media": "video:background",
-        "page": "09-output"
+        "page": "09-output#stream"
       },
       {
         "title": "Game + avatar to Discord",
@@ -165,7 +166,7 @@
           "Position · size as you like"
         ],
         "media": "video:home-cyberpunk",
-        "page": "09-output"
+        "page": "09-output#screen-share"
       },
       {
         "title": "Lighting and camera",
@@ -187,7 +188,7 @@
           "Hide the walls that block the camera"
         ],
         "media": "video:rooms|common:keyvisual",
-        "page": "08-rooms"
+        "page": "08-scene#dlc-room-packs"
       }
     ]
   },
@@ -201,13 +202,13 @@
         "body": "Pick an event and a reaction from lists to make one line, such as a throw for a follow or a splash of water for a donation of 10,000 won or more.",
         "media": "video:broadcast|img:guide-interactions",
         "size": "wide",
-        "page": "09-interactions"
+        "page": "09-broadcast#simple-setup"
       },
       {
         "title": "Throw · Liquid · Falling",
         "body": "Objects fly in and hit, liquid runs down the body, and a hard hit knocks the avatar down before it gets up again.",
         "media": "video:reactions|img:guide-interaction-test",
-        "page": "09-reactions"
+        "page": "09-broadcast#throw"
       },
       {
         "title": "Reactions from Discord friends",
@@ -220,7 +221,7 @@
         "body": "Connect event, condition and action nodes with lines to build reactions more complex than Simple setup allows.",
         "media": "video:nodes|img:guide-node-editor",
         "size": "wide",
-        "page": "09-node-editor"
+        "page": "09-broadcast#node-editor"
       }
     ],
     "discord": "Add the Avatar Live app to your Discord server or group DM. The app asks only for command permissions, and a connect code links it to your channel.",

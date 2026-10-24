@@ -94,7 +94,8 @@
       }
     ],
     "note": "VRM 0.x／1.0 ファイルは Unity なしで直接読み込めます。VRChat アバターを .vavatar として書き出す場合は Unity プロジェクトが必要です。.vrca ファイルは直接開けません。",
-    "link": "書き出しガイドを見る"
+    "link": "書き出しガイドを見る",
+    "page": "01-getting-started#アバターをエクスポート"
   },
   "showcase": {
     "kicker": "見どころ",
@@ -110,7 +111,7 @@
           "アバターごとの設定を保存"
         ],
         "media": "img:avatar-pop",
-        "page": "03-launcher-and-library"
+        "page": "01-getting-started#アバターライブラリ"
       },
       {
         "title": "Expressionメニューもそのまま",
@@ -143,7 +144,7 @@
           "マシュマロPB対応"
         ],
         "media": "video:physbone",
-        "page": "04-main-window"
+        "page": "01-getting-started#メイン画面"
       },
       {
         "title": "OBSや通話アプリへ",
@@ -154,7 +155,7 @@
           "PNGで写真を保存"
         ],
         "media": "video:background",
-        "page": "09-output"
+        "page": "09-output#配信出力"
       },
       {
         "title": "ゲーム＋アバターをDiscordへ",
@@ -165,7 +166,7 @@
           "位置・サイズは自由に"
         ],
         "media": "video:home-cyberpunk",
-        "page": "09-output"
+        "page": "09-output#画面共有"
       },
       {
         "title": "ライティングとカメラ",
@@ -187,7 +188,7 @@
           "カメラを遮る壁を隠す"
         ],
         "media": "video:rooms|common:keyvisual",
-        "page": "08-rooms"
+        "page": "08-scene#dlc部屋パック"
       }
     ]
   },
@@ -201,13 +202,13 @@
         "body": "フォローされたら投げる、1万ウォン以上のドネーションなら水をかける、のように、イベントと反応をリストから選んで1行で作ります。",
         "media": "video:broadcast|img:guide-interactions",
         "size": "wide",
-        "page": "09-interactions"
+        "page": "09-broadcast#かんたん設定"
       },
       {
         "title": "投げる・液体・倒れる",
         "body": "物が飛んできて当たり、液体が体に沿って流れ、強く当たると倒れてから起き上がります。",
         "media": "video:reactions|img:guide-interaction-test",
-        "page": "09-reactions"
+        "page": "09-broadcast#投げる"
       },
       {
         "title": "Discordの友達のリアクション",
@@ -220,7 +221,7 @@
         "body": "イベント・条件・アクションのノードを線でつないで、かんたん設定より複雑な反応を自分で作ります。",
         "media": "video:nodes|img:guide-node-editor",
         "size": "wide",
-        "page": "09-node-editor"
+        "page": "09-broadcast#ノードエディター"
       }
     ],
     "discord": "DiscordのサーバーやグループDMにAvatar Liveアプリを追加してください。アプリが求めるのはコマンドの権限だけで、接続コードで自分のチャンネルとつながります。",

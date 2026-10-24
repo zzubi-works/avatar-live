@@ -22,7 +22,7 @@
 <link rel="icon" href="../assets/brand/favicon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=f2963e806b">
+<link rel="stylesheet" href="../assets/site.css?v=f1fa02d3aa">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 <script src="../assets/site.js?v=7bd73318e6" defer></script>
 </head>
@@ -43,10 +43,10 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="03-launcher-and-library.html">Avatar Library</a></li><li><a href="04-main-window.html">main screen</a></li><li><a href="05-avatar-menu.html">Avatar Menu</a></li><li><a href="06-devices.html" aria-current="page">Devices</a></li><li><a href="07-motion.html">Action</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="08-rooms.html">DLC room packs</a></li><li><a href="08-camera-effects.html">Camera effects</a></li><li><a href="09-output.html">Output</a></li><li><a href="09-broadcast.html">Broadcast integration</a></li><li><a href="09-interactions.html">Simple setup</a></li><li><a href="09-reactions.html">Throw · Liquid · Falling</a></li><li><a href="09-node-editor.html">Node editor</a></li><li><a href="09-session.html">Remote collaboration</a></li><li><a href="10-settings.html">setting</a></li><li><a href="11-pro-features.html">Posing and Facial Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="05-avatar-menu.html">Avatar Menu</a></li><li><a href="06-devices.html" aria-current="page">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="09-output.html">Output</a></li><li><a href="09-broadcast.html">Broadcast</a></li><li><a href="10-settings.html">Settings</a></li></ul><p class="side-h">Help</p><ul><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="devices">Devices<a class="anchor" href="#devices" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>Connect your webcam, microphone, and trackers, and choose the input to use for your face, body, and hands.</p>
-<h2 id="webcam-and-microphone">Webcam and Microphone<a class="anchor" href="#webcam-and-microphone" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="camera--microphone">Camera · microphone<a class="anchor" href="#camera--microphone" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><a class="zoomable" href="../assets/shots/en/guide-devices.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-devices.webp" width="550" height="888" style="--image-width:550px" alt="Webcam and Microphone Settings" loading="lazy" decoding="async"></a><figcaption>Webcam and Microphone Settings</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
@@ -91,7 +91,8 @@
 </tbody>
 </table></div>
 <p>Raising the noise gate threshold makes it less sensitive to keyboard sounds but may ignore small voices. If the mouth does not move well, try lowering the threshold.</p>
-<h2 id="tracking-sources">Tracking Sources<a class="anchor" href="#tracking-sources" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="tracking">Tracking<a class="anchor" href="#tracking" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="tracking-sources">Tracking Sources<a class="anchor" href="#tracking-sources" aria-hidden="true" tabindex="-1">#</a></h3>
 <figure><a class="zoomable" href="../assets/shots/en/guide-tracking-sources.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-tracking-sources.webp" width="550" height="772" style="--image-width:550px" alt="Choosing input for each body part" loading="lazy" decoding="async"></a><figcaption>Choosing input for each body part</figcaption></figure>
 <p>Choose what to use to move each of the face, mouth, head, eyes, arms, hands, fingers, and body.</p>
 <div class="table-wrap settings-table" tabindex="0"><table>
@@ -129,13 +130,21 @@
 </tbody>
 </table></div>
 <p>Example: You can set the face to iPhone and arms and hands to webcam. Even if a device is connected, the body part will not move if its source points to a different input.</p>
-<h2 id="full-body-and-fingers-with-webcam">Full Body and Fingers with Webcam<a class="anchor" href="#full-body-and-fingers-with-webcam" aria-hidden="true" tabindex="-1">#</a></h2>
+<h4 id="full-body-and-fingers-with-webcam">Full Body and Fingers with Webcam<a class="anchor" href="#full-body-and-fingers-with-webcam" aria-hidden="true" tabindex="-1">#</a></h4>
 <ul>
 <li>Full body: Tracks the torso and legs visible in the camera. Legs hidden by a desk are not tracked as if they were visible.</li>
 <li>Finger joint tracking: Follows the bending and spreading of finger joints.</li>
 <li>Hand tremor correction: Increasing this reduces minor tremors, but fast movements will follow slightly delayed.</li>
 </ul>
-<h2 id="iphone-connection">iPhone Connection<a class="anchor" href="#iphone-connection" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="steamvr-connection">SteamVR Connection<a class="anchor" href="#steamvr-connection" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/en/guide-steamvr.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-steamvr.webp" width="550" height="654" style="--image-width:550px" alt="SteamVR Device Setup" loading="lazy" decoding="async"></a><figcaption>SteamVR Device Setup</figcaption></figure>
+<ol>
+<li>Check if the HMD, controllers, and trackers are recognized in SteamVR.</li>
+<li>Device → Turn on SteamVR.</li>
+<li>Connect the device to the corresponding part such as the head, hand, or body.</li>
+<li>Run the calibration to align the avatar with the position of my device.</li>
+</ol>
+<h3 id="iphone-connection">iPhone Connection<a class="anchor" href="#iphone-connection" aria-hidden="true" tabindex="-1">#</a></h3>
 <figure><a class="zoomable" href="../assets/shots/en/guide-phone.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-phone.webp" width="550" height="772" style="--image-width:550px" alt="External face tracking connection setup" loading="lazy" decoding="async"></a><figcaption>External face tracking connection setup</figcaption></figure>
 <ol>
 <li>Connect the iPhone and PC to the same Wi-Fi.</li>
@@ -166,7 +175,7 @@
 </tr>
 </tbody>
 </table></div>
-<h2 id="vmc-connection">VMC Connection<a class="anchor" href="#vmc-connection" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="vmc-connection">VMC Connection<a class="anchor" href="#vmc-connection" aria-hidden="true" tabindex="-1">#</a></h3>
 <figure><a class="zoomable" href="../assets/shots/en/guide-vmc.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-vmc.webp" width="550" height="983" style="--image-width:550px" alt="VMC Input and Connection Status" loading="lazy" decoding="async"></a><figcaption>VMC Input and Connection Status</figcaption></figure>
 <ol>
 <li>Turn on VMC transmission in the sending app and send it to this PC's receiving address and port.</li>
@@ -175,21 +184,13 @@
 <li>If your body direction or arms are misaligned, adjust them to a T position or alignment.</li>
 </ol>
 <p>VMC tracking tested with: ReboCap, HTC VIVE Tracker, and Tundra Tracker.</p>
-<h2 id="steamvr-connection">SteamVR Connection<a class="anchor" href="#steamvr-connection" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/en/guide-steamvr.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-steamvr.webp" width="550" height="654" style="--image-width:550px" alt="SteamVR Device Setup" loading="lazy" decoding="async"></a><figcaption>SteamVR Device Setup</figcaption></figure>
-<ol>
-<li>Check if the HMD, controllers, and trackers are recognized in SteamVR.</li>
-<li>Device → Turn on SteamVR.</li>
-<li>Connect the device to the corresponding part such as the head, hand, or body.</li>
-<li>Run the calibration to align the avatar with the position of my device.</li>
-</ol>
-<p>If the device is connected normally but the movement is unusual, check the smoothness, calibration, and tracking return settings in <a href="07-motion.html">Operation</a>.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>Previous</span>Avatar Menu</a><a class="next" href="07-motion.html"><span>Next</span>Action</a></nav><p class="updated">Last updated: 2026-10-24</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#webcam-and-microphone">Webcam and Microphone</a></li><li><a href="#tracking-sources">Tracking Sources</a></li><li><a href="#full-body-and-fingers-with-webcam">Full Body and Fingers with Webcam</a></li><li><a href="#iphone-connection">iPhone Connection</a></li><li><a href="#vmc-connection">VMC Connection</a></li><li><a href="#steamvr-connection">SteamVR Connection</a></li></ul></nav>
+<p>If the device is connected normally but the movement is unusual, check the smoothness, calibration, and tracking return settings in <a href="07-motion.html">Motion</a>.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="05-avatar-menu.html"><span>Previous</span>Avatar Menu</a><a class="next" href="07-motion.html"><span>Next</span>Motion</a></nav><p class="updated">Last updated: 2026-10-24</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#camera--microphone">Camera · microphone</a></li><li><a href="#tracking">Tracking</a></li><li class="sub"><a href="#tracking-sources">Tracking Sources</a></li><li class="sub"><a href="#steamvr-connection">SteamVR Connection</a></li><li class="sub"><a href="#iphone-connection">iPhone Connection</a></li><li class="sub"><a href="#vmc-connection">VMC Connection</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

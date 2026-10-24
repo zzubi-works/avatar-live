@@ -26,7 +26,9 @@ async function main() {
     const page = await browser.newPage();
     const languages = ['ko', 'en', 'ja', 'zh'];
     for (const lang of languages) {
-    const names = fs.readdirSync(path.join(root, lang)).filter(n => n.endsWith('.html') && (!only || only.includes(n)));
+    // The old pages the guide folded into others only forward to them.
+    const folded = Object.keys(JSON.parse(fs.readFileSync(path.resolve(__dirname, '..', 'content', lang, 'redirects.json'), 'utf8'))).map(n => n + '.html');
+    const names = fs.readdirSync(path.join(root, lang)).filter(n => n.endsWith('.html') && !folded.includes(n) && (!only || only.includes(n)));
     for (const width of [1440, 900, 390]) {
       await page.setViewportSize({ width, height: 1000 });
       for (const name of names) {
@@ -56,10 +58,10 @@ async function main() {
         const record = {lang, width, page:name, ...result, errors};
         records.push(record);
         if (result.overflow || result.rawMarkdown || result.missing.length || result.brokenLinks.length || result.clippedLabels.length || errors.length) failures.push(record);
-        if (['01-getting-started.html','08-scene.html','08-camera-effects.html','09-session.html','13-license.html'].includes(name)) {
+        if (['01-getting-started.html','08-scene.html','09-broadcast.html','13-license.html'].includes(name)) {
           await page.screenshot({path:path.join(out, lang+'-'+width+'-'+name.replace('.html','.png'))});
         }
-        if (name === '08-camera-effects.html') {
+        if (name === '08-scene.html') {
           const anchor = page.locator('article img[src$="/guide-post-aa.webp"]').first();
           await anchor.scrollIntoViewIfNeeded();
           await page.screenshot({path:path.join(out,lang+'-'+width+'-antialiasing.png')});

@@ -1,0 +1,127 @@
+{
+  "02-avatar-exporter": {
+    "to": "01-getting-started#export-avatar",
+    "anchors": {
+      "install-exporter": "01-getting-started#install-exporter",
+      "create-an-avatar-file": "01-getting-started#create-an-avatar-file",
+      "when-modifying-the-avatar": "01-getting-started#when-modifying-the-avatar",
+      "when-export-does-not-work": "01-getting-started#when-export-does-not-work"
+    }
+  },
+  "03-launcher-and-library": {
+    "to": "01-getting-started#avatar-library",
+    "anchors": {
+      "splash-screen": "01-getting-started#splash-screen",
+      "choose-a-device-to-start-with": "01-getting-started#choose-a-device-to-start-with",
+      "avatar-to-use-for-next-launch": "01-getting-started#avatar-to-use-for-next-launch",
+      "change-while-running": "01-getting-started#change-while-running",
+      "when-things-dont-start-well": "01-getting-started#when-things-dont-start-well"
+    }
+  },
+  "04-main-window": {
+    "to": "01-getting-started#main-screen",
+    "anchors": {
+      "left-menu": "01-getting-started#left-menu",
+      "using-the-settings-panel": "01-getting-started#using-the-settings-panel",
+      "camera-toolbar": "01-getting-started#camera-toolbar",
+      "work-screen-and-transmission-screen": "01-getting-started#work-screen-and-transmission-screen",
+      "frequently-used-operations": "01-getting-started#frequently-used-operations"
+    }
+  },
+  "08-camera-effects": {
+    "to": "08-scene#effects",
+    "anchors": {
+      "post-processing": "08-scene#post-processing",
+      "anti-aliasing": "08-scene#anti-aliasing",
+      "bloom": "08-scene#bloom",
+      "color-grading": "08-scene#color-grading",
+      "vignette": "08-scene#vignette",
+      "film-grain": "08-scene#film-grain",
+      "chromatic-aberration": "08-scene#chromatic-aberration",
+      "depth-of-field": "08-scene#depth-of-field",
+      "motion-blur": "08-scene#motion-blur",
+      "advanced-post-effects-pro": "08-scene#advanced-post-effects-pro",
+      "color-and-tone": "08-scene#color-and-tone",
+      "sharpening-and-dithering": "08-scene#sharpening-and-dithering",
+      "bloom-1": "08-scene#bloom-1",
+      "anamorphic-flares": "08-scene#anamorphic-flares",
+      "depth-of-field-1": "08-scene#depth-of-field-1",
+      "chromatic-aberration-1": "08-scene#chromatic-aberration-1",
+      "lens-dirt": "08-scene#lens-dirt",
+      "vignette-1": "08-scene#vignette-1",
+      "night-vision": "08-scene#night-vision",
+      "blur": "08-scene#blur",
+      "pixelation": "08-scene#pixelation",
+      "ambient-occlusion-pro": "08-scene#ambient-occlusion-pro",
+      "compare-before-and-after": "08-scene#compare-before-and-after"
+    }
+  },
+  "08-rooms": {
+    "to": "08-scene#dlc-room-packs",
+    "anchors": {
+      "buy-and-register-in-the-app": "08-scene#buy-and-register-in-the-app",
+      "download-rooms": "08-scene#download-rooms",
+      "what-changes-when-you-choose-a-room": "08-scene#what-changes-when-you-choose-a-room",
+      "walls-that-block-the-camera": "08-scene#walls-that-block-the-camera",
+      "tips": "08-scene#tips"
+    }
+  },
+  "09-interactions": {
+    "to": "09-broadcast#simple-setup",
+    "anchors": {
+      "making-a-new-item": "09-broadcast#making-a-new-item",
+      "examples": "09-broadcast#examples",
+      "expanding-an-item": "09-broadcast#expanding-an-item",
+      "triggers": "09-broadcast#triggers",
+      "actions": "09-broadcast#actions",
+      "cooldown-and-per-viewer-limit": "09-broadcast#cooldown-and-per-viewer-limit",
+      "testing-and-checking-problems": "09-broadcast#testing-and-checking-problems"
+    }
+  },
+  "09-node-editor": {
+    "to": "09-broadcast#node-editor",
+    "anchors": {
+      "how-is-it-different-from-simple-setup": "09-broadcast#how-is-it-different-from-simple-setup",
+      "opening-the-editor": "09-broadcast#opening-the-editor",
+      "nodes-and-links": "09-broadcast#nodes-and-links",
+      "example-pour-water-for-a-donation-of-10000-won-or-more": "09-broadcast#example-pour-water-for-a-donation-of-10000-won-or-more",
+      "when-you-edit-a-simple-setup-item-in-the-node-editor": "09-broadcast#when-you-edit-a-simple-setup-item-in-the-node-editor",
+      "sharing-graphs": "09-broadcast#sharing-graphs"
+    }
+  },
+  "09-reactions": {
+    "to": "09-broadcast#throw",
+    "anchors": {
+      "throw": "09-broadcast#throw",
+      "liquid": "09-broadcast#liquid",
+      "sticker": "09-broadcast#sticker",
+      "light": "09-broadcast#light",
+      "falling-and-getting-up": "09-broadcast#falling-and-getting-up",
+      "donation-display": "09-broadcast#donation-display",
+      "test": "09-broadcast#test"
+    }
+  },
+  "09-session": {
+    "to": "09-broadcast#remote-collaboration",
+    "anchors": {
+      "host-open-a-room": "09-broadcast#host-open-a-room",
+      "participant-join-a-room": "09-broadcast#participant-join-a-room",
+      "avatar-display-and-placement": "09-broadcast#avatar-display-and-placement",
+      "before-sending-your-avatar": "09-broadcast#before-sending-your-avatar",
+      "troubleshooting-connections": "09-broadcast#troubleshooting-connections",
+      "session-data-notice": "09-broadcast#session-data-notice"
+    }
+  },
+  "11-pro-features": {
+    "to": "08-scene#posing-pro",
+    "anchors": {
+      "posing": "08-scene#posing-pro",
+      "tracking-by-posture": "05-avatar-menu#tracking-by-posture",
+      "basic-stance-and-ready-position": "05-avatar-menu#basic-stance-and-ready-position",
+      "pose-library": "08-scene#pose-library-pro",
+      "object": "08-scene#object-pro",
+      "my-expressions": "05-avatar-menu#my-expression",
+      "auto-expressions": "07-motion#auto-expressions"
+    }
+  }
+}

@@ -1,4 +1,4 @@
-# Action
+# Motion
 
 It determines how much and how smoothly my facial expressions and movements are reflected in the avatar. The settings are saved for each avatar.
 
@@ -31,7 +31,11 @@ It determines how much and how smoothly my facial expressions and movements are 
 - Edit left and right together: If turned on, it changes both sides to the same value.
 - Smoothing: Reduces small facial tremors. If set too high, the response is slow.
 
-## Eyes and Gaze
+### When Expressions Don't Appear
+
+You can only move the expressions that exist on the avatar. If there is a VRCFaceTracking setting, that setting will be used, and if there are ARKit shape keys, those facial shapes will be used. Expressions that do not exist will not be created even if sensitivity is increased.
+
+## Eyes · Gaze
 
 ![Blinking and Gaze Settings](img/guide-motion-eyes.png)
 
@@ -46,7 +50,7 @@ It determines how much and how smoothly my facial expressions and movements are 
 
 Head tracking and facial tracking, as well as camera view, are set separately. Even in a fixed head pose, you can make only the eyes look at the camera.
 
-## Mouth and Lip Sync
+## Mouth · Expressions
 
 ![Mic Lip Sync and Mouth Settings](img/guide-motion-mouth.png)
 
@@ -55,33 +59,30 @@ Head tracking and facial tracking, as well as camera view, are set separately. E
 - Voice correction: Pronounce the guided vowels to match your voice.
 - Tongue and cheek puffing: Apply the expression using a button or shortcut key. It will be visible only if the model has the required expression.
 
-## Body
+### Auto Expressions
+
+![Auto Expression Connection Settings](img/guide-auto-expression.png)
+
+Turn it on in Actions → Auto Expressions. Connect the expressions saved in My Expressions to each detectable expression such as smile, surprise, or wink. Then, when you actually smile or are surprised, the connected expression will automatically appear.
+
+## Head
 
 ![Head and Body Movement Settings](img/guide-motion-body.png)
 
 | Item | If adjusted |
 |---|---|
 | Head Movement | Choose the size of movement: small, natural, or large. |
+
+## Body
+
+| Item | If adjusted |
+|---|---|
 | Follow Body | The body turns along when the head turns. |
 | Natural Movement | Even when still, small idle movements are added. |
 | Breathing | Small body movements as if breathing are added. |
 | Upper Body/Full Body | Reflects the body movements received from the device. |
 
-## When Tracking is Lost
-
-![Tracking Loss and AFK Transition Time](img/guide-motion-afk.png)
-
-AFK is the idle state used when both face and body tracking are lost. The time is set in Menu → Default·AFK Pose.
-
-| Time | Effect of Longer Setting |
-|---|---|
-| Waiting Time | Maintains the pose even if input briefly stops and waits longer. |
-| Transition Time | Slowly transitions to the idle pose. |
-| Return Time | Slowly returns to normal operation after input resumes. |
-
-The pose and expression to use while idle are selected in [Default Pose and Idle Pose](11-pro-features.md#basic-stance-and-ready-position).
-
-## Arms and Hands
+## Hands
 
 ![Arm/Hand Tracking and Desk Movements](img/guide-motion-hands.png)
 
@@ -93,7 +94,7 @@ The pose and expression to use while idle are selected in [Default Pose and Idle
 | Hand Depth Estimation | Estimates forward and backward distance with a webcam. Experimental, turn off if the arm twists. |
 | Hand Release Return | Changes the speed at which the hands return to the default pose when not visible. |
 
-### Desk Movements
+## Desk
 
 When the hands are not visible to the camera, the avatar hands move according to keyboard and mouse use.
 
@@ -103,7 +104,3 @@ When the hands are not visible to the camera, the avatar hands move according to
 - When the hands are back in view of the camera, it returns to tracking.
 
 Keyboard input is only used to create hand movements; typed characters are not saved or transmitted.
-
-## When Expressions Don't Appear
-
-You can only move the expressions that exist on the avatar. If there is a VRCFaceTracking setting, that setting will be used, and if there are ARKit shape keys, those facial shapes will be used. Expressions that do not exist will not be created even if sensitivity is increased.

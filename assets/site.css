@@ -313,12 +313,14 @@ video.lazyvideo { width: 100%; height: 100%; object-fit: cover; background: #000
 .toc a { display: block; padding: 5px 12px; margin-left: -1px; border-left: 1px solid transparent; color: var(--text-3); line-height: 1.45; }
 .toc a:hover { color: var(--text); text-decoration: none; }
 .toc a.on { color: var(--accent-2); border-left-color: var(--accent); }
+.toc li.sub a { padding-left: 24px; font-size: 13px; }
 
 .prose { max-width: 780px; }
 .prose h1 { margin: 0 0 22px; font-size: clamp(30px, 3.6vw, 40px); letter-spacing: -0.03em; line-height: 1.2; font-weight: 740; }
 .prose h2 { margin: 56px 0 16px; font-size: 24px; letter-spacing: -0.02em; line-height: 1.3; font-weight: 700; }
 .prose h3 { margin: 32px 0 10px; font-size: 18.5px; font-weight: 680; }
 .prose h4 { margin: 24px 0 8px; font-size: 16px; }
+.prose h5 { margin: 20px 0 6px; font-size: 15px; }
 .prose .anchor { margin-left: 8px; color: var(--text-3); opacity: 0; font-weight: 400; }
 .prose h2:hover .anchor, .prose h3:hover .anchor { opacity: 1; }
 .prose p, .prose li { color: var(--text-2); }

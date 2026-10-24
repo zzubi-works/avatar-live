@@ -22,7 +22,7 @@
 <link rel="icon" href="../assets/brand/favicon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=f2963e806b">
+<link rel="stylesheet" href="../assets/site.css?v=f1fa02d3aa">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 <script src="../assets/site.js?v=7bd73318e6" defer></script>
 </head>
@@ -43,7 +43,7 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="03-launcher-and-library.html">Avatar Library</a></li><li><a href="04-main-window.html">main screen</a></li><li><a href="05-avatar-menu.html">Avatar Menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Action</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="08-rooms.html">DLC room packs</a></li><li><a href="08-camera-effects.html">Camera effects</a></li><li><a href="09-output.html" aria-current="page">Output</a></li><li><a href="09-broadcast.html">Broadcast integration</a></li><li><a href="09-interactions.html">Simple setup</a></li><li><a href="09-reactions.html">Throw · Liquid · Falling</a></li><li><a href="09-node-editor.html">Node editor</a></li><li><a href="09-session.html">Remote collaboration</a></li><li><a href="10-settings.html">setting</a></li><li><a href="11-pro-features.html">Posing and Facial Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="05-avatar-menu.html">Avatar Menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="09-output.html" aria-current="page">Output</a></li><li><a href="09-broadcast.html">Broadcast</a></li><li><a href="10-settings.html">Settings</a></li></ul><p class="side-h">Help</p><ul><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="output">Output<a class="anchor" href="#output" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>You can send the completed avatar screen to OBS, Discord, or Zoom, or save it as a photo or video.</p>
 <h2 id="what-method-should-i-use">What method should I use?<a class="anchor" href="#what-method-should-i-use" aria-hidden="true" tabindex="-1">#</a></h2>
@@ -73,7 +73,7 @@
 </tr>
 <tr>
 <td>Broadcasting with a friend's avatar</td>
-<td><a href="09-session.html">Remote Collaboration</a> (Broadcast → Connections)</td>
+<td><a href="09-broadcast.html#remote-collaboration">Remote Collaboration</a> (Broadcast → Connections)</td>
 </tr>
 <tr>
 <td>Create Photo/Video Files</td>
@@ -82,7 +82,8 @@
 </tbody>
 </table></div>
 <p>NDI® is a registered trademark of Vizrt NDI AB. <a href="https://ndi.video/">Official NDI Information</a></p>
-<h2 id="output-image">Output Image<a class="anchor" href="#output-image" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="stream">Stream<a class="anchor" href="#stream" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="output-image">Output Image<a class="anchor" href="#output-image" aria-hidden="true" tabindex="-1">#</a></h3>
 <figure><a class="zoomable" href="../assets/shots/en/guide-output-image.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-output-image.webp" width="550" height="507" style="--image-width:550px" alt="Output Size and Frame Settings" loading="lazy" decoding="async"></a><figcaption>Output Size and Frame Settings</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
@@ -111,7 +112,7 @@
 </tbody>
 </table></div>
 <p>Basic supports up to 1080p with a watermark, while Pro supports up to 4K with output without a watermark.</p>
-<h2 id="spout2">Spout2<a class="anchor" href="#spout2" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="spout2">Spout2<a class="anchor" href="#spout2" aria-hidden="true" tabindex="-1">#</a></h3>
 <p>The video from Avatar Live is sent to OBS on the same Windows PC.</p>
 <figure><a class="zoomable" href="../assets/shots/en/guide-spout.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-spout.webp" width="550" height="270" style="--image-width:550px" alt="Spout2 Output Settings" loading="lazy" decoding="async"></a><figcaption>Spout2 Output Settings</figcaption></figure>
 <ol>
@@ -148,7 +149,7 @@
 </tbody>
 </table></div>
 <p>The usage conditions for the Spout2 and OBS receiver plugin follow the <a href="13-license.html#spout2">Spout2 notice</a>.</p>
-<h2 id="ndi">NDI<a class="anchor" href="#ndi" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="ndi">NDI<a class="anchor" href="#ndi" aria-hidden="true" tabindex="-1">#</a></h3>
 <p>It sends video to OBS and other PCs over the network. Both Basic and Pro are supported.</p>
 <figure><a class="zoomable" href="../assets/shots/en/guide-ndi.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-ndi.webp" width="550" height="295" style="--image-width:550px" alt="NDI Transmission Settings" loading="lazy" decoding="async"></a><figcaption>NDI Transmission Settings</figcaption></figure>
 <ol>
@@ -159,7 +160,7 @@
 </ol>
 <p>To check without OBS, you can use <a href="https://ndi.video/tools/">NDI Tools' Studio Monitor</a>. The transmitting PC and receiving PC must be on a network that can communicate with each other.</p>
 <p>Check the usage conditions for NDI Runtime, NDI Tools, and DistroAV in <a href="13-license.html#ndi">NDI Notice</a>.</p>
-<h2 id="virtual-camera">Virtual Camera<a class="anchor" href="#virtual-camera" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="virtual-camera">Virtual Camera<a class="anchor" href="#virtual-camera" aria-hidden="true" tabindex="-1">#</a></h3>
 <p>It is a method of choosing an avatar from the camera list of Discord, Zoom, etc.</p>
 <figure><a class="zoomable" href="../assets/shots/en/guide-virtual-camera.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-virtual-camera.webp" width="550" height="365" style="--image-width:550px" alt="Virtual Camera Installation and Transmission Settings" loading="lazy" decoding="async"></a><figcaption>Virtual Camera Installation and Transmission Settings</figcaption></figure>
 <ol>
@@ -168,7 +169,7 @@
 <li>From the list of cameras in the app you will use, select Avatar Live Camera.</li>
 </ol>
 <p>It supports up to 1920×1080, 30fps, and does not transmit transparent backgrounds. If the new device is not on the list, restart the receiving app.</p>
-<h2 id="screen-share">Screen Share<a class="anchor" href="#screen-share" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="screen-share">Screen share<a class="anchor" href="#screen-share" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>You overlay an avatar on top of a game or program and send it through Discord, etc.</p>
 <figure><a class="zoomable" href="../assets/shots/en/guide-share.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-share.webp" width="550" height="983" style="--image-width:550px" alt="Screen sharing targets, audio, avatar layout" loading="lazy" decoding="async"></a><figcaption>Screen sharing targets, audio, avatar layout</figcaption></figure>
 <ol>
@@ -206,30 +207,18 @@
 <h3 id="when-shared-sound-does-not-play">When shared sound does not play<a class="anchor" href="#when-shared-sound-does-not-play" aria-hidden="true" tabindex="-1">#</a></h3>
 <p>If a message appears stating that there is no virtual audio device, you can use the virtual audio driver installation. This button is the path to install VB-Audio's VB-CABLE. After installation, check whether the Windows default playback device is the headphones or speakers you usually use.</p>
 <p>VB-CABLE is a donationware product from a separate developer. You can check the usage conditions, support, and license information at <a href="13-license.html#vb-cable">VB-CABLE Notice</a>.</p>
-<h2 id="photos-and-recording">Photos and Recording<a class="anchor" href="#photos-and-recording" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>The Studio → Photo &amp; Recording tab holds the camera screen, photo and recording, in that order.</p>
-<figure><a class="zoomable" href="../assets/shots/en/guide-photo-record.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-photo-record.webp" width="550" height="648" style="--image-width:550px" alt="Photo Saving and Recording Settings" loading="lazy" decoding="async"></a><figcaption>Photo Saving and Recording Settings</figcaption></figure>
-<ul>
-<li>Camera screen: Choose screen decorations that look like a phone or camcorder, and their ratio and style.</li>
-<li>Photo: Saves the current output screen as a PNG.</li>
-<li>Crop: Cuts the area to include in the photo.</li>
-<li>Ratio: Chooses the shape of the photo such as landscape, portrait, or square.</li>
-<li>Resolution: Sets the pixel count of the saved file.</li>
-<li>Recording (Pro): Saves video as MP4. Press stop after starting to complete the file.</li>
-<li>Mic sound: When on, your microphone and, while screen sharing, the shared game's sound are mixed into one track. When off, only the game's sound goes in; without screen sharing, the video is recorded without sound.</li>
-</ul>
 <h2 id="if-there-are-problems">If There Are Problems<a class="anchor" href="#if-there-are-problems" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li><a href="12-troubleshooting.html#obs-and-video-output">No source in OBS or video appears black</a></li>
 <li><a href="12-troubleshooting.html#screen-sharing">Game sharing appears black or no sound</a></li>
-<li><a href="09-session.html#troubleshooting-connections">Cannot connect to remote group session</a></li>
-</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="08-camera-effects.html"><span>Previous</span>Camera effects</a><a class="next" href="09-broadcast.html"><span>Next</span>Broadcast integration</a></nav><p class="updated">Last updated: 2026-10-24</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#what-method-should-i-use">What method should I use?</a></li><li><a href="#output-image">Output Image</a></li><li><a href="#spout2">Spout2</a></li><li><a href="#ndi">NDI</a></li><li><a href="#virtual-camera">Virtual Camera</a></li><li><a href="#screen-share">Screen Share</a></li><li><a href="#photos-and-recording">Photos and Recording</a></li><li><a href="#if-there-are-problems">If There Are Problems</a></li></ul></nav>
+<li><a href="09-broadcast.html#troubleshooting-connections">Cannot connect to remote group session</a></li>
+</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="08-scene.html"><span>Previous</span>Studio</a><a class="next" href="09-broadcast.html"><span>Next</span>Broadcast</a></nav><p class="updated">Last updated: 2026-10-24</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#what-method-should-i-use">What method should I use?</a></li><li><a href="#stream">Stream</a></li><li class="sub"><a href="#output-image">Output Image</a></li><li class="sub"><a href="#spout2">Spout2</a></li><li class="sub"><a href="#ndi">NDI</a></li><li class="sub"><a href="#virtual-camera">Virtual Camera</a></li><li><a href="#screen-share">Screen share</a></li><li class="sub"><a href="#when-shared-sound-does-not-play">When shared sound does not play</a></li><li><a href="#if-there-are-problems">If There Are Problems</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

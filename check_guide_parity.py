@@ -45,7 +45,13 @@ def main():
             if not all(term in text for term in required):
                 print(f'{language}/home.json {section}: stale or incomplete avatar-format information')
                 total+=1
+    # The pages the guide folded into others keep their old addresses in every language.
+    folded=sorted(json.loads((ROOT/'ko'/'redirects.json').read_text(encoding='utf-8')))
     for language in LANGS:
+        local=sorted(json.loads((ROOT/language/'redirects.json').read_text(encoding='utf-8')))
+        if local!=folded:
+            print(f'{language}/redirects.json: wrong old pages. Missing={sorted(set(folded)-set(local))} Extra={sorted(set(local)-set(folded))}')
+            total+=1
         all_pages=sorted(p.name for p in (ROOT/language).glob('[0-9][0-9]-*.md'))
         if all_pages!=DOCS:
             print(f'{language}: wrong pages. Missing={sorted(set(DOCS)-set(all_pages))} Extra={sorted(set(all_pages)-set(DOCS))}')

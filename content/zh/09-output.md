@@ -10,12 +10,14 @@
 | 将视频发送到其他电脑 | NDI® |
 | 用视频通话的摄像头显示 | 虚拟摄像头 |
 | 共享游戏和角色 | 屏幕共享 |
-| 与朋友的角色一起直播 | [远程合播](09-session.md)（直播 → 连接） |
+| 与朋友的角色一起直播 | [远程合播](09-broadcast.md#远程联播)（直播 → 连接） |
 | 创建照片·视频文件 | 照片与录制（工作室 → 照片与录制） |
 
 NDI®是Vizrt NDI AB的注册商标。[NDI 官方指南](https://ndi.video/)
 
-## 输出图片
+## 推流输出
+
+### 输出图片
 
 ![输出尺寸和帧设置](img/guide-output-image.png)
 
@@ -28,7 +30,7 @@ NDI®是Vizrt NDI AB的注册商标。[NDI 官方指南](https://ndi.video/)
 
 Basic支持最高1080p并带水印，Pro支持最高4K并且无水印输出。
 
-## Spout2
+### Spout2
 
 在同一台 Windows PC 上将 Avatar Live 的视频传输到 OBS。
 
@@ -49,7 +51,7 @@ Basic支持最高1080p并带水印，Pro支持最高4K并且无水印输出。
 
 Spout2和OBS接收插件的使用条件遵循[Spout2通知](13-license.md#spout2)。
 
-## NDI
+### NDI
 
 通过网络将视频发送到其他电脑的 OBS 等软件。Basic 和 Pro 都支持。
 
@@ -64,7 +66,7 @@ Spout2和OBS接收插件的使用条件遵循[Spout2通知](13-license.md#spout2
 
 NDI Runtime·NDI Tools·DistroAV 的使用条件请分别在 [NDI 通知](13-license.md#ndi) 中确认。
 
-## 虚拟相机
+### 虚拟相机
 
 这是在 Discord、Zoom 等的摄像头列表中选择角色的方式。
 
@@ -100,22 +102,8 @@ NDI Runtime·NDI Tools·DistroAV 的使用条件请分别在 [NDI 通知](13-lic
 
 VB-CABLE是由独立厂商制作的Donationware。使用条件和赞助·许可说明可在 [VB-CABLE 通知](13-license.md#vb-cable) 中查看。
 
-## 照片与录制
-
-在工作室 → **照片与录制**选项卡中，依次排列着拍摄画面·照片·录制。
-
-![照片保存与录制设置](img/guide-photo-record.png)
-
-- 拍摄画面: 选择像手机·摄像机一样的画面装饰及其比例·样式。
-- 照片: 将当前输出画面保存为PNG。
-- 裁剪: 裁剪照片中想要的区域。
-- 比例: 选择照片形状，如横向、纵向、方形等。
-- 分辨率: 设置保存文件的像素数。
-- 录制 (Pro): 将视频保存为MP4。开始后点击停止完成文件。
-- 麦克风声音: 开启时，我的麦克风声音以及屏幕共享中共享的游戏声音会混合到一条音轨中录制。关闭时只录制游戏声音，没有屏幕共享时会无声录制。
-
 ## 遇到问题时
 
 - [OBS没有来源或视频为黑屏](12-troubleshooting.md#obs-与视频输出)
 - [游戏共享为黑屏或没有声音](12-troubleshooting.md#屏幕共享)
-- [无法连接远程联机](09-session.md#连接故障排查)
+- [无法连接远程联机](09-broadcast.md#连接故障排查)

@@ -1,0 +1,127 @@
+{
+  "02-avatar-exporter": {
+    "to": "01-getting-started#导出角色",
+    "anchors": {
+      "安装-exporter": "01-getting-started#安装-exporter",
+      "创建角色文件": "01-getting-started#创建角色文件",
+      "修改角色时": "01-getting-started#修改角色时",
+      "导出失败时": "01-getting-started#导出失败时"
+    }
+  },
+  "03-launcher-and-library": {
+    "to": "01-getting-started#角色库",
+    "anchors": {
+      "开始屏幕": "01-getting-started#开始屏幕",
+      "选择要开始的设备": "01-getting-started#选择要开始的设备",
+      "用于下一次运行的角色": "01-getting-started#用于下一次运行的角色",
+      "运行中更换": "01-getting-started#运行中更换",
+      "启动不顺时": "01-getting-started#启动不顺时"
+    }
+  },
+  "04-main-window": {
+    "to": "01-getting-started#主屏幕",
+    "anchors": {
+      "左侧菜单": "01-getting-started#左侧菜单",
+      "使用设置面板": "01-getting-started#使用设置面板",
+      "摄像机工具栏": "01-getting-started#摄像机工具栏",
+      "工作屏幕与直播屏幕": "01-getting-started#工作屏幕与直播屏幕",
+      "常用操作": "01-getting-started#常用操作"
+    }
+  },
+  "08-camera-effects": {
+    "to": "08-scene#效果",
+    "anchors": {
+      "基础后处理": "08-scene#基础后处理",
+      "抗锯齿": "08-scene#抗锯齿",
+      "辉光": "08-scene#辉光",
+      "色彩校正": "08-scene#色彩校正",
+      "暗角": "08-scene#暗角",
+      "胶片颗粒": "08-scene#胶片颗粒",
+      "色差": "08-scene#色差",
+      "景深": "08-scene#景深",
+      "动态模糊": "08-scene#动态模糊",
+      "高级后处理效果-pro": "08-scene#高级后处理效果-pro",
+      "颜色和色调": "08-scene#颜色和色调",
+      "锐化和抖动": "08-scene#锐化和抖动",
+      "辉光-1": "08-scene#辉光-1",
+      "变形镜头光斑": "08-scene#变形镜头光斑",
+      "景深-1": "08-scene#景深-1",
+      "色差-1": "08-scene#色差-1",
+      "镜头污渍": "08-scene#镜头污渍",
+      "暗角-1": "08-scene#暗角-1",
+      "夜视": "08-scene#夜视",
+      "全屏模糊": "08-scene#全屏模糊",
+      "像素化": "08-scene#像素化",
+      "环境光遮蔽-pro": "08-scene#环境光遮蔽-pro",
+      "效果前后对比": "08-scene#效果前后对比"
+    }
+  },
+  "08-rooms": {
+    "to": "08-scene#dlc-房间包",
+    "anchors": {
+      "购买并在应用中登记": "08-scene#购买并在应用中登记",
+      "下载房间": "08-scene#下载房间",
+      "选择房间后会改变的内容": "08-scene#选择房间后会改变的内容",
+      "遮挡相机的墙": "08-scene#遮挡相机的墙",
+      "提示": "08-scene#提示"
+    }
+  },
+  "09-interactions": {
+    "to": "09-broadcast#简易设置",
+    "anchors": {
+      "创建新条目": "09-broadcast#创建新条目",
+      "示例": "09-broadcast#示例",
+      "展开条目": "09-broadcast#展开条目",
+      "触发": "09-broadcast#触发",
+      "动作": "09-broadcast#动作",
+      "冷却与按观众限制": "09-broadcast#冷却与按观众限制",
+      "测试与排查问题": "09-broadcast#测试与排查问题"
+    }
+  },
+  "09-node-editor": {
+    "to": "09-broadcast#节点编辑器",
+    "anchors": {
+      "与简易设置有什么不同": "09-broadcast#与简易设置有什么不同",
+      "打开编辑器": "09-broadcast#打开编辑器",
+      "节点与连线": "09-broadcast#节点与连线",
+      "示例1-万韩元以上的打赏时泼水": "09-broadcast#示例1-万韩元以上的打赏时泼水",
+      "在节点编辑器中修改简易设置条目后": "09-broadcast#在节点编辑器中修改简易设置条目后",
+      "分享图": "09-broadcast#分享图"
+    }
+  },
+  "09-reactions": {
+    "to": "09-broadcast#投掷",
+    "anchors": {
+      "投掷": "09-broadcast#投掷",
+      "液体": "09-broadcast#液体",
+      "贴纸": "09-broadcast#贴纸",
+      "灯光": "09-broadcast#灯光",
+      "倒下与起身": "09-broadcast#倒下与起身",
+      "打赏显示": "09-broadcast#打赏显示",
+      "测试": "09-broadcast#测试"
+    }
+  },
+  "09-session": {
+    "to": "09-broadcast#远程联播",
+    "anchors": {
+      "房主创建房间": "09-broadcast#房主创建房间",
+      "参与者加入房间": "09-broadcast#参与者加入房间",
+      "角色显示与布局": "09-broadcast#角色显示与布局",
+      "发送角色之前": "09-broadcast#发送角色之前",
+      "连接故障排查": "09-broadcast#连接故障排查",
+      "会话数据说明": "09-broadcast#会话数据说明"
+    }
+  },
+  "11-pro-features": {
+    "to": "08-scene#姿势-pro",
+    "anchors": {
+      "姿势": "08-scene#姿势-pro",
+      "按姿势跟踪": "05-avatar-menu#按姿势跟踪",
+      "基本姿势和待机姿势": "05-avatar-menu#基本姿势和待机姿势",
+      "姿势库": "08-scene#姿势库-pro",
+      "对象": "08-scene#对象-pro",
+      "我的表情": "05-avatar-menu#我的表情",
+      "自动表情": "07-motion#自动表情"
+    }
+  }
+}

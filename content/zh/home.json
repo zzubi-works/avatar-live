@@ -94,7 +94,8 @@
       }
     ],
     "note": "VRM 0.x 和 1.0 文件无需 Unity，可直接导入 Avatar Live。只有将 VRChat 角色导出为 .vavatar 时才需要 Unity 项目；.vrca 文件无法直接打开。",
-    "link": "查看导出指南"
+    "link": "查看导出指南",
+    "page": "01-getting-started#导出角色"
   },
   "showcase": {
     "kicker": "一览",
@@ -110,7 +111,7 @@
           "按角色保存设置"
         ],
         "media": "img:avatar-pop",
-        "page": "03-launcher-and-library"
+        "page": "01-getting-started#角色库"
       },
       {
         "title": "Expression 菜单原样可用",
@@ -143,7 +144,7 @@
           "支持 MarshmallowPB"
         ],
         "media": "video:physbone",
-        "page": "04-main-window"
+        "page": "01-getting-started#主屏幕"
       },
       {
         "title": "发送到 OBS 和通话应用",
@@ -154,7 +155,7 @@
           "保存 PNG 照片"
         ],
         "media": "video:background",
-        "page": "09-output"
+        "page": "09-output#推流输出"
       },
       {
         "title": "游戏 + 角色，一起发到 Discord",
@@ -165,7 +166,7 @@
           "自由调整位置 · 大小"
         ],
         "media": "video:home-cyberpunk",
-        "page": "09-output"
+        "page": "09-output#屏幕共享"
       },
       {
         "title": "灯光与相机",
@@ -187,7 +188,7 @@
           "隐藏挡住相机的墙"
         ],
         "media": "video:rooms|common:keyvisual",
-        "page": "08-rooms"
+        "page": "08-scene#dlc-房间包"
       }
     ]
   },
@@ -201,13 +202,13 @@
         "body": "像“有人关注就投掷”“1 万韩元以上的打赏就泼水”这样，从列表中选择事件和反应，用一行做好。",
         "media": "video:broadcast|img:guide-interactions",
         "size": "wide",
-        "page": "09-interactions"
+        "page": "09-broadcast#简易设置"
       },
       {
         "title": "投掷 · 液体 · 倒下",
         "body": "物体飞来击中角色，液体顺着身体流下，被重重击中时会倒下再起身。",
         "media": "video:reactions|img:guide-interaction-test",
-        "page": "09-reactions"
+        "page": "09-broadcast#投掷"
       },
       {
         "title": "Discord 朋友的反应",
@@ -220,7 +221,7 @@
         "body": "用连线连接事件·条件·动作节点，亲手搭建比简易设置更复杂的反应。",
         "media": "video:nodes|img:guide-node-editor",
         "size": "wide",
-        "page": "09-node-editor"
+        "page": "09-broadcast#节点编辑器"
       }
     ],
     "discord": "把 Avatar Live 应用添加到 Discord 服务器或群组私信。应用只请求命令权限，并通过连接码与你的频道相连。",

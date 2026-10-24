@@ -22,7 +22,7 @@
 <link rel="icon" href="../assets/brand/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="../assets/site.css?v=f2963e806b">
+<link rel="stylesheet" href="../assets/site.css?v=f1fa02d3aa">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 <script src="../assets/site.js?v=7bd73318e6" defer></script>
 </head>
@@ -43,7 +43,7 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">角色库</a></li><li><a href="04-main-window.html">主屏幕</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室</a></li><li><a href="08-rooms.html">DLC 房间包</a></li><li><a href="08-camera-effects.html">摄像机效果</a></li><li><a href="09-output.html" aria-current="page">输出</a></li><li><a href="09-broadcast.html">直播联动</a></li><li><a href="09-interactions.html">简易设置</a></li><li><a href="09-reactions.html">投掷 · 液体 · 倒下</a></li><li><a href="09-node-editor.html">节点编辑器</a></li><li><a href="09-session.html">远程联播</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">姿势与表情</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">演播室</a></li><li><a href="09-output.html" aria-current="page">输出</a></li><li><a href="09-broadcast.html">直播</a></li><li><a href="10-settings.html">设置</a></li></ul><p class="side-h">帮助</p><ul><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="输出">输出<a class="anchor" href="#输出" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>将完成的角色画面发送到 OBS、Discord、Zoom，或保存为照片、视频。</p>
 <h2 id="应该使用哪种方式">应该使用哪种方式？<a class="anchor" href="#应该使用哪种方式" aria-hidden="true" tabindex="-1">#</a></h2>
@@ -73,7 +73,7 @@
 </tr>
 <tr>
 <td>与朋友的角色一起直播</td>
-<td><a href="09-session.html">远程合播</a>（直播 → 连接）</td>
+<td><a href="09-broadcast.html#远程联播">远程合播</a>（直播 → 连接）</td>
 </tr>
 <tr>
 <td>创建照片·视频文件</td>
@@ -82,7 +82,8 @@
 </tbody>
 </table></div>
 <p>NDI®是Vizrt NDI AB的注册商标。<a href="https://ndi.video/">NDI 官方指南</a></p>
-<h2 id="输出图片">输出图片<a class="anchor" href="#输出图片" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="推流输出">推流输出<a class="anchor" href="#推流输出" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="输出图片">输出图片<a class="anchor" href="#输出图片" aria-hidden="true" tabindex="-1">#</a></h3>
 <figure><a class="zoomable" href="../assets/shots/zh/guide-output-image.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-output-image.webp" width="550" height="507" style="--image-width:550px" alt="输出尺寸和帧设置" loading="lazy" decoding="async"></a><figcaption>输出尺寸和帧设置</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
@@ -111,7 +112,7 @@
 </tbody>
 </table></div>
 <p>Basic支持最高1080p并带水印，Pro支持最高4K并且无水印输出。</p>
-<h2 id="spout2">Spout2<a class="anchor" href="#spout2" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="spout2">Spout2<a class="anchor" href="#spout2" aria-hidden="true" tabindex="-1">#</a></h3>
 <p>在同一台 Windows PC 上将 Avatar Live 的视频传输到 OBS。</p>
 <figure><a class="zoomable" href="../assets/shots/zh/guide-spout.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-spout.webp" width="550" height="270" style="--image-width:550px" alt="Spout2 发送设置" loading="lazy" decoding="async"></a><figcaption>Spout2 发送设置</figcaption></figure>
 <ol>
@@ -148,7 +149,7 @@
 </tbody>
 </table></div>
 <p>Spout2和OBS接收插件的使用条件遵循<a href="13-license.html#spout2">Spout2通知</a>。</p>
-<h2 id="ndi">NDI<a class="anchor" href="#ndi" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="ndi">NDI<a class="anchor" href="#ndi" aria-hidden="true" tabindex="-1">#</a></h3>
 <p>通过网络将视频发送到其他电脑的 OBS 等软件。Basic 和 Pro 都支持。</p>
 <figure><a class="zoomable" href="../assets/shots/zh/guide-ndi.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-ndi.webp" width="550" height="295" style="--image-width:550px" alt="NDI 发送设置" loading="lazy" decoding="async"></a><figcaption>NDI 发送设置</figcaption></figure>
 <ol>
@@ -159,7 +160,7 @@
 </ol>
 <p>如果想在没有 OBS 的情况下进行确认，可以使用 <a href="https://ndi.video/tools/">NDI Tools 的 Studio Monitor</a>。发送电脑和接收电脑必须处于可以相互通信的网络中。</p>
 <p>NDI Runtime·NDI Tools·DistroAV 的使用条件请分别在 <a href="13-license.html#ndi">NDI 通知</a> 中确认。</p>
-<h2 id="虚拟相机">虚拟相机<a class="anchor" href="#虚拟相机" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="虚拟相机">虚拟相机<a class="anchor" href="#虚拟相机" aria-hidden="true" tabindex="-1">#</a></h3>
 <p>这是在 Discord、Zoom 等的摄像头列表中选择角色的方式。</p>
 <figure><a class="zoomable" href="../assets/shots/zh/guide-virtual-camera.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-virtual-camera.webp" width="550" height="365" style="--image-width:550px" alt="虚拟摄像头安装与推流设置" loading="lazy" decoding="async"></a><figcaption>虚拟摄像头安装与推流设置</figcaption></figure>
 <ol>
@@ -206,30 +207,18 @@
 <h3 id="当共享声音没有声音时">当共享声音没有声音时<a class="anchor" href="#当共享声音没有声音时" aria-hidden="true" tabindex="-1">#</a></h3>
 <p>如果出现没有虚拟音频设备的提示，可以使用虚拟音频驱动程序安装。此按钮是安装VB-Audio的VB-CABLE的路径。安装后，请确认Windows的默认播放设备是您平时使用的耳机或扬声器。</p>
 <p>VB-CABLE是由独立厂商制作的Donationware。使用条件和赞助·许可说明可在 <a href="13-license.html#vb-cable">VB-CABLE 通知</a> 中查看。</p>
-<h2 id="照片与录制">照片与录制<a class="anchor" href="#照片与录制" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>在工作室 → 照片与录制选项卡中，依次排列着拍摄画面·照片·录制。</p>
-<figure><a class="zoomable" href="../assets/shots/zh/guide-photo-record.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-photo-record.webp" width="550" height="603" style="--image-width:550px" alt="照片保存与录制设置" loading="lazy" decoding="async"></a><figcaption>照片保存与录制设置</figcaption></figure>
-<ul>
-<li>拍摄画面: 选择像手机·摄像机一样的画面装饰及其比例·样式。</li>
-<li>照片: 将当前输出画面保存为PNG。</li>
-<li>裁剪: 裁剪照片中想要的区域。</li>
-<li>比例: 选择照片形状，如横向、纵向、方形等。</li>
-<li>分辨率: 设置保存文件的像素数。</li>
-<li>录制 (Pro): 将视频保存为MP4。开始后点击停止完成文件。</li>
-<li>麦克风声音: 开启时，我的麦克风声音以及屏幕共享中共享的游戏声音会混合到一条音轨中录制。关闭时只录制游戏声音，没有屏幕共享时会无声录制。</li>
-</ul>
 <h2 id="遇到问题时">遇到问题时<a class="anchor" href="#遇到问题时" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li><a href="12-troubleshooting.html#obs-与视频输出">OBS没有来源或视频为黑屏</a></li>
 <li><a href="12-troubleshooting.html#屏幕共享">游戏共享为黑屏或没有声音</a></li>
-<li><a href="09-session.html#连接故障排查">无法连接远程联机</a></li>
-</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="08-camera-effects.html"><span>上一页</span>摄像机效果</a><a class="next" href="09-broadcast.html"><span>下一页</span>直播联动</a></nav><p class="updated">最后更新: 2026-10-24</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#应该使用哪种方式">应该使用哪种方式？</a></li><li><a href="#输出图片">输出图片</a></li><li><a href="#spout2">Spout2</a></li><li><a href="#ndi">NDI</a></li><li><a href="#虚拟相机">虚拟相机</a></li><li><a href="#屏幕共享">屏幕共享</a></li><li><a href="#照片与录制">照片与录制</a></li><li><a href="#遇到问题时">遇到问题时</a></li></ul></nav>
+<li><a href="09-broadcast.html#连接故障排查">无法连接远程联机</a></li>
+</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="08-scene.html"><span>上一页</span>演播室</a><a class="next" href="09-broadcast.html"><span>下一页</span>直播</a></nav><p class="updated">最后更新: 2026-10-24</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#应该使用哪种方式">应该使用哪种方式？</a></li><li><a href="#推流输出">推流输出</a></li><li class="sub"><a href="#输出图片">输出图片</a></li><li class="sub"><a href="#spout2">Spout2</a></li><li class="sub"><a href="#ndi">NDI</a></li><li class="sub"><a href="#虚拟相机">虚拟相机</a></li><li><a href="#屏幕共享">屏幕共享</a></li><li class="sub"><a href="#当共享声音没有声音时">当共享声音没有声音时</a></li><li><a href="#遇到问题时">遇到问题时</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>产品</h2><ul><li><a href="index.html#features">功能</a></li><li><a href="index.html#how">使用方法</a></li><li><a href="index.html#editions">版本</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新记录</a></li></ul></div><div class="fcol"><h2>指南</h2><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul></div><div class="fcol"><h2>条款与政策</h2><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></div><div class="fcol"><h2>链接</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>产品</h2><ul><li><a href="index.html#features">功能</a></li><li><a href="index.html#how">使用方法</a></li><li><a href="index.html#editions">版本</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新记录</a></li></ul></div><div class="fcol"><h2>指南</h2><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul></div><div class="fcol"><h2>条款与政策</h2><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></div><div class="fcol"><h2>链接</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE 不是 VRChat Inc. 的官方产品，与 VRChat Inc. 无关联。VRChat 是 VRChat Inc. 的商标。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

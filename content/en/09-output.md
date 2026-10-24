@@ -10,12 +10,14 @@ You can send the completed avatar screen to OBS, Discord, or Zoom, or save it as
 | Send video to another PC | NDI® |
 | Show on the camera of the video call | Virtual camera |
 | Share games and avatars together | Screen sharing |
-| Broadcasting with a friend's avatar | [Remote Collaboration](09-session.md) (Broadcast → Connections) |
+| Broadcasting with a friend's avatar | [Remote Collaboration](09-broadcast.md#remote-collaboration) (Broadcast → Connections) |
 | Create Photo/Video Files | Photo & Recording (Studio → Photo & Recording) |
 
 NDI® is a registered trademark of Vizrt NDI AB. [Official NDI Information](https://ndi.video/)
 
-## Output Image
+## Stream
+
+### Output Image
 
 ![Output Size and Frame Settings](img/guide-output-image.png)
 
@@ -28,7 +30,7 @@ NDI® is a registered trademark of Vizrt NDI AB. [Official NDI Information](http
 
 Basic supports up to 1080p with a watermark, while Pro supports up to 4K with output without a watermark.
 
-## Spout2
+### Spout2
 
 The video from Avatar Live is sent to OBS on the same Windows PC.
 
@@ -49,7 +51,7 @@ The video from Avatar Live is sent to OBS on the same Windows PC.
 
 The usage conditions for the Spout2 and OBS receiver plugin follow the [Spout2 notice](13-license.md#spout2).
 
-## NDI
+### NDI
 
 It sends video to OBS and other PCs over the network. Both Basic and Pro are supported.
 
@@ -64,7 +66,7 @@ To check without OBS, you can use [NDI Tools' Studio Monitor](https://ndi.video/
 
 Check the usage conditions for NDI Runtime, NDI Tools, and DistroAV in [NDI Notice](13-license.md#ndi).
 
-## Virtual Camera
+### Virtual Camera
 
 It is a method of choosing an avatar from the camera list of Discord, Zoom, etc.
 
@@ -76,7 +78,7 @@ It is a method of choosing an avatar from the camera list of Discord, Zoom, etc.
 
 It supports up to 1920×1080, 30fps, and does not transmit transparent backgrounds. If the new device is not on the list, restart the receiving app.
 
-## Screen Share
+## Screen share
 
 You overlay an avatar on top of a game or program and send it through Discord, etc.
 
@@ -100,22 +102,8 @@ If a message appears stating that there is no virtual audio device, you can use 
 
 VB-CABLE is a donationware product from a separate developer. You can check the usage conditions, support, and license information at [VB-CABLE Notice](13-license.md#vb-cable).
 
-## Photos and Recording
-
-The Studio → **Photo & Recording** tab holds the camera screen, photo and recording, in that order.
-
-![Photo Saving and Recording Settings](img/guide-photo-record.png)
-
-- Camera screen: Choose screen decorations that look like a phone or camcorder, and their ratio and style.
-- Photo: Saves the current output screen as a PNG.
-- Crop: Cuts the area to include in the photo.
-- Ratio: Chooses the shape of the photo such as landscape, portrait, or square.
-- Resolution: Sets the pixel count of the saved file.
-- Recording (Pro): Saves video as MP4. Press stop after starting to complete the file.
-- Mic sound: When on, your microphone and, while screen sharing, the shared game's sound are mixed into one track. When off, only the game's sound goes in; without screen sharing, the video is recorded without sound.
-
 ## If There Are Problems
 
 - [No source in OBS or video appears black](12-troubleshooting.md#obs-and-video-output)
 - [Game sharing appears black or no sound](12-troubleshooting.md#screen-sharing)
-- [Cannot connect to remote group session](09-session.md#troubleshooting-connections)
+- [Cannot connect to remote group session](09-broadcast.md#troubleshooting-connections)

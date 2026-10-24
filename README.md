@@ -16,15 +16,24 @@ uv run --no-project --with markdown --with pillow python build.py
 ```
 
 - `content/<lang>/home.json` → `docs/<lang>/index.html` (homepage)
-- `content/<lang>/*.md` → `docs/<lang>/*.html` (guide and legal pages)
+- `content/<lang>/*.md` → `docs/<lang>/*.html` (guide and legal pages). The guide's
+  pages are Getting started and the app's seven side-menu pages, in the app's order
+  (Avatar Menu, Devices, Motion, Studio, Output, Broadcast, Settings); inside each,
+  `##` is the app's tab or group and `###` its cards. Troubleshooting and
+  Editions & licenses are a separate Help group.
+- `content/<lang>/redirects.json` → `docs/<lang>/<old page>.html`: the pages the
+  guide folded into others (BOOTH, the app and old links still name them) open the
+  section that holds them now, and their old anchors the matching sections.
 - `assets/` → `docs/assets/` (styles, script, brand images, videos)
-- `python check_links.py <lang>` checks the guide's links and anchors.
+- `python check_links.py <lang>` checks the guide's links and anchors, the homepage's
+  guide links and the old pages' redirect targets.
 - `python check_site_images.py` verifies matching screenshot coverage, each
   language's own UI photos, and referenced image files. It rejects Korean UI
   copied into a translated guide.
-- `python check_guide_parity.py` verifies that all 15 English, Japanese and
+- `python check_guide_parity.py` verifies that all 10 English, Japanese and
   Simplified Chinese guide chapters match the **Korean canonical guide** in
-  heading structure, tables, screenshots and navigational links. It also checks
+  heading structure, tables, screenshots and navigational links, and that every
+  language keeps the same old pages' redirects. It also checks
   all four homepages for VRM import support, Unity requirements and .vrca
   incompatibility. Run it whenever guides or supported features change.
 - `make_og.py` redraws the share images (`assets/brand/og-<lang>.jpg`).

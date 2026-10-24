@@ -94,7 +94,8 @@
       }
     ],
     "note": "VRM 0.x·1.0 파일은 Unity 없이 바로 불러올 수 있습니다. VRChat 아바타를 .vavatar로 내보내려면 Unity 프로젝트가 필요하지만, .vrca 파일은 직접 열 수 없습니다.",
-    "link": "내보내기 가이드 보기"
+    "link": "내보내기 가이드 보기",
+    "page": "01-getting-started#아바타-내보내기"
   },
   "showcase": {
     "kicker": "둘러보기",
@@ -110,7 +111,7 @@
           "아바타별 설정 저장"
         ],
         "media": "img:avatar-pop",
-        "page": "03-launcher-and-library"
+        "page": "01-getting-started#아바타-라이브러리"
       },
       {
         "title": "Expression 메뉴 그대로",
@@ -143,7 +144,7 @@
           "마시멜로PB 지원"
         ],
         "media": "video:physbone",
-        "page": "04-main-window"
+        "page": "01-getting-started#메인-화면"
       },
       {
         "title": "OBS와 통화 앱으로",
@@ -154,7 +155,7 @@
           "PNG 사진 저장"
         ],
         "media": "video:background",
-        "page": "09-output"
+        "page": "09-output#송출"
       },
       {
         "title": "게임 + 아바타를 Discord로",
@@ -165,7 +166,7 @@
           "위치 · 크기 자유롭게"
         ],
         "media": "video:home-cyberpunk",
-        "page": "09-output"
+        "page": "09-output#화면-공유"
       },
       {
         "title": "조명과 카메라",
@@ -187,7 +188,7 @@
           "카메라를 가리는 벽 숨기기"
         ],
         "media": "video:rooms|common:keyvisual",
-        "page": "08-rooms"
+        "page": "08-scene#dlc-방-팩"
       }
     ]
   },
@@ -201,13 +202,13 @@
         "body": "팔로우하면 던지기, 1만 원 이상 후원이면 물 뿌리기처럼 이벤트와 반응을 목록에서 골라 한 줄로 만듭니다.",
         "media": "video:broadcast|img:guide-interactions",
         "size": "wide",
-        "page": "09-interactions"
+        "page": "09-broadcast#간편-설정"
       },
       {
         "title": "던지기 · 액체 · 쓰러짐",
         "body": "물건이 날아와 맞고, 액체가 몸을 따라 흐르고, 세게 맞으면 쓰러졌다가 일어납니다.",
         "media": "video:reactions|img:guide-interaction-test",
-        "page": "09-reactions"
+        "page": "09-broadcast#던지기"
       },
       {
         "title": "디스코드 친구의 반응",
@@ -220,7 +221,7 @@
         "body": "이벤트·조건·동작 노드를 선으로 이어 간편 설정보다 복잡한 반응을 직접 만듭니다.",
         "media": "video:nodes|img:guide-node-editor",
         "size": "wide",
-        "page": "09-node-editor"
+        "page": "09-broadcast#노드-편집기"
       }
     ],
     "discord": "디스코드 서버나 그룹 DM에 Avatar Live 앱을 추가하세요. 앱은 명령 권한만 요청하고, 연결 코드로 내 채널과 이어집니다.",

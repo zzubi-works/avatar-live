@@ -42,32 +42,31 @@ LANGS = {
     "ja": {"name": "日本語", "html": "ja", "shots": "ja", "locale": "ja_JP", "preconnect": ["https://cdn.jsdelivr.net"], "font": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard-jp/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css"},
     "zh": {"name": "简体中文", "html": "zh-Hans", "shots": "zh-Hans", "locale": "zh_CN", "preconnect": ["https://fonts.googleapis.com", "https://fonts.gstatic.com"], "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap"},
 }
-GUIDE = ["01-getting-started", "02-avatar-exporter", "03-launcher-and-library", "04-main-window", "05-avatar-menu",
-         "06-devices", "07-motion", "08-scene", "08-rooms", "08-camera-effects", "09-output", "09-broadcast", "09-interactions",
-         "09-reactions", "09-node-editor", "09-session", "10-settings", "11-pro-features", "12-troubleshooting",
-         "13-license"]
+# Getting started, then the app's side-menu pages in the app's order; the help pages in a group of their own.
+GUIDE = ["01-getting-started", "05-avatar-menu", "06-devices", "07-motion", "08-scene", "09-output", "09-broadcast", "10-settings"]
+HELP = ["12-troubleshooting", "13-license"]
 UPDATES = ["updates"]
 UPDATE_LABEL = {"ko": "업데이트 내역", "en": "Updates", "ja": "更新履歴", "zh": "更新记录"}
 
 LEGAL = ["legal-terms", "legal-privacy", "legal-refund", "legal-seller"]
 
 CHROME = {
-    "ko": {"guide": "가이드", "legal": "약관 · 정책", "toc": "이 페이지", "prev": "이전", "next": "다음", "updated": "최종 업데이트",
+    "ko": {"guide": "가이드", "help": "도움말", "legal": "약관 · 정책", "toc": "이 페이지", "prev": "이전", "next": "다음", "updated": "최종 업데이트",
            "docsmenu": "가이드 목차", "home": "홈", "skip": "본문으로 건너뛰기", "booth": "BOOTH", "x": "X (Twitter)",
            "rights": "© 2026 Curious Bobby Co. All rights reserved.",
            "disclaimer": "AVATAR LIVE는 VRChat Inc.의 공식 제품이 아니며, VRChat Inc.와 제휴 관계가 없습니다. VRChat은 VRChat Inc.의 상표입니다.",
            "pick": "언어를 선택하세요", "pause": "일시정지", "play": "재생"},
-    "en": {"guide": "Guide", "legal": "Legal", "toc": "On this page", "prev": "Previous", "next": "Next", "updated": "Last updated",
+    "en": {"guide": "Guide", "help": "Help", "legal": "Legal", "toc": "On this page", "prev": "Previous", "next": "Next", "updated": "Last updated",
            "docsmenu": "Guide contents", "home": "Home", "skip": "Skip to content", "booth": "BOOTH", "x": "X (Twitter)",
            "rights": "© 2026 Curious Bobby Co. All rights reserved.",
            "disclaimer": "AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.",
            "pick": "Choose a language", "pause": "Pause", "play": "Play"},
-    "ja": {"guide": "ガイド", "legal": "規約・ポリシー", "toc": "このページ", "prev": "前へ", "next": "次へ", "updated": "最終更新",
+    "ja": {"guide": "ガイド", "help": "ヘルプ", "legal": "規約・ポリシー", "toc": "このページ", "prev": "前へ", "next": "次へ", "updated": "最終更新",
            "docsmenu": "ガイド目次", "home": "ホーム", "skip": "本文へスキップ", "booth": "BOOTH", "x": "X (Twitter)",
            "rights": "© 2026 Curious Bobby Co. All rights reserved.",
            "disclaimer": "AVATAR LIVE は VRChat Inc. の公式製品ではなく、VRChat Inc. とは提携していません。VRChat は VRChat Inc. の商標です。",
            "pick": "言語を選択", "pause": "一時停止", "play": "再生"},
-    "zh": {"guide": "指南", "legal": "条款与政策", "toc": "本页内容", "prev": "上一页", "next": "下一页", "updated": "最后更新",
+    "zh": {"guide": "指南", "help": "帮助", "legal": "条款与政策", "toc": "本页内容", "prev": "上一页", "next": "下一页", "updated": "最后更新",
            "docsmenu": "指南目录", "home": "首页", "skip": "跳到正文", "booth": "BOOTH", "x": "X (Twitter)",
            "rights": "© 2026 Curious Bobby Co. All rights reserved.",
            "disclaimer": "AVATAR LIVE 不是 VRChat Inc. 的官方产品，与 VRChat Inc. 无关联。VRChat 是 VRChat Inc. 的商标。",
@@ -212,11 +211,11 @@ def render_md(lang, text):
             s = "%s-%d" % (s, seen[s])
         else:
             seen[s] = 0
-        if level == "2":
-            toc.append((re.sub(r"<[^>]+>", "", inner), s))
+        if level in ("2", "3"):
+            toc.append((re.sub(r"<[^>]+>", "", inner), s, level == "3"))
         return '<h%s id="%s">%s<a class="anchor" href="#%s" aria-hidden="true" tabindex="-1">#</a></h%s>' % (level, s, inner, s, level)
 
-    body = re.sub(r"<h([1-4])>(.*?)</h\1>", add_id, body)
+    body = re.sub(r"<h([1-5])>(.*?)</h\1>", add_id, body)
 
     def figure(m):
         alt, src = html.unescape(m.group(1)), m.group(2)
@@ -249,7 +248,7 @@ def has_page(lang, page):
 def language_page(lang, page):
     if has_page(lang, page):
         return page
-    return {"08-camera-effects.html": "08-scene.html", "09-session.html": "09-output.html"}.get(page, "01-getting-started.html")
+    return "01-getting-started.html"
 
 
 def head(lang, title, desc, page, og, extra=""):
@@ -295,7 +294,7 @@ def header(lang, page, home, is_home):
     pre = "" if is_home else "index.html"
     links = [("#overview", n["overview"]), ("#features", n["features"]), ("#how", n["how"]), ("#editions", n["editions"])]
     navl = "".join('<a href="%s%s">%s</a>' % (pre, h, esc(t)) for h, t in links)
-    navl += '<a href="01-getting-started.html"%s>%s</a>' % (' aria-current="page"' if page[:-5] in GUIDE + LEGAL else "", esc(n["docs"]))
+    navl += '<a href="01-getting-started.html"%s>%s</a>' % (' aria-current="page"' if page[:-5] in GUIDE + HELP + LEGAL else "", esc(n["docs"]))
     navl += '<a href="updates.html"%s>%s</a>' % (' aria-current="page"' if page == "updates.html" else "", esc(UPDATE_LABEL[lang]))
     langs = "".join('<a href="../%s/%s" lang="%s"%s>%s</a>' % (k, language_page(k, page), LANGS[k]["html"], ' aria-current="true"' if k == lang else "", v["name"])
                     for k, v in LANGS.items())
@@ -322,7 +321,7 @@ def footer(lang, home, titles):
     n, f = home["nav"], home["footer"]
     col = lambda title, items: '<div class="fcol"><h2>%s</h2><ul>%s</ul></div>' % (esc(title), "".join('<li><a href="%s">%s</a></li>' % (h, esc(t)) for h, t in items))
     product = [("index.html#features", n["features"]), ("index.html#how", n["how"]), ("index.html#editions", n["editions"]), (BOOTH, C["booth"]), ("updates.html", UPDATE_LABEL[lang])]
-    docs = [(p + ".html", nav_title(titles[p])) for p in ["01-getting-started", "02-avatar-exporter", "12-troubleshooting", "13-license"] if p in titles]
+    docs = [(p + ".html", nav_title(titles[p])) for p in ["01-getting-started"] + HELP if p in titles]
     legal = [(p + ".html", nav_title(titles[p])) for p in LEGAL if p in titles]
     links = [(BOOTH, C["booth"]), (X_URL, C["x"]), ("https://github.com/zzubi-works/avatar-live", "GitHub")]
     return """<footer class="site-footer">
@@ -354,6 +353,12 @@ def page_shell(lang, page, title, desc, home, titles, body, is_home, og):
 
 
 # ------------------------------------------------------------------ home ----
+
+def page_href(spec):
+    """A guide page as home.json and redirects.json name it ("08-scene" or "08-scene#anchor"): its link."""
+    name, _, anchor = spec.partition("#")
+    return name + ".html" + ("#" + anchor if anchor else "")
+
 
 def home_page(lang, h, titles):
     C = CHROME[lang]
@@ -399,23 +404,23 @@ def home_page(lang, h, titles):
     out.append("""<section class="section how" id="how"><div class="wrap">
   <header class="section-head reveal"><p class="kicker">{k}</p><h2>{t}</h2></header>
   <ol class="steps-line">{steps}</ol>
-  <p class="how-note reveal">{note} <a href="02-avatar-exporter.html">{link}{arrow}</a></p>
-</div></section>""".format(k=esc(how["kicker"]), t=esc(how["title"]), steps=steps, note=esc(how["note"]), link=esc(how["link"]), arrow=ICON["arrow"]))
+  <p class="how-note reveal">{note} <a href="{page}">{link}{arrow}</a></p>
+</div></section>""".format(k=esc(how["kicker"]), t=esc(how["title"]), steps=steps, note=esc(how["note"]), page=page_href(how["page"]), link=esc(how["link"]), arrow=ICON["arrow"]))
     rows = []
     for i, r in enumerate(sc["rows"]):
         pts = "".join("<li>%s%s</li>" % (ICON["check"], esc(p)) for p in r["points"])
         rows.append("""<article class="show-row{flip} reveal">
   <div class="show-media">{media}</div>
-  <div class="show-text"><h3>{t}</h3><p>{b}</p><ul class="points">{pts}</ul><a class="more" href="{page}.html">{more}{arrow}</a></div>
+  <div class="show-text"><h3>{t}</h3><p>{b}</p><ul class="points">{pts}</ul><a class="more" href="{page}">{more}{arrow}</a></div>
 </article>""".format(flip=" flip" if i % 2 else "", media=media(r["media"], lang, r["title"], sizes="(max-width: 900px) 100vw, 680px"),
-                     t=esc(r["title"]), b=esc(r["body"]), pts=pts, page=r["page"], more=esc(sc["more"]), arrow=ICON["arrow"]))
+                     t=esc(r["title"]), b=esc(r["body"]), pts=pts, page=page_href(r["page"]), more=esc(sc["more"]), arrow=ICON["arrow"]))
     out.append("""<section class="section" id="showcase"><div class="wrap">
   <header class="section-head reveal"><p class="kicker">{k}</p><h2>{t}</h2></header>
   {rows}
 </div></section>""".format(k=esc(sc["kicker"]), t=esc(sc["title"]), rows="".join(rows)))
     bc = h["broadcast"]
-    cards = "".join('<article class="bento-card %s reveal"><div class="bento-media">%s</div><div class="bento-text"><h3>%s</h3><p>%s</p><a class="more" href="%s.html">%s%s</a></div></article>' % (
-        esc(it.get("size", "")), media(it["media"], lang, it["title"]), esc(it["title"]), esc(it["body"]), it["page"], esc(sc["more"]), ICON["arrow"]) for it in bc["items"])
+    cards = "".join('<article class="bento-card %s reveal"><div class="bento-media">%s</div><div class="bento-text"><h3>%s</h3><p>%s</p><a class="more" href="%s">%s%s</a></div></article>' % (
+        esc(it.get("size", "")), media(it["media"], lang, it["title"]), esc(it["title"]), esc(it["body"]), page_href(it["page"]), esc(sc["more"]), ICON["arrow"]) for it in bc["items"])
     out.append("""<section class="section broadcast" id="broadcast"><div class="wrap">
   <header class="section-head reveal"><p class="kicker">{k}</p><h2>{t}</h2><p>{s}</p></header>
   <div class="bento">{cards}</div>
@@ -462,18 +467,17 @@ def home_page(lang, h, titles):
 
 def doc_page(lang, name, title, body, toc, titles):
     C = CHROME[lang]
-    side = ['<p class="side-h">%s</p><ul>' % esc(C["guide"])]
-    for p in GUIDE:
-        if p in titles:
-            side.append('<li><a href="%s.html"%s>%s</a></li>' % (p, ' aria-current="page"' if p == name else "", esc(nav_title(titles[p]))))
-    side.append('</ul><p class="side-h">%s</p><ul>' % esc(C["legal"]))
-    for p in LEGAL:
-        if p in titles:
-            side.append('<li><a href="%s.html"%s>%s</a></li>' % (p, ' aria-current="page"' if p == name else "", esc(nav_title(titles[p]))))
-    side.append('</ul><p class="side-h">%s</p><ul>' % esc(UPDATE_LABEL[lang]))
+    side = []
+    for heading, group in ((C["guide"], GUIDE), (C["help"], HELP), (C["legal"], LEGAL)):
+        side.append('<p class="side-h">%s</p><ul>' % esc(heading))
+        for p in group:
+            if p in titles:
+                side.append('<li><a href="%s.html"%s>%s</a></li>' % (p, ' aria-current="page"' if p == name else "", esc(nav_title(titles[p]))))
+        side.append("</ul>")
+    side.append('<p class="side-h">%s</p><ul>' % esc(UPDATE_LABEL[lang]))
     side.append('<li><a href="updates.html"%s>%s</a></li>' % (' aria-current="page"' if name == "updates" else "", esc(UPDATE_LABEL[lang])))
     side.append("</ul>")
-    seq = [p for p in GUIDE + LEGAL + UPDATES if p in titles]
+    seq = [p for p in GUIDE + HELP + LEGAL + UPDATES if p in titles]
     i = seq.index(name)
     prev_, next_ = (seq[i - 1] if i > 0 else None), (seq[i + 1] if i + 1 < len(seq) else None)
     pager = '<nav class="pager" aria-label="Pager">%s%s</nav>' % (
@@ -482,7 +486,7 @@ def doc_page(lang, name, title, body, toc, titles):
     toc_html = ""
     if len(toc) > 1:
         toc_html = '<nav class="toc" aria-label="%s"><p class="toc-h">%s</p><ul>%s</ul></nav>' % (
-            esc(C["toc"]), esc(C["toc"]), "".join('<li><a href="#%s">%s</a></li>' % (s, esc(t)) for t, s in toc))
+            esc(C["toc"]), esc(C["toc"]), "".join('<li%s><a href="#%s">%s</a></li>' % (' class="sub"' if sub else "", s, esc(t)) for t, s, sub in toc))
     return """<div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle>{menu}{label}</button>
   <aside class="docs-side" id="docs-side"><nav aria-label="{label}">{side}</nav></aside>
@@ -542,7 +546,7 @@ def main():
     for lang in LANGS:
         home = json.load(open(os.path.join(ROOT, "content", lang, "home.json"), encoding="utf-8"))
         titles, pages = {}, {}
-        for name in GUIDE + LEGAL + UPDATES:
+        for name in GUIDE + HELP + LEGAL + UPDATES:
             r = read_md(lang, name)
             if r:
                 titles[name], pages[name] = r[0], r
@@ -560,6 +564,8 @@ def main():
                   page_shell(lang, name + ".html", "%s — AVATAR LIVE" % nav_title(title), desc, home, titles,
                              doc_page(lang, name, title, body, toc, titles), False, og))
             urls.append("%s/%s/%s.html" % (BASE, lang, name))
+        for old, target in json.load(open(os.path.join(ROOT, "content", lang, "redirects.json"), encoding="utf-8")).items():
+            write(os.path.join(OUT, lang, old + ".html"), redirect_page(lang, target, titles))
     alts = "".join('<link rel="alternate" hreflang="%s" href="%s/%s/index.html">' % (LANGS[k]["html"], BASE, k) for k in LANGS)
     write(os.path.join(OUT, "index.html"), ROOT_INDEX.format(base=BASE, alts=alts))
     write(os.path.join(OUT, "404.html"), ROOT_INDEX.format(base=BASE, alts=alts).replace("location.replace(t+'/index.html');", ""))
@@ -568,6 +574,27 @@ def main():
     write(os.path.join(OUT, "robots.txt"), "User-agent: *\nAllow: /\nSitemap: %s/sitemap.xml\n" % BASE)
     write(os.path.join(OUT, ".nojekyll"), "")
     print("built %d pages, %d images" % (len(urls), len(IMAGES)))
+
+
+REDIRECT = """<!doctype html><html lang="{lang}"><head><meta charset="utf-8"><title>{title} — AVATAR LIVE</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="canonical" href="{base}/{code}/{page}.html">
+<meta http-equiv="refresh" content="0; url={href}">
+<link rel="icon" href="../assets/brand/favicon.png">
+<script>var m={anchors},h=decodeURIComponent(location.hash.slice(1));location.replace(m[h]||"{href}");</script>
+<style>body{{background:#0b0b0f;color:#ededf2;font:16px/1.6 system-ui,sans-serif;display:grid;place-items:center;min-height:100vh;margin:0}}a{{color:#a99bff}}</style>
+</head><body><p><a href="{href}">{title}</a></p></body></html>
+"""
+
+
+def redirect_page(lang, target, titles):
+    """A page the guide folded into another, which BOOTH, the app and old links still name: it opens the section that holds it
+    now, and an old anchor of it the section that holds that one."""
+    page = target["to"].partition("#")[0]
+    anchors = {old: page_href(new) for old, new in target["anchors"].items()}
+    return REDIRECT.format(lang=LANGS[lang]["html"], title=esc(nav_title(titles[page])), base=BASE, code=lang, page=page, href=esc(page_href(target["to"])),
+                           anchors=json.dumps(anchors, ensure_ascii=False).replace("</", "<\\/"))
 
 
 def write(path, text):

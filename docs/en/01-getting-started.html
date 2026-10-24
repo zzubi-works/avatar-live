@@ -22,7 +22,7 @@
 <link rel="icon" href="../assets/brand/favicon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=f2963e806b">
+<link rel="stylesheet" href="../assets/site.css?v=f1fa02d3aa">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 <script src="../assets/site.js?v=7bd73318e6" defer></script>
 </head>
@@ -43,7 +43,7 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html" aria-current="page">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="03-launcher-and-library.html">Avatar Library</a></li><li><a href="04-main-window.html">main screen</a></li><li><a href="05-avatar-menu.html">Avatar Menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Action</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="08-rooms.html">DLC room packs</a></li><li><a href="08-camera-effects.html">Camera effects</a></li><li><a href="09-output.html">Output</a></li><li><a href="09-broadcast.html">Broadcast integration</a></li><li><a href="09-interactions.html">Simple setup</a></li><li><a href="09-reactions.html">Throw · Liquid · Falling</a></li><li><a href="09-node-editor.html">Node editor</a></li><li><a href="09-session.html">Remote collaboration</a></li><li><a href="10-settings.html">setting</a></li><li><a href="11-pro-features.html">Posing and Facial Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html" aria-current="page">Getting Started</a></li><li><a href="05-avatar-menu.html">Avatar Menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="09-output.html">Output</a></li><li><a href="09-broadcast.html">Broadcast</a></li><li><a href="10-settings.html">Settings</a></li></ul><p class="side-h">Help</p><ul><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="getting-started">Getting Started<a class="anchor" href="#getting-started" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>Start by loading an avatar, connecting your tracking devices, then setting up your broadcast video output.</p>
 <h2 id="installing-and-running">Installing and Running<a class="anchor" href="#installing-and-running" aria-hidden="true" tabindex="-1">#</a></h2>
@@ -79,7 +79,7 @@
 </tr>
 <tr>
 <td>Unity Avatar Project</td>
-<td>After creating a <code>.vavatar</code> with <a href="02-avatar-exporter.html">Avatar Exporter</a>, import it.</td>
+<td>After creating a <code>.vavatar</code> with <a href="#export-avatar">Avatar Exporter</a>, import it.</td>
 </tr>
 </tbody>
 </table></div>
@@ -128,24 +128,319 @@
 </tr>
 <tr>
 <td>Broadcast together with a friend's avatar</td>
-<td><a href="09-session.html">Remote Collaboration</a></td>
+<td><a href="09-broadcast.html#remote-collaboration">Remote Collaboration</a></td>
 </tr>
 <tr>
 <td>Make the avatar react to viewer events</td>
-<td><a href="09-broadcast.html">Broadcast integration</a></td>
+<td><a href="09-broadcast.html">Broadcast</a></td>
 </tr>
 </tbody>
 </table></div>
 <p>Before starting a broadcast, check the actual video on OBS or the side receiving the shared screen. The layout of your work screen and the broadcast camera may differ.</p>
+<h2 id="export-avatar">Export avatar<a class="anchor" href="#export-avatar" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Opening an avatar in a Unity project in Avatar Live<code>.vavatar</code>Create it as a file. already<code>.vavatar</code>me<code>.vrm</code>If there is a file<a href="#avatar-library">Open Avatar</a>Please skip to .</p>
+<h3 id="install-exporter">Install Exporter<a class="anchor" href="#install-exporter" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>Press the button below to add the repository to VCC or ALCOM. Confirm the add in the window that opens.</li>
+<li>Add Curious Bobby - Avatar Exporter to your avatar project.</li>
+<li>Open the project in Unity.</li>
+</ol>
+<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">Add to VCC · ALCOM</a></p>
+
+<p>If the button doesn't open VCC, copy the address below and paste it in Settings → Packages → Add Repository.</p>
+<pre><code class="language-text">https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json
+</code></pre>
+<p>If you received a <code>.unitypackage</code>, import it in Unity with Assets → Import Package → Custom Package….</p>
+<h3 id="create-an-avatar-file">Create an avatar file<a class="anchor" href="#create-an-avatar-file" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>Open Curious Bobby → Avatar Exporter at the top of Unity.</li>
+<li>Drag the Hierarchy's avatar into the avatar box.</li>
+<li>Set a display name and save folder.</li>
+<li>Click Export .vavatar.</li>
+<li>Once complete, click View File to view the resulting file.</li>
+<li>Load that file in Open Avatar in Avatar Live.</li>
+</ol>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>What happens if I change it?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>avatar</td>
+<td>Select the character you want to export.</td>
+</tr>
+<tr>
+<td>name to display</td>
+<td>This will be the name you see in the list in Avatar Live.</td>
+</tr>
+<tr>
+<td>facial expression clip</td>
+<td>Includes the selected facial expression animation. You can export it even if you don't have it.</td>
+</tr>
+<tr>
+<td>storage folder</td>
+<td>completed<code>.vavatar</code>The folder in which to place the files.</td>
+</tr>
+<tr>
+<td>Export .vavatar</td>
+<td>Create a file with the avatar of your choice.</td>
+</tr>
+<tr>
+<td>View files</td>
+<td>Open the folder containing the completed file.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="when-modifying-the-avatar">When modifying the avatar<a class="anchor" href="#when-modifying-the-avatar" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>In Unity, modify the clothing, hair, etc. and then export the same avatar again. Any changes to appearance will be reflected when you load a new file in Avatar Live.</p>
+<h3 id="when-export-does-not-work">When export does not work<a class="anchor" href="#when-export-does-not-work" aria-hidden="true" tabindex="-1">#</a></h3>
+<ul>
+<li>Unity checks that there are no errors in the avatar itself.</li>
+<li>Check which authoring tool and exporter you are using and try exporting again.</li>
+<li>If the file exists, but some parts are pink or disappeared, check the material/shader of the original project and the on status of the corresponding parts.</li>
+</ul>
+<p>The permitted scope for broadcasting and sharing of avatars, costumes, and props follows the terms and conditions of each producer.<a href="13-license.html#avatars-and-props">Content Terms of Use</a>Check out .</p>
+<h2 id="avatar-library">Avatar Library<a class="anchor" href="#avatar-library" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Register your avatar file, select the character you want to use and the starting scene.</p>
+<h3 id="splash-screen">splash screen<a class="anchor" href="#splash-screen" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/en/guide-launcher.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-launcher.webp" srcset="../assets/shots/en/guide-launcher-960.webp 960w, ../assets/shots/en/guide-launcher.webp 1920w" sizes="(max-width: 900px) 100vw, 860px" width="1920" height="1080" style="--image-width:1920px" alt="Avatar list and startup settings" loading="lazy" decoding="async"></a><figcaption>Avatar list and startup settings</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Button/Item</th>
+<th>What happens when I press it?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Open Avatar</td>
+<td><code>.vavatar</code>or<code>.vrm</code>Add files to the list. You can also drag and drop files into the window.</td>
+</tr>
+<tr>
+<td>recent</td>
+<td>Shows recently used avatars.</td>
+</tr>
+<tr>
+<td>folder</td>
+<td>Shows files in the specified avatar folder.</td>
+</tr>
+<tr>
+<td>brought</td>
+<td>Shows avatars imported into the library.</td>
+</tr>
+<tr>
+<td>Avatar Thumbnail</td>
+<td>Choose a character to start with.</td>
+</tr>
+<tr>
+<td>set as default</td>
+<td>Choose the character you will use when starting as the default avatar.</td>
+</tr>
+<tr>
+<td>Preview</td>
+<td>Check the appearance of the selected character.</td>
+</tr>
+<tr>
+<td>scene list</td>
+<td>Choose a stage setup to start with.</td>
+</tr>
+<tr>
+<td>Start Avatar Live</td>
+<td>Opens the main screen with the selected avatar and scene.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="choose-a-device-to-start-with">Choose a device to start with<a class="anchor" href="#choose-a-device-to-start-with" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/en/guide-launcher-start.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-launcher-start.webp" width="735" height="970" style="--image-width:735px" alt="Camera, microphone and start button to start" loading="lazy" decoding="async"></a><figcaption>Camera, microphone and start button to start</figcaption></figure>
+<ul>
+<li>Camera: Turn on the switch on the right to use the webcam selected at startup.</li>
+<li>Microphone: When on, lip sync to the selected microphone at startup.</li>
+<li>Face/Hands: Choose how you want to track each part. After running it, you can change it on your device as well.</li>
+</ul>
+<h3 id="avatar-to-use-for-next-launch">Avatar to use for next launch<a class="anchor" href="#avatar-to-use-for-next-launch" aria-hidden="true" tabindex="-1">#</a></h3>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Startup Settings</th>
+<th>Next time you run</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ask every time</td>
+<td>Choose your avatar directly from the start screen.</td>
+</tr>
+<tr>
+<td>last avatar</td>
+<td>You start with the avatar you used just before.</td>
+</tr>
+<tr>
+<td>default avatar</td>
+<td>Start with the default avatar.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="change-while-running">Change while running<a class="anchor" href="#change-while-running" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/en/guide-avatar-library.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-avatar-library.webp" width="895" height="800" style="--image-width:895px" alt="Avatar library opened from the main screen" loading="lazy" decoding="async"></a><figcaption>Avatar library opened from the main screen</figcaption></figure>
+<ol>
+<li>Tap your avatar name in the upper left.</li>
+<li>Select the avatar you want to replace from the list.</li>
+<li>New files are imported as additional avatar files.</li>
+</ol>
+<p>Use this list to replace an existing avatar. Adding an avatar to place more characters in a scene is<a href="08-scene.html#multiple-avatars-pro">studio</a>It is a separate feature of .</p>
+<h3 id="when-things-dont-start-well">When things don't start well<a class="anchor" href="#when-things-dont-start-well" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>If you run the program while holding down Shift, you can use Safe Startup, which does not turn on the webcam and microphone. After checking the device issue, try turning it on on your devices one by one.</p>
+<h2 id="main-screen">Main screen<a class="anchor" href="#main-screen" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Select settings on the left and adjust them while viewing the avatar in the center.</p>
+<figure><a class="zoomable" href="../assets/shots/en/guide-main.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-main.webp" srcset="../assets/shots/en/guide-main-960.webp 960w, ../assets/shots/en/guide-main.webp 1420w" sizes="(max-width: 900px) 100vw, 860px" width="1420" height="1080" style="--image-width:1420px" alt="main screen" loading="lazy" decoding="async"></a><figcaption>main screen</figcaption></figure>
+<h3 id="left-menu">left menu<a class="anchor" href="#left-menu" aria-hidden="true" tabindex="-1">#</a></h3>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>menu</th>
+<th>What you can do here</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="05-avatar-menu.html">Avatar Menu</a></td>
+<td>Apply clothing, facial expressions, hand gestures and saved postures.</td>
+</tr>
+<tr>
+<td><a href="06-devices.html">Devices</a></td>
+<td>Connect the webcam, microphone, iPhone, and tracker.</td>
+</tr>
+<tr>
+<td><a href="07-motion.html">Motion</a></td>
+<td>Controls the size and smoothness of movement of the face, body, and hands.</td>
+</tr>
+<tr>
+<td><a href="08-scene.html">Studio</a></td>
+<td>Place the background, lighting, room, props, avatars and shooting cameras, and take photos and recordings.</td>
+</tr>
+<tr>
+<td><a href="09-output.html">Output</a></td>
+<td>Connect to OBS, the virtual camera and screen sharing.</td>
+</tr>
+<tr>
+<td><a href="09-broadcast.html">Broadcast</a></td>
+<td>Make the avatar react to Twitch, CHZZK, SOOP and Discord events, and open a remote collaboration session. See <a href="09-broadcast.html">Broadcast</a> for details.</td>
+</tr>
+<tr>
+<td><a href="10-settings.html">Settings</a></td>
+<td>Change windows, performance, language, shortcuts, and updates.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="using-the-settings-panel">Using the Settings panel<a class="anchor" href="#using-the-settings-panel" aria-hidden="true" tabindex="-1">#</a></h3>
+<ul>
+<li>Card title: Tap to expand or collapse detailed settings.</li>
+<li>Switch: Turn the function on or off. This is separate from expanding the title.</li>
+<li>Pin: Prevents the settings panel from collapsing when you press outside the panel.</li>
+<li>Number: Enter it directly or use the slider next to it.</li>
+<li>Drag card title: Move frequently used cards up.</li>
+<li>Magnifying glass at top: Search for the setting name and tap the result to jump to it.</li>
+</ul>
+<h3 id="camera-toolbar">camera toolbar<a class="anchor" href="#camera-toolbar" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/en/guide-camera-toolbar.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-camera-toolbar.webp" width="520" height="1080" style="--image-width:520px" alt="Bottom camera toolbar and composition settings" loading="lazy" decoding="async"></a><figcaption>Bottom camera toolbar and composition settings</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>What changes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Face, upper body, whole body</td>
+<td>The selected avatar is displayed on the screen at the appropriate size.</td>
+</tr>
+<tr>
+<td>saved view</td>
+<td>Return to the saved location and direction.</td>
+</tr>
+<tr>
+<td>Save view</td>
+<td>Save the composition you are currently viewing.</td>
+</tr>
+<tr>
+<td>camera lock</td>
+<td>Lock the composition so that it does not change with the mouse. The avatar keeps moving.</td>
+</tr>
+<tr>
+<td>viewing angle</td>
+<td>Lowering it makes the avatar appear larger, and raising it makes the surroundings appear wider.</td>
+</tr>
+<tr>
+<td>Fixed/Free/Orbit</td>
+<td>Change the way you move the mouse around the work screen.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Turn the wheel on the settings panel to scroll through the settings. The camera distance changes as you rotate the avatar in the visible area.</p>
+<h3 id="work-screen-and-transmission-screen">Work screen and transmission screen<a class="anchor" href="#work-screen-and-transmission-screen" aria-hidden="true" tabindex="-1">#</a></h3>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>screen</th>
+<th>viewer</th>
+<th>If you move</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>scene view</td>
+<td>The work screen I edit</td>
+<td>The timing of my work changes. If a scene view is being broadcast, the broadcast will also change accordingly.</td>
+</tr>
+<tr>
+<td>studio camera</td>
+<td>Viewer screen for selected shooting camera</td>
+<td>The composition changes depending on the settings of the camera.</td>
+</tr>
+</tbody>
+</table></div>
+<p>To edit lighting or props while maintaining the broadcast composition<a href="08-scene.html#camera-pro">studio camera</a>Select as the transmission target.</p>
+<h3 id="frequently-used-operations">Frequently used operations<a class="anchor" href="#frequently-used-operations" aria-hidden="true" tabindex="-1">#</a></h3>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>operation</th>
+<th>result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>F1</td>
+<td>Hide the menu. Press again to display.</td>
+</tr>
+<tr>
+<td>Ctrl+Z</td>
+<td>Reverses supported edit operations one step.</td>
+</tr>
+<tr>
+<td>Reset top</td>
+<td>Restore tracking, hand posture, and physical movements.</td>
+</tr>
+<tr>
+<td>bottom left power</td>
+<td>Exit the program.</td>
+</tr>
+</tbody>
+</table></div>
+<p>Reset All, which changes clothing or even location, has a larger scope of application. If your hair is only briefly tangled, use a regular reset first.</p>
 <h2 id="editions-and-exit">Editions and Exit<a class="anchor" href="#editions-and-exit" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>Basic is for personal/private use, Pro is for broadcasting, video sharing, and commercial use. Check the <a href="13-license.html">features by edition</a> for the functions you need.</p>
-<p>Close the program with the power button at the bottom left. If the window's X button is set to hide to the tray, the broadcast will continue. You can change the X button behavior in Settings → Window.</p></article><nav class="pager" aria-label="Pager"><span></span><a class="next" href="02-avatar-exporter.html"><span>Next</span>Export avatar</a></nav><p class="updated">Last updated: 2026-10-24</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#installing-and-running">Installing and Running</a></li><li><a href="#1-open-avatar">1. Open Avatar</a></li><li><a href="#2-connecting-my-movements">2. Connecting My Movements</a></li><li><a href="#3-setting-background-and-composition">3. Setting Background and Composition</a></li><li><a href="#4-connecting-to-broadcasting-software">4. Connecting to Broadcasting Software</a></li><li><a href="#editions-and-exit">Editions and Exit</a></li></ul></nav>
+<p>Close the program with the power button at the bottom left. If the window's X button is set to hide to the tray, the broadcast will continue. You can change the X button behavior in Settings → Window.</p></article><nav class="pager" aria-label="Pager"><span></span><a class="next" href="05-avatar-menu.html"><span>Next</span>Avatar Menu</a></nav><p class="updated">Last updated: 2026-10-24</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#installing-and-running">Installing and Running</a></li><li><a href="#1-open-avatar">1. Open Avatar</a></li><li><a href="#2-connecting-my-movements">2. Connecting My Movements</a></li><li><a href="#3-setting-background-and-composition">3. Setting Background and Composition</a></li><li><a href="#4-connecting-to-broadcasting-software">4. Connecting to Broadcasting Software</a></li><li><a href="#export-avatar">Export avatar</a></li><li class="sub"><a href="#install-exporter">Install Exporter</a></li><li class="sub"><a href="#create-an-avatar-file">Create an avatar file</a></li><li class="sub"><a href="#when-modifying-the-avatar">When modifying the avatar</a></li><li class="sub"><a href="#when-export-does-not-work">When export does not work</a></li><li><a href="#avatar-library">Avatar Library</a></li><li class="sub"><a href="#splash-screen">splash screen</a></li><li class="sub"><a href="#choose-a-device-to-start-with">Choose a device to start with</a></li><li class="sub"><a href="#avatar-to-use-for-next-launch">Avatar to use for next launch</a></li><li class="sub"><a href="#change-while-running">Change while running</a></li><li class="sub"><a href="#when-things-dont-start-well">When things don&#x27;t start well</a></li><li><a href="#main-screen">Main screen</a></li><li class="sub"><a href="#left-menu">left menu</a></li><li class="sub"><a href="#using-the-settings-panel">Using the Settings panel</a></li><li class="sub"><a href="#camera-toolbar">camera toolbar</a></li><li class="sub"><a href="#work-screen-and-transmission-screen">Work screen and transmission screen</a></li><li class="sub"><a href="#frequently-used-operations">Frequently used operations</a></li><li><a href="#editions-and-exit">Editions and Exit</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

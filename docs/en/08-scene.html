@@ -22,7 +22,7 @@
 <link rel="icon" href="../assets/brand/favicon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=f2963e806b">
+<link rel="stylesheet" href="../assets/site.css?v=f1fa02d3aa">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 <script src="../assets/site.js?v=7bd73318e6" defer></script>
 </head>
@@ -43,48 +43,11 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="03-launcher-and-library.html">Avatar Library</a></li><li><a href="04-main-window.html">main screen</a></li><li><a href="05-avatar-menu.html">Avatar Menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Action</a></li><li><a href="08-scene.html" aria-current="page">Studio</a></li><li><a href="08-rooms.html">DLC room packs</a></li><li><a href="08-camera-effects.html">Camera effects</a></li><li><a href="09-output.html">Output</a></li><li><a href="09-broadcast.html">Broadcast integration</a></li><li><a href="09-interactions.html">Simple setup</a></li><li><a href="09-reactions.html">Throw · Liquid · Falling</a></li><li><a href="09-node-editor.html">Node editor</a></li><li><a href="09-session.html">Remote collaboration</a></li><li><a href="10-settings.html">setting</a></li><li><a href="11-pro-features.html">Posing and Facial Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="05-avatar-menu.html">Avatar Menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Motion</a></li><li><a href="08-scene.html" aria-current="page">Studio</a></li><li><a href="09-output.html">Output</a></li><li><a href="09-broadcast.html">Broadcast</a></li><li><a href="10-settings.html">Settings</a></li></ul><p class="side-h">Help</p><ul><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="studio">Studio<a class="anchor" href="#studio" aria-hidden="true" tabindex="-1">#</a></h1>
-<p>Arrange the background, lighting, and props, and save the camera and scene to be shot. The screen’s color tone and lens effects are explained separately in <a href="08-camera-effects.html">Camera Effects</a>.</p>
-<h2 id="save-scene">Save Scene<a class="anchor" href="#save-scene" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/en/guide-scenes.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-scenes.webp" width="550" height="321" style="--image-width:550px" alt="Scene list and save button" loading="lazy" decoding="async"></a><figcaption>Scene list and save button</figcaption></figure>
-<ol>
-<li>Adjust the background, lighting, avatar, and camera to the desired state.</li>
-<li>Save it on the scene card.</li>
-<li>Next, selecting a thumbnail will load the composition of that scene.</li>
-</ol>
-<p>A scene also remembers the avatar's position and pose, and opening it brings them back. Switching to another avatar inside a scene makes that avatar the scene's avatar. Going back to the avatar list with unsaved changes asks whether to save them.</p>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th>Item</th>
-<th>What it does</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>New Scene</td>
-<td>Create a new scene composition.</td>
-</tr>
-<tr>
-<td>Save</td>
-<td>Records the current batch and settings.</td>
-</tr>
-<tr>
-<td>Thumbnail</td>
-<td>Loads the saved scene.</td>
-</tr>
-<tr>
-<td>Search</td>
-<td>Find scenes by name.</td>
-</tr>
-<tr>
-<td>⋯ Menu</td>
-<td>Opens commands for the scene, such as Rename or Duplicate.</td>
-</tr>
-</tbody>
-</table></div>
-<h2 id="avatar-placement">Avatar Placement<a class="anchor" href="#avatar-placement" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Arrange the background, lighting, and props, and save the camera and scene to be shot. The screen’s color tone and lens effects are explained separately in <a href="#effects">Effects</a>.</p>
+<h2 id="scene">Scene<a class="anchor" href="#scene" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="avatar-placement">Avatar Placement<a class="anchor" href="#avatar-placement" aria-hidden="true" tabindex="-1">#</a></h3>
 <figure><a class="zoomable" href="../assets/shots/en/guide-studio-avatar.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-studio-avatar.webp" width="550" height="259" style="--image-width:550px" alt="Setting Avatar Position, Rotation, and Size" loading="lazy" decoding="async"></a><figcaption>Setting Avatar Position, Rotation, and Size</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
@@ -124,7 +87,7 @@
 </tr>
 </tbody>
 </table></div>
-<h3 id="multiple-avatars-pro">Multiple Avatars (Pro)<a class="anchor" href="#multiple-avatars-pro" aria-hidden="true" tabindex="-1">#</a></h3>
+<h4 id="multiple-avatars-pro">Multiple Avatars (Pro)<a class="anchor" href="#multiple-avatars-pro" aria-hidden="true" tabindex="-1">#</a></h4>
 <p>Add additional avatars to place more characters in the same scene. After selecting an avatar, changing the control target will switch which character receives your tracking input.</p>
 <ul>
 <li>Same Action: Multiple avatars move together with the same tracking input.</li>
@@ -132,7 +95,161 @@
 <li>Lip Sync Main: Only the main controlled avatar moves its mouth.</li>
 <li>Lip Sync Off: Does not use shared lip sync.</li>
 </ul>
-<h2 id="camera-pro">Camera (Pro)<a class="anchor" href="#camera-pro" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="posing-pro">Posing (Pro)<a class="anchor" href="#posing-pro" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/en/guide-posing.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-posing.webp" width="550" height="813" style="--image-width:550px" alt="Posing settings to create your own posture" loading="lazy" decoding="async"></a><figcaption>Posing settings to create your own posture</figcaption></figure>
+<ol>
+<li>In the Studio → Pose, turn on Pose Mode.</li>
+<li>Select a bone and drag the rotation ring or move the hands and feet.</li>
+<li>Press Complete to save the posture.</li>
+<li>Apply it in the detail card of the avatar menu.</li>
+</ol>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Operation·Button</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bone Selection·Rotation</td>
+<td>Changes the direction of the selected joint.</td>
+</tr>
+<tr>
+<td>Hand and foot drag</td>
+<td>Move the end point so that the arms or legs follow.</td>
+</tr>
+<tr>
+<td>Alt+Drag</td>
+<td>Changes the direction the elbows and knees are facing.</td>
+</tr>
+<tr>
+<td>Symmetric Editing</td>
+<td>Changes the other side as well.</td>
+</tr>
+<tr>
+<td>Flip Left/Right</td>
+<td>Changes the left and right sides of the pose.</td>
+</tr>
+<tr>
+<td>Fixed</td>
+<td>Prevents the selected bone from moving during tracking and animation.</td>
+</tr>
+<tr>
+<td>Stick to the floor</td>
+<td>Place your feet on the floor.</td>
+</tr>
+<tr>
+<td>Complete</td>
+<td>Save the created pose.</td>
+</tr>
+<tr>
+<td>Discard</td>
+<td>Exit without applying the edited posture.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="pose-library-pro">Pose Library (Pro)<a class="anchor" href="#pose-library-pro" aria-hidden="true" tabindex="-1">#</a></h4>
+<figure><a class="zoomable" href="../assets/shots/en/guide-pose-library.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-pose-library.webp" width="500" height="569" style="--image-width:500px" alt="A library for finding and applying pose files" loading="lazy" decoding="async"></a><figcaption>A library for finding and applying pose files</figcaption></figure>
+<ol>
+<li>Studio → Posing → Open the Pose Library.</li>
+<li>Select the folder that contains the <code>.anim</code> file.</li>
+<li>Select a pose thumbnail and apply it.</li>
+<li>Press Cancel to go back.</li>
+</ol>
+<p>You can find frequently used poses through search and favorites, and correct and save them in posing mode through editing.</p>
+<h3 id="object-pro">Object (Pro)<a class="anchor" href="#object-pro" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>You can use text, images, shapes, and <code>.vprop</code> 3D models.</p>
+<figure><a class="zoomable" href="../assets/shots/en/guide-props.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-props.webp" width="550" height="847" style="--image-width:550px" alt="Objects and Props Library" loading="lazy" decoding="async"></a><figcaption>Objects and Props Library</figcaption></figure>
+<ul>
+<li>Add Object: Place text, images, shapes, and 3D props.</li>
+<li>World Fixed: Objects stay in place even if the avatar moves.</li>
+<li>Attach to Avatar/Bone: Moves along with the body, hands, or head.</li>
+<li>Offset: Slightly move or rotate from the attachment point. Used to adjust the position of items held in hand.</li>
+<li>Avatar-Owned: Follows the avatar even when moving to another scene.</li>
+<li>Studio-Owned: Remains in the current scene.</li>
+</ul>
+<p>The usage rights for props and avatars follow the original creator’s terms respectively. For more details, see <a href="13-license.html#avatars-and-props">Avatars and Props</a>.</p>
+<h3 id="room">Room<a class="anchor" href="#room" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/en/guide-room.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-room.webp" width="550" height="448" style="--image-width:550px" alt="Room Preset and Layout Settings" loading="lazy" decoding="async"></a><figcaption>Room Preset and Layout Settings</figcaption></figure>
+<p>Choose a room preset to place the background space. Adjust the position, rotation, and scale to fit the stage and avatar. For extra rooms bought on BOOTH, see <a href="#dlc-room-packs">DLC room packs</a>.</p>
+<h3 id="dlc-room-packs">DLC room packs<a class="anchor" href="#dlc-room-packs" aria-hidden="true" tabindex="-1">#</a></h3>
+<blockquote class="callout tip"><p>New in 2.2.0; not available in 2.1.2 or earlier.</p>
+</blockquote>
+<p>When you buy additional content (DLC) on BOOTH, more rooms appear in the Studio's room list. This pack includes a Japanese alley (day and night), a Japanese apartment, a school pool, a showroom gallery, classrooms (Classroom 01 and 02 by day, evening and night, plus Ver02) and a coworking office.</p>
+<div class="table-wrap edition-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Edition</th>
+<th>DLC rooms</th>
+<th>Built-in rooms / room piece editing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic + DLC</td>
+<td>Available</td>
+<td>Not available</td>
+</tr>
+<tr>
+<td>Pro + DLC</td>
+<td>Available</td>
+<td>Available</td>
+</tr>
+</tbody>
+</table></div>
+<p>DLC rooms do not show in the room list until you buy the DLC.</p>
+<h4 id="buy-and-register-in-the-app">Buy and register in the app<a class="anchor" href="#buy-and-register-in-the-app" aria-hidden="true" tabindex="-1">#</a></h4>
+<ol>
+<li>Buy the DLC product on BOOTH. It is a separate product from the license, so order it separately.</li>
+<li>In the app, open Settings → License.</li>
+<li>Press Enter another code and enter the BOOTH order number. It is the same field where you enter a license code.</li>
+<li>When a notice says the rooms are open, you are done. Your current license stays as it is.</li>
+</ol>
+<p>A DLC order does not change your license; it only adds the right to download the room pack on this PC. One purchase is used on one PC, and you can move it to another PC once. Do not show your order number to anyone.</p>
+<h4 id="download-rooms">Download rooms<a class="anchor" href="#download-rooms" aria-hidden="true" tabindex="-1">#</a></h4>
+<figure><a class="zoomable" href="../assets/shots/en/guide-room.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-room.webp" width="550" height="448" style="--image-width:550px" alt="Room list and placement settings" loading="lazy" decoding="async"></a><figcaption>Room list and placement settings</figcaption></figure>
+<ol>
+<li>Open Studio → Room.</li>
+<li>Room cards you have not downloaded yet show Download · size. Press the card to start the download.</li>
+<li>When the progress bar finishes, the room opens in the scene.</li>
+</ol>
+<p>Press × during the download to stop it, and press the card again to continue. A downloaded room works just like a built-in room.</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>On a downloaded room card</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Right-click → Delete</td>
+<td>Deletes the room files from your PC. Your right stays, so you can download it again at any time.</td>
+</tr>
+<tr>
+<td>Update mark</td>
+<td>A new version is out. Download it with right-click → Update.</td>
+</tr>
+</tbody>
+</table></div>
+<h4 id="what-changes-when-you-choose-a-room">What changes when you choose a room<a class="anchor" href="#what-changes-when-you-choose-a-room" aria-hidden="true" tabindex="-1">#</a></h4>
+<p>A DLC room carries the lighting and mood of its original scene.</p>
+<ul>
+<li>When you choose the room, the Studio's ambient light, reflection strength and fog change once to the room's values. After that you can change them freely in your own scene settings, and switching rooms does not undo your changes.</li>
+<li>The room's lamp lights are in the room settings. Use the Lamp lights switch to turn them all on or off, and Brightness to set the overall brightness from 0 to 3 times. With lights by area, you can turn on only some of them, such as the living room lights.</li>
+<li>The room's lamp lights only light the room; they do not shine on the avatar. Set the avatar's brightness in <a href="#lighting">Lighting</a>.</li>
+<li>The room's light settings are saved in the scene together with the room.</li>
+</ul>
+<h4 id="walls-that-block-the-camera">Walls that block the camera<a class="anchor" href="#walls-that-block-the-camera" aria-hidden="true" tabindex="-1">#</a></h4>
+<p>Turn on Hide what blocks the camera to leave out of the picture the walls between the broadcast camera and the avatar, and what hangs on those walls. Their shadows and lights stay. It is on by default.</p>
+<h4 id="tips">Tips<a class="anchor" href="#tips" aria-hidden="true" tabindex="-1">#</a></h4>
+<ul>
+<li>Large rooms such as the alley take a little time to open the first time.</li>
+<li>The coworking office opens among the desks inside the office.</li>
+<li>The avatar starts at the spot the pack sets in the room. You can move it with position, rotation and size.</li>
+</ul>
+<h3 id="camera-pro">Camera (Pro)<a class="anchor" href="#camera-pro" aria-hidden="true" tabindex="-1">#</a></h3>
 <figure><a class="zoomable" href="../assets/shots/en/guide-studio-camera.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-studio-camera.webp" width="550" height="827" style="--image-width:550px" alt="Camera list and settings of selected camera" loading="lazy" decoding="async"></a><figcaption>Camera list and settings of selected camera</figcaption></figure>
 <ol>
 <li>Camera → Press + on Studio Camera to create a camera.</li>
@@ -141,7 +258,7 @@
 <li>Select the camera as the broadcast target.</li>
 </ol>
 <p>Turn on Grab to see the camera in the scene view and move or turn it like a prop. Grab and Put on the current view are in the first line of each camera's settings and in the camera's ⋯ menu. To keep the current working composition, use Put on the current view.</p>
-<h3 id="position-mode">Position Mode<a class="anchor" href="#position-mode" aria-hidden="true" tabindex="-1">#</a></h3>
+<h4 id="position-mode">Position Mode<a class="anchor" href="#position-mode" aria-hidden="true" tabindex="-1">#</a></h4>
 <figure><a class="zoomable" href="../assets/shots/en/guide-camera-position.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-camera-position.webp" width="550" height="983" style="--image-width:550px" alt="Camera position mode and target to follow" loading="lazy" decoding="async"></a><figcaption>Camera position mode and target to follow</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
@@ -174,7 +291,7 @@
 <li>Distance X, Y, Z: Determine how far the camera stays from the target horizontally, vertically, and front/back.</li>
 <li>Smoothness: Higher settings follow slowly and reduce shaking, lower settings respond immediately.</li>
 </ul>
-<h3 id="rotation-reference">Rotation Reference<a class="anchor" href="#rotation-reference" aria-hidden="true" tabindex="-1">#</a></h3>
+<h4 id="rotation-reference">Rotation Reference<a class="anchor" href="#rotation-reference" aria-hidden="true" tabindex="-1">#</a></h4>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
@@ -206,7 +323,7 @@
 </tbody>
 </table></div>
 <p>These settings determine the camera positioning. To keep the face on screen, also choose the gaze method below.</p>
-<h3 id="gaze-method">Gaze Method<a class="anchor" href="#gaze-method" aria-hidden="true" tabindex="-1">#</a></h3>
+<h4 id="gaze-method">Gaze Method<a class="anchor" href="#gaze-method" aria-hidden="true" tabindex="-1">#</a></h4>
 <figure><a class="zoomable" href="../assets/shots/en/guide-camera-aim.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-camera-aim.webp" width="550" height="983" style="--image-width:550px" alt="Camera Gaze and Lens Settings" loading="lazy" decoding="async"></a><figcaption>Camera Gaze and Lens Settings</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
@@ -243,7 +360,7 @@
 <li>Screen position: 0.5 for horizontal and vertical is the center. Changing the value places the avatar in a different position on the screen.</li>
 <li>Gaze smoothness: Increasing makes the lens direction change slowly, decreasing makes it follow immediately.</li>
 </ul>
-<h3 id="lens-and-transition">Lens and transition<a class="anchor" href="#lens-and-transition" aria-hidden="true" tabindex="-1">#</a></h3>
+<h4 id="lens-and-transition">Lens and transition<a class="anchor" href="#lens-and-transition" aria-hidden="true" tabindex="-1">#</a></h4>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
@@ -290,7 +407,7 @@
 </tr>
 </tbody>
 </table></div>
-<h3 id="director-and-multiview">Director and Multiview<a class="anchor" href="#director-and-multiview" aria-hidden="true" tabindex="-1">#</a></h3>
+<h4 id="director-and-multiview">Director and Multiview<a class="anchor" href="#director-and-multiview" aria-hidden="true" tabindex="-1">#</a></h4>
 <figure><a class="zoomable" href="../assets/shots/en/guide-camera-multiview.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-camera-multiview.webp" width="550" height="827" style="--image-width:550px" alt="Director Mode and Multiview Settings" loading="lazy" decoding="async"></a><figcaption>Director Mode and Multiview Settings</figcaption></figure>
 <ul>
 <li>Director Mode: Switch cameras to configure the broadcast screen.</li>
@@ -301,7 +418,45 @@
 <li>Automatic switching: Selects the next camera based on tags and weights. Cameras with a weight of 0 will not be automatically selected.</li>
 <li>Spout2 per camera: Sends the selected camera video to OBS under a separate name. You can output up to 3 additional streams.</li>
 </ul>
-<h2 id="background">Background<a class="anchor" href="#background" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="save-scene">Save Scene<a class="anchor" href="#save-scene" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/en/guide-scenes.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-scenes.webp" width="550" height="321" style="--image-width:550px" alt="Scene list and save button" loading="lazy" decoding="async"></a><figcaption>Scene list and save button</figcaption></figure>
+<ol>
+<li>Adjust the background, lighting, avatar, and camera to the desired state.</li>
+<li>Save it on the scene card.</li>
+<li>Next, selecting a thumbnail will load the composition of that scene.</li>
+</ol>
+<p>A scene also remembers the avatar's position and pose, and opening it brings them back. Switching to another avatar inside a scene makes that avatar the scene's avatar. Going back to the avatar list with unsaved changes asks whether to save them.</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Item</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>New Scene</td>
+<td>Create a new scene composition.</td>
+</tr>
+<tr>
+<td>Save</td>
+<td>Records the current batch and settings.</td>
+</tr>
+<tr>
+<td>Thumbnail</td>
+<td>Loads the saved scene.</td>
+</tr>
+<tr>
+<td>Search</td>
+<td>Find scenes by name.</td>
+</tr>
+<tr>
+<td>⋯ Menu</td>
+<td>Opens commands for the scene, such as Rename or Duplicate.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="background">Background<a class="anchor" href="#background" aria-hidden="true" tabindex="-1">#</a></h3>
 <figure><a class="zoomable" href="../assets/shots/en/guide-background.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-background.webp" width="550" height="589" style="--image-width:550px" alt="Background type settings" loading="lazy" decoding="async"></a><figcaption>Background type settings</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
@@ -334,8 +489,8 @@
 </tbody>
 </table></div>
 <p>Zooming in or out of the image changes the size of the picture, while moving it left/right or up/down changes its position. Turning on Fill crops and fills the edges while maintaining the ratio.</p>
-<p>The camera screen decorations that look like a phone or camcorder have moved to the Studio → Photo &amp; Recording tab. See <a href="09-output.html#photos-and-recording">Photos and Recording</a>.</p>
-<h2 id="lighting">Lighting<a class="anchor" href="#lighting" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>The camera screen decorations that look like a phone or camcorder have moved to the Studio → Photo &amp; Recording tab. See <a href="#photo--recording">Photo &amp; Recording</a>.</p>
+<h3 id="lighting">Lighting<a class="anchor" href="#lighting" aria-hidden="true" tabindex="-1">#</a></h3>
 <figure><a class="zoomable" href="../assets/shots/en/guide-lighting.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-lighting.webp" width="550" height="782" style="--image-width:550px" alt="Lighting presets and individual light settings" loading="lazy" decoding="async"></a><figcaption>Lighting presets and individual light settings</figcaption></figure>
 <p>Choose the overall mood with a preset, and press individual lights for detailed adjustments. Preset lists are folded by kind, with your own saved presets at the top.</p>
 <div class="table-wrap settings-table" tabindex="0"><table>
@@ -380,7 +535,7 @@
 </tr>
 </tbody>
 </table></div>
-<h3 id="position-and-target">Position and Target<a class="anchor" href="#position-and-target" aria-hidden="true" tabindex="-1">#</a></h3>
+<h4 id="position-and-target">Position and Target<a class="anchor" href="#position-and-target" aria-hidden="true" tabindex="-1">#</a></h4>
 <figure><a class="zoomable" href="../assets/shots/en/guide-light-detail.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-light-detail.webp" width="550" height="983" style="--image-width:550px" alt="Setting the light&#x27;s position, direction, and target" loading="lazy" decoding="async"></a><figcaption>Setting the light&#x27;s position, direction, and target</figcaption></figure>
 <ul>
 <li>Follow Position: The light follows the avatar or bones when they move.</li>
@@ -389,25 +544,384 @@
 <li>Light Group: Combine multiple lights to change position, rotation, and brightness together.</li>
 <li>Volumetric Spot (Pro): Creates a beam of light in the air. Increasing the density makes the light beam more intense.</li>
 </ul>
-<h2 id="rooms-and-props">Rooms and Props<a class="anchor" href="#rooms-and-props" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/en/guide-room.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-room.webp" width="550" height="448" style="--image-width:550px" alt="Room Preset and Layout Settings" loading="lazy" decoding="async"></a><figcaption>Room Preset and Layout Settings</figcaption></figure>
-<p>Choose a room preset to place the background space. Adjust the position, rotation, and scale to fit the stage and avatar. For extra rooms bought on BOOTH, see <a href="08-rooms.html">DLC room packs</a>.</p>
-<figure><a class="zoomable" href="../assets/shots/en/guide-props.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-props.webp" width="550" height="847" style="--image-width:550px" alt="Objects and Props Library" loading="lazy" decoding="async"></a><figcaption>Objects and Props Library</figcaption></figure>
+<h3 id="effects">Effects<a class="anchor" href="#effects" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>Open Studio → Effects. Click an effect's heading to expand its controls, then turn on the switch on the right to apply it.</p>
+<figure><a class="zoomable" href="../assets/shots/en/guide-effects.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-effects.webp" width="550" height="448" style="--image-width:550px" alt="Post effects, ambient occlusion and post-processing cards" loading="lazy" decoding="async"></a><figcaption>Post effects, ambient occlusion and post-processing cards</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Effect group</th>
+<th>Editions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Post-processing</td>
+<td>Basic / Pro</td>
+</tr>
+<tr>
+<td>Advanced post effects</td>
+<td>Pro</td>
+</tr>
+<tr>
+<td>Ambient occlusion</td>
+<td>Pro</td>
+</tr>
+</tbody>
+</table></div>
+<p>Bloom and depth of field appear in more than one group. Start by enabling one effect from one group at a time and compare the result. The reset icon in a heading resets that group; Reset at the bottom restores all effects.</p>
+<nav aria-label="Find an effect" class="effect-index">
+<p><a href="#anti-aliasing">Anti-aliasing</a> · <a href="#bloom">Bloom</a> · <a href="#color-grading">Color grading</a> · <a href="#vignette">Vignette</a> · <a href="#film-grain">Film grain</a> · <a href="#chromatic-aberration">Chromatic aberration</a> · <a href="#depth-of-field">Depth of field</a> · <a href="#motion-blur">Motion blur</a></p>
+<p>Pro: <a href="#color-and-tone">Color and tone</a> · <a href="#sharpening-and-dithering">Sharpening and dithering</a> · <a href="#anamorphic-flares">Anamorphic flares</a> · <a href="#lens-dirt">Lens dirt</a> · <a href="#night-vision">Night vision</a> · <a href="#blur">Blur</a> · <a href="#pixelation">Pixelation</a> · <a href="#ambient-occlusion-pro">Ambient occlusion</a></p>
+</nav>
+<h4 id="post-processing">Post-processing<a class="anchor" href="#post-processing" aria-hidden="true" tabindex="-1">#</a></h4>
+<p>Adjust common colors, highlights and camera lens effects.</p>
+<h5 id="anti-aliasing">Anti-aliasing<a class="anchor" href="#anti-aliasing" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-post-aa.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-post-aa.webp" width="550" height="585" style="--image-width:550px" alt="Anti-aliasing selection" loading="lazy" decoding="async"></a><figcaption>Anti-aliasing selection</figcaption></figure>
+<p>Smooths jagged edges on hair and clothing.</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Visible result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Off</td>
+<td>Disables edge smoothing.</td>
+</tr>
+<tr>
+<td>FXAA</td>
+<td>Lightweight smoothing, but may slightly soften fine patterns.</td>
+</tr>
+<tr>
+<td>SMAA</td>
+<td>Smooths outlines while retaining more detail.</td>
+</tr>
+<tr>
+<td>TAA</td>
+<td>Stabilizes the image over time; moving objects may leave ghosting.</td>
+</tr>
+</tbody>
+</table></div>
+<h5 id="bloom">Bloom<a class="anchor" href="#bloom" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-post-bloom.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-post-bloom.webp" width="550" height="539" style="--image-width:550px" alt="Bloom intensity, threshold and diffusion" loading="lazy" decoding="async"></a><figcaption>Bloom intensity, threshold and diffusion</figcaption></figure>
+<p>Makes light spread around bright hair, glowing materials and accessories.</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Control</th>
+<th>When increased</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intensity</td>
+<td>The glow becomes stronger.</td>
+</tr>
+<tr>
+<td>Threshold</td>
+<td>Only brighter areas bloom; lower values let ordinary surfaces glow too.</td>
+</tr>
+<tr>
+<td>Soft knee</td>
+<td>The transition around the brightness threshold becomes gentler.</td>
+</tr>
+<tr>
+<td>Diffusion</td>
+<td>Light spreads across a larger area.</td>
+</tr>
+<tr>
+<td>Anamorphic ratio</td>
+<td>Stretches the glow horizontally or vertically.</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Sets the glow color.</td>
+</tr>
+</tbody>
+</table></div>
+<h5 id="color-grading">Color grading<a class="anchor" href="#color-grading" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-post-color.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-post-color.webp" width="550" height="420" style="--image-width:550px" alt="Exposure, contrast, saturation, temperature and tint" loading="lazy" decoding="async"></a><figcaption>Exposure, contrast, saturation, temperature and tint</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Exposure</td>
+<td>Higher brightens the whole image; lower darkens it.</td>
+</tr>
+<tr>
+<td>Contrast</td>
+<td>Increases the difference between highlights and shadows.</td>
+</tr>
+<tr>
+<td>Saturation</td>
+<td>Increases color intensity; lowering it approaches black and white.</td>
+</tr>
+<tr>
+<td>Temperature</td>
+<td>Lower appears cooler; higher gives a warmer tone.</td>
+</tr>
+<tr>
+<td>Tint</td>
+<td>Balances between green and magenta casts.</td>
+</tr>
+</tbody>
+</table></div>
+<h5 id="vignette">Vignette<a class="anchor" href="#vignette" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-post-vignette.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-post-vignette.webp" width="550" height="420" style="--image-width:550px" alt="Vignette strength, softness and shape" loading="lazy" decoding="async"></a><figcaption>Vignette strength, softness and shape</figcaption></figure>
+<p>Darkens the edges of the image to draw attention to its center.</p>
 <ul>
-<li>Add Object: Place text, images, shapes, and 3D props.</li>
-<li>World Fixed: Objects stay in place even if the avatar moves.</li>
-<li>Attach to Avatar/Bone: Moves along with the body, hands, or head.</li>
-<li>Offset: Slightly move or rotate from the attachment point. Used to adjust the position of items held in hand.</li>
-<li>Avatar-Owned: Follows the avatar even when moving to another scene.</li>
-<li>Studio-Owned: Remains in the current scene.</li>
+<li>Intensity: Higher makes the edges darker.</li>
+<li>Smoothness: Higher spreads the transition over a wider region.</li>
+<li>Roundness: Changes the shape of the vignette.</li>
+<li>Color: Sets the color blended into the edges.</li>
 </ul>
-<p>The usage rights for props and avatars follow the original creator’s terms respectively. For more details, see <a href="13-license.html#avatars-and-props">Avatars and Props</a>.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="07-motion.html"><span>Previous</span>Action</a><a class="next" href="08-rooms.html"><span>Next</span>DLC room packs</a></nav><p class="updated">Last updated: 2026-10-24</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#save-scene">Save Scene</a></li><li><a href="#avatar-placement">Avatar Placement</a></li><li><a href="#camera-pro">Camera (Pro)</a></li><li><a href="#background">Background</a></li><li><a href="#lighting">Lighting</a></li><li><a href="#rooms-and-props">Rooms and Props</a></li></ul></nav>
+<h5 id="film-grain">Film grain<a class="anchor" href="#film-grain" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-post-grain.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-post-grain.webp" width="550" height="365" style="--image-width:550px" alt="Film grain intensity and size" loading="lazy" decoding="async"></a><figcaption>Film grain intensity and size</figcaption></figure>
+<p>Adds fine film-like particles to the image.</p>
+<ul>
+<li>Intensity: Makes the grains more visible.</li>
+<li>Size: Makes the grains larger.</li>
+<li>Colored: Uses colored instead of monochrome grain.</li>
+</ul>
+<h5 id="chromatic-aberration">Chromatic aberration<a class="anchor" href="#chromatic-aberration" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-post-chromatic.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-post-chromatic.webp" width="550" height="145" style="--image-width:550px" alt="Chromatic aberration controls" loading="lazy" decoding="async"></a><figcaption>Chromatic aberration controls</figcaption></figure>
+<p>Separates red, green and blue near edges to simulate a lens defect. Greater intensity increases the separation.</p>
+<h5 id="depth-of-field">Depth of field<a class="anchor" href="#depth-of-field" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-post-dof.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-post-dof.webp" width="550" height="405" style="--image-width:550px" alt="Auto focus, aperture and lens settings" loading="lazy" decoding="async"></a><figcaption>Auto focus, aperture and lens settings</figcaption></figure>
+<p>Keeps the face in focus while blurring objects in front of and behind it.</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Auto face focus</td>
+<td>Tracks a moving face when enabled.</td>
+</tr>
+<tr>
+<td>Focus distance</td>
+<td>Sets the sharp distance when automatic focus is off.</td>
+</tr>
+<tr>
+<td>Aperture</td>
+<td>A lower f-number gives stronger foreground/background blur.</td>
+</tr>
+<tr>
+<td>Focal length</td>
+<td>Longer lenses make out-of-focus areas blur more easily.</td>
+</tr>
+<tr>
+<td>Blur quality</td>
+<td>Produces smoother blur but increases PC/GPU load.</td>
+</tr>
+</tbody>
+</table></div>
+<p>If the f-number is too low or focus distance is wrong, the face itself can become blurry.</p>
+<h5 id="motion-blur">Motion blur<a class="anchor" href="#motion-blur" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-post-motion.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-post-motion.webp" width="550" height="255" style="--image-width:550px" alt="Shutter angle and motion-blur sample count" loading="lazy" decoding="async"></a><figcaption>Shutter angle and motion-blur sample count</figcaption></figure>
+<p>Adds trails to fast movement.</p>
+<ul>
+<li>Shutter angle: Higher creates longer motion trails.</li>
+<li>Sample count: Higher produces smoother trails but increases PC/GPU load.</li>
+</ul>
+<h4 id="advanced-post-effects-pro">Advanced post effects (Pro)<a class="anchor" href="#advanced-post-effects-pro" aria-hidden="true" tabindex="-1">#</a></h4>
+<p>A separate camera-effects group powered by Beautify. It appears as Post Effects in the UI.</p>
+<h5 id="color-and-tone">Color and tone<a class="anchor" href="#color-and-tone" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-fx-color.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-fx-color.webp" width="550" height="475" style="--image-width:550px" alt="Color and tone settings in advanced post effects" loading="lazy" decoding="async"></a><figcaption>Color and tone settings in advanced post effects</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Control</th>
+<th>Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LUT</td>
+<td>Chooses a preset color-look filter.</td>
+</tr>
+<tr>
+<td>LUT intensity</td>
+<td>Strengthens the filter's color treatment.</td>
+</tr>
+<tr>
+<td>ACES tonemapping</td>
+<td>Changes how highlights and shadows are represented.</td>
+</tr>
+<tr>
+<td>Saturation</td>
+<td>Increases the strength of colors.</td>
+</tr>
+<tr>
+<td>Contrast</td>
+<td>Changes the gap between bright and dark areas.</td>
+</tr>
+<tr>
+<td>Brightness</td>
+<td>Adjusts overall brightness.</td>
+</tr>
+<tr>
+<td>Tint color / intensity</td>
+<td>Blends in a chosen color. At intensity 0, the color remains invisible.</td>
+</tr>
+</tbody>
+</table></div>
+<h5 id="sharpening-and-dithering">Sharpening and dithering<a class="anchor" href="#sharpening-and-dithering" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-fx-sharpen.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-fx-sharpen.webp" width="550" height="200" style="--image-width:550px" alt="Sharpness and dithering controls" loading="lazy" decoding="async"></a><figcaption>Sharpness and dithering controls</figcaption></figure>
+<ul>
+<li>Sharpen: Makes outlines crisper. 0 disables it; excessive sharpening can make edges look rough.</li>
+<li>Dithering: Adds small noise to reduce visible color bands in smooth gradients.</li>
+</ul>
+<h5 id="bloom-1">Bloom<a class="anchor" href="#bloom-1" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-fx-bloom.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-fx-bloom.webp" width="550" height="530" style="--image-width:550px" alt="Distance attenuation and quality in advanced bloom" loading="lazy" decoding="async"></a><figcaption>Distance attenuation and quality in advanced bloom</figcaption></figure>
+<ul>
+<li>Intensity: Strength of the glow.</li>
+<li>Threshold: Higher limits bloom to brighter pixels.</li>
+<li>Tint / intensity: Color and amount added to the glow.</li>
+<li>Distance attenuation: Reduces bloom on distant objects.</li>
+<li>Near attenuation distance: Defines how nearby bloom should fall off.</li>
+<li>High quality: Improves the glow at additional processing cost.</li>
+</ul>
+<h5 id="anamorphic-flares">Anamorphic flares<a class="anchor" href="#anamorphic-flares" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-fx-flares.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-fx-flares.webp" width="550" height="475" style="--image-width:550px" alt="Anamorphic flare strength, spread and orientation" loading="lazy" decoding="async"></a><figcaption>Anamorphic flare strength, spread and orientation</figcaption></figure>
+<p>Creates long shafts of light extending from bright areas.</p>
+<ul>
+<li>Intensity: Brightens the shafts.</li>
+<li>Threshold: Higher limits the effect to brighter areas.</li>
+<li>Spread: Extends the light streaks farther.</li>
+<li>Vertical: On produces vertical streaks; off produces horizontal ones.</li>
+<li>Tint / intensity: Sets their color and tint strength.</li>
+</ul>
+<h5 id="depth-of-field-1">Depth of field<a class="anchor" href="#depth-of-field-1" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-fx-dof.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-fx-dof.webp" width="550" height="678" style="--image-width:550px" alt="Advanced depth of field, focus and bokeh" loading="lazy" decoding="async"></a><figcaption>Advanced depth of field, focus and bokeh</figcaption></figure>
+<ul>
+<li>Auto head focus: Follows the avatar's head.</li>
+<li>Focus distance: Manually sets the sharp distance when auto focus is off.</li>
+<li>Focus speed: Higher focuses on moving targets faster.</li>
+<li>Lens / aperture: Control how much of the scene is blurred.</li>
+<li>Bokeh: Turns blurred highlights into circular light spots.</li>
+<li>Bokeh threshold: Higher limits spots to brighter highlights.</li>
+<li>Bokeh intensity: Controls the spots' brightness.</li>
+</ul>
+<p>Enabling Blur below turns this depth-of-field effect off.</p>
+<h5 id="chromatic-aberration-1">Chromatic aberration<a class="anchor" href="#chromatic-aberration-1" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-fx-chromatic.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-fx-chromatic.webp" width="550" height="200" style="--image-width:550px" alt="Strength and smoothing for advanced chromatic aberration" loading="lazy" decoding="async"></a><figcaption>Strength and smoothing for advanced chromatic aberration</figcaption></figure>
+<ul>
+<li>Intensity: Increases the color separation around outlines.</li>
+<li>Smoothing: Softens how that separation changes across the image.</li>
+</ul>
+<p>This effect is disabled when the background is transparent.</p>
+<h5 id="lens-dirt">Lens dirt<a class="anchor" href="#lens-dirt" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-fx-dirt.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-fx-dirt.webp" width="550" height="299" style="--image-width:550px" alt="Lens dirt textures and strength" loading="lazy" decoding="async"></a><figcaption>Lens dirt textures and strength</figcaption></figure>
+<p>Overlays smudges on bright areas to simulate a dirty lens.</p>
+<ul>
+<li>Texture: Choose a dirt pattern; None disables it.</li>
+<li>Intensity: Makes the pattern more visible.</li>
+<li>Threshold: Brightness needed for the dirt effect.</li>
+</ul>
+<h5 id="vignette-1">Vignette<a class="anchor" href="#vignette-1" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-fx-vignette.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-fx-vignette.webp" width="550" height="255" style="--image-width:550px" alt="Advanced vignette settings" loading="lazy" decoding="async"></a><figcaption>Advanced vignette settings</figcaption></figure>
+<ul>
+<li>Color: Edge color.</li>
+<li>Edge fade: Amount of darkness at the edges.</li>
+<li>Blink: Controls a closing-eye-like screen-cover effect.</li>
+</ul>
+<h5 id="night-vision">Night vision<a class="anchor" href="#night-vision" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-fx-night.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-fx-night.webp" width="550" height="145" style="--image-width:550px" alt="Night vision and tint settings" loading="lazy" decoding="async"></a><figcaption>Night vision and tint settings</figcaption></figure>
+<p>Creates a night-camera appearance in a chosen color. Enable its switch, then choose the effect color.</p>
+<h5 id="blur">Blur<a class="anchor" href="#blur" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-fx-blur.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-fx-blur.webp" width="550" height="145" style="--image-width:550px" alt="Full-screen blur settings" loading="lazy" decoding="async"></a><figcaption>Full-screen blur settings</figcaption></figure>
+<p>Blurs the entire picture. Increasing strength makes everything softer. To keep the face sharp while blurring the background, use Depth of Field instead.</p>
+<h5 id="pixelation">Pixelation<a class="anchor" href="#pixelation" aria-hidden="true" tabindex="-1">#</a></h5>
+<figure><a class="zoomable" href="../assets/shots/en/guide-fx-pixelate.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-fx-pixelate.webp" width="550" height="145" style="--image-width:550px" alt="Pixelation and pixel size" loading="lazy" decoding="async"></a><figcaption>Pixelation and pixel size</figcaption></figure>
+<p>Turns the picture into large square pixels. Higher pixel size creates a coarser mosaic.</p>
+<h4 id="ambient-occlusion-pro">Ambient occlusion (Pro)<a class="anchor" href="#ambient-occlusion-pro" aria-hidden="true" tabindex="-1">#</a></h4>
+<figure><a class="zoomable" href="../assets/shots/en/guide-fx-hbao.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-fx-hbao.webp" width="550" height="365" style="--image-width:550px" alt="Ambient occlusion radius, strength and quality" loading="lazy" decoding="async"></a><figcaption>Ambient occlusion radius, strength and quality</figcaption></figure>
+<p>HBAO adds contact shadows where surfaces are close, such as under the chin, in clothing folds or at the corners of a room.</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Control</th>
+<th>When increased</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Radius</td>
+<td>Shadows extend over a larger region.</td>
+</tr>
+<tr>
+<td>Maximum radius</td>
+<td>The maximum area used to calculate shadows grows.</td>
+</tr>
+<tr>
+<td>Intensity</td>
+<td>Contact shadows become darker.</td>
+</tr>
+<tr>
+<td>Color</td>
+<td>Changes the color of the shadows.</td>
+</tr>
+<tr>
+<td>Quality</td>
+<td>Shadows become smoother at a greater PC/GPU cost.</td>
+</tr>
+</tbody>
+</table></div>
+<p>If the eyes or nose become excessively dark, lower intensity or radius.</p>
+<h4 id="compare-before-and-after">Compare before and after<a class="anchor" href="#compare-before-and-after" aria-hidden="true" tabindex="-1">#</a></h4>
+<p>These examples show the same avatar and framing with actual effect values changed.</p>
+<div class="effect-pair">
+<figure><a class="zoomable" href="../assets/shots/en/guide-example-bloom-off.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-example-bloom-off.webp" srcset="../assets/shots/en/guide-example-bloom-off-960.webp 960w, ../assets/shots/en/guide-example-bloom-off.webp 1080w" sizes="(max-width: 900px) 100vw, 860px" width="1080" height="960" style="--image-width:1080px" alt="Bloom off" loading="lazy" decoding="async"></a><figcaption>Bloom off</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/en/guide-example-bloom-on.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-example-bloom-on.webp" srcset="../assets/shots/en/guide-example-bloom-on-960.webp 960w, ../assets/shots/en/guide-example-bloom-on.webp 1080w" sizes="(max-width: 900px) 100vw, 860px" width="1080" height="960" style="--image-width:1080px" alt="Bloom on" loading="lazy" decoding="async"></a><figcaption>Bloom on</figcaption></figure>
+</div>
+<div class="effect-pair">
+<figure><a class="zoomable" href="../assets/shots/en/guide-example-dof-off.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-example-dof-off.webp" srcset="../assets/shots/en/guide-example-dof-off-960.webp 960w, ../assets/shots/en/guide-example-dof-off.webp 1080w" sizes="(max-width: 900px) 100vw, 860px" width="1080" height="960" style="--image-width:1080px" alt="Depth of field off" loading="lazy" decoding="async"></a><figcaption>Depth of field off</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/en/guide-example-dof-on.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-example-dof-on.webp" srcset="../assets/shots/en/guide-example-dof-on-960.webp 960w, ../assets/shots/en/guide-example-dof-on.webp 1080w" sizes="(max-width: 900px) 100vw, 860px" width="1080" height="960" style="--image-width:1080px" alt="Strong depth-of-field example" loading="lazy" decoding="async"></a><figcaption>Strong depth-of-field example</figcaption></figure>
+</div>
+<div class="effect-pair">
+<figure><a class="zoomable" href="../assets/shots/en/guide-example-vignette-off.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-example-vignette-off.webp" srcset="../assets/shots/en/guide-example-vignette-off-960.webp 960w, ../assets/shots/en/guide-example-vignette-off.webp 1080w" sizes="(max-width: 900px) 100vw, 860px" width="1080" height="960" style="--image-width:1080px" alt="Vignette off" loading="lazy" decoding="async"></a><figcaption>Vignette off</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/en/guide-example-vignette-on.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-example-vignette-on.webp" srcset="../assets/shots/en/guide-example-vignette-on-960.webp 960w, ../assets/shots/en/guide-example-vignette-on.webp 1080w" sizes="(max-width: 900px) 100vw, 860px" width="1080" height="960" style="--image-width:1080px" alt="Vignette on" loading="lazy" decoding="async"></a><figcaption>Vignette on</figcaption></figure>
+</div>
+<div class="effect-pair">
+<figure><a class="zoomable" href="../assets/shots/en/guide-example-color-off.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-example-color-off.webp" srcset="../assets/shots/en/guide-example-color-off-960.webp 960w, ../assets/shots/en/guide-example-color-off.webp 1080w" sizes="(max-width: 900px) 100vw, 860px" width="1080" height="960" style="--image-width:1080px" alt="Default color grading" loading="lazy" decoding="async"></a><figcaption>Default color grading</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/en/guide-example-color-on.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-example-color-on.webp" srcset="../assets/shots/en/guide-example-color-on-960.webp 960w, ../assets/shots/en/guide-example-color-on.webp 1080w" sizes="(max-width: 900px) 100vw, 860px" width="1080" height="960" style="--image-width:1080px" alt="Reduced saturation" loading="lazy" decoding="async"></a><figcaption>Reduced saturation</figcaption></figure>
+</div>
+<div class="effect-pair">
+<figure><a class="zoomable" href="../assets/shots/en/guide-example-pixel-off.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-example-pixel-off.webp" srcset="../assets/shots/en/guide-example-pixel-off-960.webp 960w, ../assets/shots/en/guide-example-pixel-off.webp 1080w" sizes="(max-width: 900px) 100vw, 860px" width="1080" height="960" style="--image-width:1080px" alt="Pixelation off" loading="lazy" decoding="async"></a><figcaption>Pixelation off</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/en/guide-example-pixel-on.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-example-pixel-on.webp" srcset="../assets/shots/en/guide-example-pixel-on-960.webp 960w, ../assets/shots/en/guide-example-pixel-on.webp 1080w" sizes="(max-width: 900px) 100vw, 860px" width="1080" height="960" style="--image-width:1080px" alt="Pixelation on" loading="lazy" decoding="async"></a><figcaption>Pixelation on</figcaption></figure>
+</div>
+<h3 id="my-expressions">My expressions<a class="anchor" href="#my-expressions" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>The Avatar Menu's My expressions card is here too. See <a href="05-avatar-menu.html#my-expression">My expressions</a> for how to make one.</p>
+<h2 id="photo--recording">Photo &amp; Recording<a class="anchor" href="#photo--recording" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>The Studio → Photo &amp; Recording tab holds the camera screen, photo and recording, in that order.</p>
+<figure><a class="zoomable" href="../assets/shots/en/guide-photo-record.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-photo-record.webp" width="550" height="648" style="--image-width:550px" alt="Photo Saving and Recording Settings" loading="lazy" decoding="async"></a><figcaption>Photo Saving and Recording Settings</figcaption></figure>
+<ul>
+<li>Camera screen: Choose screen decorations that look like a phone or camcorder, and their ratio and style.</li>
+<li>Photo: Saves the current output screen as a PNG.</li>
+<li>Crop: Cuts the area to include in the photo.</li>
+<li>Ratio: Chooses the shape of the photo such as landscape, portrait, or square.</li>
+<li>Resolution: Sets the pixel count of the saved file.</li>
+<li>Recording (Pro): Saves video as MP4. Press stop after starting to complete the file.</li>
+<li>Mic sound: When on, your microphone and, while screen sharing, the shared game's sound are mixed into one track. When off, only the game's sound goes in; without screen sharing, the video is recorded without sound.</li>
+</ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="07-motion.html"><span>Previous</span>Motion</a><a class="next" href="09-output.html"><span>Next</span>Output</a></nav><p class="updated">Last updated: 2026-10-24</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#scene">Scene</a></li><li class="sub"><a href="#avatar-placement">Avatar Placement</a></li><li class="sub"><a href="#posing-pro">Posing (Pro)</a></li><li class="sub"><a href="#object-pro">Object (Pro)</a></li><li class="sub"><a href="#room">Room</a></li><li class="sub"><a href="#dlc-room-packs">DLC room packs</a></li><li class="sub"><a href="#camera-pro">Camera (Pro)</a></li><li class="sub"><a href="#save-scene">Save Scene</a></li><li class="sub"><a href="#background">Background</a></li><li class="sub"><a href="#lighting">Lighting</a></li><li class="sub"><a href="#effects">Effects</a></li><li class="sub"><a href="#my-expressions">My expressions</a></li><li><a href="#photo--recording">Photo &amp;amp; Recording</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

@@ -22,7 +22,7 @@
 <link rel="icon" href="../assets/brand/favicon.png">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
-<link rel="stylesheet" href="../assets/site.css?v=f2963e806b">
+<link rel="stylesheet" href="../assets/site.css?v=f1fa02d3aa">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 <script src="../assets/site.js?v=7bd73318e6" defer></script>
 </head>
@@ -43,7 +43,7 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>가이드 목차</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html" aria-current="page">동작</a></li><li><a href="08-scene.html">스튜디오</a></li><li><a href="08-rooms.html">DLC 방 팩</a></li><li><a href="08-camera-effects.html">카메라 효과</a></li><li><a href="09-output.html">출력</a></li><li><a href="09-broadcast.html">방송 연동</a></li><li><a href="09-interactions.html">간편 설정</a></li><li><a href="09-reactions.html">던지기 · 액체 · 쓰러짐</a></li><li><a href="09-node-editor.html">노드 편집기</a></li><li><a href="09-session.html">원격 합방</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징과 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html" aria-current="page">동작</a></li><li><a href="08-scene.html">스튜디오</a></li><li><a href="09-output.html">출력</a></li><li><a href="09-broadcast.html">방송</a></li><li><a href="10-settings.html">설정</a></li></ul><p class="side-h">도움말</p><ul><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="동작">동작<a class="anchor" href="#동작" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>내 표정과 움직임이 아바타에 얼마나 크게, 얼마나 부드럽게 반영될지 정합니다. 설정은 아바타별로 저장됩니다.</p>
 <h2 id="얼굴">얼굴<a class="anchor" href="#얼굴" aria-hidden="true" tabindex="-1">#</a></h2>
@@ -93,7 +93,9 @@
 <li>왼쪽·오른쪽 함께 편집: 켜면 양쪽을 같은 값으로 바꿉니다.</li>
 <li>스무딩: 작은 표정 떨림을 줄입니다. 너무 높으면 반응이 늦습니다.</li>
 </ul>
-<h2 id="눈과-시선">눈과 시선<a class="anchor" href="#눈과-시선" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="표정이-안-나올-때">표정이 안 나올 때<a class="anchor" href="#표정이-안-나올-때" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>아바타에 있는 표정만 움직일 수 있습니다. VRCFaceTracking 설정이 있으면 해당 설정을, ARKit 쉐이프키가 있으면 해당 얼굴 모양을 사용합니다. 없는 표정은 민감도를 올려도 새로 생기지 않습니다.</p>
+<h2 id="눈--시선">눈 · 시선<a class="anchor" href="#눈--시선" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><a class="zoomable" href="../assets/shots/ko/guide-motion-eyes.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-eyes.webp" width="550" height="983" style="--image-width:550px" alt="깜빡임과 시선 설정" loading="lazy" decoding="async"></a><figcaption>깜빡임과 시선 설정</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
@@ -130,7 +132,7 @@
 </tbody>
 </table></div>
 <p>머리 추적과 페이셜 추적, 카메라 보기는 각각 따로 설정합니다. 머리를 고정한 자세에서도 눈동자만 카메라를 보게 할 수 있습니다.</p>
-<h2 id="입과-립싱크">입과 립싱크<a class="anchor" href="#입과-립싱크" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="입--표정">입 · 표정<a class="anchor" href="#입--표정" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><a class="zoomable" href="../assets/shots/ko/guide-motion-mouth.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-mouth.webp" width="550" height="688" style="--image-width:550px" alt="마이크 립싱크와 입 설정" loading="lazy" decoding="async"></a><figcaption>마이크 립싱크와 입 설정</figcaption></figure>
 <ul>
 <li>립싱크 강도: 높이면 입을 더 크게 벌립니다.</li>
@@ -138,7 +140,10 @@
 <li>음성 보정: 안내된 모음을 발음해 내 목소리에 맞춥니다.</li>
 <li>혀·볼 부풀림: 버튼이나 단축키로 해당 표정을 적용합니다. 모델에 필요한 표정이 있어야 보입니다.</li>
 </ul>
-<h2 id="몸">몸<a class="anchor" href="#몸" aria-hidden="true" tabindex="-1">#</a></h2>
+<h3 id="자동-표정">자동 표정<a class="anchor" href="#자동-표정" aria-hidden="true" tabindex="-1">#</a></h3>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-auto-expression.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-auto-expression.webp" width="550" height="671" style="--image-width:550px" alt="자동 표정 연결 설정" loading="lazy" decoding="async"></a><figcaption>자동 표정 연결 설정</figcaption></figure>
+<p>동작 → 자동 표정에서 켭니다. 미소·놀람·윙크 등 감지할 표정마다 내 표정에서 저장한 표정을 연결합니다. 그러면 실제로 웃거나 놀랄 때 연결한 표정이 자동으로 나옵니다.</p>
+<h2 id="머리">머리<a class="anchor" href="#머리" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><a class="zoomable" href="../assets/shots/ko/guide-motion-body.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-body.webp" width="550" height="983" style="--image-width:550px" alt="머리와 몸 움직임 설정" loading="lazy" decoding="async"></a><figcaption>머리와 몸 움직임 설정</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
@@ -152,6 +157,17 @@
 <td>머리 움직임</td>
 <td>작게·자연스럽게·크게 중 움직임의 크기를 고릅니다.</td>
 </tr>
+</tbody>
+</table></div>
+<h2 id="몸">몸<a class="anchor" href="#몸" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>조절하면</th>
+</tr>
+</thead>
+<tbody>
 <tr>
 <td>몸 따라오기</td>
 <td>머리를 돌릴 때 몸도 따라 돌아옵니다.</td>
@@ -170,33 +186,7 @@
 </tr>
 </tbody>
 </table></div>
-<h2 id="추적을-잃었을-때">추적을 잃었을 때<a class="anchor" href="#추적을-잃었을-때" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/ko/guide-motion-afk.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-afk.webp" width="550" height="752" style="--image-width:550px" alt="추적 상실과 AFK 전환 시간" loading="lazy" decoding="async"></a><figcaption>추적 상실과 AFK 전환 시간</figcaption></figure>
-<p>AFK는 얼굴과 몸의 추적을 모두 잃었을 때 사용하는 대기 상태입니다. 메뉴 → 기본·AFK 자세에서 시간을 정합니다.</p>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th>시간</th>
-<th>길게 하면</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>기다리는 시간</td>
-<td>잠깐 입력이 끊겨도 자세를 유지하고 더 기다립니다.</td>
-</tr>
-<tr>
-<td>전환 시간</td>
-<td>대기 자세로 천천히 넘어갑니다.</td>
-</tr>
-<tr>
-<td>복귀 시간</td>
-<td>입력이 돌아온 뒤 정상 동작으로 천천히 돌아옵니다.</td>
-</tr>
-</tbody>
-</table></div>
-<p>대기 중 사용할 자세와 표정은 <a href="11-pro-features.html#기본-자세와-대기-자세">기본 자세와 대기 자세</a>에서 고릅니다.</p>
-<h2 id="팔과-손">팔과 손<a class="anchor" href="#팔과-손" aria-hidden="true" tabindex="-1">#</a></h2>
+<h2 id="손">손<a class="anchor" href="#손" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><a class="zoomable" href="../assets/shots/ko/guide-motion-hands.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-motion-hands.webp" width="550" height="983" style="--image-width:550px" alt="팔·손 추적과 책상 동작" loading="lazy" decoding="async"></a><figcaption>팔·손 추적과 책상 동작</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
@@ -228,7 +218,7 @@
 </tr>
 </tbody>
 </table></div>
-<h3 id="책상-동작">책상 동작<a class="anchor" href="#책상-동작" aria-hidden="true" tabindex="-1">#</a></h3>
+<h2 id="책상">책상<a class="anchor" href="#책상" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>손이 카메라에 보이지 않을 때, 키보드·마우스 사용에 맞춰 아바타 손을 움직입니다.</p>
 <ul>
 <li>손 기본 자세: 책상 높이·손 간격·손목 각도를 맞춥니다.</li>
@@ -236,15 +226,13 @@
 <li>마우스 반응: 마우스를 움직일 때 손이 따라가는 크기입니다.</li>
 <li>손을 다시 카메라에 올리면 추적으로 돌아옵니다.</li>
 </ul>
-<p>키보드 입력은 손 동작을 만드는 데만 사용하며, 입력한 글자는 저장하거나 전송하지 않습니다.</p>
-<h2 id="표정이-안-나올-때">표정이 안 나올 때<a class="anchor" href="#표정이-안-나올-때" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>아바타에 있는 표정만 움직일 수 있습니다. VRCFaceTracking 설정이 있으면 해당 설정을, ARKit 쉐이프키가 있으면 해당 얼굴 모양을 사용합니다. 없는 표정은 민감도를 올려도 새로 생기지 않습니다.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>이전</span>장치</a><a class="next" href="08-scene.html"><span>다음</span>스튜디오</a></nav><p class="updated">최종 업데이트: 2026-10-24</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#얼굴">얼굴</a></li><li><a href="#눈과-시선">눈과 시선</a></li><li><a href="#입과-립싱크">입과 립싱크</a></li><li><a href="#몸">몸</a></li><li><a href="#추적을-잃었을-때">추적을 잃었을 때</a></li><li><a href="#팔과-손">팔과 손</a></li><li><a href="#표정이-안-나올-때">표정이 안 나올 때</a></li></ul></nav>
+<p>키보드 입력은 손 동작을 만드는 데만 사용하며, 입력한 글자는 저장하거나 전송하지 않습니다.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="06-devices.html"><span>이전</span>장치</a><a class="next" href="08-scene.html"><span>다음</span>스튜디오</a></nav><p class="updated">최종 업데이트: 2026-10-24</p></main>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#얼굴">얼굴</a></li><li class="sub"><a href="#자동-얼굴-설정">자동 얼굴 설정</a></li><li class="sub"><a href="#얼굴-조정">얼굴 조정</a></li><li class="sub"><a href="#표정이-안-나올-때">표정이 안 나올 때</a></li><li><a href="#눈--시선">눈 · 시선</a></li><li><a href="#입--표정">입 · 표정</a></li><li class="sub"><a href="#자동-표정">자동 표정</a></li><li><a href="#머리">머리</a></li><li><a href="#몸">몸</a></li><li><a href="#손">손</a></li><li><a href="#책상">책상</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
     <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
-    <div class="fcol"><h2>제품</h2><ul><li><a href="index.html#features">기능</a></li><li><a href="index.html#how">사용 방법</a></li><li><a href="index.html#editions">에디션</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">업데이트 내역</a></li></ul></div><div class="fcol"><h2>가이드</h2><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul></div><div class="fcol"><h2>약관 · 정책</h2><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></div><div class="fcol"><h2>링크</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+    <div class="fcol"><h2>제품</h2><ul><li><a href="index.html#features">기능</a></li><li><a href="index.html#how">사용 방법</a></li><li><a href="index.html#editions">에디션</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">업데이트 내역</a></li></ul></div><div class="fcol"><h2>가이드</h2><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul></div><div class="fcol"><h2>약관 · 정책</h2><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></div><div class="fcol"><h2>링크</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
   </div>
   <div class="wrap fine"><p>AVATAR LIVE는 VRChat Inc.의 공식 제품이 아니며, VRChat Inc.와 제휴 관계가 없습니다. VRChat은 VRChat Inc.의 상표입니다.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
 </footer>

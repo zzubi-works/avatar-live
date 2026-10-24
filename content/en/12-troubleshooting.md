@@ -49,7 +49,7 @@ For detailed installation steps, see [Output](09-output.md).
 
 ## Remote Collaboration
 
-The collaboration session is at the bottom of Broadcast → Connections. First, check whether the host has started the server and whether the participant address, port, and password are correct. If an external friend cannot connect, open the port forwarding and firewall guide in [When connection does not work](09-session.md#troubleshooting-connections).
+The collaboration session is at the bottom of Broadcast → Connections. First, check whether the host has started the server and whether the participant address, port, and password are correct. If an external friend cannot connect, open the port forwarding and firewall guide in [When connection does not work](09-broadcast.md#troubleshooting-connections).
 
 If the other party appears as a substitute avatar, check the avatar view and data transfer consent. Use a substitute avatar for models that do not allow transfer.
 
