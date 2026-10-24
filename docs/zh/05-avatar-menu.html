@@ -17,12 +17,12 @@
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="zh_CN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0b0b0f">
+<meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)">
 <link rel="icon" href="../assets/brand/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
-<script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
 <script src="../assets/site.js" defer></script>
 </head>
 <body class="doc">
@@ -33,8 +33,7 @@
     <nav class="primary" aria-label="Primary"><a href="index.html#overview">概览</a><a href="index.html#features">功能</a><a href="index.html#how">使用方法</a><a href="index.html#editions">版本</a><a href="01-getting-started.html" aria-current="page">指南</a><a href="updates.html">更新记录</a></nav>
     <div class="tools">
       <details class="lang"><summary aria-label="语言"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>简体中文</span></summary><div class="lang-menu" role="menu"><a href="../ko/05-avatar-menu.html" lang="ko">한국어</a><a href="../en/05-avatar-menu.html" lang="en">English</a><a href="../ja/05-avatar-menu.html" lang="ja">日本語</a><a href="../zh/05-avatar-menu.html" lang="zh-Hans" aria-current="true">简体中文</a></div></details>
-      <button class="icon-btn theme-toggle" type="button" aria-label="切换主题" data-theme-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg></button>
-      <a class="btn btn-primary btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">购买</a>
+      <a class="btn btn-tinted btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">购买</a>
       <button class="icon-btn menu-toggle" type="button" aria-label="菜单" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
     </div>
   </div>
@@ -42,11 +41,11 @@
 </header>
 <div class="docs">
   <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
-  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">角色库</a></li><li><a href="04-main-window.html">主屏幕</a></li><li><a href="05-avatar-menu.html" aria-current="page">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室</a></li><li><a href="08-camera-effects.html">摄像机效果</a></li><li><a href="09-output.html">输出</a></li><li><a href="09-session.html">远程联播</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">姿势与表情</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">角色库</a></li><li><a href="04-main-window.html">主屏幕</a></li><li><a href="05-avatar-menu.html" aria-current="page">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室</a></li><li><a href="08-rooms.html">DLC 房间包</a></li><li><a href="08-camera-effects.html">摄像机效果</a></li><li><a href="09-output.html">输出</a></li><li><a href="09-broadcast.html">直播联动</a></li><li><a href="09-interactions.html">简易设置</a></li><li><a href="09-reactions.html">投掷 · 液体 · 倒下</a></li><li><a href="09-node-editor.html">节点编辑器</a></li><li><a href="09-session.html">远程联播</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">姿势与表情</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="角色菜单">角色菜单<a class="anchor" href="#角色菜单" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>使用服装、发型、表情等由角色制作人添加的功能。根据模型，菜单名称和项目会有所不同。</p>
 <h2 id="更换服装和表情">更换服装和表情<a class="anchor" href="#更换服装和表情" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/zh/guide-avatar-menu.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-avatar-menu.webp" width="550" height="436" style="--image-width:550px" alt="带有普通表情按钮的子菜单" loading="lazy" decoding="async"></a><figcaption>带有普通表情按钮的子菜单</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/zh/guide-avatar-menu.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-avatar-menu.webp" width="550" height="502" style="--image-width:550px" alt="带有普通表情按钮的子菜单" loading="lazy" decoding="async"></a><figcaption>带有普通表情按钮的子菜单</figcaption></figure>
 <div class="table-wrap settings-table" tabindex="0"><table>
 <thead>
 <tr>
@@ -86,7 +85,7 @@
 </ul>
 <p>在快捷键中，按住时按键松开就会取消，而切换模式则会保持，直到再次按下为止。</p>
 <h2 id="姿势与跟踪">姿势与跟踪<a class="anchor" href="#姿势与跟踪" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/zh/guide-menu-poses.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-menu-poses.webp" width="550" height="477" style="--image-width:550px" alt="已保存的姿势和我的表情" loading="lazy" decoding="async"></a><figcaption>已保存的姿势和我的表情</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/zh/guide-menu-poses.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-menu-poses.webp" width="550" height="683" style="--image-width:550px" alt="已保存的姿势和我的表情" loading="lazy" decoding="async"></a><figcaption>已保存的姿势和我的表情</figcaption></figure>
 <ol>
 <li>点击姿势图块以应用。</li>
 <li>点击姿势旁的相机图标展开追踪设置。</li>
@@ -94,7 +93,7 @@
 </ol>
 <p>开启的部位会跟随我的动作，关闭的部位则保持已保存的姿势。例如关闭头部并开启面部时，只会移动表情而头部保持固定。</p>
 <h2 id="手势">手势<a class="anchor" href="#手势" aria-hidden="true" tabindex="-1">#</a></h2>
-<figure><a class="zoomable" href="../assets/shots/zh/guide-gestures.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-gestures.webp" width="550" height="396" style="--image-width:550px" alt="左手和右手手势设置" loading="lazy" decoding="async"></a><figcaption>左手和右手手势设置</figcaption></figure>
+<figure><a class="zoomable" href="../assets/shots/zh/guide-gestures.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-gestures.webp" width="550" height="497" style="--image-width:550px" alt="左手和右手手势设置" loading="lazy" decoding="async"></a><figcaption>左手和右手手势设置</figcaption></figure>
 <p>选择左手和右手的拳头、剪刀、张开等手势。如果角色手型与表情绑定，表情也会随手势变化。当通过摄像头启用手势时，将使用真实手型。</p>
 <h2 id="我的表情">我的表情<a class="anchor" href="#我的表情" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>通过创建新表情调整面部形状并保存，或加载 <code>.anim</code> 表情文件。创建的表情可通过图块应用，并通过右键连接至快速操作或快捷键。请在<a href="11-pro-features.html#我的表情">创建表情</a>中查看操作步骤。</p>
@@ -106,7 +105,7 @@
 <li>形状键：可以直接调节脸部或身体的变形量。直接设定的数值可能优先于追踪。</li>
 </ul>
 <h2 id="恢复">恢复<a class="anchor" href="#恢复" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>在角色参数 → 点击恢复到默认值，服装·表情等菜单的数值将恢复为角色的默认值。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="04-main-window.html"><span>上一页</span>主屏幕</a><a class="next" href="06-devices.html"><span>下一页</span>设备</a></nav><p class="updated">最后更新: 2026-10-15</p></main>
+<p>在角色参数 → 点击恢复到默认值，服装·表情等菜单的数值将恢复为角色的默认值。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="04-main-window.html"><span>上一页</span>主屏幕</a><a class="next" href="06-devices.html"><span>下一页</span>设备</a></nav><p class="updated">最后更新: 2026-10-24</p></main>
   <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#更换服装和表情">更换服装和表情</a></li><li><a href="#快速取用常用项目">快速取用常用项目</a></li><li><a href="#姿势与跟踪">姿势与跟踪</a></li><li><a href="#手势">手势</a></li><li><a href="#我的表情">我的表情</a></li><li><a href="#层级结构和形态键">层级结构和形态键</a></li><li><a href="#恢复">恢复</a></li></ul></nav>
 </div>
 <footer class="site-footer">

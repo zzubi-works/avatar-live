@@ -63,8 +63,13 @@ It checks once for new versions on startup. Even if you turn off automatic downl
 
 ![License Management and Diagnosis](img/guide-settings-diagnostics.png)
 
-- Upgrade to Pro: Enter the upgrade code you purchased.
-- Enter a different code: Change the license you want to use.
-- Send error report: Send a problem description and diagnostic data. The actual transfer takes place when the user chooses.
+- Enter another code: Enter license codes, Pro upgrades and BOOTH order numbers for [DLC room packs](08-rooms.md) here. A DLC order does not change your current license.
+- Send an error report: Send a problem description and diagnostic data. The actual transfer takes place when the user chooses. While you use broadcast integration, the connection states and recent events go in too. For details, see [When broadcast integration does not work](12-troubleshooting.md#when-broadcast-integration-does-not-work).
 - Send us improvements: Send us your desired features or complaints.
 - Open log folder: Opens the folder containing diagnostic logs.
+
+## About
+
+![App information and the Official Discord link](img/guide-settings-about.png)
+
+In Settings → About, check the .vavatar format version and the developer links. Use the **Official Discord** link to get news and ask questions, and **Send a suggestion** to tell us which features you want.

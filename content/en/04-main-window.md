@@ -11,8 +11,9 @@ Select settings on the left and adjust them while viewing the avatar in the cent
 |menu|Apply clothing, facial expressions, hand gestures and saved postures.|
 |device|Connect the webcam, microphone, iPhone, and tracker.|
 |movement|Controls the size and smoothness of movement of the face, body, and hands.|
-|studio|Place background, lighting, props, avatar, and filming camera.|
-|output of power|Connect to OBS, virtual camera, screen sharing, and remote Hapbang.|
+|Studio|Place the background, lighting, room, props, avatars and shooting cameras, and take photos and recordings.|
+|Output|Connect to OBS, the virtual camera and screen sharing.|
+|Broadcast|Make the avatar react to Twitch, CHZZK, SOOP and Discord events, and open a remote collaboration session. See [Broadcast integration](09-broadcast.md) for details.|
 |setting|Change windows, performance, language, shortcuts, and updates.|
 
 ## Using the Settings panel

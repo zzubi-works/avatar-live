@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Node editor — AVATAR LIVE</title>
+<meta name="description" content="Connect nodes with lines to build &quot;when this event arrives, under this condition, do this&quot; yourself. Use it when Simple setup is not enough. Editing a…">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/09-node-editor.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/09-node-editor.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/09-node-editor.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/09-node-editor.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/09-node-editor.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="Node editor — AVATAR LIVE">
+<meta property="og:description" content="Connect nodes with lines to build &quot;when this event arrives, under this condition, do this&quot; yourself. Use it when Simple setup is not enough. Editing a…">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/09-node-editor.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
+</head>
+<body class="doc">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">Overview</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#editions">Editions</a><a href="01-getting-started.html" aria-current="page">Guide</a><a href="updates.html">Updates</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="Language"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>English</span></summary><div class="lang-menu" role="menu"><a href="../ko/09-node-editor.html" lang="ko">한국어</a><a href="../en/09-node-editor.html" lang="en" aria-current="true">English</a><a href="../ja/09-node-editor.html" lang="ja">日本語</a><a href="../zh/09-node-editor.html" lang="zh-Hans">简体中文</a></div></details>
+      <a class="btn btn-tinted btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">Buy</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">Overview</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#editions">Editions</a><a href="01-getting-started.html" aria-current="page">Guide</a><a href="updates.html">Updates</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">Buy</a></div>
+</header>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="03-launcher-and-library.html">Avatar Library</a></li><li><a href="04-main-window.html">main screen</a></li><li><a href="05-avatar-menu.html">Avatar Menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Action</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="08-rooms.html">DLC room packs</a></li><li><a href="08-camera-effects.html">Camera effects</a></li><li><a href="09-output.html">Output</a></li><li><a href="09-broadcast.html">Broadcast integration</a></li><li><a href="09-interactions.html">Simple setup</a></li><li><a href="09-reactions.html">Throw · Liquid · Falling</a></li><li><a href="09-node-editor.html" aria-current="page">Node editor</a></li><li><a href="09-session.html">Remote collaboration</a></li><li><a href="10-settings.html">setting</a></li><li><a href="11-pro-features.html">Posing and Facial Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="node-editor">Node editor<a class="anchor" href="#node-editor" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>Connect nodes with lines to build "when this event arrives, under this condition, do this" yourself. Use it when <a href="09-interactions.html">Simple setup</a> is not enough. Editing and running need Pro; on Basic you can only view, pan and zoom. It is a broadcast integration feature, so it is currently in beta.</p>
+<h2 id="how-is-it-different-from-simple-setup">How is it different from Simple setup?<a class="anchor" href="#how-is-it-different-from-simple-setup" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th></th>
+<th>Simple setup</th>
+<th>Node editor</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>How you make it</td>
+<td>Choose triggers and actions from a list.</td>
+<td>Drag nodes in and connect them with lines.</td>
+</tr>
+<tr>
+<td>What it can do</td>
+<td>Set reactions such as throw, liquid, sticker, light and avatar actions</td>
+<td>About 400 built-in nodes: math, variables, branches, loops, camera, lights, expressions, blend shapes, bones, keyboard, mouse, WebSocket and more</td>
+</tr>
+<tr>
+<td>Good for</td>
+<td>One reaction to one event</td>
+<td>Mixing several conditions, or chaining reactions in order</td>
+</tr>
+</tbody>
+</table></div>
+<p>Simple setup items also run as graphs inside. Expand an item and press Open in the node editor… to see the graph that item made.</p>
+<h2 id="opening-the-editor">Opening the editor<a class="anchor" href="#opening-the-editor" aria-hidden="true" tabindex="-1">#</a></h2>
+<ol>
+<li>Open Broadcast → Interactions.</li>
+<li>Press Open node editor on the Node editor card.</li>
+<li>The editor window opens inside the app. Drag the title to move it, and drag the edges to resize it. Use the buttons at the top right to enlarge or close it.</li>
+</ol>
+<p>The graphs stay and keep running after you close it.</p>
+<figure><a class="zoomable" href="../assets/shots/en/guide-node-editor-lists.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-node-editor-lists.webp" srcset="../assets/shots/en/guide-node-editor-lists-960.webp 960w, ../assets/shots/en/guide-node-editor-lists.webp 1860w" sizes="(max-width: 900px) 100vw, 860px" width="1860" height="1020" style="--image-width:1860px" alt="Node editor with the graph list and node list open" loading="lazy" decoding="async"></a><figcaption>Node editor with the graph list and node list open</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Where</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Book icon at the top left</td>
+<td>Shows or hides the graph list.</td>
+</tr>
+<tr>
+<td>Choose a graph</td>
+<td>Chooses the graph to edit. The eye icon turns a graph on and off.</td>
+</tr>
+<tr>
+<td>Grid icon at the top right</td>
+<td>Shows or hides the node list.</td>
+</tr>
+<tr>
+<td>Buttons under the graph list</td>
+<td>Add, delete, duplicate and rename graphs, make groups, and the ⋯ menu (Format layout, import and export).</td>
+</tr>
+<tr>
+<td>Node list</td>
+<td>Nodes by category. Search with Ctrl+K, and star a node to add it to Favorites.</td>
+</tr>
+<tr>
+<td>Minimap</td>
+<td>Shows the whole graph at the bottom right; click to go to that spot.</td>
+</tr>
+<tr>
+<td>Undo, redo</td>
+<td>Ctrl+Z, Ctrl+Y</td>
+</tr>
+</tbody>
+</table></div>
+<p>A new graph is made switched off. When it is finished, turn it on with the eye icon so it runs.</p>
+<h2 id="nodes-and-links">Nodes and links<a class="anchor" href="#nodes-and-links" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>Drag a node from the node list onto the canvas to add it.</li>
+<li>Drag from a node's right dot (output) to another node's left dot (input) to connect them.</li>
+<li>Flow links (green lines) set the order things run in. They go from EXIT to ENTER.</li>
+<li>Value links (gray lines) pass values such as an amount or a name.</li>
+<li>Flow links and value links cannot be connected to each other. If you drop a link where it cannot go, the reason is shown.</li>
+<li>Right-click a node for the Delete, Duplicate and Disconnect all menu.</li>
+<li>For an input with no link, type the value directly in the field inside the node.</li>
+</ul>
+<h2 id="example-pour-water-for-a-donation-of-10000-won-or-more">Example: pour water for a donation of 10,000 won or more<a class="anchor" href="#example-pour-water-for-a-donation-of-10000-won-or-more" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/en/guide-node-editor.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-node-editor.webp" srcset="../assets/shots/en/guide-node-editor-960.webp 960w, ../assets/shots/en/guide-node-editor.webp 1860w" sizes="(max-width: 900px) 100vw, 860px" width="1860" height="1020" style="--image-width:1860px" alt="CHZZK donation → integer comparison → If → Pour liquid graph" loading="lazy" decoding="async"></a><figcaption>CHZZK donation → integer comparison → If → Pour liquid graph</figcaption></figure>
+<ol>
+<li>Make a new graph with + in the graph list.</li>
+<li>From the CHZZK category in the node list, drag in CHZZK donation. When a donation arrives, the flow goes out of EXIT and the node outputs Amount (won) as a value.</li>
+<li>From the Math and text category, add Integer: A ≥ B, and connect the donation node's Amount (won) to A. Enter 10000 in B.</li>
+<li>From the Control flow category, add If. Connect the donation node's EXIT to its ENTER, and the comparison node's result to its condition.</li>
+<li>From the Interactions category, add Pour liquid, and connect If true of the If node to its ENTER.</li>
+<li>Turn the graph on with the eye icon.</li>
+<li>Enter 15000 in the donation node's Test amount and press Test to see that water is poured. Change it to 5000 and test again; it should not pour.</li>
+</ol>
+<p>Every event node has test fields and a Test button, so you can try it without a broadcast. When the graph is off, tests do not run either.</p>
+<h2 id="when-you-edit-a-simple-setup-item-in-the-node-editor">When you edit a Simple setup item in the node editor<a class="anchor" href="#when-you-edit-a-simple-setup-item-in-the-node-editor" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>The item is marked "Edited in the node editor", and it no longer makes the graph again. From then on, the graph decides what happens.</li>
+<li>Press Back to Simple setup in the item's menu to make the graph again from the item's settings. What you changed in the node editor is lost.</li>
+<li>If the nodes of an automatically made graph overlap, press Format layout in the ⋯ menu.</li>
+</ul>
+<h2 id="sharing-graphs">Sharing graphs<a class="anchor" href="#sharing-graphs" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Use Export to clipboard in the ⋯ menu to copy a graph as text, and Import from clipboard or Import from file… to load one. Imported graphs come in switched off. Check the contents of a graph someone else gave you before you turn it on.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-reactions.html"><span>Previous</span>Throw · Liquid · Falling</a><a class="next" href="09-session.html"><span>Next</span>Remote collaboration</a></nav><p class="updated">Last updated: 2026-10-24</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#how-is-it-different-from-simple-setup">How is it different from Simple setup?</a></li><li><a href="#opening-the-editor">Opening the editor</a></li><li><a href="#nodes-and-links">Nodes and links</a></li><li><a href="#example-pour-water-for-a-donation-of-10000-won-or-more">Example: pour water for a donation of 10,000 won or more</a></li><li><a href="#when-you-edit-a-simple-setup-item-in-the-node-editor">When you edit a Simple setup item in the node editor</a></li><li><a href="#sharing-graphs">Sharing graphs</a></li></ul></nav>
+</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+  </div>
+  <div class="wrap fine"><p>AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
+</footer>
+</body>
+</html>

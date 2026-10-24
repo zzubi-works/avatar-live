@@ -24,7 +24,8 @@
     "primary": "AVATAR LIVEをはじめる",
     "secondary": "機能を見てみる",
     "meta": "Windows 10 / 11 · Basic 1,990円から",
-    "caption": "AVATAR LIVEの実際の録画画面"
+    "caption": "AVATAR LIVEの実際の録画画面",
+    "visual": "夜の路地のDLCルームに立つキツネのアバター"
   },
   "works": {
     "label": "こんなアプリで、すぐに使えます",
@@ -60,7 +61,7 @@
       {
         "title": "顔から全身まで",
         "body": "Webカメラひとつで、表情や視線、指の関節、全身まで。iPhoneやVMC（全身トラッカー・グローブ）も、部位ごとに組み合わせて使えます。",
-        "media": "video:face"
+        "media": "img:guide-face-calibration"
       },
       {
         "title": "キーボード・マウスに合わせた手の動き",
@@ -70,7 +71,7 @@
       {
         "title": "配信と画面共有",
         "body": "OBSには透明背景で、Discordにはゲームとアバターをひとつの画面にして送ります。",
-        "media": "video:share",
+        "media": "img:guide-main",
         "size": "wide"
       }
     ]
@@ -119,7 +120,7 @@
           "ショートカットとクイックアクション",
           "お気に入り"
         ],
-        "media": "video:menu",
+        "media": "img:guide-avatar-menu",
         "page": "05-avatar-menu"
       },
       {
@@ -176,8 +177,56 @@
         ],
         "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
         "page": "08-scene"
+      },
+      {
+        "title": "DLC部屋パック",
+        "body": "BOOTHで追加の部屋を購入すると、注文番号ひとつで部屋一覧に部屋が増えます。部屋のライティングと雰囲気も一緒に届きます。",
+        "points": [
+          "日本の路地・教室・プールなど13の部屋",
+          "部屋の明かりのスイッチ・明るさ",
+          "カメラを遮る壁を隠す"
+        ],
+        "media": "video:rooms|common:keyvisual",
+        "page": "08-rooms"
       }
     ]
+  },
+  "broadcast": {
+    "kicker": "配信連携・ベータ",
+    "title": "視聴者と友達が、アバターを動かします。",
+    "sub": "Twitch・CHZZK・SOOPのイベントやDiscordの友達のリアクションに合わせて、物を投げたり、水をかけたり、照明を変えたりします。Pro機能で、現在はベータです。",
+    "items": [
+      {
+        "title": "かんたん設定",
+        "body": "フォローされたら投げる、1万ウォン以上のドネーションなら水をかける、のように、イベントと反応をリストから選んで1行で作ります。",
+        "media": "video:broadcast|img:guide-interactions",
+        "size": "wide",
+        "page": "09-interactions"
+      },
+      {
+        "title": "投げる・液体・倒れる",
+        "body": "物が飛んできて当たり、液体が体に沿って流れ、強く当たると倒れてから起き上がります。",
+        "media": "video:reactions|img:guide-interaction-test",
+        "page": "09-reactions"
+      },
+      {
+        "title": "Discordの友達のリアクション",
+        "body": "配信を見ていない友達も、Discordのチャンネルのボタンや/リアクションコマンドでアバターを動かせます。",
+        "media": "img:guide-discord",
+        "page": "09-broadcast"
+      },
+      {
+        "title": "ノードエディター",
+        "body": "イベント・条件・アクションのノードを線でつないで、かんたん設定より複雑な反応を自分で作ります。",
+        "media": "video:nodes|img:guide-node-editor",
+        "size": "wide",
+        "page": "09-node-editor"
+      }
+    ],
+    "discord": "DiscordのサーバーやグループDMにAvatar Liveアプリを追加してください。アプリが求めるのはコマンドの権限だけで、接続コードで自分のチャンネルとつながります。",
+    "discordButton": "Discordアプリを追加する",
+    "discordGuide": "接続方法を見る",
+    "discordAnchor": "discordの接続"
   },
   "compare": {
     "kicker": "比較",
@@ -228,6 +277,7 @@
           "Spout2・仮想カメラ・画面共有",
           "マイ表情・自動表情・シェイプキー・写真",
           "フレンドとの非公開のDiscord共有",
+          "DLC部屋パック（別途購入）",
           "最大1080p・ウォーターマーク表示"
         ],
         "cta": "Basicを購入"
@@ -240,6 +290,7 @@
         "features": [
           "Basicのすべての機能",
           "最大4K・ウォーターマークなし",
+          "配信連携・ノードエディター（ベータ）",
           "ポージング・ポーズライブラリ",
           "オブジェクト（テキスト・画像・3Dモデル）",
           "画面共有のほかのソース"
@@ -277,7 +328,19 @@
       },
       {
         "q": "BasicとProの違いは何ですか？",
-        "a": "Basicは個人での利用（フレンドとの非公開のDiscord共有を含む）、Proは配信・動画の公開・商用利用のためのエディションです。Proは4K出力、ウォーターマークなし、ポージング、ポーズライブラリ、オブジェクトに対応しています。"
+        "a": "Basicは個人での利用（フレンドとの非公開のDiscord共有を含む）、Proは配信・動画の公開・商用利用のためのエディションです。Proは4K出力、ウォーターマークなし、ポージング、ポーズライブラリ、オブジェクト、配信連携とノードエディターに対応しています。"
+      },
+      {
+        "q": "視聴者のイベントにアバターを反応させられますか？",
+        "a": "はい。ProでTwitch・CHZZK・SOOPを接続すると、フォロー・ドネーション・チャンネルポイントなどのイベントに合わせて、物を投げる、液体をかける、照明を変えるなどを実行します。配信連携は現在ベータなので、問題があればアプリのエラーレポートでお知らせください。"
+      },
+      {
+        "q": "Discordの友達もアバターを動かせますか？",
+        "a": "はい。DiscordのサーバーやグループDMにAvatar Liveアプリを追加し、接続コードでチャンネルをつなぐと、友達がボタンや/リアクションコマンドでリアクションを送れます。自分のAvatar Liveが起動しているときだけ動作します。"
+      },
+      {
+        "q": "DLCの部屋はBasicでも使えますか？",
+        "a": "はい。BOOTHで購入したDLCの部屋はBasicでも使えます。注文番号を設定 → ライセンス → 別のコードを入力に入力すると、部屋一覧に表示されます。内蔵の部屋と部屋のパーツ編集はPro機能です。"
       },
       {
         "q": "Windows以外のOSに対応していますか？",

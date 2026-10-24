@@ -24,7 +24,8 @@
     "primary": "AVATAR LIVE 시작하기",
     "secondary": "기능 살펴보기",
     "meta": "Windows 10 / 11 · Basic 1,990엔부터",
-    "caption": "실제 AVATAR LIVE 녹화 화면"
+    "caption": "실제 AVATAR LIVE 녹화 화면",
+    "visual": "밤의 골목 DLC 방에 선 여우 아바타"
   },
   "works": {
     "label": "이런 곳에서 바로",
@@ -60,7 +61,7 @@
       {
         "title": "얼굴부터 전신까지",
         "body": "웹캠 하나로 표정과 시선, 손가락 관절, 전신까지. iPhone과 VMC(전신 트래커 · 장갑)도 부위별로 섞어 씁니다.",
-        "media": "video:face"
+        "media": "img:guide-face-calibration"
       },
       {
         "title": "키보드 · 마우스 손 동작",
@@ -70,7 +71,7 @@
       {
         "title": "방송과 화면 공유",
         "body": "OBS에는 투명 배경으로, Discord에는 게임과 아바타를 한 화면으로 보냅니다.",
-        "media": "video:share",
+        "media": "img:guide-main",
         "size": "wide"
       }
     ]
@@ -119,7 +120,7 @@
           "단축키와 퀵 액션",
           "즐겨찾기"
         ],
-        "media": "video:menu",
+        "media": "img:guide-avatar-menu",
         "page": "05-avatar-menu"
       },
       {
@@ -176,8 +177,56 @@
         ],
         "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
         "page": "08-scene"
+      },
+      {
+        "title": "DLC 방 팩",
+        "body": "BOOTH에서 추가 방을 사면 주문번호 하나로 방 목록에 방이 늘어납니다. 방의 조명과 분위기도 함께 옵니다.",
+        "points": [
+          "일본 골목 · 교실 · 수영장 등 방 13개",
+          "방 불빛 스위치 · 밝기",
+          "카메라를 가리는 벽 숨기기"
+        ],
+        "media": "video:rooms|common:keyvisual",
+        "page": "08-rooms"
       }
     ]
+  },
+  "broadcast": {
+    "kicker": "방송 연동 · 베타",
+    "title": "시청자와 친구가 아바타를 움직입니다.",
+    "sub": "Twitch·치지직·SOOP 이벤트와 디스코드 친구의 반응에 맞춰 물건을 던지고, 물을 뿌리고, 조명을 바꿉니다. Pro 기능이며 지금은 베타입니다.",
+    "items": [
+      {
+        "title": "간편 설정",
+        "body": "팔로우하면 던지기, 1만 원 이상 후원이면 물 뿌리기처럼 이벤트와 반응을 목록에서 골라 한 줄로 만듭니다.",
+        "media": "video:broadcast|img:guide-interactions",
+        "size": "wide",
+        "page": "09-interactions"
+      },
+      {
+        "title": "던지기 · 액체 · 쓰러짐",
+        "body": "물건이 날아와 맞고, 액체가 몸을 따라 흐르고, 세게 맞으면 쓰러졌다가 일어납니다.",
+        "media": "video:reactions|img:guide-interaction-test",
+        "page": "09-reactions"
+      },
+      {
+        "title": "디스코드 친구의 반응",
+        "body": "방송을 보지 않는 친구도 디스코드 채널의 버튼과 /반응 명령으로 아바타를 움직입니다.",
+        "media": "img:guide-discord",
+        "page": "09-broadcast"
+      },
+      {
+        "title": "노드 편집기",
+        "body": "이벤트·조건·동작 노드를 선으로 이어 간편 설정보다 복잡한 반응을 직접 만듭니다.",
+        "media": "video:nodes|img:guide-node-editor",
+        "size": "wide",
+        "page": "09-node-editor"
+      }
+    ],
+    "discord": "디스코드 서버나 그룹 DM에 Avatar Live 앱을 추가하세요. 앱은 명령 권한만 요청하고, 연결 코드로 내 채널과 이어집니다.",
+    "discordButton": "디스코드 앱 추가하기",
+    "discordGuide": "연결 방법 보기",
+    "discordAnchor": "디스코드-연결"
   },
   "compare": {
     "kicker": "비교",
@@ -228,6 +277,7 @@
           "Spout2 · 가상 카메라 · 화면 공유",
           "내 표정 · 자동 표정 · 쉐이프키 · 사진",
           "친구와의 비공개 Discord 공유",
+          "DLC 방 팩 (별도 구매)",
           "최대 1080p · 워터마크 표시"
         ],
         "cta": "Basic 구매"
@@ -240,6 +290,7 @@
         "features": [
           "Basic의 모든 기능",
           "최대 4K · 워터마크 없음",
+          "방송 연동 · 노드 편집기 (베타)",
           "포징 · 포즈 라이브러리",
           "오브젝트 (텍스트 · 이미지 · 3D 모델)",
           "화면 공유 추가 소스"
@@ -277,7 +328,19 @@
       },
       {
         "q": "Basic과 Pro의 차이는 무엇인가요?",
-        "a": "Basic은 개인 사용(친구와의 비공개 Discord 공유 포함), Pro는 방송 · 영상 공개 · 상업적 이용을 위한 에디션입니다. Pro는 4K 출력, 워터마크 없음, 포징, 포즈 라이브러리, 오브젝트를 지원합니다."
+        "a": "Basic은 개인 사용(친구와의 비공개 Discord 공유 포함), Pro는 방송 · 영상 공개 · 상업적 이용을 위한 에디션입니다. Pro는 4K 출력, 워터마크 없음, 포징, 포즈 라이브러리, 오브젝트, 방송 연동과 노드 편집기를 지원합니다."
+      },
+      {
+        "q": "시청자 이벤트에 아바타가 반응하게 할 수 있나요?",
+        "a": "네. Pro에서 Twitch · 치지직 · SOOP을 연결하면 팔로우 · 후원 · 채널 포인트 같은 이벤트에 맞춰 물건 던지기, 액체 뿌리기, 조명 바꾸기 등을 실행합니다. 방송 연동은 지금 베타라 문제가 있으면 앱의 오류 보고로 알려 주세요."
+      },
+      {
+        "q": "디스코드 친구도 아바타를 움직일 수 있나요?",
+        "a": "네. 디스코드 서버나 그룹 DM에 Avatar Live 앱을 추가하고 연결 코드로 채널을 이으면, 친구가 버튼이나 /반응 명령으로 반응을 보냅니다. 내 Avatar Live가 켜져 있을 때만 동작합니다."
+      },
+      {
+        "q": "DLC 방은 Basic에서도 쓸 수 있나요?",
+        "a": "네. BOOTH에서 산 DLC 방은 Basic에서도 쓸 수 있습니다. 주문번호를 설정 → 라이선스 → 다른 코드 입력에 넣으면 방 목록에 나타납니다. 기본 내장 방과 방 조각 편집은 Pro 기능입니다."
       },
       {
         "q": "Windows 이외의 운영체제를 지원하나요?",

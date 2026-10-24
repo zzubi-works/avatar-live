@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>配信連携 — AVATAR LIVE</title>
+<meta name="description" content="Twitch・CHZZK・SOOPの視聴者イベントや、Discordの友達のリアクションを受け取って、アバターが反応するようにします。配信連携はPro機能で、現在はベータです。実際の配信で問題が起きたら、エラーレポートでお知らせください。">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ja/09-broadcast.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/09-broadcast.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/09-broadcast.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/09-broadcast.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/09-broadcast.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="配信連携 — AVATAR LIVE">
+<meta property="og:description" content="Twitch・CHZZK・SOOPの視聴者イベントや、Discordの友達のリアクションを受け取って、アバターが反応するようにします。配信連携はPro機能で、現在はベータです。実際の配信で問題が起きたら、エラーレポートでお知らせください。">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ja/09-broadcast.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ja.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ja_JP">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/packages/pretendard-jp/dist/web/variable/pretendardvariable-jp-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
+</head>
+<body class="doc">
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">概要</a><a href="index.html#features">機能</a><a href="index.html#how">使い方</a><a href="index.html#editions">エディション</a><a href="01-getting-started.html" aria-current="page">ガイド</a><a href="updates.html">更新履歴</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="言語"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>日本語</span></summary><div class="lang-menu" role="menu"><a href="../ko/09-broadcast.html" lang="ko">한국어</a><a href="../en/09-broadcast.html" lang="en">English</a><a href="../ja/09-broadcast.html" lang="ja" aria-current="true">日本語</a><a href="../zh/09-broadcast.html" lang="zh-Hans">简体中文</a></div></details>
+      <a class="btn btn-tinted btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">購入する</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="メニュー" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">概要</a><a href="index.html#features">機能</a><a href="index.html#how">使い方</a><a href="index.html#editions">エディション</a><a href="01-getting-started.html" aria-current="page">ガイド</a><a href="updates.html">更新履歴</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">購入する</a></div>
+</header>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>ガイド目次</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="ガイド目次"><p class="side-h">ガイド</p><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターをエクスポート</a></li><li><a href="03-launcher-and-library.html">アバターライブラリ</a></li><li><a href="04-main-window.html">メイン画面</a></li><li><a href="05-avatar-menu.html">アバターメニュー</a></li><li><a href="06-devices.html">デバイス</a></li><li><a href="07-motion.html">動作</a></li><li><a href="08-scene.html">スタジオ</a></li><li><a href="08-rooms.html">DLC部屋パック</a></li><li><a href="08-camera-effects.html">カメラエフェクト</a></li><li><a href="09-output.html">出力</a></li><li><a href="09-broadcast.html" aria-current="page">配信連携</a></li><li><a href="09-interactions.html">かんたん設定</a></li><li><a href="09-reactions.html">投げる・液体・倒れる</a></li><li><a href="09-node-editor.html">ノードエディター</a></li><li><a href="09-session.html">リモートコラボ配信</a></li><li><a href="10-settings.html">設定</a></li><li><a href="11-pro-features.html">ポージングと表情</a></li><li><a href="12-troubleshooting.html">問題解決</a></li><li><a href="13-license.html">エディションとライセンス</a></li></ul><p class="side-h">規約・ポリシー</p><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul><p class="side-h">更新履歴</p><ul><li><a href="updates.html">更新履歴</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="配信連携">配信連携<a class="anchor" href="#配信連携" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>Twitch・CHZZK・SOOPの視聴者イベントや、Discordの友達のリアクションを受け取って、アバターが反応するようにします。配信連携はPro機能で、現在はベータです。実際の配信で問題が起きたら、<a href="12-troubleshooting.html#配信連携がうまくいかないとき">エラーレポート</a>でお知らせください。</p>
+<p>配信ページには2つのタブがあります。</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>タブ</th>
+<th>できること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>インタラクション</td>
+<td>イベントが届いたときに何をするかを決めます。<a href="09-interactions.html">かんたん設定</a>、<a href="09-node-editor.html">ノードエディター</a>、<a href="09-reactions.html">倒れる・寄付表示・テスト</a>があります。</td>
+</tr>
+<tr>
+<td>接続</td>
+<td>プラットフォームのアカウントとDiscordのチャンネルを接続し、WebSocketと<a href="09-session.html">リモート合同配信</a>のセッションを開きます。</td>
+</tr>
+</tbody>
+</table></div>
+<figure><a class="zoomable" href="../assets/shots/ja/guide-broadcast-connect.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/guide-broadcast-connect.webp" width="550" height="578" style="--image-width:550px" alt="配信 › 接続タブのプラットフォーム一覧" loading="lazy" decoding="async"></a><figcaption>配信 › 接続タブのプラットフォーム一覧</figcaption></figure>
+<h2 id="twitchchzzksoopの接続">Twitch・CHZZK・SOOPの接続<a class="anchor" href="#twitchchzzksoopの接続" aria-hidden="true" tabindex="-1">#</a></h2>
+<ol>
+<li>配信 → 接続を開きます。</li>
+<li>接続するプラットフォームのスイッチをオンにします。</li>
+<li>ブラウザーに開いたプラットフォームのログイン画面で、自分の配信アカウントにログインし、権限を許可します。</li>
+<li>カードに接続済みと表示されれば、イベントを受け取る準備は完了です。</li>
+</ol>
+<figure><a class="zoomable" href="../assets/shots/ja/guide-twitch.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/guide-twitch.webp" width="550" height="227" style="--image-width:550px" alt="Twitchカードのウィスパー・デバッグログ設定" loading="lazy" decoding="async"></a><figcaption>Twitchカードのウィスパー・デバッグログ設定</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>プラットフォーム</th>
+<th>受け取れるイベント</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Twitch</td>
+<td>チャンネルポイント使用、チャット、フォロー、サブスク（ギフト・サブスクメッセージを含む）、ビッツ、レイド、ハイプトレイン、ウィスパー</td>
+</tr>
+<tr>
+<td>CHZZK</td>
+<td>チャット、ドネーション（チャット・動画）、サブスク</td>
+</tr>
+<tr>
+<td>SOOP</td>
+<td>チャット、スターバルーン、アドバルーン、動画バルーン、ステッカー、サブスク、ギフト</td>
+</tr>
+</tbody>
+</table></div>
+<p>スイッチをオフにすると、それ以上イベントを受け取りません。保存されたログインとルールは削除されません。デバッグログをオンにすると、受け取ったイベントが診断ログに詳しく残ります。</p>
+<blockquote class="callout privacy"><p>Twitch・CHZZK・SOOPのログインで行うトークンの交換は、開発者のサーバー（<code>stream-auth.erp.pictures</code>）を経由します。プラットフォームの秘密鍵はこのサーバーにだけあり、受け取ったログイン情報はこのPCに保存されます。</p>
+</blockquote>
+<h2 id="discordの接続">Discordの接続<a class="anchor" href="#discordの接続" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>配信を見ていない友達も、Discordのチャンネルでボタンや<code>/リアクション</code>コマンドを使ってアバターを動かせます。Avatar Liveのアプリが起動しているときだけ動作します。</p>
+<figure><a class="zoomable" href="../assets/shots/ja/guide-discord.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/guide-discord.webp" width="550" height="861" style="--image-width:550px" alt="Discordカードのリアクション一覧" loading="lazy" decoding="async"></a><figcaption>Discordカードのリアクション一覧</figcaption></figure>
+<h3 id="1-discordアプリを追加する">1. Discordアプリを追加する<a class="anchor" href="#1-discordアプリを追加する" aria-hidden="true" tabindex="-1">#</a></h3>
+<p><a href="https://discord.com/oauth2/authorize?client_id=1563157504995754014">Avatar Live Discordアプリを追加する</a>を開き、追加先を選びます。アプリが求めるのはコマンド（<code>applications.commands</code>）の権限だけです。メッセージを読んだり、サーバーを管理したりはしません。</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>追加先</th>
+<th>使う場合</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>サーバーに追加</td>
+<td>自分のDiscordサーバーのチャンネルで使います。サーバーの管理権限が必要です。友達は何もインストールしません。</td>
+</tr>
+<tr>
+<td>自分のアカウントに追加</td>
+<td>サーバーがない場合や、グループDMで使います。グループDMでコマンドを直接入力するには、その友達もアプリを自分のアカウントに追加する必要があります。インストールしていない友達は、自分が投稿したボタンを押します。</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="2-チャンネルを接続する">2. チャンネルを接続する<a class="anchor" href="#2-チャンネルを接続する" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>アプリで配信 → 接続 → Discordのスイッチをオンにします。</li>
+<li>接続コードを作るを押します。8桁のコードが10分間表示されます。</li>
+<li>接続するDiscordのチャンネルで<code>/接続</code>コマンドを選び、コード欄にそのコードを入力して送信します。</li>
+<li>アプリに「接続しますか？」というウィンドウが表示されたら、サーバーとチャンネルの名前を確認して接続を押します。</li>
+<li>接続済みチャンネルの一覧に、そのチャンネルが表示されます。</li>
+</ol>
+<p>コードは1回だけ使えます。他の人がすでに接続したチャンネルは接続できません。</p>
+<h3 id="3-リアクションボタンを投稿する">3. リアクションボタンを投稿する<a class="anchor" href="#3-リアクションボタンを投稿する" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>接続したチャンネルで<code>/パネル</code>を送信します。リアクション一覧のリアクションがボタンとして投稿されます。</li>
+<li>友達がボタンを押すか、<code>/リアクション</code>でリアクションを選ぶと、そのリアクションを処理するルールが実行されます。</li>
+<li>Discordのメッセージに、誰が何をしたかが表示されます。</li>
+</ol>
+<p>リアクション一覧では、ボタンごとに名前・絵文字・値・ルールを決めます。値は、ルールの最小・最大個数の条件が見る数です。ルールを押すとルールが順に切り替わり、選んだルールのDiscordリアクショントリガーがオンになります。</p>
+<h3 id="discordのコマンド">Discordのコマンド<a class="anchor" href="#discordのコマンド" aria-hidden="true" tabindex="-1">#</a></h3>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>コマンド</th>
+<th>誰が</th>
+<th>できること</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/接続 コード:</code></td>
+<td>自分</td>
+<td>このチャンネルを自分のAvatar Liveに接続します。</td>
+</tr>
+<tr>
+<td><code>/接続解除</code></td>
+<td>自分・サーバー管理者</td>
+<td>このチャンネルの接続を解除します。</td>
+</tr>
+<tr>
+<td><code>/パネル</code></td>
+<td>自分・サーバー管理者</td>
+<td>リアクションボタンを投稿します。グループDMでも使えます。</td>
+</tr>
+<tr>
+<td><code>/リアクション</code></td>
+<td>友達</td>
+<td>リアクションを1つ選びます。選ばなければ最初のリアクションです。</td>
+</tr>
+<tr>
+<td><code>/ポイント</code> <code>/出席</code> <code>/ギフト</code> <code>/ランキング</code></td>
+<td>友達</td>
+<td>ポイントゲームのポイントを確認し、貯め、分け合います。</td>
+</tr>
+<tr>
+<td><code>/ルーレット</code> <code>/スロット</code> <code>/ハイアンドロー</code> <code>/ブラックジャック</code> <code>/対決</code> <code>/予想</code> <code>/宝くじ</code> <code>/レース</code> <code>/クイズ</code> <code>/ボス戦</code></td>
+<td>友達</td>
+<td>ポイントゲームのミニゲームです。</td>
+</tr>
+</tbody>
+</table></div>
+<p>Discordの言語が英語の場合、コマンドも<code>/link</code>、<code>/unlink</code>、<code>/panel</code>、<code>/react</code>のように英語の名前で表示されます。</p>
+<p>ポイントゲームのルールとポイントの値は、Discordカードのポイントゲームで決めます。ポイントはこのPCにチャンネルごとに保存されます。</p>
+<blockquote class="callout privacy"><p>Discordとアプリの間は、開発者のサーバー（<code>discord-check.erp.pictures</code>）が中継します。友達のDiscordの名前とプロフィール画像が自分のアプリに届き、表示とステッカーに使われます。アプリがDiscordに自分から投稿することはなく、友達のコマンドにだけ応答します。</p>
+</blockquote>
+<h2 id="websocket">WebSocket<a class="anchor" href="#websocket" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ja/guide-websocket.webp" target="_blank" rel="noopener"><img src="../assets/shots/ja/guide-websocket.webp" width="550" height="172" style="--image-width:550px" alt="WebSocketカードのポート設定" loading="lazy" decoding="async"></a><figcaption>WebSocketカードのポート設定</figcaption></figure>
+<p>他のプログラムが、このPCの中でAvatar Liveとイベントをやり取りできるようにします。初期設定はオフで、ポートは19190です。同じPCのプログラムだけが<code>ws://127.0.0.1:ポート</code>で接続できます。やり取りする内容は、<a href="09-node-editor.html">ノードエディター</a>のWebSocketノードで扱います。</p>
+<h2 id="basicとpro">BasicとPro<a class="anchor" href="#basicとpro" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="table-wrap edition-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>機能</th>
+<th>Basic</th>
+<th>Pro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>配信ページの表示</td>
+<td>可能</td>
+<td>可能</td>
+</tr>
+<tr>
+<td>プラットフォーム・Discord・WebSocketの接続</td>
+<td>ロック</td>
+<td>可能</td>
+</tr>
+<tr>
+<td>かんたん設定・寄付表示・テスト</td>
+<td>ロック</td>
+<td>可能</td>
+</tr>
+<tr>
+<td>ノードエディター</td>
+<td>表示・移動・拡大のみ</td>
+<td>編集・実行</td>
+</tr>
+</tbody>
+</table></div>
+<p>Basicでも、保存されたログイン・ルール・グラフは削除されず、ロックされたまま残ります。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-output.html"><span>前へ</span>出力</a><a class="next" href="09-interactions.html"><span>次へ</span>かんたん設定</a></nav><p class="updated">最終更新: 2026-10-24</p></main>
+  <nav class="toc" aria-label="このページ"><p class="toc-h">このページ</p><ul><li><a href="#twitchchzzksoopの接続">Twitch・CHZZK・SOOPの接続</a></li><li><a href="#discordの接続">Discordの接続</a></li><li><a href="#websocket">WebSocket</a></li><li><a href="#basicとpro">BasicとPro</a></li></ul></nav>
+</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>製品</h2><ul><li><a href="index.html#features">機能</a></li><li><a href="index.html#how">使い方</a></li><li><a href="index.html#editions">エディション</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新履歴</a></li></ul></div><div class="fcol"><h2>ガイド</h2><ul><li><a href="01-getting-started.html">はじめに</a></li><li><a href="02-avatar-exporter.html">アバターをエクスポート</a></li><li><a href="12-troubleshooting.html">問題解決</a></li><li><a href="13-license.html">エディションとライセンス</a></li></ul></div><div class="fcol"><h2>規約・ポリシー</h2><ul><li><a href="legal-terms.html">Avatar Live 利用規約</a></li><li><a href="legal-privacy.html">プライバシーポリシー</a></li><li><a href="legal-refund.html">返金ポリシー</a></li><li><a href="legal-seller.html">販売者情報</a></li></ul></div><div class="fcol"><h2>リンク</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+  </div>
+  <div class="wrap fine"><p>AVATAR LIVE は VRChat Inc. の公式製品ではなく、VRChat Inc. とは提携していません。VRChat は VRChat Inc. の商標です。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
+</footer>
+</body>
+</html>

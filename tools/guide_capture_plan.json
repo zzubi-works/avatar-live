@@ -320,7 +320,7 @@
   },
   {
     "name": "guide-photo-record",
-    "page": "Stream",
+    "page": "photo",
     "open": [
       "out.photo"
     ],
@@ -345,7 +345,7 @@
   },
   {
     "name": "guide-session",
-    "page": "Stream",
+    "page": "connect",
     "open": [
       "session",
       "session.join",
@@ -354,11 +354,12 @@
     "focus": "session",
     "commands": [
       "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
-    ]
+    ],
+    "blurLastRow": "session.host"
   },
   {
     "name": "guide-session-options",
-    "page": "Stream",
+    "page": "connect",
     "open": [
       "session",
       "session.people"
@@ -790,14 +791,84 @@
     "open": [
       "scene.lighting",
       "lighting.lights",
-      "light.1cc26a770902",
-      "light.more.1cc26a770902",
-      "light.shadow.1cc26a770902"
+      "light.spot-light-face",
+      "light.more.spot-light-face",
+      "light.shadow.spot-light-face"
     ],
-    "focus": "light.more.1cc26a770902",
+    "focus": "light.more.spot-light-face",
     "panel": true,
     "commands": [
       "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
     ]
+  },
+  {
+    "name": "guide-broadcast-connect",
+    "page": "connect",
+    "bottom": 640
+  },
+  {
+    "name": "guide-twitch",
+    "page": "connect",
+    "open": [
+      "settings.twitch"
+    ],
+    "focus": "settings.twitch"
+  },
+  {
+    "name": "guide-discord",
+    "page": "connect",
+    "open": [
+      "settings.discord",
+      "settings.discord.reactions"
+    ],
+    "focus": "settings.discord"
+  },
+  {
+    "name": "guide-websocket",
+    "page": "connect",
+    "open": [
+      "settings.websocket"
+    ],
+    "focus": "settings.websocket"
+  },
+  {
+    "name": "guide-interactions",
+    "page": "interact",
+    "open": [
+      "bc.rules"
+    ],
+    "bottom": 880
+  },
+  {
+    "name": "guide-fall",
+    "page": "interact",
+    "open": [
+      "bc.fall"
+    ],
+    "focus": "bc.fall"
+  },
+  {
+    "name": "guide-donation",
+    "page": "interact",
+    "open": [
+      "bc.donation"
+    ],
+    "focus": "bc.donation"
+  },
+  {
+    "name": "guide-interaction-test",
+    "page": "interact",
+    "open": [
+      "bc.test"
+    ],
+    "focus": "bc.test"
+  },
+  {
+    "name": "guide-settings-about",
+    "page": "Settings",
+    "open": [
+      "settings.about"
+    ],
+    "focus": "settings.about"
   }
 ]

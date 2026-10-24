@@ -24,7 +24,8 @@
     "primary": "Get started with AVATAR LIVE",
     "secondary": "Explore the features",
     "meta": "Windows 10 / 11 · Basic from ¥1,990",
-    "caption": "Actual AVATAR LIVE screen recording"
+    "caption": "Actual AVATAR LIVE screen recording",
+    "visual": "The fox avatar standing in the night alley DLC room"
   },
   "works": {
     "label": "Works right away with",
@@ -60,7 +61,7 @@
       {
         "title": "From face to full body",
         "body": "Expressions, gaze, finger joints and even full body with a single webcam. Mix in an iPhone and VMC (full-body trackers · gloves) part by part.",
-        "media": "video:face"
+        "media": "img:guide-face-calibration"
       },
       {
         "title": "Keyboard · mouse hand motion",
@@ -70,7 +71,7 @@
       {
         "title": "Streaming and screen sharing",
         "body": "Send a transparent background to OBS, and the game and your avatar on one screen to Discord.",
-        "media": "video:share",
+        "media": "img:guide-main",
         "size": "wide"
       }
     ]
@@ -119,7 +120,7 @@
           "Hotkeys and Quick Actions",
           "Favorites"
         ],
-        "media": "video:menu",
+        "media": "img:guide-avatar-menu",
         "page": "05-avatar-menu"
       },
       {
@@ -176,8 +177,56 @@
         ],
         "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
         "page": "08-scene"
+      },
+      {
+        "title": "DLC room packs",
+        "body": "Buy extra rooms on BOOTH, and one order number adds them to your room list. Each room brings its own lighting and mood.",
+        "points": [
+          "13 rooms, such as a Japanese alley, classrooms and a pool",
+          "Room lamp lights switch · brightness",
+          "Hide the walls that block the camera"
+        ],
+        "media": "video:rooms|common:keyvisual",
+        "page": "08-rooms"
       }
     ]
+  },
+  "broadcast": {
+    "kicker": "Broadcast integration · Beta",
+    "title": "Viewers and friends move your avatar.",
+    "sub": "Throw objects, pour water and change the lights in response to Twitch, CHZZK and SOOP events and to reactions from Discord friends. It is a Pro feature, currently in beta.",
+    "items": [
+      {
+        "title": "Simple setup",
+        "body": "Pick an event and a reaction from lists to make one line, such as a throw for a follow or a splash of water for a donation of 10,000 won or more.",
+        "media": "video:broadcast|img:guide-interactions",
+        "size": "wide",
+        "page": "09-interactions"
+      },
+      {
+        "title": "Throw · Liquid · Falling",
+        "body": "Objects fly in and hit, liquid runs down the body, and a hard hit knocks the avatar down before it gets up again.",
+        "media": "video:reactions|img:guide-interaction-test",
+        "page": "09-reactions"
+      },
+      {
+        "title": "Reactions from Discord friends",
+        "body": "Friends who are not watching the stream can move your avatar too, with buttons and the /react command in a Discord channel.",
+        "media": "img:guide-discord",
+        "page": "09-broadcast"
+      },
+      {
+        "title": "Node editor",
+        "body": "Connect event, condition and action nodes with lines to build reactions more complex than Simple setup allows.",
+        "media": "video:nodes|img:guide-node-editor",
+        "size": "wide",
+        "page": "09-node-editor"
+      }
+    ],
+    "discord": "Add the Avatar Live app to your Discord server or group DM. The app asks only for command permissions, and a connect code links it to your channel.",
+    "discordButton": "Add the Discord app",
+    "discordGuide": "How to connect",
+    "discordAnchor": "connecting-discord"
   },
   "compare": {
     "kicker": "Comparison",
@@ -227,6 +276,7 @@
           "Avatar · tracking · menu · lighting · effects",
           "Spout2 · virtual camera · screen share",
           "My expressions · automatic expressions · shape keys · photos",
+          "DLC room packs (sold separately)",
           "Private Discord sharing with friends",
           "Up to 1080p · watermark shown"
         ],
@@ -240,6 +290,7 @@
         "features": [
           "Everything in Basic",
           "Up to 4K · no watermark",
+          "Broadcast integration · node editor (beta)",
           "Posing · pose library",
           "Objects (text · images · 3D models)",
           "More screen share sources"
@@ -277,7 +328,19 @@
       },
       {
         "q": "What's the difference between Basic and Pro?",
-        "a": "Basic is the edition for personal use (including private Discord sharing with friends), and Pro is for streaming, publishing videos and commercial use. Pro offers 4K output, no watermark, posing, the pose library and objects."
+        "a": "Basic is the edition for personal use (including private Discord sharing with friends), and Pro is for streaming, publishing videos and commercial use. Pro offers 4K output, no watermark, posing, the pose library, objects, broadcast integration and the node editor."
+      },
+      {
+        "q": "Can my avatar react to viewer events?",
+        "a": "Yes. Connect Twitch, CHZZK or SOOP in Pro, and events such as follows, donations and channel points can throw objects, pour liquid, change the lights and more. Broadcast integration is in beta, so if something goes wrong, let us know with the app's error report."
+      },
+      {
+        "q": "Can my Discord friends move my avatar too?",
+        "a": "Yes. Add the Avatar Live app to your Discord server or group DM and link the channel with a connect code, and your friends can send reactions with buttons or the /react command. It works only while your Avatar Live is running."
+      },
+      {
+        "q": "Can I use DLC rooms with Basic?",
+        "a": "Yes. DLC rooms bought on BOOTH work with Basic too. Enter the order number in Settings → License → Enter another code, and they appear in the room list. The built-in rooms and room piece editing are Pro features."
       },
       {
         "q": "Does it support operating systems other than Windows?",

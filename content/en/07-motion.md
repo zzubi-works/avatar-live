@@ -42,7 +42,7 @@ It determines how much and how smoothly my facial expressions and movements are 
 | Automatic Blinking | Blinks at a regular interval even without input. |
 | Eye Gaze Tracking | Reflects the direction of my eyeballs. |
 | Camera view | Make the avatar's pupils face the camera. |
-| Gaze Target | Choose the object to look at, such as a camera or a specific avatar. |
+| Look-at target | Choose the object to look at, such as a camera or a specific avatar. |
 
 Head tracking and facial tracking, as well as camera view, are set separately. Even in a fixed head pose, you can make only the eyes look at the camera.
 

@@ -2,7 +2,8 @@
 
     uv run --no-project --with pillow python make_og.py
 
-The headline comes from content/<lang>/home.json (hero.title, hero.eyebrow); the avatar from shots/og-avatar.png (made with the screenshots; not published).
+The headline comes from content/<lang>/home.json (hero.title, hero.eyebrow); the picture is the key visual,
+shots/common/keyvisual.png (the fox in the night alley, 2000x1125), cropped so the avatar stands right of the headline.
 Fonts are the Windows system fonts for each script.
 """
 import json
@@ -31,24 +32,19 @@ def fit(path, text, size, width):
     return ImageFont.truetype(path, size)
 
 
-def og(lang, avatar, icon):
+def og(lang, visual, icon):
     home = json.load(open(os.path.join(ROOT, "content", lang, "home.json"), encoding="utf-8"))
     bold, regular = FONTS[lang]
-    im = Image.new("RGB", (W, H), BG)
-    # a soft violet glow behind the avatar
-    glow = Image.new("L", (W, H), 0)
-    ImageDraw.Draw(glow).ellipse((620, -120, 1320, 640), fill=120)
-    glow = glow.filter(ImageFilter.GaussianBlur(120))
-    im.paste(Image.new("RGB", (W, H), (110, 92, 230)), (0, 0), glow)
-    # the avatar on the right, fading into the background on its left edge
-    a = avatar.copy()
-    a = a.resize((round(a.width * H / a.height), H), Image.LANCZOS)
-    x0 = W - a.width
-    fade = Image.new("L", a.size, 255)
-    d = ImageDraw.Draw(fade)
-    for x in range(220):
-        d.line((x, 0, x, H), fill=round(255 * (x / 220) ** 1.6))
-    im.paste(a, (x0, 0), fade)
+    # a 1500x787 window of the key visual: the avatar (x 880-1240 of 2000) lands at 700-990 of 1200
+    im = visual.crop((10, 0, 1510, 788)).resize((W, H), Image.LANCZOS)
+    # the alley's left side darkens under the headline
+    shade = Image.new("L", (W, H), 0)
+    d = ImageDraw.Draw(shade)
+    for x in range(W):
+        t = x / W
+        d.line((x, 0, x, H), fill=round(255 * (0.9 if t < 0.3 else max(0.0, 0.9 - (t - 0.3) * 4.5))))
+    im.paste(Image.new("RGB", (W, H), BG), (0, 0), shade)
+    x0 = 640
     draw = ImageDraw.Draw(im)
     # brand
     ic = icon.resize((52, 52), Image.LANCZOS)
@@ -58,7 +54,7 @@ def og(lang, avatar, icon):
     draw.text((140, 92), "AVATAR LIVE", font=ImageFont.truetype(FONTS["en"][0], 26), fill=TEXT, anchor="lm")
     # headline
     t1, t2 = home["hero"]["title"]
-    width = x0 + 60 - 72
+    width = x0 - 72
     f1 = fit(bold, t1, 66, width)
     f2 = fit(bold, t2, 66, width)
     size = min(f1.size, f2.size)
@@ -75,10 +71,10 @@ def og(lang, avatar, icon):
 def main():
     icon = Image.open(os.path.join(BRAND, "icon-256.png")).convert("RGBA")
     icon.resize((64, 64), Image.LANCZOS).save(os.path.join(BRAND, "icon-64.png"), optimize=True)
-    avatar = Image.open(os.path.join(ROOT, "shots", "og-avatar.png")).convert("RGB")
+    visual = Image.open(os.path.join(ROOT, "shots", "common", "keyvisual.png")).convert("RGB")
     for lang in FONTS:
         if os.path.exists(os.path.join(ROOT, "content", lang, "home.json")):
-            og(lang, avatar, icon.convert("RGB"))
+            og(lang, visual, icon.convert("RGB"))
 
 
 if __name__ == "__main__":

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>방송 연동 — AVATAR LIVE</title>
+<meta name="description" content="Twitch·치지직·SOOP 시청자 이벤트와 디스코드 친구의 반응을 받아 아바타가 반응하게 합니다. 방송 연동은 Pro 기능이며 지금은 베타입니다. 실제 방송에서 문제가 생기면 오류 보고로 알려 주세요.">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/ko/09-broadcast.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/09-broadcast.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/09-broadcast.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/09-broadcast.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/09-broadcast.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="방송 연동 — AVATAR LIVE">
+<meta property="og:description" content="Twitch·치지직·SOOP 시청자 이벤트와 디스코드 친구의 반응을 받아 아바타가 반응하게 합니다. 방송 연동은 Pro 기능이며 지금은 베타입니다. 실제 방송에서 문제가 생기면 오류 보고로 알려 주세요.">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/ko/09-broadcast.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-ko.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ko_KR">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
+</head>
+<body class="doc">
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">개요</a><a href="index.html#features">기능</a><a href="index.html#how">사용 방법</a><a href="index.html#editions">에디션</a><a href="01-getting-started.html" aria-current="page">가이드</a><a href="updates.html">업데이트 내역</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="언어"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>한국어</span></summary><div class="lang-menu" role="menu"><a href="../ko/09-broadcast.html" lang="ko" aria-current="true">한국어</a><a href="../en/09-broadcast.html" lang="en">English</a><a href="../ja/09-broadcast.html" lang="ja">日本語</a><a href="../zh/09-broadcast.html" lang="zh-Hans">简体中文</a></div></details>
+      <a class="btn btn-tinted btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">구매하기</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="메뉴" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">개요</a><a href="index.html#features">기능</a><a href="index.html#how">사용 방법</a><a href="index.html#editions">에디션</a><a href="01-getting-started.html" aria-current="page">가이드</a><a href="updates.html">업데이트 내역</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">구매하기</a></div>
+</header>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>가이드 목차</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="가이드 목차"><p class="side-h">가이드</p><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="03-launcher-and-library.html">아바타 라이브러리</a></li><li><a href="04-main-window.html">메인 화면</a></li><li><a href="05-avatar-menu.html">아바타 메뉴</a></li><li><a href="06-devices.html">장치</a></li><li><a href="07-motion.html">동작</a></li><li><a href="08-scene.html">스튜디오</a></li><li><a href="08-rooms.html">DLC 방 팩</a></li><li><a href="08-camera-effects.html">카메라 효과</a></li><li><a href="09-output.html">출력</a></li><li><a href="09-broadcast.html" aria-current="page">방송 연동</a></li><li><a href="09-interactions.html">간편 설정</a></li><li><a href="09-reactions.html">던지기 · 액체 · 쓰러짐</a></li><li><a href="09-node-editor.html">노드 편집기</a></li><li><a href="09-session.html">원격 합방</a></li><li><a href="10-settings.html">설정</a></li><li><a href="11-pro-features.html">포징과 표정</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul><p class="side-h">약관 · 정책</p><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul><p class="side-h">업데이트 내역</p><ul><li><a href="updates.html">업데이트 내역</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="방송-연동">방송 연동<a class="anchor" href="#방송-연동" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>Twitch·치지직·SOOP 시청자 이벤트와 디스코드 친구의 반응을 받아 아바타가 반응하게 합니다. 방송 연동은 Pro 기능이며 지금은 베타입니다. 실제 방송에서 문제가 생기면 <a href="12-troubleshooting.html#방송-연동이-안-될-때">오류 보고</a>로 알려 주세요.</p>
+<p>방송 페이지에는 탭이 두 개 있습니다.</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>탭</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>인터랙션</td>
+<td>이벤트가 오면 무엇을 할지 정합니다. <a href="09-interactions.html">간편 설정</a>, <a href="09-node-editor.html">노드 편집기</a>, <a href="09-reactions.html">쓰러짐·후원 표시·테스트</a>가 있습니다.</td>
+</tr>
+<tr>
+<td>연결</td>
+<td>플랫폼 계정과 디스코드 채널을 연결하고, 웹소켓과 <a href="09-session.html">원격 합방</a> 세션을 엽니다.</td>
+</tr>
+</tbody>
+</table></div>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-broadcast-connect.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-broadcast-connect.webp" width="550" height="578" style="--image-width:550px" alt="방송 › 연결 탭의 플랫폼 목록" loading="lazy" decoding="async"></a><figcaption>방송 › 연결 탭의 플랫폼 목록</figcaption></figure>
+<h2 id="twitch--치지직--soop-연결">Twitch · 치지직 · SOOP 연결<a class="anchor" href="#twitch--치지직--soop-연결" aria-hidden="true" tabindex="-1">#</a></h2>
+<ol>
+<li>방송 → 연결을 엽니다.</li>
+<li>연결할 플랫폼의 스위치를 켭니다.</li>
+<li>브라우저에 열린 플랫폼 로그인 화면에서 내 방송 계정으로 로그인하고 권한을 허용합니다.</li>
+<li>카드에 연결됨이 표시되면 이벤트를 받을 준비가 끝났습니다.</li>
+</ol>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-twitch.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-twitch.webp" width="550" height="227" style="--image-width:550px" alt="Twitch 카드의 귓속말·디버그 로그 설정" loading="lazy" decoding="async"></a><figcaption>Twitch 카드의 귓속말·디버그 로그 설정</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>플랫폼</th>
+<th>받을 수 있는 이벤트</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Twitch</td>
+<td>채널 포인트 사용, 채팅, 팔로우, 구독(선물·구독 메시지 포함), 비트, 레이드, 하이프 트레인, 귓속말</td>
+</tr>
+<tr>
+<td>치지직</td>
+<td>채팅, 후원(채팅 후원·영상 후원), 구독</td>
+</tr>
+<tr>
+<td>SOOP</td>
+<td>채팅, 별풍선, 애드벌룬, 영상풍선, 스티커, 구독, 선물</td>
+</tr>
+</tbody>
+</table></div>
+<p>스위치를 끄면 이벤트를 더 받지 않습니다. 저장된 로그인과 규칙은 지워지지 않습니다. 디버그 로그를 켜면 받은 이벤트가 진단 로그에 자세히 남습니다.</p>
+<blockquote class="callout privacy"><p>Twitch·치지직·SOOP 로그인 과정의 토큰 교환은 개발자 서버(<code>stream-auth.erp.pictures</code>)를 거칩니다. 플랫폼의 비밀 키는 이 서버에만 있고, 받은 로그인 정보는 이 PC에 저장됩니다.</p>
+</blockquote>
+<h2 id="디스코드-연결">디스코드 연결<a class="anchor" href="#디스코드-연결" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>방송을 보지 않는 친구도 디스코드 채널에서 버튼이나 <code>/반응</code> 명령으로 아바타를 움직일 수 있습니다. Avatar Live 앱이 켜져 있을 때만 동작합니다.</p>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-discord.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-discord.webp" width="550" height="861" style="--image-width:550px" alt="디스코드 카드의 반응 목록" loading="lazy" decoding="async"></a><figcaption>디스코드 카드의 반응 목록</figcaption></figure>
+<h3 id="1-디스코드-앱-추가하기">1. 디스코드 앱 추가하기<a class="anchor" href="#1-디스코드-앱-추가하기" aria-hidden="true" tabindex="-1">#</a></h3>
+<p><a href="https://discord.com/oauth2/authorize?client_id=1563157504995754014">Avatar Live 디스코드 앱 추가하기</a>를 열고 추가할 곳을 고릅니다. 앱은 명령(<code>applications.commands</code>) 권한만 요청합니다. 메시지를 읽거나 서버를 관리하지 않습니다.</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>추가할 곳</th>
+<th>쓰는 경우</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>서버에 추가</td>
+<td>내 디스코드 서버의 채널에서 씁니다. 서버 관리 권한이 필요합니다. 친구들은 아무것도 설치하지 않습니다.</td>
+</tr>
+<tr>
+<td>내 계정에 추가</td>
+<td>서버가 없거나 그룹 DM에서 씁니다. 그룹 DM에서 명령을 직접 치려면 그 친구도 앱을 자기 계정에 추가해야 합니다. 설치하지 않은 친구는 내가 올린 버튼을 누릅니다.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="2-채널-연결하기">2. 채널 연결하기<a class="anchor" href="#2-채널-연결하기" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>앱에서 방송 → 연결 → 디스코드 스위치를 켭니다.</li>
+<li>연결 코드 만들기를 누릅니다. 8자리 코드가 10분 동안 표시됩니다.</li>
+<li>연결할 디스코드 채널에서 <code>/연결</code> 명령을 고르고 코드 칸에 그 코드를 넣어 보냅니다.</li>
+<li>앱에 "채널을 연결할까요?" 창이 뜨면 서버와 채널 이름을 확인하고 연결을 누릅니다.</li>
+<li>연결된 채널 목록에 그 채널이 나타납니다.</li>
+</ol>
+<p>코드는 한 번만 쓸 수 있습니다. 다른 사람이 이미 연결한 채널은 연결되지 않습니다.</p>
+<h3 id="3-반응-버튼-올리기">3. 반응 버튼 올리기<a class="anchor" href="#3-반응-버튼-올리기" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>연결한 채널에서 <code>/패널</code>을 보냅니다. 반응 목록의 반응이 버튼으로 올라갑니다.</li>
+<li>친구가 버튼을 누르거나 <code>/반응</code>으로 반응을 고르면 그 반응을 처리하는 규칙이 실행됩니다.</li>
+<li>디스코드 메시지에 누가 무엇을 했는지 표시됩니다.</li>
+</ol>
+<p>반응 목록에서 버튼마다 이름·이모지·값·처리 규칙을 정합니다. 값은 규칙의 최소·최대 개수 조건이 보는 수입니다. 처리 규칙을 누르면 규칙이 차례로 바뀌고, 고른 규칙의 디스코드 반응 트리거가 켜집니다.</p>
+<h3 id="디스코드-명령">디스코드 명령<a class="anchor" href="#디스코드-명령" aria-hidden="true" tabindex="-1">#</a></h3>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>명령</th>
+<th>누가</th>
+<th>하는 일</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/연결 코드:</code></td>
+<td>나</td>
+<td>이 채널을 내 Avatar Live에 연결합니다.</td>
+</tr>
+<tr>
+<td><code>/연결해제</code></td>
+<td>나·서버 관리자</td>
+<td>이 채널의 연결을 풉니다.</td>
+</tr>
+<tr>
+<td><code>/패널</code></td>
+<td>나·서버 관리자</td>
+<td>반응 버튼을 올립니다. 그룹 DM에서도 됩니다.</td>
+</tr>
+<tr>
+<td><code>/반응</code></td>
+<td>친구</td>
+<td>반응을 하나 고릅니다. 고르지 않으면 첫 반응입니다.</td>
+</tr>
+<tr>
+<td><code>/포인트</code> <code>/출석</code> <code>/선물</code> <code>/순위</code></td>
+<td>친구</td>
+<td>포인트 게임의 포인트를 확인하고 모으고 나눕니다.</td>
+</tr>
+<tr>
+<td><code>/룰렛</code> <code>/슬롯</code> <code>/하이로우</code> <code>/블랙잭</code> <code>/대결</code> <code>/예측</code> <code>/복권</code> <code>/경주</code> <code>/퀴즈</code> <code>/보스전</code></td>
+<td>친구</td>
+<td>포인트 게임의 미니게임입니다.</td>
+</tr>
+</tbody>
+</table></div>
+<p>디스코드 언어가 영어면 명령도 <code>/link</code>, <code>/unlink</code>, <code>/panel</code>, <code>/react</code>처럼 영어 이름으로 보입니다.</p>
+<p>포인트 게임의 규칙과 포인트 값은 디스코드 카드의 포인트 게임에서 정합니다. 포인트는 이 PC에 채널별로 저장됩니다.</p>
+<blockquote class="callout privacy"><p>디스코드와 앱 사이는 개발자 서버(<code>discord-check.erp.pictures</code>)가 전달합니다. 친구의 디스코드 이름과 프로필 그림이 내 앱에 전달되어 표시와 스티커에 쓰입니다. 앱은 디스코드에 스스로 글을 올리지 않고 친구의 명령에만 답합니다.</p>
+</blockquote>
+<h2 id="웹소켓">웹소켓<a class="anchor" href="#웹소켓" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/ko/guide-websocket.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-websocket.webp" width="550" height="172" style="--image-width:550px" alt="웹소켓 카드의 포트 설정" loading="lazy" decoding="async"></a><figcaption>웹소켓 카드의 포트 설정</figcaption></figure>
+<p>다른 프로그램이 이 PC 안에서 Avatar Live와 이벤트를 주고받게 합니다. 기본은 꺼짐이고 포트는 19190입니다. 같은 PC의 프로그램만 <code>ws://127.0.0.1:포트</code>로 접속할 수 있습니다. 주고받는 내용은 <a href="09-node-editor.html">노드 편집기</a>의 웹소켓 노드로 다룹니다.</p>
+<h2 id="basic과-pro">Basic과 Pro<a class="anchor" href="#basic과-pro" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="table-wrap edition-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>기능</th>
+<th>Basic</th>
+<th>Pro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>방송 페이지 보기</td>
+<td>가능</td>
+<td>가능</td>
+</tr>
+<tr>
+<td>플랫폼·디스코드·웹소켓 연결</td>
+<td>잠김</td>
+<td>가능</td>
+</tr>
+<tr>
+<td>간편 설정·후원 표시·테스트</td>
+<td>잠김</td>
+<td>가능</td>
+</tr>
+<tr>
+<td>노드 편집기</td>
+<td>보기·이동·확대만</td>
+<td>편집·실행</td>
+</tr>
+</tbody>
+</table></div>
+<p>Basic에서도 저장된 로그인·규칙·그래프는 지워지지 않고 잠긴 채 남습니다.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-output.html"><span>이전</span>출력</a><a class="next" href="09-interactions.html"><span>다음</span>간편 설정</a></nav><p class="updated">최종 업데이트: 2026-10-24</p></main>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#twitch--치지직--soop-연결">Twitch · 치지직 · SOOP 연결</a></li><li><a href="#디스코드-연결">디스코드 연결</a></li><li><a href="#웹소켓">웹소켓</a></li><li><a href="#basic과-pro">Basic과 Pro</a></li></ul></nav>
+</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>제품</h2><ul><li><a href="index.html#features">기능</a></li><li><a href="index.html#how">사용 방법</a></li><li><a href="index.html#editions">에디션</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">업데이트 내역</a></li></ul></div><div class="fcol"><h2>가이드</h2><ul><li><a href="01-getting-started.html">시작하기</a></li><li><a href="02-avatar-exporter.html">아바타 내보내기</a></li><li><a href="12-troubleshooting.html">문제 해결</a></li><li><a href="13-license.html">에디션과 라이선스</a></li></ul></div><div class="fcol"><h2>약관 · 정책</h2><ul><li><a href="legal-terms.html">Avatar Live 이용약관</a></li><li><a href="legal-privacy.html">개인정보처리방침</a></li><li><a href="legal-refund.html">환불 정책</a></li><li><a href="legal-seller.html">판매자 정보</a></li></ul></div><div class="fcol"><h2>링크</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+  </div>
+  <div class="wrap fine"><p>AVATAR LIVE는 VRChat Inc.의 공식 제품이 아니며, VRChat Inc.와 제휴 관계가 없습니다. VRChat은 VRChat Inc.의 상표입니다.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
+</footer>
+</body>
+</html>

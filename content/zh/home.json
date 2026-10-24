@@ -24,7 +24,8 @@
     "primary": "开始使用 AVATAR LIVE",
     "secondary": "了解功能",
     "meta": "Windows 10 / 11 · Basic 1,990 日元起",
-    "caption": "AVATAR LIVE 实际录制画面"
+    "caption": "AVATAR LIVE 实际录制画面",
+    "visual": "站在夜晚小巷 DLC 房间里的狐狸角色"
   },
   "works": {
     "label": "可直接用于",
@@ -60,7 +61,7 @@
       {
         "title": "从面部到全身",
         "body": "只需一个摄像头，即可追踪表情、视线、手指关节乃至全身。iPhone 和 VMC（全身追踪器 · 手套）也能按部位混合使用。",
-        "media": "video:face"
+        "media": "img:guide-face-calibration"
       },
       {
         "title": "键盘 · 鼠标手部动作",
@@ -70,7 +71,7 @@
       {
         "title": "直播与屏幕共享",
         "body": "向 OBS 发送透明背景画面，向 Discord 发送游戏与角色合一的画面。",
-        "media": "video:share",
+        "media": "img:guide-main",
         "size": "wide"
       }
     ]
@@ -119,7 +120,7 @@
           "快捷键与快捷操作",
           "收藏"
         ],
-        "media": "video:menu",
+        "media": "img:guide-avatar-menu",
         "page": "05-avatar-menu"
       },
       {
@@ -176,8 +177,56 @@
         ],
         "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
         "page": "08-scene"
+      },
+      {
+        "title": "DLC 房间包",
+        "body": "在 BOOTH 购买额外房间后，只需一个订单号，房间列表中就会增加房间。房间的灯光和氛围也会一起带来。",
+        "points": [
+          "日本小巷 · 教室 · 游泳池等 13 个房间",
+          "房间灯光开关 · 亮度",
+          "隐藏挡住相机的墙"
+        ],
+        "media": "video:rooms|common:keyvisual",
+        "page": "08-rooms"
       }
     ]
+  },
+  "broadcast": {
+    "kicker": "直播联动 · 测试版 (Beta)",
+    "title": "观众和朋友让你的角色动起来。",
+    "sub": "配合 Twitch·CHZZK·SOOP 的事件和 Discord 朋友的反应，投掷物体、泼水、切换灯光。这是 Pro 功能，目前为测试版 (Beta)。",
+    "items": [
+      {
+        "title": "简易设置",
+        "body": "像“有人关注就投掷”“1 万韩元以上的打赏就泼水”这样，从列表中选择事件和反应，用一行做好。",
+        "media": "video:broadcast|img:guide-interactions",
+        "size": "wide",
+        "page": "09-interactions"
+      },
+      {
+        "title": "投掷 · 液体 · 倒下",
+        "body": "物体飞来击中角色，液体顺着身体流下，被重重击中时会倒下再起身。",
+        "media": "video:reactions|img:guide-interaction-test",
+        "page": "09-reactions"
+      },
+      {
+        "title": "Discord 朋友的反应",
+        "body": "不看直播的朋友，也可以用 Discord 频道里的按钮和 /反应 命令让角色动起来。",
+        "media": "img:guide-discord",
+        "page": "09-broadcast"
+      },
+      {
+        "title": "节点编辑器",
+        "body": "用连线连接事件·条件·动作节点，亲手搭建比简易设置更复杂的反应。",
+        "media": "video:nodes|img:guide-node-editor",
+        "size": "wide",
+        "page": "09-node-editor"
+      }
+    ],
+    "discord": "把 Avatar Live 应用添加到 Discord 服务器或群组私信。应用只请求命令权限，并通过连接码与你的频道相连。",
+    "discordButton": "添加 Discord 应用",
+    "discordGuide": "查看连接方法",
+    "discordAnchor": "连接-discord"
   },
   "compare": {
     "kicker": "对比",
@@ -228,6 +277,7 @@
           "Spout2 · 虚拟摄像头 · 屏幕共享",
           "我的表情 · 自动表情 · 形态键 · 照片",
           "与朋友之间的非公开 Discord 共享",
+          "DLC 房间包（另行购买）",
           "最高 1080p · 显示水印"
         ],
         "cta": "购买 Basic"
@@ -240,6 +290,7 @@
         "features": [
           "Basic 的全部功能",
           "最高 4K · 无水印",
+          "直播联动 · 节点编辑器 测试版 (Beta)",
           "摆姿势 · 姿势库",
           "物体（文字 · 图片 · 3D 模型）",
           "屏幕共享更多来源"
@@ -277,7 +328,19 @@
       },
       {
         "q": "Basic 和 Pro 有什么区别？",
-        "a": "Basic 是用于个人使用（包括与朋友之间的非公开 Discord 共享）的版本，Pro 是用于直播 · 公开发布视频 · 商业用途的版本。Pro 支持 4K 输出、无水印、摆姿势、姿势库和物体。"
+        "a": "Basic 是用于个人使用（包括与朋友之间的非公开 Discord 共享）的版本，Pro 是用于直播 · 公开发布视频 · 商业用途的版本。Pro 支持 4K 输出、无水印、摆姿势、姿势库、物体，以及直播联动和节点编辑器。"
+      },
+      {
+        "q": "可以让角色对观众事件做出反应吗？",
+        "a": "可以。在 Pro 中连接 Twitch · CHZZK · SOOP 后，会配合关注 · 打赏 · 频道积分等事件，执行投掷物体、泼洒液体、切换灯光等动作。直播联动目前为测试版 (Beta)，遇到问题时请通过应用内的错误报告告诉我们。"
+      },
+      {
+        "q": "Discord 的朋友也能让角色动起来吗？",
+        "a": "可以。把 Avatar Live 应用添加到 Discord 服务器或群组私信，并用连接码连接频道后，朋友就可以用按钮或 /反应 命令发送反应。仅在你的 Avatar Live 运行时有效。"
+      },
+      {
+        "q": "Basic 也能使用 DLC 房间吗？",
+        "a": "可以。在 BOOTH 购买的 DLC 房间在 Basic 中也能使用。在设置 → 许可证 → 输入其他代码中输入订单号后，房间就会出现在房间列表中。内置房间和房间部件编辑是 Pro 功能。"
       },
       {
         "q": "支持 Windows 以外的操作系统吗？",

@@ -19,6 +19,10 @@ The usage rights of Avatar Live, external programs, and avatars/props are all di
 | Multiple avatars/cameras | — | Supported |
 | Remote session/MP4 recording | — | Supported |
 | Additional screen effects | — | Supported |
+| Broadcast integration / Simple setup (beta) | — | Supported |
+| Node editor (beta) | View only | Supported |
+| Built-in rooms / room piece editing | — | Supported |
+| DLC room packs | Sold separately | Sold separately |
 
 The price and sales conditions follow what is displayed on the BOOTH product page.
 
@@ -29,8 +33,9 @@ OBS and camera output include Spout2, NDI, and virtual camera. Basic screen effe
 - One license is used by one person on one PC.
 - Internet connection is required for activation and license verification.
 - Direct transfer to another PC is possible once. Further transfers are reviewed upon inquiry.
-- Basic → Pro: After purchasing the upgrade, go to Settings → License → Enter to upgrade to Pro.
-- Purchase during trial: Enter the license in the purchased code.
+- Basic → Pro: After purchasing the upgrade, enter it in Settings → License → Enter another code.
+- Purchase during trial: Enter the license in Settings → License → Enter another code.
+- DLC room packs: Enter the BOOTH order number in the same Enter another code. Your license stays as it is, and that PC can now download the room pack. Direct transfer to another PC is possible once.
 
 Redistribution, rental, sharing, modification, or circumvention of protection measures of the program or license code is not allowed. For more details, please refer to the [Terms of Use](legal-terms.md).
 

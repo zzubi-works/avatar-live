@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>节点编辑器 — AVATAR LIVE</title>
+<meta name="description" content="用连线连接节点，直接搭建“某个事件到来时，在某个条件下，做什么”。在简易设置不够用时使用。编辑和运行需要 Pro，Basic 中仅可查看、平移和缩放。它是直播联动功能，目前为测试版 (Beta)。">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/09-node-editor.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/09-node-editor.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/09-node-editor.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/09-node-editor.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/09-node-editor.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="节点编辑器 — AVATAR LIVE">
+<meta property="og:description" content="用连线连接节点，直接搭建“某个事件到来时，在某个条件下，做什么”。在简易设置不够用时使用。编辑和运行需要 Pro，Basic 中仅可查看、平移和缩放。它是直播联动功能，目前为测试版 (Beta)。">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/09-node-editor.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
+</head>
+<body class="doc">
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">概览</a><a href="index.html#features">功能</a><a href="index.html#how">使用方法</a><a href="index.html#editions">版本</a><a href="01-getting-started.html" aria-current="page">指南</a><a href="updates.html">更新记录</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="语言"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>简体中文</span></summary><div class="lang-menu" role="menu"><a href="../ko/09-node-editor.html" lang="ko">한국어</a><a href="../en/09-node-editor.html" lang="en">English</a><a href="../ja/09-node-editor.html" lang="ja">日本語</a><a href="../zh/09-node-editor.html" lang="zh-Hans" aria-current="true">简体中文</a></div></details>
+      <a class="btn btn-tinted btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">购买</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="菜单" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">概览</a><a href="index.html#features">功能</a><a href="index.html#how">使用方法</a><a href="index.html#editions">版本</a><a href="01-getting-started.html" aria-current="page">指南</a><a href="updates.html">更新记录</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">购买</a></div>
+</header>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">角色库</a></li><li><a href="04-main-window.html">主屏幕</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室</a></li><li><a href="08-rooms.html">DLC 房间包</a></li><li><a href="08-camera-effects.html">摄像机效果</a></li><li><a href="09-output.html">输出</a></li><li><a href="09-broadcast.html">直播联动</a></li><li><a href="09-interactions.html">简易设置</a></li><li><a href="09-reactions.html">投掷 · 液体 · 倒下</a></li><li><a href="09-node-editor.html" aria-current="page">节点编辑器</a></li><li><a href="09-session.html">远程联播</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">姿势与表情</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="节点编辑器">节点编辑器<a class="anchor" href="#节点编辑器" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>用连线连接节点，直接搭建“某个事件到来时，在某个条件下，做什么”。在<a href="09-interactions.html">简易设置</a>不够用时使用。编辑和运行需要 Pro，Basic 中仅可查看、平移和缩放。它是直播联动功能，目前为测试版 (Beta)。</p>
+<h2 id="与简易设置有什么不同">与简易设置有什么不同？<a class="anchor" href="#与简易设置有什么不同" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th></th>
+<th>简易设置</th>
+<th>节点编辑器</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>制作方法</td>
+<td>在列表中选择触发和动作。</td>
+<td>拖放节点并用连线连接。</td>
+</tr>
+<tr>
+<td>能做的事</td>
+<td>投掷·液体·贴纸·灯光·头像动作等固定反应</td>
+<td>运算·变量·分支·循环，相机·灯光·表情·BlendShape·骨骼·键盘·鼠标·WebSocket 等约 400 种基本节点</td>
+</tr>
+<tr>
+<td>适合的情况</td>
+<td>一个事件对应一个反应</td>
+<td>需要组合多个条件，或按顺序串联多个反应时</td>
+</tr>
+</tbody>
+</table></div>
+<p>简易设置的条目在内部也以图运行。展开条目并点击在节点编辑器中打开…，即可查看该条目生成的图。</p>
+<h2 id="打开编辑器">打开编辑器<a class="anchor" href="#打开编辑器" aria-hidden="true" tabindex="-1">#</a></h2>
+<ol>
+<li>打开直播 → 互动。</li>
+<li>点击节点编辑器卡片的打开节点编辑器…。</li>
+<li>编辑器窗口会在应用内打开。拖动标题可移动，拖动边缘可调整大小。用右上角的按钮放大查看或关闭。</li>
+</ol>
+<p>关闭后图仍然保留并继续运行。</p>
+<figure><a class="zoomable" href="../assets/shots/zh/guide-node-editor-lists.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-node-editor-lists.webp" srcset="../assets/shots/zh/guide-node-editor-lists-960.webp 960w, ../assets/shots/zh/guide-node-editor-lists.webp 1860w" sizes="(max-width: 900px) 100vw, 860px" width="1860" height="1020" style="--image-width:1860px" alt="打开图列表和节点列表的节点编辑器" loading="lazy" decoding="async"></a><figcaption>打开图列表和节点列表的节点编辑器</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>位置</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>左上角书本图标</td>
+<td>显示或隐藏图列表。</td>
+</tr>
+<tr>
+<td>选择图</td>
+<td>选择要编辑的图。用眼睛图标开启或关闭图。</td>
+</tr>
+<tr>
+<td>右上角网格图标</td>
+<td>显示或隐藏节点列表。</td>
+</tr>
+<tr>
+<td>图列表下方的按钮</td>
+<td>添加·删除·复制·重命名图、新建分组，以及 ⋯ 菜单（自动排列、导入·导出）。</td>
+</tr>
+<tr>
+<td>节点列表</td>
+<td>按分类排列的节点。用 Ctrl+K 搜索，用星标收藏。</td>
+</tr>
+<tr>
+<td>小地图</td>
+<td>在右下角查看整个图，点击即可跳到该位置。</td>
+</tr>
+<tr>
+<td>撤销·重做</td>
+<td>Ctrl+Z、Ctrl+Y</td>
+</tr>
+</tbody>
+</table></div>
+<p>新图创建时处于关闭状态。完成后需用眼睛图标开启才会运行。</p>
+<h2 id="节点与连线">节点与连线<a class="anchor" href="#节点与连线" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>从节点列表把节点拖到画布上即可添加。</li>
+<li>把节点右侧的点（输出）拖到另一个节点左侧的点（输入）即可连接。</li>
+<li>流程连线（绿线）表示运行顺序，从 EXIT 连到 ENTER。</li>
+<li>数值连线（灰线）传递金额·名称等数值。</li>
+<li>流程和数值不能互相连接。放到无法连接的位置时会显示原因。</li>
+<li>右键点击节点，会出现删除·复制副本·断开所有连线菜单。</li>
+<li>没有连线的输入，可以直接在节点内的输入框中填写数值。</li>
+</ul>
+<h2 id="示例1-万韩元以上的打赏时泼水">示例：1 万韩元以上的打赏时泼水<a class="anchor" href="#示例1-万韩元以上的打赏时泼水" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/zh/guide-node-editor.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-node-editor.webp" srcset="../assets/shots/zh/guide-node-editor-960.webp 960w, ../assets/shots/zh/guide-node-editor.webp 1860w" sizes="(max-width: 900px) 100vw, 860px" width="1860" height="1020" style="--image-width:1860px" alt="CHZZK 打赏 → 整数比较 → 条件分支 → 喷洒液体的图" loading="lazy" decoding="async"></a><figcaption>CHZZK 打赏 → 整数比较 → 条件分支 → 喷洒液体的图</figcaption></figure>
+<ol>
+<li>用图列表的 + 新建一个图。</li>
+<li>从节点列表的 CHZZK 分类中拖出 CHZZK 打赏。收到打赏时，流程从 EXIT 输出，并输出金额（韩元）。</li>
+<li>从运算与文本分类中放置 整数：A ≥ B，把打赏节点的金额（韩元）连到 A。在 B 中填入 10000。</li>
+<li>从流程控制分类中放置条件分支。把打赏节点的 EXIT 连到 ENTER，把比较节点的结果连到条件。</li>
+<li>从互动分类中放置喷洒液体，把条件分支的为真时连到 ENTER。</li>
+<li>用眼睛图标开启图。</li>
+<li>在打赏节点的测试金额中填入 15000，点击测试，看看是否泼水。改为 5000 再测试，应该不会泼水。</li>
+</ol>
+<p>所有事件节点都有测试栏和测试按钮，无需直播即可测试。图关闭时，测试也不会运行。</p>
+<h2 id="在节点编辑器中修改简易设置条目后">在节点编辑器中修改简易设置条目后<a class="anchor" href="#在节点编辑器中修改简易设置条目后" aria-hidden="true" tabindex="-1">#</a></h2>
+<ul>
+<li>该条目会显示为“已在节点编辑器中修改”，不再重新生成图。之后由图决定动作。</li>
+<li>点击条目菜单中的恢复为简易设置，会按条目设置重新生成图。在节点编辑器中修改的内容会丢失。</li>
+<li>自动生成的图中节点重叠时，请点击 ⋯ 菜单中的自动排列。</li>
+</ul>
+<h2 id="分享图">分享图<a class="anchor" href="#分享图" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>用 ⋯ 菜单的导出到剪贴板把图复制为文本，用从剪贴板导入·从文件导入…载入。导入的图处于关闭状态。别人给的图，请在确认内容后再开启。</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-reactions.html"><span>上一页</span>投掷 · 液体 · 倒下</a><a class="next" href="09-session.html"><span>下一页</span>远程联播</a></nav><p class="updated">最后更新: 2026-10-24</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#与简易设置有什么不同">与简易设置有什么不同？</a></li><li><a href="#打开编辑器">打开编辑器</a></li><li><a href="#节点与连线">节点与连线</a></li><li><a href="#示例1-万韩元以上的打赏时泼水">示例：1 万韩元以上的打赏时泼水</a></li><li><a href="#在节点编辑器中修改简易设置条目后">在节点编辑器中修改简易设置条目后</a></li><li><a href="#分享图">分享图</a></li></ul></nav>
+</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>产品</h2><ul><li><a href="index.html#features">功能</a></li><li><a href="index.html#how">使用方法</a></li><li><a href="index.html#editions">版本</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新记录</a></li></ul></div><div class="fcol"><h2>指南</h2><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul></div><div class="fcol"><h2>条款与政策</h2><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></div><div class="fcol"><h2>链接</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+  </div>
+  <div class="wrap fine"><p>AVATAR LIVE 不是 VRChat Inc. 的官方产品，与 VRChat Inc. 无关联。VRChat 是 VRChat Inc. 的商标。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
+</footer>
+</body>
+</html>

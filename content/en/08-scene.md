@@ -125,7 +125,7 @@ These settings determine the camera positioning. To keep the face on screen, als
 
 ## Background
 
-![Types of Backgrounds and Shooting Screen Settings](img/guide-background.png)
+![Background type settings](img/guide-background.png)
 
 | Select | Visible Result |
 |---|---|
@@ -137,7 +137,7 @@ These settings determine the camera positioning. To keep the face on screen, als
 
 Zooming in or out of the image changes the size of the picture, while moving it left/right or up/down changes its position. Turning on Fill crops and fills the edges while maintaining the ratio.
 
-The shooting screen display turns on screen decorations that look like a phone or camcorder. Ratio refers to the shape of the screen, Style to the decoration style, and Photo/Record is the button to actually start shooting.
+The camera screen decorations that look like a phone or camcorder have moved to the Studio → Photo & Recording tab. See [Photos and Recording](09-output.md#photos-and-recording).
 
 ## Lighting
 
@@ -170,7 +170,9 @@ Choose the overall mood with a preset, and press individual lights for detailed 
 
 ![Room Preset and Layout Settings](img/guide-room.png)
 
-Choose a room preset to place the background space. Adjust the position, rotation, and scale to fit the stage and avatar.
+Choose a room preset to place the background space. Adjust the position, rotation, and scale to fit the stage and avatar. For extra rooms bought on BOOTH, see [DLC room packs](08-rooms.md).
+
+The low-poly interior pack no longer offers the whole building as a choice; its 28 separate rooms can be used as they are. An older scene saved with the whole building chosen opens without a room.
 
 ![Objects and Props Library](img/guide-props.png)
 

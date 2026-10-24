@@ -2,7 +2,7 @@
 
 Bring avatars moving on different PCs together into a single studio scene. **Every participant needs Pro and the same Avatar Live version supporting remote sessions.**
 
-Open **Output → Broadcast → Session**. One person hosts a room; everyone else joins using the host's address.
+Open the session card at the bottom of **Broadcast → Connections**. One person hosts a room; everyone else joins using the host's address.
 
 ## Host: open a room
 
@@ -28,7 +28,7 @@ If others cannot join, see [Troubleshooting connections](#troubleshooting-connec
 1. Expand **Join**.
 2. Enter the **address:port** given by the host.
 3. Enter your name and the password.
-4. Enable the **Connect** switch.
+4. Enable the **Connect** switch. The first time you enter, read the entry notice that appears and agree to it once.
 5. Confirm that participant names appear in the list.
 
 Turn off **Connect** to leave.
@@ -39,8 +39,8 @@ Turn off **Connect** to leave.
 
 | Setting | What happens when you change it |
 |---|---|
-| Show other people's avatars | Displays the other participants in your scene. |
-| Send my avatar data | Transfers consented avatar data to session participants; **off by default**. |
+| Share data with the session | One switch to exchange avatar data with session participants; **off by default**. |
+| Individual settings | Expand to set **Show the others' avatars** and **Send my avatar** separately. |
 | Substitute avatar | Selects a local model to show if the original cannot be used. |
 | Layout sync | Applies the host's placements plus individual position adjustments. |
 | Lock placements | The host restricts participant changes to position, rotation and scale. |

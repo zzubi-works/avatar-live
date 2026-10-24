@@ -56,6 +56,7 @@ Press F1 to hide the menu and view only the avatar. Press again to bring the men
 | Use as camera on Discord or Zoom | [Virtual Camera](09-output.md#virtual-camera) |
 | Share games and avatars together | [Screen Sharing](09-output.md#screen-share) |
 | Broadcast together with a friend's avatar | [Remote Collaboration](09-session.md) |
+| Make the avatar react to viewer events | [Broadcast integration](09-broadcast.md) |
 
 Before starting a broadcast, check the actual video on OBS or the side receiving the shared screen. The layout of your work screen and the broadcast camera may differ.
 

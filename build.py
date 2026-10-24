@@ -25,7 +25,8 @@ SHOTS = os.path.join(ROOT, "shots")
 BASE = "https://zzubi-works.github.io/avatar-live"
 BOOTH = "https://curiousbobby.booth.pm/items/8953441"
 X_URL = "https://x.com/User_Not_Online"
-UPDATED = "2026-10-15"
+DISCORD_INVITE = "https://discord.com/oauth2/authorize?client_id=1563157504995754014"
+UPDATED = "2026-10-24"
 UPDATES_UPDATED = "2026-10-22"  # Release notes updated independently from the unchanged guides.
 
 LANGS = {
@@ -35,7 +36,8 @@ LANGS = {
     "zh": {"name": "简体中文", "html": "zh-Hans", "shots": "zh-Hans", "locale": "zh_CN", "preconnect": ["https://fonts.googleapis.com", "https://fonts.gstatic.com"], "font": "https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap"},
 }
 GUIDE = ["01-getting-started", "02-avatar-exporter", "03-launcher-and-library", "04-main-window", "05-avatar-menu",
-         "06-devices", "07-motion", "08-scene", "08-camera-effects", "09-output", "09-session", "10-settings", "11-pro-features", "12-troubleshooting",
+         "06-devices", "07-motion", "08-scene", "08-rooms", "08-camera-effects", "09-output", "09-broadcast", "09-interactions",
+         "09-reactions", "09-node-editor", "09-session", "10-settings", "11-pro-features", "12-troubleshooting",
          "13-license"]
 UPDATES = ["updates"]
 UPDATE_LABEL = {"ko": "업데이트 내역", "en": "Updates", "ja": "更新履歴", "zh": "更新记录"}
@@ -47,27 +49,25 @@ CHROME = {
            "docsmenu": "가이드 목차", "home": "홈", "skip": "본문으로 건너뛰기", "booth": "BOOTH", "x": "X (Twitter)",
            "rights": "© 2026 Curious Bobby Co. All rights reserved.",
            "disclaimer": "AVATAR LIVE는 VRChat Inc.의 공식 제품이 아니며, VRChat Inc.와 제휴 관계가 없습니다. VRChat은 VRChat Inc.의 상표입니다.",
-           "pick": "언어를 선택하세요"},
+           "pick": "언어를 선택하세요", "pause": "일시정지", "play": "재생"},
     "en": {"guide": "Guide", "legal": "Legal", "toc": "On this page", "prev": "Previous", "next": "Next", "updated": "Last updated",
            "docsmenu": "Guide contents", "home": "Home", "skip": "Skip to content", "booth": "BOOTH", "x": "X (Twitter)",
            "rights": "© 2026 Curious Bobby Co. All rights reserved.",
            "disclaimer": "AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.",
-           "pick": "Choose a language"},
+           "pick": "Choose a language", "pause": "Pause", "play": "Play"},
     "ja": {"guide": "ガイド", "legal": "規約・ポリシー", "toc": "このページ", "prev": "前へ", "next": "次へ", "updated": "最終更新",
            "docsmenu": "ガイド目次", "home": "ホーム", "skip": "本文へスキップ", "booth": "BOOTH", "x": "X (Twitter)",
            "rights": "© 2026 Curious Bobby Co. All rights reserved.",
            "disclaimer": "AVATAR LIVE は VRChat Inc. の公式製品ではなく、VRChat Inc. とは提携していません。VRChat は VRChat Inc. の商標です。",
-           "pick": "言語を選択"},
+           "pick": "言語を選択", "pause": "一時停止", "play": "再生"},
     "zh": {"guide": "指南", "legal": "条款与政策", "toc": "本页内容", "prev": "上一页", "next": "下一页", "updated": "最后更新",
            "docsmenu": "指南目录", "home": "首页", "skip": "跳到正文", "booth": "BOOTH", "x": "X (Twitter)",
            "rights": "© 2026 Curious Bobby Co. All rights reserved.",
            "disclaimer": "AVATAR LIVE 不是 VRChat Inc. 的官方产品，与 VRChat Inc. 无关联。VRChat 是 VRChat Inc. 的商标。",
-           "pick": "选择语言"},
+           "pick": "选择语言", "pause": "暂停", "play": "播放"},
 }
 
 ICON = {
-    "sun": '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>',
-    "moon": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a7 7 0 1 0 10.5 10.5z"/></svg>',
     "globe": '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>',
     "menu": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>',
     "close": '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>',
@@ -138,16 +138,25 @@ def poster_size(name):
         return im.size
 
 
+def video_labels(lang):
+    # site.js puts a pause button on every clip that plays by itself; these are its labels.
+    return ' data-pause="%s" data-play="%s"' % (esc(CHROME[lang]["pause"]), esc(CHROME[lang]["play"]))
+
+
 def media(spec, lang, alt="", eager=False, sizes="(max-width: 900px) 100vw, 640px"):
-    kind, _, value = spec.partition(":")
+    # "video:<name>|img:<shot>": the clip once assets/video/<name>.mp4 is there, the screenshot until then.
+    first, _, fallback = spec.partition("|")
+    if fallback and first.startswith("video:") and not os.path.isfile(os.path.join(ROOT, "assets", "video", first[6:] + ".mp4")):
+        first = fallback
+    kind, _, value = first.partition(":")
     if kind == "img":
         return img_tag(lang, value, alt, eager=eager, sizes=sizes)
     if kind == "common":
         return img_tag("common", value, alt, eager=eager, sizes=sizes)
     if kind == "video":
         w, h = poster_size(value)
-        return ('<video class="lazyvideo" muted loop playsinline preload="none" controls poster="../assets/video/%s.jpg" width="%d" height="%d" aria-label="%s">'
-                '<source src="../assets/video/%s.mp4" type="video/mp4"></video>') % (value, w, h, esc(alt), value)
+        return ('<video class="lazyvideo" muted loop playsinline preload="none" controls poster="../assets/video/%s.jpg" width="%d" height="%d" aria-label="%s"%s>'
+                '<source src="../assets/video/%s.mp4" type="video/mp4"></video>') % (value, w, h, esc(alt), video_labels(lang), value)
     if kind == "gallery":
         cells = "".join('<div class="cell">%s</div>' % img_tag("common", n, alt, sizes="(max-width: 900px) 50vw, 320px") for n in value.split(","))
         return '<div class="mosaic">%s</div>' % cells
@@ -250,12 +259,12 @@ def head(lang, title, desc, page, og, extra=""):
 <meta property="og:image:height" content="630">
 <meta property="og:locale" content="{locale}">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#0b0b0f">
+<meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)">
 <link rel="icon" href="../assets/brand/favicon.png">
 {pre}
 <link rel="stylesheet" href="{font}">
 <link rel="stylesheet" href="../assets/site.css">
-<script>try{{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}}catch(e){{}}</script>
 <script src="../assets/site.js" defer></script>{extra}
 </head>""".format(lang=L["html"], title=esc(title), desc=esc(desc), base=BASE, code=lang, page=page, alts=alts,
                   og=og, font=L["font"], locale=L["locale"], pre=pre, extra=extra)
@@ -278,14 +287,13 @@ def header(lang, page, home, is_home):
     <nav class="primary" aria-label="Primary">{nav}</nav>
     <div class="tools">
       <details class="lang"><summary aria-label="{language}">{globe}<span>{langname}</span></summary><div class="lang-menu" role="menu">{langs}</div></details>
-      <button class="icon-btn theme-toggle" type="button" aria-label="{theme}" data-theme-toggle>{sun}{moon}</button>
-      <a class="btn btn-primary btn-sm get" href="{booth}">{get}</a>
+      <a class="btn btn-tinted btn-sm get" href="{booth}">{get}</a>
       <button class="icon-btn menu-toggle" type="button" aria-label="{menu}" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle>{menuicon}{close}</button>
     </div>
   </div>
   <div class="mobile-nav" id="mobile-nav" hidden>{nav}<a class="btn btn-primary" href="{booth}">{get}</a></div>
 </header>""".format(skip=esc(C["skip"]), nav=navl, language=esc(n["language"]), globe=ICON["globe"], langname=LANGS[lang]["name"],
-                    langs=langs, theme=esc(n["theme"]), sun=ICON["sun"], moon=ICON["moon"], booth=BOOTH, get=esc(n["get"]),
+                    langs=langs, booth=BOOTH, get=esc(n["get"]),
                     menu=esc(n["menu"]), menuicon=ICON["menu"], close=ICON["close"])
 
 
@@ -334,25 +342,28 @@ def home_page(lang, h, titles):
     out = []
     out.append("""<main id="main">
 <section class="hero" id="overview">
-  <div class="wrap hero-copy">
-    <p class="eyebrow"><span class="dot"></span>{eyebrow}</p>
-    <h1><span>{t1}</span><span class="grad">{t2}</span></h1>
-    <p class="lead">{sub}</p>
-    <div class="cta-row"><a class="btn btn-primary btn-lg" href="{booth}">{primary}{arrow}</a><a class="btn btn-ghost btn-lg" href="#features">{secondary}</a></div>
-    <p class="meta">{meta}</p>
+  <div class="kv">
+    {visual}
+    <div class="kv-copy">
+      <p class="eyebrow"><span class="dot"></span>{eyebrow}</p>
+      <h1><span>{t1}</span><span class="grad">{t2}</span></h1>
+      <p class="lead">{sub}</p>
+      <div class="cta-row"><a class="btn btn-primary btn-lg" href="{booth}">{primary}{arrow}</a><a class="btn btn-ghost btn-lg" href="#features">{secondary}</a></div>
+      <p class="meta">{meta}</p>
+    </div>
   </div>
   <div class="wrap">
     <figure class="product">
       <div class="frame">
-        <div class="frame-bar"><span></span><span></span><span></span><em>AVATAR LIVE</em></div>
-        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="../assets/video/hero.jpg" width="1280" height="720" aria-label="{caption}"><source src="../assets/video/hero.mp4" type="video/mp4"></video>
+        <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="../assets/video/hero.jpg" width="1280" height="720" aria-label="{caption}"{labels}><source src="../assets/video/hero.mp4" type="video/mp4"></video>
       </div>
       <figcaption>{caption}</figcaption>
     </figure>
   </div>
 </section>""".format(eyebrow=esc(hero["eyebrow"]), t1=esc(hero["title"][0]), t2=esc(hero["title"][1]), sub=sub, booth=BOOTH,
                      primary=esc(hero["primary"]), arrow=ICON["arrow"], secondary=esc(hero["secondary"]), meta=esc(hero["meta"]),
-                     caption=esc(hero["caption"])))
+                     caption=esc(hero["caption"]), labels=video_labels(lang),
+                     visual=img_tag("common", "keyvisual", hero["visual"], cls="kv-img", eager=True, sizes="(max-width: 899px) 100vw, 120vw")))
     out.append('<section class="works"><div class="wrap"><p>%s</p><ul>%s</ul></div></section>' % (
         esc(h["works"]["label"]), "".join("<li>%s</li>" % esc(x) for x in h["works"]["items"])))
     cards = []
@@ -381,6 +392,15 @@ def home_page(lang, h, titles):
   <header class="section-head reveal"><p class="kicker">{k}</p><h2>{t}</h2></header>
   {rows}
 </div></section>""".format(k=esc(sc["kicker"]), t=esc(sc["title"]), rows="".join(rows)))
+    bc = h["broadcast"]
+    cards = "".join('<article class="bento-card %s reveal"><div class="bento-media">%s</div><div class="bento-text"><h3>%s</h3><p>%s</p><a class="more" href="%s.html">%s%s</a></div></article>' % (
+        esc(it.get("size", "")), media(it["media"], lang, it["title"]), esc(it["title"]), esc(it["body"]), it["page"], esc(sc["more"]), ICON["arrow"]) for it in bc["items"])
+    out.append("""<section class="section broadcast" id="broadcast"><div class="wrap">
+  <header class="section-head reveal"><p class="kicker">{k}</p><h2>{t}</h2><p>{s}</p></header>
+  <div class="bento">{cards}</div>
+  <div class="discord-row reveal"><p>{dt}</p><div class="cta-row"><a class="btn btn-primary" href="{invite}" rel="noopener">{db}{arrow}</a><a class="btn btn-ghost" href="09-broadcast.html#{anchor}">{dg}</a></div></div>
+</div></section>""".format(k=esc(bc["kicker"]), t=esc(bc["title"]), s=esc(bc["sub"]), cards=cards, dt=esc(bc["discord"]), invite=DISCORD_INVITE,
+                           db=esc(bc["discordButton"]), arrow=ICON["arrow"], dg=esc(bc["discordGuide"]), anchor=bc["discordAnchor"]))
     crow = "".join('<div class="crow"><span class="clabel">%s</span><span class="cleft">%s%s</span><span class="cright">%s%s</span></div>' % (
         esc(r["label"]), ICON["x"], esc(r["left"]), ICON["check"], esc(r["right"])) for r in cmp_["rows"])
     out.append("""<section class="section compare" id="compare"><div class="wrap">

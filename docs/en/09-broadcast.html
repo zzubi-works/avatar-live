@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Broadcast integration — AVATAR LIVE</title>
+<meta name="description" content="Receive Twitch, CHZZK and SOOP viewer events and reactions from Discord friends, and make the avatar react to them. Broadcast integration is a Pro fea…">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/en/09-broadcast.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/09-broadcast.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/09-broadcast.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/09-broadcast.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/09-broadcast.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="Broadcast integration — AVATAR LIVE">
+<meta property="og:description" content="Receive Twitch, CHZZK and SOOP viewer events and reactions from Discord friends, and make the avatar react to them. Broadcast integration is a Pro fea…">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/en/09-broadcast.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-en.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
+</head>
+<body class="doc">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">Overview</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#editions">Editions</a><a href="01-getting-started.html" aria-current="page">Guide</a><a href="updates.html">Updates</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="Language"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>English</span></summary><div class="lang-menu" role="menu"><a href="../ko/09-broadcast.html" lang="ko">한국어</a><a href="../en/09-broadcast.html" lang="en" aria-current="true">English</a><a href="../ja/09-broadcast.html" lang="ja">日本語</a><a href="../zh/09-broadcast.html" lang="zh-Hans">简体中文</a></div></details>
+      <a class="btn btn-tinted btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">Buy</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">Overview</a><a href="index.html#features">Features</a><a href="index.html#how">How it works</a><a href="index.html#editions">Editions</a><a href="01-getting-started.html" aria-current="page">Guide</a><a href="updates.html">Updates</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">Buy</a></div>
+</header>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>Guide contents</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="Guide contents"><p class="side-h">Guide</p><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="03-launcher-and-library.html">Avatar Library</a></li><li><a href="04-main-window.html">main screen</a></li><li><a href="05-avatar-menu.html">Avatar Menu</a></li><li><a href="06-devices.html">Devices</a></li><li><a href="07-motion.html">Action</a></li><li><a href="08-scene.html">Studio</a></li><li><a href="08-rooms.html">DLC room packs</a></li><li><a href="08-camera-effects.html">Camera effects</a></li><li><a href="09-output.html">Output</a></li><li><a href="09-broadcast.html" aria-current="page">Broadcast integration</a></li><li><a href="09-interactions.html">Simple setup</a></li><li><a href="09-reactions.html">Throw · Liquid · Falling</a></li><li><a href="09-node-editor.html">Node editor</a></li><li><a href="09-session.html">Remote collaboration</a></li><li><a href="10-settings.html">setting</a></li><li><a href="11-pro-features.html">Posing and Facial Expressions</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul><p class="side-h">Legal</p><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul><p class="side-h">Updates</p><ul><li><a href="updates.html">Updates</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="broadcast-integration">Broadcast integration<a class="anchor" href="#broadcast-integration" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>Receive Twitch, CHZZK and SOOP viewer events and reactions from Discord friends, and make the avatar react to them. Broadcast integration is a Pro feature and is currently in beta. If something goes wrong on a real broadcast, let us know with an <a href="12-troubleshooting.html#when-broadcast-integration-does-not-work">error report</a>.</p>
+<p>The Broadcast page has two tabs.</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Tab</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Interactions</td>
+<td>Sets what happens when an event arrives. It has <a href="09-interactions.html">Simple setup</a>, the <a href="09-node-editor.html">Node editor</a>, and <a href="09-reactions.html">Falling, Donation display and Test</a>.</td>
+</tr>
+<tr>
+<td>Connections</td>
+<td>Connects platform accounts and Discord channels, and opens the WebSocket and the <a href="09-session.html">remote collaboration</a> session.</td>
+</tr>
+</tbody>
+</table></div>
+<figure><a class="zoomable" href="../assets/shots/en/guide-broadcast-connect.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-broadcast-connect.webp" width="550" height="578" style="--image-width:550px" alt="Platform list in the Broadcast › Connections tab" loading="lazy" decoding="async"></a><figcaption>Platform list in the Broadcast › Connections tab</figcaption></figure>
+<h2 id="connecting-twitch-chzzk-and-soop">Connecting Twitch, CHZZK and SOOP<a class="anchor" href="#connecting-twitch-chzzk-and-soop" aria-hidden="true" tabindex="-1">#</a></h2>
+<ol>
+<li>Open Broadcast → Connections.</li>
+<li>Turn on the switch of the platform you want to connect.</li>
+<li>On the platform login page that opens in your browser, log in with your streaming account and allow the permissions.</li>
+<li>When the card shows Connected, it is ready to receive events.</li>
+</ol>
+<figure><a class="zoomable" href="../assets/shots/en/guide-twitch.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-twitch.webp" width="550" height="227" style="--image-width:550px" alt="Receive whispers and Debug log settings on the Twitch card" loading="lazy" decoding="async"></a><figcaption>Receive whispers and Debug log settings on the Twitch card</figcaption></figure>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Events you can receive</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Twitch</td>
+<td>Channel points redeemed, chat, follows, subscriptions (including gifts and subscription messages), bits, raids, hype trains, whispers</td>
+</tr>
+<tr>
+<td>CHZZK</td>
+<td>Chat, donations (chat donations and video donations), subscriptions</td>
+</tr>
+<tr>
+<td>SOOP</td>
+<td>Chat, star balloons, ad balloons, video balloons, stickers, subscriptions, gifts</td>
+</tr>
+</tbody>
+</table></div>
+<p>Turn the switch off to stop receiving events. Your saved login and rules are not deleted. Turn on Debug log to record the received events in detail in the diagnostic log.</p>
+<blockquote class="callout privacy"><p>The token exchange in the Twitch, CHZZK and SOOP login goes through the developer's server (<code>stream-auth.erp.pictures</code>). The platforms' secret keys are only on this server, and the login information you receive is saved on this PC.</p>
+</blockquote>
+<h2 id="connecting-discord">Connecting Discord<a class="anchor" href="#connecting-discord" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Friends who are not watching the stream can also move the avatar from a Discord channel with buttons or the <code>/react</code> command. It works only while the Avatar Live app is running.</p>
+<figure><a class="zoomable" href="../assets/shots/en/guide-discord.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-discord.webp" width="550" height="861" style="--image-width:550px" alt="Reactions list on the Discord card" loading="lazy" decoding="async"></a><figcaption>Reactions list on the Discord card</figcaption></figure>
+<h3 id="1-add-the-discord-app">1. Add the Discord app<a class="anchor" href="#1-add-the-discord-app" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>Open <a href="https://discord.com/oauth2/authorize?client_id=1563157504995754014">Add the Avatar Live Discord app</a> and choose where to add it. The app asks only for the commands (<code>applications.commands</code>) permission. It does not read messages or manage servers.</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Where to add</th>
+<th>When to use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add to server</td>
+<td>Use it in a channel of your Discord server. You need permission to manage the server. Your friends do not install anything.</td>
+</tr>
+<tr>
+<td>Add to my account</td>
+<td>Use it when you have no server, or in a group DM. To type the commands themselves in a group DM, friends must also add the app to their own account. Friends who did not install it press the buttons you posted.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="2-link-a-channel">2. Link a channel<a class="anchor" href="#2-link-a-channel" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>In the app, turn on the switch in Broadcast → Connections → Discord.</li>
+<li>Press Make a connect code. An 8-character code is shown for 10 minutes.</li>
+<li>In the Discord channel you want to link, choose the <code>/link</code> command, put the code in the code field and send it.</li>
+<li>When the app shows a window asking whether to connect the channel, check the server and channel names and press Connect.</li>
+<li>The channel appears in Linked channels.</li>
+</ol>
+<p>A code can be used only once. A channel someone else has already linked cannot be linked.</p>
+<h3 id="3-post-reaction-buttons">3. Post reaction buttons<a class="anchor" href="#3-post-reaction-buttons" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>Send <code>/panel</code> in the linked channel. The reactions in the Reactions list are posted as buttons.</li>
+<li>When a friend presses a button or chooses a reaction with <code>/react</code>, the rule that handles that reaction runs.</li>
+<li>The Discord message shows who did what.</li>
+</ol>
+<p>In the Reactions list, set the name, emoji, value and rule for each button. The value is the number that the rule's minimum and maximum count conditions look at. Press Rule to cycle through the rules; the Discord reaction trigger of the chosen rule is turned on.</p>
+<h3 id="discord-commands">Discord commands<a class="anchor" href="#discord-commands" aria-hidden="true" tabindex="-1">#</a></h3>
+<div class="table-wrap" tabindex="0"><table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Who</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>/link code:</code></td>
+<td>You</td>
+<td>Links this channel to your Avatar Live.</td>
+</tr>
+<tr>
+<td><code>/unlink</code></td>
+<td>You or a server admin</td>
+<td>Unlinks this channel.</td>
+</tr>
+<tr>
+<td><code>/panel</code></td>
+<td>You or a server admin</td>
+<td>Posts the reaction buttons. Works in group DMs too.</td>
+</tr>
+<tr>
+<td><code>/react</code></td>
+<td>Friends</td>
+<td>Picks one reaction. If none is chosen, it is the first reaction.</td>
+</tr>
+<tr>
+<td><code>/points</code> <code>/daily</code> <code>/gift</code> <code>/rank</code></td>
+<td>Friends</td>
+<td>Check, collect and share points for the point games.</td>
+</tr>
+<tr>
+<td><code>/roulette</code> <code>/slots</code> <code>/highlow</code> <code>/blackjack</code> <code>/duel</code> <code>/predict</code> <code>/lottery</code> <code>/race</code> <code>/quiz</code> <code>/boss</code></td>
+<td>Friends</td>
+<td>Mini-games of the point games.</td>
+</tr>
+</tbody>
+</table></div>
+<p>When the Discord client language is Korean, Japanese or Chinese, Discord shows the commands under localized names such as <code>/연결</code>, <code>/接続</code> or <code>/连接</code>.</p>
+<p>Set the point games' rules and point values in Point games on the Discord card. Points are saved on this PC for each channel.</p>
+<blockquote class="callout privacy"><p>The developer's server (<code>discord-check.erp.pictures</code>) relays between Discord and the app. Your friends' Discord names and profile pictures are passed to your app and used for display and stickers. The app never posts to Discord on its own; it only answers your friends' commands.</p>
+</blockquote>
+<h2 id="websocket">WebSocket<a class="anchor" href="#websocket" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/en/guide-websocket.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-websocket.webp" width="550" height="172" style="--image-width:550px" alt="Port setting on the WebSocket card" loading="lazy" decoding="async"></a><figcaption>Port setting on the WebSocket card</figcaption></figure>
+<p>Lets other programs on this PC exchange events with Avatar Live. It is off by default, and the port is 19190. Only programs on the same PC can connect, at <code>ws://127.0.0.1:port</code>. Handle what is exchanged with the WebSocket nodes in the <a href="09-node-editor.html">Node editor</a>.</p>
+<h2 id="basic-and-pro">Basic and Pro<a class="anchor" href="#basic-and-pro" aria-hidden="true" tabindex="-1">#</a></h2>
+<div class="table-wrap edition-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Basic</th>
+<th>Pro</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>View the Broadcast page</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Platform, Discord and WebSocket connections</td>
+<td>Locked</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Simple setup, Donation display, Test</td>
+<td>Locked</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Node editor</td>
+<td>View, pan and zoom only</td>
+<td>Edit and run</td>
+</tr>
+</tbody>
+</table></div>
+<p>Even on Basic, your saved logins, rules and graphs are not deleted; they stay, locked.</p></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-output.html"><span>Previous</span>Output</a><a class="next" href="09-interactions.html"><span>Next</span>Simple setup</a></nav><p class="updated">Last updated: 2026-10-24</p></main>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#connecting-twitch-chzzk-and-soop">Connecting Twitch, CHZZK and SOOP</a></li><li><a href="#connecting-discord">Connecting Discord</a></li><li><a href="#websocket">WebSocket</a></li><li><a href="#basic-and-pro">Basic and Pro</a></li></ul></nav>
+</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>Product</h2><ul><li><a href="index.html#features">Features</a></li><li><a href="index.html#how">How it works</a></li><li><a href="index.html#editions">Editions</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">Updates</a></li></ul></div><div class="fcol"><h2>Guide</h2><ul><li><a href="01-getting-started.html">Getting Started</a></li><li><a href="02-avatar-exporter.html">Export avatar</a></li><li><a href="12-troubleshooting.html">Troubleshooting</a></li><li><a href="13-license.html">Editions and Licenses</a></li></ul></div><div class="fcol"><h2>Legal</h2><ul><li><a href="legal-terms.html">Avatar Live Terms of Use</a></li><li><a href="legal-privacy.html">Privacy Policy</a></li><li><a href="legal-refund.html">Refund Policy</a></li><li><a href="legal-seller.html">Seller Information</a></li></ul></div><div class="fcol"><h2>Links</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+  </div>
+  <div class="wrap fine"><p>AVATAR LIVE is not an official product of VRChat Inc. and is not affiliated with VRChat Inc. VRChat is a trademark of VRChat Inc.</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
+</footer>
+</body>
+</html>

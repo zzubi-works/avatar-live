@@ -10,8 +10,8 @@ You can send the completed avatar screen to OBS, Discord, or Zoom, or save it as
 | Send video to another PC | NDI® |
 | Show on the camera of the video call | Virtual camera |
 | Share games and avatars together | Screen sharing |
-| Broadcasting with a friend's avatar | [Remote Collaboration](09-session.md) |
-| Create Photo/Video Files | Photo/Recording |
+| Broadcasting with a friend's avatar | [Remote Collaboration](09-session.md) (Broadcast → Connections) |
+| Create Photo/Video Files | Photo & Recording (Studio → Photo & Recording) |
 
 NDI® is a registered trademark of Vizrt NDI AB. [Official NDI Information](https://ndi.video/)
 
@@ -102,13 +102,17 @@ VB-CABLE is a donationware product from a separate developer. You can check the 
 
 ## Photos and Recording
 
+The Studio → **Photo & Recording** tab holds the camera screen, photo and recording, in that order.
+
 ![Photo Saving and Recording Settings](img/guide-photo-record.png)
 
+- Camera screen: Choose screen decorations that look like a phone or camcorder, and their ratio and style.
 - Photo: Saves the current output screen as a PNG.
 - Crop: Cuts the area to include in the photo.
 - Ratio: Chooses the shape of the photo such as landscape, portrait, or square.
 - Resolution: Sets the pixel count of the saved file.
 - Recording (Pro): Saves video as MP4. Press stop after starting to complete the file.
+- Mic sound: When on, your microphone and, while screen sharing, the shared game's sound are mixed into one track. When off, only the game's sound goes in; without screen sharing, the video is recorded without sound.
 
 ## If There Are Problems
 

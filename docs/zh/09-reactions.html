@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>投掷 · 液体 · 倒下 — AVATAR LIVE</title>
+<meta name="description" content="由简易设置条目和节点编辑器运行的角色反应。任何角色·相机都可以使用。它是直播联动功能，需要 Pro，目前为测试版 (Beta)。">
+<link rel="canonical" href="https://zzubi-works.github.io/avatar-live/zh/09-reactions.html">
+<link rel="alternate" hreflang="ko" href="https://zzubi-works.github.io/avatar-live/ko/09-reactions.html"><link rel="alternate" hreflang="en" href="https://zzubi-works.github.io/avatar-live/en/09-reactions.html"><link rel="alternate" hreflang="ja" href="https://zzubi-works.github.io/avatar-live/ja/09-reactions.html"><link rel="alternate" hreflang="zh-Hans" href="https://zzubi-works.github.io/avatar-live/zh/09-reactions.html"><link rel="alternate" hreflang="x-default" href="https://zzubi-works.github.io/avatar-live/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="AVATAR LIVE">
+<meta property="og:title" content="投掷 · 液体 · 倒下 — AVATAR LIVE">
+<meta property="og:description" content="由简易设置条目和节点编辑器运行的角色反应。任何角色·相机都可以使用。它是直播联动功能，需要 Pro，目前为测试版 (Beta)。">
+<meta property="og:url" content="https://zzubi-works.github.io/avatar-live/zh/09-reactions.html">
+<meta property="og:image" content="https://zzubi-works.github.io/avatar-live/assets/brand/og-zh.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0b0f" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#fafafb" media="(prefers-color-scheme: light)">
+<link rel="icon" href="../assets/brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../assets/site.css">
+<script src="../assets/site.js" defer></script>
+</head>
+<body class="doc">
+<a class="skip" href="#main">跳到正文</a>
+<header class="site-header" data-header>
+  <div class="bar">
+    <a class="brand" href="index.html" aria-label="AVATAR LIVE"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a>
+    <nav class="primary" aria-label="Primary"><a href="index.html#overview">概览</a><a href="index.html#features">功能</a><a href="index.html#how">使用方法</a><a href="index.html#editions">版本</a><a href="01-getting-started.html" aria-current="page">指南</a><a href="updates.html">更新记录</a></nav>
+    <div class="tools">
+      <details class="lang"><summary aria-label="语言"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span>简体中文</span></summary><div class="lang-menu" role="menu"><a href="../ko/09-reactions.html" lang="ko">한국어</a><a href="../en/09-reactions.html" lang="en">English</a><a href="../ja/09-reactions.html" lang="ja">日本語</a><a href="../zh/09-reactions.html" lang="zh-Hans" aria-current="true">简体中文</a></div></details>
+      <a class="btn btn-tinted btn-sm get" href="https://curiousbobby.booth.pm/items/8953441">购买</a>
+      <button class="icon-btn menu-toggle" type="button" aria-label="菜单" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobile-nav" hidden><a href="index.html#overview">概览</a><a href="index.html#features">功能</a><a href="index.html#how">使用方法</a><a href="index.html#editions">版本</a><a href="01-getting-started.html" aria-current="page">指南</a><a href="updates.html">更新记录</a><a class="btn btn-primary" href="https://curiousbobby.booth.pm/items/8953441">购买</a></div>
+</header>
+<div class="docs">
+  <button class="docs-menu-btn" type="button" aria-expanded="false" aria-controls="docs-side" data-docs-toggle><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>指南目录</button>
+  <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="03-launcher-and-library.html">角色库</a></li><li><a href="04-main-window.html">主屏幕</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">工作室</a></li><li><a href="08-rooms.html">DLC 房间包</a></li><li><a href="08-camera-effects.html">摄像机效果</a></li><li><a href="09-output.html">输出</a></li><li><a href="09-broadcast.html">直播联动</a></li><li><a href="09-interactions.html">简易设置</a></li><li><a href="09-reactions.html" aria-current="page">投掷 · 液体 · 倒下</a></li><li><a href="09-node-editor.html">节点编辑器</a></li><li><a href="09-session.html">远程联播</a></li><li><a href="10-settings.html">设置</a></li><li><a href="11-pro-features.html">姿势与表情</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html">更新记录</a></li></ul></nav></aside>
+  <main id="main" class="docs-main"><article class="prose"><h1 id="投掷--液体--倒下">投掷 · 液体 · 倒下<a class="anchor" href="#投掷--液体--倒下" aria-hidden="true" tabindex="-1">#</a></h1>
+<p>由<a href="09-interactions.html">简易设置</a>条目和<a href="09-node-editor.html">节点编辑器</a>运行的角色反应。任何角色·相机都可以使用。它是直播联动功能，需要 Pro，目前为测试版 (Beta)。</p>
+<h2 id="投掷">投掷<a class="anchor" href="#投掷" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>把道具库中的物体投向角色。被击中时，角色会在站立状态下被推开，然后回到原位。</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>设置</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>物体</td>
+<td>通过缩略图·分类·搜索选择要投掷的物体。选择多个时，每次随机投掷其中一个。</td>
+</tr>
+<tr>
+<td>起点</td>
+<td>设置从画面外·边缘·头顶·脸前中的哪里飞来。</td>
+</tr>
+<tr>
+<td>终点</td>
+<td>瞄准身体任意处，或头·胸·手等部位。</td>
+</tr>
+<tr>
+<td>速度·重量·大小</td>
+<td>设置击中的快慢和力度，以及物体大小。</td>
+</tr>
+<tr>
+<td>数量</td>
+<td>一次投掷的数量和间隔。开启按金额后，数量会随打赏金额增加。</td>
+</tr>
+<tr>
+<td>声音</td>
+<td>投出时·命中时的声音。也可以放入自己的声音文件。</td>
+</tr>
+<tr>
+<td>特效</td>
+<td>命中时显示冲击·闪光·星星·尘土·爱心·水滴·彩纸特效。</td>
+</tr>
+<tr>
+<td>被击中时的表情</td>
+<td>选择被击中期间的表情。</td>
+</tr>
+<tr>
+<td>更多</td>
+<td>设置重力·旋转·存在时间·命中后消失·命中后粘住。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="液体">液体<a class="anchor" href="#液体" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/zh/guide-rule-liquid.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-rule-liquid.webp" width="550" height="905" style="--image-width:550px" alt="液体动作的速度·流量·停止设置" loading="lazy" decoding="async"></a><figcaption>液体动作的速度·流量·停止设置</figcaption></figure>
+<p>从水·果汁·牛奶·蜂蜜·史莱姆·墨水·黄金中选择液体种类，泼向角色。液体会从命中处顺着身体流下，角色会暂时显得湿润，然后变干。</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>设置</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>起点·终点</td>
+<td>液体流出的位置和瞄准的位置。也可以从脸前泼洒。</td>
+</tr>
+<tr>
+<td>速度·流量</td>
+<td>设置泼得多猛、多少。</td>
+</tr>
+<tr>
+<td>自动停止·停止前</td>
+<td>经过设定的时间后停止。关闭后会持续流出，直到关闭规则或连接。</td>
+</tr>
+<tr>
+<td>黏稠度</td>
+<td>0 像水，1 像糖浆一样流动。</td>
+</tr>
+<tr>
+<td>声音</td>
+<td>泼洒和流动的声音。</td>
+</tr>
+<tr>
+<td>外观与流动</td>
+<td>颜色·发光·反射·表面张力等外观数值。无法运行流体的电脑会以简单水滴绘制。</td>
+</tr>
+<tr>
+<td>湿润外观</td>
+<td>液体碰到的地方显得湿润的外观和变干时间。对所有液体相同，默认 30 秒后变干。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="贴纸">贴纸<a class="anchor" href="#贴纸" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>把自己的图片文件或文件夹（从中随机）、在线图片、动态 GIF·APNG·WebP 贴到角色上。选择观众头像时，会获取发送事件的观众的头像并贴上。</p>
+<h2 id="灯光">灯光<a class="anchor" href="#灯光" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/zh/guide-rule-light.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-rule-light.webp" width="550" height="905" style="--image-width:550px" alt="灯光动作的开关与持续时间" loading="lazy" decoding="async"></a><figcaption>灯光动作的开关与持续时间</figcaption></figure>
+<p>暂时把一盏灯打开·关闭·反转，或应用颜色·亮度、效果、预设。持续时间结束后会恢复为原来的灯光。持续时间最短为 1 秒。</p>
+<h2 id="倒下与起身">倒下与起身<a class="anchor" href="#倒下与起身" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/zh/guide-fall.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-fall.webp" width="550" height="282" style="--image-width:550px" alt="倒下与起身设置" loading="lazy" decoding="async"></a><figcaption>倒下与起身设置</figcaption></figure>
+<p>被重重击中或收到击倒动作时，角色会倒在地上，然后慢慢起身。在直播 → 互动 → 倒下与起身中设置。</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>设置</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>倒下力度</td>
+<td>倒下时向后推的力度。为 0 时会在原地直接倒下。</td>
+</tr>
+<tr>
+<td>倒地时间</td>
+<td>起身前躺在地上的时间。用节点击倒时，使用节点的等待时间。</td>
+</tr>
+<tr>
+<td>起身时间</td>
+<td>从地上起身回到原来姿势所需的时间。为 0 时立即起身。</td>
+</tr>
+</tbody>
+</table></div>
+<p>无法倒下的角色在测试时会显示“此角色无法倒下”。</p>
+<h2 id="打赏显示">打赏显示<a class="anchor" href="#打赏显示" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/zh/guide-donation.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-donation.webp" width="550" height="668" style="--image-width:550px" alt="打赏框设置" loading="lazy" decoding="async"></a><figcaption>打赏框设置</figcaption></figure>
+<p>把打赏者的名字和留言以卡片形式显示在场景中的框里。默认关闭。</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>设置</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>位置</td>
+<td>像场景中的物体一样移动框并调整大小。</td>
+</tr>
+<tr>
+<td>卡片</td>
+<td>选择要显示徽章·昵称·留言·金额中的哪些。</td>
+</tr>
+<tr>
+<td>事件</td>
+<td>要显示的事件：CHZZK 打赏·Twitch 比特·订阅·频道积分。</td>
+</tr>
+<tr>
+<td>堆叠</td>
+<td>卡片数·显示时间·留言长度·最低金额。</td>
+</tr>
+<tr>
+<td>按金额配色</td>
+<td>按金额区间改变卡片颜色。</td>
+</tr>
+<tr>
+<td>测试卡片</td>
+<td>输入昵称·留言·金额，试着添加一张卡片。</td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="测试">测试<a class="anchor" href="#测试" aria-hidden="true" tabindex="-1">#</a></h2>
+<figure><a class="zoomable" href="../assets/shots/zh/guide-interaction-test.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-interaction-test.webp" width="550" height="847" style="--image-width:550px" alt="互动测试卡片" loading="lazy" decoding="async"></a><figcaption>互动测试卡片</figcaption></figure>
+<p>在直播 → 互动最下方的测试卡片中，无需规则或事件即可立即测试反应。每个按钮运行一次。</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>按钮</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>投掷</td>
+<td>按目标部位·力度·数量投掷物体。未选物体时，从库中随机选择。</td>
+</tr>
+<tr>
+<td>击倒</td>
+<td>让角色倒下。</td>
+</tr>
+<tr>
+<td>击中</td>
+<td>展示所选部位被击中的反应一次。开启投掷小物体后，物体也会飞来。</td>
+</tr>
+<tr>
+<td>泼液体</td>
+<td>设置量和方向（正面朝脸·从上方·从左侧·从右侧）后泼洒。</td>
+</tr>
+<tr>
+<td>贴纸</td>
+<td>随机贴上一张自己的图片。</td>
+</tr>
+<tr>
+<td>还原</td>
+<td>清除空中的物体·液体·贴纸，并让角色恢复原来的姿势。</td>
+</tr>
+</tbody>
+</table></div></article><nav class="pager" aria-label="Pager"><a class="prev" href="09-interactions.html"><span>上一页</span>简易设置</a><a class="next" href="09-node-editor.html"><span>下一页</span>节点编辑器</a></nav><p class="updated">最后更新: 2026-10-24</p></main>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#投掷">投掷</a></li><li><a href="#液体">液体</a></li><li><a href="#贴纸">贴纸</a></li><li><a href="#灯光">灯光</a></li><li><a href="#倒下与起身">倒下与起身</a></li><li><a href="#打赏显示">打赏显示</a></li><li><a href="#测试">测试</a></li></ul></nav>
+</div>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="fbrand"><a class="brand" href="index.html"><img src="../assets/brand/icon-64.png" width="28" height="28" alt=""><span>AVATAR LIVE</span></a><p>Curious Bobby Co.</p></div>
+    <div class="fcol"><h2>产品</h2><ul><li><a href="index.html#features">功能</a></li><li><a href="index.html#how">使用方法</a></li><li><a href="index.html#editions">版本</a></li><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="updates.html">更新记录</a></li></ul></div><div class="fcol"><h2>指南</h2><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="02-avatar-exporter.html">导出角色</a></li><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul></div><div class="fcol"><h2>条款与政策</h2><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul></div><div class="fcol"><h2>链接</h2><ul><li><a href="https://curiousbobby.booth.pm/items/8953441">BOOTH</a></li><li><a href="https://x.com/User_Not_Online">X (Twitter)</a></li><li><a href="https://github.com/zzubi-works/avatar-live">GitHub</a></li></ul></div>
+  </div>
+  <div class="wrap fine"><p>AVATAR LIVE 不是 VRChat Inc. 的官方产品，与 VRChat Inc. 无关联。VRChat 是 VRChat Inc. 的商标。</p><p>© 2026 Curious Bobby Co. All rights reserved.</p></div>
+</footer>
+</body>
+</html>

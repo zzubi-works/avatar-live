@@ -49,9 +49,26 @@ For detailed installation steps, see [Output](09-output.md).
 
 ## Remote Collaboration
 
-First, check whether the host has started the server and whether the participant address, port, and password are correct. If an external friend cannot connect, open the port forwarding and firewall guide in [When connection does not work](09-session.md#troubleshooting-connections).
+The collaboration session is at the bottom of Broadcast → Connections. First, check whether the host has started the server and whether the participant address, port, and password are correct. If an external friend cannot connect, open the port forwarding and firewall guide in [When connection does not work](09-session.md#troubleshooting-connections).
 
 If the other party appears as a substitute avatar, check the avatar view and data transfer consent. Use a substitute avatar for models that do not allow transfer.
+
+## When broadcast integration does not work
+
+Broadcast integration is in beta. If events arrive but the avatar does not react, check these in order.
+
+1. In Broadcast → Connections, check that the platform's card shows Connected. If the login has expired, turn the switch off and on again to log in again.
+2. In Broadcast → Interactions, check that the item's switch is on and that the trigger's minimum amount or reward title is right.
+3. Press the item's ▶ test and see whether the reaction plays. If the test does not work either, check the action settings (whether the objects or pictures are empty).
+4. The same event does not run again while it is inside the cooldown.
+5. For Discord, the app must be running and the channel must be in Linked channels. If friends see "it is off", the app or the Discord switch is off.
+
+If it still does not work, report it right after the problem with Settings → Diagnostics → Send an error report. The report includes the following, so the cause can be traced.
+
+- A state history for each platform and Discord connection (why it dropped, and the code), login permissions, subscription responses and failed requests
+- The 16 most recent events, and what each Simple setup item and graph did with each event, or why it did nothing
+
+> 🔒 Tokens, auth headers, cookies, codes, session keys, order numbers, email addresses and file paths are masked in the diagnostic data. The report is sent only when you choose to send it.
 
 ## When the screen is slow or blurry
 
