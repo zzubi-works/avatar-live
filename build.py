@@ -307,7 +307,7 @@ def header(lang, page, home, is_home):
     <div class="tools">
       <details class="lang"><summary aria-label="{language}">{globe}<span>{langname}</span></summary><div class="lang-menu" role="menu">{langs}</div></details>
       <button class="icon-btn theme-toggle" type="button" aria-label="{theme}" data-theme-toggle>{sun}{moon}</button>
-      <a class="btn btn-tinted btn-sm get" href="{booth}">{get}</a>
+      <a class="btn btn-primary btn-sm get" href="{booth}">{get}</a>
       <button class="icon-btn menu-toggle" type="button" aria-label="{menu}" aria-expanded="false" aria-controls="mobile-nav" data-menu-toggle>{menuicon}{close}</button>
     </div>
   </div>
@@ -375,6 +375,7 @@ def home_page(lang, h, titles):
   <div class="wrap">
     <figure class="product">
       <div class="frame">
+        <div class="frame-bar"><span></span><span></span><span></span><em>AVATAR LIVE</em></div>
         <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="../assets/video/hero.jpg" width="1280" height="720" aria-label="{caption}"{labels}><source src="../assets/video/hero.mp4" type="video/mp4"></video>
       </div>
       <figcaption>{caption}</figcaption>
