@@ -44,7 +44,7 @@
       {
         "title": "VRM 변환 없이",
         "body": "아바타 프로젝트에서 한 번 내보내면 끝. 아바타를 고쳐도 다시 내보내기만 하면 됩니다.",
-        "media": "img:guide-launcher",
+        "media": "img:launcher",
         "size": "wide"
       },
       {
@@ -66,7 +66,7 @@
       {
         "title": "키보드 · 마우스 손 동작",
         "body": "손이 화면에 없을 때도 타이핑과 마우스에 맞춰 손이 움직입니다. 입력한 글자는 기록하지 않습니다.",
-        "media": "img:guide-motion-hands"
+        "media": "video:home-typing"
       },
       {
         "title": "방송과 화면 공유",
@@ -109,7 +109,7 @@
           "끌어다 놓기로 열기",
           "아바타별 설정 저장"
         ],
-        "media": "img:guide-avatar-library",
+        "media": "img:avatar-pop",
         "page": "03-launcher-and-library"
       },
       {
@@ -131,7 +131,7 @@
           "깜빡임 · 시선",
           "마이크 립싱크"
         ],
-        "media": "img:guide-face-calibration",
+        "media": "img:facecal",
         "page": "07-motion"
       },
       {
@@ -142,7 +142,7 @@
           "그 자리에 포즈 고정",
           "마시멜로PB 지원"
         ],
-        "media": "img:guide-camera-toolbar",
+        "media": "common:grab",
         "page": "04-main-window"
       },
       {
@@ -164,7 +164,7 @@
           "게임 소리만 보내기",
           "위치 · 크기 자유롭게"
         ],
-        "media": "img:guide-share",
+        "media": "img:share",
         "page": "09-output"
       },
       {

@@ -44,7 +44,7 @@
       {
         "title": "无需 VRM 转换",
         "body": "在角色项目中导出一次即可。修改角色后，也只需重新导出。",
-        "media": "img:guide-launcher",
+        "media": "img:launcher",
         "size": "wide"
       },
       {
@@ -66,7 +66,7 @@
       {
         "title": "键盘 · 鼠标手部动作",
         "body": "即使手不在画面中，角色的手也会配合打字和鼠标操作而动。不会记录输入的文字。",
-        "media": "img:guide-motion-hands"
+        "media": "video:home-typing"
       },
       {
         "title": "直播与屏幕共享",
@@ -109,7 +109,7 @@
           "拖放即可打开",
           "按角色保存设置"
         ],
-        "media": "img:guide-avatar-library",
+        "media": "img:avatar-pop",
         "page": "03-launcher-and-library"
       },
       {
@@ -131,7 +131,7 @@
           "眨眼 · 视线",
           "麦克风口型同步"
         ],
-        "media": "img:guide-face-calibration",
+        "media": "img:facecal",
         "page": "07-motion"
       },
       {
@@ -142,7 +142,7 @@
           "就地固定姿势",
           "支持 MarshmallowPB"
         ],
-        "media": "img:guide-camera-toolbar",
+        "media": "common:grab",
         "page": "04-main-window"
       },
       {
@@ -164,7 +164,7 @@
           "只发送游戏声音",
           "自由调整位置 · 大小"
         ],
-        "media": "img:guide-share",
+        "media": "img:share",
         "page": "09-output"
       },
       {
