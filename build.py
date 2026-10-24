@@ -20,6 +20,13 @@ import markdown
 from PIL import Image
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
+
+
+def asset_version(name):
+    """A short hash of assets/<name>: the pages link it with ?v=<hash>, so a browser that cached the old file takes the new one."""
+    import hashlib
+    with open(os.path.join(ROOT, "assets", name), "rb") as f:
+        return hashlib.sha256(f.read()).hexdigest()[:10]
 OUT = os.path.join(ROOT, "docs")
 SHOTS = os.path.join(ROOT, "shots")
 BASE = "https://zzubi-works.github.io/avatar-live"
@@ -274,11 +281,12 @@ def head(lang, title, desc, page, og, extra=""):
 <link rel="icon" href="../assets/brand/favicon.png">
 {pre}
 <link rel="stylesheet" href="{font}">
-<link rel="stylesheet" href="../assets/site.css">
+<link rel="stylesheet" href="../assets/site.css?v={css_v}">
 <script>try{{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}}catch(e){{}}</script>
-<script src="../assets/site.js" defer></script>{extra}
+<script src="../assets/site.js?v={js_v}" defer></script>{extra}
 </head>""".format(lang=L["html"], title=esc(title), desc=esc(desc), base=BASE, code=lang, page=page, alts=alts,
-                  og=og, font=L["font"], locale=L["locale"], pre=pre, extra=extra)
+                  og=og, font=L["font"], locale=L["locale"], pre=pre, extra=extra,
+                  css_v=asset_version("site.css"), js_v=asset_version("site.js"))
 
 
 def header(lang, page, home, is_home):
