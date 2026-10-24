@@ -172,8 +172,6 @@ Choose the overall mood with a preset, and press individual lights for detailed 
 
 Choose a room preset to place the background space. Adjust the position, rotation, and scale to fit the stage and avatar. For extra rooms bought on BOOTH, see [DLC room packs](08-rooms.md).
 
-The low-poly interior pack no longer offers the whole building as a choice; its 28 separate rooms can be used as they are. An older scene saved with the whole building chosen opens without a room.
-
 ![Objects and Props Library](img/guide-props.png)
 
 - Add Object: Place text, images, shapes, and 3D props.
