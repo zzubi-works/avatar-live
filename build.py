@@ -113,7 +113,14 @@ def convert(src, folder):
             continue
         name = f[:-4]
         im = Image.open(os.path.join(src, f)).convert("RGB")
-        im.save(os.path.join(dst, name + ".webp"), "WEBP", quality=84, method=6)
+        if im.width > 2000:
+            # Photographs (the key visual): sharp on 2x screens at 3200 px, with a 1600 px step.
+            im = im.resize((3200, round(im.height * 3200 / im.width)), Image.LANCZOS) if im.width > 3200 else im
+            im.save(os.path.join(dst, name + ".webp"), "WEBP", quality=85, method=6)
+            mid = im.resize((1600, round(im.height * 1600 / im.width)), Image.LANCZOS)
+            mid.save(os.path.join(dst, name + "-1600.webp"), "WEBP", quality=85, method=6)
+        else:
+            im.save(os.path.join(dst, name + ".webp"), "WEBP", quality=84, method=6)
         if im.width > 1000:
             small = im.resize((960, round(im.height * 960 / im.width)), Image.LANCZOS)
             small.save(os.path.join(dst, name + "-960.webp"), "WEBP", quality=82, method=6)
@@ -128,7 +135,8 @@ def img_tag(folder, name, alt, cls="", eager=False, sizes="(max-width: 900px) 10
     src = "../assets/shots/%s/%s.webp" % (folder, name)
     srcset = ""
     if w > 1000:
-        srcset = ' srcset="../assets/shots/%s/%s-960.webp 960w, %s %dw" sizes="%s"' % (folder, name, src, w, sizes)
+        mid = "../assets/shots/%s/%s-1600.webp 1600w, " % (folder, name) if os.path.isfile(os.path.join(OUT, "assets", "shots", folder, name + "-1600.webp")) else ""
+        srcset = ' srcset="../assets/shots/%s/%s-960.webp 960w, %s%s %dw" sizes="%s"' % (folder, name, mid, src, w, sizes)
     return '<img%s src="%s"%s width="%d" height="%d" style="--image-width:%dpx" alt="%s" %s decoding="async">' % (
         ' class="%s"' % cls if cls else "", src, srcset, w, h, w, esc(alt), 'fetchpriority="high"' if eager else 'loading="lazy"')
 
@@ -363,7 +371,7 @@ def home_page(lang, h, titles):
 </section>""".format(eyebrow=esc(hero["eyebrow"]), t1=esc(hero["title"][0]), t2=esc(hero["title"][1]), sub=sub, booth=BOOTH,
                      primary=esc(hero["primary"]), arrow=ICON["arrow"], secondary=esc(hero["secondary"]), meta=esc(hero["meta"]),
                      caption=esc(hero["caption"]), labels=video_labels(lang),
-                     visual=img_tag("common", "keyvisual", hero["visual"], cls="kv-img", eager=True, sizes="(max-width: 899px) 100vw, 120vw")))
+                     visual=img_tag("common", "keyvisual", hero["visual"], cls="kv-img", eager=True, sizes="(max-width: 899px) 178vw, 120vw")))
     out.append('<section class="works"><div class="wrap"><p>%s</p><ul>%s</ul></div></section>' % (
         esc(h["works"]["label"]), "".join("<li>%s</li>" % esc(x) for x in h["works"]["items"])))
     cards = []

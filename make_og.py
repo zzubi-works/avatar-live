@@ -3,7 +3,7 @@
     uv run --no-project --with pillow python make_og.py
 
 The headline comes from content/<lang>/home.json (hero.title, hero.eyebrow); the picture is the key visual,
-shots/common/keyvisual.png (the fox in the night alley, 2000x1125), cropped so the avatar stands right of the headline.
+shots/common/keyvisual.png (the fox in the night alley, the 3840x2160 original), cropped so the avatar stands right of the headline.
 Fonts are the Windows system fonts for each script.
 """
 import json
@@ -35,8 +35,9 @@ def fit(path, text, size, width):
 def og(lang, visual, icon):
     home = json.load(open(os.path.join(ROOT, "content", lang, "home.json"), encoding="utf-8"))
     bold, regular = FONTS[lang]
-    # a 1500x787 window of the key visual: the avatar (x 880-1240 of 2000) lands at 700-990 of 1200
-    im = visual.crop((10, 0, 1510, 788)).resize((W, H), Image.LANCZOS)
+    # a window 3/4 of the key visual wide: the avatar (x 44-62% of it) lands at 700-990 of 1200
+    vw, vh = visual.size
+    im = visual.crop((round(vw * 0.005), 0, round(vw * 0.755), round(vw * 0.75 * H / W))).resize((W, H), Image.LANCZOS)
     # the alley's left side darkens under the headline
     shade = Image.new("L", (W, H), 0)
     d = ImageDraw.Draw(shade)
