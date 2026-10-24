@@ -1,5 +1,7 @@
 # Simple setup
 
+> 💡 New in 2.2.0; not available in 2.1.2 or earlier.
+
 Simple setup is a list where each line says "when this event arrives, react like this". For example, throw an object when someone follows, and pour water on the avatar for a donation of 10,000 won or more. It is a broadcast integration feature, so it needs Pro, and it is currently in beta.
 
 Make items on the Simple setup card in Broadcast → Interactions.

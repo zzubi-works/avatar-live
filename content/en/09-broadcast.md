@@ -1,5 +1,7 @@
 # Broadcast integration
 
+> 💡 New in 2.2.0; not available in 2.1.2 or earlier.
+
 Receive Twitch, CHZZK and SOOP viewer events and reactions from Discord friends, and make the avatar react to them. Broadcast integration is a Pro feature and is currently in beta. If something goes wrong on a real broadcast, let us know with an [error report](12-troubleshooting.md#when-broadcast-integration-does-not-work).
 
 The Broadcast page has two tabs.

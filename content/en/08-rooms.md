@@ -1,5 +1,7 @@
 # DLC room packs
 
+> 💡 New in 2.2.0; not available in 2.1.2 or earlier.
+
 When you buy additional content (DLC) on BOOTH, more rooms appear in the Studio's room list. This pack includes a Japanese alley (day and night), a Japanese apartment, a school pool, a showroom gallery, classrooms (Classroom 01 and 02 by day, evening and night, plus Ver02) and a coworking office.
 
 | Edition | DLC rooms | Built-in rooms / room piece editing |

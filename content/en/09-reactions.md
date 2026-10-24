@@ -1,5 +1,7 @@
 # Throw · Liquid · Falling
 
+> 💡 New in 2.2.0; not available in 2.1.2 or earlier.
+
 These are the avatar reactions that [Simple setup](09-interactions.md) items and the [Node editor](09-node-editor.md) run. They work with any avatar and any camera. They are broadcast integration features, so they need Pro, and they are currently in beta.
 
 ## Throw

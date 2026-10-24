@@ -99,7 +99,7 @@ def write(path, value):
 # channels, the user's own graphs and rules. The capture starts from the app's defaults for them.
 PRIVATE_SETTINGS = ("Twitch", "Chzzk", "Soop", "Discord", "Graphs", "Broadcast", "DonationBox", "Share")  # Share: the PC's game and window list
 # The user's current studio ("Main 3": grey background, screen light off) and one more scene for the scene list. Copies only;
-# the capture studio leaves out its room and background picture and takes the app's default exposure.
+# the capture studio leaves out its room and background picture; its exposure stays the user's.
 CAPTURE_STUDIO = "studio-fb96c3efe0d9"
 SCENES = (CAPTURE_STUDIO, "studio-c03f89839740")
 # The only avatars a capture may show (the user's list): Main, Loop Neko, 아이리 Straight Flush, Kaguya_Mayo_뉴.
@@ -114,7 +114,7 @@ SAMPLE_RULES = {
 SAMPLE_GRAPH = {"ko": "후원 1만 원 이상이면 물 뿌리기", "en": "Splash on donations of 10,000 won or more",
                 "ja": "1万ウォン以上の支援で水をかける", "zh": "打赏满 1 万韩元时泼水"}
 # The default lighting preset's face spot light: the lighting example changes its colour for a while.
-SAMPLE_LIGHT = "spot-light-face"
+SAMPLE_LIGHT = "d2cb09e0c559"  # Spot Light in Main's own lighting preset (user:7fee108b6ee9)
 TRIGGERS = ("OnRedeem", "OnChat", "OnFollow", "OnSubscribe", "OnBits", "OnChzzkChat", "OnChzzkDonation", "OnChzzkSubscribe",
             "OnSoopChat", "OnSoopBalloon", "OnSoopSubscribe", "OnDiscordReaction", "OnDiscordGame")
 
@@ -165,6 +165,8 @@ def prepare(source, target, lang):
     if target.exists():
         shutil.rmtree(target)
     target.mkdir(parents=True)
+    # The avatars keep their own lights (Main: the user's preset user:7fee108b6ee9), as the user sees them.
+    shutil.copy2(source / "lighting-presets.json", target / "lighting-presets.json")
     for name in ("thumbnails", "poses", "content-packs"):
         if (source / name).is_dir():
             shutil.copytree(source / name, target / name)
@@ -175,7 +177,6 @@ def prepare(source, target, lang):
     for scene in SCENES:
         studio = read(source / "studios" / (scene + ".studio.json"))
         studio["Background"]["ImagePath"] = ""
-        studio["Exposure"] = 1.0
         for slot in studio["Slots"]:
             if slot.get("DefaultAvatarId") not in ALLOWED_AVATARS:
                 slot.update(DefaultAvatarId=ALLOWED_AVATARS[0], DefaultAvatarName="Main", DefaultAvatarFile="")
@@ -218,8 +219,6 @@ def prepare(source, target, lang):
     translate = lang != "ko"
     for p in (target / "avatars").glob("*.json"):
         profile = read(p)
-        # The avatar starts from the default lighting preset, as a fresh install lights it.
-        profile.pop("Lighting", None)
         if translate:
             for i, pose in enumerate(profile.get("Posing", {}).get("Poses", [])):
                 if pose.get("Builtin") == "sit" or pose.get("Id") == "builtin-sit":
@@ -267,6 +266,7 @@ def take_language(args, lang):
     root = Path(__file__).resolve().parent.parent
     target = root / ".local" / "capture" / lang
     settings, poses = prepare(source, target, lang)
+    own_post = read(target / "studios" / (CAPTURE_STUDIO + ".studio.json"))["Post"]  # before the player saves the studio
     out = root / "shots" / ("zh-Hans" if lang == "zh" else lang)
     out.mkdir(parents=True, exist_ok=True)
     only = set(args.only.split(",")) if args.only else None
@@ -352,7 +352,8 @@ def take_language(args, lang):
             except RuntimeError as error:
                 missed.append(str(error))
             records.extend(read(out / "capture-manifest.json"))
-        cmd("studio post " + json.dumps(NEUTRAL_POST))
+        # Shots with the avatar keep the studio's own post-processing (the look the user sees).
+        cmd("studio post " + json.dumps(own_post))
         open_page("AvatarMenu")
         time.sleep(0.8)
         card = panel_state(port)["sectionCards"]["menu.tiles"]

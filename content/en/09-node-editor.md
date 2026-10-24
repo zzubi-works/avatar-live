@@ -1,5 +1,7 @@
 # Node editor
 
+> 💡 New in 2.2.0; not available in 2.1.2 or earlier.
+
 Connect nodes with lines to build "when this event arrives, under this condition, do this" yourself. Use it when [Simple setup](09-interactions.md) is not enough. Editing and running need Pro; on Basic you can only view, pan and zoom. It is a broadcast integration feature, so it is currently in beta.
 
 ## How is it different from Simple setup?

@@ -791,11 +791,11 @@
     "open": [
       "scene.lighting",
       "lighting.lights",
-      "light.spot-light-face",
-      "light.more.spot-light-face",
-      "light.shadow.spot-light-face"
+      "light.1cc26a770902",
+      "light.more.1cc26a770902",
+      "light.shadow.1cc26a770902"
     ],
-    "focus": "light.more.spot-light-face",
+    "focus": "light.more.1cc26a770902",
     "panel": true,
     "commands": [
       "studio post {\"Enabled\": true, \"Bloom\": false, \"ColorGrading\": false, \"Vignette\": false, \"Grain\": false, \"ChromaticAberration\": false, \"DepthOfField\": false, \"MotionBlur\": false, \"Beautify\": {\"Enabled\": false}, \"Hbao\": {\"Enabled\": false}}"
