@@ -11,6 +11,56 @@ Start by loading an avatar, connecting your tracking devices, then setting up yo
 
 Windows 10 / 11 64-bit and a graphics card that supports DirectX 11 are required. Prepare a webcam to track face and hand movements, and a microphone to move the mouth with your voice.
 
+## Export avatar
+
+Opening an avatar in a Unity project in Avatar Live`.vavatar`Create it as a file. already`.vavatar`me`.vrm`If there is a file[Open Avatar](#1-open-avatar)Please skip to .
+
+### Install Exporter
+
+1. Press the button below to add the repository to VCC or ALCOM. Confirm the add in the window that opens.
+2. Add Curious Bobby - Avatar Exporter to your avatar project.
+3. Open the project in Unity.
+
+<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">Add to VCC · ALCOM</a></p>
+
+If the button doesn't open VCC, copy the address below and paste it in Settings → Packages → Add Repository.
+
+```text
+https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json
+```
+
+If you received a `.unitypackage`, import it in Unity with Assets → Import Package → Custom Package….
+
+### Create an avatar file
+
+1. Open Curious Bobby → Avatar Exporter at the top of Unity.
+2. Drag the Hierarchy's avatar into the avatar box.
+3. Set a display name and save folder.
+4. Click Export .vavatar.
+5. Once complete, click View File to view the resulting file.
+6. Load that file in Open Avatar in Avatar Live.
+
+|item|What happens if I change it?|
+|---|---|
+|avatar|Select the character you want to export.|
+|name to display|This will be the name you see in the list in Avatar Live.|
+|facial expression clip|Includes the selected facial expression animation. You can export it even if you don't have it.|
+|storage folder|completed`.vavatar`The folder in which to place the files.|
+|Export .vavatar|Create a file with the avatar of your choice.|
+|View files|Open the folder containing the completed file.|
+
+### When modifying the avatar
+
+In Unity, modify the clothing, hair, etc. and then export the same avatar again. Any changes to appearance will be reflected when you load a new file in Avatar Live.
+
+### When export does not work
+
+- Unity checks that there are no errors in the avatar itself.
+- Check which authoring tool and exporter you are using and try exporting again.
+- If the file exists, but some parts are pink or disappeared, check the material/shader of the original project and the on status of the corresponding parts.
+
+The permitted scope for broadcasting and sharing of avatars, costumes, and props follows the terms and conditions of each producer.[Content Terms of Use](13-license.md#avatars-and-props)Check out .
+
 ## 1. Open Avatar
 
 ![Start screen for choosing the device to start with your avatar](img/guide-launcher.png)
@@ -59,56 +109,6 @@ Press F1 to hide the menu and view only the avatar. Press again to bring the men
 | Make the avatar react to viewer events | [Broadcast](09-broadcast.md) |
 
 Before starting a broadcast, check the actual video on OBS or the side receiving the shared screen. The layout of your work screen and the broadcast camera may differ.
-
-## Export avatar
-
-Opening an avatar in a Unity project in Avatar Live`.vavatar`Create it as a file. already`.vavatar`me`.vrm`If there is a file[Open Avatar](#avatar-library)Please skip to .
-
-### Install Exporter
-
-1. Press the button below to add the repository to VCC or ALCOM. Confirm the add in the window that opens.
-2. Add Curious Bobby - Avatar Exporter to your avatar project.
-3. Open the project in Unity.
-
-<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">Add to VCC · ALCOM</a></p>
-
-If the button doesn't open VCC, copy the address below and paste it in Settings → Packages → Add Repository.
-
-```text
-https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json
-```
-
-If you received a `.unitypackage`, import it in Unity with Assets → Import Package → Custom Package….
-
-### Create an avatar file
-
-1. Open Curious Bobby → Avatar Exporter at the top of Unity.
-2. Drag the Hierarchy's avatar into the avatar box.
-3. Set a display name and save folder.
-4. Click Export .vavatar.
-5. Once complete, click View File to view the resulting file.
-6. Load that file in Open Avatar in Avatar Live.
-
-|item|What happens if I change it?|
-|---|---|
-|avatar|Select the character you want to export.|
-|name to display|This will be the name you see in the list in Avatar Live.|
-|facial expression clip|Includes the selected facial expression animation. You can export it even if you don't have it.|
-|storage folder|completed`.vavatar`The folder in which to place the files.|
-|Export .vavatar|Create a file with the avatar of your choice.|
-|View files|Open the folder containing the completed file.|
-
-### When modifying the avatar
-
-In Unity, modify the clothing, hair, etc. and then export the same avatar again. Any changes to appearance will be reflected when you load a new file in Avatar Live.
-
-### When export does not work
-
-- Unity checks that there are no errors in the avatar itself.
-- Check which authoring tool and exporter you are using and try exporting again.
-- If the file exists, but some parts are pink or disappeared, check the material/shader of the original project and the on status of the corresponding parts.
-
-The permitted scope for broadcasting and sharing of avatars, costumes, and props follows the terms and conditions of each producer.[Content Terms of Use](13-license.md#avatars-and-props)Check out .
 
 ## Avatar Library
 

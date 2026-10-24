@@ -54,6 +54,72 @@
 <li>On the product activation screen, enter the information provided when you made the purchase and press Activate.</li>
 </ol>
 <p>Windows 10 / 11 64-bit and a graphics card that supports DirectX 11 are required. Prepare a webcam to track face and hand movements, and a microphone to move the mouth with your voice.</p>
+<h2 id="export-avatar">Export avatar<a class="anchor" href="#export-avatar" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Opening an avatar in a Unity project in Avatar Live<code>.vavatar</code>Create it as a file. already<code>.vavatar</code>me<code>.vrm</code>If there is a file<a href="#1-open-avatar">Open Avatar</a>Please skip to .</p>
+<h3 id="install-exporter">Install Exporter<a class="anchor" href="#install-exporter" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>Press the button below to add the repository to VCC or ALCOM. Confirm the add in the window that opens.</li>
+<li>Add Curious Bobby - Avatar Exporter to your avatar project.</li>
+<li>Open the project in Unity.</li>
+</ol>
+<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">Add to VCC · ALCOM</a></p>
+
+<p>If the button doesn't open VCC, copy the address below and paste it in Settings → Packages → Add Repository.</p>
+<pre><code class="language-text">https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json
+</code></pre>
+<p>If you received a <code>.unitypackage</code>, import it in Unity with Assets → Import Package → Custom Package….</p>
+<h3 id="create-an-avatar-file">Create an avatar file<a class="anchor" href="#create-an-avatar-file" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>Open Curious Bobby → Avatar Exporter at the top of Unity.</li>
+<li>Drag the Hierarchy's avatar into the avatar box.</li>
+<li>Set a display name and save folder.</li>
+<li>Click Export .vavatar.</li>
+<li>Once complete, click View File to view the resulting file.</li>
+<li>Load that file in Open Avatar in Avatar Live.</li>
+</ol>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>item</th>
+<th>What happens if I change it?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>avatar</td>
+<td>Select the character you want to export.</td>
+</tr>
+<tr>
+<td>name to display</td>
+<td>This will be the name you see in the list in Avatar Live.</td>
+</tr>
+<tr>
+<td>facial expression clip</td>
+<td>Includes the selected facial expression animation. You can export it even if you don't have it.</td>
+</tr>
+<tr>
+<td>storage folder</td>
+<td>completed<code>.vavatar</code>The folder in which to place the files.</td>
+</tr>
+<tr>
+<td>Export .vavatar</td>
+<td>Create a file with the avatar of your choice.</td>
+</tr>
+<tr>
+<td>View files</td>
+<td>Open the folder containing the completed file.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="when-modifying-the-avatar">When modifying the avatar<a class="anchor" href="#when-modifying-the-avatar" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>In Unity, modify the clothing, hair, etc. and then export the same avatar again. Any changes to appearance will be reflected when you load a new file in Avatar Live.</p>
+<h3 id="when-export-does-not-work">When export does not work<a class="anchor" href="#when-export-does-not-work" aria-hidden="true" tabindex="-1">#</a></h3>
+<ul>
+<li>Unity checks that there are no errors in the avatar itself.</li>
+<li>Check which authoring tool and exporter you are using and try exporting again.</li>
+<li>If the file exists, but some parts are pink or disappeared, check the material/shader of the original project and the on status of the corresponding parts.</li>
+</ul>
+<p>The permitted scope for broadcasting and sharing of avatars, costumes, and props follows the terms and conditions of each producer.<a href="13-license.html#avatars-and-props">Content Terms of Use</a>Check out .</p>
 <h2 id="1-open-avatar">1. Open Avatar<a class="anchor" href="#1-open-avatar" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><a class="zoomable" href="../assets/shots/en/guide-launcher.webp" target="_blank" rel="noopener"><img src="../assets/shots/en/guide-launcher.webp" srcset="../assets/shots/en/guide-launcher-960.webp 960w, ../assets/shots/en/guide-launcher.webp 1920w" sizes="(max-width: 900px) 100vw, 860px" width="1920" height="1080" style="--image-width:1920px" alt="Start screen for choosing the device to start with your avatar" loading="lazy" decoding="async"></a><figcaption>Start screen for choosing the device to start with your avatar</figcaption></figure>
 <ol>
@@ -137,72 +203,6 @@
 </tbody>
 </table></div>
 <p>Before starting a broadcast, check the actual video on OBS or the side receiving the shared screen. The layout of your work screen and the broadcast camera may differ.</p>
-<h2 id="export-avatar">Export avatar<a class="anchor" href="#export-avatar" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>Opening an avatar in a Unity project in Avatar Live<code>.vavatar</code>Create it as a file. already<code>.vavatar</code>me<code>.vrm</code>If there is a file<a href="#avatar-library">Open Avatar</a>Please skip to .</p>
-<h3 id="install-exporter">Install Exporter<a class="anchor" href="#install-exporter" aria-hidden="true" tabindex="-1">#</a></h3>
-<ol>
-<li>Press the button below to add the repository to VCC or ALCOM. Confirm the add in the window that opens.</li>
-<li>Add Curious Bobby - Avatar Exporter to your avatar project.</li>
-<li>Open the project in Unity.</li>
-</ol>
-<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">Add to VCC · ALCOM</a></p>
-
-<p>If the button doesn't open VCC, copy the address below and paste it in Settings → Packages → Add Repository.</p>
-<pre><code class="language-text">https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json
-</code></pre>
-<p>If you received a <code>.unitypackage</code>, import it in Unity with Assets → Import Package → Custom Package….</p>
-<h3 id="create-an-avatar-file">Create an avatar file<a class="anchor" href="#create-an-avatar-file" aria-hidden="true" tabindex="-1">#</a></h3>
-<ol>
-<li>Open Curious Bobby → Avatar Exporter at the top of Unity.</li>
-<li>Drag the Hierarchy's avatar into the avatar box.</li>
-<li>Set a display name and save folder.</li>
-<li>Click Export .vavatar.</li>
-<li>Once complete, click View File to view the resulting file.</li>
-<li>Load that file in Open Avatar in Avatar Live.</li>
-</ol>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th>item</th>
-<th>What happens if I change it?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>avatar</td>
-<td>Select the character you want to export.</td>
-</tr>
-<tr>
-<td>name to display</td>
-<td>This will be the name you see in the list in Avatar Live.</td>
-</tr>
-<tr>
-<td>facial expression clip</td>
-<td>Includes the selected facial expression animation. You can export it even if you don't have it.</td>
-</tr>
-<tr>
-<td>storage folder</td>
-<td>completed<code>.vavatar</code>The folder in which to place the files.</td>
-</tr>
-<tr>
-<td>Export .vavatar</td>
-<td>Create a file with the avatar of your choice.</td>
-</tr>
-<tr>
-<td>View files</td>
-<td>Open the folder containing the completed file.</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="when-modifying-the-avatar">When modifying the avatar<a class="anchor" href="#when-modifying-the-avatar" aria-hidden="true" tabindex="-1">#</a></h3>
-<p>In Unity, modify the clothing, hair, etc. and then export the same avatar again. Any changes to appearance will be reflected when you load a new file in Avatar Live.</p>
-<h3 id="when-export-does-not-work">When export does not work<a class="anchor" href="#when-export-does-not-work" aria-hidden="true" tabindex="-1">#</a></h3>
-<ul>
-<li>Unity checks that there are no errors in the avatar itself.</li>
-<li>Check which authoring tool and exporter you are using and try exporting again.</li>
-<li>If the file exists, but some parts are pink or disappeared, check the material/shader of the original project and the on status of the corresponding parts.</li>
-</ul>
-<p>The permitted scope for broadcasting and sharing of avatars, costumes, and props follows the terms and conditions of each producer.<a href="13-license.html#avatars-and-props">Content Terms of Use</a>Check out .</p>
 <h2 id="avatar-library">Avatar Library<a class="anchor" href="#avatar-library" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>Register your avatar file, select the character you want to use and the starting scene.</p>
 <h3 id="splash-screen">splash screen<a class="anchor" href="#splash-screen" aria-hidden="true" tabindex="-1">#</a></h3>
@@ -435,7 +435,7 @@
 <h2 id="editions-and-exit">Editions and Exit<a class="anchor" href="#editions-and-exit" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>Basic is for personal/private use, Pro is for broadcasting, video sharing, and commercial use. Check the <a href="13-license.html">features by edition</a> for the functions you need.</p>
 <p>Close the program with the power button at the bottom left. If the window's X button is set to hide to the tray, the broadcast will continue. You can change the X button behavior in Settings → Window.</p></article><nav class="pager" aria-label="Pager"><span></span><a class="next" href="05-avatar-menu.html"><span>Next</span>Avatar Menu</a></nav><p class="updated">Last updated: 2026-10-24</p></main>
-  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#installing-and-running">Installing and Running</a></li><li><a href="#1-open-avatar">1. Open Avatar</a></li><li><a href="#2-connecting-my-movements">2. Connecting My Movements</a></li><li><a href="#3-setting-background-and-composition">3. Setting Background and Composition</a></li><li><a href="#4-connecting-to-broadcasting-software">4. Connecting to Broadcasting Software</a></li><li><a href="#export-avatar">Export avatar</a></li><li class="sub"><a href="#install-exporter">Install Exporter</a></li><li class="sub"><a href="#create-an-avatar-file">Create an avatar file</a></li><li class="sub"><a href="#when-modifying-the-avatar">When modifying the avatar</a></li><li class="sub"><a href="#when-export-does-not-work">When export does not work</a></li><li><a href="#avatar-library">Avatar Library</a></li><li class="sub"><a href="#splash-screen">splash screen</a></li><li class="sub"><a href="#choose-a-device-to-start-with">Choose a device to start with</a></li><li class="sub"><a href="#avatar-to-use-for-next-launch">Avatar to use for next launch</a></li><li class="sub"><a href="#change-while-running">Change while running</a></li><li class="sub"><a href="#when-things-dont-start-well">When things don&#x27;t start well</a></li><li><a href="#main-screen">Main screen</a></li><li class="sub"><a href="#left-menu">left menu</a></li><li class="sub"><a href="#using-the-settings-panel">Using the Settings panel</a></li><li class="sub"><a href="#camera-toolbar">camera toolbar</a></li><li class="sub"><a href="#work-screen-and-transmission-screen">Work screen and transmission screen</a></li><li class="sub"><a href="#frequently-used-operations">Frequently used operations</a></li><li><a href="#editions-and-exit">Editions and Exit</a></li></ul></nav>
+  <nav class="toc" aria-label="On this page"><p class="toc-h">On this page</p><ul><li><a href="#installing-and-running">Installing and Running</a></li><li><a href="#export-avatar">Export avatar</a></li><li class="sub"><a href="#install-exporter">Install Exporter</a></li><li class="sub"><a href="#create-an-avatar-file">Create an avatar file</a></li><li class="sub"><a href="#when-modifying-the-avatar">When modifying the avatar</a></li><li class="sub"><a href="#when-export-does-not-work">When export does not work</a></li><li><a href="#1-open-avatar">1. Open Avatar</a></li><li><a href="#2-connecting-my-movements">2. Connecting My Movements</a></li><li><a href="#3-setting-background-and-composition">3. Setting Background and Composition</a></li><li><a href="#4-connecting-to-broadcasting-software">4. Connecting to Broadcasting Software</a></li><li><a href="#avatar-library">Avatar Library</a></li><li class="sub"><a href="#splash-screen">splash screen</a></li><li class="sub"><a href="#choose-a-device-to-start-with">Choose a device to start with</a></li><li class="sub"><a href="#avatar-to-use-for-next-launch">Avatar to use for next launch</a></li><li class="sub"><a href="#change-while-running">Change while running</a></li><li class="sub"><a href="#when-things-dont-start-well">When things don&#x27;t start well</a></li><li><a href="#main-screen">Main screen</a></li><li class="sub"><a href="#left-menu">left menu</a></li><li class="sub"><a href="#using-the-settings-panel">Using the Settings panel</a></li><li class="sub"><a href="#camera-toolbar">camera toolbar</a></li><li class="sub"><a href="#work-screen-and-transmission-screen">Work screen and transmission screen</a></li><li class="sub"><a href="#frequently-used-operations">Frequently used operations</a></li><li><a href="#editions-and-exit">Editions and Exit</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

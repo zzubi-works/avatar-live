@@ -54,6 +54,72 @@
 <li>在产品激活界面输入购买时收到的信息，然后点击激活。</li>
 </ol>
 <p>需要 Windows 10 / 11 64 位和支持 DirectX 11 的显卡。想要跟随面部和手部动作，请准备摄像头；想要用声音控制嘴部动作，请准备麦克风。</p>
+<h2 id="导出角色">导出角色<a class="anchor" href="#导出角色" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>将 Unity 项目中的角色制作成可以在 Avatar Live 中打开的 <code>.vavatar</code> 文件。如果已经有 <code>.vavatar</code> 或 <code>.vrm</code> 文件，请前往 <a href="#1-打开角色">打开角色</a>。</p>
+<h3 id="安装-exporter">安装 Exporter<a class="anchor" href="#安装-exporter" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>点击下方按钮，将存储库添加到 VCC 或 ALCOM。在打开的窗口中确认添加。</li>
+<li>在角色项目中添加 Curious Bobby - Avatar Exporter。</li>
+<li>在 Unity 中打开该项目。</li>
+</ol>
+<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">添加到 VCC · ALCOM</a></p>
+
+<p>如果按钮无法打开，请复制下方地址，粘贴到 Settings → Packages → Add Repository。</p>
+<pre><code class="language-text">https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json
+</code></pre>
+<p>如果是以 <code>.unitypackage</code> 接收的话，可以在 Unity 的 Assets → Import Package → Custom Package… 中导入。</p>
+<h3 id="创建角色文件">创建角色文件<a class="anchor" href="#创建角色文件" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>在 Unity 顶部打开 Curious Bobby → Avatar Exporter。</li>
+<li>将 Hierarchy 的角色拖入角色栏。</li>
+<li>设置显示名称和保存文件夹。</li>
+<li>点击导出 .vavatar。</li>
+<li>完成后，点击查看文件以确认结果文件。</li>
+<li>在 Avatar Live 的打开角色中加载该文件。</li>
+</ol>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>项目</th>
+<th>如果更改会怎么样？</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>角色</td>
+<td>请选择要导出的角色。</td>
+</tr>
+<tr>
+<td>显示名称</td>
+<td>将显示在 Avatar Live 列表中的名称。</td>
+</tr>
+<tr>
+<td>表情剪辑</td>
+<td>一起加入所选的表情动画。即使没有也可以导出。</td>
+</tr>
+<tr>
+<td>保存文件夹</td>
+<td>放置已完成的 <code>.vavatar</code> 文件的文件夹。</td>
+</tr>
+<tr>
+<td>.vavatar 导出</td>
+<td>使用所选角色创建文件。</td>
+</tr>
+<tr>
+<td>查看文件</td>
+<td>打开包含已完成文件的文件夹。</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="修改角色时">修改角色时<a class="anchor" href="#修改角色时" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>在Unity中修改服装或头发等之后，再次导出相同的角色。在Avatar Live中加载新文件后，修改过的外观将会被反映出来。</p>
+<h3 id="导出失败时">导出失败时<a class="anchor" href="#导出失败时" aria-hidden="true" tabindex="-1">#</a></h3>
+<ul>
+<li>在 Unity 中检查角色本身是否没有错误。</li>
+<li>请确认正在使用的制作工具和导出器，然后重新导出。</li>
+<li>文件已经生成，但如果部分是粉色的或消失了，请检查原始项目的材质、着色器以及该部件的开启状态。</li>
+</ul>
+<p>角色、服装、道具的播放及分享许可范围遵循各制作者的条款。请确认 <a href="13-license.html#角色与道具">内容使用条件</a>。</p>
 <h2 id="1-打开角色">1. 打开角色<a class="anchor" href="#1-打开角色" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><a class="zoomable" href="../assets/shots/zh/guide-launcher.webp" target="_blank" rel="noopener"><img src="../assets/shots/zh/guide-launcher.webp" srcset="../assets/shots/zh/guide-launcher-960.webp 960w, ../assets/shots/zh/guide-launcher.webp 1920w" sizes="(max-width: 900px) 100vw, 860px" width="1920" height="1080" style="--image-width:1920px" alt="选择用于启动的设备和角色的开始屏幕" loading="lazy" decoding="async"></a><figcaption>选择用于启动的设备和角色的开始屏幕</figcaption></figure>
 <ol>
@@ -137,72 +203,6 @@
 </tbody>
 </table></div>
 <p>在开始直播之前，请确认 OBS 或接收方的实际画面。我的工作屏幕和输出摄像头的构图可能不同。</p>
-<h2 id="导出角色">导出角色<a class="anchor" href="#导出角色" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>将 Unity 项目中的角色制作成可以在 Avatar Live 中打开的 <code>.vavatar</code> 文件。如果已经有 <code>.vavatar</code> 或 <code>.vrm</code> 文件，请前往 <a href="#角色库">打开角色</a>。</p>
-<h3 id="安装-exporter">安装 Exporter<a class="anchor" href="#安装-exporter" aria-hidden="true" tabindex="-1">#</a></h3>
-<ol>
-<li>点击下方按钮，将存储库添加到 VCC 或 ALCOM。在打开的窗口中确认添加。</li>
-<li>在角色项目中添加 Curious Bobby - Avatar Exporter。</li>
-<li>在 Unity 中打开该项目。</li>
-</ol>
-<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">添加到 VCC · ALCOM</a></p>
-
-<p>如果按钮无法打开，请复制下方地址，粘贴到 Settings → Packages → Add Repository。</p>
-<pre><code class="language-text">https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json
-</code></pre>
-<p>如果是以 <code>.unitypackage</code> 接收的话，可以在 Unity 的 Assets → Import Package → Custom Package… 中导入。</p>
-<h3 id="创建角色文件">创建角色文件<a class="anchor" href="#创建角色文件" aria-hidden="true" tabindex="-1">#</a></h3>
-<ol>
-<li>在 Unity 顶部打开 Curious Bobby → Avatar Exporter。</li>
-<li>将 Hierarchy 的角色拖入角色栏。</li>
-<li>设置显示名称和保存文件夹。</li>
-<li>点击导出 .vavatar。</li>
-<li>完成后，点击查看文件以确认结果文件。</li>
-<li>在 Avatar Live 的打开角色中加载该文件。</li>
-</ol>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th>项目</th>
-<th>如果更改会怎么样？</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>角色</td>
-<td>请选择要导出的角色。</td>
-</tr>
-<tr>
-<td>显示名称</td>
-<td>将显示在 Avatar Live 列表中的名称。</td>
-</tr>
-<tr>
-<td>表情剪辑</td>
-<td>一起加入所选的表情动画。即使没有也可以导出。</td>
-</tr>
-<tr>
-<td>保存文件夹</td>
-<td>放置已完成的 <code>.vavatar</code> 文件的文件夹。</td>
-</tr>
-<tr>
-<td>.vavatar 导出</td>
-<td>使用所选角色创建文件。</td>
-</tr>
-<tr>
-<td>查看文件</td>
-<td>打开包含已完成文件的文件夹。</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="修改角色时">修改角色时<a class="anchor" href="#修改角色时" aria-hidden="true" tabindex="-1">#</a></h3>
-<p>在Unity中修改服装或头发等之后，再次导出相同的角色。在Avatar Live中加载新文件后，修改过的外观将会被反映出来。</p>
-<h3 id="导出失败时">导出失败时<a class="anchor" href="#导出失败时" aria-hidden="true" tabindex="-1">#</a></h3>
-<ul>
-<li>在 Unity 中检查角色本身是否没有错误。</li>
-<li>请确认正在使用的制作工具和导出器，然后重新导出。</li>
-<li>文件已经生成，但如果部分是粉色的或消失了，请检查原始项目的材质、着色器以及该部件的开启状态。</li>
-</ul>
-<p>角色、服装、道具的播放及分享许可范围遵循各制作者的条款。请确认 <a href="13-license.html#角色与道具">内容使用条件</a>。</p>
 <h2 id="角色库">角色库<a class="anchor" href="#角色库" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>注册角色文件，选择要使用的角色和起始场景。</p>
 <h3 id="开始屏幕">开始屏幕<a class="anchor" href="#开始屏幕" aria-hidden="true" tabindex="-1">#</a></h3>
@@ -435,7 +435,7 @@
 <h2 id="版本与退出">版本与退出<a class="anchor" href="#版本与退出" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>Basic 版本用于个人·非公开使用，Pro 版本用于直播·视频公开·商业用途。请在 <a href="13-license.html">各版本功能</a> 中确认所需功能。</p>
 <p>用左下角的电源按钮退出程序。如果窗口的 X 按钮设置为最小化到托盘，直播将继续。X 按钮的操作可在设置 → 窗口中更改。</p></article><nav class="pager" aria-label="Pager"><span></span><a class="next" href="05-avatar-menu.html"><span>下一页</span>角色菜单</a></nav><p class="updated">最后更新: 2026-10-24</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#安装和运行">安装和运行</a></li><li><a href="#1-打开角色">1. 打开角色</a></li><li><a href="#2-连接我的动作">2. 连接我的动作</a></li><li><a href="#3-设置背景和构图">3. 设置背景和构图</a></li><li><a href="#4-连接到直播软件">4. 连接到直播软件</a></li><li><a href="#导出角色">导出角色</a></li><li class="sub"><a href="#安装-exporter">安装 Exporter</a></li><li class="sub"><a href="#创建角色文件">创建角色文件</a></li><li class="sub"><a href="#修改角色时">修改角色时</a></li><li class="sub"><a href="#导出失败时">导出失败时</a></li><li><a href="#角色库">角色库</a></li><li class="sub"><a href="#开始屏幕">开始屏幕</a></li><li class="sub"><a href="#选择要开始的设备">选择要开始的设备</a></li><li class="sub"><a href="#用于下一次运行的角色">用于下一次运行的角色</a></li><li class="sub"><a href="#运行中更换">运行中更换</a></li><li class="sub"><a href="#启动不顺时">启动不顺时</a></li><li><a href="#主屏幕">主屏幕</a></li><li class="sub"><a href="#左侧菜单">左侧菜单</a></li><li class="sub"><a href="#使用设置面板">使用设置面板</a></li><li class="sub"><a href="#摄像机工具栏">摄像机工具栏</a></li><li class="sub"><a href="#工作屏幕与直播屏幕">工作屏幕与直播屏幕</a></li><li class="sub"><a href="#常用操作">常用操作</a></li><li><a href="#版本与退出">版本与退出</a></li></ul></nav>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#安装和运行">安装和运行</a></li><li><a href="#导出角色">导出角色</a></li><li class="sub"><a href="#安装-exporter">安装 Exporter</a></li><li class="sub"><a href="#创建角色文件">创建角色文件</a></li><li class="sub"><a href="#修改角色时">修改角色时</a></li><li class="sub"><a href="#导出失败时">导出失败时</a></li><li><a href="#1-打开角色">1. 打开角色</a></li><li><a href="#2-连接我的动作">2. 连接我的动作</a></li><li><a href="#3-设置背景和构图">3. 设置背景和构图</a></li><li><a href="#4-连接到直播软件">4. 连接到直播软件</a></li><li><a href="#角色库">角色库</a></li><li class="sub"><a href="#开始屏幕">开始屏幕</a></li><li class="sub"><a href="#选择要开始的设备">选择要开始的设备</a></li><li class="sub"><a href="#用于下一次运行的角色">用于下一次运行的角色</a></li><li class="sub"><a href="#运行中更换">运行中更换</a></li><li class="sub"><a href="#启动不顺时">启动不顺时</a></li><li><a href="#主屏幕">主屏幕</a></li><li class="sub"><a href="#左侧菜单">左侧菜单</a></li><li class="sub"><a href="#使用设置面板">使用设置面板</a></li><li class="sub"><a href="#摄像机工具栏">摄像机工具栏</a></li><li class="sub"><a href="#工作屏幕与直播屏幕">工作屏幕与直播屏幕</a></li><li class="sub"><a href="#常用操作">常用操作</a></li><li><a href="#版本与退出">版本与退出</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

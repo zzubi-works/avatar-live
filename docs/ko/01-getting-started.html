@@ -54,6 +54,72 @@
 <li>제품 활성화 화면에 구매할 때 안내받은 정보를 입력하고 활성화를 누릅니다.</li>
 </ol>
 <p>Windows 10 / 11 64비트와 DirectX 11 지원 그래픽 카드가 필요합니다. 얼굴과 손을 따라 움직이려면 웹캠을, 목소리로 입을 움직이려면 마이크를 준비하세요.</p>
+<h2 id="아바타-내보내기">아바타 내보내기<a class="anchor" href="#아바타-내보내기" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>Unity 프로젝트에 있는 아바타를 Avatar Live에서 여는 <code>.vavatar</code> 파일로 만듭니다. 이미 <code>.vavatar</code>나 <code>.vrm</code> 파일이 있다면 <a href="#1-아바타-열기">아바타 열기</a>로 넘어가세요.</p>
+<h3 id="exporter-설치">Exporter 설치<a class="anchor" href="#exporter-설치" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>아래 버튼을 눌러 VCC 또는 ALCOM에 저장소를 추가합니다. 창이 열리면 추가를 확인합니다.</li>
+<li>아바타 프로젝트에 Curious Bobby - Avatar Exporter를 추가합니다.</li>
+<li>Unity에서 해당 프로젝트를 엽니다.</li>
+</ol>
+<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">VCC · ALCOM에 저장소 추가</a></p>
+
+<p>버튼으로 열리지 않으면 아래 주소를 복사해 Settings → Packages → Add Repository에 붙여 넣습니다.</p>
+<pre><code class="language-text">https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json
+</code></pre>
+<p><code>.unitypackage</code>로 받았다면 Unity의 Assets → Import Package → Custom Package…에서 가져옵니다.</p>
+<h3 id="아바타-파일-만들기">아바타 파일 만들기<a class="anchor" href="#아바타-파일-만들기" aria-hidden="true" tabindex="-1">#</a></h3>
+<ol>
+<li>Unity 상단 Curious Bobby → Avatar Exporter를 엽니다.</li>
+<li>아바타 칸에 Hierarchy의 아바타를 끌어 넣습니다.</li>
+<li>표시 이름과 저장 폴더를 정합니다.</li>
+<li>.vavatar 내보내기를 누릅니다.</li>
+<li>완료되면 파일 보기를 눌러 결과 파일을 확인합니다.</li>
+<li>Avatar Live의 아바타 열기에서 그 파일을 불러옵니다.</li>
+</ol>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>항목</th>
+<th>바꾸면 어떻게 되나요?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>아바타</td>
+<td>내보낼 캐릭터를 선택합니다.</td>
+</tr>
+<tr>
+<td>표시할 이름</td>
+<td>Avatar Live의 목록에 보이는 이름이 됩니다.</td>
+</tr>
+<tr>
+<td>표정 클립</td>
+<td>선택한 표정 애니메이션을 함께 넣습니다. 없어도 내보낼 수 있습니다.</td>
+</tr>
+<tr>
+<td>저장 폴더</td>
+<td>완성된 <code>.vavatar</code> 파일을 둘 폴더입니다.</td>
+</tr>
+<tr>
+<td>.vavatar 내보내기</td>
+<td>선택한 아바타로 파일을 만듭니다.</td>
+</tr>
+<tr>
+<td>파일 보기</td>
+<td>완성된 파일이 있는 폴더를 엽니다.</td>
+</tr>
+</tbody>
+</table></div>
+<h3 id="아바타를-수정했을-때">아바타를 수정했을 때<a class="anchor" href="#아바타를-수정했을-때" aria-hidden="true" tabindex="-1">#</a></h3>
+<p>Unity에서 의상이나 머리카락 등을 고친 뒤 같은 아바타를 다시 내보냅니다. Avatar Live에서 새 파일을 불러오면 변경한 외형이 반영됩니다.</p>
+<h3 id="내보내기가-안-될-때">내보내기가 안 될 때<a class="anchor" href="#내보내기가-안-될-때" aria-hidden="true" tabindex="-1">#</a></h3>
+<ul>
+<li>Unity에서 아바타 자체의 오류가 없는지 확인합니다.</li>
+<li>사용 중인 제작 도구와 Exporter를 확인하고 다시 내보냅니다.</li>
+<li>파일은 생겼지만 일부가 분홍색이거나 사라졌다면 원본 프로젝트의 재질·셰이더와 해당 파츠의 켜짐 상태를 확인합니다.</li>
+</ul>
+<p>아바타·의상·소품의 방송 및 공유 허용 범위는 각 제작자의 약관을 따릅니다. <a href="13-license.html#아바타와-소품">콘텐츠 이용 조건</a>을 확인하세요.</p>
 <h2 id="1-아바타-열기">1. 아바타 열기<a class="anchor" href="#1-아바타-열기" aria-hidden="true" tabindex="-1">#</a></h2>
 <figure><a class="zoomable" href="../assets/shots/ko/guide-launcher.webp" target="_blank" rel="noopener"><img src="../assets/shots/ko/guide-launcher.webp" srcset="../assets/shots/ko/guide-launcher-960.webp 960w, ../assets/shots/ko/guide-launcher.webp 1920w" sizes="(max-width: 900px) 100vw, 860px" width="1920" height="1080" style="--image-width:1920px" alt="아바타와 시작할 장치를 고르는 시작 화면" loading="lazy" decoding="async"></a><figcaption>아바타와 시작할 장치를 고르는 시작 화면</figcaption></figure>
 <ol>
@@ -137,72 +203,6 @@
 </tbody>
 </table></div>
 <p>방송을 시작하기 전에는 OBS나 공유받는 쪽의 실제 영상을 확인하세요. 내 작업 화면과 송출 카메라의 구도가 다를 수 있습니다.</p>
-<h2 id="아바타-내보내기">아바타 내보내기<a class="anchor" href="#아바타-내보내기" aria-hidden="true" tabindex="-1">#</a></h2>
-<p>Unity 프로젝트에 있는 아바타를 Avatar Live에서 여는 <code>.vavatar</code> 파일로 만듭니다. 이미 <code>.vavatar</code>나 <code>.vrm</code> 파일이 있다면 <a href="#아바타-라이브러리">아바타 열기</a>로 넘어가세요.</p>
-<h3 id="exporter-설치">Exporter 설치<a class="anchor" href="#exporter-설치" aria-hidden="true" tabindex="-1">#</a></h3>
-<ol>
-<li>아래 버튼을 눌러 VCC 또는 ALCOM에 저장소를 추가합니다. 창이 열리면 추가를 확인합니다.</li>
-<li>아바타 프로젝트에 Curious Bobby - Avatar Exporter를 추가합니다.</li>
-<li>Unity에서 해당 프로젝트를 엽니다.</li>
-</ol>
-<p><a class="btn btn-primary" href="vcc://vpm/addRepo?url=https%3A%2F%2Fraw.githubusercontent.com%2Fzzubi-works%2Favatar-exporter%2Fmain%2Findex.json">VCC · ALCOM에 저장소 추가</a></p>
-
-<p>버튼으로 열리지 않으면 아래 주소를 복사해 Settings → Packages → Add Repository에 붙여 넣습니다.</p>
-<pre><code class="language-text">https://raw.githubusercontent.com/zzubi-works/avatar-exporter/main/index.json
-</code></pre>
-<p><code>.unitypackage</code>로 받았다면 Unity의 Assets → Import Package → Custom Package…에서 가져옵니다.</p>
-<h3 id="아바타-파일-만들기">아바타 파일 만들기<a class="anchor" href="#아바타-파일-만들기" aria-hidden="true" tabindex="-1">#</a></h3>
-<ol>
-<li>Unity 상단 Curious Bobby → Avatar Exporter를 엽니다.</li>
-<li>아바타 칸에 Hierarchy의 아바타를 끌어 넣습니다.</li>
-<li>표시 이름과 저장 폴더를 정합니다.</li>
-<li>.vavatar 내보내기를 누릅니다.</li>
-<li>완료되면 파일 보기를 눌러 결과 파일을 확인합니다.</li>
-<li>Avatar Live의 아바타 열기에서 그 파일을 불러옵니다.</li>
-</ol>
-<div class="table-wrap settings-table" tabindex="0"><table>
-<thead>
-<tr>
-<th>항목</th>
-<th>바꾸면 어떻게 되나요?</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>아바타</td>
-<td>내보낼 캐릭터를 선택합니다.</td>
-</tr>
-<tr>
-<td>표시할 이름</td>
-<td>Avatar Live의 목록에 보이는 이름이 됩니다.</td>
-</tr>
-<tr>
-<td>표정 클립</td>
-<td>선택한 표정 애니메이션을 함께 넣습니다. 없어도 내보낼 수 있습니다.</td>
-</tr>
-<tr>
-<td>저장 폴더</td>
-<td>완성된 <code>.vavatar</code> 파일을 둘 폴더입니다.</td>
-</tr>
-<tr>
-<td>.vavatar 내보내기</td>
-<td>선택한 아바타로 파일을 만듭니다.</td>
-</tr>
-<tr>
-<td>파일 보기</td>
-<td>완성된 파일이 있는 폴더를 엽니다.</td>
-</tr>
-</tbody>
-</table></div>
-<h3 id="아바타를-수정했을-때">아바타를 수정했을 때<a class="anchor" href="#아바타를-수정했을-때" aria-hidden="true" tabindex="-1">#</a></h3>
-<p>Unity에서 의상이나 머리카락 등을 고친 뒤 같은 아바타를 다시 내보냅니다. Avatar Live에서 새 파일을 불러오면 변경한 외형이 반영됩니다.</p>
-<h3 id="내보내기가-안-될-때">내보내기가 안 될 때<a class="anchor" href="#내보내기가-안-될-때" aria-hidden="true" tabindex="-1">#</a></h3>
-<ul>
-<li>Unity에서 아바타 자체의 오류가 없는지 확인합니다.</li>
-<li>사용 중인 제작 도구와 Exporter를 확인하고 다시 내보냅니다.</li>
-<li>파일은 생겼지만 일부가 분홍색이거나 사라졌다면 원본 프로젝트의 재질·셰이더와 해당 파츠의 켜짐 상태를 확인합니다.</li>
-</ul>
-<p>아바타·의상·소품의 방송 및 공유 허용 범위는 각 제작자의 약관을 따릅니다. <a href="13-license.html#아바타와-소품">콘텐츠 이용 조건</a>을 확인하세요.</p>
 <h2 id="아바타-라이브러리">아바타 라이브러리<a class="anchor" href="#아바타-라이브러리" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>아바타 파일을 등록하고, 사용할 캐릭터와 시작 장면을 고릅니다.</p>
 <h3 id="시작-화면">시작 화면<a class="anchor" href="#시작-화면" aria-hidden="true" tabindex="-1">#</a></h3>
@@ -435,7 +435,7 @@
 <h2 id="에디션과-종료">에디션과 종료<a class="anchor" href="#에디션과-종료" aria-hidden="true" tabindex="-1">#</a></h2>
 <p>Basic은 개인적·비공개 사용, Pro는 방송·영상 공개·상업적 이용에 사용합니다. <a href="13-license.html">에디션별 기능</a>에서 필요한 기능을 확인하세요.</p>
 <p>왼쪽 아래 전원 버튼으로 프로그램을 종료합니다. 창의 X 버튼이 트레이로 숨기도록 설정되어 있으면 송출은 계속됩니다. X 버튼 동작은 설정 → 창에서 바꿉니다.</p></article><nav class="pager" aria-label="Pager"><span></span><a class="next" href="05-avatar-menu.html"><span>다음</span>아바타 메뉴</a></nav><p class="updated">최종 업데이트: 2026-10-24</p></main>
-  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#설치하고-실행하기">설치하고 실행하기</a></li><li><a href="#1-아바타-열기">1. 아바타 열기</a></li><li><a href="#2-내-움직임-연결하기">2. 내 움직임 연결하기</a></li><li><a href="#3-배경과-구도-정하기">3. 배경과 구도 정하기</a></li><li><a href="#4-방송-프로그램에-연결하기">4. 방송 프로그램에 연결하기</a></li><li><a href="#아바타-내보내기">아바타 내보내기</a></li><li class="sub"><a href="#exporter-설치">Exporter 설치</a></li><li class="sub"><a href="#아바타-파일-만들기">아바타 파일 만들기</a></li><li class="sub"><a href="#아바타를-수정했을-때">아바타를 수정했을 때</a></li><li class="sub"><a href="#내보내기가-안-될-때">내보내기가 안 될 때</a></li><li><a href="#아바타-라이브러리">아바타 라이브러리</a></li><li class="sub"><a href="#시작-화면">시작 화면</a></li><li class="sub"><a href="#시작할-장치-고르기">시작할 장치 고르기</a></li><li class="sub"><a href="#다음-실행에-사용할-아바타">다음 실행에 사용할 아바타</a></li><li class="sub"><a href="#실행-중에-바꾸기">실행 중에 바꾸기</a></li><li class="sub"><a href="#시작이-잘-안-될-때">시작이 잘 안 될 때</a></li><li><a href="#메인-화면">메인 화면</a></li><li class="sub"><a href="#왼쪽-메뉴">왼쪽 메뉴</a></li><li class="sub"><a href="#설정-패널-사용하기">설정 패널 사용하기</a></li><li class="sub"><a href="#카메라-도구막대">카메라 도구막대</a></li><li class="sub"><a href="#작업-화면과-송출-화면">작업 화면과 송출 화면</a></li><li class="sub"><a href="#자주-쓰는-조작">자주 쓰는 조작</a></li><li><a href="#에디션과-종료">에디션과 종료</a></li></ul></nav>
+  <nav class="toc" aria-label="이 페이지"><p class="toc-h">이 페이지</p><ul><li><a href="#설치하고-실행하기">설치하고 실행하기</a></li><li><a href="#아바타-내보내기">아바타 내보내기</a></li><li class="sub"><a href="#exporter-설치">Exporter 설치</a></li><li class="sub"><a href="#아바타-파일-만들기">아바타 파일 만들기</a></li><li class="sub"><a href="#아바타를-수정했을-때">아바타를 수정했을 때</a></li><li class="sub"><a href="#내보내기가-안-될-때">내보내기가 안 될 때</a></li><li><a href="#1-아바타-열기">1. 아바타 열기</a></li><li><a href="#2-내-움직임-연결하기">2. 내 움직임 연결하기</a></li><li><a href="#3-배경과-구도-정하기">3. 배경과 구도 정하기</a></li><li><a href="#4-방송-프로그램에-연결하기">4. 방송 프로그램에 연결하기</a></li><li><a href="#아바타-라이브러리">아바타 라이브러리</a></li><li class="sub"><a href="#시작-화면">시작 화면</a></li><li class="sub"><a href="#시작할-장치-고르기">시작할 장치 고르기</a></li><li class="sub"><a href="#다음-실행에-사용할-아바타">다음 실행에 사용할 아바타</a></li><li class="sub"><a href="#실행-중에-바꾸기">실행 중에 바꾸기</a></li><li class="sub"><a href="#시작이-잘-안-될-때">시작이 잘 안 될 때</a></li><li><a href="#메인-화면">메인 화면</a></li><li class="sub"><a href="#왼쪽-메뉴">왼쪽 메뉴</a></li><li class="sub"><a href="#설정-패널-사용하기">설정 패널 사용하기</a></li><li class="sub"><a href="#카메라-도구막대">카메라 도구막대</a></li><li class="sub"><a href="#작업-화면과-송출-화면">작업 화면과 송출 화면</a></li><li class="sub"><a href="#자주-쓰는-조작">자주 쓰는 조작</a></li><li><a href="#에디션과-종료">에디션과 종료</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">
