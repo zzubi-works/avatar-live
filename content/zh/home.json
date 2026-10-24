@@ -44,34 +44,34 @@
       {
         "title": "无需 VRM 转换",
         "body": "在角色项目中导出一次即可。修改角色后，也只需重新导出。",
-        "media": "video:home-no-vrm",
+        "media": "img:guide-launcher",
         "size": "wide"
       },
       {
         "title": "原有着色器，原样呈现",
         "body": "直接呈现角色所用的 Poiyomi、lilToon 等着色器。",
-        "media": "video:home-shader",
+        "media": "common:shader-side",
         "size": "tall"
       },
       {
         "title": "PhysBone 与菜单原样运作",
         "body": "从头发的摆动、服装开关到表情按钮，都以与 VRChat 相同的设置运作。",
-        "media": "video:home-physbone"
+        "media": "video:physbone"
       },
       {
         "title": "从面部到全身",
         "body": "只需一个摄像头，即可追踪表情、视线、手指关节乃至全身。iPhone 和 VMC（全身追踪器 · 手套）也能按部位混合使用。",
-        "media": "video:home-fullbody"
+        "media": "video:face"
       },
       {
         "title": "键盘 · 鼠标手部动作",
         "body": "即使手不在画面中，角色的手也会配合打字和鼠标操作而动。不会记录输入的文字。",
-        "media": "video:home-typing"
+        "media": "img:guide-motion-hands"
       },
       {
         "title": "直播与屏幕共享",
         "body": "向 OBS 发送透明背景画面，向 Discord 发送游戏与角色合一的画面。",
-        "media": "video:home-share",
+        "media": "video:share",
         "size": "wide"
       }
     ]
@@ -120,7 +120,7 @@
           "快捷键与快捷操作",
           "收藏"
         ],
-        "media": "video:home-expression",
+        "media": "video:menu",
         "page": "05-avatar-menu"
       },
       {
@@ -131,7 +131,7 @@
           "眨眼 · 视线",
           "麦克风口型同步"
         ],
-        "media": "video:home-face-setup",
+        "media": "img:guide-face-calibration",
         "page": "07-motion"
       },
       {
@@ -142,7 +142,7 @@
           "就地固定姿势",
           "支持 MarshmallowPB"
         ],
-        "media": "video:home-grab",
+        "media": "img:guide-camera-toolbar",
         "page": "04-main-window"
       },
       {
@@ -153,7 +153,7 @@
           "虚拟摄像头",
           "保存 PNG 照片"
         ],
-        "media": "video:home-obs",
+        "media": "video:background",
         "page": "09-output"
       },
       {
@@ -164,7 +164,7 @@
           "只发送游戏声音",
           "自由调整位置 · 大小"
         ],
-        "media": "video:home-discord-share",
+        "media": "img:guide-share",
         "page": "09-output"
       },
       {
@@ -175,7 +175,7 @@
           "在视图中调整角度 · 范围",
           "背景 · 色度键 · 效果"
         ],
-        "media": "video:home-lighting",
+        "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
         "page": "08-scene"
       },
       {

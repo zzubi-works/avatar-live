@@ -44,34 +44,34 @@
       {
         "title": "VRM変換なしで",
         "body": "アバタープロジェクトから一度書き出せば完了。アバターを改変しても、書き出し直すだけです。",
-        "media": "video:home-no-vrm",
+        "media": "img:guide-launcher",
         "size": "wide"
       },
       {
         "title": "元のシェーダーのまま",
         "body": "Poiyomi、lilToonなど、アバターに使っているシェーダーをそのまま表示します。",
-        "media": "video:home-shader",
+        "media": "common:shader-side",
         "size": "tall"
       },
       {
         "title": "PhysBoneもメニューもそのまま",
         "body": "髪の揺れ、衣装のトグル、表情ボタンまで、VRChatと同じ設定で動きます。",
-        "media": "video:home-physbone"
+        "media": "video:physbone"
       },
       {
         "title": "顔から全身まで",
         "body": "Webカメラひとつで、表情や視線、指の関節、全身まで。iPhoneやVMC（全身トラッカー・グローブ）も、部位ごとに組み合わせて使えます。",
-        "media": "video:home-fullbody"
+        "media": "video:face"
       },
       {
         "title": "キーボード・マウスに合わせた手の動き",
         "body": "手が画面に映っていないときも、タイピングやマウスに合わせて手が動きます。入力した文字は記録しません。",
-        "media": "video:home-typing"
+        "media": "img:guide-motion-hands"
       },
       {
         "title": "配信と画面共有",
         "body": "OBSには透明背景で、Discordにはゲームとアバターをひとつの画面にして送ります。",
-        "media": "video:home-share",
+        "media": "video:share",
         "size": "wide"
       }
     ]
@@ -120,7 +120,7 @@
           "ショートカットとクイックアクション",
           "お気に入り"
         ],
-        "media": "video:home-expression",
+        "media": "video:menu",
         "page": "05-avatar-menu"
       },
       {
@@ -131,7 +131,7 @@
           "まばたき・視線",
           "マイクでリップシンク"
         ],
-        "media": "video:home-face-setup",
+        "media": "img:guide-face-calibration",
         "page": "07-motion"
       },
       {
@@ -142,7 +142,7 @@
           "その場でポーズを固定",
           "マシュマロPB対応"
         ],
-        "media": "video:home-grab",
+        "media": "img:guide-camera-toolbar",
         "page": "04-main-window"
       },
       {
@@ -153,7 +153,7 @@
           "仮想カメラ",
           "PNGで写真を保存"
         ],
-        "media": "video:home-obs",
+        "media": "video:background",
         "page": "09-output"
       },
       {
@@ -164,7 +164,7 @@
           "ゲーム音だけを送る",
           "位置・サイズは自由に"
         ],
-        "media": "video:home-discord-share",
+        "media": "img:guide-share",
         "page": "09-output"
       },
       {
@@ -175,7 +175,7 @@
           "ビューで角度・範囲を調整",
           "背景・クロマキー・エフェクト"
         ],
-        "media": "video:home-lighting",
+        "media": "gallery:light-spot-light,light-studio-soft,light-warm,light-cool",
         "page": "08-scene"
       },
       {
