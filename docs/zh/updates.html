@@ -22,9 +22,9 @@
 <link rel="icon" href="../assets/brand/favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="../assets/site.css?v=f1fa02d3aa">
+<link rel="stylesheet" href="../assets/site.css?v=67f5ca41db">
 <script>try{var t=localStorage.getItem('al-theme');if(t)document.documentElement.dataset.theme=t;}catch(e){}</script>
-<script src="../assets/site.js?v=7bd73318e6" defer></script>
+<script src="../assets/site.js?v=dd342080d5" defer></script>
 </head>
 <body class="doc">
 <a class="skip" href="#main">跳到正文</a>
@@ -46,6 +46,35 @@
   <aside class="docs-side" id="docs-side"><nav aria-label="指南目录"><p class="side-h">指南</p><ul><li><a href="01-getting-started.html">开始</a></li><li><a href="05-avatar-menu.html">角色菜单</a></li><li><a href="06-devices.html">设备</a></li><li><a href="07-motion.html">动作</a></li><li><a href="08-scene.html">演播室</a></li><li><a href="09-output.html">输出</a></li><li><a href="09-broadcast.html">直播</a></li><li><a href="10-settings.html">设置</a></li></ul><p class="side-h">帮助</p><ul><li><a href="12-troubleshooting.html">问题解决</a></li><li><a href="13-license.html">版本与许可</a></li></ul><p class="side-h">条款与政策</p><ul><li><a href="legal-terms.html">Avatar Live 使用条款</a></li><li><a href="legal-privacy.html">隐私政策</a></li><li><a href="legal-refund.html">退款政策</a></li><li><a href="legal-seller.html">卖家信息</a></li></ul><p class="side-h">更新记录</p><ul><li><a href="updates.html" aria-current="page">更新记录</a></li></ul></nav></aside>
   <main id="main" class="docs-main"><article class="prose"><h1 id="更新记录">更新记录<a class="anchor" href="#更新记录" aria-hidden="true" tabindex="-1">#</a></h1>
 <p>Avatar Live各版本的更新内容，按最新版本优先排列。</p>
+<h2 id="20261025--v220">2026/10/25 — v2.2.0<a class="anchor" href="#20261025--v220" aria-hidden="true" tabindex="-1">#</a></h2>
+<p>新功能</p>
+<ul>
+<li>直播联动(测试版,PRO): 在新的「直播」页面连接 Twitch、CHZZK、SOOP 或 Discord 后,虚拟形象会对观众的频道点数、聊天、打赏、订阅、气球等事件作出反应。这是测试版功能,如果在实际直播中遇到问题,请通过错误报告告诉我们(报告中会包含直播连接记录,令牌、代码、订单号和邮箱会被隐藏)。</li>
+<li>在 Discord 一起玩(测试版,PRO): 把机器人邀请到服务器并将频道与应用连接后,好友可以通过 Discord 的按钮或 <code>/react</code> 命令触发虚拟形象的反应。还有使用点数的小游戏(签到、轮盘、老虎机、二十一点、问答、Boss 战等)。仅在应用运行时有效。</li>
+<li>简易设置(测试版,PRO): 点击「+」,依次选择平台 → 事件 → 反应,即可生成马上生效的规则。支持金额范围、按观众的冷却时间,以及根据打赏金额增加投掷数量。</li>
+<li>节点编辑器(测试版,PRO): 用节点把事件和反应连起来,自由编排效果。在独立的大窗口中打开,带小地图,每个事件节点都有 TEST 按钮。</li>
+<li>投掷、液体、贴纸与倒地(PRO): 可以向虚拟形象投掷物件;泼上水或牛奶等液体后会顺着身体流下并逐渐变干;还能贴上图片、GIF 或观众的头像贴纸。被重重击中会倒地,然后慢慢站起来,并可设置倒地时的表情和起身速度。</li>
+<li>测试卡片: 在直播 › 互动的最下方,无需直播即可立即试用投掷、击倒、击中、液体和贴纸。</li>
+<li>打赏显示框(PRO): 在场景中的框里显示打赏者的名字和留言。默认关闭。</li>
+<li>WebSocket(PRO): 只在本机开放的 WebSocket,可与其他程序联动。默认关闭。</li>
+<li>DLC 房间包: 在 BOOTH 购买追加内容并把订单号输入到原有的代码输入框后,房间列表中会出现 13 个新房间,选择即可下载:日本小巷(白天、夜晚)、日本公寓、学校泳池、展厅画廊、教室(白天、傍晚、夜晚)和联合办公室,都保留了原场景的灯光与氛围。房间的灯可以开关并调整亮度(随房间保存),挡住摄像机的墙只会从画面中去掉。Basic 也可以使用。</li>
+<li>屏幕物件: 在工作室 › 物件中添加「屏幕」,即可在场景中显示图片、GIF、显示器或窗口画面,以及 Spout、NDI 画面。</li>
+</ul>
+<p>变更</p>
+<ul>
+<li>面板设计全面更新: 改为分组卡片、分段标签、右侧按钮,以及能隐约透出背后场景的半透明侧栏和浮动工具栏。竖向布局和左侧菜单保持不变。半透明模糊不会出现在直播、录像和虚拟摄像头画面中;关闭 Windows 的透明效果时会显示为不透明。</li>
+<li>菜单位置: Twitch、CHZZK 连接和远程会话移到新的「直播」页面;照片和拍摄画面移到工作室 › 「照片与录像」标签;倒地设置移到直播 › 互动。较长的页面按小标题分组。你自己调整过的卡片顺序和折叠状态会保留。</li>
+<li>名称变更: 「待机·叠加动画」→「动画图层」,「眼睛设置」→「眼睛动作」,「视线控制」→「注视目标」。</li>
+<li>嘴部动作: 当嘴部来源设为「面部(iPhone)」或「关闭」时,麦克风不再驱动嘴部。若要用声音驱动嘴部,请选择「面部 + 麦克风」或「麦克风」。</li>
+<li>应用录像声音: 除了麦克风,共享屏幕时也会一起录下所共享游戏的声音。</li>
+<li>右键菜单: 所有列表(虚拟形象、摄像机、场景、物件、预设等)都可以通过右键(或 ⋯)重命名、复制和删除,也支持 Delete 和 F2 键。</li>
+<li>会话同意: 加入远程会话现在只需勾选一项并打开「交换数据」开关。原有设置会保留。</li>
+<li>代码输入: 升级码和 DLC 代码也统一在「输入其他代码」窗口中输入。</li>
+<li>低多边形室内: 移除了「整栋建筑」选项(拆分的房间保持不变)。以整栋建筑保存的场景打开时将没有房间。</li>
+<li>选择 DLC 房间时,工作室的环境光、反射强度和雾会按该房间调整一次;之后可以自由更改,并随场景保存。切换到内置房间或不使用房间时会恢复默认值,房间的灯光也不会让角色过亮。</li>
+<li>错误报告现在包含直播连接状态和最近的事件,联动出现问题时能更准确地查明原因。</li>
+<li>现有 .vavatar 文件可直接使用,无需重新导出。</li>
+</ul>
 <h2 id="20261023--v212">2026/10/23 — v2.1.2<a class="anchor" href="#20261023--v212" aria-hidden="true" tabindex="-1">#</a></h2>
 <ul>
 <li>修复了摄像机控制模式为「环绕」时，切换视角或移动摄像机后会有一帧从错误位置显示虚拟形象的问题。</li>
@@ -396,7 +425,7 @@
 <li>改善 PhysBone 姿势保持处理。</li>
 <li>更新升级商品的表述。</li>
 </ul></article><nav class="pager" aria-label="Pager"><a class="prev" href="legal-seller.html"><span>上一页</span>卖家信息</a><span></span></nav><p class="updated">最后更新: 2026-10-22</p></main>
-  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#20261023--v212">2026/10/23 — v2.1.2</a></li><li><a href="#20261022--v211">2026/10/22 — v2.1.1</a></li><li><a href="#20261022--v210">2026/10/22 — v2.1.0</a></li><li><a href="#20261019--v2015">2026/10/19 — v2.0.15</a></li><li><a href="#20261019--v2014">2026/10/19 — v2.0.14</a></li><li><a href="#20261018--v2013">2026/10/18 — v2.0.13</a></li><li><a href="#20261018--v2012">2026/10/18 — v2.0.12</a></li><li><a href="#20261018--v2011">2026/10/18 — v2.0.11</a></li><li><a href="#20261017--v2010">2026/10/17 — v2.0.10</a></li><li><a href="#20261016--v206">2026/10/16 — v2.0.6</a></li><li><a href="#20261016--v205">2026/10/16 — v2.0.5</a></li><li><a href="#20261016--v204">2026/10/16 — v2.0.4</a></li><li><a href="#20261016--v203">2026/10/16 — v2.0.3</a></li><li><a href="#20261015--v202">2026/10/15 — v2.0.2</a></li><li><a href="#20261015--v201">2026/10/15 — v2.0.1</a></li><li><a href="#20261015--v200">2026/10/15 — v2.0.0</a></li><li><a href="#20261012--v116">2026/10/12 — v1.1.6</a></li><li><a href="#20261012--v115">2026/10/12 — v1.1.5</a></li><li><a href="#20261012--v114">2026/10/12 — v1.1.4</a></li><li><a href="#20261012--v113">2026/10/12 — v1.1.3</a></li><li><a href="#20261011--v112">2026/10/11 — v1.1.2</a></li><li><a href="#20261011--v111">2026/10/11 — v1.1.1</a></li><li><a href="#20261011--v110">2026/10/11 — v1.1.0</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
+  <nav class="toc" aria-label="本页内容"><p class="toc-h">本页内容</p><ul><li><a href="#20261025--v220">2026/10/25 — v2.2.0</a></li><li><a href="#20261023--v212">2026/10/23 — v2.1.2</a></li><li><a href="#20261022--v211">2026/10/22 — v2.1.1</a></li><li><a href="#20261022--v210">2026/10/22 — v2.1.0</a></li><li><a href="#20261019--v2015">2026/10/19 — v2.0.15</a></li><li><a href="#20261019--v2014">2026/10/19 — v2.0.14</a></li><li><a href="#20261018--v2013">2026/10/18 — v2.0.13</a></li><li><a href="#20261018--v2012">2026/10/18 — v2.0.12</a></li><li><a href="#20261018--v2011">2026/10/18 — v2.0.11</a></li><li><a href="#20261017--v2010">2026/10/17 — v2.0.10</a></li><li><a href="#20261016--v206">2026/10/16 — v2.0.6</a></li><li><a href="#20261016--v205">2026/10/16 — v2.0.5</a></li><li><a href="#20261016--v204">2026/10/16 — v2.0.4</a></li><li><a href="#20261016--v203">2026/10/16 — v2.0.3</a></li><li><a href="#20261015--v202">2026/10/15 — v2.0.2</a></li><li><a href="#20261015--v201">2026/10/15 — v2.0.1</a></li><li><a href="#20261015--v200">2026/10/15 — v2.0.0</a></li><li><a href="#20261012--v116">2026/10/12 — v1.1.6</a></li><li><a href="#20261012--v115">2026/10/12 — v1.1.5</a></li><li><a href="#20261012--v114">2026/10/12 — v1.1.4</a></li><li><a href="#20261012--v113">2026/10/12 — v1.1.3</a></li><li><a href="#20261011--v112">2026/10/11 — v1.1.2</a></li><li><a href="#20261011--v111">2026/10/11 — v1.1.1</a></li><li><a href="#20261011--v110">2026/10/11 — v1.1.0</a></li><li><a href="#20261011--v1010">2026/10/11 — v1.0.10</a></li><li><a href="#20261011--v109">2026/10/11 — v1.0.9</a></li><li><a href="#20261009--v108">2026/10/09 — v1.0.8</a></li><li><a href="#20261009--v107">2026/10/09 — v1.0.7</a></li><li><a href="#20261009--v106">2026/10/09 — v1.0.6</a></li><li><a href="#20261009--v105">2026/10/09 — v1.0.5</a></li><li><a href="#20261009--v104">2026/10/09 — v1.0.4</a></li><li><a href="#20261009--v103">2026/10/09 — v1.0.3</a></li><li><a href="#20261009--v102">2026/10/09 — v1.0.2</a></li><li><a href="#20261009--v101">2026/10/09 — v1.0.1</a></li></ul></nav>
 </div>
 <footer class="site-footer">
   <div class="wrap">

@@ -2,6 +2,36 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/25 — v2.2.0
+
+**New**
+
+- **Stream integrations (beta, PRO):** Connect Twitch, CHZZK, SOOP or Discord on the new Broadcast page and your avatar reacts to viewers' channel points, chat, donations, subscriptions, balloons and more. This is a beta: if something doesn't work on a real stream, please send an error report (it now includes your stream connection history; tokens, codes, order numbers and emails are hidden).
+- **Play together on Discord (beta, PRO):** Invite the bot to your server and link a channel to the app, and friends can trigger avatar reactions with buttons or the `/react` command. Point mini-games are included (daily check-in, roulette, slots, blackjack, quizzes, boss fights and more). Works while the app is running.
+- **Simple setup (beta, PRO):** Press "+" and pick platform → event → reaction to make a rule that works right away. Supports amount ranges, per-viewer cooldowns and more items thrown for bigger donations.
+- **Node editor (beta, PRO):** Wire events to reactions with nodes to build your own effects. It opens in a large window of its own, with a minimap and a TEST button on each event node.
+- **Throwing, liquid, stickers and knock-downs (PRO):** Throw props at your avatar, pour water or milk that runs down the body and dries, stick images, GIFs or a viewer's profile picture onto the avatar. A hard hit knocks the avatar down and it slowly gets back up; choose its expression while down and how fast it gets up.
+- **Test card:** At the bottom of Broadcast › Interactions, try throwing, knocking down, hitting, liquid and stickers right away, without a stream.
+- **Donation box (PRO):** Shows donors' names and messages in a box inside the scene. Off by default.
+- **WebSocket (PRO):** A WebSocket open only on your own PC for other programs to connect to. Off by default.
+- **DLC room packs:** Buy the add-on on BOOTH, enter the order number in the existing code field, and 13 new rooms appear in the room list, downloading when you pick them: a Japanese alley (day and night), a Japanese apartment, a school pool, a showroom gallery, classrooms (day, evening and night) and a coworking office, each with its original lighting and mood. Turn the room's lamps on or off and set their brightness (saved with the room), and walls that block the camera drop out of the picture. Available on Basic too.
+- **Screen objects:** Add a "Screen" under Studio › Objects to show an image or GIF, a monitor or window, or a Spout or NDI source inside the scene.
+
+**Changes**
+
+- **A redesigned panel:** grouped cards, segmented tabs, buttons at the right edge, a translucent rail and floating toolbars that softly show the scene behind them. The vertical layout and the left menu stay. The blur never appears in your stream, recordings or virtual camera, and the panel turns opaque when Windows transparency effects are off.
+- **Where things moved:** Twitch and CHZZK connections and remote sessions are on the new Broadcast page; photos and the capture frame are in Studio › Photo & Recording; the knock-down settings are in Broadcast › Interactions. Long pages are grouped under subheadings. Card order and folds you changed are kept.
+- **Renamed:** "Idle & layered animation" → "Animation layers", "Eye settings" → "Eye movement", "Gaze control" → "Look-at target".
+- **Mouth movement:** With the mouth source set to "Face (iPhone)" or "Off", the microphone no longer moves the mouth. Choose "Face + mic" or "Mic" to move it with your voice.
+- **App recording sound:** Besides your microphone, the shared game's sound is recorded too while you share a screen.
+- **Right-click menus:** Every list (avatars, cameras, scenes, objects, presets and more) has a right-click (or ⋯) menu to rename, duplicate or delete, plus Delete and F2.
+- **Session consent:** Joining a remote session now takes one checkbox and one "Exchange data" switch. Your existing choices are kept.
+- **Code entry:** Upgrade and DLC codes also go into the single "Enter another code" window.
+- **Low-poly interior:** The "whole building" choice was removed (its rooms stay). A scene saved with the whole building opens without a room.
+- **Choosing a DLC room** sets the studio's ambient light, reflection strength and fog to match the room once; you can change them freely afterwards and they are saved with the scene. Switching to a built-in room or no room puts the defaults back, and the room never makes the avatar too bright.
+- **Error reports** now include the stream connection state and recent events, so integration problems can be traced precisely.
+- Existing .vavatar files work without re-exporting.
+
 ## 2026/10/23 — v2.1.2
 
 - Fixed a one-frame flash in the Orbit camera mode: right after switching views or moving the camera, the avatar was shown from the wrong place for a single frame.
