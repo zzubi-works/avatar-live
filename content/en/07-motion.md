@@ -56,8 +56,29 @@ Head tracking and facial tracking, as well as camera view, are set separately. E
 
 - Lip-sync intensity: Increasing it opens the mouth wider.
 - Auto Level: Adjusts mouth movements to match the volume of the voice.
+- Sensitivity: Shown when Auto Level is off. The higher it is, the quieter the voice that opens the mouth. 100% reacts even to a whisper, 0% only to a loud voice; the level (dB) at which the mouth starts to open is shown with it.
 - Voice correction: Pronounce the guided vowels to match your voice.
 - Tongue and cheek puffing: Apply the expression using a button or shortcut key. It will be visible only if the model has the required expression.
+
+### What Moves the Mouth
+
+The mouth card's Source chooses what moves the avatar's mouth. It is the same setting as Mouth in the Tracking Sources on [Devices](06-devices.md).
+
+| Option | How the mouth moves |
+|---|---|
+| Face | Follows the mouth your webcam or iPhone reads. |
+| Face + mic | Uses both the face and the voice. Choose how they mix right below. |
+| Mic | Uses the voice only (lip sync). Without sound the mouth stays shut even if you open yours. |
+| Off | Tracking does not move the mouth; it stays as the avatar's animation leaves it. |
+
+The way Face + mic mixes is saved per avatar.
+
+- Voice when speaking: While you speak the voice moves the mouth; while you are silent, the face does.
+- Wider of the two: Each mouth shape takes whichever opens it more, the face or the voice. A mouth held wide open stays open while you speak too.
+
+The difference between the two only shows on avatars whose mouth the face tracking moves (avatars with face tracking or Perfect Sync mouth shapes). On an avatar with only ordinary VRChat visemes the voice moves the visemes either way, so both look the same. A mouth from an iPhone is not mixed with the voice.
+
+Mic → face decides whether the voice also goes into the face tracking's mouth shapes. Auto sends it only when the avatar's mouth is moved by its face tracking. It shows only while the mic moves the mouth.
 
 ### Auto Expressions
 

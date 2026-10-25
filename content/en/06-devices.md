@@ -38,6 +38,8 @@ Choose what to use to move each of the face, mouth, head, eyes, arms, hands, fin
 
 Example: You can set the face to iPhone and arms and hands to webcam. Even if a device is connected, the body part will not move if its source points to a different input.
 
+The mouth chooses from Face, Face + mic, Mic and Off. The differences are explained under What Moves the Mouth in [Motion](07-motion.md).
+
 #### Full Body and Fingers with Webcam
 
 - Full body: Tracks the torso and legs visible in the camera. Legs hidden by a desk are not tracked as if they were visible.
