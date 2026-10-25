@@ -4,6 +4,11 @@ Changes in each Avatar Live release, starting with the latest update.
 
 If the update doesn't finish and the app doesn't start again, close every program that uses a camera (Discord, web browsers, OBS) and update again.
 
+## 2026/10/26 — v2.2.5
+
+- **Liquid sound:** Fixed the default sound playing even after another sound was chosen in the liquid's settings. The chosen sound now repeats while the liquid pours, and choosing no sound makes it silent. Leaving the default "Splat" keeps today's splash and pouring sound.
+- **Choosing sounds:** The default sound a new rule starts with (the liquid's "Splat · random", throws, stickers) is replaced by the first other sound you choose. A rule saved earlier with both the default and your sound on plays one of them at random, so turn the default "Splat · random" off.
+
 ## 2026/10/26 — v2.2.4
 
 - **Screen share indicator:** The top bar no longer shows "Screen share" while screen sharing is off. It appears only while the screen is actually being shared.
