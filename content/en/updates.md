@@ -2,9 +2,9 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
-## 2026/10/26 — v2.2.4
-
 If the update doesn't finish and the app doesn't start again, close every program that uses a camera (Discord, web browsers, OBS) and update again.
+
+## 2026/10/26 — v2.2.4
 
 - **Screen share indicator:** The top bar no longer shows "Screen share" while screen sharing is off. It appears only while the screen is actually being shared.
 - **Mouth source:** What moves the mouth is chosen in one place, Devices › Tracking sources › Mouth. Motion › Mouth · Tongue · Cheeks now just shows the source in use.
@@ -12,8 +12,6 @@ If the update doesn't finish and the app doesn't start again, close every progra
 - **Help text:** The tip now says the iPhone mouth mixes with the microphone only when "Microphone moves the iPhone's mouth" is on. The manual's Devices and Motion pages now cover the four mouth sources, the mixing and the 0–100% sensitivity.
 
 ## 2026/10/26 — v2.2.3
-
-If an update does not finish and the app does not restart, close all programs that use a camera, such as Discord, web browsers and OBS, then try updating again.
 
 - **Broadcast overlays and previews:** Fixed reduced-size previews appearing black, and rotated overlays turning black or becoming darker. Preview colors and vertical orientation now display correctly.
 - **Broadcast output:** Reworked screen capture, composition and output. Improved how the game screen and avatar are presented together and how output recovers after an interruption.
@@ -100,7 +98,6 @@ If an update does not finish and the app does not restart, close all programs th
 - **Breathing in held poses:** Breathing continues while a pose is held, so the avatar no longer looks frozen.
 - **Start screen:** Reorganised so your avatar, devices and lists are easy to take in at a glance.
 
-
 **Fixes and improvements**
 
 - Fixed hair or clothing on some avatars sticking up and staying there.
@@ -145,7 +142,6 @@ If an update does not finish and the app does not restart, close all programs th
 - **Keyframes and editing layout:** Scale the timing of selected position, scale, expression and rotation keys together; conflicting edits leave the data unchanged. Improved key navigation, sequence duration updates, toolbar layout in narrow windows and expression searches inside collapsed meshes.
 - **Ambient occlusion (AO):** Fixed hidden objects' outlines showing through foreground surfaces when AO was enabled.
 - **Memory and resources:** Compressed undo history and limited how much is retained. Improved resource cleanup when motion sources are removed, effects are toggled or output resolution changes, and reduced temporary allocations during curve evaluation.
-
 
 ## 2026/10/18 — v2.0.11
 
