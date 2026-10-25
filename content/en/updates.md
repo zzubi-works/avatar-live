@@ -5,7 +5,9 @@ Changes in each Avatar Live release, starting with the latest update.
 ## 2026/10/25 — v2.2.1
 
 - **iPhone face tracking:** When a pose held the head, the body still slid or turned with the iPhone's head movement. A pose that holds the head now keeps the body still too.
-- **Light theme colour:** The dull grey light theme is a soft vanilla now.
+- **Panel colours:** Settings › UI › Theme offers Light, Dark, White, Black and Custom. For Custom you pick a panel colour and an accent colour; the rest follows, and the words are always adjusted to stay readable. The side menu can have its own theme (say, a white menu beside a black panel).
+- **Panel look:** The light theme is a soft vanilla and lavender. The side menu sits flush with the window edge and the panel that opens tucks under it with a shadow; the background is clearer and the cards on top more solid.
+- **Throwing Studio objects (Pro):** Simple setup's throw rules can also throw your own 3D models in the Studio (made with the Prop Exporter).
 - **Cards:** Cards you can drag to reorder stand apart again, one by one.
 - **Face card:** "Recenter" and "Automatic face setup…" sit on one row.
 - **Game light:** Each avatar's share of the game light is set in Studio › Lighting › Game light sync › "Per avatar" instead of the Avatar Menu.
