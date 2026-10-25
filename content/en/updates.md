@@ -2,6 +2,21 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/26 — v2.2.3
+
+If an update does not finish and the app does not restart, close all programs that use a camera, such as Discord, web browsers and OBS, then try updating again.
+
+- **Broadcast overlays and previews:** Fixed reduced-size previews appearing black, and rotated overlays turning black or becoming darker. Preview colors and vertical orientation now display correctly.
+- **Broadcast output:** Reworked screen capture, composition and output. Improved how the game screen and avatar are presented together and how output recovers after an interruption.
+- **Moving game windows:** Fixed capture health checks using the previous monitor after a game window moved to another monitor.
+- **Broadcast resolution:** Resizing the app window now preserves the configured resolution of the avatar image used for broadcast output.
+- **Broadcast rules:** Fixed outdated rules continuing to run or respond to test buttons after an error while disabling or editing them. An error in one rule no longer blocks other rules or app functions.
+- **Light effects:** Fixed the “Add effect” button in light settings failing to open its menu.
+- **Performance and memory:** Improved cleanup of unused broadcast outputs and shared textures, and corrected how GPU priority settings are applied and restored.
+- **Liquid effects:** Reduced repeated calculations for wet surfaces and skipped unnecessary liquid rendering in cameras that cannot see the liquid. Idle liquid effects also release their resources.
+- **Mouth tracking and lip sync:** Choose the mouth input in one place and save face-tracking/microphone mixing settings for each avatar. Lip-sync sensitivity is adjusted as a percentage.
+- **Room lighting:** Fixed avatar skin appearing see-through in brightly lit rooms.
+
 ## 2026/10/26 — v2.2.2
 
 - **Simple setup and stream integrations:** In 2.2.0 and 2.2.1, Simple setup rules didn't work and errors kept piling up, which also stopped stream connections such as CHZZK and other parts of the app. Fixed.
