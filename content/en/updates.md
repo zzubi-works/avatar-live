@@ -2,6 +2,12 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/26 — v2.2.2
+
+- **Simple setup and stream integrations:** In 2.2.0 and 2.2.1, Simple setup rules didn't work and errors kept piling up, which also stopped stream connections such as CHZZK and other parts of the app. Fixed.
+- **Node editor:** Links in graphs made with 2.2.0 or 2.2.1 stay connected.
+- If one rule can't be set up, the other rules and the app keep working, and the error is logged once.
+
 ## 2026/10/25 — v2.2.1
 
 - **iPhone face tracking:** When a pose held the head, the body still slid or turned with the iPhone's head movement. A pose that holds the head now keeps the body still too.
