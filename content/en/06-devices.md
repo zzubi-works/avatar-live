@@ -49,6 +49,8 @@ The mouth's source is chosen in one place, the "Mouth" row of this list. Motion 
 | Mic | The voice only (lip sync). Without sound the mouth stays closed even if you open yours. |
 | Off | Tracking does not move the mouth; it stays as the avatar's animation leaves it. |
 
+While the face comes from an iPhone or VMC, "Face" shows as "iPhone" or "VMC".
+
 With Face + mic, the mixing appears below it and is saved per avatar.
 
 - Mic when speaking: while you speak the voice moves the mouth; while you are silent, the face does.

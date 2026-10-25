@@ -2,6 +2,15 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/26 — v2.2.4
+
+If the update doesn't finish and the app doesn't start again, close every program that uses a camera (Discord, web browsers, OBS) and update again.
+
+- **Screen share indicator:** The top bar no longer shows "Screen share" while screen sharing is off. It appears only while the screen is actually being shared.
+- **Mouth source:** What moves the mouth is chosen in one place, Devices › Tracking sources › Mouth. Motion › Mouth · Tongue · Cheeks now just shows the source in use.
+- **Mixing:** When the face and the microphone are used together, choose "Mic when speaking" or "Maximum". The "Microphone moves the iPhone's mouth" switch moved to the same place.
+- **Help text:** The tip now says the iPhone mouth mixes with the microphone only when "Microphone moves the iPhone's mouth" is on. The manual's Devices and Motion pages now cover the four mouth sources, the mixing and the 0–100% sensitivity.
+
 ## 2026/10/26 — v2.2.3
 
 If an update does not finish and the app does not restart, close all programs that use a camera, such as Discord, web browsers and OBS, then try updating again.
