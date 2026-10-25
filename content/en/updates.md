@@ -13,8 +13,8 @@ If an update does not finish and the app does not restart, close all programs th
 - **Broadcast rules:** Fixed outdated rules continuing to run or respond to test buttons after an error while disabling or editing them. An error in one rule no longer blocks other rules or app functions.
 - **Light effects:** Fixed the “Add effect” button in light settings failing to open its menu.
 - **Performance and memory:** Improved cleanup of unused broadcast outputs and shared textures, and corrected how GPU priority settings are applied and restored.
-- **Liquid effects:** Reduced repeated calculations for wet surfaces and skipped unnecessary liquid rendering in cameras that cannot see the liquid. Idle liquid effects also release their resources.
-- **Mouth tracking and lip sync:** Choose the mouth input in one place and save face-tracking/microphone mixing settings for each avatar. Lip-sync sensitivity is adjusted as a percentage.
+- **Liquid effects:** Reduced repeated calculations for wet surfaces and skipped liquid rendering in cameras configured not to display the liquid. Idle liquid effects also release their resources.
+- **Mouth tracking and lip sync:** Unified the mouth input setting and added per-avatar saving for face-tracking/microphone mixing settings. Lip-sync sensitivity is adjusted as a percentage.
 - **Room lighting:** Fixed avatar skin appearing see-through in brightly lit rooms.
 
 ## 2026/10/26 — v2.2.2
