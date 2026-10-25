@@ -2,6 +2,16 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/25 — v2.2.1
+
+- **iPhone face tracking:** When a pose held the head, the body still slid or turned with the iPhone's head movement. A pose that holds the head now keeps the body still too.
+- **Light theme colour:** The dull grey light theme is a soft vanilla now.
+- **Cards:** Cards you can drag to reorder stand apart again, one by one.
+- **Face card:** "Recenter" and "Automatic face setup…" sit on one row.
+- **Game light:** Each avatar's share of the game light is set in Studio › Lighting › Game light sync › "Per avatar" instead of the Avatar Menu.
+- **Animation layers:** Moved from the Avatar Menu to Broadcast › Interactions, since they are the animations broadcast events switch. Left as they are, ordinary tracking is not affected.
+- **Error reports:** They now say what holds the head and how far the iPhone's head data jumped, so problems can be traced precisely.
+
 ## 2026/10/25 — v2.2.0
 
 **New**
