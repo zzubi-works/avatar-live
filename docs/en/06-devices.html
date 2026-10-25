@@ -130,6 +130,41 @@
 </tbody>
 </table></div>
 <p>Example: You can set the face to iPhone and arms and hands to webcam. Even if a device is connected, the body part will not move if its source points to a different input.</p>
+<h4 id="mouth">Mouth<a class="anchor" href="#mouth" aria-hidden="true" tabindex="-1">#</a></h4>
+<p>The mouth's source is chosen in one place, the "Mouth" row of this list. Motion › Mouth only shows the source chosen now.</p>
+<div class="table-wrap settings-table" tabindex="0"><table>
+<thead>
+<tr>
+<th>Choice</th>
+<th>How the mouth moves</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Face</td>
+<td>Follows the mouth the webcam or iPhone reads.</td>
+</tr>
+<tr>
+<td>Face + mic</td>
+<td>Uses the face and the voice together. Choose how they mix right below.</td>
+</tr>
+<tr>
+<td>Mic</td>
+<td>The voice only (lip sync). Without sound the mouth stays closed even if you open yours.</td>
+</tr>
+<tr>
+<td>Off</td>
+<td>Tracking does not move the mouth; it stays as the avatar's animation leaves it.</td>
+</tr>
+</tbody>
+</table></div>
+<p>With Face + mic, the mixing appears below it and is saved per avatar.</p>
+<ul>
+<li>Mic when speaking: while you speak the voice moves the mouth; while you are silent, the face does.</li>
+<li>Maximum: each mouth shape takes whichever opens it more, the face or the voice. A mouth held wide open stays open while you speak too.</li>
+</ul>
+<p>The mixing only makes a difference on avatars whose mouth the face tracking moves (face tracking or Perfect Sync mouth shapes). On an avatar with only ordinary VRChat visemes the voice moves the visemes either way, so both look the same.</p>
+<p>An iPhone measures the mouth itself, so its mouth takes the voice only with "Microphone moves the iPhone's mouth" on, in the same place. It is off by default; an avatar's settings made with an older version may have it on.</p>
 <h4 id="full-body-and-fingers-with-webcam">Full Body and Fingers with Webcam<a class="anchor" href="#full-body-and-fingers-with-webcam" aria-hidden="true" tabindex="-1">#</a></h4>
 <ul>
 <li>Full body: Tracks the torso and legs visible in the camera. Legs hidden by a desk are not tracked as if they were visible.</li>

@@ -54,8 +54,11 @@ Head tracking and facial tracking, as well as camera view, are set separately. E
 
 ![Mic Lip Sync and Mouth Settings](img/guide-motion-mouth.png)
 
-- Lip-sync intensity: Increasing it opens the mouth wider.
-- Auto Level: Adjusts mouth movements to match the volume of the voice.
+- Mouth: how far the voice opens the mouth now, and the current mouth shape (vowel).
+- Auto Level: learns the room's noise and your speaking volume by itself and fits how far the mouth opens. While on, it shows the learned noise floor and speech peak (dB).
+- Sensitivity: appears with Auto Level off. 0–100 %, more sensitive to the right: 100 % reacts to a whisper, 0 % only to a loud voice; the tooltip shows the level (dB) where the mouth starts to open. A value set in an older version carries over.
+- What moves the mouth: shows the mouth's source now. It is changed in [Devices](06-devices.md) › Tracking Sources, "Mouth".
+- Mic → face: whether the voice also goes into the face tracking's mouth shapes. Auto sends it only when the avatar's mouth is moved by its face tracking. It appears only while the microphone moves the mouth.
 - Voice correction: Pronounce the guided vowels to match your voice.
 - Tongue and cheek puffing: Apply the expression using a button or shortcut key. It will be visible only if the model has the required expression.
 

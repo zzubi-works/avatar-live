@@ -38,6 +38,26 @@ Choose what to use to move each of the face, mouth, head, eyes, arms, hands, fin
 
 Example: You can set the face to iPhone and arms and hands to webcam. Even if a device is connected, the body part will not move if its source points to a different input.
 
+#### Mouth
+
+The mouth's source is chosen in one place, the "Mouth" row of this list. Motion › Mouth only shows the source chosen now.
+
+| Choice | How the mouth moves |
+|---|---|
+| Face | Follows the mouth the webcam or iPhone reads. |
+| Face + mic | Uses the face and the voice together. Choose how they mix right below. |
+| Mic | The voice only (lip sync). Without sound the mouth stays closed even if you open yours. |
+| Off | Tracking does not move the mouth; it stays as the avatar's animation leaves it. |
+
+With Face + mic, the mixing appears below it and is saved per avatar.
+
+- Mic when speaking: while you speak the voice moves the mouth; while you are silent, the face does.
+- Maximum: each mouth shape takes whichever opens it more, the face or the voice. A mouth held wide open stays open while you speak too.
+
+The mixing only makes a difference on avatars whose mouth the face tracking moves (face tracking or Perfect Sync mouth shapes). On an avatar with only ordinary VRChat visemes the voice moves the visemes either way, so both look the same.
+
+An iPhone measures the mouth itself, so its mouth takes the voice only with "Microphone moves the iPhone's mouth" on, in the same place. It is off by default; an avatar's settings made with an older version may have it on.
+
 #### Full Body and Fingers with Webcam
 
 - Full body: Tracks the torso and legs visible in the camera. Legs hidden by a desk are not tracked as if they were visible.
