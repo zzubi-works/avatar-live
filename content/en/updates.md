@@ -10,7 +10,6 @@ Changes in each Avatar Live release, starting with the latest update.
 - **Separate node editor window:** The node editor can open as its own Windows window that you can move, resize and maximize. Edits sync both ways, and you can keep editing there after closing the editor in the main window.
 - **Shorter descriptions:** Menu and button descriptions now just say what each one does.
 - **Diagnostics:** Added frame diagnostics for broadcast output. Items that were not measured are shown as not measured.
-- **Package cleanup:** Removed the unused game injection and hooking helpers and the old OBS notice files.
 
 ## 2026/10/26 — v2.2.8
 
