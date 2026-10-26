@@ -2,6 +2,18 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/26 — v2.2.10
+
+- **Separate node editor:** Fixed the detached window failing to open in the distributed build. Reopening focuses the existing window; an editor that exits before connecting is reported and can be opened again.
+- **Donation amounts:** Minimum and test amounts accept larger values such as 100,000 and 1,000,000. Starting a test while the amount field is focused uses the value you just typed. Fixed values confirmed with Enter failing to save.
+- **Multiple VMC inputs:** Receive body and glove tracking on separate ports at the same time. Add three or more receivers with individual channels, avatar targets and priorities. Losing one input leaves the others running. Finger-only input without wrist data continues to work after switching the controlled avatar.
+- **Broadcast compatibility:** Corrected automatic output-format changes on HDR and high-bit-depth monitors and added output-format diagnostics. Discord black-screen reports still require verification with the affected GPU, HDR and capture settings.
+- **Sharing OFF:** Stops unnecessary avatar composition, preview and capture resources. Active recording or screen lighting retains only the processing it needs.
+- **iPhone and lip sync:** Fixed microphone-only mouth input being blocked when iPhone face tracking was active.
+- **iFacial recovery:** Restarts failed receive sockets and TCP listeners. Temporary port conflicts can recover after the port is released; turning the input off also cancels retries.
+- **Donation panel:** Corrected the play button's click area. Adjust width, maximum height and text size, move the panel, scroll its contents or reset it. Long messages wrap to the selected width. Fixed mirrored text on donation cards that face the camera.
+- **Expanded preview:** Fixed competing size requests from the expanded view and small preview. The texture now updates to match the expanded view and window resizing.
+
 ## 2026/10/26 — v2.2.9
 
 - **Broadcast output:** Improved projector output and preview handling. The enlarged preview stays sharp at its on-screen size, and output continues after the projector window is closed and reopened.
