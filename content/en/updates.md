@@ -2,6 +2,16 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/26 — v2.2.9
+
+- **Broadcast output:** Improved projector output and preview handling. The enlarged preview stays sharp at its on-screen size, and output continues after the projector window is closed and reopened.
+- **Wheel input:** The wheel works only inside the preview; scrolling outside it or over a popup no longer moves what is behind.
+- **Broadcast recording:** Moved to Studio › Photo & Recording, with the same layout as studio recording.
+- **Separate node editor window:** The node editor can open as its own Windows window that you can move, resize and maximize. Edits sync both ways, and you can keep editing there after closing the editor in the main window.
+- **Shorter descriptions:** Menu and button descriptions now just say what each one does.
+- **Diagnostics:** Added frame diagnostics for broadcast output. Items that were not measured are shown as not measured.
+- **Package cleanup:** Removed the unused game injection and hooking helpers and the old OBS notice files.
+
 ## 2026/10/26 — v2.2.8
 
 - **Stable avatar targets:** Fixed explicit broadcast and node targets changing when control moved between duplicate avatars or another avatar was removed. Targets now retain the same scene slot across saving, reopening and restarting the app.
