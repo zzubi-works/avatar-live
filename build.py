@@ -34,7 +34,7 @@ BOOTH = "https://curiousbobby.booth.pm/items/8953441"
 X_URL = "https://x.com/User_Not_Online"
 DISCORD_INVITE = "https://discord.com/oauth2/authorize?client_id=1563157504995754014"
 UPDATED = "2026-10-24"
-UPDATES_UPDATED = "2026-10-22"  # Release notes updated independently from the unchanged guides.
+UPDATES_UPDATED = "2026-10-26"  # Release notes updated independently from the unchanged guides.
 
 LANGS = {
     "ko": {"name": "한국어", "html": "ko", "shots": "ko", "locale": "ko_KR", "preconnect": ["https://cdn.jsdelivr.net"], "font": "https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css"},

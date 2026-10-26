@@ -2,6 +2,15 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/26 — v2.2.8
+
+- **Stable avatar targets:** Fixed explicit broadcast and node targets changing when control moved between duplicate avatars or another avatar was removed. Targets now retain the same scene slot across saving, reopening and restarting the app.
+- **Saved target repair:** Removes obsolete avatar IDs from simple broadcast menu actions. Older duplicate-avatar targets that cannot be identified ask you to select the avatar again. Explicit targets in manually edited graphs and avatar-specific expressions, poses and views are preserved.
+- **Avatar switching:** Held graph actions are released on their original avatar before control changes or the avatar is removed.
+- **Liquid streams:** Changing node inputs and targets continue to affect an active stream. Input updates preserve the original automatic stop timer.
+- **Throwing:** Pending throws and delayed collision continuations stop when their graph run is cancelled or interaction permission is removed. Corrected collision continuation and effect ordering.
+- **Contact events:** Props with multiple colliders now report contacts through the owning physics body.
+
 ## 2026/10/26 — v2.2.7
 
 - **Avatar menu:** Broadcast quick actions could remain pinned to the previous avatar: the choice stayed highlighted after switching, but nothing happened. They now run the matching menu action on the controlled avatar.
