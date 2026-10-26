@@ -309,7 +309,7 @@ Choose a liquid (water, juice, milk, honey, slime, ink or gold) and pour it on t
 | Speed, Amount | How hard and how much it pours. |
 | Stop by itself, Stop after | Stops after the set time. When off, it keeps flowing until the rule or the link is switched off. |
 | Thickness | 0 flows like water, 1 flows like syrup. |
-| Sound | The sound of pouring and flowing. |
+| Sound | The default "Splat" splashes at the first hit over the sound of pouring and flowing. Choose another sound and it repeats while the liquid pours; choose none and it is silent. With the default "Splat · random" still on beside another sound, one of them plays at random, so turn the default off to hear only yours. |
 | Look and flow | Look values such as color, glow, reflection and surface tension. A PC that cannot run the fluid draws simple drops. |
 | Wet look | How the places the liquid touched look wet, and the time to dry. It is the same for every liquid, and by default it dries after 30 seconds. |
 

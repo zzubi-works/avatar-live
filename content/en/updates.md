@@ -2,6 +2,39 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+If the update doesn't finish and the app doesn't start again, close every program that uses a camera (Discord, web browsers, OBS) and update again.
+
+## 2026/10/26 — v2.2.5
+
+- **Liquid sound:** Fixed the default sound playing even after another sound was chosen in the liquid's settings. The chosen sound now repeats while the liquid pours, and choosing no sound makes it silent. Leaving the default "Splat" keeps today's splash and pouring sound.
+- **Choosing sounds:** The default sound a new rule starts with (the liquid's "Splat · random", throws, stickers) is replaced by the first other sound you choose. A rule saved earlier with both the default and your sound on plays one of them at random, so turn the default "Splat · random" off.
+
+## 2026/10/26 — v2.2.4
+
+- **Screen share indicator:** The top bar no longer shows "Screen share" while screen sharing is off. It appears only while the screen is actually being shared.
+- **Mouth source:** What moves the mouth is chosen in one place, Devices › Tracking sources › Mouth. Motion › Mouth · Tongue · Cheeks now just shows the source in use.
+- **Mixing:** When the face and the microphone are used together, choose "Mic when speaking" or "Maximum". The "Microphone moves the iPhone's mouth" switch moved to the same place.
+- **Help text:** The tip now says the iPhone mouth mixes with the microphone only when "Microphone moves the iPhone's mouth" is on. The manual's Devices and Motion pages now cover the four mouth sources, the mixing and the 0–100% sensitivity.
+
+## 2026/10/26 — v2.2.3
+
+- **Broadcast overlays and previews:** Fixed reduced-size previews appearing black, and rotated overlays turning black or becoming darker. Preview colors and vertical orientation now display correctly.
+- **Broadcast output:** Reworked screen capture, composition and output. Improved how the game screen and avatar are presented together and how output recovers after an interruption.
+- **Moving game windows:** Fixed capture health checks using the previous monitor after a game window moved to another monitor.
+- **Broadcast resolution:** Resizing the app window now preserves the configured resolution of the avatar image used for broadcast output.
+- **Broadcast rules:** Fixed outdated rules continuing to run or respond to test buttons after an error while disabling or editing them. An error in one rule no longer blocks other rules or app functions.
+- **Light effects:** Fixed the “Add effect” button in light settings failing to open its menu.
+- **Performance and memory:** Improved cleanup of unused broadcast outputs and shared textures, and corrected how GPU priority settings are applied and restored.
+- **Liquid effects:** Reduced repeated calculations for wet surfaces and skipped liquid rendering in cameras configured not to display the liquid. Idle liquid effects also release their resources.
+- **Mouth tracking and lip sync:** Unified the mouth input setting and added per-avatar saving for face-tracking/microphone mixing settings. Lip-sync sensitivity is adjusted as a percentage.
+- **Room lighting:** Fixed avatar skin appearing see-through in brightly lit rooms.
+
+## 2026/10/26 — v2.2.2
+
+- **Simple setup and stream integrations:** In 2.2.0 and 2.2.1, Simple setup rules didn't work and errors kept piling up, which also stopped stream connections such as CHZZK and other parts of the app. Fixed.
+- **Node editor:** Links in graphs made with 2.2.0 or 2.2.1 stay connected.
+- If one rule can't be set up, the other rules and the app keep working, and the error is logged once.
+
 ## 2026/10/25 — v2.2.1
 
 - **iPhone face tracking:** When a pose held the head, the body still slid or turned with the iPhone's head movement. A pose that holds the head now keeps the body still too.
@@ -70,7 +103,6 @@ Changes in each Avatar Live release, starting with the latest update.
 - **Breathing in held poses:** Breathing continues while a pose is held, so the avatar no longer looks frozen.
 - **Start screen:** Reorganised so your avatar, devices and lists are easy to take in at a glance.
 
-
 **Fixes and improvements**
 
 - Fixed hair or clothing on some avatars sticking up and staying there.
@@ -115,7 +147,6 @@ Changes in each Avatar Live release, starting with the latest update.
 - **Keyframes and editing layout:** Scale the timing of selected position, scale, expression and rotation keys together; conflicting edits leave the data unchanged. Improved key navigation, sequence duration updates, toolbar layout in narrow windows and expression searches inside collapsed meshes.
 - **Ambient occlusion (AO):** Fixed hidden objects' outlines showing through foreground surfaces when AO was enabled.
 - **Memory and resources:** Compressed undo history and limited how much is retained. Improved resource cleanup when motion sources are removed, effects are toggled or output resolution changes, and reduced temporary allocations during curve evaluation.
-
 
 ## 2026/10/18 — v2.0.11
 
