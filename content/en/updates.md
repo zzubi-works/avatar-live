@@ -4,7 +4,7 @@ Changes in each Avatar Live release, starting with the latest update.
 
 ## 2026/10/26 — v2.2.10
 
-- **Separate node editor:** Fixed the detached window failing to open in the distributed build. Reopening focuses the existing window; an editor that exits before connecting is reported and can be opened again.
+- **Separate node editor:** Fixed the detached window failing to open in the distributed build. Reopening focuses the existing window; an editor that exits before connecting is reported and can be opened again. Edits now save automatically while the separate window remains open.
 - **Donation amounts:** Minimum and test amounts accept larger values such as 100,000 and 1,000,000. Starting a test while the amount field is focused uses the value you just typed. Fixed values confirmed with Enter failing to save.
 - **Multiple VMC inputs:** Receive body and glove tracking on separate ports at the same time. Add three or more receivers with individual channels, avatar targets and priorities. Losing one input leaves the others running. Finger-only input without wrist data continues to work after switching the controlled avatar.
 - **Broadcast compatibility:** Corrected automatic output-format changes on HDR and high-bit-depth monitors and added output-format diagnostics. Discord black-screen reports still require verification with the affected GPU, HDR and capture settings.
