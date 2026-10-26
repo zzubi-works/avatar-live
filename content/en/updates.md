@@ -4,6 +4,21 @@ Changes in each Avatar Live release, starting with the latest update.
 
 If the update doesn't finish and the app doesn't start again, close every program that uses a camera (Discord, web browsers, OBS) and update again.
 
+## 2026/10/26 — v2.2.7
+
+- **Avatar menu:** Broadcast quick actions could remain pinned to the previous avatar: the choice stayed highlighted after switching, but nothing happened. They now run the matching menu action on the controlled avatar.
+- **Clear search:** Fixed the X button in the node editor search field failing to clear the query.
+- **Quit:** Window-close requests now use the normal application quit path. Stopping a share no longer drains queued settings before shutdown. Choosing Quit as the close action also works while broadcasting.
+- **Thrown objects:** Imported props with a pivot far from their mesh could be invisible or hit a different body part. Flight now uses the visible centre, and offscreen and edge spawns use the target depth.
+- **Impact strength:** Reduced the push at the same weight while preserving stronger reactions at higher weights. Improved collision detection for fast objects.
+- **Prop cleanup:** Thrown props expire after their chosen lifetime even when scene time is paused. The last copy releases its imported file resources.
+- **Export My expressions:** Choose Export .anim… from an expression’s context menu. Import it in My expressions on another avatar with the same shape keys, or use it in Unity. Animated expressions retain curves and looping.
+
+## 2026/10/26 — v2.2.6
+
+- **Version labels:** Updated the application and Windows file version to 2.2.6.
+- **Release history:** Added the missing 2.2.6 entry. Its runtime behaviour is the same as 2.2.5; the reported fixes and .anim export are included in 2.2.7.
+
 ## 2026/10/26 — v2.2.5
 
 - **Liquid sound:** Fixed the default sound playing even after another sound was chosen in the liquid's settings. The chosen sound now repeats while the liquid pours, and choosing no sound makes it silent. Leaving the default "Splat" keeps today's splash and pouring sound.

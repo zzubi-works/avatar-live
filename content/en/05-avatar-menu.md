@@ -85,6 +85,10 @@ You can adjust and save the face shape by creating a new expression, or`.anim`Lo
 
 You can also add Unity expression animations by importing `.anim` files. The moving file changes expressions over time, and whether it loops depends on the file settings.
 
+### Transfer an expression with .anim
+
+Right-click a My expressions tile and choose **Export .anim…**. On another avatar with the same shape keys, use **Import .anim** to add the same expression. The clip can also be used in Unity. Animated expressions retain curves and looping. Blink and eye/mouth tracking holds are not stored in the clip; set them on the receiving avatar.
+
 ## hand gestures
 
 ![Left and right hand gesture settings](img/guide-gestures.png)
