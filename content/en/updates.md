@@ -2,8 +2,6 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
-If the update doesn't finish and the app doesn't start again, close every program that uses a camera (Discord, web browsers, OBS) and update again.
-
 ## 2026/10/26 — v2.2.7
 
 - **Avatar menu:** Broadcast quick actions could remain pinned to the previous avatar: the choice stayed highlighted after switching, but nothing happened. They now run the matching menu action on the controlled avatar.
