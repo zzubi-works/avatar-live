@@ -2,6 +2,17 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/27 — v2.2.11
+
+- **Separate node editor lists:** In the detached editor window, nodes such as "Character: turn an expression or animation on or off" listed only `SELECTED_CHARACTER…`. The window now shows the avatar's expressions and animations, your own "My expressions" and the scene's objects exactly as the main window does.
+- **Screen share on HDR:** Fixed the shared video turning black on PCs with an HDR monitor.
+- **Studio objects:** Fixed some objects exported with Avatar Exporter not showing when several were placed together. Files you already exported show together without exporting them again.
+- **Screen share layout:** Avatar and layer position (X/Y) and size (W/H) can be typed in pixels. Enter, cancel and focus changes in number fields are handled reliably.
+- **Screen share presets:** Save the avatar layout and layer setup as presets and apply a whole scene at once.
+- **iFacialMocap / FaceMotion3D:** A port number or other invalid value in the address field is reported before connecting, and a failed connection shows which port and program is in the way.
+- **Rooms and DLC:** Improved room lighting and material quality and updated the DLC room packs to 1.4. Each room can use its own sky; fixed the alley walls disappearing and the club's effects missing.
+- **Memory and stability:** Cleaned up paths where memory built up over long sessions of avatar changes, photo lights, lip sync, panels, animations and added objects. Fixed a repeated Animator IK warning while throwing.
+
 ## 2026/10/26 — v2.2.10
 
 - **Separate node editor:** Fixed the detached window failing to open in the distributed build. Reopening focuses the existing window; an editor that exits before connecting is reported and can be opened again. Edits now save automatically while the separate window remains open. Fixed node menus remaining invisible in the separate window.
