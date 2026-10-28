@@ -2,6 +2,19 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/28 — v2.3.0
+
+- **Long-stream optimization:** Reviewed the whole app so CPU, GPU, memory and VRAM use no longer build up over long sessions. Fluids and physics, avatars, rendering, outputs and recording were tidied, and start-up memory is lower. Unused outputs, the webcam and a hidden window give their resources back.
+- **Screen share HDR colour:** Sharing a screen or window on an HDR monitor now shows the same colours and brightness as an SDR screen. Also fixed a crash when a session restarts.
+- **Screen share editing workspace:** The large editor is now a source-panel workspace. Add picture and text sources and manage layers and presets in one place. The frame rate for the stream and the screen share is one "Frame rate (FPS)" drop-down.
+- **Motion Sequencer .anim export:** Saving in the Motion Sequencer now also writes a humanoid .anim for each avatar that plays. Pick the motion in an Animation node to play, stop, change speed and loop it; the clip's shape keys play with the bones. One avatar can also be exported as .anim or .vmd.
+- **Motion player and sequencer:** Studio › Posing has a motion player: the avatars in the scene play a saved sequence from one clock, with its light, prop, room and camera tracks, forwards or backwards. The sequencer gains an optional camera track, per-mesh expression sliders, Alt+arrows to step keys a frame, and draggable loop ends and markers. .vmd export writes VRM expressions as MMD's standard morphs and the first directional light as a light motion.
+- **Play-sound node and variables:** The node editor has a new node that plays a sound from a graph. Variables, a node that switches the camera director on or off, copy and paste of an input's value, dragging a number's label to change it, and dragging list items to reorder them are also available.
+- **Simple setup rule switches:** Each rule in Simple setup has its own on/off switch, and rules edited in the node editor keep it. Rule rows were reorganized to read on one line.
+- **Number fields and labels:** Numbers now sit in the middle of their fields, including colour channels, digit rows, custom size and motion numbers. Labels were shortened to fit their row, and clipped text is fixed.
+- **Pouring liquid:** the first pour no longer stalls for a moment.
+- Existing .vavatar files work as they are; no re-export is needed.
+
 ## 2026/10/27 — v2.2.11
 
 - **Separate node editor lists:** In the detached editor window, nodes such as "Character: turn an expression or animation on or off" listed only `SELECTED_CHARACTER…`. The window now shows the avatar's expressions and animations, your own "My expressions" and the scene's objects exactly as the main window does.
