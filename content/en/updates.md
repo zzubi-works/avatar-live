@@ -2,6 +2,13 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/29 — v2.4.1
+
+- **8K photos:** Photos can now be 8K (7680×4320, Pro). Edges are smoother, so a close crop stays sharp. The app no longer pauses while a PNG is saved, and depth of field, blur and grain in a large photo look as they do on screen.
+- **Room names:** Rooms from room packs are named in the app's language, together with the new room pack update.
+- **Update notice:** Shows only the new version's changes.
+- Existing .vavatar files work as they are; no re-export is needed.
+
 ## 2026/10/29 — v2.4.0
 
 - **AI staging over MCP:** A connected AI app can now work with lights and presets, game light sync, rooms, Simple setup rules, outputs, the screen share layout and node graphs. Every change waits for your approval and can be undone. An AI cannot turn on or change fast flashing, and the lighting changes it makes stay within the flashing limit.
