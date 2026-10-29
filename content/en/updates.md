@@ -10,14 +10,12 @@ Changes in each Avatar Live release, starting with the latest update.
 - **Drawer width:** Drag the drawer's edge to change its width. Double-click it to go back to the default.
 - **Notices:** Long notices are no longer cut off; they scroll inside the card.
 - **Room packs:** Fixed missing walls in the sewers, classroom and night club (room pack 1.4.4 update).
-- Existing .vavatar files work as they are; no re-export is needed.
 
 ## 2026/10/29 — v2.4.1
 
 - **8K photos:** Photos can now be 8K (7680×4320, Pro). Edges are smoother, so a close crop stays sharp. The app no longer pauses while a PNG is saved, and depth of field, blur and grain in a large photo look as they do on screen.
 - **Room names:** Rooms from room packs are named in the app's language, together with the new room pack update.
 - **Update notice:** Shows only the new version's changes.
-- Existing .vavatar files work as they are; no re-export is needed.
 
 ## 2026/10/29 — v2.4.0
 
@@ -29,7 +27,6 @@ Changes in each Avatar Live release, starting with the latest update.
 - **Motion screen:** Expression keys have their own list beside the mesh tree, text no longer overlaps, and long help text became short tips. Messages and errors appear in all four languages.
 - **Editing a running node graph:** Editing a graph while it runs (also in the separate editor window) keeps its delays, cooldowns, poses and variable values going. When both windows change the same graph, nothing is overwritten and you are told.
 - **Full code review:** The whole app was reviewed, and the problems found in recording, screen share, motion, photo, lighting and more were fixed.
-- Existing .vavatar files work as they are; no re-export is needed.
 
 ## 2026/10/28 — v2.3.0
 
@@ -42,7 +39,6 @@ Changes in each Avatar Live release, starting with the latest update.
 - **Simple setup rule switches:** Each rule in Simple setup has its own on/off switch, and rules edited in the node editor keep it. Rule rows were reorganized to read on one line.
 - **Number fields and labels:** Numbers now sit in the middle of their fields, including colour channels, digit rows, custom size and motion numbers. Labels were shortened to fit their row, and clipped text is fixed.
 - **Pouring liquid:** the first pour no longer stalls for a moment.
-- Existing .vavatar files work as they are; no re-export is needed.
 
 ## 2026/10/27 — v2.2.11
 
@@ -171,7 +167,6 @@ Changes in each Avatar Live release, starting with the latest update.
 - **Low-poly interior:** The "whole building" choice was removed (its rooms stay). A scene saved with the whole building opens without a room.
 - **Choosing a DLC room** sets the studio's ambient light, reflection strength and fog to match the room once; you can change them freely afterwards and they are saved with the scene. Switching to a built-in room or no room puts the defaults back, and the room never makes the avatar too bright.
 - **Error reports** now include the stream connection state and recent events, so integration problems can be traced precisely.
-- Existing .vavatar files work without re-exporting.
 
 ## 2026/10/23 — v2.1.2
 
@@ -211,11 +206,10 @@ Changes in each Avatar Live release, starting with the latest update.
 - Background choices are now Color, Green, Transparent, Image and Sky. An existing blue background stays as a Color background of the same blue.
 - The studio camera list has fewer buttons so camera names are easier to read. Grab and Put on the current view are in each camera's settings.
 - The add-light picker always opens below its button.
-- Existing .vavatar files work without re-exporting.
 
 ## 2026/10/19 — v2.0.15
 
-- **Eye rendering fix for some avatars:** Fixed pupils disappearing or eye areas appearing hollow on avatars whose eye bones have a rotated forward reference. Gaze now applies only the change from each avatar's own reference pose. Existing .vavatar files work without re-exporting.
+- **Eye rendering fix for some avatars:** Fixed pupils disappearing or eye areas appearing hollow on avatars whose eye bones have a rotated forward reference. Gaze now applies only the change from each avatar's own reference pose.
 - **Restore eye pose when control ends:** Turning off eye control or switching avatars now restores eye bones to their animated pose regardless of eyelid mesh settings.
 
 ## 2026/10/19 — v2.0.14
