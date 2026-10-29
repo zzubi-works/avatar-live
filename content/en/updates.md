@@ -2,6 +2,16 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/29 — v2.4.2
+
+- **Smoother director mode:** Pictures nobody is looking at are no longer drawn, and the preview and multiview are drawn lighter. The scene view and outside outputs keep their quality.
+- **Scenes restore:** Opening a scene brings back the saved avatar where it stood and in its pose.
+- **App sound in recordings and the share:** Avatar Live's own sounds (throws, water and more) go into recordings, the screen share and the share's recording. Turn them off with the "App sound" switch on the recording card and "Avatar Live sound" in the share's audio.
+- **Drawer width:** Drag the drawer's edge to change its width. Double-click it to go back to the default.
+- **Notices:** Long notices are no longer cut off; they scroll inside the card.
+- **Room packs:** Fixed missing walls in the sewers, classroom and night club (room pack 1.4.4 update).
+- Existing .vavatar files work as they are; no re-export is needed.
+
 ## 2026/10/29 — v2.4.1
 
 - **8K photos:** Photos can now be 8K (7680×4320, Pro). Edges are smoother, so a close crop stays sharp. The app no longer pauses while a PNG is saved, and depth of field, blur and grain in a large photo look as they do on screen.
