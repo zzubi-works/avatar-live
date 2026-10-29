@@ -2,6 +2,18 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/29 — v2.4.0
+
+- **AI staging over MCP:** A connected AI app can now work with lights and presets, game light sync, rooms, Simple setup rules, outputs, the screen share layout and node graphs. Every change waits for your approval and can be undone. An AI cannot turn on or change fast flashing, and the lighting changes it makes stay within the flashing limit.
+- **Rooms:** Add your own room from a model file (FBX) under "My rooms"; its lights shine the way they were made. Pick a room pack and browse it as a list or a grid. Each room has "Lights the avatar too" to choose whether its lights reach the avatar (on by default).
+- **Recording:** While the game's picture has not arrived, the recording shows "Waiting" and starts as soon as the game shows. Problems with the recording's sound or with finishing the file are reported, and a recording no longer drifts after its sound drops out.
+- **On-air preview:** Its switch alone shows and hides the preview, also while a studio camera is held.
+- **Screen share panel:** The sources picker opens at the button you pressed; sources, sound and presets fold into one card. Resolution and FPS are back under the share state.
+- **Motion screen:** Expression keys have their own list beside the mesh tree, text no longer overlaps, and long help text became short tips. Messages and errors appear in all four languages.
+- **Editing a running node graph:** Editing a graph while it runs (also in the separate editor window) keeps its delays, cooldowns, poses and variable values going. When both windows change the same graph, nothing is overwritten and you are told.
+- **Full code review:** The whole app was reviewed, and the problems found in recording, screen share, motion, photo, lighting and more were fixed.
+- Existing .vavatar files work as they are; no re-export is needed.
+
 ## 2026/10/28 — v2.3.0
 
 - **Long-stream optimization:** Reviewed the whole app so CPU, GPU, memory and VRAM use no longer build up over long sessions. Fluids and physics, avatars, rendering, outputs and recording were tidied, and start-up memory is lower. Unused outputs, the webcam and a hidden window give their resources back.
