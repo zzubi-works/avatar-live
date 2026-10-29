@@ -2,6 +2,14 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/30 — v2.4.3
+
+- **Lock share sources:** Lock the avatar or a source with the padlock in the source list or its right-click menu, and dragging or the wheel in the preview no longer moves it. The numbers and placement buttons still move it, and the lock is saved in layout presets.
+- **Share source list:** Right-clicking the avatar no longer opens a blank white box. The spacing of the empty layout presets message and the "+ New preset" button is fixed.
+- **Light effects:** Each effect's ⋯ and right-click menu has "Reset Effect". Changes on a light's card can be undone with Ctrl+Z and redone with Ctrl+Y.
+- **Throw and sticker trails:** "Trail size", under "Trail amount", makes a trail 0.25 to 3 times as big.
+- **Drawer edge:** The edges of the drawer and the node editor window show Windows' own resize cursor and a thin accent line instead of a grey bar.
+
 ## 2026/10/29 — v2.4.2
 
 - **Smoother director mode:** Pictures nobody is looking at are no longer drawn, and the preview and multiview are drawn lighter. The scene view and outside outputs keep their quality.
