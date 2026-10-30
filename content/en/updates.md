@@ -2,6 +2,16 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/30 — v2.4.4
+
+- **60 fps webcam tracking:** Devices › Webcam › Tracking quality has "Tracking FPS": 30, 60, 120 or Auto. With a 60 fps camera, 60 analyses the face about 59 times a second and the time from the camera to the result is about half. The default stays 30.
+- **Tracking quality, advanced:** Choose the camera resolution, hand and body updates, and Face first. A speed line shows which of the camera, the analysis or the screen is the slow one.
+- **Looking for hands:** With no hands in view, the tracker looks for them only 20 times a second, which saves CPU.
+- **Response:** Motion › Head motion › "Response" offers Low latency, Balanced and Smooth. It replaces the "Response" slider, which had no effect; Balanced is the same as before.
+- **Virtual camera:** Sends an even 30 fps (it was 15 to 22 fps). NDI now states its fps correctly.
+- **X3D CPUs:** On a CPU with two CCDs, "Automatic" cores keep the tracker on the CCD the game is not using, and Windows' power throttling no longer slows Avatar Live or the tracker (except on Eco).
+- **Higher FPS on Eco:** On Eco, raising Tracking FPS or the hand or body updates above the preset no longer leaves the tracker in Windows' efficiency mode, so it reaches the rate you chose.
+
 ## 2026/10/30 — v2.4.3
 
 - **Lock share sources:** Lock the avatar or a source with the padlock in the source list or its right-click menu, and dragging or the wheel in the preview no longer moves it. The numbers and placement buttons still move it, and the lock is saved in layout presets.
