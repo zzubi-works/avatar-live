@@ -2,6 +2,11 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/10/31 — v2.4.5
+
+- **Key press and release fixed:** with a real keyboard, the node "When a key is pressed" ran when the key was let go, and "When a key is released" when it was pressed. They now run the right way round.
+- Global hotkeys and the manual expressions (Tongue out, Cheek puff) now act when the key is pressed, and an action set to "While held" stays on only while the key is down. Picking a hotkey takes the key as you press it.
+
 ## 2026/10/30 — v2.4.4
 
 - **60 fps webcam tracking:** Devices › Webcam › Tracking quality has "Tracking FPS": 30, 60, 120 or Auto. With a 60 fps camera, 60 analyses the face about 59 times a second and the time from the camera to the result is about half. The default stays 30.
