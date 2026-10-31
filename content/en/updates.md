@@ -2,6 +2,12 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/01 — v2.4.6
+
+- **Simple setup amounts fixed:** when making a rule with "+", a minimum amount typed and then "Next" or "Make" pressed right away gave the rule the earlier value (10,000 won for Liquid) instead of the one typed.
+- In Simple setup rules, amounts of 100,000 won and more showed cut to 10,000, and clicking the field and leaving it saved the cut value. Fixed: the minimum and maximum amounts, "Won each", a Discord reaction's value and the Point games settings take up to 1,000,000.
+- **If you made rules with Simple setup in an earlier version, please check their minimum amounts once.** Rules of different amounts running together may come from this.
+
 ## 2026/10/31 — v2.4.5
 
 - **Key press and release fixed:** with a real keyboard, the node "When a key is pressed" ran when the key was let go, and "When a key is released" when it was pressed. They now run the right way round.
