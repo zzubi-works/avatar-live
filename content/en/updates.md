@@ -2,6 +2,10 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/02 — v2.4.7
+
+- **Webcam tracking fixed:** on some webcams the camera turned on but pictures came only about once a second, so tracking stayed at "no face". The webcam now opens in its fast format, and when pictures still come far too slowly it is opened once more at the camera's own rate.
+
 ## 2026/11/01 — v2.4.6
 
 - **Simple setup amounts fixed:** when making a rule with "+", a minimum amount typed and then "Next" or "Make" pressed right away gave the rule the earlier value (10,000 won for Liquid) instead of the one typed.
