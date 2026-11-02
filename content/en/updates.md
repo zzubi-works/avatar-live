@@ -2,6 +2,12 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/02 — v2.4.8
+
+- **Camera dropouts fixed:** when webcam tracking dropped once, it could stay off until the app was restarted. It now reconnects by itself. NDI output is also more robust.
+- **Reset each value:** value rows in Post effect, Lights, Share layout and other settings now have a ↺ button that returns just that value to its default.
+- **Long notices:** the title and text of a long notice are no longer cut off.
+
 ## 2026/11/02 — v2.4.7
 
 - **Webcam tracking fixed:** on some webcams the camera turned on but pictures came only about once a second, so tracking stayed at "no face". The webcam now opens in its fast format, and when pictures still come far too slowly it is opened once more at the camera's own rate.
