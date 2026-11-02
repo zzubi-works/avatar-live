@@ -2,6 +2,11 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/03 — v2.4.9
+
+- **Webcam dropouts fixed:** when a busy PC paused the webcam for a second or two, the app mistook it for a slow camera and opened it again, and tracking stopped for several seconds. After a short pause, tracking now carries on at once without reopening the camera, and the avatar's head no longer stays turned after it.
+- **Face first on:** if Face first in Devices › Webcam › Tracking quality › Advanced was off, this update turns it on once. On a busy PC the face no longer waits for the hand and body analysis, so it drops out less. If you turn it off again, it stays off.
+
 ## 2026/11/02 — v2.4.8
 
 - **Camera dropouts fixed:** when webcam tracking dropped once, it could stay off until the app was restarted. It now reconnects by itself. NDI output is also more robust.
