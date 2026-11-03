@@ -2,6 +2,10 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/03 — v2.4.10
+
+- **Motion Sequencer .anim export fixed:** depending on the sequence's length, saving could say "Could not save." and write no .anim even though the keys were in order. This is fixed, and so is the same failure when exporting a .vmd.
+
 ## 2026/11/03 — v2.4.9
 
 - **Webcam dropouts fixed:** when a busy PC paused the webcam for a second or two, the app mistook it for a slow camera and opened it again, and tracking stopped for several seconds. After a short pause, tracking now carries on at once without reopening the camera, and the avatar's head no longer stays turned after it.
