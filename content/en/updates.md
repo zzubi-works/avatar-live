@@ -2,6 +2,11 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/05 — v2.4.11
+
+- **Scene saving fixed:** an object attached to a bone or to another object (including a donation box that keeps itself on screen) slowly drifted in its rotation, until the scene could not be saved and quitting could not save it either, so the app did not close. This is fixed, and a scene that already drifted saves again. When a scene cannot be saved, a notification now says why.
+- **Liquid in the tray fixed:** with the window hidden to the tray, a liquid only ran down the body instead of splashing. It now splashes the same as with the window shown.
+
 ## 2026/11/03 — v2.4.10
 
 - **Motion Sequencer .anim export fixed:** depending on the sequence's length, saving could say "Could not save." and write no .anim even though the keys were in order. This is fixed, and so is the same failure when exporting a .vmd.
