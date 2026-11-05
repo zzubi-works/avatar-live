@@ -2,6 +2,10 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/06 — v2.4.12
+
+- **Liquid in the tray fixed:** with the window hidden to the tray or minimized while sending to Spout2, NDI or the virtual camera, the liquid in flight was not drawn in the sent picture, and only the body getting wet showed. It now splashes there the same as with the window shown. With nothing sent, a liquid also runs at the full frame rate while it flows, as with the window shown.
+
 ## 2026/11/05 — v2.4.11
 
 - **Scene saving fixed:** an object attached to a bone or to another object (including a donation box that keeps itself on screen) slowly drifted in its rotation, until the scene could not be saved and quitting could not save it either, so the app did not close. This is fixed, and a scene that already drifted saves again. When a scene cannot be saved, a notification now says why.
