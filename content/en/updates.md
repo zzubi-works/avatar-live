@@ -2,6 +2,11 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/06 — v2.4.13
+
+- **Broadcast recordings upload again:** MP4 files made with "Broadcast recording" were refused by some sites ("frame rate too high: max 60, actual 1406"). The recording's own frame rate was fine, but those sites misread its file format (a fragmented MP4). Recordings are now saved as an ordinary MP4 that every site reads.
+- **Capture the broadcast screen:** Save the picture you are sending out right now as a PNG. Use the "Capture broadcast" button in Studio › Photo & Recording › Photo, or assign "Capture broadcast" to a hotkey - the hotkey works with the window hidden in the tray too. The broadcast camera's picture, effects and camera screen are in it as they go out. It is saved in Pictures › Avatar Live, and a notice tells you where.
+
 ## 2026/11/06 — v2.4.12
 
 - **Liquid in the tray fixed:** with the window hidden to the tray or minimized while sending to Spout2, NDI or the virtual camera, the liquid in flight was not drawn in the sent picture, and only the body getting wet showed. It now splashes there the same as with the window shown. With nothing sent, a liquid also runs at the full frame rate while it flows, as with the window shown.
