@@ -2,6 +2,14 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/09 — v2.4.14
+
+- **Fixed stutter with the sky on:** with a content pack's room sky installed, keeping the sky list open under Scene › Background made the picture stutter down to a few frames a second. The sky list's pictures are now read once.
+- **Fixed grey squares around see-through decorations:** in a room with its contact shading (ambient occlusion) on, see-through decorations such as a leg tattoo got a grey, square-shaped shadow around them. The skin under a decoration's clear part now shows as it is.
+- **Lighting presets change only the lights:** choosing a lighting preset changes the lights alone; the scene's ambient light, effects (post-processing) and sky stay as they are.
+- **Ctrl+S saves the scene:** in the app's window, Ctrl+S saves the current scene (the same as the scene's Save button). It does nothing while you type text or in the motion editor.
+- **Graph node "Capture broadcast screen":** the graph's screenshot node now saves the broadcast screen being sent as a PNG (the same as "Capture broadcast screen") instead of the work view. The node is renamed to match, and graphs saved before still open.
+
 ## 2026/11/06 — v2.4.13
 
 - **Broadcast recordings upload again:** MP4 files made with "Broadcast recording" were refused by some sites ("frame rate too high: max 60, actual 1406"). The recording's own frame rate was fine, but those sites misread its file format (a fragmented MP4). Recordings are now saved as an ordinary MP4 that every site reads.
