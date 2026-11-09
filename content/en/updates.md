@@ -2,6 +2,10 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/10 — v2.4.15
+
+- **Fixed a grey band across the face:** the contact shading (ambient occlusion) that a content pack room's "Room look" adds also fell on the avatar, so in a face close-up the eyes and the bridge of the nose under the bangs (where the blush is) turned grey like a band. The room look's contact shading now falls on the room only, and the avatar keeps the studio's lighting (as with the room's light bounce). The contact shading on the floor and walls around the avatar stays, and ambient occlusion you turn on yourself in the scene still reaches the avatar as before.
+
 ## 2026/11/09 — v2.4.14
 
 - **Fixed stutter with the sky on:** with a content pack's room sky installed, keeping the sky list open under Scene › Background made the picture stutter down to a few frames a second. The sky list's pictures are now read once.
