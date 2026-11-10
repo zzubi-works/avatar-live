@@ -2,6 +2,11 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/10 — v2.4.16
+
+- **Discord screen-share sound, explained:** when the virtual audio device that carries the sound was set as Windows' default or default communication device, the shared sound never reached Discord and the app did not say why. Starting a screen share now shows a notice, and Output › Screen share names the device with an "Open Sound settings…" button. Make your headphones the default device and the default communication device and the sound goes out right away.
+- **Virtual camera install fixed:** on some PCs the install button did not install the camera. The app now asks Windows for administrator rights itself, installs it and tells you whether it was installed, cancelled or failed (and why). A registration that apps cannot list is now shown as needing install.
+
 ## 2026/11/10 — v2.4.15
 
 - **Fixed a grey band across the face:** the contact shading (ambient occlusion) that a content pack room's "Room look" adds also fell on the avatar, so in a face close-up the eyes and the bridge of the nose under the bangs (where the blush is) turned grey like a band. The room look's contact shading now falls on the room only, and the avatar keeps the studio's lighting (as with the room's light bounce). The contact shading on the floor and walls around the avatar stays, and ambient occlusion you turn on yourself in the scene still reaches the avatar as before.
