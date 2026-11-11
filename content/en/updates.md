@@ -2,6 +2,10 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/11 — v2.4.17
+
+- **Told when Windows Firewall blocks the iPhone face input:** the iPhone app could say "connected" while nothing reached Avatar Live. Windows Firewall was blocking the iPhone's data, and the app did not say why. Now the face input card says so and shows "Allow in firewall". Windows asks for administrator approval, and then only this Avatar Live is allowed, on the network you are on now. The same goes for VMC from another device.
+
 ## 2026/11/10 — v2.4.16
 
 - **Discord screen-share sound, explained:** when the virtual audio device that carries the sound was set as Windows' default or default communication device, the shared sound never reached Discord and the app did not say why. Starting a screen share now shows a notice, and Output › Screen share names the device with an "Open Sound settings…" button. Make your headphones the default device and the default communication device and the sound goes out right away.
