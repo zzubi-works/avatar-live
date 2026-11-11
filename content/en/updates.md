@@ -2,6 +2,13 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/11 — v2.4.18
+
+- **Less lag in director mode:** while the director sends a camera out, the app window draws the scene view lighter (about 30 fps, lower resolution, no shadows). What goes out (Spout2, virtual camera, recording, share) keeps its quality and 60 fps, and the window is back to normal as soon as the view returns to the scene view after the director is turned off.
+- **Smooth switches between the scene view and a camera:** switching between the scene view and a studio camera now follows the camera's transition time too. The previous camera no longer flashes out for a moment when the director is turned on.
+- **Lighter camera screen:** with no output, recording or share, a portrait or square camera screen is drawn at the window's size.
+- **Show or hide an avatar from a graph:** the node editor's Avatar category has two new nodes, "Show or hide an avatar" and "Avatar shown". They work like the Hide button on the avatar's card in Studio, so you can, for example, show a second avatar when a donation arrives and hide it again a few seconds later. A hidden avatar is not drawn and its animation and physics stop, so keeping it hidden most of the time takes that much load off your PC. When it is shown again, the picture does not stutter and the avatar appears in its current pose.
+
 ## 2026/11/11 — v2.4.17
 
 - **Told when Windows Firewall blocks the iPhone face input:** the iPhone app could say "connected" while nothing reached Avatar Live. Windows Firewall was blocking the iPhone's data, and the app did not say why. Now the face input card says so and shows "Allow in firewall". Windows asks for administrator approval, and then only this Avatar Live is allowed, on the network you are on now. The same goes for VMC from another device.
