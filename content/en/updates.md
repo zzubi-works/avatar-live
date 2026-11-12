@@ -2,6 +2,11 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/12 — v2.4.19
+
+- **Fixed a grey patch showing around the mouth:** with contact shading (ambient occlusion) on, puckering or moving the lips with face tracking made the skin around the lips and down to the chin show through grey (since 2.4.14). The inside of the mouth was getting into the contact shading of the skin. The fixes for the grey square around see-through decorations and the grey band across the face stay as they were.
+- **New motion in the motion sequencer:** the + button in the top toolbar (left of Save) or New motion in the Open · save as menu starts an empty motion. Each loaded avatar gets a track, and it is 30 seconds long. It is named sequence (sequence-2 … if that exists), so no file is overwritten. If there are unsaved edits it asks first, and Undo (Ctrl+Z) brings the previous motion back.
+
 ## 2026/11/11 — v2.4.18
 
 - **Less lag in director mode:** while the director sends a camera out, the app window draws the scene view lighter (about 30 fps, lower resolution, no shadows). What goes out (Spout2, virtual camera, recording, share) keeps its quality and 60 fps, and the window is back to normal as soon as the view returns to the scene view after the director is turned off.
