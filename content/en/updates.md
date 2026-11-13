@@ -2,6 +2,11 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/14 — v2.4.21
+
+- **Camera can be moved in the motion sequencer again:** When the motion sequencer was opened with the drawer open, dragging with the right or middle mouse button in the sequencer's view did not turn or move the camera (since 2.1.2). Also, while following the camera track, a view picked with the view buttons or shortcuts (Ctrl+number) was pulled straight back to the track. Now moving the camera by hand or picking a view stops following the track; turn "Camera track" on again to follow it.
+- **Shorter freeze when a notice first appears:** The short stop (about 0.1 s) when a notice with many characters not shown before appeared (for example a Korean notice in the English UI) is now much shorter.
+
 ## 2026/11/13 — v2.4.20
 
 - **Fixed the eyes sliding to one side when the camera comes close during face tracking:** with an iPhone (iFacialMocap and the like) tracking the face and Look at a target set to the camera, or the photo's Eyes on the camera on, bringing the camera close to the face made both pupils slide to the same side instead of looking at it (since 2.1.2). It was worst on avatars with Swap left/right on. Now each eye looks at the camera at any distance, and they come together naturally as it gets close.
