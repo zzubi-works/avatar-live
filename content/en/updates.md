@@ -2,6 +2,10 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/13 — v2.4.20
+
+- **Fixed the eyes sliding to one side when the camera comes close during face tracking:** with an iPhone (iFacialMocap and the like) tracking the face and Look at a target set to the camera, or the photo's Eyes on the camera on, bringing the camera close to the face made both pupils slide to the same side instead of looking at it (since 2.1.2). It was worst on avatars with Swap left/right on. Now each eye looks at the camera at any distance, and they come together naturally as it gets close.
+
 ## 2026/11/12 — v2.4.19
 
 - **Fixed a grey patch showing around the mouth:** with contact shading (ambient occlusion) on, puckering or moving the lips with face tracking made the skin around the lips and down to the chin show through grey (since 2.4.14). The inside of the mouth was getting into the contact shading of the skin. The fixes for the grey square around see-through decorations and the grey band across the face stay as they were.
