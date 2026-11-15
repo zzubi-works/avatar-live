@@ -2,6 +2,10 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/15 — v2.4.22
+
+- **Links to the "Value" input of "Set a value of a scene object" now survive a restart:** After picking a scene object and a value name in a "Set a value of a scene object" node, a link to its "Value" input disappeared when the app was started again. The link and a value typed into "Value" now stay. A link already lost does not come back: connect it once more in this version.
+
 ## 2026/11/14 — v2.4.21
 
 - **Camera can be moved in the motion sequencer again:** When the motion sequencer was opened with the drawer open, dragging with the right or middle mouse button in the sequencer's view did not turn or move the camera (since 2.1.2). Also, while following the camera track, a view picked with the view buttons or shortcuts (Ctrl+number) was pulled straight back to the track. Now moving the camera by hand or picking a view stops following the track; turn "Camera track" on again to follow it.
