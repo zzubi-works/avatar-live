@@ -2,6 +2,15 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/17 — v2.4.23
+
+- **Wind and gravity on PhysBones (for photos and videos):** The camera button on the bottom toolbar (Camera settings) has a new "Wind and gravity (PhysBones)". A soft wind sways PhysBones such as hair and hems or leans them to one side, and "Extra gravity" lets hair that stands straight flow down. You set the wind's strength, its direction (as the avatar faces), its slope, the gusts and how fast they come; it starts off. PhysBones held with the mouse or with a held pose are left alone.
+- **Picking the PhysBones the wind moves:** PhysBones that look wrong pressed by the wind, such as a chest or ears, can be switched off. With "Pick PhysBones in the view" on, the avatar's PhysBones show as lines over it (cyan: in the wind, coral: off); a click switches one, and a drag switches every one it passes. "Done" or Esc finishes. The "PhysBones in the wind" list switches them by name too, and the choice is saved.
+- **Moving along an axis in posing:** While posing, choosing move in the scene tools shows X, Y and Z arrows on the chosen bone; dragging an arrow moves the bone along that axis (Ctrl: 1 cm steps). Until now posing could only rotate, and the move button ended posing.
+- **Elbows and knees no longer fold backwards:** Dragging a hand or foot in posing, the motion sequencer or the nodes' full-body IK could fold an elbow or knee the way no human joint bends. Lowering the head in head tracking also bent the knees backwards into the legs. Both are fixed.
+- **Photos match the screen:** With the camera screen's "Look" on, a photo could come out with another arm shape or lens (zoom) than the screen showed. A photo is now the scene the window shows at that moment, and the quality label matches the photo's actual size.
+- **Less of a stall when pressing "Record":** In a heavy scene (for example Classroom 2) the picture paused briefly the moment "Record" was pressed. This pause is reduced.
+
 ## 2026/11/15 — v2.4.22
 
 - **Links to the "Value" input of "Set a value of a scene object" now survive a restart:** After picking a scene object and a value name in a "Set a value of a scene object" node, a link to its "Value" input disappeared when the app was started again. The link and a value typed into "Value" now stay. A link already lost does not come back: connect it once more in this version.
