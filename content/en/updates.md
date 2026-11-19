@@ -2,6 +2,10 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/19 — v2.4.26
+
+- **Fixed face tracking not moving some FT avatars:** In 2.4.25, face tracking stopped moving some face tracking (FT) avatars. This is fixed. Avatars whose face tracking values are not in their expression parameters move with their blendshapes, as in 2.4.24.
+
 ## 2026/11/19 — v2.4.25
 
 - **Fixed closed eyes breaking during face tracking:** On face tracking (FT) avatars whose FT values were taken out of the expression parameters, closing your eyes with face tracking broke the corners of the eyes. These avatars now close their eyes in their own shape.
