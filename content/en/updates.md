@@ -2,6 +2,10 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/19 — v2.4.24
+
+- **Fixed eyes staying shut when face tracking is on:** On some face tracking (FT) avatars, turning on face tracking with a webcam or iFacialMocap kept the eyes closed. The eyes now open and close with your face.
+
 ## 2026/11/17 — v2.4.23
 
 - **Wind and gravity on PhysBones (for photos and videos):** The camera button on the bottom toolbar (Camera settings) has a new "Wind and gravity (PhysBones)". A soft wind sways PhysBones such as hair and hems or leans them to one side, and "Extra gravity" lets hair that stands straight flow down. You set the wind's strength, its direction (as the avatar faces), its slope, the gusts and how fast they come; it starts off. PhysBones held with the mouse or with a held pose are left alone.
