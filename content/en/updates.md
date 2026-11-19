@@ -2,6 +2,11 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/19 — v2.4.27
+
+- **Fixed PhysBones being pushed up at chest height:** On avatars with a collider you hold in your hand and put down on the floor (such as a floor collider), the collider stayed at chest height instead of the floor and pushed PhysBones such as sleeves, strings, tails and leg accessories upwards. Leg accessories moving strangely when you lower your head is fixed with it. The collider now rests on the floor, as in VRChat.
+- **Fixed eyes staying shut or not moving with face tracking on some VRCFT avatars:** On avatars whose face tracking layer reads the names without "v2/" (EyeLidLeft, JawOpen and so on), the eyes now open and close with tracking, and gaze and mouth move through the avatar's own face tracking.
+
 ## 2026/11/19 — v2.4.26
 
 - **Fixed face tracking not moving some FT avatars:** In 2.4.25, face tracking stopped moving some face tracking (FT) avatars. This is fixed. Avatars whose face tracking values are not in their expression parameters move with their blendshapes, as in 2.4.24.
