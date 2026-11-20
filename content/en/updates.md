@@ -2,6 +2,20 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/20 — v2.5.1
+
+- **Motion fixes:**
+  - "Replace" with a library pose now works; it did nothing before.
+  - Setting a key on a bone such as a hand no longer changes every earlier frame. It now eases in from the start to that key.
+  - When a motion plays, the fists from the sequencer preview no longer open and a seated pose no longer stands up.
+  - In the Motion Player, turning "Live face" off no longer lets the tracking move the expression, head and body. They follow the motion's values; with it on, only the face follows the tracking.
+  - "Edit motion" on a library card no longer overwrites a saved motion. It saves as a new motion, and the Motion Player lists them all.
+- **Save sequences made in 2.5.0 once more in the sequencer.** Until then the fists and seated pose are missing from them, and the Motion Player says so.
+- Turning on "Allow tracking" on a library card when no tracking input exists yet now tells you.
+- Avatar menu › Meshes has a search field.
+- The posing rotation handle keeps an almost steady size on screen.
+- A held pose lets the arms and legs sway a little, following the "Sway" setting.
+
 ## 2026/11/20 — v2.5.0
 
 - **(Experimental) Face tracking from a VR headset:** While you stream a VR game such as Beat Saber, the headset's face tracking moves your stream avatar's face. Choose "VRCFT" in Devices › Tracking sources › Face engine.
