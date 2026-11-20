@@ -2,6 +2,13 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/20 — v2.5.0
+
+- **(Experimental) Face tracking from a VR headset:** While you stream a VR game such as Beat Saber, the headset's face tracking moves your stream avatar's face. Choose "VRCFT" in Devices › Tracking sources › Face engine.
+- Face tracking from a VR headset needs VRCFaceTracking (the latest Steam version) running.
+- It cannot be used at the same time as VRChat. While VRChat runs, Avatar Live leaves the face to VRChat; after you close VRChat, restart VRCFaceTracking once.
+- **(Experimental) Precise SteamVR finger tracking:** Index controllers move each finger, Quest Touch and Vive controllers as much as they report, and Steam Link or Virtual Desktop hand tracking the whole hand of your stream avatar. Off by default: turn on "Precise finger tracking (experimental)" in Devices › SteamVR › Options, then switch SteamVR off and on once.
+
 ## 2026/11/19 — v2.4.27
 
 - **Fixed PhysBones being pushed up at chest height:** On avatars with a collider you hold in your hand and put down on the floor (such as a floor collider), the collider stayed at chest height instead of the floor and pushed PhysBones such as sleeves, strings, tails and leg accessories upwards. Leg accessories moving strangely when you lower your head is fixed with it. The collider now rests on the floor, as in VRChat.
