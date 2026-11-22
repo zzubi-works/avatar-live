@@ -2,6 +2,11 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/22 — v2.5.2
+
+- **Phone face tracking fix:** On some avatars (those that use face tracking parameters without a prefix), the mouth barely opened when you talked with a phone (iFacialMocap). The mouth follows your jaw again. Eyes are unchanged.
+- Error reports now include a line showing where the jaw value goes.
+
 ## 2026/11/20 — v2.5.1
 
 - **Motion fixes:**
