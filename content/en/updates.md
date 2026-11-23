@@ -2,6 +2,24 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/24 — v2.5.5
+
+- **Remote session fixes:**
+  - A room the host decorated with their own files (models, photos, props, textures) no longer misses pieces on a guest's screen or stops at "Receiving the host's room".
+  - Prop files of the room now arrive even while a guest who just joined is still receiving an avatar.
+  - Props no longer stay empty after their files arrive, and props a guest attached to their own avatar no longer show up empty.
+  - The other person's avatar no longer fails to arrive, and their face no longer freezes, while room files are being sent.
+  - The avatar of someone who left no longer jumps to another place; it stays where it was.
+  - When someone turns clothes or props on or off, their face no longer flickers to a wrong expression for a moment.
+- **Face:** Avatars that get face tracking through names without "v2/" no longer keep their eyes closed after you turn face input on, until the first face arrives.
+- **Wind and gravity (PhysBones):**
+  - You can now turn the wind off while editing a .vrm avatar.
+  - With "Gusts" on during a long stream, hair no longer jumps once in a while.
+- **Motion Player:**
+  - With "Live face" on, the eyes and jaw now follow the tracking too.
+  - When you choose a gaze target (such as the camera), the avatar now looks at it while playing.
+  - A seated motion no longer sits further forward than it does in the sequencer.
+
 ## 2026/11/23 — v2.5.4
 
 - **(Experimental) Share your webcam with other apps:** Turn on "Use the webcam in other apps too" in Devices › Webcam, and your webcam picture is also sent out as the "Avatar Live Webcam" camera, so other apps (for example VRChat's selfie expression) can use it at the same time.
