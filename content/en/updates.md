@@ -2,6 +2,12 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/23 — v2.5.4
+
+- **(Experimental) Share your webcam with other apps:** Turn on "Use the webcam in other apps too" in Devices › Webcam, and your webcam picture is also sent out as the "Avatar Live Webcam" camera, so other apps (for example VRChat's selfie expression) can use it at the same time.
+- If you already installed the virtual camera, run the virtual camera install once more (Windows asks for administrator permission).
+- The user guide now explains the VRChat OSC output.
+
 ## 2026/11/23 — v2.5.3
 
 - **You can now clear the keys for tongue out and cheek puff:** press the × next to the key you set in Motion › Face › Tongue / cheek puff. Before, a key could not be removed once set.
