@@ -2,6 +2,10 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/23 — v2.5.3
+
+- **You can now clear the keys for tongue out and cheek puff:** press the × next to the key you set in Motion › Face › Tongue / cheek puff. Before, a key could not be removed once set.
+
 ## 2026/11/22 — v2.5.2
 
 - **Phone face tracking fix:** On some avatars (those that use face tracking parameters without a prefix), the mouth barely opened when you talked with a phone (iFacialMocap). The mouth follows your jaw again. Eyes are unchanged.
