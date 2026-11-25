@@ -2,6 +2,11 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/25 — v2.5.6
+
+- **Virtual camera fixed:** when the app folder's path contained Korean or other non-English characters, broadcast and video call apps could not open the virtual camera, and pressing "Register again" did not fix it.
+- After updating, open Output › Stream › Virtual camera and press "Register again as 'Avatar Live Camera'…" once (Windows asks for administrator rights). Then quit the app that uses the camera completely and open it again.
+
 ## 2026/11/24 — v2.5.5
 
 - **Remote session fixes:**
