@@ -2,6 +2,14 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/27 — v2.6.0
+
+- **Held poses (Pro):** the avatar holds a gamepad, racing wheel, flight stick and throttle, pen tablet, arcade stick (lever or leverless) or rhythm controller like the real thing, and its fingers and the object follow the controllers connected to this PC. The wheel turns through its rotation range (270/540/900°) with the hands re-gripping; size and placement per kind, fine-tuning of hands, fingers and elbows in posing mode, and seated poses are supported.
+- **Stepless zoom:** as in the Unity Scene view, Alt + right-drag now zooms the view in and out smoothly (drag right or down to zoom in, left or up to zoom out; the camera does not turn while you drag). The wheel zoom is unchanged.
+- **Settings search:** the search at the top right now also finds settings it used to miss, such as Stream Deck.
+- **License fixed:** fixed "This license was activated on another PC" appearing on the same PC when its license device key (TPM) briefly could not be opened, which made you enter the order number again.
+- **Clothing fixed:** fixed clothing driven by constraints (such as a cardigan's front flaps) lifting up on some avatars.
+
 ## 2026/11/25 — v2.5.6
 
 - **Virtual camera fixed:** when the app folder's path contained Korean or other non-English characters, broadcast and video call apps could not open the virtual camera, and pressing "Register again" did not fix it.
