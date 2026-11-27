@@ -2,6 +2,13 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/27 — v2.6.3
+
+- **Thumbs on a held gamepad (Pro):** On a held gamepad the thumb now rests on the stick's cap and follows it as the stick moves. You can adjust each thumb's place on the cap (Pro).
+- **Capture shared screen (Pro):** Broadcast recording now has "Capture shared screen", which saves the shared screen (game, avatar, layers) as a PNG at the recording's size.
+- **Ambient occlusion and blush:** With ambient occlusion on, the blush of an expression (Lewd 1-3) and the skin around it no longer darken; shading under the hair and the chin stays.
+- **Webcam tracking jumps:** Fixed the avatar's head and body jumping far away when the webcam lost your face for a moment and found it again.
+
 ## 2026/11/27 — v2.6.2
 
 - **Gamepad sticks fixed (Pro):** moving a stick on the held gamepad tilted only the shaft while the round cap stayed in place. The whole cap now tilts with the stick on both the Xbox and PlayStation pads.
