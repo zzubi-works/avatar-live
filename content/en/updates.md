@@ -2,6 +2,10 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/27 — v2.6.2
+
+- **Gamepad sticks fixed (Pro):** moving a stick on the held gamepad tilted only the shaft while the round cap stayed in place. The whole cap now tilts with the stick on both the Xbox and PlayStation pads.
+
 ## 2026/11/27 — v2.6.1
 
 - **Log errors fixed:** fixed "Screen position out of view frustum" errors piling up in the log every time the avatar was dragged or the mouse moved. Dragging and moving work as before.
