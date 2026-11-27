@@ -2,6 +2,10 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/27 — v2.6.1
+
+- **Log errors fixed:** fixed "Screen position out of view frustum" errors piling up in the log every time the avatar was dragged or the mouse moved. Dragging and moving work as before.
+
 ## 2026/11/27 — v2.6.0
 
 - **Held poses (Pro):** the avatar holds a gamepad, racing wheel, flight stick and throttle, pen tablet, arcade stick (lever or leverless) or rhythm controller like the real thing, and its fingers and the object follow the controllers connected to this PC. The wheel turns through its rotation range (270/540/900°) with the hands re-gripping; size and placement per kind, fine-tuning of hands, fingers and elbows in posing mode, and seated poses are supported.
