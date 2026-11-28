@@ -2,6 +2,11 @@
 
 Changes in each Avatar Live release, starting with the latest update.
 
+## 2026/11/28 — v2.6.4
+
+- **Window while recording:** Fixed the window stuttering while recording at a high resolution: during such a recording the window now updates evenly at the recording's frame rate, and frames the recording does not use are no longer drawn at full resolution, easing the load on the graphics card.
+- **Breathing and idle motion:** While tracking, a still avatar now visibly breathes and sways a little: the shoulders rise and fall with each breath while the hands stay in place. A pose held from Posing mode also breathes a little more visibly, and an arm held straight no longer flexes at the elbow with each breath.
+
 ## 2026/11/27 — v2.6.3
 
 - **Thumbs on a held gamepad (Pro):** On a held gamepad the thumb now rests on the stick's cap and follows it as the stick moves. You can adjust each thumb's place on the cap (Pro).
